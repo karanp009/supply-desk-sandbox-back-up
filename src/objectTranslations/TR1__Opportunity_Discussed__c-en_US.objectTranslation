@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Longlist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Longlists</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- RC_Client-CandidatesShortlisted --></label>
+        <name>RC_Client_CandidatesShortlisted</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- DaxtraSearch --></label>
+        <name>TR1__DaxtraSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLine1FieldSet --></label>
+        <name>TR1__KanbanCardLine1FieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLineFieldSet --></label>
+        <name>TR1__KanbanCardLineFieldSet</name>
+    </fieldSets>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate --></label>
+        <name>TR1__Candidate__c</name>
+        <relationshipLabel>Longlists</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>TR1__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>TR1__Email_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Level --></label>
+        <name>TR1__Interest_Level__c</name>
+        <picklistValues>
+            <masterLabel>Value 1</masterLabel>
+            <translation><!-- Value 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 2</masterLabel>
+            <translation><!-- Value 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 3</masterLabel>
+            <translation><!-- Value 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 4</masterLabel>
+            <translation><!-- Value 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interested --></label>
+        <name>TR1__Interested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Be Contacted</masterLabel>
+            <translation><!-- To Be Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vacancy</label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel>Longlists</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This decides the order in which the cards are displayed within a Swimlane by default. --></help>
+        <label><!-- Kanban Swimlane Ranking --></label>
+        <name>TR1__Kanban_Swimlane_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- LongList Details --></label>
+        <name>TR1__LongList_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TR1__Source__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Ranking --></label>
+        <name>TR1__Status_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Longlist</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Convert_to_Shortlist --></label>
+        <name>Convert_to_Shortlist</name>
+    </webLinks>
+    <webLinks>
+        <label>Convert to Shortlist</label>
+        <name>TR1__Convert_To_Application</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_To_Applications --></label>
+        <name>TR1__Convert_To_Applications</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Place_Candidates --></label>
+        <name>TR1__Mass_Place_Candidates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email_to_Members --></label>
+        <name>TR1__Send_Email_to_Members</name>
+    </webLinks>
+</CustomObjectTranslation>

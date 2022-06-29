@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif"><font face="arial"><span style="font-size: 12pt;">Dear&nbsp;</span></font><span style="font-size: 16px;">{!TR1__Timesheet__c.Candidate_First_Name__c}</span><font face="arial"><span style="font-size: 12pt;">,</span></font></font>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">We are pleased to inform you that your timesheet has been approved.
+
+Should you have any queries, please let us know as soon as possible.
+
+Kind Regards,</font></span><div><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><br></font></span></div><div><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">Supply Desk</font></span></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

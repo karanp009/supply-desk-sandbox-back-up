@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Terms of Business</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Terms of Business</value>
+    </caseValues>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Terms of Business --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Terms of Business --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Divisions Included --></label>
+        <name>TR1__Divisions_Included__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation><!-- Clinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Resources</masterLabel>
+            <translation><!-- Human Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>TR1__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent</masterLabel>
+            <translation><!-- Permanent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retained</masterLabel>
+            <translation><!-- Retained --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Terms of Business Number</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

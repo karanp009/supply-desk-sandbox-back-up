@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>TR1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error To Display --></label>
+        <name>TR1__Error_To_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit --></label>
+        <name>TR1__Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>TR1__Rate__c</name>
+        <relationshipLabel><!-- Rate Limits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Per Calendar Month</masterLabel>
+            <translation><!-- Per Calendar Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Calendar Week</masterLabel>
+            <translation><!-- Per Calendar Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Calendar Year</masterLabel>
+            <translation><!-- Per Calendar Year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Day</masterLabel>
+            <translation><!-- Per Day --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

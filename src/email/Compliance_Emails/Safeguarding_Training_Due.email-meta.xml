@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>Safeguarding Training Due</name>
+    <style>freeForm</style>
+    <subject>Your Safeguarding Training is up for renewal on {!TR1__Associated_Qualification__c.Safeguarding_Expiry_Date__c}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We can see from our records that your Safeguarding Training is coming up for renewal on:
+{!TR1__Associated_Qualification__c.Safeguarding_Expiry_Date__c}.
+In line with current OFSTED requirements, it is best practice that all staff in schools receive training every year and that all new staff, including support staff and non-teaching staff, have undertaken safeguarding training.
+
+If you have completed more recent Safeguarding Training please send us your up to date certificate so we can update our records.
+If you would like to complete Supply Desk&apos;s Safeguarding Training please follow the below link and complete our ‘Safeguarding Awareness’ course and let us know when you complete it so we can update your record.
+http://www.synarbor.net/training/
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

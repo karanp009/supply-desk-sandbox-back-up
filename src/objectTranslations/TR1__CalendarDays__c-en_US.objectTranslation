@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Friday --></label>
+        <name>TR1__Friday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday --></label>
+        <name>TR1__Monday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday --></label>
+        <name>TR1__Saturday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday --></label>
+        <name>TR1__Sunday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday --></label>
+        <name>TR1__Thursday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday --></label>
+        <name>TR1__Tuesday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday --></label>
+        <name>TR1__Wednesday__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SET Subscription Due</name>
+    <style>freeForm</style>
+    <subject>Your SET Subscription will expire on {!TR1__Associated_Qualification__c.DBS_Next_Check_Required__c}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We can see from our records your SET subscription will expire {!TR1__Associated_Qualification__c.SET_Expiry_Date__c}. Please can you ensure that you update your SET subscription before that date so that Supply Desk can continue to offer you work as a teacher in maintained schools. If this is not updated we will only be able to offer you support or instructor work in maintained schools, which will affect your daily pay rate.
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

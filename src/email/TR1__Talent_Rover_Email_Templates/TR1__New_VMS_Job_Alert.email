@@ -1,0 +1,8 @@
+A New Job has been uploaded to Talent Rover.
+
+Title: {!TR1__Job__c.Name}
+Account: {!TR1__Job__c.TR1__Account_Name__c}
+Req Id: {!TR1__Job__c.TR1__VMS_Req_ID__c} - {!TR1__Job__c.TR1__VMS_Status__c}
+
+
+Link: {!TR1__Job__c.Link}

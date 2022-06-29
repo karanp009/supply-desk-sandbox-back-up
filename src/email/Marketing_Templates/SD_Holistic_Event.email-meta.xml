@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Holistic London Event</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Holistic_Event</letterhead>
+    <name>SD_Holistic_Event</name>
+    <style>freeForm</style>
+    <subject>Supply Desk London Holistic Hump Day Event</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

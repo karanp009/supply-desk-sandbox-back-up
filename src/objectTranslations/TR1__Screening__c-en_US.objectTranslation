@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+        <relationshipLabel><!-- Disclaimer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Date --></label>
+        <name>TR1__Application_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certificate Number --></label>
+        <name>TR1__Certificate_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certificate --></label>
+        <name>TR1__Certificate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>TR1__Company__c</name>
+        <relationshipLabel><!-- Disclaimer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Screenings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>TR1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>TR1__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Date --></label>
+        <name>TR1__Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issuer --></label>
+        <name>TR1__Issuer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Screenings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Verification</masterLabel>
+            <translation><!-- Pending Verification --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Type1</masterLabel>
+            <translation><!-- Type1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valid From Date --></label>
+        <name>TR1__Valid_From_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified Date --></label>
+        <name>TR1__Verified_Date__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Education &amp; Construction. --></description>
+        <label><!-- Disclaimer --></label>
+        <name>Disclaimer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Disclaimer --></label>
+        <name>TR1__Disclaimer</name>
+    </recordTypes>
+</CustomObjectTranslation>

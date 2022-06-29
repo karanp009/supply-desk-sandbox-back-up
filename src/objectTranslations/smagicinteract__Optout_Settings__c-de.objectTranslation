@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Keyword --></label>
+        <name>smagicinteract__Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>smagicinteract__Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optout Field --></label>
+        <name>smagicinteract__Optout_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[Hi&nbsp;{!TR1__Timesheet__c.TR1__Approver__c},<div><br></div><div>Please approve or reject the below timesheet for&nbsp;{!TR1__Timesheet__c.TR1__Consultant_Name__c}</div><div><br></div><div><a href="https://tr-healthcare-demo.force.com/ApproveOrRejectTimesheet?id={!TR1__Timesheet__c.Id}&amp;action=Approved">Approve</a>&nbsp; &nbsp;<a href="https://tr-healthcare-demo.force.com/ApproveOrRejectTimesheet?id={!TR1__Timesheet__c.Id}&amp;action=Rejected">Reject</a></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

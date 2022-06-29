@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Overseas Candidates</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Emailer_AussieTeachersinBucks1</letterhead>
+    <name>SD_Emailer_AussieTeachersinBucks1</name>
+    <style>freeForm</style>
+    <subject>Aussie Teachers Available in Buckinghamshire</subject>
+    <textOnly>Fill any last minute gaps with an Australian teacher NOW! Or, start looking ahead to the New Year and lessen the recruitment head ache for the future.
+
+
+Tap into our growing pool of Aussie teachers who are keen to hear from you now &amp; accept a position in your school. These teachers will be interviewed in person by Mike Jones, Holmer Green School &amp; Jo Garlick, Great Kingshill School in conjunction with Buckinghamshire County Council.
+
+
+
+Your school can hire a Sponsored candidate for 3 x years – solving your recruitment &amp; retention staffing issues. Your school will be fully supported in a start to finish visa process.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://i--48e9e8d3-talentrover-com-tcfqf9psmjgf.runscope.net</url>
+</RemoteSiteSetting>

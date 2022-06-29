@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>tdc_tsw__Account__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Record Id --></label>
+        <name>tdc_tsw__Additional_Record_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attached Files --></label>
+        <name>tdc_tsw__Attached_Files__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachments Ids --></label>
+        <name>tdc_tsw__Attachments_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- CampaignMember Status --></label>
+        <name>tdc_tsw__CampaignMember_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Members Type --></label>
+        <name>tdc_tsw__CampaignMembersType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>tdc_tsw__Campaign__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>tdc_tsw__Case__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>tdc_tsw__Contact__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attachment/Document Id --></label>
+        <name>tdc_tsw__Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>tdc_tsw__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Every Day ? --></label>
+        <name>tdc_tsw__IsEveryDay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Every Month ? --></label>
+        <name>tdc_tsw__IsEveryMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last SMS Sent Date --></label>
+        <name>tdc_tsw__Last_SMS_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>tdc_tsw__Lead__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Message Text --></label>
+        <name>tdc_tsw__Message_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next SMS Send Date --></label>
+        <name>tdc_tsw__Next_SMS_Send_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>tdc_tsw__Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>tdc_tsw__Opportunity__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Phone Api --></label>
+        <name>tdc_tsw__Phone_Api__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>tdc_tsw__Question__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Object Id --></label>
+        <name>tdc_tsw__Related_Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Template --></label>
+        <name>tdc_tsw__SMS_Template__c</name>
+        <relationshipLabel><!-- Scheduled SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled JobId --></label>
+        <name>tdc_tsw__Scheduled_JobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Time --></label>
+        <name>tdc_tsw__Scheduled_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Number Key --></label>
+        <name>tdc_tsw__Sender_Number_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Number --></label>
+        <name>tdc_tsw__Sender_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template --></label>
+        <name>tdc_tsw__Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- isParentRecord --></label>
+        <name>tdc_tsw__isParentRecord__c</name>
+    </fields>
+    <fields>
+        <label><!-- isSent --></label>
+        <name>tdc_tsw__isSent__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Cancel_Scheduled_SMS --></label>
+        <name>tdc_tsw__Cancel_Scheduled_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ltng_Cancel_Scheduled_SMS --></label>
+        <name>tdc_tsw__Ltng_Cancel_Scheduled_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

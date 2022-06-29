@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Candidate Overlapping --></label>
+        <name>TR1__Candidate_Overlapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Existing CA Records --></label>
+        <name>TR1__Delete_Existing_CA_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Overlapping --></label>
+        <name>TR1__Job_Overlapping__c</name>
+    </fields>
+</CustomObjectTranslation>

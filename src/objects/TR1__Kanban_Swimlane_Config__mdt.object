@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configuration or setting associated for a Swimlane on the J/C Kanban board.</description>
+    <fields>
+        <fullName>TR1__Action_Buttons__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Names of those Kanban Card Action Button Setting(s) each of which separated by comma.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Names of those Kanban Card Action Button Setting(s) each of which separated by comma.</inlineHelpText>
+        <label>Action Buttons</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Board__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify whether the Kanban Swimlane Setting is for a Job Kanban Board or Candidate Kanban Board.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify whether the Kanban Swimlane Setting is for a Job Kanban Board or Candidate Kanban Board.</inlineHelpText>
+        <label>Board</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Card_Body_FieldSets__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Field Set(s) that will be used to determine the fields that needs to be displayed on the Card Body. Please ensure that the correct API Name(s) of the Field Sets are specified.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Field Set(s) that will be used to determine the fields that needs to be displayed on the Card Body. Please ensure that the correct API Name(s) of the Field Sets are specified.</inlineHelpText>
+        <label>Card Body FieldSets</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Card_State_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Name of the field on the object specified in the Type field that determines the state of a card.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API Name of the field on the object specified in the Type field that determines the state of a card.</inlineHelpText>
+        <label>Card State Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_CSS__c</fullName>
+        <defaultValue>&apos;.card{ min-height: 150px; } .card .page .row{ height: 25px; }&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Override out of the box CSS Rules</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Override out of the box CSS Rules</inlineHelpText>
+        <label>Custom CSS</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_Calculated_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Some fields might not be available on the Object specified in the Type field. These will have to be calculated by applying some business logic. Specify a JSON listing the fields that needs to be calculated. For eg: [{&quot;label&quot;:&quot;upp&quot;,&quot;action&quot;:&quot;UserProfilePicCCF&quot;}]</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Some fields might not be available on the Object specified in the Type field. These will have to be calculated by applying some buss. logic. Specify a JSON listing the fields that needs to be calculated. Eg: [{&quot;label&quot;:&quot;upp&quot;,&quot;action&quot;:&quot;UserProfilePicCCF&quot;}]</inlineHelpText>
+        <label>Custom Calculated Fields</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Cards_Shown__c</fullName>
+        <defaultValue>100</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label># Default Cards Shown</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Sort_Field__c</fullName>
+        <defaultValue>&apos;Name ASC&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>All the Cards in the Swimlane will be sorted in the specified order w.r.t to this field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>All the Cards in the Swimlane will be sorted in the specified order w.r.t to this field. Specify the values with the Sort Order like say: Name ASC</inlineHelpText>
+        <label>Default Sort Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This determines the ordering of Swimlanes on the Kanban with 1 designating the first Swimlane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This determines the ordering of Swimlanes on the Kanban with 1 designating the first Swimlane.</inlineHelpText>
+        <label>Display Order</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Displayed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determine if the Swimlane is displayed or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determine if the Swimlane is displayed or not.</inlineHelpText>
+        <label>Displayed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Entity_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Name of the field on the object specified in the Type that acts as the source of data for the Cards.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API Name of the field on the object specified in the Type that acts as the source of data for the Cards.</inlineHelpText>
+        <label>Entity Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Entity_Predicate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be used in the WHERE clause of the SOQL Query that will be constructed to determine those records that needs to be displayed as Cards in the Swimlane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This will be used in the WHERE clause of the SOQL Query that will be constructed to determine those records that needs to be displayed as Cards in the Swimlane.</inlineHelpText>
+        <label>Entity Predicate</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Entity_Selection_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Field on the Entity that will be used to filter out the entities from it&apos;s corresponding object as in the Entity Type field. This could be say the ID field that will be used in the WHERE clause to query the entities.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Field on the Entity that will be used to filter out the entities from it&apos;s corresponding object as in the Entity Type field. This could be say the ID field that will be used in the WHERE clause to query the entities.</inlineHelpText>
+        <label>Entity Selection Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Entity_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Name of the object to which the Entity Field relates to and the one that acts as the source of data for the Cards.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API Name of the object to which the Entity Field relates to and the one that acts as the source of data for the Cards.</inlineHelpText>
+        <label>Entity Type</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Mass_Action_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determine if Mass Action is applicable for the lane or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determine if Mass Action is applicable for the lane or not.</inlineHelpText>
+        <label>Mass Action Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Mini_Layout_FieldSet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The FieldSet that contains the fields that needs to be displayed while rendering a Mini Version of the card.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The FieldSet that contains the fields that needs to be displayed while rendering a Mini Version of the card.</inlineHelpText>
+        <label>Mini Layout FieldSet</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Mini_Layout__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The card(s) will render a more compact version with minimal details if checked.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The card(s) will render a more compact version with minimal details if checked.</inlineHelpText>
+        <label>Mini Layout</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Parent_Child_Joining_Keys__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field on the Parent Object that matches the field on the Child(aka Entity) object separated by a colon.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The field on the Parent Object that matches the field on the Child(aka Entity) object separated by a colon.</inlineHelpText>
+        <label>Parent Child Joining Keys</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Post_Processing_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>An Apex Class that implements the IKanbanSwimlaneAction that will be executed before returning the final list of cards to generate the Swimlane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>An Apex Class that implements the IKanbanSwimlaneAction that will be executed before returning the final list of cards to generate the Swimlane.</inlineHelpText>
+        <label>Post Processing Action</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Predicate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be used in the WHERE clause of the SOQL Query that will be constructed to determine those records that needs to be displayed as Cards in the Swimlane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This will be used in the WHERE clause of the SOQL Query that will be constructed to determine those records that needs to be displayed as Cards in the Swimlane.</inlineHelpText>
+        <label>Predicate</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Quick_Action_to_Execute__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The URL to the VF Page that needs to be opened when a card or cards are dropped into the Swimlane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The URL to the VF Page that needs to be opened when a card or cards are dropped into the Swimlane.</inlineHelpText>
+        <label>Quick Action to Execute</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Return_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The url or location to which we need to re-direct to after completing the lane action.  This mostly is used for the Closing Report lane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The url or location to which we need to re-direct to after completing the lane action. This mostly is used for the Closing Report lane.</inlineHelpText>
+        <label>Return URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Rows_Per_Page__c</fullName>
+        <defaultValue>3</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Number of Rows that needs to be displayed per Page on a Card on the Swimlane. Note that data in each Row is actually determined by a FieldSet.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Number of Rows that needs to be displayed per Page on a Card on the Swimlane. Note that data in each Row is actually determined by a FieldSet.</inlineHelpText>
+        <label>Rows Per Page</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_Info_Button__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether an Info button showing more details about the card needs to be displayed or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Whether an Info button showing more details about the card needs to be displayed or not.</inlineHelpText>
+        <label>Show Info Button</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Submit_With_Email__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether to show the Submit with Email button when a card is moved to Submittal lane or not. This mostly is used for the Submittal lane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Whether to show the Submit with Email button when a card is moved to Submittal lane or not. This mostly is used for the Submittal lane.</inlineHelpText>
+        <label>Submit With Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Submit_Without_Email__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether to show the Submit without Email button when a card is moved to Submittal lane or not. This mostly is used for the Submittal lane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Whether to show the Submit without Email button when a card is moved to Submittal lane or not. This mostly is used for the Submittal lane.</inlineHelpText>
+        <label>Submit Without Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Title__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Title of Swimlane</inlineHelpText>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Top_N_Rows__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Number of Rows that needs to be fetched on the first load of the Kanban Board.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Number of Rows that needs to be fetched on the first load of the Kanban Board.</inlineHelpText>
+        <label>Top N Rows</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Type_Parent_Entity_FieldSets__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Field Set(s) that will be used to determine the fields that needs to be displayed on the Card Body from the Parent Entity or the object specified in the Type field. Please ensure that the correct API Name of the Field Set(s) are specified.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Field Set(s) that will be used to determine the fields that needs to be displayed on the Card Body from the Parent Entity or the object specified in the Type field. Please ensure that the correct API Name of the Field Set(s) are specified.</inlineHelpText>
+        <label>Type/Parent Entity FieldSets</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The records from this SObject will be queried and displayed as cards in the Swimlane.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The records from this SObject will be queried and displayed as cards in the Swimlane.</inlineHelpText>
+        <label>Type</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Kanban Swimlane Config</label>
+    <listViews>
+        <fullName>Candidate</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TR1__Board__c</field>
+            <operation>equals</operation>
+            <value>Candidate</value>
+        </filters>
+        <label>Candidate</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Job</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TR1__Board__c</field>
+            <operation>equals</operation>
+            <value>Job</value>
+        </filters>
+        <label>Job</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Kanban Swimlane Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

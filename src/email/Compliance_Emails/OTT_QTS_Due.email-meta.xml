@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>OTT QTS Due</name>
+    <style>freeForm</style>
+    <subject>The deadline to earn QTS accreditation is approaching</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+As you are no doubt aware, it is unlawful for overseas trained teachers (OTTs) to continue teaching in state maintained schools and non-maintained special schools in England beyond four years if they have not been awarded QTS. Our records show that you have not gained QTS and you are coming to the end of your 4-year time limit.
+
+The &quot;four year rule&quot; began on the first day you taught in a state maintained school or a non-maintained special school in England and expires exactly four years later. In order to teach after four years, OTTs must have been awarded QTS. OTTs who have been awarded QTS by the end of their four year period become qualified teachers and are allowed to continue teaching subject to UK Visa and Immigration permission, if required.
+
+Please contact us  if you consider that our records are incorrect and you have been awarded QTS or you have an extension to this time period. If you have not been awarded QTS then we will be able to continue to offer you supply work in support staff or instructor roles within our schools.
+
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ContactClosingReportMap</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ContactClosingReportMap</value>
+    </caseValues>
+    <fields>
+        <label><!-- Closing Report Field API --></label>
+        <name>Closing_Report_Field_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Field API --></label>
+        <name>Contact_Field_API__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

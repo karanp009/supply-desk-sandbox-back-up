@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bundle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bundles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Bundles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Balance Day(s) --></label>
+        <name>Balance_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed % --></label>
+        <name>Completed_Chart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed % --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Amount --></label>
+        <name>Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Percetage Slot --></label>
+        <name>Remaining_Percetage_Slot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining % --></label>
+        <name>Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Allocated Day(s) --></label>
+        <name>Total_Allocated_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Debited Day(s) --></label>
+        <name>Total_Debited_Days_F__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Debited Day(s) --></label>
+        <name>Total_Debited_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Remaining Days --></label>
+        <name>Total_Remaining_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Supply Cover</masterLabel>
+            <translation><!-- Supply Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher</masterLabel>
+            <translation><!-- Teacher --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Bundle Layout</layout>
+        <sections>
+            <label><!-- Balances --></label>
+            <section>Balances</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t edit bundle once it&apos;s created --></errorMessage>
+        <name>DO_NOT_ALLOW_EDIT</name>
+    </validationRules>
+</CustomObjectTranslation>

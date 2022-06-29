@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Editable --></label>
+        <name>TR1__Editable__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>TR1__End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsDefault --></label>
+        <name>TR1__IsDefault__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>TR1__Start_Time__c</name>
+    </fields>
+</CustomObjectTranslation>

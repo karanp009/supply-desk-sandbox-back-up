@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Execution Status --></label>
+        <name>smagicworkflow__Execution_Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparing</masterLabel>
+            <translation><!-- Preparing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>smagicworkflow__Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Id --></label>
+        <name>smagicworkflow__Task_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workflow XML Map --></label>
+        <name>smagicworkflow__WorkflowXMLMap__c</name>
+        <relationshipLabel><!-- SMS Batch Execution Tracker --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

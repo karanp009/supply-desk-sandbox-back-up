@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Train Station</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Train Stations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Borough --></label>
+        <name>Borough__c</name>
+        <picklistValues>
+            <masterLabel>Barking and Dagenham</masterLabel>
+            <translation><!-- Barking and Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brentwood</masterLabel>
+            <translation><!-- Brentwood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broxbourne</masterLabel>
+            <translation><!-- Broxbourne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiltern</masterLabel>
+            <translation><!-- Chiltern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London</masterLabel>
+            <translation><!-- City of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dartford</masterLabel>
+            <translation><!-- Dartford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elmbridge</masterLabel>
+            <translation><!-- Elmbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epsom and Ewell</masterLabel>
+            <translation><!-- Epsom and Ewell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith and Fulham</masterLabel>
+            <translation><!-- Hammersmith and Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hertsmere</masterLabel>
+            <translation><!-- Hertsmere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington and Chelsea</masterLabel>
+            <translation><!-- Kensington and Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston upon Thames</masterLabel>
+            <translation><!-- Kingston upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reigate and Banstead</masterLabel>
+            <translation><!-- Reigate and Banstead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond upon Thames</masterLabel>
+            <translation><!-- Richmond upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevenoaks</masterLabel>
+            <translation><!-- Sevenoaks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tandridge</masterLabel>
+            <translation><!-- Tandridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Three Rivers</masterLabel>
+            <translation><!-- Three Rivers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thurrock</masterLabel>
+            <translation><!-- Thurrock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watford</masterLabel>
+            <translation><!-- Watford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <picklistValues>
+            <masterLabel>England</masterLabel>
+            <translation><!-- England --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland</masterLabel>
+            <translation><!-- Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+        <picklistValues>
+            <masterLabel>Antrim</masterLabel>
+            <translation><!-- Antrim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armagh</masterLabel>
+            <translation><!-- Armagh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bath</masterLabel>
+            <translation><!-- Bath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedfordshire</masterLabel>
+            <translation><!-- Bedfordshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bolton</masterLabel>
+            <translation><!-- Bolton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bristol</masterLabel>
+            <translation><!-- Bristol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buckinghamshire</masterLabel>
+            <translation><!-- Buckinghamshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridgeshire</masterLabel>
+            <translation><!-- Cambridgeshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carlow</masterLabel>
+            <translation><!-- Carlow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheshire</masterLabel>
+            <translation><!-- Cheshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clare</masterLabel>
+            <translation><!-- Clare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleveland</masterLabel>
+            <translation><!-- Cleveland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cork</masterLabel>
+            <translation><!-- Cork --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall</masterLabel>
+            <translation><!-- Cornwall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Durham</masterLabel>
+            <translation><!-- County Durham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cumbria</masterLabel>
+            <translation><!-- Cumbria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Derby</masterLabel>
+            <translation><!-- Derby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devon</masterLabel>
+            <translation><!-- Devon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dorset</masterLabel>
+            <translation><!-- Dorset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Down</masterLabel>
+            <translation><!-- Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dublin</masterLabel>
+            <translation><!-- Dublin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Sussex</masterLabel>
+            <translation><!-- East Sussex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essex</masterLabel>
+            <translation><!-- Essex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Galway</masterLabel>
+            <translation><!-- Galway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gloucestershire</masterLabel>
+            <translation><!-- Gloucestershire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hampshire</masterLabel>
+            <translation><!-- Hampshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Herefordshire</masterLabel>
+            <translation><!-- Herefordshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hertfordshire</masterLabel>
+            <translation><!-- Hertfordshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kent</masterLabel>
+            <translation><!-- Kent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kent Medway</masterLabel>
+            <translation><!-- Kent Medway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerry</masterLabel>
+            <translation><!-- Kerry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kildare</masterLabel>
+            <translation><!-- Kildare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilkenny</masterLabel>
+            <translation><!-- Kilkenny --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lancashire</masterLabel>
+            <translation><!-- Lancashire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laois</masterLabel>
+            <translation><!-- Laois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leicestershire</masterLabel>
+            <translation><!-- Leicestershire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leitrim</masterLabel>
+            <translation><!-- Leitrim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limerick</masterLabel>
+            <translation><!-- Limerick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lincolnshire</masterLabel>
+            <translation><!-- Lincolnshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liverpool</masterLabel>
+            <translation><!-- Liverpool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Londonderry</masterLabel>
+            <translation><!-- Londonderry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longford</masterLabel>
+            <translation><!-- Longford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louth</masterLabel>
+            <translation><!-- Louth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mayo</masterLabel>
+            <translation><!-- Mayo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meath</masterLabel>
+            <translation><!-- Meath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milton Keynes</masterLabel>
+            <translation><!-- Milton Keynes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norfolk</masterLabel>
+            <translation><!-- Norfolk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North East london</masterLabel>
+            <translation><!-- North East london --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West London</masterLabel>
+            <translation><!-- North West London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northamptonshire</masterLabel>
+            <translation><!-- Northamptonshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northumberland</masterLabel>
+            <translation><!-- Northumberland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nottinghamshire</masterLabel>
+            <translation><!-- Nottinghamshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offaly</masterLabel>
+            <translation><!-- Offaly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oxfordshire</masterLabel>
+            <translation><!-- Oxfordshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peterborough</masterLabel>
+            <translation><!-- Peterborough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portsmouth</masterLabel>
+            <translation><!-- Portsmouth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reading</masterLabel>
+            <translation><!-- Reading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roscommon</masterLabel>
+            <translation><!-- Roscommon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shropshire</masterLabel>
+            <translation><!-- Shropshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sligo</masterLabel>
+            <translation><!-- Sligo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slough</masterLabel>
+            <translation><!-- Slough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somerset</masterLabel>
+            <translation><!-- Somerset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South East London</masterLabel>
+            <translation><!-- South East London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South West London</masterLabel>
+            <translation><!-- South West London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staffordshire</masterLabel>
+            <translation><!-- Staffordshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suffolk</masterLabel>
+            <translation><!-- Suffolk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tipperary</masterLabel>
+            <translation><!-- Tipperary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Torquay</masterLabel>
+            <translation><!-- Torquay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tyne and Wear</masterLabel>
+            <translation><!-- Tyne and Wear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wales</masterLabel>
+            <translation><!-- Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire</masterLabel>
+            <translation><!-- Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Midlands</masterLabel>
+            <translation><!-- West Midlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westmeath</masterLabel>
+            <translation><!-- Westmeath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wexford</masterLabel>
+            <translation><!-- Wexford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wicklow</masterLabel>
+            <translation><!-- Wicklow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wiltshire</masterLabel>
+            <translation><!-- Wiltshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worcestershire</masterLabel>
+            <translation><!-- Worcestershire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yorkshire</masterLabel>
+            <translation><!-- Yorkshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>waterford</masterLabel>
+            <translation><!-- waterford --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Managed By --></label>
+        <name>Managed_By__c</name>
+        <picklistValues>
+            <masterLabel>Chiltern Railways</masterLabel>
+            <translation><!-- Chiltern Railways --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Capital Connect</masterLabel>
+            <translation><!-- First Capital Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Great Western</masterLabel>
+            <translation><!-- First Great Western --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater Anglia</masterLabel>
+            <translation><!-- Greater Anglia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heathrow Express</masterLabel>
+            <translation><!-- Heathrow Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Midland</masterLabel>
+            <translation><!-- London Midland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Overground</masterLabel>
+            <translation><!-- London Overground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Underground</masterLabel>
+            <translation><!-- London Underground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Rail</masterLabel>
+            <translation><!-- Network Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Rail/Eurostar</masterLabel>
+            <translation><!-- Network Rail/Eurostar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South West Trains</masterLabel>
+            <translation><!-- South West Trains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeastern</masterLabel>
+            <translation><!-- Southeastern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southern</masterLabel>
+            <translation><!-- Southern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>c2c</masterLabel>
+            <translation><!-- c2c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Station Code --></label>
+        <name>Station_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Station Post Code --></label>
+        <name>Station_Post_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

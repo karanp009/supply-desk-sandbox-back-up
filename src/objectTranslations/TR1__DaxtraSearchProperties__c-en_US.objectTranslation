@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Daxtra Search Call List Page --></label>
+        <name>TR1__Daxtra_Search_Call_List_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Search Criteria Page Height --></label>
+        <name>TR1__Daxtra_Search_Criteria_Page_Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Search Criteria Page --></label>
+        <name>TR1__Daxtra_Search_Criteria_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Candidate Status Criteria --></label>
+        <name>TR1__Daxtra_Search_Default_Candidate_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Search Filter Fields --></label>
+        <name>TR1__Daxtra_Search_Filter_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Search Filters Class --></label>
+        <name>TR1__Daxtra_Search_Filters_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Enhanced Resume Preview (Beta) --></label>
+        <name>TR1__Enable_Enhanced_Resume_Preview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Results Additional Contact Fields --></label>
+        <name>TR1__Search_Results_Additional_Contact_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Results Default Page Size --></label>
+        <name>TR1__Search_Results_Default_Page_Size__c</name>
+    </fields>
+</CustomObjectTranslation>

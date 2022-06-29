@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Approve Reject Exp Report --></label>
+        <name>RC_Approve_Reject_Exp_Report</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_CandidateExpRepEdit --></label>
+        <name>RC_CandidateExpRepEdit</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_CandidateExpenseReports --></label>
+        <name>RC_CandidateExpenseReports</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Client Expense report --></label>
+        <name>RC_Client_Expense_report</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Client expense report detail --></label>
+        <name>RC_Client_expense_report_detail</name>
+    </fieldSets>
+    <fields>
+        <label><!-- All Approver --></label>
+        <name>All_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver Contact --></label>
+        <name>Approver_Contact__c</name>
+        <relationshipLabel><!-- Expense Reports (Approver Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>TR1__Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver Name --></label>
+        <name>TR1__Approver_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>TR1__Approver__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>TR1__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consultant Name --></label>
+        <name>TR1__Consultant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consultant --></label>
+        <name>TR1__Consultant__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Approver --></label>
+        <name>TR1__Expense_Approver__c</name>
+        <relationshipLabel><!-- Expense Reports (Expense Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Period End --></label>
+        <name>TR1__Expense_Period_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Period Start --></label>
+        <name>TR1__Expense_Period_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report Approved Date/Time --></label>
+        <name>TR1__Expense_Report_Approved_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report Total --></label>
+        <name>TR1__Expense_Report_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP Amount --></label>
+        <name>TR1__GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Mileage Total --></label>
+        <name>TR1__Non_Mileage_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubmitted</masterLabel>
+            <translation><!-- Unsubmitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Billable Amount --></label>
+        <name>TR1__TotalBillableAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>TR1__Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cell Phone Amount --></label>
+        <name>TR1__Total_Cell_Phone_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Client Gift --></label>
+        <name>TR1__Total_Client_Gift__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Home DSL Amount --></label>
+        <name>TR1__Total_Home_DSL_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Lodging Amount --></label>
+        <name>TR1__Total_Lodging_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Lodging --></label>
+        <name>TR1__Total_Lodging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Meals &amp; Entertainment Amount --></label>
+        <name>TR1__Total_Meals_Entertainment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Meals &amp; Entertainment --></label>
+        <name>TR1__Total_Meals_Entertainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Mileage Amount --></label>
+        <name>TR1__Total_Mileage_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Mileage --></label>
+        <name>TR1__Total_Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Other Amount --></label>
+        <name>TR1__Total_Other_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Other Transportation &amp; Parking Amo --></label>
+        <name>TR1__Total_Other_Transportation_Parking_Amo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Other --></label>
+        <name>TR1__Total_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Other Transportation &amp; Parking --></label>
+        <name>TR1__Total_Transportation_Parking__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Expense Portal --></label>
+        <name>TR1__Expense_Portal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal Expense --></label>
+        <name>TR1__Internal_Expense</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Expense Period End Date should be greater then Expense Period Start Date --></errorMessage>
+        <name>Date_Comparision_for_Start_and_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An approver can&apos;t update an unsubmitted or rejected Expense Report --></errorMessage>
+        <name>TR1__Approver_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Consultant can&apos;t update an Approved or Submitted Expense Report --></errorMessage>
+        <name>TR1__Consultant_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Approve --></label>
+        <name>TR1__Mass_Approve</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Reject --></label>
+        <name>TR1__Mass_Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Rate --></label>
+        <name>TR1__New_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Select_Existing_Rate --></label>
+        <name>TR1__Select_Existing_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_All_Receipts --></label>
+        <name>TR1__View_All_Receipts</name>
+    </webLinks>
+</CustomObjectTranslation>

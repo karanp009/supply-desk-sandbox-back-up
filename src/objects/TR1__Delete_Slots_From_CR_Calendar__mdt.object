@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Candidate_Availability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify how Candidate Availability label has to be displayed in pick list</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify how Candidate Availability label has to be displayed in pick list</inlineHelpText>
+        <label>Candidate Availability</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Closing_Report_Schedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify how Closing Report Schedule label has to be displayed in pick list</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify how Closing Report Schedule label has to be displayed in pick list</inlineHelpText>
+        <label>Closing Report Schedule</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_selected_options__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Default selected options</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Delete_Candidate_Availability__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Delete Candidate Availability</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Delete_Closing_Report_Schedule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Delete Closing Report Schedule</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Delete_Vacancy_Schedule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Delete Vacancy Schedule</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Replace_All__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This will remove any existing Closing report, Vacancy &amp; Candidate schedules &amp; create new schedules in the specified duration</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Replace All</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Vacancy_Schedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify how Vacancy Schedule label has to be displayed in pick list</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify how Vacancy Schedule label has to be displayed in pick list</inlineHelpText>
+        <label>Vacancy Schedule</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Delete Slots From CR Calendar</label>
+    <pluralLabel>Delete Slots From CR Calendar</pluralLabel>
+    <validationRules>
+        <fullName>TR1__Closing_Report_Schedule_is_Mandatory</fullName>
+        <active>true</active>
+        <description>Ensure, Delete Closing Report Schedule checkbox is always enabled</description>
+        <errorConditionFormula>IF(NOT(TR1__Delete_Closing_Report_Schedule__c) &amp;&amp; (TR1__Delete_Candidate_Availability__c || TR1__Delete_Vacancy_Schedule__c), true,false)</errorConditionFormula>
+        <errorMessage>Delete Closing Report Schedule has to be enabled when Delete Vacancy schedule or Delete Candidate availability is enabled</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

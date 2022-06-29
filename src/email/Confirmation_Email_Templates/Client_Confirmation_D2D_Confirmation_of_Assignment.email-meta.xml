@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>Client Confirmation - D2D: Confirmation of Assignment</name>
+    <style>freeForm</style>
+    <subject>Placement of {!TR1__Closing_Report__c.TR1__Person_Placed__c}</subject>
+    <textOnly>Dear {!TR1__Closing_Report__c.TR1__Contact__c}
+
+
+
+Thank you for choosing Supply Desk Limited to provide your supply staff. Please find below details of the assignment booked and the candidate who will be working with you.
+
+
+
+Assignment Details
+
+
+Candidate Name: {!TR1__Closing_Report__c.TR1__Person_Placed__c}
+Booking Type: {!TR1__Closing_Report__c.Booking_Type__c}
+Role Type: {!TR1__Closing_Report__c.Job_Title__c}
+Role Details: {!TR1__Job__c.Subject2__c}, {!TR1__Job__c.Year_Key_Stage__c}
+Any necessary experience, training or qualifications: {!TR1__Job__c.Trained_As__c}, {!TR1__Job__c.SEN_Experience__c}, {!TR1__Job__c.SEN_Additional_Experience__c}, {!TR1__Job__c.Skills_Training_Experience__c}
+Risks to Health and Safety: {!TR1__Closing_Report__c.HS_Notes_For_Confirmation_Letter__c}
+Location of School: {!TR1__Closing_Report__c.Client_Address__c}
+Hours of Work:  {!TR1__Closing_Report__c.Booking_Start_Time__c} - {!TR1__Closing_Report__c.Booking_End_Time__c}
+Working Days: {!TR1__Closing_Report__c.Booking_Day__c}
+Start Date: {!TR1__Closing_Report__c.CRS_Start_Date_Min__c}
+Anticipated Duration: Until {!TR1__Closing_Report__c.CRS_End_Date_max__c}
+Relevant Charge Rate(s):
+
+Daily Charge Rate:   {!TR1__Closing_Report__c.Maximum_Day_Charge_Rate__c}
+Half Day Charge Rate: {!TR1__Closing_Report__c.Maximum_Half_Day_Charge_Rate__c}
+Hourly Charge Rate: {!TR1__Closing_Report__c.Maximum_Hour_Charge_Rate__c}
+
+
+
+
+
+We confirm that the above candidate has the necessary experience, training, qualifications and authorisations (required by law and professional bodies) to work on the assignment and that the candidate has confirmed that he/she is willing to work on the assignment.  You can rest assured that the above named candidate has been fully vetted to ensure his/her suitability for the role.  We will send you a confirmation of the checks that have been carried out separately. Our standard Terms of Business apply to this assignment and are attached to this confirmation.
+
+
+
+Planning, Preparation and Assessment
+
+We understand that this is a daily cover role, and that {!TR1__Closing_Report__c.TR1__Person_Placed__c} will not be required to carry out any planning, preparation, reporting or assessment.  If {!TR1__Closing_Report__c.TR1__Person_Placed__c} is required to do so, there may be a supplementary daily charge payable to cover this additional work.
+
+
+
+Please let us know immediately if you consider that any of the details in this confirmation are incorrect.  Thank you again for your booking.
+
+
+
+Yours sincerely,
+
+
+{!TR1__Closing_Report__c.CreatedBy}
+
+Supply Desk {!TR1__Closing_Report__c.Branch__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

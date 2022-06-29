@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AM EndTime --></label>
+        <name>TR1__AM_EndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM StartTime --></label>
+        <name>TR1__AM_StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available color code --></label>
+        <name>TR1__Available_color_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked color code --></label>
+        <name>TR1__Booked_color_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calendar Date Format --></label>
+        <name>TR1__Calendar_Date_Format__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Shift --></label>
+        <name>TR1__Default_Shift__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default User Owned Records --></label>
+        <name>TR1__Default_User_Owned_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Start Day --></label>
+        <name>TR1__Default_Week_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance Field --></label>
+        <name>TR1__Distance_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance Units --></label>
+        <name>TR1__Distance_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- EndTime --></label>
+        <name>TR1__EndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Book Button --></label>
+        <name>TR1__Hide_Book_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Records Field --></label>
+        <name>TR1__My_Records_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- ObjectPrefixCA --></label>
+        <name>TR1__ObjectPrefixCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- ObjectPrefixJA --></label>
+        <name>TR1__ObjectPrefixJA__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM EndTime --></label>
+        <name>TR1__PM_EndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM StartTime --></label>
+        <name>TR1__PM_StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- SendConfirmation Later --></label>
+        <name>TR1__SendConfirmation_Later__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartTime --></label>
+        <name>TR1__StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tentative Color Code --></label>
+        <name>TR1__Tentative_Color_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailable color code --></label>
+        <name>TR1__Unavailable_color_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workshift Distance Field --></label>
+        <name>TR1__Workshift_Distance_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- month / agendaWeek / agendaDay --></help>
+        <label><!-- calenderView --></label>
+        <name>TR1__calenderView__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defaultweekstartdaynumber --></label>
+        <name>TR1__defaultweekstartdaynumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- isFullDay --></label>
+        <name>TR1__isFullDay__c</name>
+    </fields>
+    <fields>
+        <label><!-- isMedRecruitAdditionalFilters --></label>
+        <name>TR1__isMedRecruitAdditionalFilters__c</name>
+    </fields>
+    <fields>
+        <label><!-- isSendEmail --></label>
+        <name>TR1__isSendEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Clone --></label>
+        <name>TR1__is_Clone__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Create Vacancy --></label>
+        <name>TR1__is_Create_Vacancy__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Switch --></label>
+        <name>TR1__is_Switch__c</name>
+    </fields>
+</CustomObjectTranslation>

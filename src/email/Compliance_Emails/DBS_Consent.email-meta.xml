@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To confirm school consent when candidate has DBS in process - Cleared Pending</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>DBS in process Consent</name>
+    <style>formalLetter</style>
+    <subject>Consent for candidate with DBS in process</subject>
+    <textOnly>Dear XXXX
+
+
+
+I explained to you during our recent phone call that, although the DBS check is in process in respect of {!TR1__Closing_Report__c.TR1__Person_Placed__c}, we have not yet received the certificate. All other vetting and background checks, including the barred list check, have been completed.
+
+
+You confirmed that you are happy for {!TR1__Closing_Report__c.TR1__Person_Placed__c} to work on a temporary assignment at {!TR1__Closing_Report__c.TR1__Account__c}, whilst the DBS check is in process and you accept that Supply Desk is not liable in these circumstances for any matter related to the status of the DBS check.
+
+We agree to supply {!TR1__Closing_Report__c.TR1__Person_Placed__c} on this basis, and will notify you, when the DBS certificate has been received, if any relevant information is revealed.
+
+
+Kind regards,
+
+
+
+{!TR1__Closing_Report__c.TR1__Job_Credit__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

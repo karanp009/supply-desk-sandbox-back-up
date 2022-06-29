@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Should Adobe Sign copy the first Contact recipient’s Account lookup to the Agreement’s Account lookup? --></help>
+        <label><!-- Copy Contact Account --></label>
+        <name>echosign_dev1__Copy_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Should Adobe Sign copy the first Contact recipient’s Opportunity lookup to the Agreement’s Opportunity lookup? --></help>
+        <label><!-- Copy Contact Opportunity --></label>
+        <name>echosign_dev1__Copy_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies which Recipient type to create (Contact / Lead) in case no existing recipients (as specified in the Recipient Lookup Order) were found. --></help>
+        <label><!-- Auto Create Recipient Object --></label>
+        <name>echosign_dev1__Create_If_Not_Found__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to create missing recipients. New recipients will get created in case of Agreement Push Mapping/ Replace Signer/ Delegate Signer workflow. --></help>
+        <label><!-- Create Missing Recipients --></label>
+        <name>echosign_dev1__Create_Missing_Recipients__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to create/update Participation Sets --></help>
+        <label><!-- Enable Participation Sets --></label>
+        <name>echosign_dev1__Enable_Participation_Sets__c</name>
+    </fields>
+    <fields>
+        <help><!-- If a recipient email address belongs to one of these email domains, no Recipient Object matching (as specified in the Recipient Lookup Order) will be performed and the recipient will be stored as email address. --></help>
+        <label><!-- Recipient Lookup Domain Ignore List --></label>
+        <name>echosign_dev1__Recipient_Email_Domain_Ignore_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines the order for searching for a matching Recipient Object. E.g. If the value of this setting is ‘Contact, Lead, User’,  we will first try finding a Contact with the recipient’s email address, then a Lead and then a User. --></help>
+        <label><!-- Recipient Lookup Order --></label>
+        <name>echosign_dev1__Recipient_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to mark the recipients as &apos;Delegated&apos; in case they are delegated by Signer/Sender. These recipients will be hidden from Agreement View Page. --></help>
+        <label><!-- Update Delegated Recipients --></label>
+        <name>echosign_dev1__Update_Delegated_Recipients__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to update existing recipients attributes such as recipient status etc. --></help>
+        <label><!-- Update Recipients --></label>
+        <name>echosign_dev1__Update_Recipients__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to mark the recipients as &apos;Replaced&apos; in case they are replaced by Sender from Manage Page. These recipients will be hidden from Agreement View Page. --></help>
+        <label><!-- Update Replaced Recipients --></label>
+        <name>echosign_dev1__Update_Replaced_Recipients__c</name>
+    </fields>
+</CustomObjectTranslation>

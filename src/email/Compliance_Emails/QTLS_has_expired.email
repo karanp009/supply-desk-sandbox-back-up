@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><span style="font-family: arial;">QTLS expired,&nbsp;</span><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">{!TR1__Associated_Qualification__c.TR1__Contact__c}</font><font face="arial">&nbsp;can no longer be placed as a teacher in a maintained school – please contact candidate and any clients this candidate is placed with as a teacher.</font></div><div><font face="arial"><br></font></div><div><font face="arial">Please update candidate record SET options.</font></div>]]></td>
+</tr>
+</table>

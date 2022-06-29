@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Closing Report Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Closing Report Schedules</value>
+    </caseValues>
+    <fields>
+        <label><!-- AM Margin --></label>
+        <name>AM_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Credit --></label>
+        <name>Account_Manager_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Credit Forecasted GP --></label>
+        <name>Account_Manager_Forecasted_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Credit Percentage --></label>
+        <name>Account_Manager_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCS --></label>
+        <name>CCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF Margin --></label>
+        <name>CF_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF NICs --></label>
+        <name>CF_NICs__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF PAYE Margin --></label>
+        <name>CF_PAYE_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF Pension --></label>
+        <name>CF_Pension__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF Weekly Pay --></label>
+        <name>CF_Weekly_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSD End Time --></label>
+        <name>CSD_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSD Start Time --></label>
+        <name>CSD_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Date --></label>
+        <name>Cancelled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Availability --></label>
+        <name>Candidate_Availability__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Branch --></label>
+        <name>Candidate_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate --></label>
+        <name>Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>Closing_Report__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Daily Margin --></label>
+        <name>Daily_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Credit --></label>
+        <name>Development_Exec_Senior_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Forecasted GP --></label>
+        <name>Development_Exec_Senior_Forecasted_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Percentage --></label>
+        <name>Development_Exec_Senior_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Projected Charge --></label>
+        <name>Forecasted_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecasted Gross Profit --></label>
+        <name>Forecasted_Gross_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Projected Pay --></label>
+        <name>Forecasted_Shift_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Margin --></label>
+        <name>Hourly_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours --></label>
+        <name>Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSD End Time --></label>
+        <name>JSD_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSD Start Time --></label>
+        <name>JSD_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastTimeTriggerExecuted --></label>
+        <name>LastTimeTriggerExecuted__c</name>
+        <picklistValues>
+            <masterLabel>Ended</masterLabel>
+            <translation><!-- Ended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Credit --></label>
+        <name>Leader_Principal_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Credit Forecasted GP --></label>
+        <name>Leader_Principal_Forecasted_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Credit Percentage --></label>
+        <name>Leader_Principal_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit --></label>
+        <name>Mgr_Head_of_Branch_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit Percentage --></label>
+        <name>Mgr_Head_of_Branch_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit Forecasted GP --></label>
+        <name>Mgr_Head_of_Forecasted_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAYE Projected Margin - NI --></label>
+        <name>PAYE_Projected_Margin_NI1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAYE/Umbrella --></label>
+        <name>PAYE_Umbrella__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Margin --></label>
+        <name>PM_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- PR &gt; CR --></label>
+        <name>PR_CR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>PayType__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate --></label>
+        <name>Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type --></label>
+        <name>Pay_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll/Margin PAYE/Umbrella --></label>
+        <name>Payroll_Margin_PAYE_Umbrella__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Placed Id --></label>
+        <name>Person_Placed_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Placed --></label>
+        <name>Person_Placed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Shifts --></label>
+        <name>Projected_Shifts__c</name>
+    </fields>
+    <fields>
+        <label><!-- SC/AM Forcasted --></label>
+        <name>SC_AM_Forcasted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Credit --></label>
+        <name>Sales_Consultant_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Credit Forecasted GP --></label>
+        <name>Sales_Consultant_Forecasted_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Credit Percentage --></label>
+        <name>Sales_Consultant_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Date --></label>
+        <name>Schedule_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Past Contract End Date --></label>
+        <name>Schedule_Past_Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule date greater CED --></label>
+        <name>Schedule_date_greater_CED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedules Count --></label>
+        <name>Schedules_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>Shift__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extra Duties</masterLabel>
+            <translation><!-- Extra Duties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Day</masterLabel>
+            <translation><!-- Full Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stay On September 2014? --></label>
+        <name>Stay_On_September_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Margin --></label>
+        <name>Total_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Projected Days --></label>
+        <name>Total_Projected_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Day --></label>
+        <name>Trial_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Umbrella Hourly --></label>
+        <name>Umbrella_Hourly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Umbrella Projected Margin - NI --></label>
+        <name>Umbrella_Projected_Margin_NI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Schedule --></label>
+        <name>Vacancy_Schedule__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Shift Type --></label>
+        <name>Vacancy_Shift_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- WeekEndDate --></label>
+        <name>WeekEndDate__c</name>
+    </fields>
+    <layouts>
+        <layout>Closing Report Schedule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Profit Splits --></label>
+            <section>Profit Splits</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Compliance_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Associated_Qualifications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Associated_Qualifications__r$Barred_List_Date_Checked__c</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Associated_Qualifications__r$Barred_List_Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Associated_Qualifications__r$Barred_List_Results__c</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Associated_Qualifications__r$TR1__Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.TR1__Associated_Qualifications__r$TR1__Qualification__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Barred List</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Compliance_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Clearance Pending,Cleared</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.TR1__Associated_Qualifications__r$Barred_List_Expiration_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>NEXT_N_DAYS:30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Pay_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FE Qualified,OTT,Perm,Support/Unqualified</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Division__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TRA Check-Non Teachers (New)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>People_with_Associated_Qualifications__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact.TR1__Associated_Qualifications__r$Barred_List_Expiration_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact.TR1__Associated_Qualifications__r$Barred_List_Expiration_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

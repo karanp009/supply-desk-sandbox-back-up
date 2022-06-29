@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Fyre_View_VMS --></label>
+        <name>TR1__Fyre_View_VMS</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Separate Multiple Emails by &quot;;&quot; --></help>
+        <label><!-- Notification Email Addresses --></label>
+        <name>TR1__Notification_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>TR1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Url --></label>
+        <name>TR1__Target_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>TR1__Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- VMS Client Account --></label>
+        <name>TR1__VMSClientAccount__c</name>
+        <relationshipLabel><!-- VMS Credentials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VMS Type --></label>
+        <name>TR1__VMSType__c</name>
+    </fields>
+    <fields>
+        <label><!-- VMS ID --></label>
+        <name>TR1__VMS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manage Password? --></label>
+        <name>TR1__managed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__type__c</name>
+        <picklistValues>
+            <masterLabel>agile1</masterLabel>
+            <translation><!-- agile1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>beeline</masterLabel>
+            <translation><!-- beeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>evolution</masterLabel>
+            <translation><!-- evolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fieldglass</masterLabel>
+            <translation><!-- fieldglass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iqnavigator</masterLabel>
+            <translation><!-- iqnavigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>peoplefluent</masterLabel>
+            <translation><!-- peoplefluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>staffenabler</masterLabel>
+            <translation><!-- staffenabler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>superior</masterLabel>
+            <translation><!-- superior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>wand</masterLabel>
+            <translation><!-- wand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zerochaos</masterLabel>
+            <translation><!-- zerochaos --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- http://getfyre.com/ --></description>
+        <label><!-- Fyre --></label>
+        <name>TR1__Fyre</name>
+    </recordTypes>
+</CustomObjectTranslation>

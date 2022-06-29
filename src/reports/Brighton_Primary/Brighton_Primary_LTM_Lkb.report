@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Closing_Report_Schedule__c.PAYE_Projected_Margin_NI1__c:SUM + Closing_Report_Schedule__c.Umbrella_Projected_Margin_NI__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Gross Margin</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Closing_Report_Schedule__c.PAYE_Projected_Margin_NI1__c:SUM + Closing_Report_Schedule__c.Umbrella_Projected_Margin_NI__c:SUM) / Closing_Report_Schedule__c.Total_Projected_Days__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Gross Profit Per Day</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Account$Id</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.TR1__Closing_Reports__r.Closing_Report_Schedules__r$Total_Projected_Days__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Division__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brighton Primary</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.TR1__Closing_Reports__r.Closing_Report_Schedules__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Booked</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$ShippingPostalCode</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Brighton Primary LTM</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Clients_With_Closing_Reports_and_CRS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.TR1__Closing_Reports__r.Closing_Report_Schedules__r$Schedule_Date__c</dateColumn>
+        <endDate>2022-05-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-05-01</startDate>
+    </timeFrameFilter>
+</Report>

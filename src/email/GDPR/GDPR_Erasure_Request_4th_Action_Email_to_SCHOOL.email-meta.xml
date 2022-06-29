@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GDPR Erasure Request - 4th Action: Email to SCHOOL</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>GDPR Erasure Request - 4th Action: Email to SCHOOL</name>
+    <style>formalLetter</style>
+    <subject>FAO - DPL GDPR Erasure Request - Delete Candidate information</subject>
+    <textOnly>GDPR Erasure Request - Delete Candidate information
+
+Dear DPL
+
+Re. {!Contact.Salutation}{!Contact.FirstName}{!Contact.LastName},
+
+I would like to inform you that we have received a data subject request from {!Contact.Salutation}{!Contact.FirstName}{!Contact.LastName}
+
+{!Contact.FirstName}{!Contact.LastName} has requested for their data to be deleted. As a joint data controller and as part of our compliance with GDPR, we must ensure that the data subject request is carried out.
+
+We appreciate that there may be legal or regulatory reasons as to why you are unable to delete this personal data. If the data subject request cannot be carried out due to regularity or legal exemptions, please let me know within 28 days of the receipt of this email.
+
+Thank you
+
+
+Regards,
+
+Data Processing Lead - Supplydesk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

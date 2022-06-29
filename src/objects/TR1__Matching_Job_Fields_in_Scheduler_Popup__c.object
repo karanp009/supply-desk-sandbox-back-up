@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Some job fields should be populated in the Booking popup and should translate into Closing Report fields.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Closing_Report_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is required to mention the field name of the Closing Report Object where we want to populate the values from the matching Job&apos;s field values in the Scheduler Booking Popup.</description>
+        <externalId>false</externalId>
+        <label>Closing Report Field API Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is required to mention the field name of the Job Object which we want to populate in the Scheduler Booking Popup.</description>
+        <externalId>false</externalId>
+        <label>Job Field API Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Matching Job Fields in Scheduler Popup</label>
+    <visibility>Public</visibility>
+</CustomObject>

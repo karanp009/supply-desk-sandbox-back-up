@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Helper methods on/off switch</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Always_add_new_shifts_to_existing_CR__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Always add new shifts to existing CR</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Book_using_check_box__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In scheduler pages booking popup, users can book shifts either by providing start &amp; end date values or by checking respective job shift check boxes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be more useful when there are multiple job shifts matching same candidate availability.</inlineHelpText>
+        <label>Book using check box</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Booking_Confirmation_by_SubStatus__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When Checked, user can use Sub-Status field to determine whether the booking is a Tentative booking or Confirmed Booking. This will be applicable in Candidate, Vacancy Schedule, CR calendars &amp; Scheduler pages.</description>
+        <externalId>false</externalId>
+        <label>Booking Confirmation by SubStatus</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Placement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is to book the candidates from Job/CR Calendar irrespective of whether Candidate availabilities are created or not</description>
+        <externalId>false</externalId>
+        <label>Candidate Placement</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__CreateOpportunityDiscussedRecord__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>provide the name of method to be executed or not executed via scheduler</description>
+        <externalId>false</externalId>
+        <label>Create Opportunity Discussed Record</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__CreateTimesheetsForPastOrThisWeek__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Create timesheet for past or this week</description>
+        <externalId>false</externalId>
+        <label>CreateTimesheetsForPastOrThisWeek</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Create_unavailable_CA_for_simple_Job__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting to enable unavailable CA creation while creating a closing/placement report for a simple job</description>
+        <externalId>false</externalId>
+        <label>Create unavailable CA for simple Job</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Date_View__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deprecated. It can be Month, Week or Day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deprecated. It is not in Use now. Instead use Default View Custom Metadata.</inlineHelpText>
+        <label>Default Date View</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_CAs_on_Filter_Jobs_page__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field tells if candidate availabilities on filter jobs page. If checked, candidate availabilities will be shown. If unchecked, vacancy schedules will be shown.</description>
+        <externalId>false</externalId>
+        <label>Display CAs on Filter Jobs page</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_VS_in_CR_Calendar__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When this is enabled all open Vacancy schedules of the Job will be displayed in CR Calendar</description>
+        <externalId>false</externalId>
+        <label>Display VS in CR Calendar</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_V_shifts_on_Job_Schedular_page__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field tells if vacancy timings on job schedular page. If checked, vacancy timings will be shown. If unchecked, candidate availability timings will be shown.</description>
+        <externalId>false</externalId>
+        <label>Display V shifts on Job Schedular page</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Distance_Type__c</fullName>
+        <defaultValue>&apos;KM&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Distance Type (KM or Miles)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KM/Miles</inlineHelpText>
+        <label>Distance Type</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__GeoLocationsTriggerSwitch__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used to On/Off the trigger used to update Geo Locations</description>
+        <externalId>false</externalId>
+        <label>GeoLocationsTriggerSwitch</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Medrecruit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>used for unique Medrecuit changes</description>
+        <externalId>false</externalId>
+        <label>AdditionalSchedulerOptions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__My_Candidates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Fetches only the candidates owned by a user on filter candidates</description>
+        <externalId>false</externalId>
+        <label>My Candidates</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__My_Vacancies__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>fetches only the Jobs that are owned by user</description>
+        <externalId>false</externalId>
+        <label>My Vacancies</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Number_of_Records_Per_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is to store the Number of Records Per Page in the Scheduler pages</description>
+        <externalId>false</externalId>
+        <label>Number of Records Per Page</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Partial_Match__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Field is created to indicate  Full Match or Partial Match</description>
+        <externalId>false</externalId>
+        <label>Partial Match</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Previously_Placed_Anywhere__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When this is enabled, Previously Placed Anywhere Checkbox will be shown on Job Scheduler</description>
+        <externalId>false</externalId>
+        <label>Previously Placed Anywhere</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Previously_Placed_at_Client__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Fetch the candidates placed with the same account (on Job).</description>
+        <externalId>false</externalId>
+        <label>Previously Placed at Client</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Pull_Shifts__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pull Shift Timings</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Confirmation_Letter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>used to send confirmation letters from closing report trigger</description>
+        <externalId>false</externalId>
+        <label>Send Confirmation Letter</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Sort_By_Job_Life_Time__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This will indicate whether all vacancies of the Job has to be considered while sorting the Candidates</description>
+        <externalId>false</externalId>
+        <label>Sort By Job Life Time</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Worksite_Location__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Worksite Location</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Scheduler Methods</label>
+    <visibility>Public</visibility>
+</CustomObject>

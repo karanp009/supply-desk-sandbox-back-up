@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>NQT Induction Due</name>
+    <style>freeForm</style>
+    <subject>The deadline to complete your NQT Induction is approaching</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We can see from our records that it will soon be 5 years since you were awarded QTS and our records show that you have not started or completed your induction in this time.  DfE regulations state that an NQT may only do short-term or casual supply work for 5 years from the date that they have been awarded QTS before beginning or continuing induction.
+
+Once the 5 years has passed an NQT is then not allowed to teach in a maintained school or non-maintained special school until he/she takes a post that will count towards induction.
+
+Please contact us if our records are incorrect and you have completed your induction or if you would like to discuss Long Term or Permanent positions which may be available so you can start or continue your induction.
+
+If you have not completed your NQT induction then we will be able to continue to offer you short-term supply work in support staff roles within our schools.
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

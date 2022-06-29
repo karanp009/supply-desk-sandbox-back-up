@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>_</fullName>
+        <default>false</default>
+        <label>_</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Barking &amp; Dag</fullName>
+        <default>false</default>
+        <label>Teach In Barking &amp; Dag</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Basildon</fullName>
+        <default>false</default>
+        <label>Teach In Basildon</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Buckinhamshire</fullName>
+        <default>false</default>
+        <label>Teach In Buckinhamshire</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach in Grimsby</fullName>
+        <default>false</default>
+        <label>Teach in Grimsby</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Hackney</fullName>
+        <default>false</default>
+        <label>Teach In Hackney</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Harrow</fullName>
+        <default>false</default>
+        <label>Teach In Harrow</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Havering</fullName>
+        <default>false</default>
+        <label>Teach In Havering</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Hertfordshire</fullName>
+        <default>false</default>
+        <label>Teach In Hertfordshire</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach IN Newham</fullName>
+        <default>false</default>
+        <label>Teach IN Newham</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Reading</fullName>
+        <default>false</default>
+        <label>Teach In Reading</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Redbridge</fullName>
+        <default>false</default>
+        <label>Teach In Redbridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Slough</fullName>
+        <default>false</default>
+        <label>Teach In Slough</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Thurrock</fullName>
+        <default>false</default>
+        <label>Teach In Thurrock</label>
+    </customValue>
+    <customValue>
+        <fullName>Teach In Wokingham</fullName>
+        <default>false</default>
+        <label>Teach In Wokingham</label>
+    </customValue>
+    <customValue>
+        <fullName>North Brisbane</fullName>
+        <default>false</default>
+        <label>North Brisbane</label>
+    </customValue>
+    <customValue>
+        <fullName>East Brisbane</fullName>
+        <default>false</default>
+        <label>East Brisbane</label>
+    </customValue>
+    <customValue>
+        <fullName>South Brisbane</fullName>
+        <default>false</default>
+        <label>South Brisbane</label>
+    </customValue>
+    <customValue>
+        <fullName>Brisbane West</fullName>
+        <default>false</default>
+        <label>Brisbane West</label>
+    </customValue>
+    <customValue>
+        <fullName>Brisbane CBD</fullName>
+        <default>false</default>
+        <label>Brisbane CBD</label>
+    </customValue>
+    <customValue>
+        <fullName>QLD Other</fullName>
+        <default>false</default>
+        <label>QLD Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Barking &amp; Dagenham</fullName>
+        <default>false</default>
+        <label>Barking &amp; Dagenham</label>
+    </customValue>
+    <customValue>
+        <fullName>Barnet</fullName>
+        <default>false</default>
+        <label>Barnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Bexley</fullName>
+        <default>false</default>
+        <label>Bexley</label>
+    </customValue>
+    <customValue>
+        <fullName>Brent</fullName>
+        <default>false</default>
+        <label>Brent</label>
+    </customValue>
+    <customValue>
+        <fullName>Bromley</fullName>
+        <default>false</default>
+        <label>Bromley</label>
+    </customValue>
+    <customValue>
+        <fullName>Camden</fullName>
+        <default>false</default>
+        <label>Camden</label>
+    </customValue>
+    <customValue>
+        <fullName>City of Westminster</fullName>
+        <default>false</default>
+        <label>City of Westminster</label>
+    </customValue>
+    <customValue>
+        <fullName>Croydon</fullName>
+        <default>false</default>
+        <label>Croydon</label>
+    </customValue>
+    <customValue>
+        <fullName>Ealing</fullName>
+        <default>false</default>
+        <label>Ealing</label>
+    </customValue>
+    <customValue>
+        <fullName>Enfield</fullName>
+        <default>false</default>
+        <label>Enfield</label>
+    </customValue>
+    <customValue>
+        <fullName>Essex</fullName>
+        <default>false</default>
+        <label>Essex</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenwich</fullName>
+        <default>false</default>
+        <label>Greenwich</label>
+    </customValue>
+    <customValue>
+        <fullName>Hackney</fullName>
+        <default>false</default>
+        <label>Hackney</label>
+    </customValue>
+    <customValue>
+        <fullName>Hammersmith &amp; Fullham</fullName>
+        <default>false</default>
+        <label>Hammersmith &amp; Fullham</label>
+    </customValue>
+    <customValue>
+        <fullName>Haringey</fullName>
+        <default>false</default>
+        <label>Haringey</label>
+    </customValue>
+    <customValue>
+        <fullName>Harrow</fullName>
+        <default>false</default>
+        <label>Harrow</label>
+    </customValue>
+    <customValue>
+        <fullName>Havering</fullName>
+        <default>false</default>
+        <label>Havering</label>
+    </customValue>
+    <customValue>
+        <fullName>Hillingdon</fullName>
+        <default>false</default>
+        <label>Hillingdon</label>
+    </customValue>
+    <customValue>
+        <fullName>Hounslow</fullName>
+        <default>false</default>
+        <label>Hounslow</label>
+    </customValue>
+    <customValue>
+        <fullName>Islington</fullName>
+        <default>false</default>
+        <label>Islington</label>
+    </customValue>
+    <customValue>
+        <fullName>Kensington &amp; Chelsea</fullName>
+        <default>false</default>
+        <label>Kensington &amp; Chelsea</label>
+    </customValue>
+    <customValue>
+        <fullName>Kingston</fullName>
+        <default>false</default>
+        <label>Kingston</label>
+    </customValue>
+    <customValue>
+        <fullName>Lambeth</fullName>
+        <default>false</default>
+        <label>Lambeth</label>
+    </customValue>
+    <customValue>
+        <fullName>Lewisham</fullName>
+        <default>false</default>
+        <label>Lewisham</label>
+    </customValue>
+    <customValue>
+        <fullName>Merton</fullName>
+        <default>false</default>
+        <label>Merton</label>
+    </customValue>
+    <customValue>
+        <fullName>Newham</fullName>
+        <default>false</default>
+        <label>Newham</label>
+    </customValue>
+    <customValue>
+        <fullName>Redbridge</fullName>
+        <default>false</default>
+        <label>Redbridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Richmond</fullName>
+        <default>false</default>
+        <label>Richmond</label>
+    </customValue>
+    <customValue>
+        <fullName>Southwark</fullName>
+        <default>false</default>
+        <label>Southwark</label>
+    </customValue>
+    <customValue>
+        <fullName>Sutton</fullName>
+        <default>false</default>
+        <label>Sutton</label>
+    </customValue>
+    <customValue>
+        <fullName>Tower Hamlets</fullName>
+        <default>false</default>
+        <label>Tower Hamlets</label>
+    </customValue>
+    <customValue>
+        <fullName>Waltham Forest</fullName>
+        <default>false</default>
+        <label>Waltham Forest</label>
+    </customValue>
+    <customValue>
+        <fullName>Wandsworth</fullName>
+        <default>false</default>
+        <label>Wandsworth</label>
+    </customValue>
+    <masterLabel>Teach In Scheme</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

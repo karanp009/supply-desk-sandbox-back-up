@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The different Objects and their FieldSet details which will be used to display Information in dropdowns</description>
+    <fields>
+        <fullName>TR1__FieldSet_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API of the FieldSet using which we can show more info in the Lookup of the given Object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>FieldSet Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API of the Object of which the lookup needs to be displayed with more info.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Object Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>ATS Record Lookup Setting</label>
+    <pluralLabel>ATS Record Lookup Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

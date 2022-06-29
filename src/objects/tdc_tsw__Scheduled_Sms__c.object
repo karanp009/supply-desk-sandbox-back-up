@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>tdc_tsw__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Additional_Record_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Additional Record Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Attached_Files__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tdc_tsw__Attachments_Ids__c), &quot;&quot;, 
+HYPERLINK(&apos;/servlet/servlet.FileDownload?file=&apos;+LEFT(tdc_tsw__Attachments_Ids__c,18),IMAGE(&apos;/resource/tdc_tsw__Lightning_Resource/icons/doctype/&apos;+RIGHT(LEFT(tdc_tsw__Attachments_Ids__c,31),12),&apos;&apos;))&amp;&quot; &quot;&amp; 
+
+IF(VALUE(RIGHT(tdc_tsw__Attachments_Ids__c,(LEN(tdc_tsw__Attachments_Ids__c)-(LEN(tdc_tsw__Attachments_Ids__c)-1))))&gt;1, 
+HYPERLINK(&apos;/servlet/servlet.FileDownload?file=&apos;+LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)),18),IMAGE(&apos;/resource/tdc_tsw__Lightning_Resource/icons/doctype/&apos;+RIGHT(LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)),31),12),&apos;&apos;))&amp;&quot; &quot;&amp; 
+
+IF(VALUE(RIGHT(tdc_tsw__Attachments_Ids__c,(LEN(tdc_tsw__Attachments_Ids__c)-(LEN(tdc_tsw__Attachments_Ids__c)-1))))&gt;2, 
+HYPERLINK(&apos;/servlet/servlet.FileDownload?file=&apos;+LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)+1)),18),IMAGE(&apos;/resource/tdc_tsw__Lightning_Resource/icons/doctype/&apos;+RIGHT(LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)+1)),31),12),&apos;&apos;))&amp;&quot; &quot;&amp; 
+
+IF(VALUE(RIGHT(tdc_tsw__Attachments_Ids__c,(LEN(tdc_tsw__Attachments_Ids__c)-(LEN(tdc_tsw__Attachments_Ids__c)-1))))&gt;3, 
+HYPERLINK(&apos;/servlet/servlet.FileDownload?file=&apos;+LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)+1)+1)),18),IMAGE(&apos;/resource/tdc_tsw__Lightning_Resource/icons/doctype/&apos;+RIGHT(LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)+1)+1)), 31),12),&apos;&apos;))&amp;&quot; &quot;&amp; 
+
+IF(VALUE(RIGHT(tdc_tsw__Attachments_Ids__c,(LEN(tdc_tsw__Attachments_Ids__c)-(LEN(tdc_tsw__Attachments_Ids__c)-1))))&gt;4, 
+HYPERLINK(&apos;/servlet/servlet.FileDownload?file=&apos;+LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)+1)+1)+1)),18),IMAGE(&apos;/resource/tdc_tsw__Lightning_Resource/icons/doctype/&apos;+RIGHT(LEFT(RIGHT(tdc_tsw__Attachments_Ids__c,LEN(tdc_tsw__Attachments_Ids__c)-FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c,FIND(&apos;,&apos;,tdc_tsw__Attachments_Ids__c)+1)+1)+1)), 31),12),&apos;&apos;)),&quot;&quot;),&quot;&quot;),&quot;&quot;),&quot;&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attached Files</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Attachments_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attachments Ids</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__CampaignMember_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CampaignMember Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__CampaignMembersType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign Members Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Document_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attachment/Document Id</label>
+        <length>94</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__IsEveryDay__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Every Day ?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__IsEveryMonth__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Every Month ?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Last_SMS_Sent_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last SMS Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Message_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Message Text</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Next_SMS_Send_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Next SMS Send Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Object Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Phone_Api__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Phone Api</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Question__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Question</label>
+        <referenceTo>tdc_tsw__Question__c</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Related_Object_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Related Object Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__SMS_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SMS Template</label>
+        <referenceTo>tdc_tsw__Message_Template__c</referenceTo>
+        <relationshipLabel>Scheduled SMS</relationshipLabel>
+        <relationshipName>Scheduled_SMS</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Scheduled_JobId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scheduled JobId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Scheduled_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scheduled Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Sender_Number_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sender Number Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Sender_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sender Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__isParentRecord__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used for Incoming SMS owner in Schedule case</description>
+        <externalId>false</externalId>
+        <label>isParentRecord</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tdc_tsw__isSent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>isSent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Scheduled SMS</label>
+    <listViews>
+        <fullName>tdc_tsw__Canceled_Scheduled_SMS</fullName>
+        <columns>NAME</columns>
+        <columns>tdc_tsw__Object_Name__c</columns>
+        <columns>tdc_tsw__Message_Text__c</columns>
+        <columns>tdc_tsw__Scheduled_Time__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tdc_tsw__Scheduled_JobId__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Canceled Scheduled SMS</label>
+    </listViews>
+    <listViews>
+        <fullName>tdc_tsw__Canceled_Scheduled_SMS_With_One_Job</fullName>
+        <columns>NAME</columns>
+        <columns>tdc_tsw__Scheduled_Time__c</columns>
+        <columns>tdc_tsw__isSent__c</columns>
+        <columns>tdc_tsw__Message_Text__c</columns>
+        <columns>tdc_tsw__SMS_Template__c</columns>
+        <columns>tdc_tsw__Next_SMS_Send_Date__c</columns>
+        <columns>tdc_tsw__Last_SMS_Sent_Date__c</columns>
+        <columns>tdc_tsw__Contact__c</columns>
+        <columns>tdc_tsw__Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tdc_tsw__Scheduled_JobId__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>tdc_tsw__Next_SMS_Send_Date__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>tdc_tsw__isSent__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Canceled Scheduled SMS With One Job</label>
+    </listViews>
+    <listViews>
+        <fullName>tdc_tsw__Scheduled_SMS_With_One_Job</fullName>
+        <columns>NAME</columns>
+        <columns>tdc_tsw__Scheduled_Time__c</columns>
+        <columns>tdc_tsw__isSent__c</columns>
+        <columns>tdc_tsw__Message_Text__c</columns>
+        <columns>tdc_tsw__SMS_Template__c</columns>
+        <columns>tdc_tsw__Last_SMS_Sent_Date__c</columns>
+        <columns>tdc_tsw__Next_SMS_Send_Date__c</columns>
+        <columns>tdc_tsw__Contact__c</columns>
+        <columns>tdc_tsw__Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tdc_tsw__Scheduled_JobId__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>tdc_tsw__Next_SMS_Send_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>tdc_tsw__isSent__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Scheduled SMS With One Job</label>
+    </listViews>
+    <listViews>
+        <fullName>tdc_tsw__Scheduled_Sms</fullName>
+        <columns>NAME</columns>
+        <columns>tdc_tsw__Scheduled_JobId__c</columns>
+        <columns>tdc_tsw__Object_Name__c</columns>
+        <columns>tdc_tsw__IsEveryDay__c</columns>
+        <columns>tdc_tsw__IsEveryMonth__c</columns>
+        <columns>tdc_tsw__Message_Text__c</columns>
+        <columns>tdc_tsw__Last_SMS_Sent_Date__c</columns>
+        <columns>tdc_tsw__Next_SMS_Send_Date__c</columns>
+        <columns>tdc_tsw__End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tdc_tsw__Next_SMS_Send_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>tdc_tsw__Scheduled_JobId__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Scheduled SMS</label>
+    </listViews>
+    <listViews>
+        <fullName>tdc_tsw__Sent_SMS1</fullName>
+        <columns>NAME</columns>
+        <columns>tdc_tsw__Scheduled_JobId__c</columns>
+        <columns>tdc_tsw__Object_Name__c</columns>
+        <columns>tdc_tsw__IsEveryDay__c</columns>
+        <columns>tdc_tsw__IsEveryMonth__c</columns>
+        <columns>tdc_tsw__Message_Text__c</columns>
+        <columns>tdc_tsw__Last_SMS_Sent_Date__c</columns>
+        <columns>tdc_tsw__Next_SMS_Send_Date__c</columns>
+        <columns>tdc_tsw__End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tdc_tsw__Next_SMS_Send_Date__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>tdc_tsw__Scheduled_JobId__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Sent SMS</label>
+    </listViews>
+    <listViews>
+        <fullName>tdc_tsw__Sent_SMS_With_One_Job</fullName>
+        <columns>NAME</columns>
+        <columns>tdc_tsw__Scheduled_Time__c</columns>
+        <columns>tdc_tsw__isSent__c</columns>
+        <columns>tdc_tsw__SMS_Template__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>tdc_tsw__Message_Text__c</columns>
+        <columns>tdc_tsw__Last_SMS_Sent_Date__c</columns>
+        <columns>tdc_tsw__Next_SMS_Send_Date__c</columns>
+        <columns>tdc_tsw__Contact__c</columns>
+        <columns>tdc_tsw__Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>tdc_tsw__isSent__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>tdc_tsw__Next_SMS_Send_Date__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Sent SMS With One Job</label>
+    </listViews>
+    <nameField>
+        <label>Scheduled Sms Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Scheduled SMS</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>tdc_tsw__Scheduled_Time__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>tdc_tsw__isSent__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>tdc_tsw__Message_Text__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>tdc_tsw__SMS_Template__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>tdc_tsw__Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>tdc_tsw__Account__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <listViewButtons>tdc_tsw__Cancel_Scheduled_SMS</listViewButtons>
+        <searchResultsAdditionalFields>tdc_tsw__Scheduled_Time__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>tdc_tsw__isSent__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>tdc_tsw__Message_Text__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>tdc_tsw__SMS_Template__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>tdc_tsw__Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>tdc_tsw__Account__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>tdc_tsw__Cancel_Scheduled_SMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Cancel Scheduled SMS</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&apos;/js/functions.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/resource/tdc_tsw__jQueryForPopup/jQuery/jquery-1.8.2.min.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/resource/tdc_tsw__jQueryForPopup/jQuery/ui/jquery-ui-1.9.1.custom.min.js&apos;)} 
+
+var updateRecords = []; 
+var objIds = &apos;&apos;; 
+var records = {!GETRECORDIDS( $ObjectType.tdc_tsw__Scheduled_Sms__c )}; 
+if(records.length&lt;1) 
+alert(&apos;Please Select at Least One Row !&apos;); 
+else 
+{ 
+userConsent = confirm(records .length +&apos; Record(s) will be Updated. Continue ? &apos;); 
+if(userConsent == true) 
+{ 
+try 
+{ 
+for (var a=0; a&lt;records.length; a++){ 
+objIds = objIds + &apos;,&apos; + records[a]; 
+var selectedRecord = new sforce.SObject(&quot;tdc_tsw__Scheduled_Sms__c&quot;); 
+selectedRecord.Id = records[a]; 
+selectedRecord.tdc_tsw__Scheduled_JobId__c = &apos; &apos;; 
+selectedRecord.tdc_tsw__Next_SMS_Send_Date__c = null;
+updateRecords.push(selectedRecord); 
+} 
+upResult = sforce.connection.update(updateRecords); 
+var x =0; 
+for (var i=0; i&lt;records.length; i++){ 
+if (upResult[i].getBoolean(&quot;success&quot;)) 
+{ 
+x++; 
+} 
+else{ 
+x--; 
+} 
+} 
+if(upResult.length == x) 
+{ 
+alert(&apos;The Record(s) were Updated Successfully.&apos;); 
+window.location.reload(); 
+} 
+else{ 
+alert(&apos;The Record(s) Could Not be Updated. Error Message: &apos; +upResult[0].errors.message); 
+} 
+}catch(exception){ 
+var msgException = exception; 
+var errMsg = &quot;{faultcode:&apos;sf:API_DISABLED_FOR_ORG&apos;, faultstring:&apos;API_DISABLED_FOR_ORG: API is not enabled for this Organization or Partner&apos;, detail:{UnexpectedErrorFault:{exceptionCode:&apos;API_DISABLED_FOR_ORG&apos;, exceptionMessage:&apos;API is not enabled for this Organization or Partner&apos;, }, }, }&quot;; 
+if(msgException == errMsg){
+
+
+requireCssFile(&apos;/resource/jQueryForPopup/jQuery/ui/css/ui-lightness/jquery-ui-1.9.1.custom.min.css&apos;);
+
+function requireCssFile(filename)
+{
+var fileref = document.createElement(&apos;link&apos;);
+fileref.setAttribute(&apos;rel&apos;, &apos;stylesheet&apos;);
+fileref.setAttribute(&apos;type&apos;, &apos;text/css&apos;);
+fileref.setAttribute(&apos;href&apos;, filename);
+document.getElementsByTagName(&apos;head&apos;)[0].appendChild(fileref);
+} 
+ 
+var objApi = &apos;tdc_tsw__Scheduled_Sms__c&apos;; 
+var fieldApi = &apos;tdc_tsw__Scheduled_JobId__c&apos;; 
+var fieldVal = &apos; &apos;; 
+var url = window.location.href; 
+var j$ = jQuery.noConflict(); 
+var iframe_url = &apos;{!URLFOR(&quot;/apex/tdc_tsw__UpdateThroughButton?id=&quot;)}&apos;+objIds+&apos;&amp;objApi=&apos;+objApi+&apos;&amp;fieldApi=&apos;+fieldApi+&apos;&amp;fieldVal=&apos;+fieldVal+&apos;&amp;RUrl=&apos;+url; 
+var j$modalDialog = j$(&apos;&lt;div id=&quot;opppopup&quot;&gt;&lt;/div&gt;&apos;) 
+.html(&apos;&lt;iframe id=&quot;iframeContentId&quot; src=&quot;&apos; + iframe_url + &apos;&quot; frameborder=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;no&quot; /&gt;&apos;) 
+.dialog({height: 125});
+j$modalDialog.dialog(&apos;open&apos;);  
+}else{ 
+alert(exception); 
+} 
+} 
+} 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>tdc_tsw__Ltng_Cancel_Scheduled_SMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Cancel Scheduled SMS</masterLabel>
+        <openType>noSidebar</openType>
+        <page>tdc_tsw__CancelScheduleForLightning</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Holiday</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Holiday</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Holiday --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Complete Week Starts From --></label>
+        <name>Complete_Week_Starts_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date WeekEndDate --></label>
+        <name>End_Date_WeekEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- How many compelete week holiday --></label>
+        <name>How_many_compelete_week_holiday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date WeekEndDate --></label>
+        <name>Start_Date_WeekEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy --></label>
+        <name>Vacancy__c</name>
+        <relationshipLabel><!-- Holiday --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

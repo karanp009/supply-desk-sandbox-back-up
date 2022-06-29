@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BatchJobId --></label>
+        <name>smagicinteract__BatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expexted SMS --></label>
+        <name>smagicinteract__Expexted_SMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- List View Configuration --></label>
+        <name>smagicinteract__List_View_Configuration__c</name>
+        <relationshipLabel><!-- List View Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Messages Delivered --></label>
+        <name>smagicinteract__Messages_Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Messages Processed --></label>
+        <name>smagicinteract__Messages_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt Out Records --></label>
+        <name>smagicinteract__Opt_Out_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optout Field --></label>
+        <name>smagicinteract__Optout_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Fields --></label>
+        <name>smagicinteract__Phone_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Text --></label>
+        <name>smagicinteract__SMS_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Name --></label>
+        <name>smagicinteract__Template_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Taken --></label>
+        <name>smagicinteract__Time_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Records --></label>
+        <name>smagicinteract__Total_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- status --></label>
+        <name>smagicinteract__status__c</name>
+    </fields>
+</CustomObjectTranslation>

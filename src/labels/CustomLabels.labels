@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>BatchSizeForTimesheetUpdateQueueableClass</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchSizeForTimesheetUpdateQueueableClass</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>CPU_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPU_Limit</shortDescription>
+        <value>9000</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Registration_Duplicate_Mail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Registration Duplicate Mail</shortDescription>
+        <value>A Primary Contact already exists with this email address.Please select a new email address, or email the Admin to troubleshoot.</value>
+    </labels>
+    <labels>
+        <fullName>EmailParser_IncorrectNoOfParameters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmailParser IncorrectNoOfParameters</shortDescription>
+        <value>Incorrect set of parameters ,</value>
+    </labels>
+    <labels>
+        <fullName>EmailParser_Job_Id_Empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailParser Job Id Empty</shortDescription>
+        <value>Please provide valid job Reference no</value>
+    </labels>
+    <labels>
+        <fullName>Email_Success_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email_Success_Message</shortDescription>
+        <value>Contact has been Created Successfully. Click the following link:</value>
+    </labels>
+    <labels>
+        <fullName>ErrorFinderURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ErrorFinderURL</shortDescription>
+        <value>/MyQualificationDetailEdit?qid=a1858000001yconAAA</value>
+    </labels>
+    <labels>
+        <fullName>Exception_To_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception To Email</shortDescription>
+        <value>prakash.m@mvclouds.com</value>
+    </labels>
+    <labels>
+        <fullName>FB_AQ_Report_Max_Contact_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FB_AQ_Report_Max_Contact_Limit</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>For_Applying</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For Applying</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>JobAlreadyApplied</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobAlreadyApplied</shortDescription>
+        <value>Application already submitted for this Job</value>
+    </labels>
+    <labels>
+        <fullName>LogicMelon_API_Key</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LogicMelon API Key</shortDescription>
+        <value>1483386183</value>
+    </labels>
+    <labels>
+        <fullName>LogicMelon_EndpointURL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LogicMelon_EndpointURL</shortDescription>
+        <value>http://www.logicmelon.com/Entry/AdCourierAPIXML/TalentRover</value>
+    </labels>
+    <labels>
+        <fullName>LogicMelon_Password</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LogicMelon_Password</shortDescription>
+        <value>supplydesk455</value>
+    </labels>
+    <labels>
+        <fullName>No_File_Attached</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No_File_Attached</shortDescription>
+        <value>Please select file to create/update resume.</value>
+    </labels>
+    <labels>
+        <fullName>RC_Default_Portal_User_OwnerId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RC_Default_Portal_User_OwnerId</shortDescription>
+        <value>00558000000jyQL</value>
+    </labels>
+    <labels>
+        <fullName>RC_TimesheetApproveReject_Insufficient_Params</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This custom settings is used to display insufficient parameter message</shortDescription>
+        <value>Insufficient parameters in URL</value>
+    </labels>
+    <labels>
+        <fullName>Rejected_Contact_To_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rejected Contact To Email</shortDescription>
+        <value>prakash.m@mvclouds.com</value>
+    </labels>
+    <labels>
+        <fullName>Resourcer_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Resourcer Owner</shortDescription>
+        <value>leanne.clark@supplydesk.co.uk.invalid,rachel.marsden@supplydesk.co.uk.invalid,alexandra.skinner@supplydesk.co.uk.invalid,jennifer.harrison@supplydesk.co.uk.invalid,errika.nikokavuras@supplydesk.co.uk.invalid,sam.wilkins@supplydesk.co.uk.invalid,rebecca.dorey@supplydesk.co.uk.invalid,errika.nikokuvarus@supplydesk.co.uk.invalid,charmian.burgess@supplydesk.co.uk.invalid</value>
+    </labels>
+    <labels>
+        <fullName>Scheduler_Page_Size</fullName>
+        <categories>Scheduler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scheduler_Page_Size</shortDescription>
+        <value>300</value>
+    </labels>
+    <labels>
+        <fullName>Scheduler_Query_Limit</fullName>
+        <categories>Scheduler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scheduler_Query_Limit</shortDescription>
+        <value>3000</value>
+    </labels>
+    <labels>
+        <fullName>SendEmailNotificationForWeeklyTimesheetCreationBatch</fullName>
+        <categories>Timesheet</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SendEmailNotificationForWeeklyTimesheetCreationBatch</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>Send_Conf_Of_Check_Flag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Send_Conf_Of_Check_Flag</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>SetUpdateVacancy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetUpdateVacancy</shortDescription>
+        <value>False</value>
+    </labels>
+    <labels>
+        <fullName>SubmitTimesheet_EmailNotificationList</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SubmitTimesheet_EmailNotificationList</shortDescription>
+        <value>ccox@talentrover.com,payroll@supplydesk.co.uk,duplicates@supplydesk.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>TRS_FC_CPU_Threshold</fullName>
+        <categories>Scheduler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRS_FC_CPU_Threshold</shortDescription>
+        <value>0.75</value>
+    </labels>
+    <labels>
+        <fullName>TRS_FC_HeapSize_Threshold</fullName>
+        <categories>Scheduler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRS_FC_HeapSize_Threshold</shortDescription>
+        <value>0.65</value>
+    </labels>
+    <labels>
+        <fullName>Template_Names</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template Names</shortDescription>
+        <value>Supply Desk Terms of Engagement Supply Teacher;Supply Desk Terms of Engagement Agency Worker;Supply Desk DBS Terms of Service;Referee Consent Form;Supply Desk Registration;SD/Teach in Teacher Registration Pack Overseas</value>
+    </labels>
+    <labels>
+        <fullName>TimesheetCreation_ErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TimesheetCreation_ErrorMessage</shortDescription>
+        <value>&lt;ul&gt;&lt;li&gt;Closing Report Start Date is blank&lt;/li&gt;&lt;li&gt;Generate Timesheet Option is Unchecked&lt;/li&gt;&lt;li&gt;RecordType of Closing Report is not Consulting&lt;/li&gt;&lt;li&gt;Assignment ended or not yet started&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>TimesheetCreation_ErrorMessage_OutsideDateRange</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TimesheetCreation_ErrorMessage_OutsideDateRange</shortDescription>
+        <value>Selected date must be greater than Closing Report Start Date.</value>
+    </labels>
+    <labels>
+        <fullName>UnknownAccountId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnknownAccountId</shortDescription>
+        <value>0015800000AEANW</value>
+    </labels>
+    <labels>
+        <fullName>Unknown_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unknown_Error</shortDescription>
+        <value>Unknown_Error</value>
+    </labels>
+    <labels>
+        <fullName>WeeklyTimesheetCreationBatchEmailRecipient</fullName>
+        <categories>Timesheet</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WeeklyTimesheetCreationBatchEmailRecipient</shortDescription>
+        <value>ccox@talentrover.com,admin@talentrover.com</value>
+    </labels>
+    <labels>
+        <fullName>WeeklyTimesheetCreationBatchSize</fullName>
+        <categories>Timesheet</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WeeklyTimesheetCreationBatchSize</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>ZipCode_Country</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ZipCode Country</shortDescription>
+        <value>UK</value>
+    </labels>
+    <labels>
+        <fullName>upload_resume_to_apply_for_job</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>upload resume to apply for job</shortDescription>
+        <value>To apply on jobs, you need to upload a resume</value>
+    </labels>
+</CustomLabels>

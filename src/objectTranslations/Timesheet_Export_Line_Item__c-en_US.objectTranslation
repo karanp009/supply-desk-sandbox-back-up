@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timesheet Export Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timesheet Export Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- AWR Days --></label>
+        <name>AWR_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula field for AWR days pulled from Closing Report. This populates the Timesheet Export Report --></help>
+        <label><!-- Old AWR days from CR --></label>
+        <name>AWR_days_from_CR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bundle Work --></label>
+        <name>Bundle_Work__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CCS --></label>
+        <name>CCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate 1 --></label>
+        <name>Charge_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate 2 --></label>
+        <name>Charge_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate 3 --></label>
+        <name>Charge_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client account number --></label>
+        <name>Client_account_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>Closing_Report__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Consultant --></label>
+        <name>Consultant_User__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items (Consultant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Consultant --></label>
+        <name>Consultant__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- AWR days from CR --></label>
+        <name>New_AWR_Days_From_CR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office name --></label>
+        <name>Office_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO number --></label>
+        <name>PO_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate 1 --></label>
+        <name>Pay_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate 2 --></label>
+        <name>Pay_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate 3 --></label>
+        <name>Pay_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type 1 --></label>
+        <name>Pay_Type_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type 2 --></label>
+        <name>Pay_Type_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type 3 --></label>
+        <name>Pay_Type_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Week Ending --></label>
+        <name>Pay_Week_Ending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll number --></label>
+        <name>Payroll_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approved By --></label>
+        <name>Timesheet_Approved_By__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items (Timesheet Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Export --></label>
+        <name>Timesheet_Export__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Week --></label>
+        <name>Timesheet_Week_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Week --></label>
+        <name>Timesheet_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>Timesheet__c</name>
+        <relationshipLabel><!-- Timesheet Export Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unit 1 --></label>
+        <name>Unit_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit 2 --></label>
+        <name>Unit_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit 3 --></label>
+        <name>Unit_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Ending --></label>
+        <name>Week_Ending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Description --></label>
+        <name>Work_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Timesheet Export Line Item Layout</layout>
+        <sections>
+            <label><!-- Amount Information --></label>
+            <section>Amount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

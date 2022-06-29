@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>tdc_tsw__Incoming Alert</narrowComponents>
+    <narrowComponents>standard-CreateNew</narrowComponents>
+    <narrowComponents>TR1__Document Parser</narrowComponents>
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <narrowComponents>TR1__Talent Rover Live Chat</narrowComponents>
+    <wideComponents>standard-Tasks</wideComponents>
+    <wideComponents>standard-Calendar</wideComponents>
+    <wideComponents>standard-Dashboard</wideComponents>
+</HomePageLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Payroll Timesheet awaiting authorisation email trigger content to client</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Approver Reminder</name>
+    <style>freeForm</style>
+    <subject>Timesheet Approval Reminder</subject>
+    <textOnly>Dear {!TR1__Timesheet__c.TR1__Approver_First_Name__c},
+
+You have timesheets that are awaiting your approval.
+
+Please log in to the Supply Desk Community and approve the timesheets as soon as possible for the week ending {!TR1__Timesheet__c.TR1__Week_Ending__c}.
+
+Timesheets approved after 11am on a Tuesday cannot be guaranteed to be included in the above week ending payroll. Please be aware, this will delay both your invoice creation and our payment to the candidate.
+
+Kind Regards,
+
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

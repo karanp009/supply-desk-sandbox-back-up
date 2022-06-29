@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- RC_ClientJobCandidates --></label>
+        <name>RC_ClientJobCandidates</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLine1FieldSet --></label>
+        <name>TR1__KanbanCardLine1FieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLine2FieldSet --></label>
+        <name>TR1__KanbanCardLine2FieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLine3FieldSet --></label>
+        <name>TR1__KanbanCardLine3FieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLine4FieldSet --></label>
+        <name>TR1__KanbanCardLine4FieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardMiniLayoutFS --></label>
+        <name>TR1__KanbanCardMiniLayoutFS</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Application --></label>
+        <name>TR1__Application__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Blank Space --></label>
+        <name>TR1__Blank_Space__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Composite Key --></label>
+        <name>TR1__Composite_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job Contact --></label>
+        <name>TR1__Job_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Name --></label>
+        <name>TR1__Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Owner --></label>
+        <name>TR1__Job_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reporting Details --></label>
+        <name>TR1__Job_Reporting_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This decides the order in which the cards are displayed within a Swimlane by default. --></help>
+        <label><!-- Kanban Swimlane Ranking --></label>
+        <name>TR1__Kanban_Swimlane_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Day(s) in Stage --></label>
+        <name>TR1__No_of_Days_in_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer --></label>
+        <name>TR1__Offer__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notes --></label>
+        <name>TR1__Rejection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notification --></label>
+        <name>TR1__Rejection_Notification__c</name>
+        <picklistValues>
+            <masterLabel>Automated Rejection Email</masterLabel>
+            <translation><!-- Automated Rejection Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Owner Will Notify</masterLabel>
+            <translation><!-- Contact Owner Will Notify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Owner Will Notify</masterLabel>
+            <translation><!-- Job Owner Will Notify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send Out --></label>
+        <name>TR1__Send_Out__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage Details --></label>
+        <name>TR1__Stage_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Applicaton</masterLabel>
+            <translation><!-- Applicaton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing Report</masterLabel>
+            <translation><!-- Closing Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer</masterLabel>
+            <translation><!-- Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Out</masterLabel>
+            <translation><!-- Send Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submittal</masterLabel>
+            <translation><!-- Submittal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Ranking --></label>
+        <name>TR1__Status_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submittal --></label>
+        <name>TR1__Submittal__c</name>
+        <relationshipLabel><!-- Job Reporting --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Rejected --></label>
+        <name>TR1__isRejected__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

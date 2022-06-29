@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span lang="EN-SG" style="font-size: 12pt; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">Dear&nbsp;</font></span><font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);">{!Contact.FirstName}</font><span style="font-size: 12pt; background-color: rgb(255, 255, 255); font-family: Arial, sans-serif;">,</span>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><span style="font-size: 12pt;"><font face="Arial, sans-serif">Thank you for your interest in Supply Desk and for taking the time to register your details with us. Unfortunately, we do not have any roles that fit your profile and experience at the moment. We will however, ensure that your details and registration are included into our database and will contact you as soon as there is a suitable role.</font></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><span lang="EN-SG"><font face="Arial, sans-serif">&nbsp;</font></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><span lang="EN-SG"><font face="Arial, sans-serif">Please do to continue to visit our website&nbsp;and please apply for any potential opportunities that you may come across.<o:p></o:p></font></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><span lang="EN-SG"><font face="Arial, sans-serif">&nbsp;</font></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-size: 12pt;"><span lang="EN-SG"><font face="Arial, sans-serif">Kind Regards,&nbsp;</font></span></p>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

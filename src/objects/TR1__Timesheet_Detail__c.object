@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>EmailTSD</fullName>
+        <description>Used at Timesheet Submittal workflow email alert to show Timesheet detail fields.</description>
+        <displayedFields>
+            <field>TR1__Day__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Start_Time__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>End_Time__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Regular_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Overtime_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Double_Time_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Total_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>EmailTSD</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>EmailTSD_Online</fullName>
+        <description>At Email template for Timesheet Submit, when type is Online</description>
+        <displayedFields>
+            <field>TR1__Day__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Total_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>EmailTSD Online</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>RC_TimesheetDetail</fullName>
+        <description>Used in TimesheetDetail page at Main section</description>
+        <displayedFields>
+            <field>TR1__Regular_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>DayShift__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Half_Day__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>RC_TimesheetDetail</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TR1__TimesheetDetail</fullName>
+        <description>Used in CreateShiftWork VF page</description>
+        <displayedFields>
+            <field>TR1__Timesheet__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TimesheetDetail</label>
+    </fieldSets>
+    <fields>
+        <fullName>CRS_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>CRS Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CRS_Status__c</fullName>
+        <description>Pulls Cancelled or Booked Status from the corresponding CRS</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Closing_Report_Schedule__r.Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CRS Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closing_Report_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(TR1__Timesheet__r.TR1__Closing_Report__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Closing Report Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closing_Report_Schedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Closing Report Schedule</label>
+        <referenceTo>Closing_Report_Schedule__c</referenceTo>
+        <relationshipLabel>Timesheet Details</relationshipLabel>
+        <relationshipName>Timesheet_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DayShift__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Day</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Day_Charge_Rate_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Maximum_Day_Charge_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day Charge Rate Hidden</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Day_Charge_Rate_Legacy__c</fullName>
+        <externalId>false</externalId>
+        <label>Day Charge Rate Legacy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Day_Pay_Rate_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Maximum_Day_Pay_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day Pay Rate (Hidden)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Day_Pay_Rate_Legacy__c</fullName>
+        <externalId>false</externalId>
+        <label>Day Pay Rate Legacy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>End_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>End Time</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Half_Day_Charge_Rate_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Maximum_Half_Day_Charge_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Half Day Charge Rate Hidden</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Half_Day_Charge_Rate_Legacy__c</fullName>
+        <externalId>false</externalId>
+        <label>Half Day Charge Rate Legacy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Half_Day_Pay_Rate_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Maximum_Half_Day_Pay_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Half Day Pay Rate Hidden</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Half_Day_Pay_Rate_Legacy__c</fullName>
+        <externalId>false</externalId>
+        <label>Half Day Pay Rate Legacy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Half_Day__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Half Day</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hour_Charge_Date_Legacy__c</fullName>
+        <externalId>false</externalId>
+        <label>Hour Charge Date Legacy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hour_Pay_Rate_Legacy__c</fullName>
+        <externalId>false</externalId>
+        <label>Hour Pay Rate Legacy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Charge_Rate_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Maximum_Hour_Charge_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hourly Charge Rate Hidden</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Pay_Rate_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Maximum_Hour_Pay_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hourly Pay Rate Hidden</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Is_Populated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Populated?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Old_Temp_Time_Sheet_Line_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>Old Temp Time Sheet Line ID</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Populated_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Populated By</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Time</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Day__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Day</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monday</fullName>
+                    <default>false</default>
+                    <label>Monday</label>
+                </value>
+                <value>
+                    <fullName>Tuesday</fullName>
+                    <default>false</default>
+                    <label>Tuesday</label>
+                </value>
+                <value>
+                    <fullName>Wednesday</fullName>
+                    <default>false</default>
+                    <label>Wednesday</label>
+                </value>
+                <value>
+                    <fullName>Thursday</fullName>
+                    <default>false</default>
+                    <label>Thursday</label>
+                </value>
+                <value>
+                    <fullName>Friday</fullName>
+                    <default>false</default>
+                    <label>Friday</label>
+                </value>
+                <value>
+                    <fullName>Saturday</fullName>
+                    <default>false</default>
+                    <label>Saturday</label>
+                </value>
+                <value>
+                    <fullName>Sunday</fullName>
+                    <default>false</default>
+                    <label>Sunday</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Double_Time_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Double Time Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Expenses__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Expenses</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Overtime_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Overtime Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Regular_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Regular Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Sick_Time_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sick Time Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Timesheet</label>
+        <referenceTo>TR1__Timesheet__c</referenceTo>
+        <relationshipLabel>Timesheet Details</relationshipLabel>
+        <relationshipName>Timecards</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TR1__TotalShiftBillAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Shift Bill Amount</label>
+        <summarizedField>TR1__ShiftWork__c.TR1__AmountBill__c</summarizedField>
+        <summaryForeignKey>TR1__ShiftWork__c.TR1__TimesheetDetail__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TotalShiftPayAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Shift Pay Amount</label>
+        <summarizedField>TR1__ShiftWork__c.TR1__AmountPay__c</summarizedField>
+        <summaryForeignKey>TR1__ShiftWork__c.TR1__TimesheetDetail__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TotalShiftUnits__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Shift Units</label>
+        <summarizedField>TR1__ShiftWork__c.TR1__Units__c</summarizedField>
+        <summaryForeignKey>TR1__ShiftWork__c.TR1__TimesheetDetail__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Fee__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Fee</label>
+        <summarizedField>TR1__ShiftWork__c.TR1__Total_Fee__c</summarizedField>
+        <summaryForeignKey>TR1__ShiftWork__c.TR1__TimesheetDetail__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Shift_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Shift Hours</label>
+        <summarizedField>TR1__ShiftWork__c.TR1__Hours__c</summarizedField>
+        <summaryForeignKey>TR1__ShiftWork__c.TR1__TimesheetDetail__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Travel_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Travel Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Vacation_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Vacation Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Regular_Hours__c + TR1__Overtime_Hours__c + TR1__Double_Time_Hours__c + TR1__Vacation_Hours__c + TR1__Sick_Time_Hours__c + TR1__Travel_Hours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_Day_Hidden__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Timesheet__r.TR1__Closing_Report__r.Trial_Day__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trial Day? Hidden</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Units_Populated__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+OR( DayShift__c =TRUE,
+    Half_Day__c=TRUE,
+    TR1__Regular_Hours__c &gt;0),1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Units Populated</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Timesheet Detail</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>TS-{MM}{DD}{YY}-{0}</displayFormat>
+        <label>Timesheet Detail Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Timesheet Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Daily_Rate_Required_for_Daily_Shift</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+Trial_Day_Hidden__c = FALSE, 
+DayShift__c = TRUE,
+
+OR(
+ISBLANK(Day_Charge_Rate_Hidden__c),
+Day_Charge_Rate_Hidden__c = 0 ),
+
+OR(
+ISBLANK(Day_Pay_Rate_Hidden__c),
+Day_Pay_Rate_Hidden__c = 0 )
+)</errorConditionFormula>
+        <errorMessage>A Daily Pay or Charge rate must be entered on Closing Report to add a Day shift to Timesheet.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Exported_Timesheets_cannot_be_edited</fullName>
+        <active>true</active>
+        <description>Only payroll can edit exported timesheets</description>
+        <errorConditionFormula>NOT(ISBLANK(TR1__Timesheet__r.Timesheet_Export_Line_Item__c))
+&amp;&amp;
+OR(
+NOT($User.ProfileId &lt;&gt; &quot;00e58000000IhIW&quot;/*Payroll Officer*/),
+NOT($User.ProfileId &lt;&gt; &quot;00e58000000IhIR&quot;/*Talent Rover Administrator*/))</errorConditionFormula>
+        <errorMessage>You cannot edit a timesheet once it has been exported to Merit. Please contact payroll@supplydesk.co.uk for assistance</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Half_Day_Rate_Req_for_Half_Day_Shift</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+Trial_Day_Hidden__c = FALSE, 
+Half_Day__c  = TRUE, 
+
+OR( 
+ISBLANK(Half_Day_Pay_Rate_Hidden__c), 
+Half_Day_Pay_Rate_Hidden__c = 0 ), 
+
+OR( 
+ISBLANK(Half_Day_Charge_Rate_Hidden__c), 
+Half_Day_Charge_Rate_Hidden__c = 0 ) 
+)</errorConditionFormula>
+        <errorMessage>A Half Day Pay or Charge rate must be entered on Closing Report to add a Half Day shift to Timesheet.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hourly_Rate_Required_for_Hourly_Shift</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+Trial_Day_Hidden__c = FALSE, 
+NOT(ISBLANK(TR1__Regular_Hours__c)), 
+
+OR( 
+ISBLANK( Hourly_Pay_Rate_Hidden__c ), 
+ Hourly_Pay_Rate_Hidden__c  = 0 ), 
+
+OR( 
+ISBLANK( Hourly_Charge_Rate_Hidden__c ), 
+ Hourly_Charge_Rate_Hidden__c  = 0 ) 
+)</errorConditionFormula>
+        <errorMessage>An Hourly Pay or Charge rate must be entered on Closing Report to add hours to Timesheet.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VacationHours</fullName>
+        <active>true</active>
+        <description>Vacation hours either should be 4 or 8</description>
+        <errorConditionFormula>TR1__Vacation_Hours__c &lt;&gt; 0.00 &amp;&amp; TR1__Vacation_Hours__c &lt;&gt; 4.00 &amp;&amp; TR1__Vacation_Hours__c &lt;&gt; 8.00</errorConditionFormula>
+        <errorMessage>Vacation hours either should be 4 or 8</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

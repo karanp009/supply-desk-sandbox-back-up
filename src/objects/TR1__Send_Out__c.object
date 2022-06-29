@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Interview_Trial__c</fullName>
+        <externalId>false</externalId>
+        <label>Interview/Trial</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Interview</fullName>
+                    <default>false</default>
+                    <label>Interview</label>
+                </value>
+                <value>
+                    <fullName>Trial</fullName>
+                    <default>false</default>
+                    <label>Trial</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Account__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Job__r.TR1__Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Closing_Report_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/a04/e?&apos;+$Label.tr1__account_field_id_on_closing_reports+&apos;=&apos;&amp; TR1__Job__r.TR1__Account__r.Name &amp;&apos;&amp;&apos;+$Label.tr1__account_field_id_on_closing_reports+&apos;_lkid=&apos;&amp; TR1__Job__r.TR1__Account__c&amp;&apos;&amp;&apos;+$Label.tr1__job_field_id_on_closing_edit+&apos;=&apos;&amp; TR1__Job__r.Name&amp;&apos;&amp;&apos;+$Label.tr1__job_field_id_on_closing_edit+&apos;_lkid=&apos;&amp; TR1__Job__c&amp;&apos;&amp;&apos;+$Label.tr1__contact_field_id_on_closing_reports+&apos;=&apos;&amp; TR1__Interviewee__r.FirstName&amp;&apos; &apos;&amp; TR1__Interviewee__r.LastName&amp;&apos;&amp;&apos;+$Label.tr1__contact_field_id_on_closing_reports+&apos;_lkid=&apos;&amp; TR1__Interviewee__c&amp;&apos;&amp;nooverride=1&amp;retURL=/&apos;&amp; TR1__Interviewee__c &amp;&apos;&amp;saveURL=/&apos;&amp;TR1__Interviewee__c , IMAGE(&apos;/resource/TR1__closingreport&apos;, &apos;Closing Report&apos;, 25,25), &apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>C R</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewee_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Interviewee__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interviewee Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewee_Mobile__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Interviewee__r.MobilePhone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interviewee Mobile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewee_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Interviewee Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Send_Outs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewee_Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Interviewee__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interviewee Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Interviewee</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Send Outs</relationshipLabel>
+        <relationshipName>Send_Out1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Contact_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Job__r.TR1__Contact__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Contact_Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Job__r.TR1__Contact__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Contact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Job__r.TR1__Contact__r.FirstName &amp; &quot; &quot; &amp;  TR1__Job__r.TR1__Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Reporting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job Reporting</label>
+        <referenceTo>TR1__Job_Reporting__c</referenceTo>
+        <relationshipLabel>Send Outs</relationshipLabel>
+        <relationshipName>Send_Outs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job</label>
+        <referenceTo>TR1__Job__c</referenceTo>
+        <relationshipLabel>Send Outs</relationshipLabel>
+        <relationshipName>Send_Outs</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Number_Of_Schedules__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number Of Schedules</label>
+        <summaryFilterItems>
+            <field>TR1__Send_Out_Schedule__c.TR1__Cancel_Meeting__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>TR1__Send_Out_Schedule__c.TR1__Send_Out__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Number_of_Days_in_Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(IF( ISNULL(TR1__Stage_End_Date__c) , TODAY(), TR1__Stage_End_Date__c) - TR1__Stage_Start_Date__c = 0, 1, IF( ISNULL(TR1__Stage_End_Date__c) , TODAY(), TR1__Stage_End_Date__c) - TR1__Stage_Start_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of Days in Stage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Offer_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/a0V/e?&apos;+$Label.tr1__contact_field_in_on_offer+&apos;=&apos;&amp; TR1__Interviewee__r.FirstName&amp;&apos; &apos;&amp; TR1__Interviewee__r.LastName&amp;&apos;&amp;&apos;+$Label.tr1__contact_field_in_on_offer+&apos;_lkid=&apos;&amp; TR1__Interviewee__c&amp;&apos;&amp;&apos;+$Label.tr1__job_field_id_on_offer+&apos;=&apos;&amp; TR1__Job__r.Name &amp;&apos;&amp;&apos;+$Label.tr1__job_field_id_on_offer+&apos;_lkid=&apos;&amp; TR1__Job__c &amp;&apos;&amp;nooverride=1&amp;retURL=/&apos;&amp; TR1__Interviewee__c &amp;&apos;&amp;saveURL=/apex/UpdateStatus?sendoutIdToUpdate=&apos;&amp;Id&amp;&apos;-fromSendout-&apos;&amp; TR1__Interviewee__c&amp;&apos;&amp;&apos;+$Label.tr1__status_field_id_on_offer+&apos;=Current&apos;, IMAGE(&apos;/resource/TR1__offer&apos;, &apos;Offer&apos;, 25,25),&apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ofr</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Reject_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/apex/TR1__JobManagerSendOutReject?Id=&apos;&amp;Id&amp;&apos;&amp;retURL=/&apos;&amp;TR1__Interviewee__c&amp;&apos;&amp;saveURL=/&apos;&amp;TR1__Interviewee__c, IMAGE(&apos;/resource/TR1__Reject&apos;, &apos;Reject&apos;, 25,25),&apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rjt</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Rejection_Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rejection Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Rejection_Notification__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rejection Notification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Automated Rejection Email</fullName>
+                    <default>false</default>
+                    <label>Automated Rejection Email</label>
+                </value>
+                <value>
+                    <fullName>Job Owner Will Notify</fullName>
+                    <default>false</default>
+                    <label>Job Owner Will Notify</label>
+                </value>
+                <value>
+                    <fullName>Contact Owner Will Notify</fullName>
+                    <default>false</default>
+                    <label>Contact Owner Will Notify</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Revert_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/apex/TR1__JobManagerSendOutMoveBack?Id=&apos;&amp; Id &amp;&apos;&amp;retURL=/&apos;&amp;TR1__Interviewee__c&amp;&apos;&amp;saveURL=/&apos;&amp;TR1__Interviewee__c, IMAGE(&apos;/resource/TR1__MoveBack&apos;, &apos;Revert&apos;, 25,25),&apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rvt</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Schedule_Sendouts_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/apex/TR1__JobManagerSendout?Id=&apos;&amp; Id &amp;&apos;&amp;retURL=/&apos;&amp; TR1__Interviewee__c &amp;&apos;&amp;saveURL=/&apos;&amp;TR1__Interviewee__c, IMAGE(&apos;/resource/TR1__sendout&apos;, &apos;Schedule Sendouts&apos;, 25,25),&apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>S S</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Stage_End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Stage End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Stage_Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Stage Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First</fullName>
+                    <default>false</default>
+                    <label>First</label>
+                </value>
+                <value>
+                    <fullName>Fourth</fullName>
+                    <default>false</default>
+                    <label>Fourth</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Second</fullName>
+                    <default>false</default>
+                    <label>Second</label>
+                </value>
+                <value>
+                    <fullName>Third</fullName>
+                    <default>false</default>
+                    <label>Third</label>
+                </value>
+                <value>
+                    <fullName>Video</fullName>
+                    <default>false</default>
+                    <label>Video</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Stage_for_KCRA__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(TR1__Job_Reporting__r.TR1__Stage__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job Manager Stage Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current</fullName>
+                    <default>true</default>
+                    <label>Current</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Send Out</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <columns>TR1__Interviewee__c</columns>
+        <columns>TR1__Job__c</columns>
+        <columns>TR1__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>SO-{MM}{DD}{YYYY}-{0}</displayFormat>
+        <label>Send Out Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Send Outs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>TR1__Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Job__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Interviewee__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Stage__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Job__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Interviewee__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Stage__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Status__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>TR1__Account__c</lookupFilterFields>
+        <lookupFilterFields>TR1__Job__c</lookupFilterFields>
+        <lookupFilterFields>TR1__Job_Contact__c</lookupFilterFields>
+        <lookupFilterFields>TR1__Interviewee__c</lookupFilterFields>
+        <lookupFilterFields>TR1__Stage__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Job__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Interviewee__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Stage__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>TR1__Account__c</searchFilterFields>
+        <searchFilterFields>TR1__Job__c</searchFilterFields>
+        <searchFilterFields>TR1__Interviewee__c</searchFilterFields>
+        <searchFilterFields>TR1__Stage__c</searchFilterFields>
+        <searchFilterFields>TR1__Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>TR1__Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Job__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Interviewee__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Stage__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>TR1__Closing_Report</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Closing Report</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+var url = parent.location.href; //string for the URL of the current page 
+var records = {!GETRECORDIDS($ObjectType.TR1__Send_Out__c)}; //grabs the Lead records that the user is requesting to update 
+if(records.length &gt; 1){ 
+alert(&quot;You can select 1 record at a time for this Action.&quot;);} 
+else if(records.length == 0){ 
+alert(&quot;Please select at least 1 record for this Action.&quot;); 
+}else { 
+var sendOutId = records[0]; 
+window.location.href =&apos;../apex/TR1__RedirectURL?sendOutId=&apos;+sendOutId+&apos;&amp;action=ClosingReport&apos; ; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Offer</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Offer</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+var url = parent.location.href; //string for the URL of the current page 
+var records = {!GETRECORDIDS($ObjectType.TR1__Send_Out__c)}; //grabs the Lead records that the user is requesting to update 
+if(records.length &gt; 1){ 
+alert(&quot;You can select 1 record at a time for this Action.&quot;);} 
+else if(records.length == 0){ 
+alert(&quot;Please select at least 1 record for this Action.&quot;); 
+}else { 
+var sendOutId = records[0]; 
+window.location.href =&apos;../apex/TR1__RedirectURL?sendOutId=&apos;+sendOutId+&apos;&amp;action=Offer&apos; ; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Reject</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reject</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+var url = parent.location.href; //string for the URL of the current page 
+var records = {!GETRECORDIDS($ObjectType.TR1__Send_Out__c)}; //grabs the Lead records that the user is requesting to update 
+if(records.length &gt; 1){ 
+alert(&quot;You can select 1 record at a time for this Action.&quot;);}
+else if(records.length == 0){ 
+alert(&quot;Please select at least 1 record for this Action.&quot;); 
+}else { 
+var sendOutId= records[0]; 
+var result = sforce.connection.query(&quot;Select Id, TR1__Interviewee__c From TR1__Send_Out__c where id = &apos;&quot;+sendOutId+&quot;&apos; &quot;); 
+var records = result.getArray(&quot;records&quot;); 
+window.location.href = &quot;../apex/TR1__JobManagerSendOutReject?Id=&quot;+records[0].Id+&quot;&amp;retURL=/&quot;+records[0].TR1__Interviewee__c +&quot;&amp;saveURL=/&quot;+records[0].TR1__Interviewee__c; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Revert</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Move Back</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+var url = parent.location.href; //string for the URL of the current page 
+var records = {!GETRECORDIDS($ObjectType.TR1__Send_Out__c)}; //grabs the Lead records that the user is requesting to update 
+if(records.length &gt; 1){ 
+alert(&quot;You can select 1 record at a time for this Action.&quot;);} 
+else if(records.length == 0){ 
+alert(&quot;Please select at least 1 record for this Action.&quot;); 
+}else { 
+var sendOutId= records[0]; 
+var result = sforce.connection.query(&quot;Select Id, TR1__Interviewee__c From TR1__Send_Out__c where id = &apos;&quot;+sendOutId+&quot;&apos; &quot;); 
+var records = result.getArray(&quot;records&quot;); 
+window.location.href = &quot;../apex/TR1__JobManagerSendOutMoveBack?Id=&quot;+records[0].Id+&quot;&amp;retURL=/&quot;+records[0].TR1__Interviewee__c +&quot;&amp;saveURL=/&quot;+records[0].TR1__Interviewee__c; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Schedule_Sendout</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Schedule Sendout</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+var url = parent.location.href; //string for the URL of the current page 
+var records = {!GETRECORDIDS($ObjectType.TR1__Send_Out__c)}; //grabs the Lead records that the user is requesting to update 
+if(records.length &gt; 1){ 
+alert(&quot;You can select 1 record at a time for this Action.&quot;);} 
+else if(records.length == 0){ 
+alert(&quot;Please select at least 1 record for this Action.&quot;); 
+}else { 
+var sendOutId= records[0]; 
+var result = sforce.connection.query(&quot;Select Id, TR1__Interviewee__c From TR1__Send_Out__c where id = &apos;&quot;+sendOutId+&quot;&apos; &quot;); 
+var records = result.getArray(&quot;records&quot;); 
+window.location.href = &quot;../apex/TR1__JobManagerSendout?Id=&quot;+records[0].Id+&quot;&amp;retURL=/&quot;+records[0].TR1__Interviewee__c +&quot;&amp;saveURL=/&quot;+records[0].TR1__Interviewee__c; 
+}</url>
+    </webLinks>
+</CustomObject>

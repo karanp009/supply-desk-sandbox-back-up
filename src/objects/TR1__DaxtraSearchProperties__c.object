@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Daxtra_Search_Call_List_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Daxtra Search Call List Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Daxtra_Search_Criteria_Page_Height__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Daxtra Search Criteria Page Height</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Daxtra_Search_Criteria_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Daxtra Search Criteria Page</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Daxtra_Search_Default_Candidate_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Default Candidate Status Criteria</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Daxtra_Search_Filter_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Daxtra Search Filter Fields</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Daxtra_Search_Filters_Class__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Daxtra Search Filters Class</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Enhanced_Resume_Preview__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enable Enhanced Resume Preview (Beta)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Search_Results_Additional_Contact_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Search Results Additional Contact Fields</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Search_Results_Default_Page_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Search Results Default Page Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>DaxtraSearch Properties</label>
+    <visibility>Public</visibility>
+</CustomObject>

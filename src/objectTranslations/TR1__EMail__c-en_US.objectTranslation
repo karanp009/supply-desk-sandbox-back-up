@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BCC --></label>
+        <name>TR1__BCC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body --></label>
+        <name>TR1__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC --></label>
+        <name>TR1__CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call List --></label>
+        <name>TR1__Call_List__c</name>
+        <relationshipLabel><!-- Talent Rover Emails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact IDs --></label>
+        <name>TR1__Contact_IDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Field --></label>
+        <name>TR1__EmailField__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>TR1__From__c</name>
+    </fields>
+    <fields>
+        <label><!-- PlainBody --></label>
+        <name>TR1__PlainBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>TR1__Status_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>FAILURE</masterLabel>
+            <translation><!-- FAILURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUCCESS</masterLabel>
+            <translation><!-- SUCCESS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>TR1__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>TR1__To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation><!-- HTML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXT</masterLabel>
+            <translation><!-- TEXT --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to a candidate for authorisation to contact a referee for a candidate&apos;s personal information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SD Permission For Reference Request</name>
+    <style>freeForm</style>
+    <subject>Reference Request for {!TR1__Associated_Qualification__c.TR1__Contact__c}</subject>
+    <textOnly>Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName} 
+
+Supply Desk has a strict referencing policy and requires, as a minimum, two references covering the full last two years with no gaps (including your last employer, and / or your college or university if you were in further education during this period). It will sometimes be necessary to pursue earlier references in order to obtain a full reference history.
+
+Referees must be in a position of senior leadership within the school or organisation. Please provide the school / work email address and phone number (not personal contact details).
+
+On the following pages, please provide details of two referees (which are most relevant to working with young people if your last post was not in a school).
+
+If you have had a period of unemployment, we will require the most recent relevant teaching reference.
+
+If you are unable to provide two or more professional teaching referees (for example, because you have only recently entered the profession) then we may be able to accept other professional references supported by character referees and/or verifiable testimonials. Please speak to us if this is the case.
+
+Yours sincerely
+
+The Compliance Team
+Supply Desk
+Tel No: 0191 731 9261/01923 920334/0114 257 2740
+Email: complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

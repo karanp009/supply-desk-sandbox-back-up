@@ -1,0 +1,30 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica; color: #0433ff}
+span.s1 {font-kerning: none}
+span.s2 {text-decoration: underline ; font-kerning: none}
+span.s3 {font-kerning: none; color: #ff2500}
+</style>
+
+
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Dear&nbsp;</i></b></span><b><i>{!Contact.Name}</i></b></p><p class="p1" style="font-family: arial;"><b><i>&nbsp;</i></b></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Re: Important Safeguarding Training</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Supply Desk are working in close partnership with school groups, academies and local authorities to ensure all of our candidates are trained in accordance with the DfE guidance on “Safeguarding Children and Safer Recruitment in Education”. &nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Although the statutory obligation is on the school to adhere to the regulations under section 175 of the Education Act 2002, we believe it is important that all candidates working through the Supply Desk have completed our own safeguarding training, refreshed every year.</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Please could you kindly take 15 minutes of your time to complete our ‘Safeguarding Children Awareness’ course by following the link below:</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p2" style=""><font face="Arial, sans-serif" style="color: rgb(32, 128, 173); text-decoration-line: none; outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; font-size: 13px; background-color: rgb(255, 255, 255);"><b><a href="https://www.supplydesk.co.uk/access-online-safeguarding-training/">https://www.supplydesk.co.uk/access-online-safeguarding-training/</a></b></font></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Once you have confirmed your contact details, please remember the training course is called </i></b></span><span class="s3"><b><i>‘Safeguarding Children Awareness’</i></b></span><span class="s1"><b><i>.</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Thank you for your anticipated assistance, it is very much appreciated.</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>&nbsp;</i></b></span></p>
+<p class="p1" style="font-family: arial;"><span class="s1"><b><i>Regards,</i></b></span></p><p class="p1" style="font-family: arial;"><span class="s1"><b><i><br></i></b></span></p><p class="p1" style="font-family: arial;"><span class="s1"><b><i>{!Contact.Compliance_Owner__c}</i></b></span></p>]]></td>
+</tr>
+</table>

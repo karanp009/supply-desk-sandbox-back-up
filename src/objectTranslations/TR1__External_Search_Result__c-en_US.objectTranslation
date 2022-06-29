@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Availability --></label>
+        <name>TR1__Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChildCount --></label>
+        <name>TR1__ChildCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>TR1__Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- External Search Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CreatedDate(Snippet) --></label>
+        <name>TR1__CreatedDate_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree(Snippet) --></label>
+        <name>TR1__Degree_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distributed ID --></label>
+        <name>TR1__Distributed_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Download URL --></label>
+        <name>TR1__Download_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Search --></label>
+        <name>TR1__External_Search__c</name>
+        <relationshipLabel><!-- External Search Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>TR1__First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handle --></label>
+        <name>TR1__Handle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Board --></label>
+        <name>TR1__Job_Board__c</name>
+        <relationshipLabel><!-- External Search Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LastJobTitle(Snippet) --></label>
+        <name>TR1__LastJobTitle_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>TR1__Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Position --></label>
+        <name>TR1__Last_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location(Snippet) --></label>
+        <name>TR1__Location_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>TR1__Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>TR1__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>TR1__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rank --></label>
+        <name>TR1__Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result Id --></label>
+        <name>TR1__Result_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resume Search Id --></label>
+        <name>TR1__Resume_Search_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>TR1__Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>TR1__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills(Snippet) --></label>
+        <name>TR1__Skills_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snippets --></label>
+        <name>TR1__Snippets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TR1__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation><!-- Ready --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary(Snippet) --></label>
+        <name>TR1__Summary_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- UI Id --></label>
+        <name>TR1__UI_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated --></label>
+        <name>TR1__Update__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Opt Out --></label>
+        <name>SMS_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call List - Contact --></label>
+        <name>TR1__Call_List_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call List --></label>
+        <name>TR1__Call_List__c</name>
+        <relationshipLabel><!-- Call List Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Candidate Id --></label>
+        <name>TR1__Contact_Daxtra_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Details --></label>
+        <name>TR1__Contact_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Call List Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>TR1__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log a Call --></label>
+        <name>TR1__Log_a_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMWS Date/Time --></label>
+        <name>TR1__SMWS_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMWS Status Code --></label>
+        <name>TR1__SMWS_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMWS Status --></label>
+        <name>TR1__SMWS_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Activities --></label>
+        <name>TR1__View_Activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Resume --></label>
+        <name>TR1__View_Resume__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS_Bulk_SF1 --></label>
+        <name>Send_SMS_Bulk_SF1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS_List_Mem --></label>
+        <name>Send_SMS_List_Mem</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS_SF1 --></label>
+        <name>Send_SMS_SF1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_To_Longlist --></label>
+        <name>TR1__Add_To_Longlist</name>
+    </webLinks>
+    <webLinks>
+        <label>Add to Longlist</label>
+        <name>TR1__Candidates_Covered</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Selected_Members --></label>
+        <name>TR1__Delete_Selected_Members</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_all_Members --></label>
+        <name>TR1__Delete_all_Members</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Market_the_Candidate --></label>
+        <name>TR1__Market_the_Candidate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MassEmail --></label>
+        <name>TR1__MassEmail</name>
+    </webLinks>
+    <webLinks>
+        <label>Add to Shortlist</label>
+        <name>TR1__New_Application</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email_to_Members --></label>
+        <name>TR1__Send_Email_to_Members</name>
+    </webLinks>
+</CustomObjectTranslation>

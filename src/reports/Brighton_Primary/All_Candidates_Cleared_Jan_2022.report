@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$OtherCity</field>
+    </columns>
+    <columns>
+        <field>Contact$Pay_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Cleared_Pending_Docs_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Cleared_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Banner__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Contact$Compliance_Cleared_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Compliance_Cleared_Pending_Docs_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Division__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Aus-NZ,Australia,Brighton Primary,Brighton Secondary,Buckinghamshire,Cambridge,Canada,Cardiff,Deletion,East Anglia,Executives,GDPR Eraser/opt out,Huddersfield,Kent,Leeds,Lincs,Liverpool,London,London-Bri,Lon-Wat Candidates,Manchester,Manchester Primary,Newcastle,North East,Nottingham,Perm Team North,Pipeline,Preston,Qualified Schools,Qualified Teachers,Sheffield,Southampton,Strategic Team North East,Strategic Team Nottingham,Strategic Team South,TA 2 Teach,TeachIn,Thames Valley,Watford</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Pay_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Support/Unqualified</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Division__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All Candidates Cleared Jan 2022 Support</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>People__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

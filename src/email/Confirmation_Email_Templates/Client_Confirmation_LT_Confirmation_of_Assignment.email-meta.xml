@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>Client Confirmation - LT: Confirmation of Assignment</name>
+    <style>freeForm</style>
+    <subject>Placement of {!TR1__Closing_Report__c.TR1__Person_Placed__c}</subject>
+    <textOnly>Dear {!TR1__Closing_Report__c.TR1__Contact__c}
+
+
+
+Thank you for choosing Supply Desk Limited to provide your supply staff. Please find below details of the assignment booked and the candidate who will be working with you.
+
+
+
+Assignment Details
+
+Candidate Name: {!TR1__Closing_Report__c.TR1__Person_Placed__c}
+Booking Type: {!TR1__Closing_Report__c.Booking_Type__c}
+Role Type: {!TR1__Closing_Report__c.Job_Title__c}
+Role Details: {!TR1__Job__c.Subject2__c}, {!TR1__Job__c.Year_Key_Stage__c}
+Any necessary experience, training or qualifications: {!TR1__Job__c.Trained_As__c}, {!TR1__Job__c.SEN_Experience__c}, {!TR1__Job__c.SEN_Additional_Experience__c}, {!TR1__Job__c.Skills_Training_Experience__c}
+Risks to Health and Safety: {!TR1__Closing_Report__c.HS_Notes_For_Confirmation_Letter__c}
+Location of School: {!TR1__Closing_Report__c.Client_Address__c}
+Hours of Work: {!TR1__Closing_Report__c.Booking_Start_Time__c} - {!TR1__Closing_Report__c.Booking_End_Time__c}
+Working days to include: {!TR1__Closing_Report__c.Booking_Day__c} as agreed
+Start Date: {!TR1__Closing_Report__c.CRS_Start_Date_Min__c}
+Anticipated Duration: Until {!TR1__Closing_Report__c.CRS_End_Date_max__c}
+Relevant Charge Rate(s):
+
+Daily Charge Rate: {!TR1__Closing_Report__c.Maximum_Day_Charge_Rate__c}
+Half Day Charge Rate: {!TR1__Closing_Report__c.Maximum_Half_Day_Charge_Rate__c}
+Hourly Charge Rate: {!TR1__Closing_Report__c.Maximum_Hour_Charge_Rate__c}
+
+
+
+
+We confirm that the above candidate has the necessary experience, training, qualifications and authorisations (required by law and professional bodies) to work on the assignment and that the candidate has confirmed that he/she is willing to work on the assignment.  You can rest assured that the above named candidate has been fully vetted to ensure his/her suitability for the role.  We will send you a confirmation of the checks that have been carried out separately. Our standard Terms of Business apply to this assignment and are attached to this confirmation.
+
+
+
+Agency Worker Regulations 2010
+
+As you are aware, the Agency Workers Regulations 2010 (“AWR”) entitle agency workers to equal treatment after 12 weeks in the same role with the same hirer with regard to pay and basic working and employment conditions with someone recruited directly to do the same job on a permanent basis.
+
+
+
+Your obligations under AWR
+
+
+From the commencement of the assignment, you are responsible under AWR for ensuring that {!TR1__Closing_Report__c.TR1__Person_Placed__c} is able to access all collective facilities that you provide (on the same basis as a comparable permanent employee) such as a car park, staff common room, toilets and canteen.  You are also responsible for ensuring that {!TR1__Closing_Report__c.TR1__Person_Placed__c} has access to information on job vacancies in the same way as a permanent recruit.  If you need any advice about this, please give us a call and we will be happy to help.
+
+
+Our obligations under AWR
+
+Supply Desk Limited will ensure that {!TR1__Closing_Report__c.TR1__Person_Placed__c} receives equal treatment in terms of employment conditions including pay, annual leave, working time, rest periods etc. after the 12 week qualifying period.  You have provided us with the following information as being the basic terms which would apply to the temporary worker had they been directly recruited by you to carry out the same role.  Please check to ensure that this is accurate.  If any of these terms change during the course of the assignment, please let us know immediately.
+
+
+
+AWR Comparator Information
+
+
+Basic Annual Salary: {!TR1__Closing_Report__c.Comparator_Full_Time_Annual_Salary__c}
+Annual Leave entitlement: {!TR1__Closing_Report__c.Annual_Leave_Entitlement_Formula__c}
+Number of comparator school working days per annum: {!TR1__Closing_Report__c.School_Working_Days__c}
+Details of any bonus scheme applicable: {!TR1__Closing_Report__c.Bonus_Scheme_Applicable__c}
+Overtime payments: {!TR1__Closing_Report__c.Overtime_Rate__c}
+Rest periods / breaks: {!TR1__Closing_Report__c.Rest_Period_Breaks__c}
+Vouchers or stamps with a monetary value: {!TR1__Closing_Report__c.Vouchers_Stamps_with_a_Monetary_Value__c}
+Any other remuneration: {!TR1__Closing_Report__c.Any_Other_Renumerations__c}
+Identity of Hirer: {!TR1__Closing_Report__c.Hirer__c}
+
+
+
+
+Please confirm if you are aware that {!TR1__Closing_Report__c.TR1__Person_Placed__c} has worked, other than through Supply Desk Limited, for the hirer (details above) in the last 12 months.
+
+
+
+
+Please note that it may be necessary to increase the daily charge rate after the 12 week qualifying period in order to comply with any additional liability imposed by AWR.  We will, of course, notify you if this is the case.
+
+
+
+Please let us know immediately if you consider that any of the details in this confirmation are incorrect.  Thank you again for your booking.
+
+
+Yours sincerely,
+
+{!TR1__Closing_Report__c.CreatedBy}
+
+Supply Desk {!TR1__Closing_Report__c.Branch__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

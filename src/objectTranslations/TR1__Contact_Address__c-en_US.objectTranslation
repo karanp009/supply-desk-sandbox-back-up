@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- City --></label>
+        <name>TR1__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Address --></label>
+        <name>TR1__Contact_Address__c</name>
+        <relationshipLabel><!-- Contact Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>TR1__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>TR1__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>TR1__Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>TR1__Zip_Postal_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

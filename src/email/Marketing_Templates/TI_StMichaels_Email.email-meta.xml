@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TI_StMichaels_Email</letterhead>
+    <name>TI_StMichaels_Email</name>
+    <style>freeForm</style>
+    <subject>Interview at St Michael&apos;s Catholic School in Buckinghamshire</subject>
+    <textOnly>Dear xxxx,
+
+
+
+Are you interested in teaching in a Catholic school environment? Did you know, you don’t have to be a practicing Catholic to work in a UK Catholic School. Catholic schools value and respect all staff members regardless of backgrounds or beliefs and promote and support the vocation of teaching.
+
+
+
+Teach In is working with a number of UK Catholic Diocese to support their recruitment drive for teachers to work in high-performing schools across the UK; including popular locations for Aussie teachers.
+
+On behalf of Garret Fay, and colleagues, at St Michael’s School, we are interviewing in April for September 2019 and 2020 positions at this unique school in Buckinghamshire. Teachers from all faiths and backgrounds are welcome to apply.
+
+Working in a Catholic school can offer you the following benefits:
+
+You will be teaching in a school environment that aligns with Catholic values, but embraces and welcomes teachers of all faiths and backgrounds.
+Teaching Religious Education is a core school focus.
+A Catholic school is well placed to support the training needs of an Australian trained teacher from Australia.
+
+Face to face interviews with a memeber of our team are available in the following Australian cities in April 2019. Skype interviews are also being conducted with Garret Fay, Executive Headteacher:
+
+Brisbane
+Sydney
+Melbourne
+
+Visit our website to register your interest today
+
+Click here to complete your details and one of our Catholic Schools team will be in touch to book your interview.
+
+Any questions, contact me on 0449790334 or email gemma.yates@teachin.co.uk
+
+Kind Regards,
+
+Gemma Yates</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

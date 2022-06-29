@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Filter Criteria on Contact Scheduler --></label>
+        <name>TR1__Filter_Criteria_on_Contact_Scheduler</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tooltip fields --></label>
+        <name>TR1__Tooltip_fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- available popup fields --></label>
+        <name>TR1__available_popup_fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- CR Id --></label>
+        <name>TR1__CR_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Assigned --></label>
+        <name>TR1__Candidate_Assigned__c</name>
+        <relationshipLabel><!-- Vacancy Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Availability --></label>
+        <name>TR1__Candidate_Availability__c</name>
+        <relationshipLabel><!-- Vacancy Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closed Reason --></label>
+        <name>TR1__Closed_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report Schedule Secondary --></label>
+        <name>TR1__Closing_Report_Schedule_Secondary__c</name>
+        <relationshipLabel><!-- Vacancy Schedules (Closing Report Schedule Secondary) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Report Schedule --></label>
+        <name>TR1__Closing_Report_Schedule__c</name>
+        <relationshipLabel><!-- Vacancy Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>TR1__Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Time --></label>
+        <name>TR1__End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Account Parent --></label>
+        <name>TR1__Job_Account_Parent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job&apos;s Account --></label>
+        <name>TR1__Job_s_Account__c</name>
+        <relationshipLabel><!-- Vacancy Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Openings --></label>
+        <name>TR1__Number_of_Openings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>TR1__Shift__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Day</masterLabel>
+            <translation><!-- Full Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date Time --></label>
+        <name>TR1__Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Area --></label>
+        <name>TR1__State_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Status --></label>
+        <name>TR1__Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tentative</masterLabel>
+            <translation><!-- Tentative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date for which this vacancy is applicable --></help>
+        <label><!-- Vacancy Date --></label>
+        <name>TR1__Vacancy_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Name --></label>
+        <name>TR1__Vacancy_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Number --></label>
+        <name>TR1__Vacancy_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Vacancy__c</name>
+        <relationshipLabel><!-- Vacancy Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Shift Location --></label>
+        <name>TR1__Work_Shift_Location__c</name>
+        <picklistValues>
+            <masterLabel>INDIA</masterLabel>
+            <translation><!-- INDIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Shift Location --></label>
+        <name>TR1__Work_Shift_Location_lkId__c</name>
+        <relationshipLabel><!-- Vacancy Schedules (Work Shit Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- isChecked --></label>
+        <name>TR1__isChecked__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCreatedFromCR --></label>
+        <name>TR1__isCreatedFromCR__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- End Date time should be greater than Start Date time --></errorMessage>
+        <name>TR1__EndDate_Time_Not_LessThan_StartDate_Time</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date should Not Be Past Date --></errorMessage>
+        <name>TR1__Start_Date_Time_Not_Past_Value</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Hide Closing Report --></label>
+        <name>TR1__ClosingReport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Mass Reject --></label>
+        <name>TR1__MassReject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Mass CV --></label>
+        <name>TR1__Mass_CV_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Move Back --></label>
+        <name>TR1__MoveBack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Offer --></label>
+        <name>TR1__Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Reject --></label>
+        <name>TR1__Reject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Sendout --></label>
+        <name>TR1__Sendout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Submit and Email --></label>
+        <name>TR1__SubmitEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Submit Without Email --></label>
+        <name>TR1__SubmitWithoutEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Undo Reject --></label>
+        <name>TR1__UndoReject__c</name>
+    </fields>
+</CustomObjectTranslation>

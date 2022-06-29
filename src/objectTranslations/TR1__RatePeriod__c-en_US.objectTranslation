@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- rateclone --></label>
+        <name>TR1__ratePeriod</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Rate Periods --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>TR1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloned From --></label>
+        <name>TR1__Cloned_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__ClosingReport__c</name>
+        <relationshipLabel><!-- Rate Periods --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current --></label>
+        <name>TR1__Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>TR1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>TR1__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>TR1__Expense_Report__c</name>
+        <relationshipLabel><!-- Rate Periods --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Rate Periods --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>TR1__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>TR1__Timesheet__c</name>
+        <relationshipLabel><!-- Rate Periods --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Account Period --></label>
+        <name>TR1__Account_Period</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closing Report Period --></label>
+        <name>TR1__Closing_Report_Period</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Acc:11/20:W-008786 Created For Tie Rates To Expenses. --></description>
+        <label><!-- Expense Period --></label>
+        <name>TR1__Expense_Period</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job Period --></label>
+        <name>TR1__Job_Period</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TImesheet Period --></label>
+        <name>TR1__TImesheet_Period</name>
+    </recordTypes>
+</CustomObjectTranslation>

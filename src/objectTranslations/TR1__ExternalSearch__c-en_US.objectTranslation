@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- with all the words --></label>
+        <name>TR1__All_Words__c</name>
+    </fields>
+    <fields>
+        <label><!-- boolean string --></label>
+        <name>TR1__Boolean_Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>TR1__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>TR1__Country__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK-United Kingdom</masterLabel>
+            <translation><!-- UK-United Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US-United States</masterLabel>
+            <translation><!-- US-United States --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- with the exact phrase --></label>
+        <name>TR1__Exact_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Board Ids --></label>
+        <name>TR1__Job_Board_Ids__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Boards --></label>
+        <name>TR1__Job_Boards__c</name>
+        <picklistValues>
+            <masterLabel>Bio Space</masterLabel>
+            <translation><!-- Bio Space --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Career Builder</masterLabel>
+            <translation><!-- Career Builder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linked in</masterLabel>
+            <translation><!-- Linked in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster</masterLabel>
+            <translation><!-- Monster --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- with at least one of the words --></label>
+        <name>TR1__One_Word__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radius --></label>
+        <name>TR1__Radius__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500</masterLabel>
+            <translation><!-- 500 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recency --></label>
+        <name>TR1__Recency__c</name>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resume Search --></label>
+        <name>TR1__ResumeSearch__c</name>
+        <relationshipLabel><!-- ExternalSearches --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>TR1__State_Area__c</name>
+        <picklistValues>
+            <masterLabel>AK-Alaska</masterLabel>
+            <translation><!-- AK-Alaska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL-Alabama</masterLabel>
+            <translation><!-- AL-Alabama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR-Arkansas</masterLabel>
+            <translation><!-- AR-Arkansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ-Arizona</masterLabel>
+            <translation><!-- AZ-Arizona --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA-California</masterLabel>
+            <translation><!-- CA-California --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO-Colorado</masterLabel>
+            <translation><!-- CO-Colorado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT-Connecticut</masterLabel>
+            <translation><!-- CT-Connecticut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC-Dist of Columbia</masterLabel>
+            <translation><!-- DC-Dist of Columbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE-Delaware</masterLabel>
+            <translation><!-- DE-Delaware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EastMidlands</masterLabel>
+            <translation><!-- EastMidlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL-Florida</masterLabel>
+            <translation><!-- FL-Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA-Georgia</masterLabel>
+            <translation><!-- GA-Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI-Hawaii</masterLabel>
+            <translation><!-- HI-Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA-Iowa</masterLabel>
+            <translation><!-- IA-Iowa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID-Idaho</masterLabel>
+            <translation><!-- ID-Idaho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-Illinois</masterLabel>
+            <translation><!-- IL-Illinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN-Indiana</masterLabel>
+            <translation><!-- IN-Indiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS-Kansas</masterLabel>
+            <translation><!-- KS-Kansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY-Kentucky</masterLabel>
+            <translation><!-- KY-Kentucky --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA-Louisiana</masterLabel>
+            <translation><!-- LA-Louisiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA-Massachusetts</masterLabel>
+            <translation><!-- MA-Massachusetts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD-Maryland</masterLabel>
+            <translation><!-- MD-Maryland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME-Maine</masterLabel>
+            <translation><!-- ME-Maine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI-Michigan</masterLabel>
+            <translation><!-- MI-Michigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN-Minnesota</masterLabel>
+            <translation><!-- MN-Minnesota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO-Missouri</masterLabel>
+            <translation><!-- MO-Missouri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS-Mississippi</masterLabel>
+            <translation><!-- MS-Mississippi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT-Montana</masterLabel>
+            <translation><!-- MT-Montana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC-North Carolina</masterLabel>
+            <translation><!-- NC-North Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND-North Dakota</masterLabel>
+            <translation><!-- ND-North Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE-Nebraska</masterLabel>
+            <translation><!-- NE-Nebraska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH-New Hampshire</masterLabel>
+            <translation><!-- NH-New Hampshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ-New Jersey</masterLabel>
+            <translation><!-- NJ-New Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM-New Mexico</masterLabel>
+            <translation><!-- NM-New Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV-Nevada</masterLabel>
+            <translation><!-- NV-Nevada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-New York</masterLabel>
+            <translation><!-- NY-New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NorthEast</masterLabel>
+            <translation><!-- NorthEast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NorthWest</masterLabel>
+            <translation><!-- NorthWest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NorthernIreland</masterLabel>
+            <translation><!-- NorthernIreland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH-Ohio</masterLabel>
+            <translation><!-- OH-Ohio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK-Oklahoma</masterLabel>
+            <translation><!-- OK-Oklahoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR-Oregon</masterLabel>
+            <translation><!-- OR-Oregon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA-Pennsylvania</masterLabel>
+            <translation><!-- PA-Pennsylvania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR-Puerto Rico</masterLabel>
+            <translation><!-- PR-Puerto Rico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI-Rhode Island</masterLabel>
+            <translation><!-- RI-Rhode Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC-South Carolina</masterLabel>
+            <translation><!-- SC-South Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD-South Dakota</masterLabel>
+            <translation><!-- SD-South Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scotland</masterLabel>
+            <translation><!-- Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SouthEast</masterLabel>
+            <translation><!-- SouthEast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SouthWest</masterLabel>
+            <translation><!-- SouthWest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN-Tennessee</masterLabel>
+            <translation><!-- TN-Tennessee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX-Texas</masterLabel>
+            <translation><!-- TX-Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK-All</masterLabel>
+            <translation><!-- UK-All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US-All</masterLabel>
+            <translation><!-- US-All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT-Utah</masterLabel>
+            <translation><!-- UT-Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA-Virginia</masterLabel>
+            <translation><!-- VA-Virginia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT-Vermont</masterLabel>
+            <translation><!-- VT-Vermont --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA-Washington</masterLabel>
+            <translation><!-- WA-Washington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI-Wisconsin</masterLabel>
+            <translation><!-- WI-Wisconsin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV-West Virginia</masterLabel>
+            <translation><!-- WV-West Virginia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY-Wyoming</masterLabel>
+            <translation><!-- WY-Wyoming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wales</masterLabel>
+            <translation><!-- Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WestMidlands</masterLabel>
+            <translation><!-- WestMidlands --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>TR1__Zip_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

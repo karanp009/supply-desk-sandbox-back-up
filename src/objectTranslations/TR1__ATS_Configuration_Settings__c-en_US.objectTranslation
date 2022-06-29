@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ATS Submittal Default Email Template --></label>
+        <name>TR1__ATS_Submittal_Default_Email_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- List view records size --></label>
+        <name>TR1__List_view_records_size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Space Prefix --></label>
+        <name>TR1__Name_Space_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit With Email --></label>
+        <name>TR1__Submit_With_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit without Email --></label>
+        <name>TR1__Submit_without_Email__c</name>
+    </fields>
+</CustomObjectTranslation>

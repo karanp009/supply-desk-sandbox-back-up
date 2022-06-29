@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Logo_Footer_Client</letterhead>
+    <name>Client Account Number Missing</name>
+    <style>freeForm</style>
+    <subject>Client Account Number Missing</subject>
+    <textOnly>A Closing Report has been created for the following client who does not have an account number
+
+Client Details
+ - Client Name: {!TR1__Closing_Report__c.TR1__Account__c}
+ - Branch: {!TR1__Closing_Report__c.Client_Branch__c}
+ - Link to Client Record: https://eu6.salesforce.com/{!TR1__Closing_Report__c.TR1__AccountId__c}
+
+
+Vacancy/ Placement Details
+ - Vacancy Name: {!TR1__Closing_Report__c.TR1__Job__c}
+ - Placement Owner: {!TR1__Closing_Report__c.TR1__Job_Credit__c}
+ - Vacancy Start Date: {!TR1__Closing_Report__c.TR1__Start_Date__c}
+ - Vacancy End Date: {!TR1__Closing_Report__c.TR1__End_Date__c}
+ - Link to Closing Report: https://eu6.salesforce.com/{!TR1__Closing_Report__c.Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

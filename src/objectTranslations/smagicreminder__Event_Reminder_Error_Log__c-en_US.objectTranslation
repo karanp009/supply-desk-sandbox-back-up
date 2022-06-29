@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Id --></label>
+        <name>smagicreminder__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>smagicreminder__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>smagicreminder__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Status Code --></label>
+        <name>smagicreminder__Error_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fields --></label>
+        <name>smagicreminder__Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>smagicreminder__Line_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>smagicreminder__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>smagicreminder__User__c</name>
+        <relationshipLabel><!-- Event Reminder Error Logs --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

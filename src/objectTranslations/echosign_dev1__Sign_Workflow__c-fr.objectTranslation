@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Sign Workflow --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Sign Workflow --></value>
+    </caseValues>
+    <fields>
+        <help>Contenu du workflow de signature au format de chaîne JSON</help>
+        <label><!-- Workflow Content --></label>
+        <name>echosign_dev1__Workflow_Content__c</name>
+    </fields>
+    <fields>
+        <help>Date et heure de création du workflow de signature</help>
+        <label><!-- Workflow Created Time --></label>
+        <name>echosign_dev1__Workflow_Created_Time__c</name>
+    </fields>
+    <fields>
+        <help>Nom d&apos;affichage du workflow</help>
+        <label><!-- Workflow Display Name --></label>
+        <name>echosign_dev1__Workflow_Display_Name__c</name>
+    </fields>
+    <fields>
+        <help>ID du workflow de signature</help>
+        <label><!-- Workflow Id --></label>
+        <name>echosign_dev1__Workflow_Id__c</name>
+    </fields>
+    <fields>
+        <help>Date et heure de modification du workflow de signature</help>
+        <label><!-- Workflow Modified Time --></label>
+        <name>echosign_dev1__Workflow_Modified_Time__c</name>
+    </fields>
+    <fields>
+        <help>Statut du workflow de signature</help>
+        <label><!-- Workflow Status --></label>
+        <name>echosign_dev1__Workflow_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation><!-- ACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRAFT</masterLabel>
+            <translation><!-- DRAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIDDEN</masterLabel>
+            <translation><!-- HIDDEN --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Sign Workflow Name --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

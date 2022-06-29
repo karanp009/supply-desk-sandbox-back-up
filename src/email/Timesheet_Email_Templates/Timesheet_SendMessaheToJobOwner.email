@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Hi </span>{!TR1__Timesheet__c.TR1__Job_Owner__c}<span style="font-size: 12pt;">,</span></font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The following message has been added to Timesheet {!TR1__Timesheet__c.Name}.</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">{!TR1__Timesheet__c.Message_to_Job_Owner__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Job:&nbsp;</font><font face="arial">{!TR1__Timesheet__c.TR1__Job_Order__c}&nbsp;</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial" style="font-size: 12pt;">Contact:&nbsp;</font><font face="arial">{!TR1__Timesheet__c.TR1__Consultant__c}</font></div><div><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Link to Timesheet:&nbsp;</font><font face="arial">https://eu6.salesforce.com/</font><span style="font-family: arial;">{!TR1__Timesheet__c.Id}</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div><font face="arial">Kind Regards,</font></div><div><font face="arial"><br></font></div><div><font face="arial">Supply Desk</font></div></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

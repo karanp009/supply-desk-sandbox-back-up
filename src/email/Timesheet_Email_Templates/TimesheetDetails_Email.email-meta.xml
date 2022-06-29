@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>37.0</apiVersion>
+    <available>false</available>
+    <description>Email template used , when a Timesheet is submitted, email goes to approvers, candidates</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TimesheetDetails Email</name>
+    <packageVersions>
+        <majorNumber>3</majorNumber>
+        <minorNumber>258</minorNumber>
+        <namespace>TR1</namespace>
+    </packageVersions>
+    <style>none</style>
+    <subject>Timesheet  Submitted</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

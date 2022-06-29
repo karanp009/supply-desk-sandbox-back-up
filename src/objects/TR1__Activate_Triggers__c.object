@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Turn on and off Triggers</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__CandidateAvailabilityTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To Turn On/Off CandidateAvailabilityTrigger</description>
+        <externalId>false</externalId>
+        <label>CandidateAvailabilityTrigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__ClosingReportScheduleUpdate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To Turn On/Off ClosingReportScheduleUpdate</description>
+        <externalId>false</externalId>
+        <label>ClosingReportScheduleUpdate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__ClosingReportTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To Turn On/Off ClosingReportTrigger</description>
+        <externalId>false</externalId>
+        <label>ClosingReportTrigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TimesheetDetailTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To Turn On/Off TimesheetDetailTrigger</description>
+        <externalId>false</externalId>
+        <label>TimesheetDetailTrigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__VacancyD2DTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To Turn On/Off VacancyD2DTrigger</description>
+        <externalId>false</externalId>
+        <label>VacancyD2DTrigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__VacancyTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To Turn On/Off VacancyTrigger</description>
+        <externalId>false</externalId>
+        <label>VacancyTrigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Activate Triggers</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Donot change this mapping --></help>
+        <label><!-- CandidateId --></label>
+        <name>TR1__CandidateId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use only the OtherCity or the MailingCity fields for this mapping --></help>
+        <label><!-- City --></label>
+        <name>TR1__City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use only the OtherCountry or  MailingCountry fields for this mapping --></help>
+        <label><!-- CountryCode --></label>
+        <name>TR1__CountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Position --></label>
+        <name>TR1__Current_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB --></label>
+        <name>TR1__DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>TR1__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>TR1__Fax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please note that enabling field update for FirstName / Email might void duplicate check --></help>
+        <label><!-- Fields to Update --></label>
+        <name>TR1__Fields_to_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>TR1__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HighestEducationLevel --></label>
+        <name>TR1__HighestEducationLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- HomePhone --></label>
+        <name>TR1__HomePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT Skills --></label>
+        <name>TR1__IT_Skills__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>TR1__Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- MobilePhone --></label>
+        <name>TR1__MobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nationality --></label>
+        <name>TR1__Nationality__c</name>
+    </fields>
+    <fields>
+        <label><!-- OtherPhone --></label>
+        <name>TR1__OtherPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use only the OtherPostalCode or the MailingPostalCode fields for this mapping --></help>
+        <label><!-- PostalCode --></label>
+        <name>TR1__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>TR1__Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills --></label>
+        <name>TR1__Skills__c</name>
+    </fields>
+    <fields>
+        <label><!-- StreetAddress1 --></label>
+        <name>TR1__StreetAddress1__c</name>
+    </fields>
+    <fields>
+        <label><!-- StreetAddress3 --></label>
+        <name>TR1__StreetAddress3__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkPhone --></label>
+        <name>TR1__WorkPhone__c</name>
+    </fields>
+</CustomObjectTranslation>

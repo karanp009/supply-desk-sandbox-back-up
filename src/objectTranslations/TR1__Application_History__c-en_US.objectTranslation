@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Application --></label>
+        <name>TR1__Application__c</name>
+        <relationshipLabel><!-- Applications History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Stage --></label>
+        <name>TR1__Old_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage End Date --></label>
+        <name>TR1__Stage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Start Date --></label>
+        <name>TR1__Stage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Stage --></label>
+        <name>TR1__Stage__c</name>
+    </fields>
+</CustomObjectTranslation>

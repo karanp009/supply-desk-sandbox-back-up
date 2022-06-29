@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Candidate Status changed to Vetted</name>
+    <style>freeForm</style>
+    <subject>Candidate {!Contact.FirstName} {!Contact.LastName} has been changed to Vetted</subject>
+    <textOnly>The following candidate has been changed to Vetted
+
+Full Name: {!Contact.FirstName} {!Contact.LastName}
+Branch: {!Contact.Division__c}
+Person Owner: {!Contact.OwnerFullName}
+Link to Record: https://eu6.salesforce.com/{!Contact.Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

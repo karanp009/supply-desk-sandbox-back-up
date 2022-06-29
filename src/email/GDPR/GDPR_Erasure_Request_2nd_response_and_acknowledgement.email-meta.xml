@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GDPR Erasure Request - 2nd response and acknowledgement</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>GDPR Erasure Request - 2nd response and acknowledgement</name>
+    <style>formalLetter</style>
+    <subject>GDPR Erasure Request - No Further Contact Confirmed</subject>
+    <textOnly>GDPR Erasure Request - No Further Contact Confirmed
+
+Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName},
+
+Thank you for your email. We acknowledge your request for your personal data to be erased and to receive no further contact.
+
+I can confirm that you will receive no further unsolicited contact from Supplydesk.
+
+I also confirm that your record will be securely deleted in its entirety in line with our retention policy. Please note that we have a legal obligation to retain some records in order to comply with legislation including:
+
+Conduct of Employment Agencies and Employment Businesses Regulations 2003
+Immigration and Tax legislation
+Safeguarding Vulnerable Groups Act 2006
+Department for Education statutory guidance (Keeping Children Safe in Education)
+Education (Health Standards) (England) Regulations 2003
+
+We confirm that, if applicable, we have communicated your erasure request to each client to whom we disclosed your personal data.
+
+Please note that, after your record has been erased, we cannot guarantee that you won’t be inadvertently contacted by Supply Desk again in the future if we come across your details from another source because, at that point, we will have no record of you including your request not to receive any further contact.
+
+
+Regards,
+
+Data Processing Lead - Supplydesk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

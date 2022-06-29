@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Stores other custom settings that are used in the code.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for this setting</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Other Utility</label>
+    <visibility>Public</visibility>
+</CustomObject>

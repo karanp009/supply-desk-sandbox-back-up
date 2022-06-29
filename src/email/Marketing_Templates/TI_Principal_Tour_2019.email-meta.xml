@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TI_Principal_Tour_2019</letterhead>
+    <name>TI_Principal Tour 2019</name>
+    <style>freeForm</style>
+    <subject>Interview in Australia and land your perfect UK Teaching Job</subject>
+    <textOnly>Our Buckinghamshire Principal Tour is back in 2019 and places are already filling up fast!
+
+After huge successes with our 2017 and 2018 tours, we now have over 50 Australian teachers living and working in Buckinghamshire. Interested in joining them?
+
+Register today
+
+Teach In are flying UK Principals from schools in beautiful Buckinghamshire to Australia -  with real teaching positions to fill! Early Childhood, Primary, Secondary (all subjects) and SEN positions available.
+
+Interview in Australia in person, with a UK hiring Principal, for a teaching role starting in January 2020 and make those European travel dreams a reality!
+
+When: Wednesday 3rd October, 10am - 7pm
+Where: Flinders University, Sturt Road, Bedford Park 5042
+&quot;If you’re an aspiring teacher, or even if you already are one, having the opportunity to live and work overseas is incredible.The importance of stepping out of your comfort zone, both personally and professionally, can do nothing but good. My time teaching in the UK was made possible by Teach In.&quot; Lucy
+
+Register your interest today! Contact us on the details below and start your UK teaching adventure with Teach In.
+
+T: 0449 790 334
+E: Gemma.Yates@teachin.co.uk
+W: teachin.com.au/teaching-overseas/principal-interviews</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount (Bill) --></label>
+        <name>TR1__AmountBill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount (Pay) --></label>
+        <name>TR1__AmountPay__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date / Time --></label>
+        <name>TR1__EndDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>TR1__End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Formula --></label>
+        <name>TR1__Hours_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours --></label>
+        <name>TR1__Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>TR1__Rate__c</name>
+        <relationshipLabel><!-- Shift Works --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date/Time --></label>
+        <name>TR1__StartDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>TR1__Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Type --></label>
+        <name>TR1__TimeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Detail --></label>
+        <name>TR1__TimesheetDetail__c</name>
+        <relationshipLabel><!-- Shift Works --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>TR1__Timesheet__c</name>
+        <relationshipLabel><!-- Shift Works --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Fee --></label>
+        <name>TR1__Total_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Units --></label>
+        <name>TR1__Units__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Only Units OR Hours should be entered --></errorMessage>
+        <name>TR1__Only_Unite_OR_Hours_should_be_entered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date / Time should not be less/equal to Start Date/Time OR Start Date/Time should not be null when End Date / Time is entered. --></errorMessage>
+        <name>TR1__Start_and_End_Date_comparision</name>
+    </validationRules>
+</CustomObjectTranslation>

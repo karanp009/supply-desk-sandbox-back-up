@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Report --></label>
+        <name>TR1__Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Name --></label>
+        <name>TR1__Search_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected --></label>
+        <name>TR1__Selected__c</name>
+    </fields>
+</CustomObjectTranslation>

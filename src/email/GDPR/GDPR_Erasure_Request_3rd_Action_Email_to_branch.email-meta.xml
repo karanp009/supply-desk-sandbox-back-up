@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GDPR Erasure Request - 3rd Action: Email to branch</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>GDPR Erasure Request - 3rd Action: Email to branch</name>
+    <style>formalLetter</style>
+    <subject>GDPR Erasure Request - Delete Candidate information</subject>
+    <textOnly>GDPR Erasure Request - Delete Candidate information
+Dear SDL Branch
+
+Re. {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName},
+
+{!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName} has requested erasure under GDPR.
+
+Please ensure that in branch any personal info held (NOT in TR) is erased with immediate effect.
+
+This should include any CV&apos;s or profiles held on a desktop/shared drive, mobile number or email addresses held on mobiles or paper printouts. Please ensure this candidate is removed from any pre-existing mailout lists.
+
+
+
+Thank you
+
+
+Data Processing Lead - Supplydesk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Item Value --></label>
+        <name>TR1__Item_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Lookup Field --></label>
+        <name>TR1__Job_Lookup_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Source Object --></label>
+        <name>TR1__Job_Source_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>TR1__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Lookup Field --></label>
+        <name>TR1__Target_Lookup_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Object --></label>
+        <name>TR1__Target_Object__c</name>
+    </fields>
+</CustomObjectTranslation>

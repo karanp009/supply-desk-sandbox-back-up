@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SD Overseas School Zoom Interview Confirmation</name>
+    <style>freeForm</style>
+    <subject>Confirmation of Supply Desk Overseas- Zoom School Interview</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+
+I am just following up to confirm your online Zoom interview with William Harding School on Monday 18th October at 2.30pm, which is xxpm your time. The school is looking forward to speaking with you then. Please see  interview details below:
+
+
+INTERVIEW DETAILS:
+
+
+School: William Harding School
+
+Date: Monday 18th October
+
+Time: 2.30pm UK time, which is xxpm your time
+
+Website: https://www.williamhardingschool.co.uk/
+
+
+
+Your Zoom invite link is below. All you need to do it click on the link, enter the passcode (highlighted below) and you are in.
+
+
+Nav Panesar is inviting you to a scheduled Zoom meeting.
+
+
+Join Zoom Meeting
+
+https://us02web.zoom.us/j/88296038356?pwd=MlJ0SW1MakRXNjRPcE5lRHVOazd6Zz09
+
+
+Meeting ID: 882 9603 8356
+
+Passcode: 429542If you have any questions please let me know?
+
+
+
+Below and attached are interview preparation notes, that we suggest you read through in preparation for your interview.
+
+
+
+Useful Interview Prep:
+
+
+General questions you are likely to be asked…
+
+
+
+Give me an example of when a lesson went well
+Give me an example of when a lesson did not go well – what did you/ would you do to improve it?
+If you had a couple of students talking at the back of your class, how would you deal with them? If they continued to talk, what would you do?
+How would you describe yourself as a teacher?
+How do you motivate students to do their homework?
+How do you start and finish your lessons?
+What is your motivation for coming to work in the UK?
+What do you already know about our school?
+How would you ensure that your manager gets the best out of you?
+When you were last observed teaching, what development points came up?
+
+
+General questions to ask the interviewer…
+
+
+
+Would we be able to get involved with any extracurricular clubs or activities?
+What support do you give to new members of staff?
+What would my timetable look like?
+What is the behaviour of the students like in your school?
+How does your school discipline policy work?
+Do you have many students with statements?
+Do you have classroom assistants?
+Could you describe your staff?
+What are the main targets of your school?
+
+
+
+PLEASE RESPOND TO THIS EMAIL WITH CONFIRMATION OF RECEIPT
+
+
+
+Kind regards,
+
+
+{!User.FirstName} {!User.LastName}
+
+{!User.Title}
+
+e. {!User.Email}
+
+t. {!User.Branch_Phone__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

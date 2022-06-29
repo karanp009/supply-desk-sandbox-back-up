@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Rate --></label>
+        <name>TR1__Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact Email --></label>
+        <name>TR1__Job_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact Phone --></label>
+        <name>TR1__Job_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact --></label>
+        <name>TR1__Job_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reporting --></label>
+        <name>TR1__Job_Reporting__c</name>
+        <relationshipLabel><!-- Submittals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Submittals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Days in Stage --></label>
+        <name>TR1__Number_of_Days_in_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate --></label>
+        <name>TR1__Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rjt --></label>
+        <name>TR1__Reject_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notes --></label>
+        <name>TR1__Rejection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notification --></label>
+        <name>TR1__Rejection_Notification__c</name>
+        <picklistValues>
+            <masterLabel>Automated Rejection Email</masterLabel>
+            <translation><!-- Automated Rejection Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Owner Will Notify</masterLabel>
+            <translation><!-- Contact Owner Will Notify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Owner Will Notify</masterLabel>
+            <translation><!-- Job Owner Will Notify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rvt --></label>
+        <name>TR1__Revert_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>TR1__Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- S O --></label>
+        <name>TR1__Send_Out_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage End Date --></label>
+        <name>TR1__Stage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Start Date --></label>
+        <name>TR1__Stage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Manager Stage Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submittal Contact Owner --></label>
+        <name>TR1__Submittal_Contact_Owner__c</name>
+        <relationshipLabel><!-- Submittals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submittal Email --></label>
+        <name>TR1__Submittal_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submittal Mobile --></label>
+        <name>TR1__Submittal_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submittal Phone --></label>
+        <name>TR1__Submittal_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submittal --></label>
+        <name>TR1__Submittal__c</name>
+        <relationshipLabel><!-- Submittals --></relationshipLabel>
+    </fields>
+    <webLinks>
+        <label><!-- Reject --></label>
+        <name>TR1__Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Revert --></label>
+        <name>TR1__Revert</name>
+    </webLinks>
+    <webLinks>
+        <label>Schedule Client Interview</label>
+        <name>TR1__Send_Out</name>
+    </webLinks>
+</CustomObjectTranslation>

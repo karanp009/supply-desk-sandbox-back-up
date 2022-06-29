@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Categories --></label>
+        <name>TR1__Categories__c</name>
+        <picklistValues>
+            <masterLabel>AvailableType</masterLabel>
+            <translation><!-- AvailableType --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnavailableType</masterLabel>
+            <translation><!-- UnavailableType --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>TR1__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

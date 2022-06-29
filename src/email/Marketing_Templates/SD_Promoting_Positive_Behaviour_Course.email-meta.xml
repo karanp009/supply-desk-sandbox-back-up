@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Promoting_Positive_Behaviour_Course</letterhead>
+    <name>SD Promoting Positive Behaviour Course</name>
+    <style>freeForm</style>
+    <subject>Take our online Promoting Positive Behaviour course</subject>
+    <textOnly>Here at Supply Desk, we&apos;re committed to providing our teachers and support staff with a full and varied CPD programme, which is why we&apos;re always working to provide new training materials.
+
+As such, we are delighted to be able offer you access to our new online Promoting Positive Behaviour course, created in-house by our education specialists.
+
+You&apos;ll find the full course here:
+
+https://supplydesk.co.uk/promoting-positive-behaviour/story.html
+
+
+
+You should allow approximately 30 minutes to complete the course, including all quiz sections.
+
+Upon completion, you will be given a link to your downloadable certificate, which you can print and fill in for your own records.
+
+We hope you enjoy it!
+
+Kind Regards,
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

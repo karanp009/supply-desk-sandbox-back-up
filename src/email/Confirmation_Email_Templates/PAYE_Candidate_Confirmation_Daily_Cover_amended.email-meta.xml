@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>PAYE Candidate Confirmation - Daily Cover (amended)</name>
+    <style>freeForm</style>
+    <subject>Confirmation of Assignment: {!TR1__Closing_Report__c.TR1__Job__c}</subject>
+    <textOnly>Dear {!TR1__Closing_Report__c.TR1__Person_Placed_First_Name__c},
+
+I am pleased to confirm the details of your temporary assignment as follows:
+
+Assignment Details
+ - Name of School: {!TR1__Closing_Report__c.TR1__Account__c}
+ - Location of School :  {!TR1__Closing_Report__c.Client_Address__c} 
+ - Booking Type:  {!TR1__Closing_Report__c.Booking_Type__c}
+ - Role Type : {!TR1__Closing_Report__c.Job_Title__c} (no planning, preparation, assessment or reporting required)
+ - Role Details: {!TR1__Job__c.Subject2__c}, {!TR1__Job__c.Year_Key_Stage__c}
+ - Any necessary experience, training or qualifications: {!TR1__Job__c.Trained_As__c}, {!TR1__Job__c.SEN_Experience__c}, {!TR1__Job__c.SEN_Additional_Experience__c}, {!TR1__Job__c.Skills_Training_Experience__c}
+ - Risks to Health and Safety: {!TR1__Closing_Report__c.HS_Notes_For_Confirmation_Letter__c}
+ - Hours of work: {!TR1__Job__c.Start_Time__c} - {!TR1__Job__c.End_Time__c}
+ - Working days:  {!TR1__Job__c.Applicable_Days__c} as advised
+ - Start Date : {!TR1__Closing_Report__c.TR1__Start_Date__c}
+ - Anticipated duration: Until {!TR1__Closing_Report__c.TR1__End_Date__c}
+ - Annual leave entitlement: 28 Days
+
+The relevant pay rate(s) is/are shown below:
+ - Daily Rate: {!TR1__Closing_Report__c.Maximum_Day_Pay_Rate__c} which includes pay in respect of annual leave of {!TR1__Closing_Report__c.Annual_Leave_Day_Pay_Rate__c}
+ - Half Daily Rate: {!TR1__Closing_Report__c.Maximum_Half_Day_Pay_Rate__c} which includes pay in respect of annual leave of {!TR1__Closing_Report__c.Annual_Leave_Half_Day_Pay_Rate__c}
+ - Hourly Rate: {!TR1__Closing_Report__c.Maximum_Hour_Pay_Rate__c} which includes pay in respect of annual leave of {!TR1__Closing_Report__c.Annual_Leave_Hour_Pay_Rate__c}
+
+As this is a daily cover role, you will not be required to carry out any planning, preparation, reporting or assessment.  
+
+You are engaged by Supply Desk Limited to work on this assignment on the basis of the Terms of Engagement attached.
+
+I would like to take this opportunity to wish you well with this temporary assignment.  If I can be of any assistance, please do not hesitate to contact me.
+
+
+Yours sincerely,
+
+
+{!TR1__Closing_Report__c.CreatedBy}
+Supply Desk {!TR1__Closing_Report__c.Branch__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

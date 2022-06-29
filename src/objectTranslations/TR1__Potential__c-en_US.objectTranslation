@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- A Potential Candidate. These could be either those that exists in TR already or created from External Job Boards. --></help>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Potentials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Job --></label>
+        <name>TR1__Related_Job__c</name>
+    </fields>
+    <fields>
+        <help><!-- That Resume Search record that brought the Candidate specified above into TR. --></help>
+        <label><!-- Resume Search --></label>
+        <name>TR1__Resume_Search__c</name>
+        <relationshipLabel><!-- Potentials --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A Unique Identifier to prevent duplicate Potentials from being created against a given Resume Search. This is basically a combination of the 18 Characters Long IDs of the Contact and Resume Search records respectively. --></help>
+        <label><!-- UID --></label>
+        <name>TR1__UID__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional Message --></label>
+        <name>TR1__Additional_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Id --></label>
+        <name>TR1__Alias_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>TR1__Application__c</name>
+        <relationshipLabel><!-- Debug Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>TR1__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Debug Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exception Type --></label>
+        <name>TR1__Exception_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>TR1__External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Name --></label>
+        <name>TR1__Function_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Debug Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Log Type? --></label>
+        <name>TR1__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Success/Exception Message --></label>
+        <name>TR1__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stack Trace String --></label>
+        <name>TR1__Stack_Trace_String__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+Hi {!Contact.OwnerFirstName} -
+
+The resume for {!Contact.Name} has been parsed successfully and is now available in Talent Rover. You can edit or view the Candidate using the links below.
+
+Edit: {!Contact.Link}/e
+View: {!Contact.Link}
+
+Happy placing!

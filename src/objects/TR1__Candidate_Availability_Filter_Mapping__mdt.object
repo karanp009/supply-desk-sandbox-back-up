@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>MetaData to map Candidate field Vs Candidate availability, Which is used on Job Scheduler to filter Candidates.</description>
+    <fields>
+        <fullName>TR1__Candidate_Availability_API__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field API name on Candidate availability object.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Candidate Availability API</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_API__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field API name on Contact object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Contact API</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Candidate Availability Filter Mapping</label>
+    <pluralLabel>Candidate Availability Filter Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

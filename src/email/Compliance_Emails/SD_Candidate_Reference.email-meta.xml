@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Company Standard Candidate Reference from SD</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SD Candidate Reference</name>
+    <style>freeForm</style>
+    <subject>Reference from Supply Desk (insert candidate name)</subject>
+    <textOnly>Dear (please insert name)
+
+
+
+RE: (insert candidate name)
+
+
+In accordance with company policy, it is normal practice to provide standard information in response to all reference requests. The provision of such information does not imply any comment about the temporary worker or their work performance with Supply Desk.
+
+
+We can confirm that (insert candidate name) has undertaken temporary assignments for Supply Desk as a (please insert job type) between the dates of (please insert date) and (please insert date).
+
+
+In accordance with the DfE guidance, Keeping Children Safe in Education, we can confirm, to the best of our knowledge, that {!Contact.Name} has never been the subject of an allegation related to safeguarding which has been found to be substantiated whilst on assignment with Supply Desk.
+
+
+
+
+Yours sincerely
+
+
+{!User.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

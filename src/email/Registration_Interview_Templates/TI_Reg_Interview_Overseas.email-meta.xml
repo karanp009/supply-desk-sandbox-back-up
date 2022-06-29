@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TeachIn_Email_Footer</letterhead>
+    <name>TI Reg Interview - Overseas</name>
+    <style>freeForm</style>
+    <subject>Teachin the UK Documents &amp; Next Steps</subject>
+    <textOnly>Dear {!Contact.Name}
+
+
+
+
+Congratulations. You are heading to the UK to teach.
+
+In order to get ready for your departure, you will need to complete the following information (see forms attached):
+
+Registration Form
+Declaration Form – This confirms that neither yourself nor anyone you share a household with is barred from working with children.
+Terms &amp; Conditions – Signature page as a minimum
+DBS- terms of service
+Safeguarding Training - https://www.supplydesk.co.uk/access-online-safeguarding-training/ complete the child protection section online, in your own time.
+
+
+The next step in the clearance process will be to collect the following documentation from you:
+
+Passport – Photo page
+Visa - Right to Work in the UK
+University Qualification – Full Certification / Transcript. You may still be a pre-service/qualifying teacher. Your transcript or qualification may be sent by your University at a later date in the year.
+2 x Proof of current Australian Address –  Valid Driver’s Licence / utility bill or bank statement - these must be dated within the last 3 months (please note mobile phone bills are not acceptable).
+A current Partial Australian Police Check - other versions of your Australian Police Check will not be accepted.
+
+
+The check must be dated within 3 months of your arrival date into the UK (so please complete this no sooner than 3 months prior to your start date in England). Follow the NPC guidance attached to this email whilst completing your Partial Australian Police Check application - https://afpnationalpolicechecks.converga.com.au
+
+UK DBS – You will first be sent a Payment Notification requesting a payment of £45.00 (which is roughly $83.00). We will send you the activation link closer to departure.
+Please familiarise yourself with the DfE Guidance: Keeping children safe in education (Statutory guidance for schools and colleges 2021) https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/954314/Keeping_children_safe_in_education_2020_-_Update_-_January_2021.pdf
+
+
+Upload copies of the above documents through your online community page.
+
+You must also take the original documents with you to the UK. If the document isn’t original sighted by us in the UK you will not be able to work.
+
+In order to upload your documents straight into your online account please log into your online community page using the credentials which will be sent to you in a separate email,(please check spam, if it does not appear in your inbox). Here you will be able to upload the documents we request to clear you for work directly into the &apos;My Qualifications&apos; section of your &apos;My Account&apos; page, (see How to Guide attached).
+
+Teach In is a registered trading company of Supply Desk Ltd. If you see the Supply Desk logo, continue logging into the account, you will either be working with Supply Desk or Teach In teams – same company, different name, working as the same group.
+
+
+Please let us know if you have any issues or questions with the above or attached, we will be happy to help you.
+
+We know there is a lot of information here, but we feel it’s good to have it all listed in front of you.
+
+
+http://www.teachin.com.au/teaching-overseas/next-steps/
+
+
+Kind Regards,
+
+
+Teach In International Team
+
+
+
+
+Complete the forms and print your name where a signature is required from you. In returning the forms to us by email or uploading them into your community page My Qualifications section, you acknowledge and agree that your printed name is deemed to be your signature, and therefore legally binding, for the purposes of the confirmations, agreements, consents &amp; authorizations contained within the forms.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

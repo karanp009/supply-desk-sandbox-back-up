@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customize For Each User --></label>
+        <name>smagicinteract__isCustomize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable For All --></label>
+        <name>smagicinteract__isDisable__c</name>
+    </fields>
+</CustomObjectTranslation>

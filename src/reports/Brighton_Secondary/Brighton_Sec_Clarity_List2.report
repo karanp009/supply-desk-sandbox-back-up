@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Pay_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Owner__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Contact$Division__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brighton Secondary</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Compliance_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Interview Complete,Interview Complete Missing Docs,Not Clear</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Brighton Sec Clarity List</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>People_with_Associated_Qualifications__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact$Compliance_Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Asset Life --></label>
+        <name>TR1__Asset_Life__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>TR1__Assigned_To__c</name>
+        <relationshipLabel><!-- Fixed Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Into Service --></label>
+        <name>TR1__Date_Into_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Name --></label>
+        <name>TR1__Device_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Type --></label>
+        <name>TR1__Device_Type__c</name>
+        <picklistValues>
+            <masterLabel>Desktop</masterLabel>
+            <translation><!-- Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop</masterLabel>
+            <translation><!-- Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor</masterLabel>
+            <translation><!-- Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Component</masterLabel>
+            <translation><!-- Network Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printer</masterLabel>
+            <translation><!-- Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Server</masterLabel>
+            <translation><!-- Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet</masterLabel>
+            <translation><!-- Tablet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disposal Amount --></label>
+        <name>TR1__Disposal_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposal Date --></label>
+        <name>TR1__Disposal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposal Reason --></label>
+        <name>TR1__Disposal_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold</masterLabel>
+            <translation><!-- Sold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen</masterLabel>
+            <translation><!-- Stolen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>TR1__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>TR1__Location__c</name>
+        <picklistValues>
+            <masterLabel>Sample Location</masterLabel>
+            <translation><!-- Sample Location --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>TR1__Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memory --></label>
+        <name>TR1__Memory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>TR1__Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS Installed --></label>
+        <name>TR1__OS_Installed__c</name>
+        <picklistValues>
+            <masterLabel>Mac OS X 10.8</masterLabel>
+            <translation><!-- Mac OS X 10.8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mac OS X 10.9</masterLabel>
+            <translation><!-- Mac OS X 10.9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2003 Server Pro</masterLabel>
+            <translation><!-- Windows 2003 Server Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2003 Server Std</masterLabel>
+            <translation><!-- Windows 2003 Server Std --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2008 Server R2 Enterprise</masterLabel>
+            <translation><!-- Windows 2008 Server R2 Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2008 Server R2 Std</masterLabel>
+            <translation><!-- Windows 2008 Server R2 Std --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2008 Server Std</masterLabel>
+            <translation><!-- Windows 2008 Server Std --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 7 32 Bit</masterLabel>
+            <translation><!-- Windows 7 32 Bit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 7 64 bit</masterLabel>
+            <translation><!-- Windows 7 64 bit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows Server 2012 Std</masterLabel>
+            <translation><!-- Windows Server 2012 Std --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows Vista 32 Bit</masterLabel>
+            <translation><!-- Windows Vista 32 Bit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XP Home</masterLabel>
+            <translation><!-- XP Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XP Professional</masterLabel>
+            <translation><!-- XP Professional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OS License --></label>
+        <name>TR1__OS_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor --></label>
+        <name>TR1__Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Amount --></label>
+        <name>TR1__Purchase_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date --></label>
+        <name>TR1__Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>TR1__Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>TR1__Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Tag --></label>
+        <name>TR1__Service_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software 1 License Key --></label>
+        <name>TR1__Software_1_License_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software 1 --></label>
+        <name>TR1__Software_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software 2 License Key --></label>
+        <name>TR1__Software_2_License_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software 2 --></label>
+        <name>TR1__Software_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software 3 License Key --></label>
+        <name>TR1__Software_3_License_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software 3 --></label>
+        <name>TR1__Software_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor --></label>
+        <name>TR1__Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Expires --></label>
+        <name>TR1__Warranty_Expires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Type --></label>
+        <name>TR1__Warranty_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

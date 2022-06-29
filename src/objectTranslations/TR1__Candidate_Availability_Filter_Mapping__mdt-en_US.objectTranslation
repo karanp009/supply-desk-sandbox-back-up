@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Candidate Availability API --></label>
+        <name>TR1__Candidate_Availability_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact API --></label>
+        <name>TR1__Contact_API__c</name>
+    </fields>
+</CustomObjectTranslation>

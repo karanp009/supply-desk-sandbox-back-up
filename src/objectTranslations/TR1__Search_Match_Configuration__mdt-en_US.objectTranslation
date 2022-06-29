@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Monitored Contact Fields --></label>
+        <name>TR1__Monitored_Contact_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitored Job Fields --></label>
+        <name>TR1__Monitored_Job_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Type --></label>
+        <name>TR1__Provider_Type__c</name>
+        <picklistValues>
+            <masterLabel>Daxtra</masterLabel>
+            <translation><!-- Daxtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TextKernel</masterLabel>
+            <translation><!-- TextKernel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This can only be used to sync jobs to any provider except Daxtra --></help>
+        <label><!-- Sync Jobs To Provider --></label>
+        <name>TR1__Sync_Jobs_To_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Threshold --></label>
+        <name>TR1__Threshold__c</name>
+    </fields>
+</CustomObjectTranslation>

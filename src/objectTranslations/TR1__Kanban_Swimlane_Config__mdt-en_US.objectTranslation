@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Names of those Kanban Card Action Button Setting(s) each of which separated by comma. --></help>
+        <label><!-- Action Buttons --></label>
+        <name>TR1__Action_Buttons__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify whether the Kanban Swimlane Setting is for a Job Kanban Board or Candidate Kanban Board. --></help>
+        <label><!-- Board --></label>
+        <name>TR1__Board__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Field Set(s) that will be used to determine the fields that needs to be displayed on the Card Body. Please ensure that the correct API Name(s) of the Field Sets are specified. --></help>
+        <label><!-- Card Body FieldSets --></label>
+        <name>TR1__Card_Body_FieldSets__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the field on the object specified in the Type field that determines the state of a card. --></help>
+        <label><!-- Card State Field --></label>
+        <name>TR1__Card_State_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Override out of the box CSS Rules --></help>
+        <label><!-- Custom CSS --></label>
+        <name>TR1__Custom_CSS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Some fields might not be available on the Object specified in the Type field. These will have to be calculated by applying some buss. logic. Specify a JSON listing the fields that needs to be calculated. Eg: [{&quot;label&quot;:&quot;upp&quot;,&quot;action&quot;:&quot;UserProfilePicCCF&quot;}] --></help>
+        <label><!-- Custom Calculated Fields --></label>
+        <name>TR1__Custom_Calculated_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Default Cards Shown --></label>
+        <name>TR1__Default_Cards_Shown__c</name>
+    </fields>
+    <fields>
+        <help><!-- All the Cards in the Swimlane will be sorted in the specified order w.r.t to this field. Specify the values with the Sort Order like say: Name ASC --></help>
+        <label><!-- Default Sort Field --></label>
+        <name>TR1__Default_Sort_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This determines the ordering of Swimlanes on the Kanban with 1 designating the first Swimlane. --></help>
+        <label><!-- Display Order --></label>
+        <name>TR1__Display_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determine if the Swimlane is displayed or not. --></help>
+        <label><!-- Displayed --></label>
+        <name>TR1__Displayed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the field on the object specified in the Type that acts as the source of data for the Cards. --></help>
+        <label><!-- Entity Field --></label>
+        <name>TR1__Entity_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be used in the WHERE clause of the SOQL Query that will be constructed to determine those records that needs to be displayed as Cards in the Swimlane. --></help>
+        <label><!-- Entity Predicate --></label>
+        <name>TR1__Entity_Predicate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Field on the Entity that will be used to filter out the entities from it&apos;s corresponding object as in the Entity Type field. This could be say the ID field that will be used in the WHERE clause to query the entities. --></help>
+        <label><!-- Entity Selection Field --></label>
+        <name>TR1__Entity_Selection_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the object to which the Entity Field relates to and the one that acts as the source of data for the Cards. --></help>
+        <label><!-- Entity Type --></label>
+        <name>TR1__Entity_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determine if Mass Action is applicable for the lane or not. --></help>
+        <label><!-- Mass Action Enabled --></label>
+        <name>TR1__Mass_Action_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- The FieldSet that contains the fields that needs to be displayed while rendering a Mini Version of the card. --></help>
+        <label><!-- Mini Layout FieldSet --></label>
+        <name>TR1__Mini_Layout_FieldSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- The card(s) will render a more compact version with minimal details if checked. --></help>
+        <label><!-- Mini Layout --></label>
+        <name>TR1__Mini_Layout__c</name>
+    </fields>
+    <fields>
+        <help><!-- The field on the Parent Object that matches the field on the Child(aka Entity) object separated by a colon. --></help>
+        <label><!-- Parent Child Joining Keys --></label>
+        <name>TR1__Parent_Child_Joining_Keys__c</name>
+    </fields>
+    <fields>
+        <help><!-- An Apex Class that implements the IKanbanSwimlaneAction that will be executed before returning the final list of cards to generate the Swimlane. --></help>
+        <label><!-- Post Processing Action --></label>
+        <name>TR1__Post_Processing_Action__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be used in the WHERE clause of the SOQL Query that will be constructed to determine those records that needs to be displayed as Cards in the Swimlane. --></help>
+        <label><!-- Predicate --></label>
+        <name>TR1__Predicate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The URL to the VF Page that needs to be opened when a card or cards are dropped into the Swimlane. --></help>
+        <label><!-- Quick Action to Execute --></label>
+        <name>TR1__Quick_Action_to_Execute__c</name>
+    </fields>
+    <fields>
+        <help><!-- The url or location to which we need to re-direct to after completing the lane action. This mostly is used for the Closing Report lane. --></help>
+        <label><!-- Return URL --></label>
+        <name>TR1__Return_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Number of Rows that needs to be displayed per Page on a Card on the Swimlane. Note that data in each Row is actually determined by a FieldSet. --></help>
+        <label><!-- Rows Per Page --></label>
+        <name>TR1__Rows_Per_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether an Info button showing more details about the card needs to be displayed or not. --></help>
+        <label><!-- Show Info Button --></label>
+        <name>TR1__Show_Info_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether to show the Submit with Email button when a card is moved to Submittal lane or not. This mostly is used for the Submittal lane. --></help>
+        <label><!-- Submit With Email --></label>
+        <name>TR1__Submit_With_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether to show the Submit without Email button when a card is moved to Submittal lane or not. This mostly is used for the Submittal lane. --></help>
+        <label><!-- Submit Without Email --></label>
+        <name>TR1__Submit_Without_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Title of Swimlane --></help>
+        <label><!-- Title --></label>
+        <name>TR1__Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Number of Rows that needs to be fetched on the first load of the Kanban Board. --></help>
+        <label><!-- Top N Rows --></label>
+        <name>TR1__Top_N_Rows__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Field Set(s) that will be used to determine the fields that needs to be displayed on the Card Body from the Parent Entity or the object specified in the Type field. Please ensure that the correct API Name of the Field Set(s) are specified. --></help>
+        <label><!-- Type/Parent Entity FieldSets --></label>
+        <name>TR1__Type_Parent_Entity_FieldSets__c</name>
+    </fields>
+    <fields>
+        <help><!-- The records from this SObject will be queried and displayed as cards in the Swimlane. --></help>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

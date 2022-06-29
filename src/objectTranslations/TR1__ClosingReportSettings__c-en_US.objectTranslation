@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ClosingReportField --></label>
+        <name>TR1__ClosingReportField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Value --></label>
+        <name>TR1__DefaultValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- JobField --></label>
+        <name>TR1__JobField__c</name>
+    </fields>
+</CustomObjectTranslation>

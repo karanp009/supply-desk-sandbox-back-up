@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Tooltip_fields --></label>
+        <name>TR1__Tooltip_fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tooltip fields Contact --></label>
+        <name>TR1__Tooltip_fields_Contact</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Booking Type --></label>
+        <name>TR1__Booking_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSD End Time --></label>
+        <name>TR1__CSD_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSD Start Time --></label>
+        <name>TR1__CSD_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Availability --></label>
+        <name>TR1__Candidate_Availability__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End DateTime --></label>
+        <name>TR1__End_DateTime_d2d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecasted Pay --></label>
+        <name>TR1__Forecasted_Shift_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSD End Time --></label>
+        <name>TR1__JSD_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSD Start Time --></label>
+        <name>TR1__JSD_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job&apos;s account --></label>
+        <name>TR1__Job_s_account__c</name>
+        <relationshipLabel><!-- Closing Report Schedules (Job&apos;s account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Credit --></label>
+        <name>TR1__Leader_Principal_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Credit Percentage --></label>
+        <name>TR1__Leader_Principal_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit --></label>
+        <name>TR1__Mgr_Head_of_Branch_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit Percentage --></label>
+        <name>TR1__Mgr_Head_of_Branch_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Name --></label>
+        <name>TR1__Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type --></label>
+        <name>TR1__Pay_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Placed Id --></label>
+        <name>TR1__Person_Placed_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Placed --></label>
+        <name>TR1__Person_Placed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Credit --></label>
+        <name>TR1__Sales_Consultant_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Credit Percentage --></label>
+        <name>TR1__Sales_Consultant_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Date --></label>
+        <name>TR1__Schedule_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Past Contract End Date --></label>
+        <name>TR1__Schedule_Past_Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule date greater CED --></label>
+        <name>TR1__Schedule_date_greater_CED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedules Count --></label>
+        <name>TR1__Schedules_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>TR1__Shift__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Day</masterLabel>
+            <translation><!-- Full Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start DateTime --></label>
+        <name>TR1__Start_DateTime_d2d__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stay On September 2014? --></label>
+        <name>TR1__Stay_On_September_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Status --></label>
+        <name>TR1__Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tentative</masterLabel>
+            <translation><!-- Tentative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approver --></label>
+        <name>TR1__Timesheet_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Day --></label>
+        <name>TR1__Trial_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Schedule --></label>
+        <name>TR1__Vacancy_Schedule__c</name>
+        <relationshipLabel><!-- Closing Report Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Shift Type --></label>
+        <name>TR1__Vacancy_Shift_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- WeekEndDate --></label>
+        <name>TR1__WeekEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Shift Location --></label>
+        <name>TR1__Work_Shift_Location_lkId__c</name>
+        <relationshipLabel><!-- Closing Report Schedules (Work Shift Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Shit Location --></label>
+        <name>TR1__Work_Shit_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- isChecked --></label>
+        <name>TR1__isChecked__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Start date time should not be past value --></errorMessage>
+        <name>TR1__Start_Date_Time_Should_Not_Be_Past_Value</name>
+    </validationRules>
+</CustomObjectTranslation>

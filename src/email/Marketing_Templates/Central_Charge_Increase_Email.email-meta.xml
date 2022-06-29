@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Logo_Header_Red</letterhead>
+    <name>Central Charge Increase Email</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Central Charge Increase - 1st May 2019</subject>
+    <textOnly>Good Morning,
+
+At Supply Desk, we have been be able to maintain our charge rates without any centralised charge increases in the last few years.
+
+In recent times, we have been required by law to auto-enrol our candidates, who work in your schools, into the Government Work Place Pension Scheme - as well as paying into the Apprenticeship Levy(a combined total increase in ‘on costs’ of 2.5%). Supply Desk has worked to absorb this cost, not increasing the charge to our client schools.
+
+From April 2019, the minimum employer contribution rises to 3%  (bringing the combined cost of pension contributions and apprenticeship levy to 3.5%).
+
+Accordingly, in order to pay our candidates legally and fairly, we have had to review our charge rates to take account of this rise. As a result there will be an increase in our rates of 2.7%.
+
+From 1st May 2019, this increase will be applied to all of our charge rates.
+
+If you have any questions or queries relating to the effective increase due to the rise of the minimum employer contribution, do not hesitate to contact us.
+
+We would like to assure you of our commitment to providing you with the best service available and we thank you for your valued and continued business.
+
+Kind Regards,
+
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

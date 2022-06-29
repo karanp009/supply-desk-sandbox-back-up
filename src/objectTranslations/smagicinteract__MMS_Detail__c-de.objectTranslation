@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- MMS Type --></label>
+        <name>smagicinteract__MMS_Type__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MMS Url --></label>
+        <name>smagicinteract__MMS_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS History --></label>
+        <name>smagicinteract__SMS_History__c</name>
+        <relationshipLabel><!-- MMS Details --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

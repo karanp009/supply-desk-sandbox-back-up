@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Sign Workflow --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Sign Workflow --></value>
+    </caseValues>
+    <fields>
+        <help>Contenido del flujo de trabajo de firma en formato JSON String</help>
+        <label><!-- Workflow Content --></label>
+        <name>echosign_dev1__Workflow_Content__c</name>
+    </fields>
+    <fields>
+        <help>Fecha y hora de creación del flujo de trabajo de firma</help>
+        <label><!-- Workflow Created Time --></label>
+        <name>echosign_dev1__Workflow_Created_Time__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de visualizac. de flujo de trab
+</help>
+        <label><!-- Workflow Display Name --></label>
+        <name>echosign_dev1__Workflow_Display_Name__c</name>
+    </fields>
+    <fields>
+        <help>ID del flujo de trabajo de firma</help>
+        <label><!-- Workflow Id --></label>
+        <name>echosign_dev1__Workflow_Id__c</name>
+    </fields>
+    <fields>
+        <help>Fecha y hora de la modificación del flujo de trabajo de firma</help>
+        <label><!-- Workflow Modified Time --></label>
+        <name>echosign_dev1__Workflow_Modified_Time__c</name>
+    </fields>
+    <fields>
+        <help>Estado del flujo de trabajo de firma</help>
+        <label><!-- Workflow Status --></label>
+        <name>echosign_dev1__Workflow_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation><!-- ACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRAFT</masterLabel>
+            <translation><!-- DRAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIDDEN</masterLabel>
+            <translation><!-- HIDDEN --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Sign Workflow Name --></nameFieldLabel>
+</CustomObjectTranslation>

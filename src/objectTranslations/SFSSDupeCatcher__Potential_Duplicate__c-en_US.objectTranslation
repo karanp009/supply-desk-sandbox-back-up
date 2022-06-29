@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The Account record associated with this potential duplicate record. --></help>
+        <label><!-- Account --></label>
+        <name>SFSSDupeCatcher__Account__c</name>
+        <relationshipLabel><!-- DupeCatcher Potential Duplicates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A link to the Contact record associated with this potential duplicate record. --></help>
+        <label><!-- Contact Record --></label>
+        <name>SFSSDupeCatcher__Contact_Display__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Contact record associated with this potential duplicate record. --></help>
+        <label><!-- Contact --></label>
+        <name>SFSSDupeCatcher__Contact__c</name>
+        <relationshipLabel><!-- DupeCatcher Potential Duplicates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Criteria --></label>
+        <name>SFSSDupeCatcher__Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- A link to the Duplicate Alert record that is the parent of this record --></help>
+        <label><!-- Duplicate Alert --></label>
+        <name>SFSSDupeCatcher__Duplicate_Warning__c</name>
+        <relationshipLabel><!-- DupeCatcher Potential Duplicates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The email address of the duplicate lead/contact/account. --></help>
+        <label><!-- Email --></label>
+        <name>SFSSDupeCatcher__Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Lead record associated with this potential duplicate record. --></help>
+        <label><!-- Lead Record --></label>
+        <name>SFSSDupeCatcher__Lead_Display__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Lead record associated with this potential duplicate record. --></help>
+        <label><!-- Lead --></label>
+        <name>SFSSDupeCatcher__Lead__c</name>
+        <relationshipLabel><!-- DupeCatcher Potential Duplicates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicator as to whether the duplicate is a lead, contact or account. --></help>
+        <label><!-- Duplicate Type --></label>
+        <name>SFSSDupeCatcher__Object_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The phone number of the duplicate lead/contact/account. --></help>
+        <label><!-- Phone --></label>
+        <name>SFSSDupeCatcher__Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of records triggered the potential duplicate (e.g. Lead, Account, Lead to Contact, etc.) .   
+
+This value always matches the Filter Type of the parent filter. --></help>
+        <label><!-- Filter Type --></label>
+        <name>SFSSDupeCatcher__Scenario_Type__c</name>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A link to the parent filter that triggered the potential duplicate. --></help>
+        <label><!-- Filter --></label>
+        <name>SFSSDupeCatcher__Scenario__c</name>
+        <relationshipLabel><!-- DupeCatcher Potential Duplicates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A link to the duplicate contact/account/lead record associated with this potential duplicate record. --></help>
+        <label><!-- Duplicate Record --></label>
+        <name>SFSSDupeCatcher__Warning_Display__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Campaign Member Field --></label>
+        <name>tdc_tsw__Campaign_Member_FIeld</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Message FieldSet --></label>
+        <name>tdc_tsw__Message_FieldSet</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Call List Member --></label>
+        <name>Call_List_Member__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>tdc_tsw__Account__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attached Files --></label>
+        <name>tdc_tsw__Attached_Files_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachments Ids --></label>
+        <name>tdc_tsw__Attachments_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>tdc_tsw__Campaign__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>tdc_tsw__Case__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Clicks --></label>
+        <name>tdc_tsw__Clicks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Attached Files Primary --></label>
+        <name>tdc_tsw__Community_Attached_Files_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Attached Files Secondary --></label>
+        <name>tdc_tsw__Community_Attached_Files_Secondary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>tdc_tsw__Contact__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>tdc_tsw__Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivered SMS --></label>
+        <name>tdc_tsw__Delivered_SMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivered --></label>
+        <name>tdc_tsw__Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Status --></label>
+        <name>tdc_tsw__Delivery_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Code --></label>
+        <name>tdc_tsw__Error_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>tdc_tsw__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Created --></label>
+        <name>tdc_tsw__Event_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Id --></label>
+        <name>tdc_tsw__Event_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- FeedElementId --></label>
+        <name>tdc_tsw__FeedElementId__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Click --></label>
+        <name>tdc_tsw__First_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- Important --></label>
+        <name>tdc_tsw__Important__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status of Incoming Messages --></label>
+        <name>tdc_tsw__Incoming_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Keyword Based --></label>
+        <name>tdc_tsw__Is_Keyword_Based__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Click --></label>
+        <name>tdc_tsw__Last_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>tdc_tsw__Lead__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MessageId --></label>
+        <name>tdc_tsw__MessageId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Segment --></label>
+        <name>tdc_tsw__Message_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>tdc_tsw__Message_Text_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS History --></label>
+        <name>tdc_tsw__Message__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>tdc_tsw__Opportunity__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>tdc_tsw__Question__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Read Status --></label>
+        <name>tdc_tsw__Read_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Read ? --></label>
+        <name>tdc_tsw__Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Incoming Owner --></label>
+        <name>tdc_tsw__Related_Incoming_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Outgoing Owner</masterLabel>
+            <translation><!-- Outgoing Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent Record Owner</masterLabel>
+            <translation><!-- Parent Record Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Object --></label>
+        <name>tdc_tsw__Related_Object_Id_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Object Id --></label>
+        <name>tdc_tsw__Related_Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Object --></label>
+        <name>tdc_tsw__Related_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reply Code --></label>
+        <name>tdc_tsw__Reply_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Template --></label>
+        <name>tdc_tsw__SMS_Template__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sender Name --></label>
+        <name>tdc_tsw__Sender_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Number --></label>
+        <name>tdc_tsw__Sender_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Text --></label>
+        <name>tdc_tsw__Short_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>tdc_tsw__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tdc_tsw__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Response --></label>
+        <name>tdc_tsw__Survey_Response__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Task Created --></label>
+        <name>tdc_tsw__Task_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Id --></label>
+        <name>tdc_tsw__Task_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Parse Id --></label>
+        <name>tdc_tsw__Template_Parse_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeStamp --></label>
+        <name>tdc_tsw__TimeStamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Number --></label>
+        <name>tdc_tsw__ToNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Url --></label>
+        <name>tdc_tsw__Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCaseCreated --></label>
+        <name>tdc_tsw__isCaseCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- isLeadCreated --></label>
+        <name>tdc_tsw__isLeadCreated__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Incoming --></label>
+        <name>tdc_tsw__Incoming</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outgoing --></label>
+        <name>tdc_tsw__Outgoing</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Create_Case --></label>
+        <name>tdc_tsw__Create_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Cases --></label>
+        <name>tdc_tsw__Create_Cases</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Lead --></label>
+        <name>tdc_tsw__Create_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Leads --></label>
+        <name>tdc_tsw__Create_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mark_As_Read --></label>
+        <name>tdc_tsw__Mark_As_Read</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mark_As_Read_Bulk --></label>
+        <name>tdc_tsw__Mark_As_Read_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reply --></label>
+        <name>tdc_tsw__Reply</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resend --></label>
+        <name>tdc_tsw__Resend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resend_RelatedList --></label>
+        <name>tdc_tsw__Resend_RelatedList</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SMS_Opt_Out --></label>
+        <name>tdc_tsw__SMS_Opt_Out</name>
+    </webLinks>
+</CustomObjectTranslation>

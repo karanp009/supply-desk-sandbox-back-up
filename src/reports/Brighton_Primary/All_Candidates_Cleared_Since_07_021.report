@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Employee_Surname__c</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$Employee_Forenames__c</field>
+    </columns>
+    <columns>
+        <field>Contact$OtherCity</field>
+    </columns>
+    <columns>
+        <field>Contact$Pay_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Cleared_Pending_Docs_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Cleared_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Compliance_Banner__c</field>
+    </columns>
+    <description>All Candidates Cleared Since 07/02</description>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Contact$Division__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Aus-NZ,Brighton Primary,Brighton Secondary,Buckinghamshire,Canada,Cardiff,East Anglia,GDPR Eraser/opt out,Kent,Leeds,Lincs,London,Manchester,North East,Nottingham,Pipeline,Southampton,Watford</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Pay_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,FE Qualified,OTT,Perm,Support/Unqualified,Teacher QTS/NQT Trainee Teacher</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$TR1__Source__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All Candidates Cleared Since 07/02</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>People__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

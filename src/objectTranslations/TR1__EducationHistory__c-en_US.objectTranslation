@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- EducationDetails --></label>
+        <name>RC_EducationDetails</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EducationInfo --></label>
+        <name>RC_EducationInfo</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Attendance End Date --></label>
+        <name>RC_Attendance_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance Start Date --></label>
+        <name>RC_Attendance_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree Date --></label>
+        <name>RC_Degree_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Academic Credit Code --></label>
+        <name>TR1__AcademicCreditCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>TR1__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Rank --></label>
+        <name>TR1__ClassRank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>TR1__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Education History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>TR1__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree Date --></label>
+        <name>TR1__DegreeDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree Name --></label>
+        <name>TR1__DegreeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree Type --></label>
+        <name>TR1__DegreeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree Major --></label>
+        <name>TR1__Degree_Major__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education History Ext ID --></label>
+        <name>TR1__EducationHistoryExtID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance End Date --></label>
+        <name>TR1__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Unit --></label>
+        <name>TR1__Organization_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>TR1__Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Name --></label>
+        <name>TR1__SchoolName__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Type --></label>
+        <name>TR1__SchoolType__c</name>
+        <picklistValues>
+            <masterLabel>college</masterLabel>
+            <translation><!-- college --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>university</masterLabel>
+            <translation><!-- university --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attendance Start Date --></label>
+        <name>TR1__StartDate__c</name>
+    </fields>
+</CustomObjectTranslation>

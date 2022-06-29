@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>smagicinteract__Account__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>smagicinteract__Campaign__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>smagicinteract__Case__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>smagicinteract__Contact__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>smagicinteract__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedOn --></label>
+        <name>smagicinteract__CreatedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Error Message --></label>
+        <name>smagicinteract__Delivery_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Unicode --></label>
+        <name>smagicinteract__Is_Text_Unicode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>smagicinteract__Lead__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MMS Subject --></label>
+        <name>smagicinteract__MMS_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Type --></label>
+        <name>smagicinteract__Message_Type__c</name>
+        <picklistValues>
+            <masterLabel>MMS</masterLabel>
+            <translation><!-- MMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>smagicinteract__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ObjectType --></label>
+        <name>smagicinteract__ObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>smagicinteract__Opportunity__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>smagicinteract__PhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMSText --></label>
+        <name>smagicinteract__SMSText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Credits --></label>
+        <name>smagicinteract__SMS_Credits__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Template --></label>
+        <name>smagicinteract__SMS_Template__c</name>
+        <relationshipLabel><!-- SMS History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SenderId --></label>
+        <name>smagicinteract__SenderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent By --></label>
+        <name>smagicinteract__Sent_By__c</name>
+        <relationshipLabel><!-- SMS History (Sent By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>smagicinteract__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>smagicinteract__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>smagicinteract__User__c</name>
+        <relationshipLabel><!-- SMS History (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Status --></label>
+        <name>smagicinteract__deliveryStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable SMS On Trigger --></label>
+        <name>smagicinteract__disableSMSOnTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Field --></label>
+        <name>smagicinteract__external_field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>smagicinteract__response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Status --></label>
+        <name>smagicinteract__sentStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>smagicinteract__statusMessage__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Contact has opted out --></errorMessage>
+        <name>Do_not_send_to_Opt_Opt_records</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Resend_SMS --></label>
+        <name>smagicinteract__Resend_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

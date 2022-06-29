@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CPD</fullName>
+        <default>false</default>
+        <label>CPD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Meeting</fullName>
+        <default>false</default>
+        <label>Regional Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Probation Review</fullName>
+        <default>false</default>
+        <label>Probation Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Half Term Review</fullName>
+        <default>false</default>
+        <label>Half Term Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Term Review</fullName>
+        <default>false</default>
+        <label>Term Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annual Review</fullName>
+        <default>false</default>
+        <label>Annual Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BD Meeting</fullName>
+        <default>false</default>
+        <label>BD Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Review Meeting</fullName>
+        <default>false</default>
+        <label>Service Review Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registration Interview</fullName>
+        <default>false</default>
+        <label>Registration Interview</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Safeguarding Follow Up Meeting</fullName>
+        <default>false</default>
+        <label>Safeguarding Follow Up Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Complaint Follow Up Meeting</fullName>
+        <default>false</default>
+        <label>Complaint Follow Up Meeting</label>
+    </standardValue>
+</StandardValueSet>

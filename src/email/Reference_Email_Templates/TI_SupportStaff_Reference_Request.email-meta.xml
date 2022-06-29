@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TeachIn_Email_Footer</letterhead>
+    <name>TI Support Staff Reference Request</name>
+    <style>freeForm</style>
+    <subject>Reference Request for {!TR1__Associated_Qualification__c.TR1__Contact__c}</subject>
+    <textOnly>Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName}
+
+The above named candidate applied to register with Teach In, in order to find teaching assignments in the UK, and has given your name as a referee.
+
+We undertake strict vetting checks in respect of all candidates who register with us before we offer them work in schools. Your response is an important part of these checks.
+
+We would be grateful, if you would complete the attached reference request form and return it at your earliest convenience.
+
+Please note that Teach In encompasses two teaching businesses, Supply Desk Limited and Just Teachers Limited and both entities will rely on your reference.
+
+Thank you in advance for your cooperation.
+
+
+Yours sincerely
+
+
+The Compliance Team
+Teach In
+Tel No: 00 44 114 257 2716
+Email: gemma.yates@teachin.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

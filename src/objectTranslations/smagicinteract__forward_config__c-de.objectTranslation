@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Keyword --></label>
+        <name>smagicinteract__Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forward Email To User --></label>
+        <name>smagicinteract__forwardToEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forward SMS To User --></label>
+        <name>smagicinteract__forwardToMobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>smagicinteract__forwardToUser__c</name>
+        <relationshipLabel><!-- Forward_Configs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Method Name --></label>
+        <name>smagicinteract__methodName__c</name>
+        <picklistValues>
+            <masterLabel>Email Alert</masterLabel>
+            <translation><!-- Email Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Forwarding</masterLabel>
+            <translation><!-- Mobile Forwarding --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

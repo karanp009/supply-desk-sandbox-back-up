@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Branch Email --></label>
+        <name>Branch_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Phone --></label>
+        <name>Branch_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <picklistValues>
+            <masterLabel>AUS-NZ</masterLabel>
+            <translation><!-- AUS-NZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brighton Primary</masterLabel>
+            <translation><!-- Brighton Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brighton Secondary</masterLabel>
+            <translation><!-- Brighton Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buckinghamshire</masterLabel>
+            <translation><!-- Buckinghamshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridge</masterLabel>
+            <translation><!-- Cambridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiff</masterLabel>
+            <translation><!-- Cardiff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close</masterLabel>
+            <translation><!-- Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Anglia</masterLabel>
+            <translation><!-- East Anglia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executives</masterLabel>
+            <translation><!-- Executives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Huddersfield</masterLabel>
+            <translation><!-- Huddersfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kent</masterLabel>
+            <translation><!-- Kent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leeds</masterLabel>
+            <translation><!-- Leeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lincs</masterLabel>
+            <translation><!-- Lincs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liverpool</masterLabel>
+            <translation><!-- Liverpool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lon-Wat Candidates</masterLabel>
+            <translation><!-- Lon-Wat Candidates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London-Bri</masterLabel>
+            <translation><!-- London-Bri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester Primary</masterLabel>
+            <translation><!-- Manchester Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newcastle</masterLabel>
+            <translation><!-- Newcastle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North East</masterLabel>
+            <translation><!-- North East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London</masterLabel>
+            <translation><!-- North London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nottingham</masterLabel>
+            <translation><!-- Nottingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overseas</masterLabel>
+            <translation><!-- Overseas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perm Team North</masterLabel>
+            <translation><!-- Perm Team North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Schools</masterLabel>
+            <translation><!-- Qualified Schools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Teachers</masterLabel>
+            <translation><!-- Qualified Teachers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheffield</masterLabel>
+            <translation><!-- Sheffield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southampton</masterLabel>
+            <translation><!-- Southampton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Team North East</masterLabel>
+            <translation><!-- Strategic Team North East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Team Nottingham</masterLabel>
+            <translation><!-- Strategic Team Nottingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Team South</masterLabel>
+            <translation><!-- Strategic Team South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TA 2 Teach</masterLabel>
+            <translation><!-- TA 2 Teach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TeachIn</masterLabel>
+            <translation><!-- TeachIn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thames Valley</masterLabel>
+            <translation><!-- Thames Valley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watford</masterLabel>
+            <translation><!-- Watford --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LogicMelon UserName --></label>
+        <name>LogicMenon_UserName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mass Edit Compliance --></label>
+        <name>MassEditCompliance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Id --></label>
+        <name>Old_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicationListPage --></label>
+        <name>TR1__ApplicationListPage__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>account</masterLabel>
+            <translation><!-- account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>application</masterLabel>
+            <translation><!-- application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>job</masterLabel>
+            <translation><!-- job --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Year Consulting Forecast --></label>
+        <name>TR1__Current_Year_Consulting_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year Perm Forecast --></label>
+        <name>TR1__Current_Year_Perm_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year Total Forecast --></label>
+        <name>TR1__Current_Year_Total_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Search Contact Fields --></label>
+        <name>TR1__Daxtra_Search_Contact_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Search History Fields --></label>
+        <name>TR1__Daxtra_Search_History_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Job Order Feed Email --></label>
+        <name>TR1__EnableJobOrderFeedEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in GP Reports --></label>
+        <name>TR1__Include_in_GP_Reports__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Year Consulting Forecast --></label>
+        <name>TR1__Last_Year_Consulting_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year Perm Forecast --></label>
+        <name>TR1__Last_Year_Perm_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year Total Forecast --></label>
+        <name>TR1__Last_Year_Total_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- OffersListPage --></label>
+        <name>TR1__OffersListPage__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>account</masterLabel>
+            <translation><!-- account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>application</masterLabel>
+            <translation><!-- application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>job</masterLabel>
+            <translation><!-- job --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resume Search Contact Fields --></label>
+        <name>TR1__Resume_Search_Contact_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resume Search History Fields --></label>
+        <name>TR1__Resume_Search_History_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resume Search Saved Fields --></label>
+        <name>TR1__Resume_Search_Saved_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- SendoutsListPAge --></label>
+        <name>TR1__SendoutsListPAge__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>account</masterLabel>
+            <translation><!-- account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>application</masterLabel>
+            <translation><!-- application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>job</masterLabel>
+            <translation><!-- job --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SubmittalsListPage --></label>
+        <name>TR1__SubmittalsListPage__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>account</masterLabel>
+            <translation><!-- account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>application</masterLabel>
+            <translation><!-- application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>job</masterLabel>
+            <translation><!-- job --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DSProSFMembershipStatus --></label>
+        <name>dsfs__DSProSFMembershipStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFPassword --></label>
+        <name>dsfs__DSProSFPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <help>ทำเครื่องหมายที่ช่องนี้เพื่อให้ผู้อื่นในองค์กร Salesforce นี้สามารถส่งข้อตกลง Adobe Sign ในนามของผู้ใช้รายนี้</help>
+        <label><!-- Adobe Sign Allow Sending As Other Users --></label>
+        <name>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</name>
+    </fields>
+    <fields>
+        <help>ช่องทำเครื่องหมายนี้ระบุว่าอีเมล์แอดเดรสของผู้ใช้ได้รับการตรวจสอบความถูกต้องใน Adobe Sign API แล้ว</help>
+        <label><!-- Adobe Sign Email Verified --></label>
+        <name>echosign_dev1__EchoSign_Email_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can View Not Assigned Prospects --></label>
+        <name>pi__Can_View_Not_Assigned_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Key --></label>
+        <name>pi__Pardot_Api_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Version --></label>
+        <name>pi__Pardot_Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Id --></label>
+        <name>pi__Pardot_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Key --></label>
+        <name>pi__Pardot_User_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Role --></label>
+        <name>pi__Pardot_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop SMS Sharing on Incoming Alert --></label>
+        <name>tdc_tsw__Disable_Incoming_SMS_Sharing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoming SMS Alert Audio Id --></label>
+        <name>tdc_tsw__Incoming_SMS_Alert_Audio_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Incoming Alert Audio --></label>
+        <name>tdc_tsw__Stop_Incoming_Audio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Message Url Email Alert --></label>
+        <name>tdc_tsw__Stop_Message_Url_Email_ALert__c</name>
+    </fields>
+    <layouts>
+        <layout>Community Member Layout</layout>
+        <layoutType>CommunityMemberLayout</layoutType>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Chatter Settings --></label>
+            <section>Chatter Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Language And Locale Settings --></label>
+            <section>Language And Locale Settings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- LogicMelon --></label>
+            <section>LogicMelon</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Profile Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Background --></label>
+            <section>Background</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Sync_EchoSign_User --></label>
+        <name>echosign_dev1__Sync_EchoSign_User</name>
+    </webLinks>
+</CustomObjectTranslation>

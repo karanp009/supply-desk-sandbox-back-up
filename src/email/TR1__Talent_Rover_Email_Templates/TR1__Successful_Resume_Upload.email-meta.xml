@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification to Contact Owner when Resume Upload is Successful via File Sync</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Successful Resume Upload</name>
+    <style>none</style>
+    <subject>Resume Processed Successfully ({!Contact.FirstName} {!Contact.LastName})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

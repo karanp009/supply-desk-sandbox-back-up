@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>smagicinteract__Campaign__c</name>
+        <relationshipLabel><!-- Incoming SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>smagicinteract__Case__c</name>
+        <relationshipLabel><!-- Incoming SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>smagicinteract__Contact__c</name>
+        <relationshipLabel><!-- Incoming SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inbound Number --></label>
+        <name>smagicinteract__Inbound_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>smagicinteract__Lead__c</name>
+        <relationshipLabel><!-- Incoming SMS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Message Type --></label>
+        <name>smagicinteract__MMS_Type__c</name>
+        <picklistValues>
+            <masterLabel>MMS</masterLabel>
+            <translation><!-- MMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS</masterLabel>
+            <translation><!-- SMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MMS Url --></label>
+        <name>smagicinteract__MMS_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>smagicinteract__Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quick Reply URL --></label>
+        <name>smagicinteract__Quick_Reply_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Text --></label>
+        <name>smagicinteract__SMS_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent By --></label>
+        <name>smagicinteract__Sent_By__c</name>
+        <relationshipLabel><!-- Incoming SMS (Sent By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>smagicinteract__User__c</name>
+        <relationshipLabel><!-- Incoming SMS (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- actionTaken --></label>
+        <name>smagicinteract__actionTaken__c</name>
+    </fields>
+    <fields>
+        <label><!-- external field --></label>
+        <name>smagicinteract__external_field__c</name>
+    </fields>
+    <fields>
+        <label><!-- taskId --></label>
+        <name>smagicinteract__taskId__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Create_Case --></label>
+        <name>smagicinteract__Create_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Contact --></label>
+        <name>smagicinteract__Create_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Lead --></label>
+        <name>smagicinteract__Create_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Opportunity --></label>
+        <name>smagicinteract__Create_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Task --></label>
+        <name>smagicinteract__Create_Task</name>
+    </webLinks>
+</CustomObjectTranslation>

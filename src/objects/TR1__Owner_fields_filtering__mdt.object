@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to retrive the Candidates/Jobs based on the record owner fields</description>
+    <fields>
+        <fullName>TR1__On_Contact_Job_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>On Contact/Job Object</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>true</default>
+                    <label>Contact</label>
+                </value>
+                <value>
+                    <fullName>Job</fullName>
+                    <default>false</default>
+                    <label>Job</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Owner_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Owner Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Owner fields filtering</label>
+    <pluralLabel>Owner fields filtering</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

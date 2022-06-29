@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>DBS Renewal Due</name>
+    <style>freeForm</style>
+    <subject>Your current DBS certificate is due to expire on {!TR1__Associated_Qualification__c.DBS_Expiry_Date__c}</subject>
+    <textOnly>Dear {!TR1__Associated_Qualification__c.TR1__Contact__c}
+
+Your current DBS certificate is due to expire on {!TR1__Associated_Qualification__c.DBS_Expiry_Date__c}. In order for Supply Desk to continue to offer you work in schools in line with DfE safeguarding policy, we need to ensure we have submitted another DBS for you before this date.
+
+If you already have a more recently obtained enhanced DBS certificate through another provider and it is registered online through the Update Service we can accept this provided we sight the original DBS certificate. Therefore we request you either bring it into the office or send it via registered post to us (we will return it by registered post).
+
+If you do not have a more recent DBS, we will need to apply for one for you. We request payment of £45 via a payment link (which we will send via email), as well as providing 2 proof of address documents dated within the last three months.
+
+Please note that DBS certificates can sometimes take a while to process. With this in mind it is best to start the application process as soon possible to ensure you remain clear for work.
+
+Please reply within the next 10 working days so we can action this request.
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

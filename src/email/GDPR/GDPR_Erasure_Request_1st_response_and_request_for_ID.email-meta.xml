@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GDPR Erasure Request - 1st response and ID Request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>GDPR Erasure Request - 1st response and confirmation request</name>
+    <style>formalLetter</style>
+    <subject>GDPR Erasure Request - Response Required to Action</subject>
+    <textOnly>Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName},
+
+Thank you for your email. We acknowledge your request for your personal data to be erased and to receive no further contact.
+
+In order to confirm your record for deletion, please reply stating your Full Name, Date of Birth and Postcode
+
+
+
+Regards,
+
+Data Processing Lead - Supplydesk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>tdc_tsw__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Folder --></label>
+        <name>tdc_tsw__Folder__c</name>
+        <relationshipLabel><!-- SMS Template --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next SMS Template --></label>
+        <name>tdc_tsw__Next_SMS_Template__c</name>
+        <relationshipLabel><!-- SMS Template --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ObjectName --></label>
+        <name>tdc_tsw__ObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>tdc_tsw__Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Body --></label>
+        <name>tdc_tsw__SMSBodyNew__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Survey --></label>
+        <name>tdc_tsw__SMS_Survey__c</name>
+        <relationshipLabel><!-- Survey Questions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tdc_tsw__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automation Only</masterLabel>
+            <translation><!-- Automation Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>tdc_tsw__Type__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- New_Question --></label>
+        <name>tdc_tsw__New_Question</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Survey_Question --></label>
+        <name>tdc_tsw__New_Survey_Question</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Detail --></label>
+        <name>TR1__Purchase_Order_Detail__c</name>
+        <relationshipLabel><!-- Closing Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Residential Delivery Indicator --></label>
+        <name>CloudingoAgent__ARDI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>CloudingoAgent__AR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Status --></label>
+        <name>CloudingoAgent__AS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Timezone --></label>
+        <name>CloudingoAgent__ATZ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Vacancy --></label>
+        <name>CloudingoAgent__AV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Email Status --></label>
+        <name>CloudingoAgent__LES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Score Synced --></label>
+        <name>pi__Needs_Score_Synced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Scored At --></label>
+        <name>pi__Pardot_Last_Scored_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign --></label>
+        <name>pi__campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Comments --></label>
+        <name>pi__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Date --></label>
+        <name>pi__conversion_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Name --></label>
+        <name>pi__conversion_object_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Type --></label>
+        <name>pi__conversion_object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Created Date --></label>
+        <name>pi__created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Activity --></label>
+        <name>pi__first_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Query --></label>
+        <name>pi__first_search_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Type --></label>
+        <name>pi__first_search_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer --></label>
+        <name>pi__first_touch_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Grade --></label>
+        <name>pi__grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Activity --></label>
+        <name>pi__last_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Notes --></label>
+        <name>pi__notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Hard Bounced --></label>
+        <name>pi__pardot_hard_bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Score --></label>
+        <name>pi__score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot URL --></label>
+        <name>pi__url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Campaign --></label>
+        <name>pi__utm_campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Content --></label>
+        <name>pi__utm_content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Medium --></label>
+        <name>pi__utm_medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Source --></label>
+        <name>pi__utm_source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Term --></label>
+        <name>pi__utm_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Generator(s) --></label>
+        <name>smagicinteract__CurrentGenerators__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>smagicinteract__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>smagicinteract__Primary__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Interest --></label>
+        <name>smagicinteract__ProductInterest__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation><!-- GC1000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC3000 series</masterLabel>
+            <translation><!-- GC3000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation><!-- GC5000 series --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SIC Code --></label>
+        <name>smagicinteract__SICCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Opt Out --></label>
+        <name>smagicinteract__SMSOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestDate --></label>
+        <name>smagicinteract__TestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Opt out --></label>
+        <name>tdc_tsw__SMS_Opt_out__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_EchoSign --></label>
+        <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>smagicinteract__Send_Bulk_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>smagicinteract__Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule_Send_Bulk_SMS --></label>
+        <name>smagicschedule__Schedule_Send_Bulk_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule_Send_SMS --></label>
+        <name>smagicschedule__Schedule_Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>tdc_tsw__Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS_List --></label>
+        <name>tdc_tsw__Send_SMS_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS_SF1 --></label>
+        <name>tdc_tsw__Send_SMS_SF1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS_SLDS --></label>
+        <name>tdc_tsw__Send_SMS_SLDS</name>
+    </webLinks>
+</CustomObjectTranslation>

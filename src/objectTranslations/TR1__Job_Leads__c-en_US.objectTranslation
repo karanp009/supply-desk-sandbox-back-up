@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Lead</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Leads</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- JobVacancy --></label>
+        <name>JobVacancy</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+        <picklistValues>
+            <masterLabel>Food Technology</masterLabel>
+            <translation><!-- Food Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Cover</masterLabel>
+            <translation><!-- General Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Studies</masterLabel>
+            <translation><!-- General Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geography</masterLabel>
+            <translation><!-- Geography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geology</masterLabel>
+            <translation><!-- Geology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graphic Design</masterLabel>
+            <translation><!-- Graphic Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health and Social Care</masterLabel>
+            <translation><!-- Health and Social Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>History</masterLabel>
+            <translation><!-- History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Humanities</masterLabel>
+            <translation><!-- Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICT</masterLabel>
+            <translation><!-- ICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Search Tutor</masterLabel>
+            <translation><!-- Job Search Tutor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leisure and Tourism</masterLabel>
+            <translation><!-- Leisure and Tourism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL</masterLabel>
+            <translation><!-- MFL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Danish</masterLabel>
+            <translation><!-- MFL - Danish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Dutch</masterLabel>
+            <translation><!-- MFL - Dutch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - French</masterLabel>
+            <translation><!-- MFL - French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - German</masterLabel>
+            <translation><!-- MFL - German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Gujarati</masterLabel>
+            <translation><!-- MFL - Gujarati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Italian</masterLabel>
+            <translation><!-- MFL - Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Punjabi</masterLabel>
+            <translation><!-- MFL - Punjabi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Russian</masterLabel>
+            <translation><!-- MFL - Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Spanish</masterLabel>
+            <translation><!-- MFL - Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Turkish</masterLabel>
+            <translation><!-- MFL - Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL - Urdu</masterLabel>
+            <translation><!-- MFL - Urdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL- Japanese</masterLabel>
+            <translation><!-- MFL- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MFL-Mandarin</masterLabel>
+            <translation><!-- MFL-Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maths</masterLabel>
+            <translation><!-- Maths --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Studies</masterLabel>
+            <translation><!-- Media Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PE</masterLabel>
+            <translation><!-- PE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHSE</masterLabel>
+            <translation><!-- PHSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performing Arts</masterLabel>
+            <translation><!-- Performing Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philosophy</masterLabel>
+            <translation><!-- Philosophy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography</masterLabel>
+            <translation><!-- Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Politics</masterLabel>
+            <translation><!-- Politics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychology</masterLabel>
+            <translation><!-- Psychology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE</masterLabel>
+            <translation><!-- RE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science - Biology</masterLabel>
+            <translation><!-- Science - Biology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science - Chemistry</masterLabel>
+            <translation><!-- Science - Chemistry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science - General</masterLabel>
+            <translation><!-- Science - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science - Physics</masterLabel>
+            <translation><!-- Science - Physics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Studies</masterLabel>
+            <translation><!-- Social Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sociology</masterLabel>
+            <translation><!-- Sociology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports Science</masterLabel>
+            <translation><!-- Sports Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports Studies</masterLabel>
+            <translation><!-- Sports Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welsh Language</masterLabel>
+            <translation><!-- Welsh Language --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel>Sales Leads</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Firms Engaged --></label>
+        <name>TR1__Competor__c</name>
+        <picklistValues>
+            <masterLabel>Capita</masterLabel>
+            <translation><!-- Capita --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Celsian</masterLabel>
+            <translation><!-- Celsian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connex Education</masterLabel>
+            <translation><!-- Connex Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage</masterLabel>
+            <translation><!-- Engage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hays</masterLabel>
+            <translation><!-- Hays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Search</masterLabel>
+            <translation><!-- Head Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITN Mark Education</masterLabel>
+            <translation><!-- ITN Mark Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Just Teachers</masterLabel>
+            <translation><!-- Just Teachers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEA</masterLabel>
+            <translation><!-- LEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monarch</masterLabel>
+            <translation><!-- Monarch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PK Education</masterLabel>
+            <translation><!-- PK Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protocol</masterLabel>
+            <translation><!-- Protocol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ranstad</masterLabel>
+            <translation><!-- Ranstad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reed</masterLabel>
+            <translation><!-- Reed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simply Education</masterLabel>
+            <translation><!-- Simply Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher Active</masterLabel>
+            <translation><!-- Teacher Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching Personnel</masterLabel>
+            <translation><!-- Teaching Personnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeplan</masterLabel>
+            <translation><!-- Timeplan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tradewind</masterLabel>
+            <translation><!-- Tradewind --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>TR1__Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>TR1__Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel>Sales Leads</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Converted Vacancy</label>
+        <name>TR1__Converted_Job__c</name>
+        <relationshipLabel>Sales Leads</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Description</label>
+        <name>TR1__Job_Description__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy</label>
+        <name>TR1__Job__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>TR1__Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Eteach</masterLabel>
+            <translation><!-- Eteach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indeed</masterLabel>
+            <translation><!-- Indeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linkedin</masterLabel>
+            <translation><!-- Linkedin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Authority Job Board</masterLabel>
+            <translation><!-- Local Authority Job Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster</masterLabel>
+            <translation><!-- Monster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reed</masterLabel>
+            <translation><!-- Reed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Call</masterLabel>
+            <translation><!-- Sales Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Website</masterLabel>
+            <translation><!-- School Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Engine</masterLabel>
+            <translation><!-- Search Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TES</masterLabel>
+            <translation><!-- TES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>facebook</masterLabel>
+            <translation><!-- facebook --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing --></label>
+        <name>TR1__Marketing__c</name>
+        <relationshipLabel><!-- Sales Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referred By --></label>
+        <name>TR1__Referred_By__c</name>
+        <relationshipLabel>Sales Leads (Referred By)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Analysis</masterLabel>
+            <translation><!-- Needs Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Quote</masterLabel>
+            <translation><!-- Pricing Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospecting</masterLabel>
+            <translation><!-- Prospecting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Proposition</masterLabel>
+            <translation><!-- Value Proposition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won</masterLabel>
+            <translation><!-- Won --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent</masterLabel>
+            <translation><!-- Permanent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year/Key Stage --></label>
+        <name>Year_Key_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Foundation Stage 3-5yrs</masterLabel>
+            <translation><!-- Foundation Stage 3-5yrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS1</masterLabel>
+            <translation><!-- KS1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS2</masterLabel>
+            <translation><!-- KS2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS3-5</masterLabel>
+            <translation><!-- KS3-5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS3/4</masterLabel>
+            <translation><!-- KS3/4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursery 0-5yrs</masterLabel>
+            <translation><!-- Nursery 0-5yrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-16</masterLabel>
+            <translation><!-- Post-16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y1(KS1)</masterLabel>
+            <translation><!-- Y1(KS1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y10(KS4)</masterLabel>
+            <translation><!-- Y10(KS4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y11(KS4)</masterLabel>
+            <translation><!-- Y11(KS4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y12(KS5)</masterLabel>
+            <translation><!-- Y12(KS5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y13(KS5)</masterLabel>
+            <translation><!-- Y13(KS5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y2(KS1)</masterLabel>
+            <translation><!-- Y2(KS1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y3(KS2)</masterLabel>
+            <translation><!-- Y3(KS2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y4(KS2)</masterLabel>
+            <translation><!-- Y4(KS2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y5(KS2)</masterLabel>
+            <translation><!-- Y5(KS2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y6(KS2)</masterLabel>
+            <translation><!-- Y6(KS2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y7(KS3)</masterLabel>
+            <translation><!-- Y7(KS3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y8(KS3)</masterLabel>
+            <translation><!-- Y8(KS3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y9(KS3)</masterLabel>
+            <translation><!-- Y9(KS3) --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Sales Leads Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>Create Vacancy</label>
+        <name>TR1__Create_Job_Order</name>
+    </webLinks>
+    <webLinks>
+        <label>New Vacancy Lead</label>
+        <name>TR1__New_Job_Lead</name>
+    </webLinks>
+</CustomObjectTranslation>

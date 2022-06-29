@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Key Information Document PAYE SD</name>
+    <style>freeForm</style>
+    <subject>Key Information Document ‒ PAYE</subject>
+    <textOnly>Key Information Document ‒ PAYE
+
+This document sets out key information about your relationship as a work-seeker with us, as an employment business, including details about pay, holiday entitlement and other benefits.
+
+
+The Employment Agency Standards (EAS) Inspectorate is the government authority responsible for the enforcement of certain agency worker rights. You can raise a concern with them directly on 020 7215 5000 or through the ACAS helpline on 0300 123 1100, Monday to Friday, 8am to 6pm.
+
+
+General Information
+
+
+Name of employment business:
+
+Supply Desk Limited
+
+Type of contract you will be engaged under:
+
+Contract for Services
+
+Who will be responsible for paying you (if different from your employer):
+
+Supply Desk Limited
+
+How often you will be paid:
+
+Weekly
+
+Expected or minimum rate of pay:
+
+No less than National Minimum Wage
+
+Deductions from your pay required by law:
+
+PAYE tax, employee NI contributions, employee pension contributions, and student loan repayments (if applicable).
+
+Any other deductions or costs from your pay (to include amounts or how they are calculated):
+
+None
+
+Any fees for goods or services:
+
+DBS check fees £45 (one off payment, required upfront and not deducted from earnings)
+
+Holiday entitlement and pay:
+
+28 days per annum (paid together with gross daily rate)
+
+Additional benefits:
+
+None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Representative example of your pay
+
+
+Example rate pay:
+
+
+£293.10 gross weekly (30 hours @ £9.77)
+
+Deductions from your wage required by law:
+
+£10.40 income tax
+
+£13.25 NICs
+
+£7.02 pension contributions
+
+Any other deductions or costs from your wage:
+
+None known
+
+Any fees for goods or services:
+
+
+None
+
+Example net take home pay:
+
+
+£262.43</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

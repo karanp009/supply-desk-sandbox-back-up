@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Sign Workflow Content in JSON String Format --></help>
+        <label><!-- Workflow Content --></label>
+        <name>echosign_dev1__Workflow_Content__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sign Workflow Creation Time and Date --></help>
+        <label><!-- Workflow Created Time --></label>
+        <name>echosign_dev1__Workflow_Created_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Workflow Display Name --></help>
+        <label><!-- Workflow Display Name --></label>
+        <name>echosign_dev1__Workflow_Display_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sign Workflow Id --></help>
+        <label><!-- Workflow Id --></label>
+        <name>echosign_dev1__Workflow_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sign Workflow Modification Time and Date --></help>
+        <label><!-- Workflow Modified Time --></label>
+        <name>echosign_dev1__Workflow_Modified_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sign Workflow Status --></help>
+        <label><!-- Workflow Status --></label>
+        <name>echosign_dev1__Workflow_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation><!-- ACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRAFT</masterLabel>
+            <translation><!-- DRAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIDDEN</masterLabel>
+            <translation><!-- HIDDEN --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

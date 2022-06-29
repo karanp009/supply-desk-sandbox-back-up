@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AutoForward to Mobile --></label>
+        <name>tdc_tsw__AutoForward_to_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Forward Email --></label>
+        <name>tdc_tsw__Auto_Forward_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automation Off --></label>
+        <name>tdc_tsw__Automation_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counter Reset Limit --></label>
+        <name>tdc_tsw__Counter_Reset_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Area Code --></label>
+        <name>tdc_tsw__Country_Area_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>tdc_tsw__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sender Number --></label>
+        <name>tdc_tsw__Default_Sender_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sms Owner --></label>
+        <name>tdc_tsw__Default_Sms_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Incoming Setup --></label>
+        <name>tdc_tsw__Disable_Incoming_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Alert To Owner --></label>
+        <name>tdc_tsw__Email_Alert_To_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoming Server --></label>
+        <name>tdc_tsw__Incoming_Server__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key --></label>
+        <name>tdc_tsw__Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastSyncDate --></label>
+        <name>tdc_tsw__LastSyncDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Tracking --></label>
+        <name>tdc_tsw__Link_Tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message Service Id --></label>
+        <name>tdc_tsw__Message_Service_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Approach --></label>
+        <name>tdc_tsw__New_Approach__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>tdc_tsw__Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrgId --></label>
+        <name>tdc_tsw__OrgId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile --></label>
+        <name>tdc_tsw__Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>tdc_tsw__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- RemainingCredit --></label>
+        <name>tdc_tsw__RemainingCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>tdc_tsw__Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Recorded --></label>
+        <name>tdc_tsw__Review_Recorded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Usage In App --></label>
+        <name>tdc_tsw__Show_Usage_In_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sms Count --></label>
+        <name>tdc_tsw__Sms_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sno --></label>
+        <name>tdc_tsw__Sno__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Review --></label>
+        <name>tdc_tsw__Start_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>tdc_tsw__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeStamp --></label>
+        <name>tdc_tsw__TimeStamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>tdc_tsw__Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalCredit --></label>
+        <name>tdc_tsw__TotalCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total License For Virtual Number --></label>
+        <name>tdc_tsw__Total_License_For_Virtual_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Expire Date --></label>
+        <name>tdc_tsw__Trial_Expire_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- UsedCredit --></label>
+        <name>tdc_tsw__UsedCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>tdc_tsw__User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>tdc_tsw__User_Name__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- OrgConfig --></label>
+        <name>tdc_tsw__OrgConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UserConfig --></label>
+        <name>tdc_tsw__UserConfig</name>
+    </recordTypes>
+</CustomObjectTranslation>

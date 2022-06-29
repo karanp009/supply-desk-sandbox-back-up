@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Response Required- Renewal of consent to Supply Desk processing your sensitive personal data</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Response Required - Renewal of consent to Supply Desk processing your data</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Sensitive Data Processing Consent Form - Response Required</subject>
+    <textOnly>Dear {!TR1__Associated_Qualification__c.TR1__Contact__c}
+
+We now need to renew your consent to Supply Desk processing the following information:
+
+
+any disability and/or health condition(s) revealed by you on the health declaration form; and
+any criminal conviction(s).
+
+
+
+
+Supply Desk is required to process the above sensitive personal data in order to provide you with work-finding services (so that we can carry out the required vetting checks). We may need to share this personal data with our medical advisor, client schools and also third party auditors to ensure that Supply Desk is complying with all relevant laws and obligations.
+
+
+
+Your information will be securely held and processed on our computerised database.
+
+
+Please respond to confirm you renew your consent to Supply Desk processing your sensitive personal data in this way.
+
+
+The consent, again, will last for 18 months and you have the right to withdraw your consent at any time by informing Supply Desk that you wish to do so.
+
+
+Kind Regards
+
+The Compliance Team
+
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

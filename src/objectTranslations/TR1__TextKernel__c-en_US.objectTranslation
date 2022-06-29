@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Host --></label>
+        <name>TR1__API_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Candidate Endpoint --></label>
+        <name>TR1__Add_Candidate_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Access Roles --></label>
+        <name>TR1__Candidate_Access_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Environment --></label>
+        <name>TR1__Candidate_Environment__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL/Path to a Custom CSS file used to design the Search! UI Screen of TextKernel. --></help>
+        <label><!-- Custom CSS Path --></label>
+        <name>TR1__Custom_CSS_Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Candidate Endpoint --></label>
+        <name>TR1__Delete_Candidate_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Access Roles --></label>
+        <name>TR1__Job_Access_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Environment --></label>
+        <name>TR1__Job_Environment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Token Endpoint --></label>
+        <name>TR1__Request_Token_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search! Match Endpoint --></label>
+        <name>TR1__Search_Match_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search! UI Host --></label>
+        <name>TR1__Search_UI_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search! UI URL --></label>
+        <name>TR1__Search_UI_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Candidate Endpoint --></label>
+        <name>TR1__Update_Candidate_Endpoint__c</name>
+    </fields>
+</CustomObjectTranslation>

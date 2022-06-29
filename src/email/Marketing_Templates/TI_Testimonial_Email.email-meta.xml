@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TI_Testimonials</letterhead>
+    <name>TI_Aussie_Testimonial Email</name>
+    <style>freeForm</style>
+    <subject>Hear what our Teachers have to say about us</subject>
+    <textOnly>Interested in teaching and travelling in the UK?
+Hear what our Teachers have to say about working with us
+
+At Teach In, we know that considering moving and working overseas is a big and exciting descision to make. Never fear, our team of dedicated education recruitment consultants is here to support you on every step of your journey to teaching in the UK.
+
+We&apos;ll take the time to find out what your perfect placement looks like and we have a vast range of jobs and locations to choose from. You can even interview for a guaranteed job in UK school without leaving Australia, as part of our UK Principal Tour! Click here to find out more.
+
+The next Principal Tour will be held in Australia in Sept/Oct 2019 - register your interest today.
+
+However, don&apos;t just take our word for it, see what our Teachers have to say about their experiences and start your UK teaching adventure with Teach In.
+&quot;Let me start by asking you three questions; Are you a teacher? Are you looking for a job? Do you want to have an adventure? If you answered YES! to these three questions then Teach In is your solution. Give them a go at helping you strengthen your teaching career and put to use a degree that you can travel the world with.&quot; Danielle
+
+
+
+&quot;This company helped me immensely throughout my placement at Greenacre Academy in Kent, UK. That experience completely opened my eyes to the new worlds of teaching that are possible, and that would not have been possible without the incredible support and constant friendly faces, such as yourselves, at Teach In. Moving over or doing a placement in the UK can be a challenge, but with the right people beside you, it feels like a breeze!&quot;
+
+Arabella
+
+
+
+&quot;After teaching in Buckinghamshire, UK, for 15 months, it was VERY easy to get a teaching job back in Canada. Principals here know how difficult it is to teach over there. All I had to do was mention the fact that I was successful there, and I immediately got hired for a full-time continuing position in Special Education.  Because of the tremendous amount of personal growth that I went through, teaching in the UK was the absolute best thing I could have done for myself.&quot;
+
+Kenton
+
+
+
+
+&quot;If you’re an aspiring teacher, or even if you already are one, having the opportunity to live and work overseas is incredible.The importance of stepping out of your comfort zone, both personally and professionally, can do nothing but good. My time teaching in the UK was made possible by Teach In.&quot; Lucy
+
+
+
+Please get in touch with me on 0449790334 or email Gemma.Yates@teachin.co.uk
+
+
+Looking forward to getting you on your way to teaching overseas!
+
+
+
+Kind Regards,
+
+
+
+Gemma Yates</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

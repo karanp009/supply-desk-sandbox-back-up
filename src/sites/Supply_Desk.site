@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>false</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>Signin</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>false</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
+    <changePasswordPage>ChangeYourPassword</changePasswordPage>
+    <clickjackProtectionLevel>AllowAllFraming</clickjackProtectionLevel>
+    <contentSniffingProtection>false</contentSniffingProtection>
+    <enableAuraRequests>true</enableAuraRequests>
+    <favoriteIcon>TR1_Favicon_SDL</favoriteIcon>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <forgotPasswordPage>ForgotYourPassword</forgotPasswordPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>CommunitiesLogin</inMaintenancePage>
+    <inactiveIndexPage>CommunitiesLogin</inactiveIndexPage>
+    <indexPage>Home_v2</indexPage>
+    <masterLabel>Supply Desk</masterLabel>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
+    <selfRegPage>CandidateRegistration</selfRegPage>
+    <siteAdmin>tradmin@supplydesk.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>tradmin@supplydesk.com</siteGuestRecordDefaultOwner>
+    <siteType>ChatterNetwork</siteType>
+    <subdomain>supplydesk</subdomain>
+</CustomSite>

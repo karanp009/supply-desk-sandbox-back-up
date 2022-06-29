@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Work_Permit</letterhead>
+    <name>SD_Work Permit Webinar</name>
+    <style>freeForm</style>
+    <subject>Understanding Work Permit Teachers Webinar</subject>
+    <textOnly>Good Morning/Afternoon,
+
+We&apos;re offering all our schools the opportunity to join our FREE interactive webinar on Understanding Work Permit Teachers: A Guide for UK Schools. To register your schools interest, simply click here to register for the webinar.
+Interested in hiring overseas teachers for your school?
+Want to understand more about the process of hiring Work Permit Teacher?
+
+
+Delivered by our experienced International team, the following information will be covered in this FREE webinar:
+
+Find out how your school / Academy / LEA applies for the Sponsorship Licence.
+Discover how the process works, including Labour Market testing.
+Information on applying for the Certificate of Sponsorship.
+The cost to your school.
+The benefits of hiring a Work Permit candidate, in particular retention in Core Subjects.
+Delivered by our experienced International team with a proven track record in placing Tier 2 candidates, including Maths, Science &amp; other non-shortage subjects.
+
+Sign your school up today! Click here to find more out more information on our website and register your interest.
+
+Kind Regards,
+
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

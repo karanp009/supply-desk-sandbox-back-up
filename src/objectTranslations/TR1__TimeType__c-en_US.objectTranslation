@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Entry Type --></label>
+        <name>TR1__EntryType__c</name>
+        <picklistValues>
+            <masterLabel>Hours &amp; Minutes</masterLabel>
+            <translation><!-- Hours &amp; Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start &amp; Finish</masterLabel>
+            <translation><!-- Start &amp; Finish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the current rate of a mile --></help>
+        <label><!-- Mileage Rate --></label>
+        <name>TR1__Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multiplier --></label>
+        <name>TR1__Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show As --></label>
+        <name>TR1__ShowAs__c</name>
+        <picklistValues>
+            <masterLabel>Days</masterLabel>
+            <translation><!-- Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hours</masterLabel>
+            <translation><!-- Hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Show_in_Community? --></label>
+        <name>TR1__Show_in_Community__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>TR1__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Code --></label>
+        <name>TR1__Time_Code__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- W-009471 Create New Record Type to Separate Expense and Timesheet Time Types --></description>
+        <label><!-- Expense Time Type --></label>
+        <name>TR1__Expense_Time_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- W-009471 Create New Record Type to Separate Expense and Timesheet Time Types --></description>
+        <label><!-- Timesheet Time Type --></label>
+        <name>TR1__Timesheet_Time_Type</name>
+    </recordTypes>
+</CustomObjectTranslation>

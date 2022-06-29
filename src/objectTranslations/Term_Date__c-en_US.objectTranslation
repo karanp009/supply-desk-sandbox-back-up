@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Term Date</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Term Dates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client --></label>
+        <name>Client__c</name>
+        <relationshipLabel><!-- Term Dates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term Type --></label>
+        <name>Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>Full Term</masterLabel>
+            <translation><!-- Full Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half Term</masterLabel>
+            <translation><!-- Half Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Term Date Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Term_Date --></label>
+        <name>New_Term_Date</name>
+    </webLinks>
+</CustomObjectTranslation>

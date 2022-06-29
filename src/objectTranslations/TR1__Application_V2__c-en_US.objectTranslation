@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Application New Offer page --></label>
+        <name>TR1__Application_New_Offer_page</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanCardLineFieldSet --></label>
+        <name>TR1__KanbanCardLineFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- KanbanNewApplications --></label>
+        <name>TR1__KanbanNewApplications</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Lightning List Tab --></label>
+        <name>TR1__Lightning_List_Tab</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Application --></label>
+        <name>TR1__NewApplication</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant/Interviewee --></label>
+        <name>TR1__Applicant__c</name>
+        <relationshipLabel><!-- Applications V2 --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter brief Summary --></help>
+        <label><!-- Candidate Summary --></label>
+        <name>TR1__Candidate_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Email --></label>
+        <name>TR1__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Rate Offered --></label>
+        <name>TR1__Hourly_Rate_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Board Source --></label>
+        <name>TR1__Job_Board_Source__c</name>
+        <picklistValues>
+            <masterLabel>ACRP</masterLabel>
+            <translation><!-- ACRP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad</masterLabel>
+            <translation><!-- Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bing Search</masterLabel>
+            <translation><!-- Bing Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careerbuilder</masterLabel>
+            <translation><!-- Careerbuilder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Website</masterLabel>
+            <translation><!-- Company Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIA</masterLabel>
+            <translation><!-- DIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DICE</masterLabel>
+            <translation><!-- DICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Search</masterLabel>
+            <translation><!-- Google Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISPE</masterLabel>
+            <translation><!-- ISPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indeed</masterLabel>
+            <translation><!-- Indeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Fair</masterLabel>
+            <translation><!-- Job Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster</masterLabel>
+            <translation><!-- Monster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NACCB</masterLabel>
+            <translation><!-- NACCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net-Temps</masterLabel>
+            <translation><!-- Net-Temps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAPS</masterLabel>
+            <translation><!-- RAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCDM</masterLabel>
+            <translation><!-- SCDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SoCRA</masterLabel>
+            <translation><!-- SoCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yahoo Search</masterLabel>
+            <translation><!-- Yahoo Search --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Contact Email --></label>
+        <name>TR1__Job_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact First Name --></label>
+        <name>TR1__Job_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact Phone --></label>
+        <name>TR1__Job_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact --></label>
+        <name>TR1__Job_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Applications V2 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job&apos;s Account Owner --></label>
+        <name>TR1__Job_s_Account_Owner__c</name>
+        <relationshipLabel><!-- Applications V2 (Job&apos;s Account Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Mobile --></label>
+        <name>TR1__Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Discussed --></label>
+        <name>TR1__Opportunity_Discussed__c</name>
+        <relationshipLabel><!-- Applications V2 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Owner --></label>
+        <name>TR1__Owner__c</name>
+        <relationshipLabel><!-- Applications V2 (Candidate Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Phone --></label>
+        <name>TR1__Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejected --></label>
+        <name>TR1__Reject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notes --></label>
+        <name>TR1__Rejection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary Offered --></label>
+        <name>TR1__Salary_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TR1__Source__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Board</masterLabel>
+            <translation><!-- Job Board --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing Report</masterLabel>
+            <translation><!-- Closing Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer</masterLabel>
+            <translation><!-- Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Out</masterLabel>
+            <translation><!-- Send Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submittal</masterLabel>
+            <translation><!-- Submittal --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Application --></label>
+        <name>TR1__Application</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Mass_Reject --></label>
+        <name>TR1__Mass_Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject --></label>
+        <name>TR1__Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_And_Email --></label>
+        <name>TR1__Send_And_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_Without_Email --></label>
+        <name>TR1__Submit_Without_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

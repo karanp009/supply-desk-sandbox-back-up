@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Client Gift --></label>
+        <name>Client_Gift</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ExpenseLineItemDetail --></label>
+        <name>ExpenseLineItemDetail</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Lodging --></label>
+        <name>Lodging</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Meals &amp; Entertainment --></label>
+        <name>Meals_Entertainment</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mileage --></label>
+        <name>Mileage</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Per Diem --></label>
+        <name>TR1__Per_Diem</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Transportation &amp; Parking --></label>
+        <name>Transportation_Parking</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Expense Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>TR1__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount --></label>
+        <name>TR1__Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>TR1__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell Phones Amount --></label>
+        <name>TR1__Cell_Phones_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>TR1__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>TR1__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>TR1__Expense_Report__c</name>
+        <relationshipLabel><!-- Expense Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GP Amount --></label>
+        <name>TR1__GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home DSL Amount --></label>
+        <name>TR1__Home_DSL_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lodging Amount --></label>
+        <name>TR1__Lodging_Amnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lodging Amount --></label>
+        <name>TR1__Lodging_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meals &amp; Entertainment Amount --></label>
+        <name>TR1__Meals_Ent_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meals &amp; Entertainment Amount --></label>
+        <name>TR1__Meals_Entertainment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Rate --></label>
+        <name>TR1__MileageRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Amnt --></label>
+        <name>TR1__Mileage_Amnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Amount --></label>
+        <name>TR1__Mileage_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Rate --></label>
+        <name>TR1__Mileage_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miles --></label>
+        <name>TR1__Miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Amount --></label>
+        <name>TR1__Oth_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Amount --></label>
+        <name>TR1__Other_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Transportation &amp; Parking Amount --></label>
+        <name>TR1__Other_Transport_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Transportation &amp; Parking Amount --></label>
+        <name>TR1__Other_Transport_Parking_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prepaid --></label>
+        <name>TR1__Prepaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>TR1__Rate__c</name>
+        <relationshipLabel><!-- Expense Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reimbursible Expense Amount --></label>
+        <name>TR1__Reimbursible_Expense_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>TR1__Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Expenses --></label>
+        <name>TR1__Total_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor --></label>
+        <name>TR1__Vendor__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Expenses related to gifts for clients. --></description>
+        <label><!-- Client Gift --></label>
+        <name>TR1__Client_Gift</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Expenses related to the cost of lodging. --></description>
+        <label><!-- Lodging --></label>
+        <name>TR1__Lodging</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Expenses related to meals and entertainment. --></description>
+        <label><!-- Meals &amp; Entertainment --></label>
+        <name>TR1__Meals_Entertainment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Expense related to the cost of mileage. --></description>
+        <label><!-- Mileage --></label>
+        <name>TR1__Mileage</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Expenses not defined.  Please explain details of the expense in the Comments field. --></description>
+        <label><!-- Other --></label>
+        <name>TR1__Other</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Per Diem --></label>
+        <name>TR1__Per_Diem</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Expenses related to the cost parking and transportation. --></description>
+        <label><!-- Transportation &amp; Parking --></label>
+        <name>TR1__Transportation_Parking</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Line Item Date should be between Expense Report Start and End Date --></errorMessage>
+        <name>Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- User can only edit this record if the related Expense Report is Unsubmitted Or Rejected --></errorMessage>
+        <name>TR1__ReadOnly_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Return_To_Expense_Report --></label>
+        <name>TR1__Return_To_Expense_Report</name>
+    </webLinks>
+</CustomObjectTranslation>

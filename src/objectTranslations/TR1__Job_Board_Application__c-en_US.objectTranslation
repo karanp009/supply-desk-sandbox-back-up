@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Rejection Comment --></label>
+        <name>Rejection_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Reason --></label>
+        <name>Rejection_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Consultant Will Notify</masterLabel>
+            <translation><!-- Consultant Will Notify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>TR1__Applicant__c</name>
+        <relationshipLabel><!-- Job Board Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job Board Source --></label>
+        <name>TR1__Job_Board_Source__c</name>
+        <picklistValues>
+            <masterLabel>ACRP</masterLabel>
+            <translation><!-- ACRP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad</masterLabel>
+            <translation><!-- Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bing Search</masterLabel>
+            <translation><!-- Bing Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CV Library</masterLabel>
+            <translation><!-- CV Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Career builder</masterLabel>
+            <translation><!-- Career builder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Website</masterLabel>
+            <translation><!-- Company Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIA</masterLabel>
+            <translation><!-- DIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DICE</masterLabel>
+            <translation><!-- DICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Search</masterLabel>
+            <translation><!-- Google Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISPE</masterLabel>
+            <translation><!-- ISPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indeed</masterLabel>
+            <translation><!-- Indeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Fair</masterLabel>
+            <translation><!-- Job Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster</masterLabel>
+            <translation><!-- Monster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NACCB</masterLabel>
+            <translation><!-- NACCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net-Temps</masterLabel>
+            <translation><!-- Net-Temps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAPS</masterLabel>
+            <translation><!-- RAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCDM</masterLabel>
+            <translation><!-- SCDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SoCRA</masterLabel>
+            <translation><!-- SoCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yahoo Search</masterLabel>
+            <translation><!-- Yahoo Search --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Job Board Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>TR1__Rating__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TR1__Source__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Board</masterLabel>
+            <translation><!-- Job Board --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Converted</masterLabel>
+            <translation><!-- Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <webLinks>
+        <label><!-- Reject_Delete --></label>
+        <name>Reject_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject_Keep --></label>
+        <name>Reject_Keep</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject_Refer --></label>
+        <name>Reject_Refer</name>
+    </webLinks>
+    <webLinks>
+        <label>Add to Shortlist</label>
+        <name>TR1__MassShortlist</name>
+    </webLinks>
+    <webLinks>
+        <label>Add to Shortlist</label>
+        <name>TR1__Shortlist</name>
+    </webLinks>
+</CustomObjectTranslation>

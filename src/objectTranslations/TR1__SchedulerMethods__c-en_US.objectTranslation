@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Always add new shifts to existing CR --></label>
+        <name>TR1__Always_add_new_shifts_to_existing_CR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be more useful when there are multiple job shifts matching same candidate availability. --></help>
+        <label><!-- Book using check box --></label>
+        <name>TR1__Book_using_check_box__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Confirmation by SubStatus --></label>
+        <name>TR1__Booking_Confirmation_by_SubStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Placement --></label>
+        <name>TR1__Candidate_Placement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Opportunity Discussed Record --></label>
+        <name>TR1__CreateOpportunityDiscussedRecord__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreateTimesheetsForPastOrThisWeek --></label>
+        <name>TR1__CreateTimesheetsForPastOrThisWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create unavailable CA for simple Job --></label>
+        <name>TR1__Create_unavailable_CA_for_simple_Job__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated. It is not in Use now. Instead use Default View Custom Metadata. --></help>
+        <label><!-- Default Date View --></label>
+        <name>TR1__Default_Date_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display CAs on Filter Jobs page --></label>
+        <name>TR1__Display_CAs_on_Filter_Jobs_page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display VS in CR Calendar --></label>
+        <name>TR1__Display_VS_in_CR_Calendar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display V shifts on Job Schedular page --></label>
+        <name>TR1__Display_V_shifts_on_Job_Schedular_page__c</name>
+    </fields>
+    <fields>
+        <help><!-- KM/Miles --></help>
+        <label><!-- Distance Type --></label>
+        <name>TR1__Distance_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeoLocationsTriggerSwitch --></label>
+        <name>TR1__GeoLocationsTriggerSwitch__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalSchedulerOptions --></label>
+        <name>TR1__Is_Medrecruit__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Candidates --></label>
+        <name>TR1__My_Candidates__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Vacancies --></label>
+        <name>TR1__My_Vacancies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Records Per Page --></label>
+        <name>TR1__Number_of_Records_Per_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partial Match --></label>
+        <name>TR1__Partial_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previously Placed Anywhere --></label>
+        <name>TR1__Previously_Placed_Anywhere__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previously Placed at Client --></label>
+        <name>TR1__Previously_Placed_at_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pull Shift Timings --></label>
+        <name>TR1__Pull_Shifts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Confirmation Letter --></label>
+        <name>TR1__Send_Confirmation_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort By Job Life Time --></label>
+        <name>TR1__Sort_By_Job_Life_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Worksite Location --></label>
+        <name>TR1__Worksite_Location__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Interview</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Interviews</value>
+    </caseValues>
+    <fields>
+        <label><!-- Interview/Trial --></label>
+        <name>Interview_Trial__c</name>
+        <picklistValues>
+            <masterLabel>Interview</masterLabel>
+            <translation><!-- Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- C R --></label>
+        <name>TR1__Closing_Report_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interviewee Email --></label>
+        <name>TR1__Interviewee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interviewee Mobile --></label>
+        <name>TR1__Interviewee_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interviewee Owner --></label>
+        <name>TR1__Interviewee_Owner__c</name>
+        <relationshipLabel><!-- Client Interviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Interviewee Phone --></label>
+        <name>TR1__Interviewee_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interviewee --></label>
+        <name>TR1__Interviewee__c</name>
+        <relationshipLabel><!-- Send Outs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job Contact Email --></label>
+        <name>TR1__Job_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact Phone --></label>
+        <name>TR1__Job_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Contact --></label>
+        <name>TR1__Job_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reporting --></label>
+        <name>TR1__Job_Reporting__c</name>
+        <relationshipLabel><!-- Send Outs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Send Outs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number Of Schedules --></label>
+        <name>TR1__Number_Of_Schedules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days in Stage --></label>
+        <name>TR1__Number_of_Days_in_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ofr --></label>
+        <name>TR1__Offer_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rjt --></label>
+        <name>TR1__Reject_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notes --></label>
+        <name>TR1__Rejection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notification --></label>
+        <name>TR1__Rejection_Notification__c</name>
+        <picklistValues>
+            <masterLabel>Automated Rejection Email</masterLabel>
+            <translation><!-- Automated Rejection Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Owner Will Notify</masterLabel>
+            <translation><!-- Contact Owner Will Notify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Owner Will Notify</masterLabel>
+            <translation><!-- Job Owner Will Notify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rvt --></label>
+        <name>TR1__Revert_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- S S --></label>
+        <name>TR1__Schedule_Sendouts_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage End Date --></label>
+        <name>TR1__Stage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Start Date --></label>
+        <name>TR1__Stage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+        <picklistValues>
+            <masterLabel>First</masterLabel>
+            <translation><!-- First --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fourth</masterLabel>
+            <translation><!-- Fourth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second</masterLabel>
+            <translation><!-- Second --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third</masterLabel>
+            <translation><!-- Third --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage_for_KCRA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Manager Stage Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Client Interview Number</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Closing_Report --></label>
+        <name>TR1__Closing_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Offer --></label>
+        <name>TR1__Offer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject --></label>
+        <name>TR1__Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Revert --></label>
+        <name>TR1__Revert</name>
+    </webLinks>
+    <webLinks>
+        <label>Schedule Client Interview</label>
+        <name>TR1__Schedule_Sendout</name>
+    </webLinks>
+</CustomObjectTranslation>

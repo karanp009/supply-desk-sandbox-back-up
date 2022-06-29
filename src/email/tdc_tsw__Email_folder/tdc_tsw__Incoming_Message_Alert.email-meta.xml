@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Incoming Message Alert</name>
+    <style>none</style>
+    <subject>Incoming SMS Alert</subject>
+    <textOnly>####### Reply Above To Send Outbound #######
+
+Message:
+{!tdc_tsw__Message__c.tdc_tsw__Message_Text_New__c}
+
+Click the hyperlinks to view in Salesforce:
+Links: {!tdc_tsw__Message__c.tdc_tsw__Related_Object_Id_URL__c} or Incoming Msg
+Sender: {!tdc_tsw__Message__c.tdc_tsw__Sender_Name__c}
+Message: {!tdc_tsw__Message__c.tdc_tsw__Message_Text_New__c}
+
+
+*** IMPORTANT - DO NOT MODIFY ***
+Sender Number:{!tdc_tsw__Message__c.tdc_tsw__Sender_Number__c}
+To Number:{!tdc_tsw__Message__c.tdc_tsw__ToNumber__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

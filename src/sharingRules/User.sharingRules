@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>All_Data_Shared</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>All data shared with all roles</description>
+        <label>All Data Shared</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Executive_Leadership</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Executive_Leadership</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

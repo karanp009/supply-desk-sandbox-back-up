@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>KID-UMBRELLA - SD JSA</name>
+    <style>freeForm</style>
+    <subject>Key Information Document ‒ JSA Services Ltd</subject>
+    <textOnly>Key Information Document ‒ JSA Services Ltd (Umbrella Company)
+
+This document sets out key information about your relationship with us and the umbrella company or other intermediary through which you may choose to be engaged, including details about pay, holiday entitlement and other benefits.
+
+
+The Employment Agency Standards (EAS) Inspectorate is the government authority responsible for the enforcement of certain agency worker rights. You can raise a concern with them directly on 020 7215 5000 or through the ACAS helpline on 0300 123 1100, Monday to Friday, 8am to 6pm.
+
+General Information
+
+Name of employment business:
+
+Supply Desk Limited
+
+Name of umbrella company:
+
+JSA Services Ltd
+
+Your employer:
+
+JSA Services Ltd
+
+Type of contract you will be engaged under:
+
+Employment Contract
+
+Who will be responsible for paying you:
+
+JSA Services Ltd
+
+How often the umbrella company and you will be paid:
+
+Weekly
+
+Umbrella company pay information
+
+If you choose to be employed by an umbrella company, we will still be finding you assignments.
+
+The money earned on your assignments will be transferred to the umbrella company as part of their income. They will then calculate your tax and other deductions and pay you for the work undertaken. All the deductions made which affect your wage are listed below. If you have any queries about these please contact us.
+
+
+Your payslip may show you as an employee of the umbrella company listed below.
+
+
+Name of umbrella company:
+
+JSA Services Ltd
+
+Any business connection between the umbrella company or other intermediary, the employment business and the person responsible for paying you:
+
+None
+
+The minimum gross rate of pay that we will transfer to the umbrella company:
+
+£339.00 per week
+
+Deductions from umbrella income required by law:
+
+Employers’ NI, Employers’ pensions contributions (if applicable), Apprenticeship Levy
+
+Any other deductions from umbrella income:
+
+Umbrella fee
+
+
+
+
+Expected or minimum rate of pay to you from the umbrella:
+
+Not less than National Minimum Wage
+
+Deductions from your wage required by law:
+
+PAYE tax, employee NI contributions, employee pension contributions, and student loan repayments (if applicable).
+
+Any other deductions or costs taken from your wage:
+
+None
+
+Any fees for goods or services:
+
+None
+
+Holiday entitlement and pay:
+
+30 days holiday entitlement per year accrued at 13.04% of the expected or minimum rate of pay to you. Either paid to you in addition to your salary (the expected or minimum rate of pay to you noted above) every week, or payable to you as and when you request holiday from the umbrella.
+
+Additional benefits:
+
+Employee benefits scheme, including wellbeing packages and shopping discounts
+
+Example pay
+
+
+Umbrella or other intermediary fees
+
+Worker fees
+
+The gross or minimum amount that we will transfer to the umbrella company:
+
+£339.00 per week
+
+
+Deductions from the umbrella income required by law:
+
+£1.51 Apprenticeship Levy
+
+£18.41 Employer&apos;s NIC
+
+
+Any other deductions from umbrella income:
+
+£17.50 Umbrella Margin
+
+
+Example rate of pay to you from the umbrella:
+
+
+
+£301.58 (including £34.79 holiday pay)
+
+Deductions from your pay required by law:
+
+
+Income tax £12.24
+
+EE NIC £14.27
+
+Any other deductions or costs taken from your pay:
+
+
+None
+
+Any fees for goods or services:
+
+
+None
+
+Example net take home pay:
+
+
+£275.07</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

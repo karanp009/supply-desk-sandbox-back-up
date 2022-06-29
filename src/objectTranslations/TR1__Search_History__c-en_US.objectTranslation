@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- All Keywords --></label>
+        <name>TR1__All_these_words__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backgrounds --></label>
+        <name>TR1__Backgrounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candiate Status --></label>
+        <name>TR1__Candiate_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>TR1__Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Ids --></label>
+        <name>TR1__Contact_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Owner Alias --></label>
+        <name>TR1__Contact_Owner_Alias__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discipline --></label>
+        <name>TR1__Discipline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Experience Level --></label>
+        <name>TR1__Experience_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function --></label>
+        <name>TR1__Function__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Range --></label>
+        <name>TR1__Hourly_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Experience --></label>
+        <name>TR1__Industry_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keyword --></label>
+        <name>TR1__Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- None Keywords --></label>
+        <name>TR1__None_Keywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Area --></label>
+        <name>TR1__Regional_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary Range --></label>
+        <name>TR1__Salary_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Name --></label>
+        <name>TR1__Search_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected --></label>
+        <name>TR1__Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Some Keywords --></label>
+        <name>TR1__Some_Keywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Area --></label>
+        <name>TR1__State_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Experience --></label>
+        <name>TR1__System_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>TR1__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip keywords --></label>
+        <name>TR1__Zip_keywords__c</name>
+    </fields>
+</CustomObjectTranslation>

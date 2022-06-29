@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Do Not Strip Contact Information --></label>
+        <name>TR1__Do_Not_Strip_Contact_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scrambled Template --></label>
+        <name>TR1__ScrambledTemplate__c</name>
+    </fields>
+</CustomObjectTranslation>

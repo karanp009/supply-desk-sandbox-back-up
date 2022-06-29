@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email confirmation sent to candidate once their banking information is updated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Banking Information Email</name>
+    <style>formalLetter</style>
+    <subject>Confirmation of Change in Banking Information</subject>
+    <textOnly>Dear {!Contact.FirstName},
+We have updated your banking information, as requested.  Please review your new banking details in your community portal to ensure the information is correct.
+
+
+Kind Regards,
+
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

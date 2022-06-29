@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sends this out to her candidates before they go for a trial day in a school. I think it gives the candidate clear information about the school, the role and sets expectations so they are fully prepared to showcase themselves in the best way possible!</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>Trial Day Prep</name>
+    <style>freeForm</style>
+    <subject>Trial Day Preparation</subject>
+    <textOnly>Hi {!Contact.FirstName}
+
+
+Congratulations on securing an interview &amp; tour with {!TR1__Job__c.TR1__Account__c}! If successful at the interview you will be asked to attend a trial day when your DBS is back which will entail you spending a full day on school site; as a {!TR1__Job__c.Job_Title__c} which will give you a good insight into a day at the school!
+
+Below is hopefully everything you will need to know; if you have any questions please don’t hesitate to contact me via email or on {!User.Phone}
+
+&lt;amend below as required&gt;
+
+Date and Time:
+
+Address:
+
+Meeting with:
+
+
+
+&lt;amend below as required&gt;
+
+Parking: there is free, on-site parking available – just so you know the school is just off Winchester Road; opposite Great Oaks school.
+
+
+Things to take with you: 1 form of ID and if you can find your DBS that would be great!
+
+
+Dress code: Smart-casual is fine; they aren’t really that formal – but I would suggest trousers, shirt/jumper and flat comfy shoes!
+
+
+The role: &lt;amend as required&gt;
+
+The school are seeking a {!TR1__Job__c.Job_Title__c} to start immediately (when your DBS and references have come back) this will be to support on a 1:1 and class basis – doing a combination of the both.
+
+The hours would be 8.30am to 3.30pm with a  4.30pm finish on a Tuesday due to staff meetings.
+
+Pay will be £8.78 per hour; this will increase after 12 weeks due to AWR and making sure we pay you to scale. The school after a few weeks usually let me know how you are getting on and if so they will most likely offer a permanent contract. In this case you would spend 14 weeks on our pay scale and payroll then move over to a permanent contract directly with the school.
+
+
+Staff on site: &lt;amend as required&gt;
+
+So just so you don’t walk in not knowing anyone – most likely on reception will be a lady called Cloe who is lovely, Lynne the deputy head is one of my favourite people to work for; she is LOVELY! So supportive, friendly and just great to work with! The Head Teacher is a lady called Maria; she isn’t in all the time but may be on site!
+
+In terms of actual TA’s and Teachers – I have placed an array of staff there – in case Lynne introduces you to any; the following have been placed at the school through myself: Janet, Tasha, Raul, Victor, Nathan, Ryan, Leanne, and Leicha!
+
+
+The school: &lt;amend as required&gt;
+
+{!TR1__Job__c.TR1__Account__c}! is a specific KS2 school (ages 7-11) which caters for children with an array of Special Needs focusing on SEMH and present challenging behaviour. They also may have associated conditions and disabilities including ADHD, Autism and attachment disorders This is not the easiest of school to work with and they will be honest with you and explain that some days can be very tough; but due to the nature of the staff and the close knit environment they create – if you stick together in the bad days – you can easily get through it!
+
+They are a small school with roughly 7-8 children per class and are looking to expand into KS1 in the coming future.
+
+Below is a link to their website and also their Ofsted report – they had a short inspection in March 2018 and have maintained ‘Good’ status!
+
+The school also encourage additional training and will enrol you on a Team-Teach course to help you understanding behaviour management and how to de-escalate before having to restrain.
+
+
+
+{!Account.Ofsted_Report__c}
+
+{!Account.Website}
+
+
+if you want to know anything else please don’t hesitate to contact me!
+
+Speak soon
+
+
+
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

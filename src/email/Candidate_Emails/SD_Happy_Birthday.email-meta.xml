@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Happy_Birthday</letterhead>
+    <name>SD Happy Birthday</name>
+    <style>freeForm</style>
+    <subject>Happy Birthday from Supply Desk</subject>
+    <textOnly>Happy Birthday from Supply Desk!
+
+We hope you have a wonderful day!
+
+Kind regards,
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

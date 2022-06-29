@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- EmailTSD --></label>
+        <name>EmailTSD</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EmailTSD Online --></label>
+        <name>EmailTSD_Online</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimesheetDetail --></label>
+        <name>RC_TimesheetDetail</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TimesheetDetail --></label>
+        <name>TR1__TimesheetDetail</name>
+    </fieldSets>
+    <fields>
+        <label><!-- CRS Name --></label>
+        <name>CRS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRS Status --></label>
+        <name>CRS_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report Id --></label>
+        <name>Closing_Report_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report Schedule --></label>
+        <name>Closing_Report_Schedule__c</name>
+        <relationshipLabel><!-- Timesheet Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Day --></label>
+        <name>DayShift__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Charge Rate Hidden --></label>
+        <name>Day_Charge_Rate_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Charge Rate Legacy --></label>
+        <name>Day_Charge_Rate_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Pay Rate (Hidden) --></label>
+        <name>Day_Pay_Rate_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Pay Rate Legacy --></label>
+        <name>Day_Pay_Rate_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day Charge Rate Hidden --></label>
+        <name>Half_Day_Charge_Rate_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day Charge Rate Legacy --></label>
+        <name>Half_Day_Charge_Rate_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day Pay Rate Hidden --></label>
+        <name>Half_Day_Pay_Rate_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day Pay Rate Legacy --></label>
+        <name>Half_Day_Pay_Rate_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day --></label>
+        <name>Half_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour Charge Date Legacy --></label>
+        <name>Hour_Charge_Date_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour Pay Rate Legacy --></label>
+        <name>Hour_Pay_Rate_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Charge Rate Hidden --></label>
+        <name>Hourly_Charge_Rate_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Pay Rate Hidden --></label>
+        <name>Hourly_Pay_Rate_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Populated? --></label>
+        <name>Is_Populated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Temp Time Sheet Line ID --></label>
+        <name>Old_Temp_Time_Sheet_Line_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Populated By --></label>
+        <name>Populated_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>TR1__Date__c</name>
+    </fields>
+    <fields>
+        <label>Day of Week</label>
+        <name>TR1__Day__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Overtime Hours @ 2.0</label>
+        <name>TR1__Double_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses --></label>
+        <name>TR1__Expenses__c</name>
+    </fields>
+    <fields>
+        <label>Overtime Hours @ 1.5</label>
+        <name>TR1__Overtime_Hours__c</name>
+    </fields>
+    <fields>
+        <label>Hours</label>
+        <name>TR1__Regular_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sick Time Hours --></label>
+        <name>TR1__Sick_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>TR1__Timesheet__c</name>
+        <relationshipLabel><!-- Timesheet Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Bill Amount --></label>
+        <name>TR1__TotalShiftBillAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Pay Amount --></label>
+        <name>TR1__TotalShiftPayAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Units --></label>
+        <name>TR1__TotalShiftUnits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Fee --></label>
+        <name>TR1__Total_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Hours --></label>
+        <name>TR1__Total_Shift_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Hours --></label>
+        <name>TR1__Travel_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacation Hours --></label>
+        <name>TR1__Vacation_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Day? Hidden --></label>
+        <name>Trial_Day_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Units Populated --></label>
+        <name>Units_Populated__c</name>
+    </fields>
+    <layouts>
+        <layout>Portal Timesheet Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- A Daily Pay or Charge rate must be entered on Closing Report to add a Day shift to Timesheet. --></errorMessage>
+        <name>Daily_Rate_Required_for_Daily_Shift</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit a timesheet once it has been exported to Merit. Please contact payroll@supplydesk.co.uk for assistance --></errorMessage>
+        <name>Exported_Timesheets_cannot_be_edited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Half Day Pay or Charge rate must be entered on Closing Report to add a Half Day shift to Timesheet. --></errorMessage>
+        <name>Half_Day_Rate_Req_for_Half_Day_Shift</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Hourly Pay or Charge rate must be entered on Closing Report to add hours to Timesheet. --></errorMessage>
+        <name>Hourly_Rate_Required_for_Hourly_Shift</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vacation hours either should be 4 or 8 --></errorMessage>
+        <name>VacationHours</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>TR1__Talent_Rover</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>TR1__Talent_Rover</fullName>
+        <fields>Name</fields>
+        <fields>TR1__Candidate__c</fields>
+        <fields>TR1__Job__c</fields>
+        <fields>TR1__Interested__c</fields>
+        <fields>TR1__Status__c</fields>
+        <label>Talent Rover</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>RC_Client_CandidatesShortlisted</fullName>
+        <description>Shortlisted tab for job candidates</description>
+        <displayedFields>
+            <field>TR1__Candidate__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Candidate__r.Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Interest_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>RC_Client-CandidatesShortlisted</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TR1__DaxtraSearch</fullName>
+        <description>These fields need to be displayed in the Opportunity Discussed page.</description>
+        <displayedFields>
+            <field>TR1__Candidate__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>DaxtraSearch</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TR1__KanbanCardLine1FieldSet</fullName>
+        <availableFields>
+            <field>TR1__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Candidate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Interest_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Interested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Job__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Kanban_Swimlane_Ranking__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Status_Ranking__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>TR1__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>A FieldSet will determine a row of the Card displayed on a Swimlane. This FieldSet determines the first row or line 1 on the Card.</description>
+        <displayedFields>
+            <field>TR1__LongList_Details__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>KanbanCardLine1FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TR1__KanbanCardLineFieldSet</fullName>
+        <description>A FieldSet will determine a row of the Card displayed on a Swimlane. This FieldSet determines the first row or line 1 on the Card. (New data structure)</description>
+        <displayedFields>
+            <field>TR1__Candidate__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Candidate__r.Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>KanbanCardLineFieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>TR1__Account__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Job__r.TR1__Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Candidate</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Opportunities_Discussed</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Email_Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Interest_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Interest Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Value 1</fullName>
+                    <default>false</default>
+                    <label>Value 1</label>
+                </value>
+                <value>
+                    <fullName>Value 2</fullName>
+                    <default>false</default>
+                    <label>Value 2</label>
+                </value>
+                <value>
+                    <fullName>Value 3</fullName>
+                    <default>false</default>
+                    <label>Value 3</label>
+                </value>
+                <value>
+                    <fullName>Value 4</fullName>
+                    <default>false</default>
+                    <label>Value 4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Interested__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Interested</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>To Be Contacted</fullName>
+                    <default>true</default>
+                    <label>To Be Contacted</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Job__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job</label>
+        <referenceTo>TR1__Job__c</referenceTo>
+        <relationshipName>Opportunities_Discussed</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Kanban_Swimlane_Ranking__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This decides the order in which the cards are displayed within a Swimlane by default.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This decides the order in which the cards are displayed within a Swimlane by default.</inlineHelpText>
+        <label>Kanban Swimlane Ranking</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__LongList_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/&apos; + Id, Name, &apos;_blank&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LongList Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SMS</fullName>
+                    <default>false</default>
+                    <label>SMS</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Status_Ranking__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(TR1__Interested__c)=&apos;Yes&apos;,1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Ranking</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Converted</fullName>
+                    <default>false</default>
+                    <label>Converted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Long List</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>OD-{00000}-{00}</displayFormat>
+        <label>Long List Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Long Lists</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Convert_to_Shortlist</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Convert to Shortlist</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+var recordids = {!GETRECORDIDS($ObjectType.TR1__Opportunity_Discussed__c)}; 
+if(recordids.length==0){ 
+alert(&apos;Please select atleast one Longlist to Convert.&apos;); 
+}else{
+var query = &quot;SELECT Id,Name, TR1__Candidate__c, TR1__Comments__c, TR1__Interested__c, TR1__Interest_Level__c, TR1__Job__c FROM TR1__Opportunity_Discussed__c Where Id IN (&apos;&quot;+recordids.toString().replace(/,/g , &quot;&apos;,&apos;&quot;)+&quot;&apos;)&quot;;
+var selectedlonglists = sforce.connection.query(query); 
+var selectedlonglistrecords = selectedlonglists.getArray(&quot;records&quot;); 
+if(selectedlonglistrecords.length == 0){ 
+alert(&apos;No Data found with selected Records.&apos;); 
+location.reload(true); 
+}else{ 
+var newapplns = []; 
+for(var i=0; i &lt; selectedlonglistrecords.length ; i ++){ 
+var newappln = new sforce.SObject(&quot;TR1__Application__c&quot;); 
+newappln.TR1__Applicant__c=selectedlonglistrecords[i].TR1__Candidate__c; 
+newappln.TR1__Job__c=selectedlonglistrecords[i].TR1__Job__c; 
+newappln.TR1__Opportunity_Discussed__c = selectedlonglistrecords[i].Id;
+newappln.TR1__Status__c = &apos;Current&apos;;
+newapplns.push(newappln); 
+} 
+var result = sforce.connection.create(newapplns);
+var updatelonglists = []; 
+for(var j=0; j&lt;result.length; j++){ 
+if(result[j].success==&apos;true&apos;){
+var updatelonglist = new sforce.SObject(&quot;TR1__Opportunity_Discussed__c&quot;); 
+updatelonglist.Id = selectedlonglistrecords[j].Id;
+updatelonglist.TR1__Status__c = &apos;Converted&apos;;
+updatelonglists.push(updatelonglist);
+}
+}
+if(updatelonglists.length&gt;0){
+var result1 = sforce.connection.update(updatelonglists);
+location.reload(true);
+}
+}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Convert_To_Application</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Convert To Application</masterLabel>
+        <openType>sidebar</openType>
+        <page>TR1__Create_Application</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Convert_To_Applications</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Convert To Applications</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+var recordids = {!GETRECORDIDS($ObjectType.TR1__Opportunity_Discussed__c)}; 
+if(recordids.length==0){ 
+alert(&apos;Please select atleast one Longlist to Convert.&apos;); 
+}else{
+var query = &quot;SELECT Id,Name, TR1__Candidate__c, TR1__Comments__c, TR1__Interested__c, TR1__Interest_Level__c, TR1__Job__c FROM TR1__Opportunity_Discussed__c Where Id IN (&apos;&quot;+recordids.toString().replace(/,/g , &quot;&apos;,&apos;&quot;)+&quot;&apos;)&quot;;
+var selectedlonglists = sforce.connection.query(query); 
+var selectedlonglistrecords = selectedlonglists.getArray(&quot;records&quot;); 
+if(selectedlonglistrecords.length == 0){ 
+alert(&apos;No Data found with selected Records.&apos;); 
+location.reload(true); 
+}else{ 
+var newapplns = []; 
+for(var i=0; i &lt; selectedlonglistrecords.length ; i ++){ 
+var newappln = new sforce.SObject(&quot;TR1__Application__c&quot;); 
+newappln.TR1__Applicant__c=selectedlonglistrecords[i].TR1__Candidate__c; 
+newappln.TR1__Job__c=selectedlonglistrecords[i].TR1__Job__c; 
+newappln.TR1__Opportunity_Discussed__c = selectedlonglistrecords[i].Id;
+newappln.TR1__Status__c = &apos;Current&apos;;
+newapplns.push(newappln); 
+} 
+var result = sforce.connection.create(newapplns);
+var updatelonglists = []; 
+for(var j=0; j&lt;result.length; j++){ 
+if(result[j].success==&apos;true&apos;){
+var updatelonglist = new sforce.SObject(&quot;TR1__Opportunity_Discussed__c&quot;); 
+updatelonglist.Id = selectedlonglistrecords[j].Id;
+updatelonglist.TR1__Status__c = &apos;Converted&apos;;
+updatelonglists.push(updatelonglist);
+}
+}
+if(updatelonglists.length&gt;0){
+var result1 = sforce.connection.update(updatelonglists);
+location.reload(true);
+}
+}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Mass_Place_Candidates</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Place Candidates</masterLabel>
+        <openType>sidebar</openType>
+        <page>TR1__LongListMassPlacementNative</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Send_Email_to_Members</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Email to Members</masterLabel>
+        <openType>sidebar</openType>
+        <page>TR1__OpptyDiscussedSelectCandidates</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

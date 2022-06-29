@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact Field API --></label>
+        <name>TR1__Contact_Field_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Picklist --></label>
+        <name>TR1__Is_Picklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Field API --></label>
+        <name>TR1__Job_Field_API__c</name>
+    </fields>
+</CustomObjectTranslation>

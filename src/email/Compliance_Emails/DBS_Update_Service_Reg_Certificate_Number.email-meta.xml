@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reminder to reg with Update Service when certificate number known</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>DBS Update Service Registration-Certificate Number</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Reminder to Register with DBS Update Service within 30 days</subject>
+    <textOnly>Dear {!Contact.Name}
+
+
+We have now completed your DBS check.
+
+
+
+Your certificate number is:{!TR1__Associated_Qualification__c.DBS_Disclosure_ID_Number__c}
+
+
+
+We recommend that you register online with the DBS update service within the 30-day time limit. The DBS introduced the online update system to remove the need for individuals to obtain a new DBS check for each new employer or agency.
+
+
+Register now through the following link: &lt;https://secure.crbonline.gov.uk/crsc/apply?execution=e1s1&gt;
+
+
+
+Kind Regards
+
+
+
+{!Contact.Compliance_Owner__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

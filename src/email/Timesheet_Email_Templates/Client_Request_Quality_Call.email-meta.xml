@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Client Request Quality Call</name>
+    <style>freeForm</style>
+    <subject>{!TR1__Timesheet__c.Timesheet_Approver__c} has request QC for {!TR1__Timesheet__c.TR1__Consultant__c}</subject>
+    <textOnly>{!TR1__Timesheet__c.Timesheet_Approver__c} has requested to be contacted for a quality call for {!TR1__Timesheet__c.TR1__Consultant__c}.
+
+Vacancy: {!TR1__Job__c.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

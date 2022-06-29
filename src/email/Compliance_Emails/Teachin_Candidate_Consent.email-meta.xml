@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Consent to processing sensitive personal data - Teachin O/S</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TeachIn_Email_Footer</letterhead>
+    <name>Teachin Candidate Consent</name>
+    <style>freeForm</style>
+    <subject>Teachin Consent to Processing Sensistive Personal Data - Response Required</subject>
+    <textOnly>Dear {!Contact.FirstName}
+
+
+Thank you for registering with Teach in.
+
+
+Teach in have updated their registration documents to ensure that we are GDPR compliant. We do require your express consent to process sensitive personal data.
+
+
+Please read the below and return.
+
+In returning the consent to us by email, you acknowledge and agree that your printed name is deemed to be your signature, and therefore legally binding, for the purposes of the confirmations, agreements, consents and authorisations contained within the form.
+
+
+Consent to processing sensitive personal data
+
+We require your specific, informed consent in order to process personal data relating to health and criminal convictions. Please consent as follows:
+
+
+I hereby give my consent to the Company to process the following information:
+
+
+any disability and/or health condition(s) revealed by me on the medical declaration form; and
+any criminal conviction(s)
+
+I consent to the Company processing the above sensitive personal data for the following purposes:
+
+for the Company to provide me with work-finding services (including carrying out the relevant vetting checks);
+for the Company to process with or transfer my personal data to their clients in order to provide me with work-finding services; and
+for the Company to process my data on a computerised database in order to provide me with work-finding services.
+
+I also consent to the Company processing my personal data with third parties (including the Recruitment and Employment Confederation) for the purposes of internal audits and investigations carried out on the Company to ensure that the Company is complying with all relevant laws and obligations.
+
+
+
+The consent I give to the Company will last for 3 years.
+
+
+I am aware that I have the right to withdraw my consent at any time by informing the Company that I wish to do so.
+
+
+
+Signed: ______________________________
+
+Full Name: ___________________________
+
+Date:___________________
+
+
+If you have any queries please do not hesitate to contact us.
+
+
+
+Kind Regards
+
+
+
+{!Contact.OwnerFullName}
+
+
+
+{!Contact.OwnerEmail}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

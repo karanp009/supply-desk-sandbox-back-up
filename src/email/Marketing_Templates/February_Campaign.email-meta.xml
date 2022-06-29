@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>February Campaign</name>
+    <style>freeForm</style>
+    <subject>Test Template</subject>
+    <textOnly>Hi {!FirstName}
+
+Body of Email
+
+Best Regards
+
+Supply Desk  Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

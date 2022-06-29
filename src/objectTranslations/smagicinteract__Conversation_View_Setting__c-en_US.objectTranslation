@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- All --></label>
+        <name>smagicinteract__All__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Sender --></label>
+        <name>smagicinteract__Default_Sender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>smagicinteract__Owner__c</name>
+    </fields>
+</CustomObjectTranslation>

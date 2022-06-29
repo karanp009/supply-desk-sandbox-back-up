@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TI_Greenacre_Email</letterhead>
+    <name>TI_Greenacre Email</name>
+    <style>freeForm</style>
+    <subject>Interview at Greenacre Academy in Kent</subject>
+    <textOnly>Interview for 2019 Secondary positions at Greenacre Academy in Kent
+
+We have an exciting opportunity available for international teachers to interview for 2019 positions at Greenacre Academy in Kent. Read on for more information about this fantastic UK school and book your interview today.
+
+Register today
+
+
+At Teach In, we have been successfully working with Greenacre Academy Secondary school, part of the Skills for Life Trust, for a number of years. We already have a number of our international teachers working in schools across the trust.
+
+As a result, we have an excellent relationship with this school and the CEO, Andrew Reece, and are excited to announce that an opportunity has arisen for more international teachers to interview for positions within the school.
+
+We are actively recruiting for the following Secondary roles for September 2019:
+
+Geography
+English
+MFL (Languages)
+Music
+Maths
+Business Studies / ICT
+
+Greenacre Academy is conveniently located only 30 mins by train from London and accommodation is affordable in this area. The school holds the Tier 2 Sponsorship Licence and can offer work permits to international teachers. Applicants with Youth Mobility Visas, UK passports, Ancestry Visas, EU passports and spousal visas are also welcome to apply.
+
+Register your interest today! For more information on the school and to book an interview, click here to visit our website.
+
+Alternatively, you can contact us on the details below.
+
+Start your UK teaching adventure with Teach In.
+
+T: 0449 790 334
+E:Gemma.Yates@teachin.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

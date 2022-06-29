@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gross Profit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gross Profits</value>
+    </caseValues>
+    <fields>
+        <label><!-- AGP Amount --></label>
+        <name>TR1__AGP_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Gross Profits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Booking Date --></label>
+        <name>TR1__Booking_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Gross Profits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Type --></label>
+        <name>TR1__Credit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Candidate Credit</masterLabel>
+            <translation><!-- Candidate Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Credit</masterLabel>
+            <translation><!-- Job Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Credit</masterLabel>
+            <translation><!-- Marketing Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Credit</masterLabel>
+            <translation><!-- Other Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other2 Credit</masterLabel>
+            <translation><!-- Other2 Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- My Current Year Consulting Forecast --></label>
+        <name>TR1__Current_Year_Consulting_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Current Year Perm Forecast --></label>
+        <name>TR1__Current_Year_Perm_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Current Year Total Forecast --></label>
+        <name>TR1__Current_Year_Total_Forecas__c</name>
+    </fields>
+    <fields>
+        <label>Branch</label>
+        <name>TR1__Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>TR1__Expense_Report__c</name>
+        <relationshipLabel><!-- Gross Profits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GP Amount --></label>
+        <name>TR1__GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Profit Date --></label>
+        <name>TR1__Gross_Profit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in GP Reports --></label>
+        <name>TR1__Include_in_GP_Reports__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy</label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Gross Profits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- My Last Year Consulting Forecast --></label>
+        <name>TR1__Last_Year_Consulting_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Last Year Perm Forecast --></label>
+        <name>TR1__Last_Year_Perm_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Last Year Total Forecast --></label>
+        <name>TR1__Last_Year_Total_Forecast__c</name>
+    </fields>
+    <fields>
+        <label>Candidate</label>
+        <name>TR1__Person_Placed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recruiter Id --></label>
+        <name>TR1__Recruiter_Id__c</name>
+    </fields>
+    <fields>
+        <label>Consultant Name</label>
+        <name>TR1__Recruiter_Name__c</name>
+        <relationshipLabel><!-- Gross Profits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>TR1__Timesheet__c</name>
+        <relationshipLabel><!-- Gross Profits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Ending --></label>
+        <name>TR1__Week_Ending__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Gross profit from consulting timesheet. --></description>
+        <label><!-- Consulting --></label>
+        <name>TR1__Consulting</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Gross profit from a permanent closing report. --></description>
+        <label><!-- Permanent --></label>
+        <name>TR1__Permanent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Gross profit for retained. --></description>
+        <label><!-- Retained --></label>
+        <name>TR1__Retained</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>tdc_tsw__Contact__c</name>
+        <relationshipLabel><!-- SMS Unsubscribess --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>tdc_tsw__Lead__c</name>
+        <relationshipLabel><!-- SMS Unsubscribess --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>tdc_tsw__Message__c</name>
+        <relationshipLabel><!-- SMS Unsubscribes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>tdc_tsw__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>tdc_tsw__Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RecordId --></label>
+        <name>tdc_tsw__RecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Opt Out/In --></label>
+        <name>tdc_tsw__SMS_Opt_Out_In__c</name>
+        <picklistValues>
+            <masterLabel>Opt-In</masterLabel>
+            <translation><!-- Opt-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-Out</masterLabel>
+            <translation><!-- Opt-Out --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sender Number --></label>
+        <name>tdc_tsw__Sender_Number__c</name>
+    </fields>
+</CustomObjectTranslation>

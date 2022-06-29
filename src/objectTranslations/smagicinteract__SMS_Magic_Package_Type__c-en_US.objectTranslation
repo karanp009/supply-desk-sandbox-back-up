@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Expired --></label>
+        <name>smagicinteract__Expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package1 --></label>
+        <name>smagicinteract__Package1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package2 --></label>
+        <name>smagicinteract__Package2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package3 --></label>
+        <name>smagicinteract__Package3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial --></label>
+        <name>smagicinteract__Trial__c</name>
+    </fields>
+</CustomObjectTranslation>

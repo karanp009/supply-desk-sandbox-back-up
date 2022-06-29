@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for retained invoice.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>Closing Report - Retained Invoice</name>
+    <style>newsletter</style>
+    <subject>Retained Invoice Report -  {!TR1__Closing_Report__c.TR1__Retainer_Close__c} at  {!TR1__Closing_Report__c.TR1__Account__c}</subject>
+    <textOnly>RETAINED CLOSING REPORT
+
+{!TR1__Closing_Report__c.Name}
+https://na12.salesforce.com/{!TR1__Closing_Report__c.Id}
+
+Details
+
+{!TR1__Closing_Report__c.TR1__Account__c}
+{!TR1__Closing_Report__c.TR1__Job__c}
+{!TR1__Closing_Report__c.TR1__Person_Placed__c}
+Salary: {!TR1__Closing_Report__c.TR1__Salary__c}
+Additional Compensation: {!TR1__Closing_Report__c.TR1__Additional_Compensation__c}
+Fee Amount: {!TR1__Closing_Report__c.TR1__Fee_Amount__c}
+Retainer Close: {!TR1__Closing_Report__c.TR1__Retainer_Close__c}
+Billing Amount: {!TR1__Closing_Report__c.TR1__Retained_Invoice_Amount__c}
+Gross Profit Splits
+
+{!TR1__Closing_Report__c.TR1__Job_Credit__c}: {!TR1__Closing_Report__c.TR1__Retained_Job_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Candidate_Credit__c}: {!TR1__Closing_Report__c.TR1__Retained_Candidate_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Marketing_Credit__c}: {!TR1__Closing_Report__c.TR1__Retained_Marketing_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Other_Credit__c}: {!TR1__Closing_Report__c.TR1__Retained_Other_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Other2_Credit__c}: {!TR1__Closing_Report__c.TR1__Retained_Other2_GP_Amount__c}
+Billing Information
+
+Invoice Amount: {!TR1__Closing_Report__c.TR1__Retained_Invoice_Amount__c}
+Start Date: {!TR1__Closing_Report__c.TR1__Start_Date__c}
+Booking Date: {!TR1__Closing_Report__c.TR1__Booking_Date__c}
+Invoice Date: {!TR1__Closing_Report__c.TR1__Invoice_Date__c}
+Payment Terms: {!TR1__Closing_Report__c.TR1__Payment_Terms__c}
+Internal Billing Notes
+
+{!TR1__Closing_Report__c.TR1__Internal_Billing_Notes__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

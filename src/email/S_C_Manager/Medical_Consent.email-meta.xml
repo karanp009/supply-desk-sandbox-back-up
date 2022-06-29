@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>Medical Consent Form &amp; Information</name>
+    <style>freeForm</style>
+    <subject>Medical Consent Form and Information</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Medical examination and report
+
+We refer to the Medical Declaration which you completed as part of the [registration / re-clear] process.
+
+As you are no doubt aware, as a supply teacher business, we have a statutory responsibility to ensure that all teaching staff that we supply to schools have the health and physical capacity to teach and will not put children and young people at risk (Education Act 2002 and Education (Health Standards) (England) Regulations 2003).
+
+We have referred your application form to our occupational health adviser, and asked for a report on the effect of your (condition / medication) on working in a school, your fitness to teach under the current legislation, and whether any reasonable adjustments could be made to assist you in carrying out your duties.
+
+As part of this process, it is likely that our occupational health adviser will wish to review your medical history and treatment and therefore we are also seeking your consent to apply to your GP and/or consultant for a report on the same and/or your medical records.
+
+As obtaining this report and seeking your medical records will involve the processing of sensitive personal data about you (for the reasons and purposes set out above) we need your consent under the Data Protection Act 1998.
+
+We enclose a summary of your rights under the Access to Medical Reports Act 1988 (which is only relevant if your GP or consultant / specialist is to be approached for a report) and a consent form.
+
+Please complete the form and print your name where a signature is required from you. In returning the form to us by email, you acknowledge and agree that your printed name is deemed to be your signature, and therefore legally binding, for the purposes of the confirmations, agreements, consents and authorisations contained within the form.
+
+If you do not consent to our occupational health adviser reviewing your medical history and treatment, we may not be able to confirm that you are fit to teach in accordance with the above legislation and we may not be able to take your application any further.
+
+I look forward to hearing from you and receiving your signed consent form.
+
+
+Yours sincerely,
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

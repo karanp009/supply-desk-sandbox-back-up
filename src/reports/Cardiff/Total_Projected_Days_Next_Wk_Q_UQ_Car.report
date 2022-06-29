@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_58888766</developerName>
+        <masterLabel>Qualified/Unqualified</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>TR1__Closing_Report__c$Job_Title__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-2-1 Tutor (Primary)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-2-1 Tutor (Secondary)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Teacher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Intervention Teacher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Primary Teacher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SEN Teacher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SENco/ SENDco</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Secondary Teacher</sourceValue>
+            </sourceValues>
+            <value>Qualified</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Instructor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technician</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Teaching Assistant</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SEN TA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nursery Nurse</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LSA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Intervention Support</sourceValue>
+            </sourceValues>
+            <value>Unqualified</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>TR1__Closing_Report__c.Closing_Report_Schedules__r$Total_Projected_Days__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>TR1__Closing_Report__c$Qualified_UnqualifiedWF__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>TR1__Closing_Report__c$Name</field>
+    </columns>
+    <columns>
+        <field>TR1__Closing_Report__c.Closing_Report_Schedules__r$Name</field>
+    </columns>
+    <columns>
+        <field>TR1__Closing_Report__c.Closing_Report_Schedules__r$Schedules_Count__c</field>
+    </columns>
+    <columns>
+        <field>TR1__Closing_Report__c.Closing_Report_Schedules__r$Projected_Shifts__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TR1__Closing_Report__c.Closing_Report_Schedules__r$Total_Projected_Days__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>TR1__Closing_Report__c$TR1__Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TR1__Closing_Report__c$Branch_New_TR__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cardiff</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TR1__Closing_Report__c$Qualified_UnqualifiedWF__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total Projected Days Next Wk Q/UQ (Car)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Closing_Reports_with_Closing_Report_Schedules__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TR1__Closing_Report__c.Closing_Report_Schedules__r$Schedule_Date__c</dateColumn>
+        <interval>INTERVAL_NEXTWEEK</interval>
+    </timeFrameFilter>
+</Report>

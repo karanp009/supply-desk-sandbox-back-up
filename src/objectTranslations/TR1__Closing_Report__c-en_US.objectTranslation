@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CR Scheduler Info Fileds --></label>
+        <name>TR1__CR_Scheduler_Info_Fileds</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Long List Mass Placement --></label>
+        <name>TR1__LongListMassPlacement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scheduler CR Popup Fields --></label>
+        <name>TR1__Scheduler_CR_Popup_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Client Account Code --></label>
+        <name>Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Leave Day Pay Rate --></label>
+        <name>Annual_Leave_Day_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Leave Entitlement Formula --></label>
+        <name>Annual_Leave_Entitlement_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- The annual leave entitlement of a comparable, permanent, full time employee of the School. --></help>
+        <label><!-- Comparator Annual Leave Entitlement --></label>
+        <name>Annual_Leave_Entitlement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Leave Half Day Pay Rate --></label>
+        <name>Annual_Leave_Half_Day_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Leave Hour Pay Rate --></label>
+        <name>Annual_Leave_Hour_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any Other Renumerations --></label>
+        <name>Any_Other_Renumerations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus Scheme Applicable --></label>
+        <name>Bonus_Scheme_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Confirmed? --></label>
+        <name>Booking_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Day&apos;s(ReadOnly) --></label>
+        <name>Booking_Day__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Booking End Time(ReadOnly) --></label>
+        <name>Booking_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Reason Vacancy --></label>
+        <name>Booking_Reason_Vacancy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Reason --></label>
+        <name>Booking_Reason__c</name>
+        <picklistValues>
+            <masterLabel>COVID Testing</masterLabel>
+            <translation><!-- COVID Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intervention/INA/LSA</masterLabel>
+            <translation><!-- Intervention/INA/LSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT (Long Term)</masterLabel>
+            <translation><!-- LT (Long Term) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT Unfilled Vacancy</masterLabel>
+            <translation><!-- LT Unfilled Vacancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT – Maternity</masterLabel>
+            <translation><!-- LT – Maternity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT – Sickness</masterLabel>
+            <translation><!-- LT – Sickness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Love2Read</masterLabel>
+            <translation><!-- Love2Read --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEN</masterLabel>
+            <translation><!-- SEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST (Short Term)</masterLabel>
+            <translation><!-- ST (Short Term) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Staff/TA/Unqualified</masterLabel>
+            <translation><!-- Support Staff/TA/Unqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Day</masterLabel>
+            <translation><!-- Trial Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuition</masterLabel>
+            <translation><!-- Tuition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unfilled vacancy</masterLabel>
+            <translation><!-- Unfilled vacancy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Booking Start Time(ReadOnly) --></label>
+        <name>Booking_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Status --></label>
+        <name>Booking_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Type --></label>
+        <name>Booking_Type__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation><!-- Long Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch (Candidate) --></label>
+        <name>Branch_Candidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch New TR --></label>
+        <name>Branch_New_TR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select Y if this Booking is on the CCS Framework --></help>
+        <label><!-- CCS --></label>
+        <name>CCS__c</name>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CCS test --></label>
+        <name>CCS_test__c</name>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CF Actual Margin --></label>
+        <name>CF_Actual_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF NICs --></label>
+        <name>CF_NICs__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF Pension --></label>
+        <name>CF_Pension__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF Weekly Pay --></label>
+        <name>CF_Weekly_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- COVID-19 Booking Specific Notes --></label>
+        <name>COVID_19_Booking_Specific_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRS End Date max --></label>
+        <name>CRS_End_Date_max__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRS Start Date Min --></label>
+        <name>CRS_Start_Date_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Account Name --></label>
+        <name>Candidate_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Account Number --></label>
+        <name>Candidate_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Compliance Status --></label>
+        <name>Candidate_Compliance_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Employee Status --></label>
+        <name>Candidate_Employee_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Gender --></label>
+        <name>Candidate_Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate NI Number --></label>
+        <name>Candidate_NI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Pay Method --></label>
+        <name>Candidate_Pay_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Pay Type --></label>
+        <name>Candidate_Pay_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Payroll Number --></label>
+        <name>Candidate_Payroll_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Payroll Type --></label>
+        <name>Candidate_Payroll_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Sort Code --></label>
+        <name>Candidate_Sort_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidates will/have received training? --></label>
+        <name>Candidates_will_have_received_training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carried out a COVID-19 Risk Assessment? --></label>
+        <name>Carried_out_a_COVID_19_Risk_Assessment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Account Email --></label>
+        <name>Client_Account_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Address --></label>
+        <name>Client_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Branch --></label>
+        <name>Client_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collective Facilities --></label>
+        <name>Collective_Facilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- The annual salary that the School would pay a full time, comparable internal employee for doing the same role. --></help>
+        <label><!-- Comparator Full-Time Annual Salary --></label>
+        <name>Comparator_Full_Time_Annual_Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract End Date --></label>
+        <name>Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covid 19 Risk Assesment Additional Notes --></label>
+        <name>Covid_19_Risk_Assesment_Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Current User --></label>
+        <name>Created_By_Current_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator Branch &amp; Phone --></label>
+        <name>Creator_Branch_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Date of Birth --></label>
+        <name>Employee_Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback received? --></label>
+        <name>Feedback_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Notes For Confirmation Letter --></label>
+        <name>HS_Notes_For_Confirmation_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health &amp; Safety Issues --></label>
+        <name>Health_Safety_Issues2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health &amp; Safety Issues? --></label>
+        <name>Health_Safety_Issues__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Health &amp; Safety Notes --></label>
+        <name>Health_Safety_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- a) For maintained schools: the school itself
+b) For independent schools:  proprietor of the school
+c) For academies and free schools: the proprietor/ trust --></help>
+        <label><!-- Hirer --></label>
+        <name>Hirer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hiring Manager --></label>
+        <name>Hiring_Manager__c</name>
+        <relationshipLabel><!-- Closing Reports (Hiring Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hiring manger Email --></label>
+        <name>Hiring_manger_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- IAT --></label>
+        <name>IAT__c</name>
+        <picklistValues>
+            <masterLabel>Interview</masterLabel>
+            <translation><!-- Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Day</masterLabel>
+            <translation><!-- Trial Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Address --></label>
+        <name>Invoice_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Period --></label>
+        <name>Invoicing_Period__c</name>
+        <picklistValues>
+            <masterLabel>BiWeekly</masterLabel>
+            <translation><!-- BiWeekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Person --></label>
+        <name>Invoicing_Person__c</name>
+        <relationshipLabel><!-- Closing Reports (Invoicing Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job Title --></label>
+        <name>Job_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- LEA --></label>
+        <name>LEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Charge Per Day --></label>
+        <name>Maximum_Charge_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Charge Rate --></label>
+        <name>Maximum_Day_Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Pay Rate --></label>
+        <name>Maximum_Day_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day Charge Rate --></label>
+        <name>Maximum_Half_Day_Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Half Day Pay Rate --></label>
+        <name>Maximum_Half_Day_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour Charge Rate --></label>
+        <name>Maximum_Hour_Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour Pay Rate --></label>
+        <name>Maximum_Hour_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum pay rate per day --></label>
+        <name>Maximum_Pay_rate_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- NTP Framework Booking --></label>
+        <name>NTP_Framework_Booking__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be added to the Confirmation Letters. Please input: from fields: SEN experience and/or SEN Training &amp; Quals and/or Qualifications and/or Skills, Training, Experience. --></help>
+        <label><!-- Necessary Exp --></label>
+        <name>Necessary_Exp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office name --></label>
+        <name>Office_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Day Charge Rate --></label>
+        <name>Old_Day_Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Day Pay Rate --></label>
+        <name>Old_Day_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Half Day Charge Rate --></label>
+        <name>Old_Half_Day_Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Half Day Pay Rate --></label>
+        <name>Old_Half_Day_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Hour Charge Rate --></label>
+        <name>Old_Hour_Charge_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Hour Pay Rate --></label>
+        <name>Old_Hour_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Placement ID --></label>
+        <name>Old_Placement_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be added to the Confirmation Letters. Please input the rate your would like to have appear on the letter. --></help>
+        <label><!-- Overtime Payments --></label>
+        <name>Overtime_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid in Interim --></label>
+        <name>Paid_in_Interim__c</name>
+    </fields>
+    <fields>
+        <help><!-- 100 = Day
+101 = Half Day
+105 = Hour --></help>
+        <label><!-- Pay Type 1 --></label>
+        <name>Pay_Type_1_old__c</name>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101</masterLabel>
+            <translation><!-- 101 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105</masterLabel>
+            <translation><!-- 105 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pay Type --></label>
+        <name>Pay_Type__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Person Placed email --></label>
+        <name>Person_Placed_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person placed Mobile --></label>
+        <name>Person_placed_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected GP --></label>
+        <name>Projected_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualified/Unqualified --></label>
+        <name>Qualified_UnqualifiedWF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualified/Unqualified --></label>
+        <name>Qualified_Unqualified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rest Period/ Breaks --></label>
+        <name>Rest_Period_Breaks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Type --></label>
+        <name>Retained_Type__c</name>
+        <picklistValues>
+            <masterLabel>School Fee Invoice</masterLabel>
+            <translation><!-- School Fee Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Provider Fee Invoice</masterLabel>
+            <translation><!-- Training Provider Fee Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This will be added to the Confirmation Letters.  Please input:  &apos;Subject&apos; and/or &apos;Year/KS&apos; information. --></help>
+        <label><!-- Role Details --></label>
+        <name>Role_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days per academic year, during which the school is open including INSET days --></help>
+        <label><!-- School Working Days --></label>
+        <name>School_Working_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Pay and Charge = Full Day/AM/PM, then Enter &quot;1&quot;
+If Pay and Charge = Hourly, then Enter the Number of Estimated Hours Per Day, ie &quot;8&quot; --></help>
+        <label><!-- Shift Multiple --></label>
+        <name>Shift_Multiple__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>Shift__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-LEA --></label>
+        <name>Sub_LEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- AGP Multiplier --></label>
+        <name>TR1__AGP_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Closing Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Billing Street --></label>
+        <name>TR1__Additional_Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Compensation --></label>
+        <name>TR1__Additional_Compensation__c</name>
+    </fields>
+    <fields>
+        <label>Adjusted Charge Rate</label>
+        <name>TR1__Adjusted_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjusted Fee Amount --></label>
+        <name>TR1__Adjusted_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrative Fee Amount --></label>
+        <name>TR1__Administrative_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrative Fee Percentage --></label>
+        <name>TR1__Administrative_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Ended --></label>
+        <name>TR1__Assignment_Ended__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate Change</masterLabel>
+            <translation><!-- Rate Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Charge Rate</label>
+        <name>TR1__Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label>Invoice Attention</label>
+        <name>TR1__Billing_Attention__c</name>
+    </fields>
+    <fields>
+        <label>Invoice City</label>
+        <name>TR1__Billing_City__c</name>
+    </fields>
+    <fields>
+        <label>Invoice State</label>
+        <name>TR1__Billing_State__c</name>
+    </fields>
+    <fields>
+        <label>Invoice Street</label>
+        <name>TR1__Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label>Invoice Postal Code</label>
+        <name>TR1__Billing_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Declared date – vacancy closed as agreed/won --></help>
+        <label><!-- Booking Date --></label>
+        <name>TR1__Booking_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Type --></label>
+        <name>TR1__Booking_Type__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extra Duties</masterLabel>
+            <translation><!-- Extra Duties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation><!-- Long Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Burden Multiplier --></label>
+        <name>TR1__Burden_Multiplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Credit --></label>
+        <name>TR1__Candidate_Credit__c</name>
+        <relationshipLabel><!-- Closing Reports (Candidate Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate GP Amount --></label>
+        <name>TR1__Candidate_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Percentage --></label>
+        <name>TR1__Candidate_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Amount --></label>
+        <name>TR1__Collection_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Date --></label>
+        <name>TR1__Collection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrative Fee --></label>
+        <name>TR1__Consu_Administrative_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract End Date --></label>
+        <name>TR1__Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conversion Date --></label>
+        <name>TR1__Conversion_Date__c</name>
+    </fields>
+    <fields>
+        <label>DT Charge Rate Multiplier Percentage</label>
+        <name>TR1__DT_Bill_Rate_Multiplier_Percentage__c</name>
+    </fields>
+    <fields>
+        <label>DT Charge Rate</label>
+        <name>TR1__DT_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>TR1__Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Reason --></label>
+        <name>TR1__Discount_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>TR1__Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Assignment Comments --></label>
+        <name>TR1__End_Assignment_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Assignment Reason --></label>
+        <name>TR1__End_Assignment_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Assignment Ended</masterLabel>
+            <translation><!-- Assignment Ended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>TR1__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Approver --></label>
+        <name>TR1__Expense_Approver__c</name>
+        <relationshipLabel><!-- Closing Reports (Expense Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fee Amount --></label>
+        <name>TR1__Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Percentage --></label>
+        <name>TR1__Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Timesheet --></label>
+        <name>TR1__Generate_Timesheet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hiring manger Email --></label>
+        <name>TR1__Hiring_manger_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Billing Notes --></label>
+        <name>TR1__Internal_Billing_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>TR1__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Credit</label>
+        <name>TR1__Job_Credit__c</name>
+        <relationshipLabel><!-- Closing Reports (Vacancy Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vacancy GP Amount</label>
+        <name>TR1__Job_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Percentage</label>
+        <name>TR1__Job_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reporting --></label>
+        <name>TR1__Job_Reporting__c</name>
+        <relationshipLabel><!-- Closing Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vacancy</label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Closing Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit --></label>
+        <name>TR1__Marketing_Credit__c</name>
+        <relationshipLabel><!-- Closing Reports (Marketing Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketing GP Amount --></label>
+        <name>TR1__Marketing_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Percentage --></label>
+        <name>TR1__Marketing_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Markup --></label>
+        <name>TR1__Markup__c</name>
+    </fields>
+    <fields>
+        <label>OT Charge Rate Multiplier Percentage</label>
+        <name>TR1__OT_Bill_Rate_Multiplier_Percentage__c</name>
+    </fields>
+    <fields>
+        <label>OT Charge Rate</label>
+        <name>TR1__OT_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- OT Pay Rate --></label>
+        <name>TR1__OT_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Credit --></label>
+        <name>TR1__Other2_Credit__c</name>
+        <relationshipLabel><!-- Closing Reports (Other2 Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other2 GP Amount --></label>
+        <name>TR1__Other2_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Percentage --></label>
+        <name>TR1__Other2_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Credit --></label>
+        <name>TR1__Other_Credit__c</name>
+        <relationshipLabel><!-- Closing Reports (Other Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other GP Amount --></label>
+        <name>TR1__Other_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Percentage --></label>
+        <name>TR1__Other_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>TR1__PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PTO Eligible --></label>
+        <name>TR1__PTO_Eligible__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate --></label>
+        <name>TR1__Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type --></label>
+        <name>TR1__Pay_Type__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>TR1__Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Due On Receipt</masterLabel>
+            <translation><!-- Due On Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 10 from Start Date</masterLabel>
+            <translation><!-- Net 10 from Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation><!-- Net 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15 from Start Date</masterLabel>
+            <translation><!-- Net 15 from Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 20</masterLabel>
+            <translation><!-- Net 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 20 from Start Date</masterLabel>
+            <translation><!-- Net 20 from Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30 from Start Date</masterLabel>
+            <translation><!-- Net 30 from Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45 from Start Date</masterLabel>
+            <translation><!-- Net 45 from Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60 from Start Date</masterLabel>
+            <translation><!-- Net 60 from Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payroll Type --></label>
+        <name>TR1__Payroll_Type__c</name>
+        <picklistValues>
+            <masterLabel>1099</masterLabel>
+            <translation><!-- 1099 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W2 - Exempt</masterLabel>
+            <translation><!-- W2 - Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W2 - Non Exempt</masterLabel>
+            <translation><!-- W2 - Non Exempt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Person Placed First Name --></label>
+        <name>TR1__Person_Placed_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Placed --></label>
+        <name>TR1__Person_Placed__c</name>
+        <relationshipLabel><!-- Closing Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Change Effective Date --></label>
+        <name>TR1__Rate_Change_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rates From Job? --></label>
+        <name>TR1__Rates_From_Job__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Receive Timesheet Email Alerts --></label>
+        <name>TR1__Receive_Timesheet_Email_Alerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Candidate GP Amount --></label>
+        <name>TR1__Retained_Candidate_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Fee Amount --></label>
+        <name>TR1__Retained_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Invoice Amount --></label>
+        <name>TR1__Retained_Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Job GP Amount --></label>
+        <name>TR1__Retained_Job_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Marketing GP Amount --></label>
+        <name>TR1__Retained_Marketing_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Other2 GP Amount --></label>
+        <name>TR1__Retained_Other2_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Other GP Amount --></label>
+        <name>TR1__Retained_Other_GP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retainer Close --></label>
+        <name>TR1__Retainer_Close__c</name>
+        <picklistValues>
+            <masterLabel>Final</masterLabel>
+            <translation><!-- Final --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First</masterLabel>
+            <translation><!-- First --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second</masterLabel>
+            <translation><!-- Second --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate Timesheet --></label>
+        <name>TR1__Salaried__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>TR1__Salary__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Pay and Charge = Full Day/AM/PM, then Enter &quot;1&quot;
+If Pay and Charge = Hourly, then Enter the Number of Estimated Hours Per Day, ie &quot;8&quot; --></help>
+        <label><!-- Shift Multiple --></label>
+        <name>TR1__Shift_Multiple__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>TR1__Shift__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>TR1__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approver --></label>
+        <name>TR1__Timesheet_Approver__c</name>
+        <relationshipLabel><!-- Closing Reports (Timesheet Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Copy --></label>
+        <name>TR1__Timesheet_Copy__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Frequency --></label>
+        <name>TR1__Timesheet_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Bi-Weekly</masterLabel>
+            <translation><!-- Bi-Weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Second Approver --></label>
+        <name>TR1__Timesheet_Second_Approver__c</name>
+        <relationshipLabel><!-- Closing Reports (Timesheet Second Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Type --></label>
+        <name>TR1__Timesheet_Type__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party</masterLabel>
+            <translation><!-- 3rd Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked --></label>
+        <name>TR1__Total_Days_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Worked --></label>
+        <name>TR1__Total_Hours_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Percentage --></label>
+        <name>TR1__Total_Percentage__c</name>
+    </fields>
+    <fields>
+        <label>Travel Charge Rate</label>
+        <name>TR1__Travel_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Pay Rate --></label>
+        <name>TR1__Travel_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Ending --></label>
+        <name>TR1__Week_Ending__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Week Start --></label>
+        <name>TR1__Week_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Salary --></label>
+        <name>TR1__Weekly_Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Location --></label>
+        <name>TR1__Work_Location__c</name>
+        <picklistValues>
+            <masterLabel>City of San Francisco</masterLabel>
+            <translation><!-- City of San Francisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of Seattle</masterLabel>
+            <translation><!-- City of Seattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Worker Comp --></label>
+        <name>TR1__Worker_Comp__c</name>
+        <relationshipLabel><!-- Closing Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Fourth Approver --></label>
+        <name>Timesheet_Fourth_Approver__c</name>
+        <relationshipLabel><!-- Closing Reports (Timesheet Fourth Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Frequency --></label>
+        <name>Timesheet_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Bi-Weekly</masterLabel>
+            <translation><!-- Bi-Weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Pay Type --></label>
+        <name>Timesheet_Pay_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Third Approver --></label>
+        <name>Timesheet_Third_Approver__c</name>
+        <relationshipLabel><!-- Closing Reports (Timesheet Third Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Days --></label>
+        <name>Total_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Day? --></label>
+        <name>Trial_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vouchers/Stamps with a Monetary Value --></label>
+        <name>Vouchers_Stamps_with_a_Monetary_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Will notify SD on new COVID-19 Cases? --></label>
+        <name>Will_notify_SD_on_new_COVID_19_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Description --></label>
+        <name>Work_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be added to the Confirmation Letters. Please input: the days this person will be working. --></help>
+        <label><!-- Working Days --></label>
+        <name>Working_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- 80%PNN0220 --></label>
+        <name>X80_PNN0220__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Consulting Close. --></description>
+        <label><!-- Consulting --></label>
+        <name>TR1__Consulting</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Consulting to Permanent Close. --></description>
+        <label><!-- Conversion --></label>
+        <name>TR1__Conversion</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Permanent Close. --></description>
+        <label><!-- Permanent --></label>
+        <name>TR1__Permanent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Retained Close. --></description>
+        <label><!-- Retained --></label>
+        <name>TR1__Retained</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Only used to create an invoice for retained job orders. --></description>
+        <label><!-- Retained_Invoice --></label>
+        <name>TR1__Retained_Invoice</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Candidate can not approve his own timesheets! 
+Please Amend --></errorMessage>
+        <name>Candidate_can_not_be_Approver</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A candidate must have a compliance package and a compliance status &apos;Cleared&apos; or &apos;Cleared Pending&apos; and cannot have candidate status of &apos;DNU&apos; to be assigned to Day to Day or Long Term position --></errorMessage>
+        <name>Candidate_must_be_cleared_to_be_assigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A candidate must have compliance status &apos;Cleared&apos;, &apos;Clearance Pending&apos; or &apos;Perm&apos; and cannot have candidate status of &apos;DNU&apos; to be placed in a Permanent position --></errorMessage>
+        <name>Candidate_must_be_cleared_to_be_placed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Comparator Annual Full Time Salary is required for Long Term Bookings --></errorMessage>
+        <name>Comparator_Annual_Salary_Req_for_LT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If there are Health &amp; Safety Issues, please detail them in the Health &amp; Safety Notes --></errorMessage>
+        <name>Must_Fill_in_HS_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Are there any specific health and safety issues that could affect this candidate working in this role? --></errorMessage>
+        <name>Must_Fill_in_HS_issues</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bill rate cannot be lower than pay rate. --></errorMessage>
+        <name>TR1__Bill_rate_lower_than_pay_rate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify rate please click rate change. --></errorMessage>
+        <name>TR1__Prevent_adminfeepct_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify rate please click rate change. --></errorMessage>
+        <name>TR1__Prevent_billrate_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change user credit on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_candcredit_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_candidatepct_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify rate please click rate change. --></errorMessage>
+        <name>TR1__Prevent_dtbillratemult_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change user credit on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_jobcredit_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_jobpct_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_marketpct_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change user credit on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_mktcredit_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify rate please click rate change. --></errorMessage>
+        <name>TR1__Prevent_otbillratemult_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change user credit on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_other2credit_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_other2pct_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change user credit on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_othercredit_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_otherpct_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change rate on closing report.  To modify rate please click rate change. --></errorMessage>
+        <name>TR1__Prevent_payrate_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not permitted to change person placed on closing report.  To modify please contact your system administrator. --></errorMessage>
+        <name>TR1__Prevent_person_placed_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Total Percentage for profit splits must equal 100%. --></errorMessage>
+        <name>TR1__Total_Percentage_Must_Equal_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vacancy credit must be the same as the vacancy owner. Please correct the information. --></errorMessage>
+        <name>Vacancy_credit_must_equal_vacancy_owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter at least one pay or charge rate for all applicable shift types --></errorMessage>
+        <name>You_must_enter_at_least_one_pay_rate_an</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter at least one pay or charge rate group --></errorMessage>
+        <name>You_must_enter_at_least_one_rate_group</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- End_Assignment --></label>
+        <name>End_Assignment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Preview_PDF --></label>
+        <name>Preview_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rate_Change --></label>
+        <name>Rate_Change</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Booking --></label>
+        <name>TR1__Booking</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conversion --></label>
+        <name>TR1__Conversion</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DocuSign --></label>
+        <name>TR1__DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- End_Assignment --></label>
+        <name>TR1__End_Assignment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Expense_Rate --></label>
+        <name>TR1__New_Expense_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Rate --></label>
+        <name>TR1__New_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rate_Change --></label>
+        <name>TR1__Rate_Change</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Select_Existing_Rate --></label>
+        <name>TR1__Select_Existing_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Trip --></label>
+        <name>Trip</name>
+    </webLinks>
+</CustomObjectTranslation>

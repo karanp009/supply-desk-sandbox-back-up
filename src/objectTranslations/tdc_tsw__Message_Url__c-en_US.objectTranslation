@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Clicks --></label>
+        <name>tdc_tsw__Clicks__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Click --></label>
+        <name>tdc_tsw__First_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Click --></label>
+        <name>tdc_tsw__First_Click_tz__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Click --></label>
+        <name>tdc_tsw__Last_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Click --></label>
+        <name>tdc_tsw__Last_Click_tz__c</name>
+    </fields>
+    <fields>
+        <label><!-- MessageId --></label>
+        <name>tdc_tsw__MessageId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Object Id --></label>
+        <name>tdc_tsw__Related_Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Object --></label>
+        <name>tdc_tsw__Related_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS History --></label>
+        <name>tdc_tsw__SMS_History__c</name>
+        <relationshipLabel><!-- Message Urls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sender Name --></label>
+        <name>tdc_tsw__Sender_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeStamp --></label>
+        <name>tdc_tsw__TimeStamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- UrlLink --></label>
+        <name>tdc_tsw__UrlLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Url --></label>
+        <name>tdc_tsw__Url__c</name>
+    </fields>
+</CustomObjectTranslation>

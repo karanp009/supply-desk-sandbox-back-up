@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Survey</letterhead>
+    <name>SD_Survey-NonUsingClients</name>
+    <style>freeForm</style>
+    <subject>Supply Desk: Your Feedback is Important to Us</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+At Supply Desk we are constantly trying to improve our customer service and offer new and innovative solutions to s schools.
+
+We would be grateful if you could complete a short survey by clicking on the link below and, as a thank you, we will gift a £100 Amazon voucher to 5 randomly selected respondents.
+
+To ensure you will be included in the prize draw, just make sure to complete your school&apos;s details at the beginning of the survey and answer every questions. It will take no more than 20 mins to complete.
+
+To complete the survey, please click here.
+
+Kind Regards,
+
+Supply Desk Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Long_Term_Roles</letterhead>
+    <name>SD Long Term Roles</name>
+    <style>freeForm</style>
+    <subject>Congratulations on Securing Your Long Term Placement</subject>
+    <textOnly>Congratulations on securing your new long term placement!
+
+
+As you will now be fully immersed in one school, there are a few things you should know about your duties and responsibilities.
+
+
+You will now be fulfilling the role of a full-time member of staff, and as such will need to undertake all responsibilities in accordance with the school’s policy, which may include duties such as planning lessons, marking books, attending training days, and monitoring pupil progress – depending on your role.
+
+
+If you are unable to attend work for any reason while in a long-term booking, it is very important that you let us know as soon as your branch opens at 7am and send over any cover work. Our branches are open from 7am to 5:30pm, but we also have an out of hours on call number which is available until 9pm.
+
+
+Long-term roles are incredibly rewarding, and are a great opportunity to fully integrate yourself into the culture of a school. We wish you all the best as you begin this next step of your career.
+
+
+Good luck in your new role!
+
+
+Kind regards,
+
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

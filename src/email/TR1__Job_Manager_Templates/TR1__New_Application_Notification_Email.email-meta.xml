@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifies job recruiter of a new applicant to job.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>New Application Notification Email</name>
+    <style>freeForm</style>
+    <subject>New Application: {!TR1__Application__c.TR1__Applicant__c} to {!TR1__Application__c.TR1__Job__c} at {!TR1__Application__c.TR1__Account__c}.</subject>
+    <textOnly>{!TR1__Application__c.TR1__Applicant__c} has applied to {!TR1__Application__c.TR1__Job__c} at {!TR1__Application__c.TR1__Account__c}.
+
+This application source is: {!TR1__Application__c.TR1__Source__c}.
+
+Direct link to this applicant: https://na12.salesforce.com/{!TR1__Application__c.TR1__ApplicantId__c}
+
+Direct link to the job: https://na12.salesforce.com/{!TR1__Application__c.TR1__JobId__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

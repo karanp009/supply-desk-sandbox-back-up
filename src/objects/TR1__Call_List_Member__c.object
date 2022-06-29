@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Contact__r.FirstName +  TR1__Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Contact__r.SMS_Mobile__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mobile</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMS_Opt_Out__c</fullName>
+        <externalId>false</externalId>
+        <formula>TR1__Contact__r.smagicinteract__SMSOptOut__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SMS Opt Out</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Call_List_Contact__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Call List - Contact</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Call_List__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call List</label>
+        <referenceTo>TR1__Call_List__c</referenceTo>
+        <relationshipLabel>Call List Members</relationshipLabel>
+        <relationshipName>Call_List_Members</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_Daxtra_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Contact__r.TR1__External_Candidate_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>External Candidate Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+ TR1__Contact__c ,  TR1__Contact__r.FirstName &amp;&quot; &quot; &amp;  TR1__Contact__r.LastName, &quot;_blank&quot;) 
+&amp; BR() &amp; HYPERLINK( &quot;mailto:&quot; &amp; TR1__Contact__r.Email , TR1__Contact__r.Email,&quot;_self&quot;)
+&amp; BR() &amp; TR1__Contact__r.Phone</formula>
+        <label>Contact Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Call List Members</relationshipLabel>
+        <relationshipName>Call_List_Members</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TR1__Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/_ui/core/email/author/EmailAuthor?p2_lkid=&quot; &amp; TR1__Contact__c &amp; &quot;&amp;rtype=003&amp;retURL=%2F&quot; &amp;  TR1__Call_List__c , IMAGE(&quot;/resource/TR1__Email_Icon&quot;,&quot;Email&quot;,32,32),&quot;_parent&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Log_a_Call__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/00T/e?title=Call&amp;who_id=&quot; &amp;  TR1__Contact__c &amp; &quot;&amp;followup=1&amp;tsk5=Call&amp;retURL=%2F&quot; &amp; TR1__Call_List__c , IMAGE(&quot;/resource/TR1__CallImage&quot;,&quot;Log a Call&quot;,32,32),&quot;_parent&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Log a Call</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__SMWS_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SMWS Date/Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TR1__SMWS_Status_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SMWS Status Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__SMWS_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SMWS Status</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__View_Activities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/TR1__viewContactActivities?id=&quot;+ TR1__Contact__c , IMAGE(&quot;/resource/TR1__ViewActivities&quot;,&quot;View Activities&quot;,32,32),&quot;_blank&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>View Activities</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__View_Resume__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/TR1__ResumeViewer?id=&quot;+ TR1__Contact__c ,IMAGE(&quot;/resource/TR1__ViewResume&quot;,&quot;View Resume&quot;,32,32),&quot;_blank&quot;)</formula>
+        <label>View Resume</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Call List Member</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>NP24_05</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>NP24/05</label>
+    </listViews>
+    <listViews>
+        <fullName>NP_D2D</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>NP - D2D</label>
+    </listViews>
+    <listViews>
+        <fullName>NP_d2d_2021</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>NP d2d 2021.</label>
+    </listViews>
+    <listViews>
+        <fullName>NPwest</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>NPwest</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Mem-{0000000}</displayFormat>
+        <label>Call List Member Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Call List Members</pluralLabel>
+    <searchLayouts>
+        <listViewButtons>Send_SMS_List_Mem</listViewButtons>
+        <listViewButtons>Send_SMS_Bulk_SF1</listViewButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Send_SMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>sidebar</openType>
+        <page>SendBulkCallListMember</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_SMS_Bulk_SF1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>replace</openType>
+        <page>tr1_SendBulkSMS</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_SMS_List_Mem</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/js/functions.js&quot;)}
+{!REQUIRESCRIPT(&quot;resource/tdc_tsw__jQueryForPopup/jQuery/jquery-1.8.2.min.js&quot;)}
+{!REQUIRESCRIPT(&quot;resource/tdc_tsw__jQueryForPopup/jQuery/ui/jquery-ui-1.9.1.custom.min.js&quot;)}
+{!REQUIRESCRIPT(&quot;resource/tdc_tsw__jQueryForPopup/jQuery/postmessage/jquery.ba-postmessage.js&quot;)}
+{!REQUIRESCRIPT(&quot;resource/tdc_tsw__jQueryForPopup/jQuery/bbq/jquery.ba-bbq.min.js&quot;)}
+requireCssFile(&quot;resource/tdc_tsw__jQueryForPopup/jQuery/ui/css/ui-lightness/jquery-ui-1.9.1.custom.min.css&quot;);
+function requireCssFile(filename){
+var fileref = document.createElement(&apos;link&apos;);
+fileref.setAttribute(&apos;rel&apos;, &apos;stylesheet&apos;);
+fileref.setAttribute(&apos;type&apos;, &apos;text/css&apos;);
+fileref.setAttribute(&apos;href&apos;, filename);
+document.getElementsByTagName(&apos;head&apos;)[0].appendChild(fileref);
+}
+var j$ = jQuery.noConflict();
+var records = {!GETRECORDIDS($ObjectType.TR1__Call_List_Member__c)};
+var strIDs=&apos;&apos;;
+if (records[0] == null){
+alert(&apos;Please Select At least One tr1__call_list_member__c to Send the SMS&apos;);
+}else{
+for (var n=0; n&lt;records.length; n++){
+if(strIDs == &apos;&apos;)
+strIDs = records[n];
+else
+strIDs = strIDs + &quot;,&quot; + records[n];
+}
+var iframe_url = &apos;{!URLFOR(&quot;apex/tdc_tsw__SendBulkSMS?ids=&quot;)}&apos;+ strIDs + &apos;&amp;retURL=&apos;+window.location.href;
+var child_domain = iframe_url.substring(0, iframe_url.indexOf(&apos;/&apos;, 9));
+var parent_domain = window.location.protocol + &apos;//&apos; + window.location.host;
+var j$modalDialog = j$(&apos;&lt;div id=&quot;opppopup&quot;&gt;&lt;/div&gt;&apos;).html(&apos;&lt;iframe id=&quot;iframeContentId&quot; src=&quot;&apos; + iframe_url + &apos;&quot; frameborder=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; /&gt;&apos;).dialog({autoOpen: false, resizable: false, width: 800, height: 525, autoResize: true, modal: true, draggable: true, margin:0, padding:0});
+j$modalDialog.dialog(&apos;open&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_SMS_SF1</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/tdc_tsw__SendSMS_SLDS?id={!TR1__Call_List_Member__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Add_To_Longlist</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Add To Longlist</masterLabel>
+        <openType>replace</openType>
+        <page>TR1__CallListMemberRedirect</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Candidates_Covered</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Candidates Covered</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var ids = {!GETRECORDIDS( $ObjectType.TR1__Call_List_Member__c)};
+if(ids.length == 0)
+alert(&apos;Please select atleast one Contact&apos;);
+else
+window.location.href = &apos;/apex/tr1__CandidatesCovered?callmemIds=&apos; +ids.join(&apos;,&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Delete_Selected_Members</fullName>
+        <availability>online</availability>
+        <description>Deleting Selected Call List Members.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Delete Selected Members</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+var recordids = {!GETRECORDIDS($ObjectType.TR1__Call_List_Member__c)}; 
+if(recordids.length==0){ 
+alert(&apos;Please select atleast one Call List Member to Delete.&apos;); 
+}else{ 
+var status = confirm(&apos;Are You Sure You Want to Delete Selected Call List Members?&apos;); 
+if(status == true){ 
+try{ 
+var result = sforce.connection.deleteIds(recordids); 
+}catch(err){ 
+alert(err); 
+location.reload(true); 
+} 
+var errorids = &apos;&apos;; 
+for(var j=0; j&lt;result.length; j++){ 
+if(result[j].success==&apos;false&apos;){ 
+errorids+=recordids[j]+&apos;,&apos;; 
+} 
+} 
+if(errorids.length&gt;0){ 
+alert(&apos;Error in The following Call List Members Deletion &apos; + errorids); 
+} 
+location.reload(true); 
+} 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Delete_all_Members</fullName>
+        <availability>online</availability>
+        <description>Deleting All Call List Members.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Delete all Members</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+var calllistid = &quot;{!TR1__Call_List__c.Id}&quot;; 
+if(calllistid.length&gt;0){ 
+var query = &quot; Select Id, TR1__Call_List__c from TR1__Call_List_Member__c where TR1__Call_List__c = &apos;&quot; +&apos;{!TR1__Call_List__c.Id}&apos;+&quot;&apos; LIMIT 10000&quot;; 
+try{ 
+var allclmems = sforce.connection.query(query); 
+if(allclmems.size&gt;0){ 
+var allclmemsrecs = allclmems.getArray(&quot;records&quot;); 
+var clmemids = []; 
+for(var j=0; j&lt;allclmems.size; j++){ 
+clmemids.push(allclmemsrecs[j].Id); 
+} 
+var status = confirm(&apos;Are You Sure You Want to Delete All Call List Members?&apos;); 
+if(status == true){ 
+var result = sforce.connection.deleteIds(clmemids); 
+var errorids = &apos;&apos;; 
+for(var i=0; i&lt;result.length; i++){ 
+if(result[i].success==&apos;false&apos;){ 
+errorids+=clmemids[i]+&apos;,&apos;; 
+} 
+} 
+if(errorids.length&gt;0){ 
+alert(&apos;Error in The following Call List Members Deletion &apos; + errorids); 
+} 
+location.reload(true); 
+} 
+}else{ 
+alert(&apos;No Data found&apos;); 
+} 
+}catch(err){ 
+alert(err); 
+location.reload(true); 
+} 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Market_the_Candidate</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Market the Candidate</masterLabel>
+        <openType>sidebar</openType>
+        <page>TR1__CallListSelectMem</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__MassEmail</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Email</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/apex.js&quot;)}
+
+var selectedRecords = {!GETRECORDIDS($ObjectType.TR1__Call_List_Member__c)};
+
+if( selectedRecords.length &gt;= 1 ) {
+	var result = sforce.apex.execute( &quot;TR1__QuickEmailPageController&quot;, &quot;saveMassEmailMessage&quot;, {cmIds:selectedRecords} );
+	
+	if( result !== &quot;False&quot; )
+		window.location.href = &quot;apex/TR1__QuickEmail?mid=&quot; + result + &quot;&amp;mode=mass&quot;;
+	else
+		alert( &quot;Error : Insert/Update Failed&quot; );
+}
+else {
+	alert( &quot;Please select at least one Call list Member&quot; );
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__New_Application</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Application</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var ids = {!GETRECORDIDS( $ObjectType.TR1__Call_List_Member__c)};
+if(ids.length == 0)
+alert(&apos;Please select atleast one Contact&apos;);
+else
+window.location.href = &apos;/apex/tr1__JobManagerNewApplication?callmemIds=&apos; +ids.join(&apos;,&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Send_Email_to_Members</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Email to Members</masterLabel>
+        <openType>sidebar</openType>
+        <page>TR1__CallListSelectMem</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,25 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 48.0px; text-indent: -48.0px; font: 11.0px Helvetica}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica; color: #0433ff}
+span.s1 {font-kerning: none}
+span.s2 {font: 6.0px 'Times New Roman'; font-kerning: none}
+span.s3 {text-decoration: underline ; font-kerning: none}
+span.s4 {font-kerning: none; color: #ff2500}
+span.s5 {text-decoration: underline ; font-kerning: none; color: #0463c1}
+</style>
+
+
+<p class="p1" style="color: rgb(0, 0, 0); font-family: arial;"><font size="4"><span style="color: rgb(0, 0, 0); font-family: arial;"><i>Dear&nbsp;</i></span><i>{!Contact.Name}</i></font></p><p class="p1" style="color: rgb(0, 0, 0); font-family: arial;"><span style="color: rgb(0, 0, 0); font-family: arial;"><i><font size="4">&nbsp;</font></i></span></p>
+<p class="p2" style="color: rgb(0, 0, 0); font-family: arial;"><span class="s1"><i><font size="4">As part of our ongoing compliance procedures</font></i><i><font size="4">&nbsp;Supply Desk will shortly be checking your current DBS status on the DBS Update Service.</font></i></span></p>
+<p class="p2" style="color: rgb(0, 0, 0); font-family: arial;"><span class="s1"><i><font size="4">&nbsp;</font></i></span></p>
+<p class="p2" style="color: rgb(0, 0, 0); font-family: arial;"><span class="s1"><i><font size="4">Please contact us if you have any queries.</font></i></span></p>
+<p class="p2" style="color: rgb(0, 0, 0); font-family: arial;"><span class="s1"><i><font size="4">&nbsp;</font></i></span></p>
+<p class="p2" style="color: rgb(0, 0, 0); font-family: arial;"><span class="s1"><i><font size="4">Kind regards,</font></i></span></p>
+<p class="p2" style="color: rgb(0, 0, 0); font-family: arial;"><span class="s1"><font size="4">&nbsp;</font></span></p>
+<p class="p2"><font face="arial"><span style="font-size: 16px;">{!Contact.Compliance_Owner__c}</span></font></p>]]></td>
+</tr>
+</table>

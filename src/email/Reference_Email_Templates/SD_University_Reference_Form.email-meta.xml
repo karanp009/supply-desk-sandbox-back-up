@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SD University Reference</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SD University Reference Form</name>
+    <style>freeForm</style>
+    <subject>Reference Request for {!TR1__Associated_Qualification__c.TR1__Contact__c}</subject>
+    <textOnly>Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName}
+
+The above named person has applied to register with Supply Desk to work as a (job title) and has given your name as a referee.
+
+We undertake strict vetting checks in respect of all candidates who register with us, before we offer them work. Your response is an integral part of these procedures.
+
+We would be grateful if you would complete the attached reference form and return it to us as soon as possible either by fax (0114 257 2740) or email (complianceteam@supplydesk.co.uk).
+
+If you have any queries, please do not hesitate to call us.
+
+
+Thank you in advance for your co-operation.
+
+
+Yours sincerely
+
+The Compliance Team
+Supply Desk
+Tel No: 0114 257 2716
+Email: complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

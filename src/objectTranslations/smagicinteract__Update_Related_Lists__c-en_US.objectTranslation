@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Update Account Related List --></label>
+        <name>smagicinteract__Update_Account_Related_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Contact Related List --></label>
+        <name>smagicinteract__Update_Contact_Related_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Opportunity Related List --></label>
+        <name>smagicinteract__Update_Opportunity_Related_List__c</name>
+    </fields>
+</CustomObjectTranslation>

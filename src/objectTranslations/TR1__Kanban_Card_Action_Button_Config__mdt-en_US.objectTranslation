@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The Hexadecimal Code of the Color that will be used as the Background for the button. --></help>
+        <label><!-- Button Color --></label>
+        <name>TR1__Button_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- The icon that needs to be displayed on the button. This will preferably be a link(relative url) to a Static Resource. --></help>
+        <label><!-- Button Icon URL --></label>
+        <name>TR1__Button_Icon_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Order on which the Buttons will be displayed on the Card Header. --></help>
+        <label><!-- Display Order --></label>
+        <name>TR1__Display_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- The URL to the VF Page that needs to be opened when clicked. --></help>
+        <label><!-- Quick Action to Execute --></label>
+        <name>TR1__Quick_Action_to_Execute__c</name>
+    </fields>
+    <fields>
+        <help><!-- JS Code that will return the literal &quot;show&quot; or &quot;hide&quot; after any evaluation. --></help>
+        <label><!-- Visibility Expression --></label>
+        <name>TR1__Visibility_Expr__c</name>
+    </fields>
+</CustomObjectTranslation>

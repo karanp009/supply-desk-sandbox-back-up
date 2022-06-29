@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Call List Status --></label>
+        <name>Call_List_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Owner --></label>
+        <name>Client_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Status --></label>
+        <name>Client_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>Client__c</name>
+        <relationshipLabel><!-- Call Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call List Email Field --></label>
+        <name>TR1__Call_List_Email_Field__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR1__Work_Email__c</masterLabel>
+            <translation><!-- TR1__Work_Email__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Candidate Contact --></label>
+        <name>TR1__CandidateContact__c</name>
+        <relationshipLabel><!-- Call Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Members --></label>
+        <name>TR1__Total_Members__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Call list for marketing candidates to clients. --></description>
+        <label><!-- Candidate Marketing --></label>
+        <name>TR1__CandidateMarketing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- General call list. --></description>
+        <label><!-- Standard --></label>
+        <name>TR1__Standard</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Combine_Call_List --></label>
+        <name>TR1__Combine_Call_List</name>
+    </webLinks>
+    <webLinks>
+        <label>Resume Search</label>
+        <name>TR1__Daxtra_Search</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Search_Match --></label>
+        <name>TR1__Search_Match</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync_with_Daxtra --></label>
+        <name>TR1__Sync_with_Daxtra</name>
+    </webLinks>
+</CustomObjectTranslation>

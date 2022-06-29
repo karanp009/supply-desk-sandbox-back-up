@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Sheff_Cakes</letterhead>
+    <name>SD_Sheff_Cakes</name>
+    <style>freeForm</style>
+    <subject>Join us for Sheffield Meet the Team Tea and Cakes, 3rd August</subject>
+    <textOnly>Dear {!Contact.FirstName},Come along on the 3rd of August and meet your local Supply Desk Sheffield team, we’re a super friendly bunch! You can find out more about the opportunities available in the area and all the benefits of registering with us, including:
+
+Competitive rates
+Wide choice of schools and opportunities
+Continued Professional Development courses available
+Generous Refer a Friend programme – £100 paid for every successful referral
+
+Where: Sir Wilfred Newton House, 2nd Floor, Thorncliffe Park, Chapeltown, S35 2PH
+
+When: Friday 3rd August, 10am – 1pm
+
+RSVP: To register for the event contact the team on 0114 272 5535 or email sheffield@supplydesk.co.uk
+
+Kind Regards,
+
+Supply Desk Sheffield</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

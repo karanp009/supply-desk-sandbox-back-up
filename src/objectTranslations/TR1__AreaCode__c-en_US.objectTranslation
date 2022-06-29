@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Code --></label>
+        <name>TR1__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>TR1__Country__c</name>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State/Area --></label>
+        <name>TR1__StateArea__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Purchase Order Spend --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>TR1__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalId --></label>
+        <name>TR1__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Detail --></label>
+        <name>TR1__Purchase_Order_Detail__c</name>
+        <relationshipLabel><!-- Spend --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spend Amount --></label>
+        <name>TR1__Spend_Amount__c</name>
+    </fields>
+</CustomObjectTranslation>

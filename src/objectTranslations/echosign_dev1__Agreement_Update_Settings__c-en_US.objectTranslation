@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enable this setting to attach audit report PDF to the agreement record after agreement transaction is completed. --></help>
+        <label><!-- Add Audit Report --></label>
+        <name>echosign_dev1__Add_Audit_Report__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to add an URL link for signed PDF to the Agreement record. --></help>
+        <label><!-- Add Signed PDF Url --></label>
+        <name>echosign_dev1__Add_Signed_PDF_Url__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to add latest PDF to an agreement record whenever an agreement is signed / approved / accepted / filled / delivered by the participant. --></help>
+        <label><!-- Add Signed PDF --></label>
+        <name>echosign_dev1__Add_Signed_PDF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to attach final agreement copy as separate PDFs for each document to the agreement record when agreement transaction is completed. --></help>
+        <label><!-- Add Signed PDF as Separate Attachments --></label>
+        <name>echosign_dev1__Add_Signed_PDF_as_Separate_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to attach PDF of each supporting document uploaded by participants to the agreement record after agreement transaction is completed. --></help>
+        <label><!-- Add Supporting Files --></label>
+        <name>echosign_dev1__Add_Supporting_Files__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to attach an audit report to the final signed agreement PDF. --></help>
+        <label><!-- Attach Audit Report to Final Signed PDF --></label>
+        <name>echosign_dev1__Attach_Audit_Report_to_Signed_PDF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to stop attaching intermediate signed documents. --></help>
+        <label><!-- Hide Intermediate Documents --></label>
+        <name>echosign_dev1__Hide_Intermediate_Documents__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to show latest images of all pages of all the documents associated with an agreement. --></help>
+        <label><!-- Show Images --></label>
+        <name>echosign_dev1__Show_Images__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to update events of an agreement --></help>
+        <label><!-- Update Agreement Events --></label>
+        <name>echosign_dev1__Update_Agreement_Events__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to update the status of an agreement. Disabling this setting will disable certain updates on the agreement record --></help>
+        <label><!-- Update Agreement Status --></label>
+        <name>echosign_dev1__Update_Agreement_Status__c</name>
+    </fields>
+</CustomObjectTranslation>

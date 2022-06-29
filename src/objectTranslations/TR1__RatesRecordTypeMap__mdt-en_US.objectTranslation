@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SFDCFieldId --></label>
+        <name>TR1__SFDCFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDCRecordTypeId --></label>
+        <name>TR1__SFDCRecordTypeId__c</name>
+    </fields>
+</CustomObjectTranslation>

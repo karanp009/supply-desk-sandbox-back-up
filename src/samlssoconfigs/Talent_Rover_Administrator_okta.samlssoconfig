@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>exk5215bq8xODwU5R0x7</issuer>
+    <loginUrl>https://talentrover.okta.com/app/salesforce/exk5215bq8xODwU5R0x7/sso/saml</loginUrl>
+    <logoutUrl>https://talentrover.okta.com</logoutUrl>
+    <name>Talent_Rover_Administrator</name>
+    <oauthTokenEndpoint>https://supplydesk--mvcdev.my.salesforce.com/services/oauth2/token?so=00D0C0000000wsF</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>0</requestSignatureMethod>
+    <salesforceLoginUrl>https://supplydesk--mvcdev.my.salesforce.com?so=00D0C0000000wsF</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDpjCCAo6gAwIBAgIGAU711QGpMA0GCSqGSIb3DQEBBQUAMIGTMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFDASBgNVBAMMC3RhbGVudHJvdmVyMRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMB4XDTE1MDgwMzIzMDk1NFoXDTQ1MDgwMzIzMTA1NFowgZMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ0wCwYDVQQKDARPa3RhMRQwEgYDVQQLDAtTU09Qcm92aWRlcjEUMBIGA1UEAwwLdGFsZW50cm92ZXIxHDAaBgkqhkiG9w0BCQEWDWluZm9Ab2t0YS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCminFDhtC4kXi4EL7OowS39+sJxOoWjplicuemz2mvm8CFPoXEDMt2ryjgN9pNjPMbUbJOBOknkm6gGtXnr9n/jSh9/R8YJyZ6S0WHFPtfYrXO50xGOiOFvE9Su9MhHO6qvs7/3hSAliwOpwvng0lL5CZveP+i1jVs2pYzG2tPKfacjcXGCxFMcR8wIqOKZy1dN62rTsWifQAcsN+Me/2CnR1n6NAWhc5aSyvwk92QbiCNvsYmC3zON7zLftSuqoW6yyvYsx0NbMgb7PHEvZthKZqZVgdhHJerFgS0fGG5adPDxoAH9wnaUv9UYVs2wc3JYCGRUhRSUKHzOV9RifYPAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAHbSshXiP6c+v9RHJ7UYeEAT4jGM1jrEuLY6ZLsCEe7HSnFxhI32k0qhwAU5SX2tuoviFN4KUf7sTJYGFrGuCkQ6jQ8UuVW6MjBvQCPdoRtNtFc3zSh5iPrpz1B7JHCn2LzgSGFJb11gIfGvEedY1JPGD2lYvxBknpdr/0thteWQ+aKSVkIZQ0WxcG9CDMtF9TNrFQJFWcb2wi4toA78VTy/wX19jcBPtNeNbuIqkCp2G1gP8Gp9swyCa9q2KnSlTT6XOaBBSszT9/V62mX6fL/yH85k1izxkWcXtpwCtcTzmdjpH9dudSD7Un4fEmDi74RS6AVjEUsm1V92NGIOQbg=</validationCert>
+</SamlSsoConfig>

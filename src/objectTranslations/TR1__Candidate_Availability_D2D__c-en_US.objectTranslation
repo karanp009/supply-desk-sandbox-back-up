@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Tooltip fields --></label>
+        <name>TR1__Tooltip_fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Availability Date --></label>
+        <name>TR1__Availability_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Availability --></label>
+        <name>TR1__Candidate_Availability__c</name>
+        <relationshipLabel><!-- Candidate Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Report Schedule Secondary --></label>
+        <name>TR1__Closing_Report_Schedule_Secondary__c</name>
+        <relationshipLabel><!-- Candidate Schedules (Closing Report Schedule Secondary) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Report Schedule --></label>
+        <name>TR1__Closing_Report_Schedule__c</name>
+        <relationshipLabel><!-- Candidate Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+    </fields>
+</CustomObjectTranslation>

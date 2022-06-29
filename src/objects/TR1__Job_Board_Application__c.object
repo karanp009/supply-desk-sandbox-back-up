@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Rejection_Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Rejection Comment</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Rejection_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Rejection Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consultant Will Notify</fullName>
+                    <default>false</default>
+                    <label>Consultant Will Notify</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Applicant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Applicant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>JobBoardApplications</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Board_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job Board Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Company Website</fullName>
+                    <default>false</default>
+                    <label>Company Website</label>
+                </value>
+                <value>
+                    <fullName>Google Search</fullName>
+                    <default>false</default>
+                    <label>Google Search</label>
+                </value>
+                <value>
+                    <fullName>Yahoo Search</fullName>
+                    <default>false</default>
+                    <label>Yahoo Search</label>
+                </value>
+                <value>
+                    <fullName>Bing Search</fullName>
+                    <default>false</default>
+                    <label>Bing Search</label>
+                </value>
+                <value>
+                    <fullName>Twitter</fullName>
+                    <default>false</default>
+                    <label>Twitter</label>
+                </value>
+                <value>
+                    <fullName>Indeed</fullName>
+                    <default>false</default>
+                    <label>Indeed</label>
+                </value>
+                <value>
+                    <fullName>SoCRA</fullName>
+                    <default>false</default>
+                    <label>SoCRA</label>
+                </value>
+                <value>
+                    <fullName>ISPE</fullName>
+                    <default>false</default>
+                    <label>ISPE</label>
+                </value>
+                <value>
+                    <fullName>SCDM</fullName>
+                    <default>false</default>
+                    <label>SCDM</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+                <value>
+                    <fullName>RAPS</fullName>
+                    <default>false</default>
+                    <label>RAPS</label>
+                </value>
+                <value>
+                    <fullName>Net-Temps</fullName>
+                    <default>false</default>
+                    <label>Net-Temps</label>
+                </value>
+                <value>
+                    <fullName>NACCB</fullName>
+                    <default>false</default>
+                    <label>NACCB</label>
+                </value>
+                <value>
+                    <fullName>Job Fair</fullName>
+                    <default>false</default>
+                    <label>Job Fair</label>
+                </value>
+                <value>
+                    <fullName>Career builder</fullName>
+                    <default>false</default>
+                    <label>Career builder</label>
+                </value>
+                <value>
+                    <fullName>Monster</fullName>
+                    <default>false</default>
+                    <label>Monster</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+                <value>
+                    <fullName>DIA</fullName>
+                    <default>false</default>
+                    <label>DIA</label>
+                </value>
+                <value>
+                    <fullName>Ad</fullName>
+                    <default>false</default>
+                    <label>Ad</label>
+                </value>
+                <value>
+                    <fullName>ACRP</fullName>
+                    <default>false</default>
+                    <label>ACRP</label>
+                </value>
+                <value>
+                    <fullName>DICE</fullName>
+                    <default>false</default>
+                    <label>DICE</label>
+                </value>
+                <value>
+                    <fullName>cvlibrary</fullName>
+                    <default>false</default>
+                    <label>CV Library</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Job__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job</label>
+        <referenceTo>TR1__Job__c</referenceTo>
+        <relationshipName>JobBoardApplications</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TR1__Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Job Board</fullName>
+                    <default>false</default>
+                    <label>Job Board</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Converted</fullName>
+                    <default>false</default>
+                    <label>Converted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Job Board Application</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <columns>TR1__Job__c</columns>
+        <columns>TR1__Applicant__c</columns>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>TR1__Status__c</columns>
+        <columns>TR1__Source__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>TR1__All_New_Job_Board_Applications</fullName>
+        <columns>NAME</columns>
+        <columns>TR1__Applicant__c</columns>
+        <columns>TR1__Job__c</columns>
+        <columns>TR1__Job_Board_Source__c</columns>
+        <columns>TR1__Rating__c</columns>
+        <columns>TR1__Source__c</columns>
+        <columns>TR1__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TR1__Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>All New Job Board Applications</label>
+    </listViews>
+    <nameField>
+        <displayFormat>JBA-{MM}{DD}{YYYY}-{0}</displayFormat>
+        <label>Job Board Application Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Job Board Applications</pluralLabel>
+    <searchLayouts>
+        <listViewButtons>TR1__MassShortlist</listViewButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Reject_Delete</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Reject &amp; Delete</masterLabel>
+        <openType>replace</openType>
+        <page>RejectAndDelete</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Reject_Keep</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Reject &amp; Keep</masterLabel>
+        <openType>replace</openType>
+        <page>RejectAndKeep</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Reject_Refer</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Reject &amp; Refer</masterLabel>
+        <openType>replace</openType>
+        <page>RejectAndRefer</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__MassShortlist</fullName>
+        <availability>online</availability>
+        <description>Convert JobBoard Applications to Applications.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Shortlist</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+var recordids = {!GETRECORDIDS($ObjectType.TR1__Job_Board_Application__c)}; 
+if(recordids.length==0){ 
+alert(&apos;Please select atleast one JobBoard Application to Convert.&apos;); 
+}else{ 
+var query = &quot;SELECT Id,Name, TR1__Applicant__c, TR1__Job__c, TR1__Job_Board_Source__c, TR1__Source__c, TR1__Status__c FROM TR1__Job_Board_Application__c Where Id IN (&apos;&quot;+recordids.toString().replace(/,/g , &quot;&apos;,&apos;&quot;)+&quot;&apos;)&quot;; 
+try{ 
+var selectedjobappln = sforce.connection.query(query); 
+var selectedjobapplnrecords = selectedjobappln.getArray(&quot;records&quot;); 
+if(selectedjobapplnrecords.length == 0){ 
+alert(&apos;No Data found with selected Records.&apos;); 
+location.reload(true); 
+}else{ 
+var newapplns = []; 
+var isdelete = &quot;{!$Setup.TR1__TalentRoverProperties__c.TR1__Delete_JobBoard_Applications__c}&quot;; 
+for(var i=0; i &lt; selectedjobapplnrecords.length ; i ++){ 
+var newappln = new sforce.SObject(&quot;TR1__Application__c&quot;); 
+newappln.TR1__Applicant__c=selectedjobapplnrecords[i].TR1__Applicant__c; 
+newappln.TR1__Job__c=selectedjobapplnrecords[i].TR1__Job__c; 
+newappln.TR1__Job_Board_Source__c=selectedjobapplnrecords[i].TR1__Job_Board_Source__c; 
+newappln.TR1__Source__c=selectedjobapplnrecords[i].TR1__Source__c; 
+newappln.TR1__Status__c=&apos;Current&apos;;
+newapplns.push(newappln); 
+} 
+var result = sforce.connection.create(newapplns);
+var updatejobapplns = [];
+var deleteappids = [];
+var errors =&apos;&apos;;
+for(var j=0; j&lt;result.length; j++){
+if(result[j].success==&apos;true&apos;){
+deleteappids.push(selectedjobapplnrecords[j].Id);
+var updatejobappln = new sforce.SObject(&quot;TR1__Job_Board_Application__c&quot;);
+updatejobappln.Id = selectedjobapplnrecords[j].Id;
+updatejobappln.TR1__Status__c =&apos;Converted&apos;; 
+updatejobapplns.push(updatejobappln); 
+errors+=&apos;Status of : &apos;+selectedjobapplnrecords[j].Id+&apos;  &apos;+selectedjobapplnrecords[j].Name+&apos; is : Success&apos;;
+}else{
+     errors+= &apos;Status of : &apos;+selectedjobapplnrecords[j].Id+&apos;  &apos;+selectedjobapplnrecords[j].Name+&apos;  is : Fail, and Error Message is : &apos;+result[j].errors.message;
+}
+}
+if(isdelete==&apos;true&apos;){
+   var result1 = sforce.connection.deleteIds(deleteappids); 
+   location.reload(true); 
+}else{
+   var result2 = sforce.connection.update(updatejobapplns); 
+   location.reload(true); 
+}
+
+} 
+}catch(er){ 
+alert(er); 
+} 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Shortlist</fullName>
+        <availability>online</availability>
+        <description>Convert JobBoard Application to Application.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Shortlist</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+var query=&quot;SELECT Id,Name,TR1__Applicant__c, TR1__Job__c, TR1__Job_Board_Source__c, TR1__Source__c, TR1__Status__c FROM TR1__Job_Board_Application__c Where Id = &apos;&quot; +&apos;{!TR1__Job_Board_Application__c.Id}&apos;+&quot;&apos;&quot;;
+try{
+     var selectedjobappln = sforce.connection.query(query);
+     var selectedjobapplnrecords = selectedjobappln.getArray(&quot;records&quot;);
+     if(selectedjobapplnrecords[0]==null){
+         alert(&apos;No Data found with selected Records.&apos;);
+         location.reload(true);
+     }else{
+         var isdelete = &quot;{!$Setup.TR1__TalentRoverProperties__c.TR1__Delete_JobBoard_Applications__c}&quot;;
+         var newappln = new sforce.SObject(&quot;TR1__Application__c&quot;);
+               newappln.TR1__Applicant__c=selectedjobapplnrecords[0].TR1__Applicant__c;
+               newappln.TR1__Job__c=selectedjobapplnrecords[0].TR1__Job__c;
+                           newappln.TR1__Job_Board_Source__c=selectedjobapplnrecords[0].TR1__Job_Board_Source__c;
+             newappln.TR1__Status__c =&apos;Current&apos;;
+               newappln.TR1__Source__c=selectedjobapplnrecords[0].TR1__Source__c;
+            var result = sforce.connection.create([newappln]);
+            if(result[0].success==&apos;true&apos;){
+              if(isdelete ==&apos;true&apos;){
+                var deleteappids =[];
+                    deleteappids.push(&apos;{!TR1__Job_Board_Application__c.Id}&apos;);
+                var result1 = sforce.connection.deleteIds(deleteappids);
+                window.top.location=&apos;/&apos;+result[0].id;
+                 }else{
+                    var updatejobappln = new sforce.SObject(&quot;TR1__Job_Board_Application__c&quot;);
+                        updatejobappln.Id=selectedjobapplnrecords[0].Id;
+                        updatejobappln.TR1__Status__c =&apos;Converted&apos;;
+                    var result2 = sforce.connection.update([updatejobappln]);
+                    window.top.location=&apos;/&apos;+result[0].id;
+                 }
+            }else{alert(result[0].errors.message);}
+      }
+}catch(er){alert(er);}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GDPR Unsubscribe Request - response</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>GDPR Unsubscribe Request - response</name>
+    <style>formalLetter</style>
+    <subject>Unsubscribe Request Confirmed</subject>
+    <textOnly>Unsubscribe Request Confirmed
+Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName},
+
+Thank you for your email. We acknowledge your request to opt out of further communications. I confirm that we have updated our systems so that you will receive no further unsolicited contact from Supply Desk.
+
+Kind regards
+
+
+Data Processing Lead - Supplydesk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

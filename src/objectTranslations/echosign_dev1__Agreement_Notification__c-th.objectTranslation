@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Agreement Notification --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Agreement_Event_Type --></label>
+        <name>echosign_dev1__Agreement_Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement_Status --></label>
+        <name>echosign_dev1__Agreement_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement --></label>
+        <name>echosign_dev1__Agreement__c</name>
+        <relationshipLabel><!-- AdobeSign_Agreement_Notification --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document_Key --></label>
+        <name>echosign_dev1__Document_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>echosign_dev1__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification Type --></label>
+        <name>echosign_dev1__Notification_Type__c</name>
+        <picklistValues>
+            <masterLabel>AUTO_UPDATE</masterLabel>
+            <translation><!-- AUTO_UPDATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALLBACK</masterLabel>
+            <translation><!-- CALLBACK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Retry Count --></label>
+        <name>echosign_dev1__Retry_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>echosign_dev1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation>สร้างแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>ล้มเหลว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>ที่ปฏิเสธ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation>สำเร็จ</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Agreement Notification --></nameFieldLabel>
+</CustomObjectTranslation>

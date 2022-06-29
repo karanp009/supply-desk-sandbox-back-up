@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Regional Area --></label>
+        <name>TR1__Regional_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Area --></label>
+        <name>TR1__State_Area__c</name>
+    </fields>
+</CustomObjectTranslation>

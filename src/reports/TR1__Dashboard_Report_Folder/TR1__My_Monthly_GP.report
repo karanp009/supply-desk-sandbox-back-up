@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>TR1__Gross_Profit__c.TR1__Gross_Profit_Date__c</field>
+    </columns>
+    <columns>
+        <field>TR1__Gross_Profit__c.TR1__Account__c</field>
+    </columns>
+    <columns>
+        <field>TR1__Gross_Profit__c.TR1__Job__c</field>
+    </columns>
+    <columns>
+        <field>TR1__Gross_Profit__c.TR1__Person_Placed__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TR1__Gross_Profit__c.TR1__GP_Amount__c</field>
+    </columns>
+    <description>Combined GP</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>My Monthly GP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$TR1__Gross_Profit__c@TR1__Gross_Profit__c.TR1__Closing_Report__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TR1__Gross_Profit__c.TR1__Booking_Date__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

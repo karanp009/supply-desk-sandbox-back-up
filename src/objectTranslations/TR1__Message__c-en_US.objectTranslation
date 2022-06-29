@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attributes --></label>
+        <name>TR1__Attributes__c</name>
+    </fields>
+    <fields>
+        <label><!-- BCC Ids --></label>
+        <name>TR1__BCCIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- BCC --></label>
+        <name>TR1__BCC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body --></label>
+        <name>TR1__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC Ids --></label>
+        <name>TR1__CCIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC --></label>
+        <name>TR1__CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call List --></label>
+        <name>TR1__Call_List__c</name>
+        <relationshipLabel><!-- Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Field --></label>
+        <name>TR1__Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent On --></label>
+        <name>TR1__Sent_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>TR1__Status_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>TR1__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template ID --></label>
+        <name>TR1__Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Ids --></label>
+        <name>TR1__ToIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>TR1__To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Mass Email</masterLabel>
+            <translation><!-- Mass Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Email</masterLabel>
+            <translation><!-- Single Email --></translation>
+        </picklistValues>
+    </fields>
+    <webLinks>
+        <label><!-- Send_Email --></label>
+        <name>TR1__Send_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

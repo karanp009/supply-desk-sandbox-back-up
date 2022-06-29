@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To send to candidate every 18months to update Sensitive Data Consent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Consent Form - Sensitive Data</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Sensitive Data Processing Consent Form - Response Required</subject>
+    <textOnly>Dear {!TR1__Associated_Qualification__c.TR1__Contact__c}
+
+Please find attached Supply Desk&apos;s Sensitive Information Consent Form.
+
+Under GDPR regulations we are required to gain consent every 18 months to process and retain this information.
+
+Therefore we would appreciate it, if you would complete the attached form and return it within the next 10 working days so we may update our records.
+
+Please do not hesitate to contact the compliance team if you require any assistance or have any questions.
+
+Kind Regards
+
+The Compliance Team
+
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

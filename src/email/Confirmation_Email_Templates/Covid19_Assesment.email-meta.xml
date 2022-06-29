@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Covid19 Assesment</name>
+    <style>none</style>
+    <subject>Keeping supply workers safe – COVID-19</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Keeping supply workers safe – COVID-19
+
+As you are no doubt aware we are required to verify that appropriate procedures are in place to keep supply staff safe in schools, and ensure that relevant information about any specific risks relating to roles is shared with candidates. Schools must protect the health and safety of their supply candidates, as they do their permanent members of staff.
+
+We have put in place the following 4 step plan to ensure the safety of supply candidates.
+
+Risk assessment and protective measures We need your confirmation that your school has carried out a detailed COVID-19 risk assessment which covers supply staff, and that a range of protective measures and approaches have been implemented (in accordance with the DfE’s guidance [hyperlink]) to reduce the risk of transmission of infection in your school and to keep staff safe
+Notification of specific risks At the point of making a booking, you should notify us about any specific risks posed to a candidate in undertaking a particular assignment (for example, risks relating to the needs of a pupil, or areas where social distancing cannot be achieved). In the event that the personal circumstances of a candidate make them more vulnerable, we would need to understand from you whether the role allows for stringent social distancing and, if not, what additional measures can be adopted to protect the candidate. We would then discuss the risks with the candidate so that they can make an informed view on whether the level of risk is acceptable.
+COVID-19 safety training Upon arrival at the school, each supply candidate should be given a Covid-19 safety induction to ensure that they are aware of the risks, and understand the measures and procedures that the school has in place to prevent the spread of infection. It is essential that this induction takes place before the candidate is required to undertake any work-related duties in the school.
+Case of COVID-19 You will notify the candidate and Supply Desk in the event that there is a confirmed case of COVID-19 in your school in order that the candidate can take appropriate action and self-isolate if necessary.
+
+Please click here to confirm that you agree to this 4 step plan and that the necessary measures are in place.
+
+
+Kind regards</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SD Reg Interview - Overseas</name>
+    <style>freeForm</style>
+    <subject>Confirmation of Supply Desk Registration Interview</subject>
+    <textOnly>Dear {!TR1__Associated_Qualification__c.TR1__Contact__c}
+
+
+Thank you for your time on the phone, I am delighted to confirm your registration interview with Supply Desk (details below). Please allow approximately 1 hour for your registration interview.
+
+
+Prior to your interview it is essential that you read and complete our registration &amp; application forms, Terms of Engagement, DBS and safeguarding documents attached to this email.
+
+
+
+Interview details:
+
+Name of consultant: {!User.FirstName} {!User.LastName}
+
+Date &amp; Time:
+
+Location:
+
+Link to google maps: https://www.xxxxxxx
+
+Branch Tel. No.: {!User.Branch_Phone__c}
+
+Branch Email: {!User.Branch_Email__c}
+
+
+In preparation for your interview, please log into your online community page using the credentials which will be provided to you in a separate email, (please check spam if it does not appear in your inbox). Here you will be able to upload the documents we request to clear you for work directly into the &apos;My Qualifications&apos; section of your &apos;My Account&apos; page. We still require you to bring the originals with you to your registration interview in order for us to process your application in line with DfE guidelines.
+
+
+We can accept the following documents (for the complete list please refer to the attached checklist):
+
+
+Two forms of documentation confirming your current address (e.g. recent council tax/utility bill/bank statement) these must be dated within the last 3 months. Please note mobile phone bills and payslips are not acceptable. If you do not have any documents in your own name, please refer to the attached checklist or contact us for alternative options.
+Your UK/EU passport; full British birth certificate; or passport and right to work documentation.
+An official document stating a name change (e.g Marriage certificate)
+Proof of national insurance (payslips are not acceptable)
+Original qualification certificates (if applicable)
+Original DfEE/DES/DfES confirmation or status letter (where applicable)
+NCTL/ SET Registration Number/ QTLS Confirmation
+Original, third party, DBS Disclosure Certificate (please note you must be registered with the update service in order for us to accept your DBS)
+If you have been living or working outside the UK for a period of 6 months or more in the last 5 years, you must produce an original Police Clearance Certificate or Letter of Good Conduct from the relevant country(ies)
+
+In addition, we will also require:
+
+
+Current Curriculum Vitae including months and years at each establishment, and explaining any gaps in employment.
+We will take your photograph at interview or if you have an electronic passport sized photograph please upload into your secure compliance section on your community page.
+Referee details to cover the past 2 years (2 referees as a minimum)
+You need to complete our free online Safeguarding Training. Please use the following link to do this: https://www.supplydesk.co.uk/access-online-safeguarding-training/. You will need to enter your details to create your training account before you can complete the training. You will receive a certificate of confirmation upon successful completion.
+Please familiarise yourself with the DfE Guidance: Keeping children safe in education (Statutory guidance for schools and colleges 2021) https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/954314/Keeping_children_safe_in_education_2020_-_Update_-_January_2021.pdf
+
+If we are processing a DBS for you, you will be sent a link (via e-mail) to pay the £45 for this online.
+
+
+The registration interview will involve a discussion around the type of work you are looking for and your expectations as well as questions based on your skills in the following areas:
+
+
+Communication
+Organisation/Management within the school environment
+Adaptability/flexibility
+Ethos and philosophy towards education
+
+Please note that if you are unable to provide any of the information and/or documentation requested, this may result in a delay in the clearance process. Please complete the attached forms and print your name where a signature is required from you. In returning the form to us by email or through your community page, you acknowledge and agree that your printed name is deemed to be your signature, and therefore legally binding, for the purposes of the confirmations, agreements, consents and authorisations contained within the forms.
+
+
+
+If you have any questions regarding any of the above, please feel free to contact me prior to interview.
+
+
+Yours sincerely
+
+
+{!User.FirstName} {!User.LastName}
+
+{!User.Title}
+
+e. {!User.Email}
+
+t. {!User.Branch_Phone__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

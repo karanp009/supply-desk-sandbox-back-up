@@ -1,0 +1,39 @@
+<messaging:emailTemplate subject="Timesheet {!relatedTo.Name} Submitted" recipientType="Contact" relatedToType="TR1__Timesheet__c">
+    <messaging:htmlEmailBody >
+        <c:TimeSheet_EmailTemplate timesheet="{!relatedTo}" />
+    </messaging:htmlEmailBody>
+    
+    <messaging:plainTextEmailBody >
+    
+    Hi {!relatedTo.TR1__Approver__r.FirstName},
+
+        Please review the below timesheet for {!relatedTo.TR1__Consultant_Name__c}
+        
+        -----Timesheet Information-----
+        <apex:repeat value="{!$ObjectType.TR1__Timesheet__c.FieldSets.EmailTimesheet}" var="field">
+          {!IF(field =='TR1__Consultant_Name__c','Worker',field.Label)} : 
+            <apex:outputText rendered="{!field.Type !='date'}" value=" {!relatedTo[field]}"/>
+                <apex:outputText rendered="{!field.Type=='date'}" value="{0,date, dd'/'MM'/'yyyy}">
+                    <apex:param value="{!relatedTo[field]}" /> 
+                </apex:outputText>
+        </apex:repeat>
+        
+        -----Timesheet Detail-----
+         <apex:repeat value="{!relatedTo.TR1__Timecards__r}" var="tsd">
+         <!--    <apex:repeat value="{!$ObjectType.TR1__Timesheet_Detail__c.FieldSets.EmailTSD}" var="field" rendered="{!relatedTo.TR1__Timesheet_Type__c=='Start/Lunch/Finish'}">
+                {!field.Label} : <apex:outputText rendered="{!field.Type !='date'}" value=" {!tsd[field]}"/>
+                <apex:outputText rendered="{!field.Type=='date'}" value="{0,date, dd'/'MM'/'yyyy}">
+                    <apex:param value="{!tsd[field]}" /> 
+                </apex:outputText>
+             </apex:repeat> -->
+             <apex:repeat value="{!$ObjectType.TR1__Timesheet_Detail__c.FieldSets.EmailTSD}" var="field">
+                {!field.Label} : <apex:outputText rendered="{!field.Type !='date'}" value=" {!tsd[field]}"/>
+                <apex:outputText rendered="{!field.Type=='date'}" value="{0,date, dd'/'MM'/'yyyy}">
+                    <apex:param value="{!tsd[field]}" /> 
+                </apex:outputText>
+             </apex:repeat>
+             <c:NewLine /> 
+        </apex:repeat>
+                       
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

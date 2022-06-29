@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.TR1__Closes__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.TR1__Closes__r$TR1__Person_Placed_First_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Client_LEA__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>West Sussex,East Sussex,Brighton,Hove</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$School_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Secondary,Special Needs,Tech College,Further Ed.,Through School</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <name>Spend By Client Sussex</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>People_w_Closing_Reports_and_CRS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Schedule_Date__c</dateColumn>
+        <endDate>2018-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
+    </timeFrameFilter>
+</Report>

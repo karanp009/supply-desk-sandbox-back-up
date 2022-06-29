@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timesheet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timesheets</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- EmailTimesheet --></label>
+        <name>EmailTimesheet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimeSheetApprove --></label>
+        <name>RC_TimeSheetApprove</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimesheetAdditionalInfo --></label>
+        <name>RC_TimesheetAdditionalInfo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimesheetFooter --></label>
+        <name>RC_TimesheetFooter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimesheetHeader --></label>
+        <name>RC_TimesheetHeader</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimesheetHeaderApprover --></label>
+        <name>RC_TimesheetHeaderApprover</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RC_TimesheetList --></label>
+        <name>RC_TimesheetList</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TimesheetHeader --></label>
+        <name>TR1__TimesheetHeader</name>
+    </fieldSets>
+    <fields>
+        <label><!-- AWR Days --></label>
+        <name>AWR_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accrual Processed --></label>
+        <name>Accrual_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Week Ending Date --></label>
+        <name>Actual_Week_Ending_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Approver --></label>
+        <name>All_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>Approved_By_new__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved by (old) --></label>
+        <name>Arroved_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Pay Per Day --></label>
+        <name>Average_Pay_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Confirmed? --></label>
+        <name>Booking_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch New TR --></label>
+        <name>Branch_New_TR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle Work --></label>
+        <name>Bundle_Work__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate First Name --></label>
+        <name>Candidate_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate 1 --></label>
+        <name>Charge_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate 2 --></label>
+        <name>Charge_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Rate 3 --></label>
+        <name>Charge_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client account number --></label>
+        <name>Client_account_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date Day (Hidden) --></label>
+        <name>Created_Date_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date Equals Wk End Date (Hidden) --></label>
+        <name>Created_Equals_Week_End_Date_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Gross_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin by Day --></label>
+        <name>Gross_Profit_by_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- JobOwnerId --></label>
+        <name>JobOwnerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Owner Email --></label>
+        <name>Job_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin - PAYE --></label>
+        <name>Margin_PAYE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin - Umbrella --></label>
+        <name>Margin_Umbrella__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message to Job Owner --></label>
+        <name>Message_to_Job_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Temp Time Sheet ID --></label>
+        <name>Old_Temp_Time_Sheet_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO number --></label>
+        <name>PO_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate 1 --></label>
+        <name>Pay_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate 2 --></label>
+        <name>Pay_Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate 3 --></label>
+        <name>Pay_Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type 1 --></label>
+        <name>Pay_Type_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type 2 --></label>
+        <name>Pay_Type_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Type 3 --></label>
+        <name>Pay_Type_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll number --></label>
+        <name>Payroll_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Quality Call --></label>
+        <name>Request_Quality_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift End Date --></label>
+        <name>Shift_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>Start_date__c</name>
+    </fields>
+    <fields>
+        <label>Adjusted Charge Rate</label>
+        <name>TR1__Adjusted_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjusted Gross Profit --></label>
+        <name>TR1__Adjusted_Gross_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrative Fee Amount --></label>
+        <name>TR1__Administrative_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver First Name --></label>
+        <name>TR1__Approver_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver User --></label>
+        <name>TR1__Approver_User__c</name>
+        <relationshipLabel><!-- Timesheets (Approver User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approver --></label>
+        <name>TR1__Approver__c</name>
+        <relationshipLabel><!-- Timesheets (Timesheet Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Visible to approver and payroll. --></help>
+        <label><!-- Approver Notes --></label>
+        <name>TR1__Approvers_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Continuing --></label>
+        <name>TR1__Assignment_Continuing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Charge Rate</label>
+        <name>TR1__Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus --></label>
+        <name>TR1__Bonus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Burden --></label>
+        <name>TR1__Burden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate AGP --></label>
+        <name>TR1__Candidate_AGP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Credit Id --></label>
+        <name>TR1__Candidate_Credit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Credit --></label>
+        <name>TR1__Candidate_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate GP --></label>
+        <name>TR1__Candidate_GP__c</name>
+    </fields>
+    <fields>
+        <label>Client Name</label>
+        <name>TR1__Client_Name__c</name>
+    </fields>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Client__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Candidate Email</label>
+        <name>TR1__Consultant_Email__c</name>
+    </fields>
+    <fields>
+        <label>Candidate Name</label>
+        <name>TR1__Consultant_Name__c</name>
+    </fields>
+    <fields>
+        <label>Candidate</label>
+        <name>TR1__Consultant__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Visible to everyone. --></help>
+        <label><!-- Consultant Notes --></label>
+        <name>TR1__Consultants_Notes__c</name>
+    </fields>
+    <fields>
+        <label>OT Charge Rate @ 2.0</label>
+        <name>TR1__DT_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>TR1__Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Profit --></label>
+        <name>TR1__Gross_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Amount --></label>
+        <name>TR1__Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy AGP</label>
+        <name>TR1__Job_AGP__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Credit ID</label>
+        <name>TR1__Job_Credit_Id__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Credit</label>
+        <name>TR1__Job_Credit__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy GP</label>
+        <name>TR1__Job_GP__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy</label>
+        <name>TR1__Job_Order__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vacancy Owner Email</label>
+        <name>TR1__Job_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label>Consultant</label>
+        <name>TR1__Job_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manual Total Regular Hours --></label>
+        <name>TR1__Manual_Total_Regular_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing AGP --></label>
+        <name>TR1__Marketing_AGP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit Id --></label>
+        <name>TR1__Marketing_Credit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Credit --></label>
+        <name>TR1__Marketing_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing GP --></label>
+        <name>TR1__Marketing_GP__c</name>
+    </fields>
+    <fields>
+        <label>OT Charge Rate @ 1.5</label>
+        <name>TR1__OT_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 AGP --></label>
+        <name>TR1__Other2_AGP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Credit Id --></label>
+        <name>TR1__Other2_Credit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 Credit --></label>
+        <name>TR1__Other2_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other2 GP --></label>
+        <name>TR1__Other2_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other AGP --></label>
+        <name>TR1__Other_AGP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Credit Id --></label>
+        <name>TR1__Other_Credit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Credit --></label>
+        <name>TR1__Other_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other GP --></label>
+        <name>TR1__Other_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Rate --></label>
+        <name>TR1__Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Week Ending --></label>
+        <name>TR1__Pay_Week_Ending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Amount --></label>
+        <name>TR1__Payroll_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visible to consultant and approver. --></help>
+        <label><!-- Payroll Note --></label>
+        <name>TR1__Payroll_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Type --></label>
+        <name>TR1__Payroll_Type__c</name>
+    </fields>
+    <fields>
+        <label>Consultant</label>
+        <name>TR1__Recruiter__c</name>
+        <relationshipLabel>Timesheets (Candidate)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed By Payroll</masterLabel>
+            <translation><!-- Changed By Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubmitted</masterLabel>
+            <translation><!-- Unsubmitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approver Email --></label>
+        <name>TR1__Timesheet_Approver_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Copy --></label>
+        <name>TR1__Timesheet_Copy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Invoice Adjustment --></label>
+        <name>TR1__Timesheet_Invoice_Adjustment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Invoice Total --></label>
+        <name>TR1__Timesheet_Invoice_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Second Approver --></label>
+        <name>TR1__Timesheet_Second_Approver__c</name>
+        <relationshipLabel><!-- Timesheets (Timesheet Second Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Type --></label>
+        <name>TR1__Timesheet_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Bill Amount --></label>
+        <name>TR1__TotalShiftBillAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Pay Amount --></label>
+        <name>TR1__TotalShiftPayAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Units --></label>
+        <name>TR1__TotalShiftUnits__c</name>
+    </fields>
+    <fields>
+        <label>Total Charge</label>
+        <name>TR1__Total_Bill_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked --></label>
+        <name>TR1__Total_Days_Worked__c</name>
+    </fields>
+    <fields>
+        <label>Total OT Hours @ 2.0</label>
+        <name>TR1__Total_Double_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Expenses --></label>
+        <name>TR1__Total_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total GP --></label>
+        <name>TR1__Total_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Holiday Hours --></label>
+        <name>TR1__Total_Holiday_Hours__c</name>
+    </fields>
+    <fields>
+        <label>Total Hours/Days</label>
+        <name>TR1__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label>Total OT Hours @ 1.5</label>
+        <name>TR1__Total_Overtime_Hours__c</name>
+    </fields>
+    <fields>
+        <label>Total Pay</label>
+        <name>TR1__Total_Pay_Override__c</name>
+    </fields>
+    <fields>
+        <label>Total Hours</label>
+        <name>TR1__Total_Regular_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Fee --></label>
+        <name>TR1__Total_Shift_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shift Hours --></label>
+        <name>TR1__Total_Shift_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sick Time Hours --></label>
+        <name>TR1__Total_Sick_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Hours --></label>
+        <name>TR1__Total_Travel_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Vacation Hours --></label>
+        <name>TR1__Total_Vacation_Hours__c</name>
+    </fields>
+    <fields>
+        <label>Travel Charge Rate</label>
+        <name>TR1__Travel_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Pay Rate --></label>
+        <name>TR1__Travel_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Ending --></label>
+        <name>TR1__Week_Ending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Worker Comp Percentage --></label>
+        <name>TR1__Worker_Comp_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Year --></label>
+        <name>Tax_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Teacher Rating --></label>
+        <name>Teacher_Rating__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Improvement</masterLabel>
+            <translation><!-- Requires Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory</masterLabel>
+            <translation><!-- Unsatisfactory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation><!-- Very Good --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Teacher Score --></label>
+        <name>Teacher_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approved By --></label>
+        <name>Timesheet_Approved_By__c</name>
+        <relationshipLabel><!-- Timesheets (Timesheet Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approved Date Time --></label>
+        <name>Timesheet_Approved_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Approver --></label>
+        <name>Timesheet_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Export DateTime --></label>
+        <name>Timesheet_Export_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Export Line Item --></label>
+        <name>Timesheet_Export_Line_Item__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Status --></label>
+        <name>Timesheet_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Week New --></label>
+        <name>Timesheet_Week_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Week --></label>
+        <name>Timesheet_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet no --></label>
+        <name>Timesheet_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Bill Amount --></label>
+        <name>Total_Bill_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Charge Amount --></label>
+        <name>Total_Days_Charge_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Pay Amount --></label>
+        <name>Total_Days_Pay_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days --></label>
+        <name>Total_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Half Days Charge Amount --></label>
+        <name>Total_Half_Days_Charge_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Half Days Pay Amount --></label>
+        <name>Total_Half_Days_Pay_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Half Days --></label>
+        <name>Total_Half_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Charge Amount --></label>
+        <name>Total_Hours_Charge_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Pay Amount --></label>
+        <name>Total_Hours_Pay_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Margin --></label>
+        <name>Total_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reported Charge --></label>
+        <name>Total_Reported_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reported Days --></label>
+        <name>Total_Reported_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reported Pay --></label>
+        <name>Total_Reported_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit 1 --></label>
+        <name>Unit_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit 2 --></label>
+        <name>Unit_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit 3 --></label>
+        <name>Unit_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- UpdateFromExport --></label>
+        <name>UpdateFromExport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Ending Day (Hidden) --></label>
+        <name>Week_Ending_Day_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week --></label>
+        <name>Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- approve test --></label>
+        <name>approve_test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift Start Date --></label>
+        <name>shift_start_date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Approver Notes can&apos;t be empty when rejecting the Timeseet --></errorMessage>
+        <name>Approver_Comment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Candidate can not approve his own timesheets! 
+Please Amend --></errorMessage>
+        <name>Approver_can_not_equal_Candidate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To Maintain Data Integrity, Override Fields cannot be populated for Historical Records --></errorMessage>
+        <name>TR1__Prevent_Use_of_Override_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timesheet cannot be approved by an internal staff member. Please contact payroll. --></errorMessage>
+        <name>Timesheet_cannot_be_approved_by_staff</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timesheet cannot be edited once it has been exported. Please contact Payroll for assistance. --></errorMessage>
+        <name>Timesheet_cannot_be_edited_once_exported</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timesheet cannot be submitted if the client account number or candidate payroll number is blank --></errorMessage>
+        <name>Timesheet_cannot_be_submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timesheet cannot be submitted if there are no shifts present. --></errorMessage>
+        <name>Timesheet_cannot_be_submitted_no_shifts</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CreateTimeSheet --></label>
+        <name>TR1__CreateTimeSheet</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Timesheet --></label>
+        <name>TR1__Create_Timesheet</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Timesheet_Details --></label>
+        <name>TR1__Edit_Timesheet_Details</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Rate --></label>
+        <name>TR1__New_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Select_Existing_Rate --></label>
+        <name>TR1__Select_Existing_Rate</name>
+    </webLinks>
+</CustomObjectTranslation>

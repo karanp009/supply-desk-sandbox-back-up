@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Vacancy API --></label>
+        <name>TR1__Vacancy_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy Schedule API --></label>
+        <name>TR1__Vacancy_Schedule_API__c</name>
+    </fields>
+</CustomObjectTranslation>

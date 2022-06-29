@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Candidate Timesheet Submission Confirmation</name>
+    <style>formalLetter</style>
+    <subject>Confirmation of Timesheet Submission</subject>
+    <textOnly>Dear {!TR1__Timesheet__c.TR1__Client_Name__c} 
+
+Your timesheet has been submitted successfully.  
+
+If you have any questions, please let your Consultant know promptly.  
+
+Best wishes,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

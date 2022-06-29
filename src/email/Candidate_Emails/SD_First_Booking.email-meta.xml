@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_First_Booking</letterhead>
+    <name>SD First Booking</name>
+    <style>freeForm</style>
+    <subject>First Booking Completed</subject>
+    <textOnly>Congratulations on completing your first booking with Supply Desk!
+
+
+We hope you had a good day and we would love to hear all about it.
+
+
+When you have time, could you give the office a call and feedback about your day to your consultant? We’d love the opportunity to have a chat about how your day went and answer any questions you might have, as well as give you any feedback that we’ve received from the school.
+
+
+We look forward to your call, and to continuing to work together in the future.
+
+
+Well done!
+
+
+Kind regards,
+
+Supply Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

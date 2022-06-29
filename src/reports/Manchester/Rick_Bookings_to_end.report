@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Closing_Report_Schedule__c.PAYE_Projected_Margin_NI1__c:SUM + Closing_Report_Schedule__c.Umbrella_Projected_Margin_NI__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Gross Margin</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Closing_Report_Schedule__c.PAYE_Projected_Margin_NI1__c:SUM + Closing_Report_Schedule__c.Umbrella_Projected_Margin_NI__c:SUM) / Closing_Report_Schedule__c.Total_Projected_Days__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Gross Profit Per Day</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Account.TR1__Closing_Reports__r.Closing_Report_Schedules__r$Total_Projected_Days__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.TR1__Closing_Reports__r$TR1__Job_Credit__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.TR1__Closing_Reports__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.TR1__Closing_Reports__r$TR1__Job__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.TR1__Closing_Reports__r.Closing_Report_Schedules__r$Total_Projected_Days__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Rick_Axon_Client__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.TR1__Closing_Reports__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.TR1__Closing_Reports__r$Branch__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Australia,Qualified Schools</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.TR1__Closing_Reports__r$TR1__Job_Credit__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Rick Axon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Rick Axon</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.TR1__Closing_Reports__r$TR1__Job_Credit__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Rick Bookings to end</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Clients_With_Closing_Reports_and_CRS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.TR1__Closing_Reports__r.Closing_Report_Schedules__r$Schedule_Date__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

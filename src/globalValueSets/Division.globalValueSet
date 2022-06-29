@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Aus-NZ</fullName>
+        <default>false</default>
+        <label>Aus-NZ</label>
+    </customValue>
+    <customValue>
+        <fullName>Brighton Primary</fullName>
+        <default>false</default>
+        <label>Brighton Primary</label>
+    </customValue>
+    <customValue>
+        <fullName>Brighton Secondary</fullName>
+        <default>false</default>
+        <label>Brighton Secondary</label>
+    </customValue>
+    <customValue>
+        <fullName>Buckinghamshire</fullName>
+        <default>false</default>
+        <label>Buckinghamshire</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada</fullName>
+        <default>false</default>
+        <label>Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff</fullName>
+        <default>false</default>
+        <label>Cardiff</label>
+    </customValue>
+    <customValue>
+        <fullName>East Anglia</fullName>
+        <default>false</default>
+        <label>East Anglia</label>
+    </customValue>
+    <customValue>
+        <fullName>GDPR Eraser/opt out</fullName>
+        <default>false</default>
+        <label>GDPR Eraser/opt out</label>
+    </customValue>
+    <customValue>
+        <fullName>Kent</fullName>
+        <default>false</default>
+        <label>Kent</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeds</fullName>
+        <default>false</default>
+        <label>Leeds</label>
+    </customValue>
+    <customValue>
+        <fullName>Lincs</fullName>
+        <default>false</default>
+        <label>Lincs</label>
+    </customValue>
+    <customValue>
+        <fullName>London</fullName>
+        <default>false</default>
+        <label>London</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester</fullName>
+        <default>false</default>
+        <label>Manchester</label>
+    </customValue>
+    <customValue>
+        <fullName>North East</fullName>
+        <default>false</default>
+        <label>North East</label>
+    </customValue>
+    <customValue>
+        <fullName>Nottingham</fullName>
+        <default>false</default>
+        <label>Nottingham</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipeline</fullName>
+        <default>false</default>
+        <label>Pipeline</label>
+    </customValue>
+    <customValue>
+        <fullName>Southampton</fullName>
+        <default>false</default>
+        <label>Southampton</label>
+    </customValue>
+    <customValue>
+        <fullName>Wales</fullName>
+        <default>false</default>
+        <label>Wales</label>
+    </customValue>
+    <customValue>
+        <fullName>North London</fullName>
+        <default>false</default>
+        <label>North London</label>
+    </customValue>
+    <customValue>
+        <fullName>All</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>All</label>
+    </customValue>
+    <customValue>
+        <fullName>TA 2 Teach</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TA 2 Teach</label>
+    </customValue>
+    <customValue>
+        <fullName>Deletion</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Deletion</label>
+    </customValue>
+    <customValue>
+        <fullName>Qualified Teachers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Qualified Teachers</label>
+    </customValue>
+    <customValue>
+        <fullName>TeachIn</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TeachIn</label>
+    </customValue>
+    <customValue>
+        <fullName>London-Bri</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>London-Bri</label>
+    </customValue>
+    <customValue>
+        <fullName>Qualified Schools</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Qualified Schools</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester Primary</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Manchester Primary</label>
+    </customValue>
+    <customValue>
+        <fullName>Cambridge</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cambridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Team South</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strategic Team South</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Team Nottingham</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strategic Team Nottingham</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Team North East</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strategic Team North East</label>
+    </customValue>
+    <customValue>
+        <fullName>Executives</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Executives</label>
+    </customValue>
+    <customValue>
+        <fullName>Perm Team North</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Perm Team North</label>
+    </customValue>
+    <customValue>
+        <fullName>Lon-Wat Candidates</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lon-Wat Candidates</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Liverpool</label>
+    </customValue>
+    <customValue>
+        <fullName>Newcastle</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Newcastle</label>
+    </customValue>
+    <customValue>
+        <fullName>Watford</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Watford</label>
+    </customValue>
+    <customValue>
+        <fullName>Thames Valley</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Thames Valley</label>
+    </customValue>
+    <customValue>
+        <fullName>Preston</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Preston</label>
+    </customValue>
+    <customValue>
+        <fullName>Sheffield</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sheffield</label>
+    </customValue>
+    <customValue>
+        <fullName>Central London</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Central London</label>
+    </customValue>
+    <customValue>
+        <fullName>Huddersfield</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Huddersfield</label>
+    </customValue>
+    <masterLabel>Division</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

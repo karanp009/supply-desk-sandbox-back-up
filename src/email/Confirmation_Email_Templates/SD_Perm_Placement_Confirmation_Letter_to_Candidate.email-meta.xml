@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used when candidate is placed in perm post by SD</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>SD Perm Placement Confirmation Letter to Candidate</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Permanent Placement Confirmation</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Congratulations on your success in being appointed by [name of school] as a [   ] teacher.
+
+The School will send you a contract which will set out all the terms of your employment. In the meantime, I am delighted to confirm the following information:
+
+1. Your start date is [    ].
+
+2. Your annual salary is £[          ].
+
+3. You will be paid [monthly / weekly].
+
+4. Your notice period is [                ].
+
+5. You will receive the following benefits:
+
+Once again, [      ], sincere congratulations. I would like to thank you for using Supply Desk to find the job you love, and wish you all the best for your future employment with [           ].
+Please do not hesitate to contact us should you need our help again or wish to recommend a fellow teacher to us.
+
+Kind regards,
+
+{!TR1__EMail__c.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

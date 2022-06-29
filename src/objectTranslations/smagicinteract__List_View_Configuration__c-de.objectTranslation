@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Criteria_Logical_Condition --></label>
+        <name>smagicinteract__Criteria_Logical_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Logic --></label>
+        <name>smagicinteract__Custom_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expexted SMS --></label>
+        <name>smagicinteract__Expexted_SMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Criteria --></label>
+        <name>smagicinteract__Filter_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Fields --></label>
+        <name>smagicinteract__Filter_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMS Subject --></label>
+        <name>smagicinteract__MMS_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>smagicinteract__Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- OptOut Records --></label>
+        <name>smagicinteract__OptOut_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optout Field --></label>
+        <name>smagicinteract__Optout_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Fields --></label>
+        <name>smagicinteract__Phone_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Id --></label>
+        <name>smagicinteract__Sender_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Body --></label>
+        <name>smagicinteract__Template_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Id --></label>
+        <name>smagicinteract__Template_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Records --></label>
+        <name>smagicinteract__Total_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- optOut Check --></label>
+        <name>smagicinteract__optOut_Check__c</name>
+    </fields>
+</CustomObjectTranslation>

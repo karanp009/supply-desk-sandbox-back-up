@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>tdc_tsw__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Question --></label>
+        <name>tdc_tsw__SMS_Template__c</name>
+        <relationshipLabel><!-- SMS Survey --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

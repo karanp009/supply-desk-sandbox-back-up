@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__API_Host__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>API Host</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Add_Candidate_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Add Candidate Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Access_Roles__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Candidate Access Roles</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Environment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Candidate Environment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_CSS_Path__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL/Path to a Custom CSS file used to design the Search! UI Screen of TextKernel.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL/Path to a Custom CSS file used to design the Search! UI Screen of TextKernel.</inlineHelpText>
+        <label>Custom CSS Path</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Delete_Candidate_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Delete Candidate Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Access_Roles__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job Access Roles</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Environment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job Environment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Request_Token_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Request Token Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Search_Match_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Search! Match Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Search_UI_Host__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Search! UI Host</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Search_UI_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Search! UI URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Update_Candidate_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Update Candidate Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>TextKernel</label>
+    <visibility>Public</visibility>
+</CustomObject>

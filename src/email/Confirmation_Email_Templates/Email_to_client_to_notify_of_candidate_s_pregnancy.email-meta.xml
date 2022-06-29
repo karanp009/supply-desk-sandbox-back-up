@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to client to notify re- candidate&apos;s pregnancy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Logo_Footer_Client</letterhead>
+    <name>Email to client to notify of candidate’s pregnancy</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Risk Assessment for Pregnant Candidate</subject>
+    <textOnly>Dear {!Contact.Salutation}{!Contact.LastName},
+
+I refer to our recent telephone conversation during which we discussed that {!TR1__Closing_Report__c.TR1__Person_Placed__c} is pregnant. Please assess whether there are any risks posed to {!TR1__Closing_Report__c.TR1__Person_Placed__c} with regard to her health and safety in undertaking the assignment at {!TR1__Closing_Report__c.TR1__Account__c} and what, if anything, can be done to avoid such risks.
+If you do identify any specific risks, please let me know as soon as possible. You should also discuss the risks with {!TR1__Closing_Report__c.TR1__Person_Placed__c}, together with steps she should take to avoid them.
+
+I look forward to hearing from you.
+
+Kind Regards,
+{!TR1__Closing_Report__c.TR1__Job_Credit__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

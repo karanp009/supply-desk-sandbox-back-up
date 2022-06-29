@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>tdc_tsw__Task_Field_Set</fullName>
+        <description>It is used to add fields on Task</description>
+        <displayedFields>
+            <field>tdc_tsw__Email_To__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>tdc_tsw__Email_Cc__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Task Field Set</label>
+    </fieldSets>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>CompletedDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+    </fields>
+    <fields>
+        <fullName>IsReminderSet</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>CompletedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_CompletedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>DelegatedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Delegated</filterScope>
+        <label>ENCODED:{!FilterNames.Task_DelegatedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OpenTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_OpenTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OverdueTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_OverdueTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>RecurringTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_RecurringTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>Southampton_Events</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>Southampton Events</label>
+        <sharedTo>
+            <group>Southampton_Branch</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.z_TodaysTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>UnscheduledTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>ENCODED:{!FilterNames.Task_UnscheduledTasks}</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Default</fullName>
+        <active>true</active>
+        <label>Default</label>
+        <picklistValues>
+            <picklist>Contact_Event_Type__c</picklist>
+            <values>
+                <fullName>Account Management Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Development Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CV Follow up With Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CV Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Candidate Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Candidate Marketing Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Check in%2Fout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documents chased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GDPR Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keep in Touch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offer of Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call In-coming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reference Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safeguarding Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec Call AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timesheet Chase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To Be Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vet Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Event_Outcome__c</picklist>
+            <values>
+                <fullName>Cancelled%2FPostponed %E2%80%93 DTBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete %E2%80%93 follow up event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete %E2%80%93 follow up task</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete %E2%80%93 no action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete %E2%80%93 vacancy received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>LVM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TYPE CALL NOTES HERE</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Call_Type__c</picklist>
+            <values>
+                <fullName>1to1 Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account Management Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Annual Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BD Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Development Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CV Follow up With Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Candidate Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Candidate Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Candidate Marketing Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Check in%2Fout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drop off%2Fpop in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GDPR Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Term Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keep in Touch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offer of Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call In-coming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Probation Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recruiting Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reference Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registration Interview</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safeguarding Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Review Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec Call AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timesheet Chase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To Be Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vet Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Result_of_Call__c</picklist>
+            <values>
+                <fullName>Booking Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Details Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documents received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IAT Taken Place %E2%80%93 Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IAT taken place %E2%80%93  TBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IAT taken place%E2%80%93 Booking Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Gained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Int%2FTrial Day follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost Booking - Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost Booking - Teacher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate Change Conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reference received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reg Interview Arranged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUCCESS - Accepted Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUCCESS - Booking Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUCCESS - IAT Arranged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUCCESS - Reg Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUCCESS - Reg Interview Confirmation Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUCCESS - Vacancy Filled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial%2FInterview Arranged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable To Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacancy Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit Arranged</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Comments_cannot_be_blank</fullName>
+        <active>true</active>
+        <description>Comments cannot be blank if outcome is Other or Information Gained</description>
+        <errorConditionFormula>OR(ISPICKVAL(TR1__Result_of_Call__c, &quot;Other&quot;), ISPICKVAL(TR1__Result_of_Call__c, &quot;Information Gained&quot;))&amp;&amp; 
+AND(ISBLANK(Description))</errorConditionFormula>
+        <errorMessage>If outcome is &apos;Other&apos; or &apos;Information Gained&apos; then details must be entered in &apos;Comments&apos; section</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Due_Date_Cannot_Be_blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(ActivityDate)</errorConditionFormula>
+        <errorDisplayField>ActivityDate</errorDisplayField>
+        <errorMessage>Due Date cannot be blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Event_Type_cannot_be_To_be_confirmed</fullName>
+        <active>false</active>
+        <description>Contact Event Type cannot be &apos;To Be Confirmed&apos; if status is Completed</description>
+        <errorConditionFormula>AND 
+(ISPICKVAL(Status, &quot;Completed&quot;),
+ISPICKVAL(Contact_Event_Type__c , &quot;To Be Confirmed&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Contact_Event_Type__c</errorDisplayField>
+        <errorMessage>Contact Event Type cannot be &apos;To Be Confirmed&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Task_cannot_be_completed_without_outcome</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND
+(ISPICKVAL(Status, &quot;Completed&quot;),
+ISBLANK(TEXT(TR1__Result_of_Call__c)))</errorConditionFormula>
+        <errorMessage>Task cannot be completed without an outcome</errorMessage>
+    </validationRules>
+</CustomObject>

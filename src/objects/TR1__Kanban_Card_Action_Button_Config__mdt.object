@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The different buttons and their configurational details that will be displayed on the Card Header.</description>
+    <fields>
+        <fullName>TR1__Button_Color__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Hexadecimal Code of the Color that will be used as the Background for the button.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Hexadecimal Code of the Color that will be used as the Background for the button.</inlineHelpText>
+        <label>Button Color</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Button_Icon_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The icon that needs to be displayed on the button. This will preferably be a link(relative url) to a Static Resource.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The icon that needs to be displayed on the button. This will preferably be a link(relative url) to a Static Resource.</inlineHelpText>
+        <label>Button Icon URL</label>
+        <required>true</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Order on which the Buttons will be displayed on the Card Header.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Order on which the Buttons will be displayed on the Card Header.</inlineHelpText>
+        <label>Display Order</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Quick_Action_to_Execute__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The URL to the VF Page that needs to be opened when clicked.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The URL to the VF Page that needs to be opened when clicked.</inlineHelpText>
+        <label>Quick Action to Execute</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Visibility_Expr__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JS Code that will return the literal &quot;show&quot; or &quot;hide&quot; after any evaluation.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>JS Code that will return the literal &quot;show&quot; or &quot;hide&quot; after any evaluation.</inlineHelpText>
+        <label>Visibility Expression</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Kanban Card Action Button Config</label>
+    <pluralLabel>Kanban Card Action Button Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,8 @@
+Sender Name : {!smagicinteract__Incoming_SMS__c.smagicinteract__Contact__c}
+Date Time : {!smagicinteract__Incoming_SMS__c.CreatedDate}
+Message : {!smagicinteract__Incoming_SMS__c.smagicinteract__SMS_Text__c}
+
+Quick Reply URL -: 
+https://eu6.salesforce.com/{!smagicinteract__Incoming_SMS__c.smagicinteract__ContactId__c}
+
+Incoming Response detail : https://eu6.salesforce.com/{!smagicinteract__Incoming_SMS__c.Id}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- NewOffer --></label>
+        <name>TR1__NewOffer</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>TR1__Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- C R --></label>
+        <name>TR1__Closing_Report_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Rate Offered --></label>
+        <name>TR1__Hourly_Rate_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reporting --></label>
+        <name>TR1__Job_Reporting__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Days in Stage --></label>
+        <name>TR1__Number_of_Days_in_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Date --></label>
+        <name>TR1__Offer_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offered To Owner --></label>
+        <name>TR1__Offered_To_Owner__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Offered To --></label>
+        <name>TR1__Offered_To__c</name>
+        <relationshipLabel><!-- Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rjt --></label>
+        <name>TR1__Reject_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notes --></label>
+        <name>TR1__Rejection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notification --></label>
+        <name>TR1__Rejection_Notification__c</name>
+        <picklistValues>
+            <masterLabel>Automated Rejection Email</masterLabel>
+            <translation><!-- Automated Rejection Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Owner Will Notify</masterLabel>
+            <translation><!-- Contact Owner Will Notify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Owner Will Notify</masterLabel>
+            <translation><!-- Job Owner Will Notify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rvt --></label>
+        <name>TR1__Revert_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary Offered --></label>
+        <name>TR1__Salary_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage End Date --></label>
+        <name>TR1__Stage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Start Date --></label>
+        <name>TR1__Stage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Manager Stage Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <webLinks>
+        <label><!-- Closing_Report --></label>
+        <name>TR1__Closing_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject --></label>
+        <name>TR1__Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Revert --></label>
+        <name>TR1__Revert</name>
+    </webLinks>
+</CustomObjectTranslation>

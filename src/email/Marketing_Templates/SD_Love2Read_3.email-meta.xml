@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Love2Read_3</letterhead>
+    <name>SD_Love2Read_3</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Love to Read - Proven to boost reading ages by up to two years</subject>
+    <textOnly>A Reading Intervention Programme proven to:
+
+
+Boost pupil’s reading age
+Raise attainment
+Improve literacy skills
+Provide encouragement
+Build confidence
+Improve behaviour
+Enable pupils to access the full curriculum
+
+
+What is the Love to read programme?
+
+
+
+
+Designed for pupils aged 6-15
+20-minute sessions, twice a week
+Delivered by teaching assistants and teachers who have been ‘Love to Read’ trained (bespoke training - provided by Creative Education)structured one-to-one intervention for learners who find reading difficult
+Proven to more than double rates of progress
+Packages just £225 per pupil
+
+
+
+Click here to find out more about Love to Read and see what schools, pupils and tutors have to say about the programme!
+
+
+
+
+Progress Promise! Once the Love to Read programme has been completed, we guarantee pupils will make progress (or we’ll rebate you £1,000)
+
+To Book a ‘Love to Read’ Programme, please call us on: 0800 027 2737
+
+
+
+Confirm your Love to Read Programme before the end of term and receive £500 in book vouchers or resources for your school!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

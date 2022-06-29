@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- lookupFound --></label>
+        <name>smagicinteract__lookupFound__c</name>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupNotFound --></label>
+        <name>smagicinteract__lookupNotFound__c</name>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

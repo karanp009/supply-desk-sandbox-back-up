@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Apex Email Service --></label>
+        <name>Apex_Email_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Base URL --></label>
+        <name>Community_Base_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign to Default Account While Parsing --></label>
+        <name>TR1__Assign_to_Default_Account_While_Parsing__c</name>
+    </fields>
+    <fields>
+        <label><!-- AutoPopulateSendOutFields --></label>
+        <name>TR1__AutoPopulateSendOutFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto run zero byte Flash code --></label>
+        <name>TR1__Auto_run_zero_byte_Flash_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Mktg Call List Email Field --></label>
+        <name>TR1__Candidate_Mktg_Call_List_Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Status When Assignment Ended --></label>
+        <name>TR1__Candidate_Status_When_Assignment_Ended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chatter Auto Follow Job Field --></label>
+        <name>TR1__Chatter_Auto_Follow_Job_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daxtra Host --></label>
+        <name>TR1__Daxtra_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Account --></label>
+        <name>TR1__Default_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Interview Duration --></label>
+        <name>TR1__Default_Interview_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete JobBoard Applications --></label>
+        <name>TR1__Delete_JobBoard_Applications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Calendar Invites --></label>
+        <name>TR1__Disable_Calendar_Invites__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Zipcode Mapping --></label>
+        <name>TR1__Disable_Zipcode_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Append Account to Job Name --></label>
+        <name>TR1__Do_Not_Append_Account_to_Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Attach Resume In Call List --></label>
+        <name>TR1__Do_Not_Attach_Resume_In_Call_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do not Update Contact Account in CR --></label>
+        <name>TR1__Do_not_Update_Contact_Account_in_CR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do not Update Contact via Task Trigger --></label>
+        <name>TR1__Do_not_Update_Contact_From_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Viewer Host --></label>
+        <name>TR1__Document_Viewer_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Consent Check Enforcement --></label>
+        <name>TR1__Enable_Consent_Check_Enforcement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Create New Resume From Template --></label>
+        <name>TR1__Enable_Create_New_Resume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Document Editor (Beta) --></label>
+        <name>TR1__Enable_Document_Editor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable New ATS Data Model? --></label>
+        <name>TR1__Enable_New_ATS_Data_model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Send to Additional Internal Users --></label>
+        <name>TR1__Enable_Send_to_Additional_Internal_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fill Logged In User on Send Out --></label>
+        <name>TR1__Fill_Logged_In_User_on_Send_Out__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please uncheck this option if you do not want to generate flash file along with parsing --></help>
+        <label><!-- Generate Flash File With Parsing --></label>
+        <name>TR1__Generate_Flash_File_With_Parsing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Related List in New Application --></label>
+        <name>TR1__IncludeJobRelatedList__c</name>
+    </fields>
+    <fields>
+        <label><!-- JobManager LastActivity Date --></label>
+        <name>TR1__JobManager_LastActivity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Manager Submittal Email Field --></label>
+        <name>TR1__Job_Manager_Submittal_Email_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default Job Manager Submittal Email Template (API Name) --></help>
+        <label><!-- Job Manager Submittal Email Template --></label>
+        <name>TR1__Job_Manager_Submittal_Email_Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of Closing Reports created at a time on the Mass Placement module --></help>
+        <label><!-- Mass Placement Batch Size --></label>
+        <name>TR1__Mass_Placement_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Specify Org Id here --></help>
+        <label><!-- Organization ID --></label>
+        <name>TR1__Organization_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redirect To ClosingReport --></label>
+        <name>TR1__Redirect_To_ClosingReport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redirect To Resume Editor --></label>
+        <name>TR1__Redirect_To_Resume_Editor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resume Search Filters Class --></label>
+        <name>TR1__Resume_Search_Filters_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;M Related list Layout --></label>
+        <name>TR1__SM_Relatedlist_Layout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Host --></label>
+        <name>TR1__Salesforce_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Education While Parsing --></label>
+        <name>TR1__Save_Education_While_Parsing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Employment While Parsing --></label>
+        <name>TR1__Save_Employment_While_Parsing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save Skills While Parsing --></label>
+        <name>TR1__Save_Skills_While_Parsing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Result Default Page Size --></label>
+        <name>TR1__Search_Result_Default_Page_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Results Additional Contact Fields --></label>
+        <name>TR1__Search_Results_Additional_Contact_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Out Invite Candidate Email Template --></label>
+        <name>TR1__SendOut_Invite_Candidate_Email_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- SendOut Invite Interviewer EmailTemplate --></label>
+        <name>TR1__SendOut_Invite_Interviewer_EmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Tabs on Search Results Page --></label>
+        <name>TR1__ShowTabs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Call List Email Field --></label>
+        <name>TR1__Standard_Call_List_Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- TalentRover Nova API Host --></label>
+        <name>TR1__TalentRover_Nova_API_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Talent Rover API --></label>
+        <name>TR1__Talent_Rover_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Talent Rover Host --></label>
+        <name>TR1__Talent_Rover_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Type --></label>
+        <name>TR1__TimesheetType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Existing Education History --></label>
+        <name>TR1__UpdateExistingEducationHistory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Existing Work History --></label>
+        <name>TR1__UpdateExistingWorkHistory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Custom Templates in CallList --></label>
+        <name>TR1__Use_Custom_Templates_in_CallList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use JobBoardApplication --></label>
+        <name>TR1__Use_JobBoardApplication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Override Amt Fields for GP/Invoices --></label>
+        <name>TR1__Use_Override_Amt_Fields_for_GP_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Presigned urls --></label>
+        <name>TR1__Use_Presigned_urls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Rate Card Module? --></label>
+        <name>TR1__Use_Rate_Card_Module__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Signature In CallList --></label>
+        <name>TR1__Use_Signature_In_CallList__c</name>
+    </fields>
+</CustomObjectTranslation>

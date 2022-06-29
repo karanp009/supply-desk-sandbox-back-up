@@ -1,0 +1,17 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello,]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">There has been a change to the banking information of </font></span><span style="background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><span style="white-space: pre-wrap;">{!Contact.</span></font></span><span style="font-family: Arial, sans-serif;">FirstName</span><span style="background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><span style="white-space: pre-wrap;">} </span></font></span><span style="font-size: 12pt; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><span style="white-space: pre-wrap;">{!Contact.La</span></font></span><span style="font-size: 12pt; font-family: Arial, sans-serif;">stName</span><span style="font-size: 12pt; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><span style="white-space: pre-wrap;">}.</span></font></span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">
+
+</font></span><div><span style="background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><font><font face="arial"><span style="font-size: 12pt; white-space: pre-wrap;">Please check the record.
+<br></span></font></font></font></span></div><div><span style="background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><font><font face="arial"><span style="font-size: 12pt; white-space: pre-wrap;">Kind Regards,</span></font></font></font></span><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif"><br></font></span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif">Supply Desk</font></span></div></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

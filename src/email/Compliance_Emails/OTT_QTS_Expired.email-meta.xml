@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>OTT QTS 4 year rule - Expired</name>
+    <style>freeForm</style>
+    <subject>OTT QTS 4 year rule - Expired</subject>
+    <textOnly>OTT QTS 4 year rule expired, {!TR1__Associated_Qualification__c.TR1__Contact__c} can no longer be placed as a teacher in a maintained school – please contact candidate and any clients this candidate is placed with as a teacher.
+
+It is unlawful for overseas trained teachers (OTTs) to continue teaching in state maintained schools and non-maintained special schools in England beyond four years if they have not been awarded QTS.
+
+The &quot;four year rule&quot; begins on the first day they teach in a state maintained school or a non-maintained special school in England and expires exactly four years later. In order to teach after four years, OTTs must have been awarded QTS. OTTs who have been awarded QTS by the end of their four year period become qualified teachers and are allowed to continue teaching subject to UK Visa and Immigration permission, if required.
+
+Please update candidate record SET options and update compliance package to Support.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

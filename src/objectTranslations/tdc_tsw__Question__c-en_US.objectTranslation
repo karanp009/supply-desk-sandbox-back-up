@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- First Question --></label>
+        <name>tdc_tsw__First_Question__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you need to merge fields, then select an object to start the survey. --></help>
+        <label><!-- Object --></label>
+        <name>tdc_tsw__Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Give a label to your question --></help>
+        <label><!-- Question Label --></label>
+        <name>tdc_tsw__Question_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Text --></label>
+        <name>tdc_tsw__Question_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Create a question for the survey. Add merge by including the formula in the text. --></help>
+        <label><!-- Question --></label>
+        <name>tdc_tsw__Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey --></label>
+        <name>tdc_tsw__Survey__c</name>
+        <relationshipLabel><!-- Questions --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

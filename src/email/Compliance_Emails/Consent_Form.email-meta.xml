@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be sent to client when a candidate is &quot;Cleared Pending&quot; and the client has given consent to work</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>Consent Form Clearance Pending</name>
+    <style>formalLetter</style>
+    <subject>Supply Desk Consent Form</subject>
+    <textOnly>Dear XXXX
+
+We have explained to you that we have not yet completed our clearance procedures in relation to {!TR1__Closing_Report__c.TR1__Person_Placed__c} and that we are awaiting the documentation set out below.
+
+
+1. DBS certificate - XXXX
+
+2. References - XXXX
+
+
+You have informed {!TR1__Closing_Report__c.TR1__Job_Credit__c} that you wish {!TR1__Closing_Report__c.TR1__Person_Placed__c} to work on a temporary assignment at {!TR1__Closing_Report__c.TR1__Account__c}, despite the incomplete clearance checks. You accept that Supply Desk is not liable in these circumstances for any matters connected with the clearance status of this teacher. We agree to supply {!TR1__Closing_Report__c.TR1__Person_Placed__c} on this basis, and will notify you when the documentation has been received, and the teacher has been fully cleared.
+
+
+Please reply to confirm that you acknowledge, and agree to the terms of this email.
+
+
+Kind regards,
+
+
+{!TR1__Closing_Report__c.TR1__Job_Credit__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

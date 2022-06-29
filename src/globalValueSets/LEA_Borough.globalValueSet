@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BARKING AND DAGENHAM</fullName>
+        <default>false</default>
+        <label>BARKING AND DAGENHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>BARNET</fullName>
+        <default>false</default>
+        <label>BARNET</label>
+    </customValue>
+    <customValue>
+        <fullName>BARNSLEY</fullName>
+        <default>false</default>
+        <label>BARNSLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>AVON (DEFUNCT LEA)</fullName>
+        <default>false</default>
+        <label>AVON (DEFUNCT LEA)</label>
+    </customValue>
+    <customValue>
+        <fullName>BATH AND N. EAST SOMERSET</fullName>
+        <default>false</default>
+        <label>BATH AND N. EAST SOMERSET</label>
+    </customValue>
+    <customValue>
+        <fullName>BEDFORDSHIRE</fullName>
+        <default>false</default>
+        <label>BEDFORDSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>BERKSHIRE (DEFUNCT LEA)</fullName>
+        <default>false</default>
+        <label>BERKSHIRE (DEFUNCT LEA)</label>
+    </customValue>
+    <customValue>
+        <fullName>BEXLEY</fullName>
+        <default>false</default>
+        <label>BEXLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>BIRMINGHAM</fullName>
+        <default>false</default>
+        <label>BIRMINGHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>BLACKBURN WITH DARWEN</fullName>
+        <default>false</default>
+        <label>BLACKBURN WITH DARWEN</label>
+    </customValue>
+    <customValue>
+        <fullName>BLACKPOOL</fullName>
+        <default>false</default>
+        <label>BLACKPOOL</label>
+    </customValue>
+    <customValue>
+        <fullName>BOLTON</fullName>
+        <default>false</default>
+        <label>BOLTON</label>
+    </customValue>
+    <customValue>
+        <fullName>BOURNEMOUTH</fullName>
+        <default>false</default>
+        <label>BOURNEMOUTH</label>
+    </customValue>
+    <customValue>
+        <fullName>BRACKNELL FOREST</fullName>
+        <default>false</default>
+        <label>BRACKNELL FOREST</label>
+    </customValue>
+    <customValue>
+        <fullName>BRADFORD</fullName>
+        <default>false</default>
+        <label>BRADFORD</label>
+    </customValue>
+    <customValue>
+        <fullName>BRENT</fullName>
+        <default>false</default>
+        <label>BRENT</label>
+    </customValue>
+    <customValue>
+        <fullName>BRIGHTON AND HOVE</fullName>
+        <default>false</default>
+        <label>BRIGHTON AND HOVE</label>
+    </customValue>
+    <customValue>
+        <fullName>BRISTOL, CITY OF</fullName>
+        <default>false</default>
+        <label>BRISTOL, CITY OF</label>
+    </customValue>
+    <customValue>
+        <fullName>BROMLEY</fullName>
+        <default>false</default>
+        <label>BROMLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>BUCKINGHAMSHIRE</fullName>
+        <default>false</default>
+        <label>BUCKINGHAMSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>BURY</fullName>
+        <default>false</default>
+        <label>BURY</label>
+    </customValue>
+    <customValue>
+        <fullName>CALDERDALE</fullName>
+        <default>false</default>
+        <label>CALDERDALE</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMBRIDGESHIRE</fullName>
+        <default>false</default>
+        <label>CAMBRIDGESHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMDEN</fullName>
+        <default>false</default>
+        <label>CAMDEN</label>
+    </customValue>
+    <customValue>
+        <fullName>CHESHIRE</fullName>
+        <default>false</default>
+        <label>CHESHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>CITY OF LONDON</fullName>
+        <default>false</default>
+        <label>CITY OF LONDON</label>
+    </customValue>
+    <customValue>
+        <fullName>CLEVELAND(x)</fullName>
+        <default>false</default>
+        <label>CLEVELAND(x)</label>
+    </customValue>
+    <customValue>
+        <fullName>CORNWALL</fullName>
+        <default>false</default>
+        <label>CORNWALL</label>
+    </customValue>
+    <customValue>
+        <fullName>COVENTRY</fullName>
+        <default>false</default>
+        <label>COVENTRY</label>
+    </customValue>
+    <customValue>
+        <fullName>CROYDON</fullName>
+        <default>false</default>
+        <label>CROYDON</label>
+    </customValue>
+    <customValue>
+        <fullName>CUMBRIA</fullName>
+        <default>false</default>
+        <label>CUMBRIA</label>
+    </customValue>
+    <customValue>
+        <fullName>DARLINGTON</fullName>
+        <default>false</default>
+        <label>DARLINGTON</label>
+    </customValue>
+    <customValue>
+        <fullName>DARTFORD (Brgh)</fullName>
+        <default>false</default>
+        <label>DARTFORD (Brgh)</label>
+    </customValue>
+    <customValue>
+        <fullName>DERBY, CITY of</fullName>
+        <default>false</default>
+        <label>DERBY, CITY of</label>
+    </customValue>
+    <customValue>
+        <fullName>DERBYSHIRE</fullName>
+        <default>false</default>
+        <label>DERBYSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>DEVON</fullName>
+        <default>false</default>
+        <label>DEVON</label>
+    </customValue>
+    <customValue>
+        <fullName>DONCASTER</fullName>
+        <default>false</default>
+        <label>DONCASTER</label>
+    </customValue>
+    <customValue>
+        <fullName>DORSET</fullName>
+        <default>false</default>
+        <label>DORSET</label>
+    </customValue>
+    <customValue>
+        <fullName>DUDLEY</fullName>
+        <default>false</default>
+        <label>DUDLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>DURHAM</fullName>
+        <default>false</default>
+        <label>DURHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>EALING</fullName>
+        <default>false</default>
+        <label>EALING</label>
+    </customValue>
+    <customValue>
+        <fullName>EAST RIDING OF YORKSHIRE</fullName>
+        <default>false</default>
+        <label>EAST RIDING OF YORKSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>EAST SUSSEX</fullName>
+        <default>false</default>
+        <label>EAST SUSSEX</label>
+    </customValue>
+    <customValue>
+        <fullName>ENFIELD</fullName>
+        <default>false</default>
+        <label>ENFIELD</label>
+    </customValue>
+    <customValue>
+        <fullName>EPPING (Brgh)</fullName>
+        <default>false</default>
+        <label>EPPING (Brgh)</label>
+    </customValue>
+    <customValue>
+        <fullName>ESSEX</fullName>
+        <default>false</default>
+        <label>ESSEX</label>
+    </customValue>
+    <customValue>
+        <fullName>GATESHEAD</fullName>
+        <default>false</default>
+        <label>GATESHEAD</label>
+    </customValue>
+    <customValue>
+        <fullName>GLOUCESTERSHIRE</fullName>
+        <default>false</default>
+        <label>GLOUCESTERSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>GREENWICH</fullName>
+        <default>false</default>
+        <label>GREENWICH</label>
+    </customValue>
+    <customValue>
+        <fullName>HACKNEY</fullName>
+        <default>false</default>
+        <label>HACKNEY</label>
+    </customValue>
+    <customValue>
+        <fullName>HALTON</fullName>
+        <default>false</default>
+        <label>HALTON</label>
+    </customValue>
+    <customValue>
+        <fullName>HAMMERSMITH AND FULHAM</fullName>
+        <default>false</default>
+        <label>HAMMERSMITH AND FULHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>HAMPSHIRE</fullName>
+        <default>false</default>
+        <label>HAMPSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>HARINGEY</fullName>
+        <default>false</default>
+        <label>HARINGEY</label>
+    </customValue>
+    <customValue>
+        <fullName>HARROW</fullName>
+        <default>false</default>
+        <label>HARROW</label>
+    </customValue>
+    <customValue>
+        <fullName>HARTLEPOOL</fullName>
+        <default>false</default>
+        <label>HARTLEPOOL</label>
+    </customValue>
+    <customValue>
+        <fullName>HAVERING</fullName>
+        <default>false</default>
+        <label>HAVERING</label>
+    </customValue>
+    <customValue>
+        <fullName>HEREFORDSHIRE</fullName>
+        <default>false</default>
+        <label>HEREFORDSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>HERTFORDSHIRE</fullName>
+        <default>false</default>
+        <label>HERTFORDSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>HILLINGDON</fullName>
+        <default>false</default>
+        <label>HILLINGDON</label>
+    </customValue>
+    <customValue>
+        <fullName>HOUNSLOW</fullName>
+        <default>false</default>
+        <label>HOUNSLOW</label>
+    </customValue>
+    <customValue>
+        <fullName>HUMBERSIDE (x)</fullName>
+        <default>false</default>
+        <label>HUMBERSIDE (x)</label>
+    </customValue>
+    <customValue>
+        <fullName>ISLE OF WIGHT</fullName>
+        <default>false</default>
+        <label>ISLE OF WIGHT</label>
+    </customValue>
+    <customValue>
+        <fullName>ISLES OF SCILLY</fullName>
+        <default>false</default>
+        <label>ISLES OF SCILLY</label>
+    </customValue>
+    <customValue>
+        <fullName>ISLINGTON</fullName>
+        <default>false</default>
+        <label>ISLINGTON</label>
+    </customValue>
+    <customValue>
+        <fullName>KENSINGTON AND CHELSEA</fullName>
+        <default>false</default>
+        <label>KENSINGTON AND CHELSEA</label>
+    </customValue>
+    <customValue>
+        <fullName>KENT</fullName>
+        <default>false</default>
+        <label>KENT</label>
+    </customValue>
+    <customValue>
+        <fullName>KINGSTON UPON HULL CTY OF</fullName>
+        <default>false</default>
+        <label>KINGSTON UPON HULL CTY OF</label>
+    </customValue>
+    <customValue>
+        <fullName>KINGSTON UPON THAMES</fullName>
+        <default>false</default>
+        <label>KINGSTON UPON THAMES</label>
+    </customValue>
+    <customValue>
+        <fullName>KIRKLEES</fullName>
+        <default>false</default>
+        <label>KIRKLEES</label>
+    </customValue>
+    <customValue>
+        <fullName>KNOWSLEY</fullName>
+        <default>false</default>
+        <label>KNOWSLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>LAMBETH</fullName>
+        <default>false</default>
+        <label>LAMBETH</label>
+    </customValue>
+    <customValue>
+        <fullName>LANCASHIRE</fullName>
+        <default>false</default>
+        <label>LANCASHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>LEEDS</fullName>
+        <default>false</default>
+        <label>LEEDS</label>
+    </customValue>
+    <customValue>
+        <fullName>LEICESTER CITY</fullName>
+        <default>false</default>
+        <label>LEICESTER CITY</label>
+    </customValue>
+    <customValue>
+        <fullName>LEICESTERSHIRE</fullName>
+        <default>false</default>
+        <label>LEICESTERSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>LEWISHAM</fullName>
+        <default>false</default>
+        <label>LEWISHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>LINCOLNSHIRE</fullName>
+        <default>false</default>
+        <label>LINCOLNSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>LIVERPOOL</fullName>
+        <default>false</default>
+        <label>LIVERPOOL</label>
+    </customValue>
+    <customValue>
+        <fullName>LUTON</fullName>
+        <default>false</default>
+        <label>LUTON</label>
+    </customValue>
+    <customValue>
+        <fullName>MANCHESTER</fullName>
+        <default>false</default>
+        <label>MANCHESTER</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDWAY</fullName>
+        <default>false</default>
+        <label>MEDWAY</label>
+    </customValue>
+    <customValue>
+        <fullName>MERTON</fullName>
+        <default>false</default>
+        <label>MERTON</label>
+    </customValue>
+    <customValue>
+        <fullName>MIDDLESBROUGH</fullName>
+        <default>false</default>
+        <label>MIDDLESBROUGH</label>
+    </customValue>
+    <customValue>
+        <fullName>MILTON KEYNES</fullName>
+        <default>false</default>
+        <label>MILTON KEYNES</label>
+    </customValue>
+    <customValue>
+        <fullName>NEWCASTLE UPON TYNE</fullName>
+        <default>false</default>
+        <label>NEWCASTLE UPON TYNE</label>
+    </customValue>
+    <customValue>
+        <fullName>NEWHAM</fullName>
+        <default>false</default>
+        <label>NEWHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>NORFOLK</fullName>
+        <default>false</default>
+        <label>NORFOLK</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTH EAST LINCOLNSHIRE</fullName>
+        <default>false</default>
+        <label>NORTH EAST LINCOLNSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTH LINCOLNSHIRE</fullName>
+        <default>false</default>
+        <label>NORTH LINCOLNSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTH SOMERSET</fullName>
+        <default>false</default>
+        <label>NORTH SOMERSET</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTH TYNESIDE</fullName>
+        <default>false</default>
+        <label>NORTH TYNESIDE</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTH YORKSHIRE</fullName>
+        <default>false</default>
+        <label>NORTH YORKSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTHAMPTONSHIRE</fullName>
+        <default>false</default>
+        <label>NORTHAMPTONSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>NORTHUMBERLAND</fullName>
+        <default>false</default>
+        <label>NORTHUMBERLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>NOTTINGHAM, CITY OF</fullName>
+        <default>false</default>
+        <label>NOTTINGHAM, CITY OF</label>
+    </customValue>
+    <customValue>
+        <fullName>NOTTINGHAMSHIRE</fullName>
+        <default>false</default>
+        <label>NOTTINGHAMSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>OLDHAM</fullName>
+        <default>false</default>
+        <label>OLDHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>OXFORDSHIRE</fullName>
+        <default>false</default>
+        <label>OXFORDSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>PETERBOROUGH, CITY OF</fullName>
+        <default>false</default>
+        <label>PETERBOROUGH, CITY OF</label>
+    </customValue>
+    <customValue>
+        <fullName>PLYMOUTH, CITY OF</fullName>
+        <default>false</default>
+        <label>PLYMOUTH, CITY OF</label>
+    </customValue>
+    <customValue>
+        <fullName>POOLE</fullName>
+        <default>false</default>
+        <label>POOLE</label>
+    </customValue>
+    <customValue>
+        <fullName>PORTSMOUTH</fullName>
+        <default>false</default>
+        <label>PORTSMOUTH</label>
+    </customValue>
+    <customValue>
+        <fullName>READING</fullName>
+        <default>false</default>
+        <label>READING</label>
+    </customValue>
+    <customValue>
+        <fullName>REDBRIDGE</fullName>
+        <default>false</default>
+        <label>REDBRIDGE</label>
+    </customValue>
+    <customValue>
+        <fullName>REDCAR AND CLEVELAND</fullName>
+        <default>false</default>
+        <label>REDCAR AND CLEVELAND</label>
+    </customValue>
+    <customValue>
+        <fullName>RICHMOND UPON THAMES</fullName>
+        <default>false</default>
+        <label>RICHMOND UPON THAMES</label>
+    </customValue>
+    <customValue>
+        <fullName>ROCHDALE</fullName>
+        <default>false</default>
+        <label>ROCHDALE</label>
+    </customValue>
+    <customValue>
+        <fullName>ROTHERHAM</fullName>
+        <default>false</default>
+        <label>ROTHERHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>RUTLAND</fullName>
+        <default>false</default>
+        <label>RUTLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>SALFORD</fullName>
+        <default>false</default>
+        <label>SALFORD</label>
+    </customValue>
+    <customValue>
+        <fullName>SANDWELL</fullName>
+        <default>false</default>
+        <label>SANDWELL</label>
+    </customValue>
+    <customValue>
+        <fullName>SEFTON</fullName>
+        <default>false</default>
+        <label>SEFTON</label>
+    </customValue>
+    <customValue>
+        <fullName>SHEFFIELD</fullName>
+        <default>false</default>
+        <label>SHEFFIELD</label>
+    </customValue>
+    <customValue>
+        <fullName>SHROPSHIRE</fullName>
+        <default>false</default>
+        <label>SHROPSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>SLOUGH</fullName>
+        <default>false</default>
+        <label>SLOUGH</label>
+    </customValue>
+    <customValue>
+        <fullName>SOLIHULL</fullName>
+        <default>false</default>
+        <label>SOLIHULL</label>
+    </customValue>
+    <customValue>
+        <fullName>SOMERSET</fullName>
+        <default>false</default>
+        <label>SOMERSET</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTH GLOUCESTERSHIRE</fullName>
+        <default>false</default>
+        <label>SOUTH GLOUCESTERSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTH TYNESIDE</fullName>
+        <default>false</default>
+        <label>SOUTH TYNESIDE</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTHAMPTON</fullName>
+        <default>false</default>
+        <label>SOUTHAMPTON</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTHEND-ON-SEA</fullName>
+        <default>false</default>
+        <label>SOUTHEND-ON-SEA</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTHWARK</fullName>
+        <default>false</default>
+        <label>SOUTHWARK</label>
+    </customValue>
+    <customValue>
+        <fullName>ST HELENS</fullName>
+        <default>false</default>
+        <label>ST HELENS</label>
+    </customValue>
+    <customValue>
+        <fullName>STAFFORDSHIRE</fullName>
+        <default>false</default>
+        <label>STAFFORDSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>STOCKPORT</fullName>
+        <default>false</default>
+        <label>STOCKPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>STOCKTON-ON-TEES</fullName>
+        <default>false</default>
+        <label>STOCKTON-ON-TEES</label>
+    </customValue>
+    <customValue>
+        <fullName>STOKE-ON-TRENT</fullName>
+        <default>false</default>
+        <label>STOKE-ON-TRENT</label>
+    </customValue>
+    <customValue>
+        <fullName>SUFFOLK</fullName>
+        <default>false</default>
+        <label>SUFFOLK</label>
+    </customValue>
+    <customValue>
+        <fullName>SUNDERLAND</fullName>
+        <default>false</default>
+        <label>SUNDERLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>SURREY</fullName>
+        <default>false</default>
+        <label>SURREY</label>
+    </customValue>
+    <customValue>
+        <fullName>SUTTON</fullName>
+        <default>false</default>
+        <label>SUTTON</label>
+    </customValue>
+    <customValue>
+        <fullName>SWINDON</fullName>
+        <default>false</default>
+        <label>SWINDON</label>
+    </customValue>
+    <customValue>
+        <fullName>TAMESIDE</fullName>
+        <default>false</default>
+        <label>TAMESIDE</label>
+    </customValue>
+    <customValue>
+        <fullName>TELFORD AND WREKIN</fullName>
+        <default>false</default>
+        <label>TELFORD AND WREKIN</label>
+    </customValue>
+    <customValue>
+        <fullName>THURROCK</fullName>
+        <default>false</default>
+        <label>THURROCK</label>
+    </customValue>
+    <customValue>
+        <fullName>TORBAY</fullName>
+        <default>false</default>
+        <label>TORBAY</label>
+    </customValue>
+    <customValue>
+        <fullName>TOWER HAMLETS</fullName>
+        <default>false</default>
+        <label>TOWER HAMLETS</label>
+    </customValue>
+    <customValue>
+        <fullName>TRAFFORD</fullName>
+        <default>false</default>
+        <label>TRAFFORD</label>
+    </customValue>
+    <customValue>
+        <fullName>WAKEFIELD</fullName>
+        <default>false</default>
+        <label>WAKEFIELD</label>
+    </customValue>
+    <customValue>
+        <fullName>WALSALL</fullName>
+        <default>false</default>
+        <label>WALSALL</label>
+    </customValue>
+    <customValue>
+        <fullName>WALTHAM FOREST</fullName>
+        <default>false</default>
+        <label>WALTHAM FOREST</label>
+    </customValue>
+    <customValue>
+        <fullName>WANDSWORTH</fullName>
+        <default>false</default>
+        <label>WANDSWORTH</label>
+    </customValue>
+    <customValue>
+        <fullName>WARRINGTON</fullName>
+        <default>false</default>
+        <label>WARRINGTON</label>
+    </customValue>
+    <customValue>
+        <fullName>WARWICKSHIRE</fullName>
+        <default>false</default>
+        <label>WARWICKSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>WEST BERKSHIRE</fullName>
+        <default>false</default>
+        <label>WEST BERKSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>WEST SUSSEX</fullName>
+        <default>false</default>
+        <label>WEST SUSSEX</label>
+    </customValue>
+    <customValue>
+        <fullName>WESTMINSTER</fullName>
+        <default>false</default>
+        <label>WESTMINSTER</label>
+    </customValue>
+    <customValue>
+        <fullName>WIGAN</fullName>
+        <default>false</default>
+        <label>WIGAN</label>
+    </customValue>
+    <customValue>
+        <fullName>WILTSHIRE</fullName>
+        <default>false</default>
+        <label>WILTSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>WINDSOR AND MAIDENHEAD</fullName>
+        <default>false</default>
+        <label>WINDSOR AND MAIDENHEAD</label>
+    </customValue>
+    <customValue>
+        <fullName>WIRRAL</fullName>
+        <default>false</default>
+        <label>WIRRAL</label>
+    </customValue>
+    <customValue>
+        <fullName>WOKINGHAM</fullName>
+        <default>false</default>
+        <label>WOKINGHAM</label>
+    </customValue>
+    <customValue>
+        <fullName>WOLVERHAMPTON CITY COUNCL</fullName>
+        <default>false</default>
+        <label>WOLVERHAMPTON CITY COUNCL</label>
+    </customValue>
+    <customValue>
+        <fullName>WORCESTERSHIRE</fullName>
+        <default>false</default>
+        <label>WORCESTERSHIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>YORK</fullName>
+        <default>false</default>
+        <label>YORK</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>OTHER</label>
+    </customValue>
+    <masterLabel>LEA/Borough</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

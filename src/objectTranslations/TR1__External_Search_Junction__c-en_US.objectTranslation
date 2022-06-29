@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Composite Key --></label>
+        <name>TR1__CompositeKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Search Result --></label>
+        <name>TR1__External_Search_Result__c</name>
+        <relationshipLabel><!-- External Search Junction --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Search Status --></label>
+        <name>TR1__External_Search_Status__c</name>
+        <relationshipLabel><!-- External Search Junction --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

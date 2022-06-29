@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount Left --></label>
+        <name>TR1__Amount_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>TR1__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>TR1__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Date --></label>
+        <name>TR1__Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Reason --></label>
+        <name>TR1__PO_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>TR1__Timesheet__c</name>
+        <relationshipLabel><!-- Purchase Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Spend --></label>
+        <name>TR1__Total_Spend__c</name>
+    </fields>
+</CustomObjectTranslation>

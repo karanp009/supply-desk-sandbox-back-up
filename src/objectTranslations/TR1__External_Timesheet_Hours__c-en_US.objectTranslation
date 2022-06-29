@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__Closing_Report__c</name>
+        <relationshipLabel><!-- Timesheet Uploads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Double Time Hours --></label>
+        <name>TR1__Double_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Timesheet Uploads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overtime Hours --></label>
+        <name>TR1__Overtime_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regular Hours --></label>
+        <name>TR1__Regular_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week Ending Date --></label>
+        <name>TR1__Week_Ending_Date__c</name>
+    </fields>
+</CustomObjectTranslation>

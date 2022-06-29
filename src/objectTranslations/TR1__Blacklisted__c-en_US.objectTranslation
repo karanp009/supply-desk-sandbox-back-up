@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Candidate --></label>
+        <name>TR1__Candidate__c</name>
+        <relationshipLabel><!-- Blacklisted --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>TR1__Company__c</name>
+        <relationshipLabel><!-- Blacklisted --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason For Blacklist --></label>
+        <name>TR1__Reason_For_Blacklist__c</name>
+    </fields>
+</CustomObjectTranslation>

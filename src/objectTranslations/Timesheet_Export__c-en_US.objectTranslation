@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timesheet Export</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timesheet Exports</value>
+    </caseValues>
+    <layouts>
+        <layout>Timesheet Export Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Export_Lightening --></label>
+        <name>Export_Lightening</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Report --></label>
+        <name>Report</name>
+    </webLinks>
+</CustomObjectTranslation>

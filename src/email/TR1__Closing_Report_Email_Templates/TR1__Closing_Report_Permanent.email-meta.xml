@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for permanent closing reports.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>Closing Report - Permanent</name>
+    <style>newsletter</style>
+    <subject>Permanent Closing Report - {!TR1__Closing_Report__c.TR1__Person_Placed__c} at  {!TR1__Closing_Report__c.TR1__Account__c}</subject>
+    <textOnly>PERMANENT CLOSING REPORT
+
+{!TR1__Closing_Report__c.Name}
+https://na12.salesforce.com/{!TR1__Closing_Report__c.Id}
+
+Details
+
+{!TR1__Closing_Report__c.TR1__Account__c}
+{!TR1__Closing_Report__c.TR1__Job__c}
+{!TR1__Closing_Report__c.TR1__Person_Placed__c}
+Salary: {!TR1__Closing_Report__c.TR1__Salary__c}
+Fee %: {!TR1__Closing_Report__c.TR1__Fee_Percentage__c}
+Administrative Fee: {!TR1__Closing_Report__c.TR1__Administrative_Fee_Amount__c}
+Discount Amount: {!TR1__Closing_Report__c.TR1__Discount_Amount__c}
+Adjusted Fee Amount: {!TR1__Closing_Report__c.TR1__Adjusted_Fee_Amount__c}
+Gross Profit Splits
+
+{!TR1__Closing_Report__c.TR1__Job_Credit__c}: {!TR1__Closing_Report__c.TR1__Job_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Candidate_Credit__c}: {!TR1__Closing_Report__c.TR1__Candidate_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Marketing_Credit__c}: {!TR1__Closing_Report__c.TR1__Marketing_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Other_Credit__c}: {!TR1__Closing_Report__c.TR1__Other_GP_Amount__c}
+{!TR1__Closing_Report__c.TR1__Other2_Credit__c}: {!TR1__Closing_Report__c.TR1__Other2_GP_Amount__c}
+Billing Information
+
+Start Date: {!TR1__Closing_Report__c.TR1__Start_Date__c}
+Booking Date: {!TR1__Closing_Report__c.TR1__Booking_Date__c}
+Invoice Date: {!TR1__Closing_Report__c.TR1__Invoice_Date__c}
+Payment Terms: {!TR1__Closing_Report__c.TR1__Payment_Terms__c}
+Internal Billing Notes
+
+{!TR1__Closing_Report__c.TR1__Internal_Billing_Notes__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

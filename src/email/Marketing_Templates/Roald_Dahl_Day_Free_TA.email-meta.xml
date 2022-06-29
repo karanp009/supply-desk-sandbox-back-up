@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Roald Dahl Day Free TA</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Roald_Dahl_Day_Free_TA</letterhead>
+    <name>Roald Dahl Day Free TA</name>
+    <style>freeForm</style>
+    <subject>Celebrate Roald Dahl Day: Book a reading TA for the day for free!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+To celebrate Roald Dahl Day next Thursday and our new reading intervention programme, Love to Read, we are offering your school the opportunity to book a volunteer Love to Read trained Teaching Assistant for one day between 10th - 24th September for FREE*.
+
+
+‘‘I have a passion for teaching kids to become readers, to become comfortable with a book, not daunted. Books shouldn’t be daunting, they should be funny, exciting and wonderful.” Roald Dahl
+
+
+
+
+At Supply Desk, we understand the importance of teaching reading. One in five school aged children (20%) are unable to read and our Love to Read programme was developed to address this. The programme is designed to boost pupil progress and reading ages by up to 2 years with the support of a dedicated Love to Read trained tutor working with children on a weekly basis.
+
+September is the start of the new academic year and the birthday of our favourite children&apos;s author, Roald Dahl. To honour this, we&apos;re offering schools a volunteer Teaching Assistant, ready to give their time to help support reading in your school. Between the 10th and 24th September, book one of our dedicated reading Teaching Assistant&apos;s for one day at no cost.
+
+To book your FREE reading TA contact your local Supply Desk branch - click here for contact details.
+
+Kind Regards,
+
+Consultant Name
+
+Contact Details
+
+*Terms and conditions apply. Maximum of one volunteer Teaching Assistant per school, for one day between 10th and 24th September only. No alternatives offered. Subject to availability. Offer expires 24th September 2018.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

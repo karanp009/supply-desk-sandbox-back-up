@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CloneRate --></label>
+        <name>TR1__CloneRate</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ACA Fee Percentage --></label>
+        <name>TR1__ACA_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACA Fee Value --></label>
+        <name>TR1__ACA_Fee_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TR1__Account__c</name>
+        <relationshipLabel><!-- Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>TR1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Fee Percentage --></label>
+        <name>TR1__Admin_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Fee Value --></label>
+        <name>TR1__Admin_Fee_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Inclusive --></label>
+        <name>TR1__All_Inclusive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>TR1__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- COE/Pension Default Value --></label>
+        <name>TR1__COE_Pension_Default_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- COE/Pension Percentage --></label>
+        <name>TR1__COE_Pension_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- COE/Pension Value --></label>
+        <name>TR1__COE_Pension_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloned From --></label>
+        <name>TR1__Cloned_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Report --></label>
+        <name>TR1__ClosingReport__c</name>
+        <relationshipLabel><!-- Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Valid From --></label>
+        <name>TR1__Date_Valid_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Valid To --></label>
+        <name>TR1__Date_Valid_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>TR1__Expense_Report__c</name>
+        <relationshipLabel><!-- Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inclusive Rate --></label>
+        <name>TR1__Inclusive_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel><!-- Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Margin Percentage --></label>
+        <name>TR1__Margin_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin Value --></label>
+        <name>TR1__Margin_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Billable Amount --></label>
+        <name>TR1__Maximum_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Pay Rate --></label>
+        <name>TR1__Maximum_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Pay Rate --></label>
+        <name>TR1__Minimum_Pay_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRSI/NI Percentage --></label>
+        <name>TR1__PRSI_NI_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRSI/NI Value --></label>
+        <name>TR1__PRSI_NI_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate (Bill) --></label>
+        <name>TR1__RateBill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate (Pay) --></label>
+        <name>TR1__RatePay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Type Name Hidden --></label>
+        <name>TR1__Rate_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Type --></label>
+        <name>TR1__TimeType__c</name>
+        <relationshipLabel><!-- Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timesheet --></label>
+        <name>TR1__Timesheet__c</name>
+        <relationshipLabel><!-- Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>TR1__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- VMS Fee Percentage --></label>
+        <name>TR1__VMS_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- VMS Fee Value --></label>
+        <name>TR1__VMS_Fee_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Time Default Value --></label>
+        <name>TR1__Working_Time_Default_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Time Percentage --></label>
+        <name>TR1__Working_Time_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Time Value --></label>
+        <name>TR1__Working_Time_Value__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Account Rate --></label>
+        <name>TR1__AccountRate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closing Report Rate --></label>
+        <name>TR1__Closing_Report_Rate</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Acc:11/20:W-008786 Created For Tie Rates To Expenses. --></description>
+        <label><!-- Expense Rate --></label>
+        <name>TR1__Expense_Rate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job Rate --></label>
+        <name>TR1__Job_Rate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Timesheet Rate --></label>
+        <name>TR1__Timesheet_Rate</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Edit_Via_VF_Page --></label>
+        <name>TR1__Edit_Via_VF_Page</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Rate --></label>
+        <name>TR1__New_Rate</name>
+    </webLinks>
+</CustomObjectTranslation>

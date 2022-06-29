@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email with attached consent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Pregnancy Disclosure Letter</name>
+    <style>freeForm</style>
+    <subject>Supply Desk Risk Assessment for Pregnant Candidate - attached</subject>
+    <textOnly>Dear {!Contact.FirstName}
+
+Please find attached a consent form to be completed and returned.
+
+Kind Regards
+
+
+{!Contact.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

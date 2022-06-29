@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vacancy Bundle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vacancy Bundles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active? --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <name>Bundle__c</name>
+        <relationshipLabel><!-- Vacancy Bundles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>Job__c</name>
+        <relationshipLabel><!-- Vacancy Bundles --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Bundle Job Junction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select bundle associated to the client which is on vacancy --></errorMessage>
+        <name>Bundle_and_Vacancy_should_have_same_acco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A bundle can be assigned to temp job only --></errorMessage>
+        <name>Only_Temp_Jobs_can_have_have_bundle</name>
+    </validationRules>
+</CustomObjectTranslation>

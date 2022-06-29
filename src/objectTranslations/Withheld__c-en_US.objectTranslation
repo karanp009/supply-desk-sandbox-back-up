@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Withheld</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Withheld</value>
+    </caseValues>
+    <fields>
+        <label><!-- Candidate --></label>
+        <name>Candidate__c</name>
+        <relationshipLabel><!-- Withheld --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Withheld Contact --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Reported --></label>
+        <name>Date_Reported__c</name>
+    </fields>
+    <fields>
+        <label><!-- School --></label>
+        <name>School__c</name>
+        <relationshipLabel><!-- Withheld --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Withheld Banner --></label>
+        <name>Withheld_Banner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withheld Reason --></label>
+        <name>Withheld_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- A = candidate request
+B = school request
+C = safeguarding issue raised
+D = DNC/File Out candidate --></help>
+        <label><!-- Withheld Type --></label>
+        <name>Withheld_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Withheld Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Incident Information --></label>
+            <section>Incident Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Withheld Information --></label>
+            <section>Withheld Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

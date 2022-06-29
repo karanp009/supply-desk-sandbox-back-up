@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>tdc_tsw__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optout --></label>
+        <name>tdc_tsw__Optout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Read --></label>
+        <name>tdc_tsw__Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reply --></label>
+        <name>tdc_tsw__Reply__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>tdc_tsw__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

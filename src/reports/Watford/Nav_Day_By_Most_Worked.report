@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Person_Placed__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Total_Projected_Days__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Email</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Sales_Consultant_Credit__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Navjit Panesar</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Nav - Days By Most Worked</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>People_w_Closing_Reports_and_CRS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Total_Projected_Days__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact.TR1__Closes__r.Closing_Report_Schedules__r$Schedule_Date__c</dateColumn>
+        <endDate>2018-07-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
+    </timeFrameFilter>
+</Report>

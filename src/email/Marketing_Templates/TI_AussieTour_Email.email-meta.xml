@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Get Ready for the Job Interview of a Lifetime!</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TI_CanadaTour_Email</letterhead>
+    <name>TI_AussieTour_Email</name>
+    <style>freeForm</style>
+    <subject>Get Ready for the Job Interview of a Lifetime!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+We are looking for outstanding teachers and teaching graduates in Australia who are interested in teaching in the UK.
+
+Register your interest today in a FREE UK teaching taster tour, including return flights and accommodation, and we&apos;ll guarantee you a teaching job in a UK school at the end of it.
+
+Interested?
+
+Successful teacher applicants will be flown to London. Teachers will take part in professional development workshops, before spending time observing, shadowing, team-teaching and meeting the staff in two of our best schools in the area.
+
+During the trip teachers are offered a guaranteed teaching job at the school of their choice – all whilst spending time getting to know the staff, students, school culture and highlights of the local area, so you can be sure it really is your perfect placement.
+
+Watch our video
+
+Click here to watch this short video and see what past participants had to say about their experience on a Teach In UK Tour.
+
+
+
+
+Register your interest today
+
+
+
+Visit our website for more information and to register your interest in a place on the tour.
+
+
+
+We would love to discuss these opportunities with you in more detail, should you have questions or require any more information.
+
+
+
+Please get in touch with me on 0449790334 or email Gemma.Yates@teachin.co.uk
+
+
+Looking forward to getting you on your way to teaching overseas!
+
+
+
+Kind Regards,
+
+
+
+Gemma Yates
+
+Group Overseas Manager</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

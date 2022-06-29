@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Interval --></label>
+        <name>IS2_TGH__Interval__c</name>
+    </fields>
+    <fields>
+        <label><!-- StageEnabledLong --></label>
+        <name>IS2_TGH__StageEnabledLong__c</name>
+    </fields>
+    <fields>
+        <label><!-- StageEnabled --></label>
+        <name>IS2_TGH__StageEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- StageNameLong --></label>
+        <name>IS2_TGH__StageNameLong__c</name>
+    </fields>
+    <fields>
+        <label><!-- StageName --></label>
+        <name>IS2_TGH__StageName__c</name>
+    </fields>
+</CustomObjectTranslation>

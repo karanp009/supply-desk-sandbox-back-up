@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shortlist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shortlists</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- RC My Applications --></label>
+        <name>RC_My_Applications</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Application --></label>
+        <name>TR1__NewApplication</name>
+    </fieldSets>
+    <fields>
+        <label>Client</label>
+        <name>TR1__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Email --></label>
+        <name>TR1__Applicant_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Mobile --></label>
+        <name>TR1__Applicant_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Owner --></label>
+        <name>TR1__Applicant_Owner__c</name>
+        <relationshipLabel>Shortlist (Applicant Owner)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applicant Phone --></label>
+        <name>TR1__Applicant_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>TR1__Applicant__c</name>
+        <relationshipLabel>Shortlists</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Summary --></label>
+        <name>TR1__Candidate_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Board Source --></label>
+        <name>TR1__Job_Board_Source__c</name>
+        <picklistValues>
+            <masterLabel>ACRP</masterLabel>
+            <translation><!-- ACRP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad</masterLabel>
+            <translation><!-- Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bing Search</masterLabel>
+            <translation><!-- Bing Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careerbuilder</masterLabel>
+            <translation><!-- Careerbuilder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Website</masterLabel>
+            <translation><!-- Company Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIA</masterLabel>
+            <translation><!-- DIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DICE</masterLabel>
+            <translation><!-- DICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Search</masterLabel>
+            <translation><!-- Google Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISPE</masterLabel>
+            <translation><!-- ISPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indeed</masterLabel>
+            <translation><!-- Indeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Fair</masterLabel>
+            <translation><!-- Job Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster</masterLabel>
+            <translation><!-- Monster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NACCB</masterLabel>
+            <translation><!-- NACCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net-Temps</masterLabel>
+            <translation><!-- Net-Temps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAPS</masterLabel>
+            <translation><!-- RAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCDM</masterLabel>
+            <translation><!-- SCDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SoCRA</masterLabel>
+            <translation><!-- SoCRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yahoo Search</masterLabel>
+            <translation><!-- Yahoo Search --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vacancy Contact Email</label>
+        <name>TR1__Job_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Contact First Name</label>
+        <name>TR1__Job_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Contact Phone</label>
+        <name>TR1__Job_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Contact</label>
+        <name>TR1__Job_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reporting --></label>
+        <name>TR1__Job_Reporting__c</name>
+        <relationshipLabel>Shortlists</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vacancy</label>
+        <name>TR1__Job__c</name>
+        <relationshipLabel>Shortlist</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vacancy Client Owner</label>
+        <name>TR1__Job_s_Account_Owner__c</name>
+        <relationshipLabel>Shortlist (Vacancy Client Owner</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Days in Stage --></label>
+        <name>TR1__Number_of_Days_in_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Discussed --></label>
+        <name>TR1__Opportunity_Discussed__c</name>
+        <relationshipLabel>Shortlists</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rjt --></label>
+        <name>TR1__Reject_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notes --></label>
+        <name>TR1__Rejection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Notification --></label>
+        <name>TR1__Rejection_Notification__c</name>
+        <picklistValues>
+            <masterLabel>Automated Rejection Email</masterLabel>
+            <translation><!-- Automated Rejection Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Owner Will Notify</masterLabel>
+            <translation><!-- Contact Owner Will Notify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Owner Will Notify</masterLabel>
+            <translation><!-- Job Owner Will Notify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TR1__Source__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Board</masterLabel>
+            <translation><!-- Job Board --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage End Date --></label>
+        <name>TR1__Stage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Start Date --></label>
+        <name>TR1__Stage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>TR1__Stage__c</name>
+    </fields>
+    <fields>
+        <label>Vacancy Manager Stage Status</label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- S A E --></label>
+        <name>TR1__Submit_And_Email_Action__c</name>
+    </fields>
+    <nameFieldLabel>Application Name</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Application --></label>
+        <name>TR1__Application</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Mass_Reject --></label>
+        <name>TR1__Mass_Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject --></label>
+        <name>TR1__Reject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_And_Email --></label>
+        <name>TR1__Send_And_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_Without_Email --></label>
+        <name>TR1__Submit_Without_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

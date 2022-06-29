@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CandidateAvailabilityTrigger --></label>
+        <name>TR1__CandidateAvailabilityTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClosingReportScheduleUpdate --></label>
+        <name>TR1__ClosingReportScheduleUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClosingReportTrigger --></label>
+        <name>TR1__ClosingReportTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimesheetDetailTrigger --></label>
+        <name>TR1__TimesheetDetailTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- VacancyD2DTrigger --></label>
+        <name>TR1__VacancyD2DTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- VacancyTrigger --></label>
+        <name>TR1__VacancyTrigger__c</name>
+    </fields>
+</CustomObjectTranslation>

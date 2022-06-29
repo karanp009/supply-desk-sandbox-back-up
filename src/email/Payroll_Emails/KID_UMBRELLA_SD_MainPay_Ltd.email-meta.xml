@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>KID-UMBRELLA - SD MainPay Ltd</name>
+    <style>freeForm</style>
+    <subject>Key Information Document ‒ MainPay Ltd</subject>
+    <textOnly>Key Information Document ‒ MainPay Ltd (Umbrella Company)
+
+This document sets out key information about your relationship with us and the umbrella company or other intermediary through which you may choose to be engaged, including details about pay, holiday entitlement and other benefits.
+
+
+The Employment Agency Standards (EAS) Inspectorate is the government authority responsible for the enforcement of certain agency worker rights. You can raise a concern with them directly on 020 7215 5000 or through the ACAS helpline on 0300 123 1100, Monday to Friday, 8am to 6pm.
+
+General Information
+
+Name of employment business:
+
+Supply Desk Limited
+
+Name of umbrella company:
+
+MainPay Ltd
+
+Your employer:
+
+MainPay Ltd
+
+Type of contract you will be engaged under:
+
+Employment Contract
+
+Who will be responsible for paying you:
+
+MainPay Ltd
+
+How often the umbrella company and you will be paid:
+
+Weekly
+
+Umbrella company pay information
+
+If you choose to be employed by an umbrella company, we will still be finding you assignments.
+
+The money earned on your assignments will be transferred to the umbrella company as part of their income. They will then calculate your tax and other deductions and pay you for the work undertaken. All the deductions made which affect your wage are listed below. If you have any queries about these please contact us.
+
+
+Your payslip may show you as an employee of the umbrella company listed below.
+
+
+Name of umbrella company:
+
+MainPay Ltd
+
+Any business connection between the umbrella company or other intermediary, the employment business and the person responsible for paying you:
+
+None
+
+The minimum gross rate of pay that we will transfer to the umbrella company:
+
+£332.40 per week
+
+Deductions from umbrella income required by law:
+
+Employer&apos;s National Insurance
+
+Apprenticeship Levy
+
+Any other deductions from umbrella income:
+
+Umbrella fee -  4% of gross pay (capped at £23.00 per week)
+
+Employer Pension Contributions (if applicable)
+
+
+
+
+Expected or minimum rate of pay to you from the umbrella:
+
+Not less than National Minimum Wage based on age category
+
+Deductions from your wage required by law:
+
+PAYE Tax
+
+Employee National Insurance contributions
+
+Any other deductions or costs taken from your wage:
+
+Employee Pension Contributions
+
+Student/Postgraduate Loan
+
+Any fees for goods or services:
+
+None
+
+Holiday entitlement and pay:
+
+12.07% over and above your basic rate of pay
+
+Additional benefits:
+
+Employee Benefit Scheme
+
+Example pay
+
+
+Umbrella or other intermediary fees
+
+Worker fees
+
+The gross or minimum amount that we will transfer to the umbrella company:
+
+£332.40 per week
+
+
+Deductions from the umbrella income required by law:
+
+£1.51 Apprenticeship Levy
+
+£18.25 Employer&apos;s NIC
+
+
+
+Any other deductions from umbrella income:
+
+£13.30 Umbrella Margin
+
+
+Example rate of pay to you from the umbrella:
+
+
+
+£299.34
+
+Deductions from your pay required by law:
+
+
+Income tax £12.18
+
+EE NIC         £14.19
+
+
+Any other deductions or costs taken from your pay:
+
+
+None
+
+Any fees for goods or services:
+
+
+None
+
+Example net take home pay:
+
+
+£272.97</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

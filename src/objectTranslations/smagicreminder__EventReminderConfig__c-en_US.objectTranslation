@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Config String --></label>
+        <name>smagicreminder__Config_String__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Name --></label>
+        <name>smagicreminder__Configuration_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>smagicreminder__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMSOptOut --></label>
+        <name>smagicreminder__SMSOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMSSenderId --></label>
+        <name>smagicreminder__SMSSenderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMSText --></label>
+        <name>smagicreminder__SMSText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Name --></label>
+        <name>smagicreminder__Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMS Template --></label>
+        <name>smagicreminder__Template__c</name>
+        <relationshipLabel><!-- Event Reminder Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- onDelete --></label>
+        <name>smagicreminder__onDelete__c</name>
+    </fields>
+</CustomObjectTranslation>

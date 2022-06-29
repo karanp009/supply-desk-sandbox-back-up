@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Candidate_Welcome</letterhead>
+    <name>SD Candidate Welcome</name>
+    <style>freeForm</style>
+    <subject>Welcome to Supply Desk</subject>
+    <textOnly>We are delighted to confirm that you are now cleared for work and would like to welcome you to Supply Desk, the education recruitment specialists.
+
+Now that you are cleared for work, you can give your local branch a ring and inform them of your availability so you can find a job you love!
+
+As starting in a new school is exciting, we thought we&apos;d also remind you to take your DBS certificate and ID to every school.
+
+Kind regards,
+Imogen Parker</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

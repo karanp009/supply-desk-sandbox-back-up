@@ -1,0 +1,313 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span id="docs-internal-guid-322a20ac-ce12-c9ef-d9cd-1908ce4aca68" style="font-family: arial;"><font style=""><p dir="ltr" style="font-size: 12pt; font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="text-align: justify; vertical-align: baseline; white-space: pre-wrap;">{!TR1__Closing_Report__c.CRS_Start_Date_Min__c}Dear </span><font style="text-align: justify;"><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.TR1__Person_Placed_First_Name__c}</span></font><span style="text-align: justify; vertical-align: baseline; white-space: pre-wrap;">,</span></p><p dir="ltr" style="font-size: 12pt; font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;">I am pleased to confirm the details of your temporary assignment as follows:</span></p><p dir="ltr" style="font-size: 12pt; font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="font-weight: 700; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;"><br></span></p><p dir="ltr" style="font-size: 12pt; font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="font-weight: 700; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">Assignment Details (Part A)</span></p><p dir="ltr" style="font-size: 12pt; font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"></p><ul style="font-family: arial;"><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Name of School: <font><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.TR1__Account__c}</span></font></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Location of School:&nbsp;<font><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.Client_Address__c}</span></font><span style="vertical-align: baseline; white-space: pre-wrap;"> </span></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Booking Type:&nbsp;<font><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.Booking_Type__c}</span></font></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Role Type: <font><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.Job_Title__c} </span></font><span style="vertical-align: baseline; white-space: pre-wrap;">(no planning, preparation, assessment or reporting required)</span></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Role Details: {!TR1__Job__c.Subject2__c}, {!TR1__Job__c.Year_Key_Stage__c}</li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Any necessary experience, training or qualifications: {!TR1__Job__c.SEN_Experience__c}, {!TR1__Job__c.SEN_Additional_Experience__c}, {!TR1__Job__c.Skills_Training_Experience__c}</li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Risks to Health and Safety: {!TR1__Closing_Report__c.Health_Safety_Notes__c}</li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Hours of work: {!TR1__Closing_Report__c.Booking_Start_Time__c} - {!TR1__Closing_Report__c.Booking_End_Time__c}</li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Working days: {!TR1__Closing_Report__c.Booking_Day__c} as advised</li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="arial"><span style="font-size: 12pt;">Start Date: </span><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.CRS_Start_Date_Min__c}</span></font></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="arial"><span style="font-size: 12pt;">Anticipated duration: Until </span><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.CRS_End_Date_max__c}</span></font></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">Annual leave entitlement: <span style="white-space: pre-wrap;">28 Days</span></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">The relevant pay rate(s) is/are shown below:</li><ul style="color: rgb(0, 0, 0); font-family: arial;"><li style="color: rgb(0, 0, 0); font-family: arial;"><font style="font-size: 12pt;"><span style="white-space: pre-wrap;">Daily Rate: </span></font><font style=""><span style="white-space: pre-wrap;"><span style="font-size: 12pt;">{!TR1__</span>Cl<span style="font-size: 12pt;">osing_Report__c.Maximum_Day_Pay_Rate__c} which</span></span></font><span style="font-size: 12pt;">&nbsp;includes pay in respect of annual leave of {!TR1__Closing_Report__c.Annual_Leave_Day_Pay_Rate__c}</span></li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font><span style="white-space: pre-wrap;">Half Daily Rate: </span></font><font><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.Maximum_Half_Day_Pay_Rate__c} </span></font><span style="white-space: pre-wrap;">which</span>&nbsp;includes pay in respect of annual leave of {!TR1__Closing_Report__c.Annual_Leave_Half_Day_Pay_Rate__c}</li><li style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font><span style="white-space: pre-wrap;">Hourly Rate: </span></font><font><span style="white-space: pre-wrap;">{!TR1__Closing_Report__c.Maximum_Hour_Pay_Rate__c} </span></font><span style="white-space: pre-wrap;">which</span>&nbsp;includes pay in respect of annual leave of {!TR1__Closing_Report__c.Annual_Leave_Hour_Pay_Rate__c}</li></ul></ul><ul style="font-size: 12pt; font-family: arial;"><li style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">Any expenses payable: No.</font></span></li><li style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">Intervals of payment: weekly in arrears.</font></span></li></ul><div style="font-size: 12pt;"><span style="font-family: arial; font-weight: 700; white-space: pre-wrap; text-decoration-line: underline;">Assignment Details (Part B)</span></div><div style="font-size: 12pt;"><span style="font-family: arial; font-weight: 700; white-space: pre-wrap; text-decoration-line: underline;"><br></span></div><div style="font-size: 12pt;"><p class="MsoBodyText"><b><span style="font-family:&quot;Arial&quot;,sans-serif">Part B : </span>Additional Information
+required under Section 1 Employment rights Act 1996<o:p></o:p></b></p>
+
+<p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+
+<table class="RECtable1" border="1" cellspacing="0" cellpadding="0" style="border-collapse:
+ collapse;border:none;mso-border-alt:solid white .5pt;mso-border-themecolor:
+ background1;mso-border-themetint:153;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt">
+ <tbody><tr>
+  <td width="601" colspan="2" valign="top" style="width:450.8pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:white;mso-background-themecolor:
+  background1;mso-background-themetint:51;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal;mso-yfti-cnfc:
+  1"><b><span style="font-family:&quot;Arial&quot;,sans-serif;
+  color:#191919;mso-themecolor:text1;mso-themetint:230">Particulars for agency
+  worker</span></b><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Name of employment
+  business: <o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">Supply Desk Limited<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Name of candidate:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><font face="Arial, sans-serif" color="#191919" style="background-color: rgb(255, 255, 255);">{!TR1__Closing_Report__c.TR1__Person_Placed__c}</font></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Start date of contract:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="color:#191919;mso-themecolor:text1;
+  mso-themetint:230">As an agency worker, you do not have a period of
+  continuous employment.</span><span style="font-family:&quot;Arial&quot;,sans-serif;
+  color:#191919;mso-themecolor:text1;mso-themetint:230"> The start date of the
+  assignment is shown in Part A.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Day and hours of work:<o:p></o:p></span></p>
+  <p class="MsoListParagraph" align="left" style="margin-left: 36pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">&nbsp;</span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">You will not have normal working
+  hours as an agency worker. Your working hours for this assignment are shown
+  in Part A.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Duration of the
+  contract:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">The assignment is expected to last
+  until the date set out in Part A.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Length of notice the
+  Agency Worker must give and should receive to terminate the contract or assignment<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">Any of you, Supply Desk or the client
+  may terminate the assignment at any time without prior notice or liability.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any other remuneration
+  (apart from pay)<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">None<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Entitlement to sick
+  leave and pay<o:p></o:p></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">(see clause 8 in your
+  contract)<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">You may be eligible for statutory
+  sick pay (SSP) provided that you meets the relevant statutory criteria.<o:p></o:p></span></p>
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">For the purposes of SSP there is one
+  qualifying day per week during the course of an Assignment and that
+  qualifying day shall be the Wednesday in every week.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Entitlement to annual
+  leave<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">You are entitled to paid annual leave
+  which is paid together with your pay entitlement in respect of each
+  assignment as shown in Part A.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Maternity/paternity
+  leave and other paid leave<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">You may be eligible for paid
+  statutory leave provided you meet the relevant statutory criteria.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any other benefits<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">None<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any other paid leave<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">None<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any training:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">None<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any probation period
+  including conditions and duration:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">None<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Pensions and pensions
+  schemes such as automatic enrolment or contractual pensions schemes:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">If you are eligible, you will be
+  enrolled automatically into the occupational <a name="ORIGHIT_27"></a><a name="HIT_27"></a>pension&nbsp;scheme
+  in accordance with the&nbsp;<a name="ORIGHIT_28"></a><a name="HIT_28"></a>Pensions&nbsp;Act 2008. Details of
+  the scheme will be provided when you join the scheme.<span style="background:
+  lightgrey;mso-highlight:lightgrey"><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any collective
+  agreements that apply to the Agency Worker:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">None<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Any information on
+  disciplinary rules and grievance procedures: <o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">Not applicable<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="301" valign="top" style="width:225.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-family: Arial, sans-serif; color: rgb(25, 25, 25);">Work outside of the UK:<o:p></o:p></span></p>
+  </td>
+  <td width="301" valign="top" style="width:225.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.65pt 4.25pt 5.65pt 4.25pt">
+  <p class="MsoBodyText"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#191919;
+  mso-themecolor:text1;mso-themetint:230">Not applicable<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style="font-family:&quot;Arial&quot;,sans-serif"><font size="3">&nbsp;</font></span></p></div><div style=""><font face="Arial, sans-serif"><span style="white-space: pre-wrap;"><br></span></font></div></font></span><span style="font-family: arial; color: rgb(0, 0, 0);"><font face="Arial, sans-serif"><p style="color: rgb(0, 0, 0); font-family: arial;"></p></font></span><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">As this is a daily cover role, you will not be required to carry out any planning, preparation, reporting or assessment. &nbsp;</font></span></p><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif"><br></font></span></p><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">You must take both a form of Photo ID and your most recent DBS certificate with you to this assignment.</font></span></p><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif"><br></font></span></p><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">You are engaged by Supply Desk Limited to work on this assignment on the basis of the Terms of Engagement attached.</font></span></p><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif"><br></font></span></p><p dir="ltr" style="font-family: arial; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">I would like to take this opportunity to wish you well with this temporary assignment. &nbsp;If I can be of any assistance, please do not hesitate to contact me.</font></span></p><p dir="ltr" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif"><br></font></span></p><p dir="ltr" style="color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="text-indent: -24px; caret-color: rgb(0, 0, 0);"><font face="Arial, sans-serif">Please read our attached COVID-19 Safety Policy which applies to this booking.</font></span></p><p dir="ltr" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif"><br></font></span></p><p dir="ltr" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="vertical-align: baseline; white-space: pre-wrap;"><font face="Arial, sans-serif">Yours sincerely,</font></span></p><font face="Arial, sans-serif" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);"><br></font><p dir="ltr" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><span style="white-space: pre-wrap;"><font face="Arial, sans-serif">{!TR1__Closing_Report__c.CreatedBy}</font></span></p><p dir="ltr" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); text-align: left; line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;"><font face="Arial, sans-serif"><font><span style="white-space: pre-wrap;">Supply Desk </span></font><span style="background-color: rgb(255, 255, 255); white-space: pre-wrap;">{!TR1__Closing_Report__c.Branch__c}</span></font></p>]]></td>
+</tr>
+</table>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Billing Company Name --></label>
+        <name>TR1__Billing_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Company Street --></label>
+        <name>TR1__Billing_Company_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>TR1__Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing FirstName --></label>
+        <name>TR1__Billing_FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing LastName --></label>
+        <name>TR1__Billing_LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing PhoneNumber --></label>
+        <name>TR1__Billing_PhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Postal Code --></label>
+        <name>TR1__Billing_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State --></label>
+        <name>TR1__Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Status --></label>
+        <name>TR1__Billing_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimate Number --></label>
+        <name>TR1__Estimate_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>TR1__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Number --></label>
+        <name>TR1__Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Number --></label>
+        <name>TR1__Sales_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Receipt Number --></label>
+        <name>TR1__Sales_Receipt_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>TR1__Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Company Name --></label>
+        <name>TR1__Shipping_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Company Street --></label>
+        <name>TR1__Shipping_Company_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>TR1__Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping FirstName --></label>
+        <name>TR1__Shipping_FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping LastName --></label>
+        <name>TR1__Shipping_LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping PhoneNumber --></label>
+        <name>TR1__Shipping_PhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Postal Code --></label>
+        <name>TR1__Shipping_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State --></label>
+        <name>TR1__Shipping_State__c</name>
+    </fields>
+</CustomObjectTranslation>

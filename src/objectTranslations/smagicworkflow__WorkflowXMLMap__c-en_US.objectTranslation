@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>smagicworkflow__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Name --></label>
+        <name>smagicworkflow__Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 1 --></label>
+        <name>smagicworkflow__Template1__c</name>
+        <relationshipLabel><!-- Workflow XML Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Template 2 --></label>
+        <name>smagicworkflow__Template2__c</name>
+        <relationshipLabel><!-- Workflow XML Configurations (Template2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Config Name --></label>
+        <name>smagicworkflow__XML_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- XML String --></label>
+        <name>smagicworkflow__XML_String__c</name>
+    </fields>
+</CustomObjectTranslation>

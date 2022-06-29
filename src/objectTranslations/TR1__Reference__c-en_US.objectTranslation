@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Areas for Improvement --></label>
+        <name>TR1__Areas_for_Improvement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>TR1__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hire Again --></label>
+        <name>TR1__Hire_Again__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Placed --></label>
+        <name>TR1__Person_Placed__c</name>
+        <relationshipLabel><!-- References --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referee --></label>
+        <name>TR1__Referee__c</name>
+        <relationshipLabel><!-- References (Referee) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>TR1__Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship with Peers/Supervisors --></label>
+        <name>TR1__Relationship_with_Peers_Supervisors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strengths --></label>
+        <name>TR1__Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suitability for Position --></label>
+        <name>TR1__Suitability_for_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Ability --></label>
+        <name>TR1__Technical_Ability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Friend</masterLabel>
+            <translation><!-- Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peer</masterLabel>
+            <translation><!-- Peer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subordinate</masterLabel>
+            <translation><!-- Subordinate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisor</masterLabel>
+            <translation><!-- Supervisor --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

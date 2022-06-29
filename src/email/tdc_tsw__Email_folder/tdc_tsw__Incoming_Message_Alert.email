@@ -1,0 +1,19 @@
+####### Reply Above To Send Outbound #######<br><br>
+<b>Message:</b><br>
+<i> {!tdc_tsw__Message__c.tdc_tsw__Message_Text_New__c}</i>
+<br><br>
+<table border="0">
+ <tr><td colspan="2"><b>Click the hyperlinks to view in Salesforce:<b></td></tr>
+ <tr><td valign="top"><b>Links:</b></td><td
+valign="top">{!tdc_tsw__Message__c.tdc_tsw__Related_Object_Id_URL__c} or <a
+href="https://login.salesforce.com/{!tdc_tsw__Message__c.Id}" target="_blank">Incoming
+Msg</a></td></tr>
+ <tr><td valign="top"><b>Sender:</b></td><td
+valign="top">{!tdc_tsw__Message__c.tdc_tsw__Sender_Name__c}</td></tr>
+ <tr><td valign="top"><b>Message:</b></td><td
+valign="top"><i>{!tdc_tsw__Message__c.tdc_tsw__Message_Text_New__c}</i></td></tr>
+</table>
+<br>
+<b>*** IMPORTANT - DO NOT MODIFY ***</b><br>
+<b>Sender Number:</b>{!tdc_tsw__Message__c.tdc_tsw__Sender_Number__c} <br>
+<b>To Number:</b>{!tdc_tsw__Message__c.tdc_tsw__ToNumber__c}<br>

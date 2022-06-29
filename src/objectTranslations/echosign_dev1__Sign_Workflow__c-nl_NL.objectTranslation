@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Sign Workflow --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Sign Workflow --></value>
+    </caseValues>
+    <fields>
+        <help>Inhoud van Sign-workflow in JSON-tekenreeksindeling</help>
+        <label><!-- Workflow Content --></label>
+        <name>echosign_dev1__Workflow_Content__c</name>
+    </fields>
+    <fields>
+        <help>Aanmaakdatum en -tijd van Sign-workflow</help>
+        <label><!-- Workflow Created Time --></label>
+        <name>echosign_dev1__Workflow_Created_Time__c</name>
+    </fields>
+    <fields>
+        <help>Weergavenaam van workflow</help>
+        <label><!-- Workflow Display Name --></label>
+        <name>echosign_dev1__Workflow_Display_Name__c</name>
+    </fields>
+    <fields>
+        <help>Id van Sign-workflow</help>
+        <label><!-- Workflow Id --></label>
+        <name>echosign_dev1__Workflow_Id__c</name>
+    </fields>
+    <fields>
+        <help>Wijzigingsdatum en -tijd van Sign-workflow</help>
+        <label><!-- Workflow Modified Time --></label>
+        <name>echosign_dev1__Workflow_Modified_Time__c</name>
+    </fields>
+    <fields>
+        <help>Status van Sign-workflow</help>
+        <label><!-- Workflow Status --></label>
+        <name>echosign_dev1__Workflow_Status__c</name>
+        <picklistValues>
+            <masterLabel>ACTIVE</masterLabel>
+            <translation><!-- ACTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRAFT</masterLabel>
+            <translation><!-- DRAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIDDEN</masterLabel>
+            <translation><!-- HIDDEN --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Sign Workflow Name --></nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TI_Registration_Follow_Up_Aus</letterhead>
+    <name>TI_Reg_Email_Aus</name>
+    <style>freeForm</style>
+    <subject>Ready to start your UK Teaching Adventure?</subject>
+    <textOnly>Dear {!Contact.Name},
+
+
+Thank you for registering your interest in teaching in the UK. With a free flight, guaranteed teaching jobs across England and interviews with UK Principal’s before you have even left your home country, there is no better time to pack your bags &amp; explore Europe during your school holidays.
+
+
+
+
+Free flights
+Access to work in locations across the UK
+Continued Professional Development
+Interview with UK Principals in various locations across Australia
+
+
+
+Competition Time!
+
+
+We are currently running a competition to win a weekend trip for two to Dublin, Ireland.
+
+
+
+When you register with Teach In, and complete a 1 year teaching contract, you will automatically be entered into the draw to win! Simple. You&apos;re already half way towards that pint of Guinness!
+
+
+
+
+
+
+See what other Aussie teachers have to say about us!
+
+
+
+
+Check out this short video to hear what other Australian teachers have to say about their UK teaching experience with Teach In.
+
+
+
+
+Want to know more?
+
+
+
+Our website is packed full of the all information you need if you’re considering teaching in the UK. Check out the links below:
+
+
+
+
+International Teaching
+Where to live in the UK
+Types of work available
+UK Visa Information
+UK School Terms
+
+
+
+
+Let’s talk!
+
+
+We would love to discuss these opportunities with you in more detail.
+
+
+
+Please get in touch with me on 0449790334 or email gemma.yates@teachin.co.uk
+
+
+Looking forward to getting you on your way to teaching overseas!
+
+
+Kind Regards,
+
+
+Gemma</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

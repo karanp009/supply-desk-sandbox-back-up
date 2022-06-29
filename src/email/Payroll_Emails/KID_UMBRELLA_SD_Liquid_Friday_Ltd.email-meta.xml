@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>KID-UMBRELLA - SD Liquid Friday Ltd</name>
+    <style>freeForm</style>
+    <subject>Key Information Document ‒ Liquid Friday Ltd</subject>
+    <textOnly>Key Information Document ‒ Liquid Friday Ltd (Umbrella Company)
+
+This document sets out key information about your relationship with us and the umbrella company or other intermediary through which you may choose to be engaged, including details about pay, holiday entitlement and other benefits.
+
+
+The Employment Agency Standards (EAS) Inspectorate is the government authority responsible for the enforcement of certain agency worker rights. You can raise a concern with them directly on 020 7215 5000 or through the ACAS helpline on 0300 123 1100, Monday to Friday, 8am to 6pm.
+
+General Information
+
+Name of employment business:
+
+Supply Desk Limited
+
+Name of umbrella company:
+
+Liquid Friday Ltd
+
+Your employer:
+
+Liquid Friday Ltd
+
+Type of contract you will be engaged under:
+
+Employment Contract
+
+Who will be responsible for paying you:
+
+Liquid Friday Ltd
+
+How often the umbrella company and you will be paid:
+
+Weekly
+
+Umbrella company pay information
+
+If you choose to be employed by an umbrella company, we will still be finding you assignments.
+
+The money earned on your assignments will be transferred to the umbrella company as part of their income. They will then calculate your tax and other deductions and pay you for the work undertaken. All the deductions made which affect your wage are listed below. If you have any queries about these please contact us.
+
+
+Your payslip may show you as an employee of the umbrella company listed below.
+
+
+Name of umbrella company:
+
+Liquid Friday Ltd
+
+Any business connection between the umbrella company or other intermediary, the employment business and the person responsible for paying you:
+
+None
+
+The minimum gross rate of pay that we will transfer to the umbrella company:
+
+£347.10 per week
+
+Deductions from umbrella income required by law:
+
+Employers’ NI, Employers’ pensions contributions (if applicable), Apprenticeship Levy
+
+Any other deductions from umbrella income:
+
+Umbrella fee
+
+Business Overheads (Insurances)
+
+Holiday Pay
+
+
+
+
+Expected or minimum rate of pay to you from the umbrella:
+
+Not less than National Minimum Wage
+
+Deductions from your wage required by law:
+
+PAYE tax, employee NI contributions, employee pension contributions (after 12 weeks), and student loan repayments (if applicable). Attachments to Earnings (If applicable).
+
+Any other deductions or costs taken from your wage:
+
+None
+
+Any fees for goods or services:
+
+None
+
+Holiday entitlement and pay:
+
+Holiday entitlement is 28 days per annum pro-rated, inclusive of bank holidays.
+
+Additional benefits:
+
+Access to Liquid Perks, an exclusive shopping platform allowing you to save money on-line, in-store and via your mobile.
+
+Example pay
+
+
+Umbrella or other intermediary fees
+
+Worker fees
+
+The gross or minimum amount that we will transfer to the umbrella company:
+
+£347.10 per week
+
+
+Deductions from the umbrella income required by law:
+
+£1.42 Apprenticeship Levy
+
+£13.85 Employer&apos;s NIC
+
+
+Any other deductions from umbrella income:
+
+£25.00 Umbrella Margin
+
+£2.83   Business Overheads
+
+£38.88 Holiday Pay
+
+
+Example rate of pay to you from the umbrella:
+
+
+
+£265.12 per week
+
+Deductions from your pay required by law:
+
+
+Income tax £4.95
+
+Employee NIC £9.89
+
+Any other deductions or costs taken from your pay:
+
+
+None
+
+Any fees for goods or services:
+
+
+None
+
+Example net take home pay:
+
+
+£250.28 (£273.12 Including holiday pay)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

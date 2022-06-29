@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Id --></label>
+        <name>smagicinteract__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>smagicinteract__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>smagicinteract__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Status Code --></label>
+        <name>smagicinteract__Error_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Type --></label>
+        <name>smagicinteract__Error_Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generic</masterLabel>
+            <translation><!-- Generic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permission</masterLabel>
+            <translation><!-- Permission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOQL</masterLabel>
+            <translation><!-- SOQL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fields --></label>
+        <name>smagicinteract__Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line number --></label>
+        <name>smagicinteract__Line_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>smagicinteract__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>smagicinteract__User__c</name>
+        <relationshipLabel><!-- Error Logs --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

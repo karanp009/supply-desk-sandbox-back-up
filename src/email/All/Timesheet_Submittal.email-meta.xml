@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For timesheet submittal</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TR1__TalentRover</letterhead>
+    <name>Timesheet Submittal</name>
+    <style>formalLetter</style>
+    <subject>New Timesheet {!TR1__Timesheet__c.Name}  submitted for {!TR1__Timesheet__c.TR1__Consultant_Name__c}</subject>
+    <textOnly>Hi {!TR1__Timesheet__c.TR1__Approver__c},
+
+
+Please approve or reject below timesheet.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

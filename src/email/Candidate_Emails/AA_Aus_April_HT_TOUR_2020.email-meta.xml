@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Email to all awaiting availability Candidates-Australia</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AA Aus-April HT TOUR 2020</name>
+    <style>none</style>
+    <subject>You&apos;re invited to apply for this Job Opportunity</subject>
+    <textOnly>Hi {!Contact.FirstName}, 
+
+ Just checking in to see if you’re still keen on pursuing teaching in the UK?  We have some exciting opportunities coming up that I would like to personally invite you to. If you’re keen to find out more click on the links below:  
+
+You’re invited- UK Principal Tour of Australia- April 2020. Teach in are excited to announce an Australian ‘UK Principal Tour’ this April. If you, or someone you know, would like to meet and interview with a top UK Principal, then it is time to book in.  
+
+Australian Webinar Feb 5th, 5pm AEST. Ready to find out more about what we offer our teachers? We have a Webinar coming up. Register to join the webinar, listen in and ask questions.  
+
+If you’re sick of reading, then click on the videos to see what our teachers say!.  
+
+You can also follow us on social Instagram and Facebook pages.  
+
+Here’s a quick reminder of what Teach in can offer you? 
+
+Great schools, across England (not just London!) through exclusive partnerships Direct employment, contract and Guaranteed supply contracts. A free flight to the UK ( up to the value of $900 AUD) Support and advice from teachers with UK experience- personal and professional. The correct pay!   Looking forward to hearing back from you, with your updated plans.  
+
+Best regards,  
+
+{!Contact.TR1__Secondary_Owner__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Assessments --></label>
+        <name>TR1__Assessments</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Assessment ID --></label>
+        <name>TR1__AssessmentID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Name --></label>
+        <name>TR1__Assessment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Type --></label>
+        <name>TR1__Assessment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assessment Type</masterLabel>
+            <translation><!-- Assessment Type --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complete --></label>
+        <name>TR1__Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Assessment ID --></label>
+        <name>TR1__Contact_Assessment_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Contact Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Finished --></label>
+        <name>TR1__DateFinished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent --></label>
+        <name>TR1__DateSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Started --></label>
+        <name>TR1__DateStarted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Comprehension --></label>
+        <name>TR1__OverallComprehension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Frequency --></label>
+        <name>TR1__OverallFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request ID --></label>
+        <name>TR1__Request_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result URL --></label>
+        <name>TR1__Result_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>TR1__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Correct --></label>
+        <name>TR1__TotalCorrect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Questions --></label>
+        <name>TR1__TotalQuestions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time --></label>
+        <name>TR1__TotalTime__c</name>
+    </fields>
+</CustomObjectTranslation>

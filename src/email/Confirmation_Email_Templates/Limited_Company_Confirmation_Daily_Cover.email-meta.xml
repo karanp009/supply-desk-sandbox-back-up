@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CompanyLogo</letterhead>
+    <name>Limited Company Confirmation - Daily Cover</name>
+    <style>freeForm</style>
+    <subject>Assignment Details for {!TR1__Closing_Report__c.TR1__Person_Placed__c}</subject>
+    <textOnly>Assignment Details
+
+
+Name of Candidate: {!TR1__Closing_Report__c.TR1__Person_Placed__c}
+School: {!TR1__Closing_Report__c.TR1__Account__c}
+Location of School: {!TR1__Closing_Report__c.Client_Address__c}
+Booking Type: {!TR1__Closing_Report__c.Booking_Type__c}
+Role Type: {!TR1__Closing_Report__c.Job_Title__c}
+Role Details: {!TR1__Job__c.Subject2__c}, {!TR1__Job__c.Year_Key_Stage__c}
+Any necessary experience, training or qualifications: {!TR1__Job__c.Trained_As__c}, {!TR1__Job__c.SEN_Experience__c}, {!TR1__Job__c.SEN_Additional_Experience__c}, {!TR1__Job__c.Skills_Training_Experience__c}
+Risks to Health and Safety: {!TR1__Closing_Report__c.HS_Notes_For_Confirmation_Letter__c}
+Hours of work: {!TR1__Closing_Report__c.Booking_Start_Time__c} - {!TR1__Closing_Report__c.Booking_End_Time__c}
+Working days: {!TR1__Closing_Report__c.Booking_Day__c} as advised
+Start Date: {!TR1__Closing_Report__c.CRS_Start_Date_Min__c}
+Anticipated duration: Until {!TR1__Closing_Report__c.CRS_End_Date_max__c}
+The relevant pay rate(s) is/are shown below:
+
+Daily Rate: {!TR1__Closing_Report__c.Maximum_Day_Pay_Rate__c}
+Half Day Rate: {!TR1__Closing_Report__c.Maximum_Half_Day_Pay_Rate__c}
+Hourly Rate: {!TR1__Closing_Report__c.Maximum_Hour_Pay_Rate__c}
+
+
+
+As this is a daily cover role, {!TR1__Closing_Report__c.TR1__Person_Placed__c} will not be required to carry out any planning, preparation, reporting or assessment.
+
+AWR Comparator Information
+
+
+Basic Annual Salary: Not Advised
+Annual Leave Entitlement: {!TR1__Closing_Report__c.Annual_Leave_Entitlement__c}
+Number of comparator school working days per annum: {!TR1__Closing_Report__c.School_Working_Days__c}
+Details of any bonus scheme applicable: {!TR1__Closing_Report__c.Bonus_Scheme_Applicable__c}
+Overtime payments: {!TR1__Closing_Report__c.Overtime_Rate__c}
+Rest periods / breaks: {!TR1__Closing_Report__c.Rest_Period_Breaks__c}
+Vouchers or stamps with a monetary value: {!TR1__Closing_Report__c.Vouchers_Stamps_with_a_Monetary_Value__c}
+Any other remuneration: {!TR1__Closing_Report__c.Any_Other_Renumerations__c}
+Identity of Hirer: {!TR1__Closing_Report__c.Hirer__c}
+
+
+
+Notwithstanding the provisions of Clause 8.3 of the Terms of Engagement, please note that we calculate the ‘Intermediary Fees’ from day 1 of each Assignment based on the AWR comparator information with which we are provided by the Client i.e. the Intermediary Fees include an amount in respect of annual leave equivalent to the annual leave entitlement of the employees of the Client.  We would therefore advise that you make your arrangements with the teacher accordingly.  Please note that no additional sums will therefore be paid in respect of annual leave after the qualifying period.
+
+
+
+Yours sincerely,
+
+
+{!TR1__Closing_Report__c.CreatedBy}
+
+Supply Desk {!TR1__Closing_Report__c.Branch__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

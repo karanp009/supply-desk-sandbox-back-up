@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Computer Configured --></label>
+        <name>TR1__Computer_Configured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Computer Type --></label>
+        <name>TR1__Computer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Mac</masterLabel>
+            <translation><!-- Mac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Direct Dial --></label>
+        <name>TR1__Direct_Dial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>TR1__Division__c</name>
+        <picklistValues>
+            <masterLabel>Sample Division</masterLabel>
+            <translation><!-- Sample Division --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email Configured --></label>
+        <name>TR1__Email_Configured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Distribution Lists --></label>
+        <name>TR1__Email_Distribution_Lists__c</name>
+        <picklistValues>
+            <masterLabel>Sample List 1</masterLabel>
+            <translation><!-- Sample List 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Headshot Completed --></label>
+        <name>TR1__Headshot_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>TR1__Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>TR1__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Phone Configured --></label>
+        <name>TR1__Office_Phone_Configured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Email --></label>
+        <name>TR1__Preferred_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Office Phone Extension --></label>
+        <name>TR1__Preferred_Office_Phone_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Office --></label>
+        <name>TR1__Primary_Offier__c</name>
+        <picklistValues>
+            <masterLabel>Sample Office</masterLabel>
+            <translation><!-- Sample Office --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reports To --></label>
+        <name>TR1__Reports_To__c</name>
+        <relationshipLabel><!-- Internal Onboarding --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>TR1__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TR1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tech Configuring</masterLabel>
+            <translation><!-- Tech Configuring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Talent Rover User Profile Configured --></label>
+        <name>TR1__Talent_Rover_User_Profile_Configured__c</name>
+    </fields>
+</CustomObjectTranslation>

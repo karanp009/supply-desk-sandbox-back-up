@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_Footer</letterhead>
+    <name>DBS Update Service</name>
+    <style>freeForm</style>
+    <subject>Your DBS Update Subscription will expire on {!TR1__Associated_Qualification__c.DBS_Next_Check_Required__c}</subject>
+    <textOnly>Dear {!TR1__Associated_Qualification__c.TR1__Contact__c},
+
+We can see from our records your DBS update subscription will expire on {!TR1__Associated_Qualification__c.DBS_Next_Check_Required__c}. If the DBS is not supplied by Supply Desk please ensure that you update your subscription before this date so that Supply Desk can continue validating your DBS through the update service.
+
+If not updated we will no longer be able to offer you work until you have a new DBS in place.
+
+
+The Compliance Team
+Supply Desk
+complianceteam@supplydesk.co.uk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

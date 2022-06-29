@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Create Immediate Reminder For Tasks --></label>
+        <name>SFSSDupeCatcher__Create_Immediate_Reminder_For_Tasks__c</name>
+    </fields>
+    <fields>
+        <help><!-- A list of Web based Lead Sources to that should generate Alerts instead of being blocked.  One Lead source on each line. --></help>
+        <label><!-- Web Lead Sources --></label>
+        <name>SFSSDupeCatcher__Web_Lead_Sources__c</name>
+    </fields>
+</CustomObjectTranslation>

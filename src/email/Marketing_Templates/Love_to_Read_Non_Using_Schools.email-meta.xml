@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SD_Love2Read_2</letterhead>
+    <name>Love to Read Non Using Schools</name>
+    <style>freeForm</style>
+    <subject>Love to Read - Boost reading ages by up to 2 years in 10 weeks</subject>
+    <textOnly>Dear Client,
+
+Love to Read, Supply Desk&apos;s new Reading Intervention Programme, is proven to boost pupil progress. Book your tailored Love to Read intervention before the end of term and receive £500 of book vouchers for your school.
+
+Boost a pupil’s reading age
+Raise attainment
+Improve literacy skills
+Provide encouragement
+Build confidence
+Improve behaviour
+Enable pupils to access the full curriculum
+
+Pupil Progress Guaranteed
+Progress Promise! Once the Love to Read programme has been completed, we guarantee pupils will make progress (or we’ll rebate you £1,000).
+
+What is the Love to read programme?
+
+Designed for pupils aged 6-15
+20-minute sessions, twice a week
+Delivered by Teaching Assistants and Teachers who have been ‘Love to Read’ trained (bespoke training - provided by Creative Education)
+Structured one-to-one intervention for learners who find reading difficult
+Proven to more than double rates of progress
+
+Click here to find out more about Love to Read and see what schools, pupils and tutors have to say about the programme!
+
+To Book a ‘Love to Read’ Programme, call Supply Desk today on: 0800 027 2737. Details of your local Supply Desk branch team can be found here.
+
+Kind Regards,
+
+Supply Desk Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

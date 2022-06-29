@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>TR1__Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>TR1__Client_Secret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre App Name --></label>
+        <name>TR1__Fyre_App_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Coordinator Field API Name --></label>
+        <name>TR1__Fyre_Coordinator_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Coordinator First Name --></label>
+        <name>TR1__Fyre_Coordinator_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Coordinator Last Name --></label>
+        <name>TR1__Fyre_Coordinator_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Endpoint --></label>
+        <name>TR1__Fyre_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Payload URL --></label>
+        <name>TR1__Fyre_Payload_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Record Type Param --></label>
+        <name>TR1__Fyre_Record_Type_Param__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Supervisor Field API Name --></label>
+        <name>TR1__Fyre_Supervisor_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Supervisor First Name --></label>
+        <name>TR1__Fyre_Supervisor_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Supervisor Last Name --></label>
+        <name>TR1__Fyre_Supervisor_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Sync Account Id --></label>
+        <name>TR1__Fyre_Sync_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre Talent Rover Endpoint --></label>
+        <name>TR1__Fyre_Talent_Rover_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre VMS Field API Name --></label>
+        <name>TR1__Fyre_VMS_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fyre VMS Type --></label>
+        <name>TR1__Fyre_VMS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job External ID --></label>
+        <name>TR1__Job_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Successes --></label>
+        <name>TR1__Log_Failures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Id --></label>
+        <name>TR1__Org_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

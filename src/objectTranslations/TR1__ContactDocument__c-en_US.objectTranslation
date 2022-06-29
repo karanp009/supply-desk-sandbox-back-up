@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Documents --></label>
+        <name>TR1__Documents</name>
+    </fieldSets>
+    <fields>
+        <label><!-- AttachmentId (Legacy) --></label>
+        <name>TR1__AttachmentId_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Contact Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ContentDistributionId --></label>
+        <name>TR1__ContentDistributionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentDocumentId --></label>
+        <name>TR1__ContentDocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentVersionFileExtension --></label>
+        <name>TR1__ContentVersionFileExtension__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentVersionFileType --></label>
+        <name>TR1__ContentVersionFileType__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentVersionId --></label>
+        <name>TR1__ContentVersionId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Document Conversion --></help>
+        <label><!-- Convert to Content Document --></label>
+        <name>TR1__Convert_to_Content_Document__c</name>
+    </fields>
+    <fields>
+        <help><!-- Delete the attachment after conversion. --></help>
+        <label><!-- Delete Attachments --></label>
+        <name>TR1__Delete_Attachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Candidate Id --></label>
+        <name>TR1__External_Candidate_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- External URL --></label>
+        <name>TR1__External_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- External View URL --></label>
+        <name>TR1__External_View_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Download --></label>
+        <name>TR1__File_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- FlashAttachmentId (Legacy) --></label>
+        <name>TR1__FlashAttachmentId_Legacy__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTML URL --></label>
+        <name>TR1__HTML_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal URL --></label>
+        <name>TR1__Internal_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal View URL --></label>
+        <name>TR1__Internal_View_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMWS Date/Time --></label>
+        <name>TR1__SMWS_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMWS Status Code --></label>
+        <name>TR1__SMWS_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SMWS Status --></label>
+        <name>TR1__SMWS_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScrambledCV --></label>
+        <name>TR1__ScrambledCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TR1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Cover Letter</masterLabel>
+            <translation><!-- Cover Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References</masterLabel>
+            <translation><!-- References --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resume</masterLabel>
+            <translation><!-- Resume --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>TR1__Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- View --></label>
+        <name>TR1__View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default --></label>
+        <name>TR1__isDefault__c</name>
+    </fields>
+    <layouts>
+        <layout>Portal Contact Documents Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Create_New_Document --></label>
+        <name>TR1__Create_New_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync --></label>
+        <name>TR1__Sync</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- EmploymentDetails --></label>
+        <name>RC_EmploymentDetails</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EmploymentInfo --></label>
+        <name>RC_EmploymentInfo</name>
+    </fieldSets>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>RC_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>RC_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>TR1__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TR1__Contact__c</name>
+        <relationshipLabel><!-- Employment History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>TR1__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>TR1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee History Ext ID --></label>
+        <name>TR1__EmployeeHistoryExtID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Name --></label>
+        <name>TR1__EmployerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>TR1__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Name --></label>
+        <name>TR1__OrganizationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>TR1__Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>TR1__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>TR1__Title__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,4 +1,5 @@
 import { LightningElement, wire, track } from 'lwc';
+import fetchContact from '@salesforce/apex/ts_HomePageController.fetchContact';  //Get Contact Record to check client or not.
 import { getRecord } from 'lightning/uiRecordApi';
 import USER_ID from '@salesforce/user/Id';
 import NAME_FIELD from '@salesforce/schema/User.Name';
@@ -23,6 +24,8 @@ export default class Ts_HomePage extends LightningElement {
 
     @track uName;
     @track lastLogin;
+    @track checkClient;
+
     @wire(getRecord, {
         recordId: USER_ID,
         fields: [NAME_FIELD,LAST_LOGIN]
@@ -36,6 +39,27 @@ export default class Ts_HomePage extends LightningElement {
             this.uName = data.fields.Name.value;
             this.lastLogin = data.fields.LastLoginDate.value;
         }
+    }
+
+    connectedCallback(){
+        fetchContact()
+        .then(result => {
+            if (result!=null) {
+                console.log({result});
+                if(result.Community_Contact_Type__c == 'Client'){
+                    this.checkClient = true;
+                }
+                else{
+                    this.checkClient = false;
+                }
+            } else {
+                console.log('Contact null');
+                console.log({result});
+            }
+        })
+        .catch(error => {
+            console.log({error});
+        });
     }
 
     myAccImg = myAccountImg;

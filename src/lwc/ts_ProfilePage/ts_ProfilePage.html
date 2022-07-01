@@ -1,0 +1,88 @@
+<template>
+    <div class="mainDiv">
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
+                <div class="slds-size_1-of-7 slds-m-left_xx-large">
+                    <span style="display: inline-block;"><img src={imgUrl} class="profImg"></span>
+                </div>
+                <div>
+                    <p class="slds-m-top_x-large slds-m-left_large t1">CLIENT</p>
+                    <p class="slds-m-left_large t2">My Profile</p>
+                    <p class="slds-m-left_large t3">Update your photo and personal details.</p>     
+                </div>
+            </div>            
+            <div class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">                
+                <div class="slds-size_1-of-5 slds-m-left_medium saveBtn">Save</div>
+                <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">Cancel</div>
+            </div>
+        </div>
+
+        <!-- FirstName -->
+        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                First Name
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
+                <lightning-input class="input" name="firstname" type="text" value={fname} onchange={handleChange} autocomplete="off"></lightning-input>                
+            </div>
+        </div>
+
+        <!-- LastName -->
+        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                Last Name
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
+                <lightning-input class="input" name="lastname" type="text" value={lname} onchange={handleChange} autocomplete="off"></lightning-input>                
+            </div>
+        </div>
+
+        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp1">
+                <p>This will displayed on your profile</p> 
+            </div>
+            <div class="slds-p-horizontal-small slds-col slds-size_8-of-12 slds-m-bottom-medium slds-form-element">                
+                <lightning-input type="file" 
+                accept={acceptedFormats} onchange={saveFileHandle}></lightning-input>
+            </div>
+            <!-- <lightning-file-upload
+                name="fileUploader"
+                accept={acceptedFormats}
+                record-id={usrId}
+                onuploadfinished={handleUploadFinished}
+            >
+            </lightning-file-upload> -->
+        </div>
+
+        <!-- Email address -->
+        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                Email Address
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
+                <lightning-input class="input" name="emailaddress" value={email} onchange={handleChange} type="text" autocomplete="off"></lightning-input>                
+            </div>
+        </div>
+
+        <!-- Business Phone -->
+        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                Business Phone
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
+                <lightning-input class="input" name="businessphone" value={businessphn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>                
+            </div>
+        </div>
+
+        <!-- Mobile Phone -->
+        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                Mobile Phone
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
+                <lightning-input class="input" name="mobilephone" value={mobilephn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>                
+            </div>
+        </div>
+    </div>
+</template>

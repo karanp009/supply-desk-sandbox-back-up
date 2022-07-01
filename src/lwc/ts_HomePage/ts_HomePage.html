@@ -50,14 +50,16 @@
                         </div>
                     </div>
                     
-                    <div class="dbsection-scheduler slds-col slds-size_1-of-3">                        
-                        <div class="dbsection-item">
-                            <i class="fa fa-calendar"></i>
-                            <span class="images"><img src={tmSheetImg}></span>
-                            <p class="textp slds-m-right_x-large">Scheduler</p>
-                            <!-- <a href="{!$Site.Prefix}/TRS_MyCalendar" class="button button-scheduler center-button">Go!</a> -->
-                        </div>                    
-                    </div>  
+                    <template if:false={checkClient}>
+                        <div class="dbsection-scheduler slds-col slds-size_1-of-3">                        
+                            <div class="dbsection-item">
+                                <i class="fa fa-calendar"></i>
+                                <span class="images"><img src={tmSheetImg}></span>
+                                <p class="textp slds-m-right_x-large">Scheduler</p>
+                                <!-- <a href="{!$Site.Prefix}/TRS_MyCalendar" class="button button-scheduler center-button">Go!</a> -->
+                            </div>                    
+                        </div>  
+                    </template>
             
                     <div class="dbsection-timesheets slds-col slds-size_1-of-3">
                         <div class="dbsection-item">

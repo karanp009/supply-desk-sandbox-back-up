@@ -1,0 +1,53 @@
+.textp{
+    text-align: center;
+    align-items: center;
+    display: inherit;
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+.saveBtn{
+    background-color: #676868;
+}
+.cancelBtn{
+    background-color: #C50E1B;
+}
+.btns{
+    display: flex;
+    height: 25%;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    justify-content: inherit;
+    align-items: center;
+}
+.t1{
+    color: #676868;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.t2{
+    font-size: 25px;
+    color: #D2232A;
+    font-style: normal;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: 400;
+}   
+.t3{
+    color: black;
+}
+.textp1{
+    align-items: center;
+    display: inherit;
+    font-family: 'Raleway';
+    font-size: 16px;   
+}
+.profImg{
+    border-radius: 50%;
+}

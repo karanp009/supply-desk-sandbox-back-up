@@ -1,0 +1,66 @@
+<template>
+    <div class="maincls closed-menu">
+        <nav class="vertical-menu-wrapper">
+            <div class="vertical-menu-logo">
+                <div class="home_cls">
+                    <div class="home_img">
+                        <img src={account_icon} data-name="Home" onclick={redirectpage} />
+                        <span class="hide_cls show_cls">Home</span>
+                    </div>
+                    <span class="open-menu-btn" onclick={buttonclick}>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </span>
+                </div>
+                <div class="navbar_cls">
+                    <img src={userimage} />
+                    <img src={userimage} />
+                    <button class="btn_cls" data-name="Help" onclick={redirectpage}><span>?</span>Help</button>
+                    <button class="btn_cls" data-name="Logout" onclick={redirectpage}><span>?</span>Logout</button>
+                </div>
+            </div>
+            <ul class="vertical-menu">
+                <div class="margin_cls">
+                    <div class="icon_cls" data-name="Profile" onclick={redirectpage}>
+                        <img src={account_icon} data-name="Profile" onclick={redirectpage}/>
+                        <span data-name="Profile" onclick={redirectpage}>My Account ></span>
+                    </div>
+                    <template if:true={checkClient}>
+                        <div class="icon_cls" data-name="Scheduler" onclick={redirectpage}>
+                            <img src={account_icon} data-name="Scheduler" onclick={redirectpage}/>
+                            <span data-name="Scheduler" onclick={redirectpage}>Scheduler ></span>
+                        </div>
+                    </template>
+                    <div class="icon_cls" data-name="TimeSheet" onclick={redirectpage}>
+                        <img src={account_icon} data-name="TimeSheet" onclick={redirectpage}/>
+                        <span data-name="TimeSheet" onclick={redirectpage}>TimeSheet ></span>
+                    </div>
+                    <div class="icon_cls" data-name="Compliance" onclick={redirectpage}>
+                        <img src={account_icon} data-name="Compliance" onclick={redirectpage}/>
+                        <span data-name="Compliance" onclick={redirectpage}>Compliance ></span>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="navicon_cls">
+            <div class="nav_btn">
+                <!-- <div class="icon_cls" data-name="Profile" onclick={redirectpage}> -->
+                <div class="icon_cls" data-name="Profile" onclick={redirectpage}>
+                    <img src={account_icon} />
+                </div>
+                <template if:true={checkClient}>
+                    <div class="icon_cls" data-name="Scheduler" onclick={redirectpage}/>
+                        <img src={compliance_icon} />
+                    </div>
+                </template>
+                <div class="icon_cls" data-name="TimeSheet" onclick={redirectpage}/>
+                    <img src={timesheet_icon} />
+                </div>
+                <div class="icon_cls" data-name="Compliance" onclick={redirectpage}/>
+                    <img src={compliance_icon} />
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

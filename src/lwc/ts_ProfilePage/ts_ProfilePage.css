@@ -50,4 +50,40 @@
 }
 .profImg{
     border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+}
+
+.slds-tabs_default__link{
+    color:red;
+ }
+
+ .cvDiv{
+    background-color: #F6F6F6;
+ }
+
+ .fileInputBox{
+    display: block;
+    border: 1px dashed black;
+    height: 6rem;
+}
+
+.cvSec{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.cvImg{
+    width: 2%;
+    /* margin-right: 1rem;
+    padding-bottom: 5px; */
+}
+
+.detailDiv{
+    padding-bottom: 8rem;
+}
+
+.slds .slds-tabs_default__nav{
+    margin-left: 5rem;
 }

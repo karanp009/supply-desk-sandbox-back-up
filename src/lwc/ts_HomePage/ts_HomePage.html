@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="top slds-grid slds-gutters">
+        <!-- <div class="top slds-grid slds-gutters">
             <div class="slds-col slds-size_4-of-12" style="display: flex;">
                 <div><img src={hmIcon}></div>
                 <div style="margin-top: 2px"><img src={mnIcon}></div>
@@ -18,7 +18,7 @@
                 <div class="helpDiv slds-m-left_medium slds-m-right_medium">Help</div>
                 <div class="logOutDiv">LogOut</div>
             </div>
-        </div>
+        </div> -->
         <div>      
             <div class="content">
                 <div class="midBlock slds-grid slds-gutters">
@@ -27,11 +27,20 @@
                         <p class="subtext slds-m-top_x-medium">Manage your account, contact us if you need assistance.</p>
                         <!-- <p>Your last login was {lastLogin}</p>     -->
                     </div>
-                    <div class="slds-col slds-col slds-size_4-of-12"><span style="display: inline-block;"><img src={profImg}></span> </div>
+                    <div class="slds-col slds-col slds-size_4-of-12"><span style="display: inline-block;"><img src={imgUrl}></span> </div>
                 </div>       
             </div>
         </div> 
                      
+
+        <div class="slds-align_absolute-center" style="display: flex;">
+            <div class="slds-m-right_small slds-m-top_xxx-small img1"><img src={img1}></div>
+            <div class="slds-m-right_small slds-m-top_xxx-small img2"><img src={img2}></div>
+            <div class="slds-m-right_small slds-m-top_xxx-small img3"><img src={img3}></div>
+            <div class="slds-m-right_small slds-m-top_xxx-small img4"><img src={img4}></div>
+            <div class="slds-m-right_small slds-m-top_xxx-small img5"><img src={img5} style="height:37px;"></div>
+        </div>
+        
         <!-- Page Content-->
         <div class="content">
             
@@ -41,31 +50,40 @@
                     <h3>Get Started By Updating Your Account Details</h3>
                 </div>
                 <div class="container slds-grid slds-align_absolute-center slds-wrap slds-m-top_xx-large">                
-                    <div class="dbsection-reporting slds-col slds-size_1-of-3">                        
+                    <div class="dbsection-reporting slds-col slds-size_1-of-4">                        
                         <div class="dbsection-item">
                             <i class="fa fa-user"></i>
                             <span class="images"><img src={myAccImg}></span>    
-                            <p class="textp slds-m-right_x-large">My Account</p>   
+                            <p class="textp slds-m-right_x-large" data-name="Profile" onclick={redirectpage}>My Account</p>   
                             <!-- <a href="{!$site.prefix}/MyAccount" class="button button-reporting center-button">Go!</a> -->
                         </div>
                     </div>
                     
-                    <template if:false={checkClient}>
-                        <div class="dbsection-scheduler slds-col slds-size_1-of-3">                        
+                    <template if:true={checkClient}>
+                        <div class="dbsection-scheduler slds-col slds-size_1-of-4">                        
                             <div class="dbsection-item">
                                 <i class="fa fa-calendar"></i>
                                 <span class="images"><img src={tmSheetImg}></span>
-                                <p class="textp slds-m-right_x-large">Scheduler</p>
+                                <p class="textp slds-m-right_x-large" data-name="Scheduler" onclick={redirectpage}>Scheduler</p>
                                 <!-- <a href="{!$Site.Prefix}/TRS_MyCalendar" class="button button-scheduler center-button">Go!</a> -->
                             </div>                    
                         </div>  
                     </template>
-            
-                    <div class="dbsection-timesheets slds-col slds-size_1-of-3">
+                    
+                    <div class="dbsection-timesheets slds-col slds-size_1-of-4">
+                        <div class="dbsection-item">
+                            <i class="fa fa-clock-o"></i>
+                            <span class="images"><img src={cmpImg}></span>
+                            <p class="textp slds-m-right_large" data-name="Compliance" onclick={redirectpage}>Compliance</p>
+                            <!-- <a href="{!$Site.Prefix}/TimesheetListing" class="button button-timesheets center-button">Go!</a> -->
+                        </div>                        
+                    </div>
+
+                    <div class="dbsection-timesheets slds-col slds-size_1-of-4">
                         <div class="dbsection-item">
                             <i class="fa fa-clock-o"></i>
                             <span class="images"><img src={tmSheetImg}></span>
-                            <p class="textp slds-m-right_x-large">Timesheets</p>
+                            <p class="textp slds-m-right_x-large" data-name="TimeSheet" onclick={redirectpage}>Timesheets</p>
                             <!-- <a href="{!$Site.Prefix}/TimesheetListing" class="button button-timesheets center-button">Go!</a> -->
                         </div>                        
                     </div>                

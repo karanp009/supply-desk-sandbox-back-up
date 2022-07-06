@@ -3,6 +3,11 @@ import { getRecord } from 'lightning/uiRecordApi';
 import USER_ID from '@salesforce/user/Id';
 import USRID from '@salesforce/schema/User.Id';
 import profileImg from '@salesforce/resourceUrl/profileImg';
+import zipImages from '@salesforce/resourceUrl/zipImages';
+import settingIcon from '@salesforce/resourceUrl/settingIcon';
+import dragFileIcon from '@salesforce/resourceUrl/dragFileIcon';
+import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
+import profilePageCss from '@salesforce/resourceUrl/profilePageCss';
 import saveData from '@salesforce/apex/ts_ProfilePageController.saveData';
 import getData from '@salesforce/apex/ts_ProfilePageController.getData';
 import saveFile from '@salesforce/apex/ts_ProfilePageController.saveFile';
@@ -11,7 +16,9 @@ import saveFile from '@salesforce/apex/ts_ProfilePageController.saveFile';
 export default class Ts_ProfilePage extends LightningElement {
 
     profImg = profileImg;
-
+    settingImg = settingIcon;
+    dragFileImg = dragFileIcon;
+ 
     @track imgUrl;
     @track usrId;
     @track fname;
@@ -20,8 +27,24 @@ export default class Ts_ProfilePage extends LightningElement {
     @track businessphn;
     @track mobilephn;
 
+    @track isLoaded;
     connectedCallback(){
-        
+        this.getUsrData();
+    }
+
+    renderedCallback() {
+        Promise.all([
+                loadStyle(this, profilePageCss)
+            ]).then(() => {
+                console.log('Files loaded');
+            })
+            .catch(error => {
+                console.log(error.body.message);
+            });
+    }
+
+    getUsrData(event){
+        console.log('First time');
         getData()
             .then(result => {
                 console.log({result});
@@ -80,15 +103,20 @@ export default class Ts_ProfilePage extends LightningElement {
                 })
                 .then(result => {
                     alert('Sucess');
-                   
+                    
                 })
                 .catch(error => {
-                    alert('Error');
+                    console.log({error});
                 });
             };
             fileReader.readAsDataURL(file);
             
         });
+        this.isLoaded = true;
+        setTimeout(() => {
+            this.getUsrData();
+            this.isLoaded = false;
+        },1500);
     }
 
     handleUploadFinished(event) {

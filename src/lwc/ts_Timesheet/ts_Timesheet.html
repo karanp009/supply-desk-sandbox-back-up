@@ -1,0 +1,90 @@
+<template>
+    <div class="main">
+        <div class="top-header">
+            <h1>Timesheet / Client</h1>
+        </div>
+        <div class="timesheet-header-div">
+            <div class="active-timesheet-btn timesheet-btn-active" onclick={displayActiveTimesheet}>
+                <div>
+                    Active Timesheet
+                </div>
+            </div>
+            <div class="historical-timesheet-btn" onclick={displayHistoricalTimesheet}>
+                <div>
+                    Historical Timesheet
+                </div>
+            </div>
+        </div>
+        <div class="timesheet-table">
+            <div class="slds-grid slds-wrap table-row">
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Week Ending</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Client Name</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Vacancy Name</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Candidate Name</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Status</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Total Hours</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Total Days</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Total Half Days</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>Total Reported Charge</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>1</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>2</div>
+                </div>
+                <div class="slds-col slds-size_1-of-12">
+                    <div>3</div>
+                </div>
+            </div>
+
+            <template for:each={activeTimeSheet} for:item="ts">
+                <div class="slds-grid slds-wrap table-row" key={ts.Id}>
+                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Week_Ending__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Client_Name__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Job_Order__r.Name}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Consultant_Name__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Status__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Total_Regular_Hours__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.Total_Days__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.Total_Half_Days__c}</div>
+                    <div class="slds-col slds-size_1-of-12">{ts.Total_Reported_Charge__c}</div>
+                    <div class="slds-col slds-size_1-of-12">
+                        <div class="table-icon" title="View">
+                            <img src={viewIcon} alt="viewIcon" title="View">
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                        <div class="table-icon" title="Print">
+                            <img src={printIcon} alt="printIcon" title="Print">
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                        <div class="table-icon" title="Approve">
+                            <img src={approveIcon} alt="approveIcon" title="Approve">
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+
+        </div>
+    </div>
+</template>

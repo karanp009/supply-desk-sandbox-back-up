@@ -1,0 +1,52 @@
+.main-contact{
+      background-color: white;
+}
+.touch-img{
+      background-image: url('/resource/coverImgClient');
+      background-size:cover;
+      background-repeat: no-repeat;
+      padding: 70px;
+}
+.touch-img h1{
+      font-size: 37px;
+      font-weight: bolder;
+      color: rgba(210, 35, 42, 1);
+}
+.touch-img p{
+      font-size: 22px;
+      padding: 10px 0;
+      color: rgba(0, 0, 0, 0.65);;
+}
+.contact-detail{
+      width: 70%;
+      display: flex;
+}
+.contact-footer{
+      display: flex;
+      align-items: unset;
+      margin-top: 20px;
+}
+.contact-footer h1{
+      color: rgba(210, 35, 42, 1);
+      font-size: 28px;
+}
+.contact-footer p {
+      margin: 8px 0;
+}
+.send-button{
+      text-align: end;
+}
+.con-label {
+      font-size: 22px;
+}
+.message{
+      display: flex;
+      margin-top: 25px;
+}
+.contact-no{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: -webkit-center;
+}

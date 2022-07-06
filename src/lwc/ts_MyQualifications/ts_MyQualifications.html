@@ -1,0 +1,101 @@
+<template>
+    <div class="slds-all-elements slds-m-left_xx-large"> 
+        <!-- Page Content-->
+            <div id="content" class="slds-snap-content slds-m-left_small" style="z-index:100">
+                <div class="slds-content" style="min-height:500px;">
+                    <div class="slds"  >    
+                        <!-- Content Heading -->
+                        <div class="slds-page-header contentDiv" role="banner">
+                            <div class="slds-grid slds-wrap slds-grid--align-spread">
+                                <div class="slds-col">
+                                    <div class="slds-media">
+                                        <!-- <div class="slds-media__figure">
+                                            <span class="slds-avatar slds-avatar--large">
+                                            <img src={caseImg} style="background-color: #43b4e7;" /> 
+                                            </span>
+                                        </div> -->
+                                        <div class="slds-media__body">
+                                            <p class="slds-text-heading--label">CLIENT</p>
+                                            <div class="slds-grid">
+                                                <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle">My Qualification</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-col"> 
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div class="Qualificationlist">
+                            <div class="slds-grid slds-wrap slds-col--padded slds-grid--align-spread headeRow">
+                                <div class="slds-col slds-size_1-of-4 slds-p-top_medium">
+                                    <div class="slds-text slds-truncate text1">Qualification Name</div>
+                                </div>
+                                <div class="slds-col slds-size_1-of-4 slds-p-top_medium">
+                                    <div class="slds-text slds-truncate text1">Expiration Date</div>
+                                </div>
+                                <div class="slds-col slds-size_1-of-4 slds-p-top_medium">
+                                    <div class="slds-text slds-truncate text1 slds-m-left_small">Status</div>
+                                </div>
+                                <div class="slds-col slds-size_1-of-4 slds-p-top_medium">
+                                    <div class="slds-text slds-truncate text1 slds-m-left_large">Action</div>
+                                </div>
+                            </div>
+                
+                            <template for:each={qualificationList} for:item="ql">
+                                <div class="slds-grid slds-wrap slds-m-left_large slds-m-top_x-large dataRow" key={ql.Id}>
+                                    <div class="slds-col slds-size_1-of-4 textd">{ql.TR1__Qualification__r.Name}</div>
+                                    <div class="slds-col slds-size_1-of-4 textd">{ql.TR1__Expiration_Date__c}</div>
+                                    <div class="slds-col slds-size_1-of-4 textd slds-m-left_xx-small">{ql.TR1__Status__c}</div>
+                                    <div class="slds-col slds-size_1-of-4 edit slds-size_1-of-12 slds-m-right_large"><span><img src={editImg} class="slds-m-right_small">Edit</span></div>                                    
+                                </div>
+                            </template>
+                        </div>
+                        <!-- <table class="slds-table slds-max-medium-table--stacked">
+                            <thead class="slds-p-top_large theadClass">
+                                <tr class="slds-text-heading--label slds-p-top_medium">
+                                    
+                                    <th scope="col" class="slds-p-top_large">
+                                        <span class="slds-truncate slds-p-top_medium">QUALIFICATION NAME</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span class="slds-truncate">EXPIRATION DATE</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span class="slds-truncate">STATUS</span>
+                                    </th>
+                                     <th scope="col">
+                                        <span class="slds-truncate"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={qualificationList} for:item="ql">
+                                    <tr class="slds-hint-parent slds-p-top_medium" key={ql}>                                         
+                                        <td class="">                                        
+                                            <p class="slds-truncate">{ql.TR1__Qualification__r.Name}</p>                                            
+                                        </td> 
+                                        <td class="">                                                                                    
+                                            <p class="slds-truncate">{ql.TR1__Expiration_Date__c}</p>
+                                        </td> 
+                                        <td class="">                                                                                    
+                                            <p class="slds-truncate">{ql.TR1__Status__c}</p>  
+                                        </td>       
+                                        <td scope="col">
+                                            <p class="slds-truncate"></p>
+                                        </td>                                     
+                                     </tr>
+                                  </template>
+                            </tbody>
+                        </table> -->
+
+                    </div>
+                    <!-- Page Content-->
+                </div>
+                <br/><br/>
+            
+            </div>
+    </div>
+</template>

@@ -1,4 +1,4 @@
-public with sharing class ts_HomePageController {
+public class ts_HomePageController {
 
     
     @AuraEnabled

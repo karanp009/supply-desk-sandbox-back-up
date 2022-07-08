@@ -1,0 +1,107 @@
+/* .communitymain_cls {
+    margin-left: 55px;
+    margin-top: 40px;
+} */
+
+.welcomeText{
+    font-size: 27px;
+    color: #D2232A;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.midBlock{
+    display: flex;
+    background-image: url('/resource/coverImgClient');
+    height: 35vh;
+}
+
+.middleText{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container{
+    width: 50%;
+}
+
+.textp{
+    text-align: center;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    background-color: #cf4e4e;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.top{
+    height: 45px;
+    background-color: #D2232A;
+    display: flex;
+}
+
+.helpDiv{
+    height: 30px;
+    background-color: white;
+    width: 100px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.logOutDiv{
+    height: 30px;
+    background-color: white;
+    width: 100px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.subtext{
+    font-size: 15px;
+    color: black;
+}
+
+.timesheet-table {
+    margin-top: 2%;
+    height: 70%;
+    background: rgba(246, 246, 246, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+
+.table-row {
+    height: 8%;
+    min-height: 50px;
+    align-items: center;
+    border-bottom: 1px solid rgba(103, 104, 104, 0.6);
+    text-align: center;
+}
+
+.btn_cls {
+    background: #D90000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    padding: 5px;
+    border: 0;
+    border-radius: 0;
+    margin: 0 10px;
+    width: 140px;
+    cursor: pointer;  
+}

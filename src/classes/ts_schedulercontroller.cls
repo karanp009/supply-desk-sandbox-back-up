@@ -6,7 +6,7 @@
  */
 
 
-public with sharing class ts_schedulercontroller {
+public without sharing class ts_schedulercontroller {
 
      @AuraEnabled(cacheable = true)
      public static List<MainWrapper> getAvailbilityData(){
@@ -17,7 +17,9 @@ public with sharing class ts_schedulercontroller {
          Candidate_Availability__c tempCandidateAvailability = new Candidate_Availability__c();             // to create availability for the candidate
  		 Boolean isInternalUser;                // to check if the user is portal user
         //  String candidateEventString; // This will be JSON which will be pased on Page to show Candidate Availability in Calendar
-         String cId = [SELECT Id FROM Contact WHERE ID = '0030C00000SPlMiQAL'].ID;          //!to pass the contact Id of the logged in user need to change it later
+         String cId = [SELECT Id FROM Contact WHERE ID =: UserInfo.getUserId()].ID;          //!to pass the contact Id of the logged in user need to change it later
+        //  String cId = [SELECT Id FROM Contact WHERE ID =: UserInfo.getUserId()].ID;          //!to pass the contact Id of the logged in user need to change it later
+        //  System.debug('cId ----> ' + cId);
          String eventId;                //used to delete an event    
         
          
@@ -109,7 +111,7 @@ public with sharing class ts_schedulercontroller {
         'Working for Another Agency' => '#B2B2B2',
         'Booked'        => '#D95252'
     };
-
+            
             this.status = ca.Type__c;
             this.isDayBooked = false;
             this.shift = status;
@@ -178,26 +180,62 @@ public with sharing class ts_schedulercontroller {
         }
     }
 
+    @AuraEnabled(cacheable=true)
+    public static List<Candidate_Availability__c> fetchData(){
+        try {
+            return [SELECT Id,Start_Date_Time__c,End_Date_Time__c,Candidate__c,Start_Date__c,End_Date__c,Type__c FROM Candidate_Availability__c ORDER BY CreatedDate DESC];
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
     @AuraEnabled
-    public static String createAvailMap() {
+    public static String createAvailMap(String wrapperdata) {
+    // public static Id createAvailMap(String wrapperdata) {
+
+        // if (String.isBlank(wrapperdata)) {
+        //     return null;
+        // }
+
+        // System.debug('wrapperdata==>'+wrapperdata);
+
+        // wrapperclass wrapdata = (wrapperclass)JSON.deserialize(wrapperdata,wrapperclass.class);
+        // System.debug('wrapdata Type-->'+wrapdata);
+        // System.debug('wrapdata Type-->'+wrapdata.type);
+        
+        // List<wrapperclass> wraClass = new List<wrapperclass>();
+        // wrapperclass op = new wrapperclass();
+        // op.type = 
+        // op.type = wrapperdata.type;
+        // op.EndDate = wrapperdata.EndDate;
+        // op.startDate = wrapperdata.startDate;
+        // System.debug(op);
+        // wraClass.add(op);
+        // System.debug('create called wrapper class ----> ' + wraClass);
+        
 
         String candidateEventString; // This will be JSON which will be pased on Page to show Candidate Availability in Calendar
         List<CalendarEvent> candidateEventList = new List<CalendarEvent>();
-        String contactId;
-        
+        String contactId = '0030C00000SPlMiQAL';            //todo need to change it to dynamic id
+        System.debug('candidateEventList ----first declaration ->' + candidateEventList);
         candidateEventList.clear();
         candidateEventString='';
         
         Map<Id,Candidate_Availability__c> candidateAvailabilityMap = new Map<Id,Candidate_Availability__c>(RC_AccessController.getCandidateAvailabilityByContactId(contactId));
+        System.debug('candidateAvailabilityMap -------> ' + candidateAvailabilityMap);
         Map<Id,Closing_Report_Schedule__c> closingReportScheduleMap = new Map<Id,Closing_Report_Schedule__c>();
         for(Closing_Report_Schedule__c crs : RC_AccessController.getClosingReportScheduleByCandidateAvailability(candidateAvailabilityMap)){
             closingReportScheduleMap.put(crs.Candidate_Availability__c,crs);
+        System.debug('closingReportScheduleMap -------> ' + closingReportScheduleMap);
+        System.debug('crs ------> ' + crs);
+
         }
             
         for(Candidate_Availability__c ca : candidateAvailabilityMap.values()){
             CalendarEvent calEvent_v2;
             if(closingReportScheduleMap.containsKey(ca.id)){
                 calEvent_v2 = new CalendarEvent(ca,closingReportScheduleMap.get(ca.id));
+                System.debug('calEvent_v2 -<>' + calEvent_v2);
             }
             else{
                 calEvent_v2 = new CalendarEvent(ca);
@@ -206,8 +244,12 @@ public with sharing class ts_schedulercontroller {
         }
         
         candidateEventString = JSON.serialize(candidateEventList);
+            System.debug('candidateEventString in main loop --> ' + candidateEventString);
+            System.debug('candidateEventList dssssssssssssdsds--> ' + candidateEventList);
+
         while(candidateEventString.contains('endDateTime')) {
             candidateEventString = candidateEventString.replace('endDateTime', 'end'); 
+            System.debug('candidateEventString in while loop --> ' + candidateEventString);
         }
         System.debug('candidateEventList ------------> ' + candidateEventList);
         System.debug('candidateEventString -------------> ' + candidateEventString);
@@ -252,7 +294,7 @@ public with sharing class ts_schedulercontroller {
     @AuraEnabled
     public static List<Date> openCreateAvailRecordDialog() {
     // public static void openCreateAvailRecordDialog() {
-            resetCreateAvailData();
+            // resetCreateAvailData();
             
             // String dateStr = Utility.getPageParameter('dateStr');
             // selectedDate = Date.parse(dateStr);
@@ -291,55 +333,16 @@ public with sharing class ts_schedulercontroller {
     } 
 
     //can delete event if there is event present else it will return null for that toast will be called or error message will be passed
-    // @AuraEnabled
+    @AuraEnabled
     //? actually no need to return anything here because delete event will store in backend only
     // public static Id deleteCalEvent() {
-    public void deleteCalEvent() {
-        showCreateAvailRecord  = false;
-        String eventId;
-
-            if(String.isNotBlank(eventId)) {
-                if(eventId.startsWith('a1a')){
-                    List<Candidate_Availability__c> availablity = RC_AccessController.getCandidateAvailabilityRecordsByEventId(eventId);
-                    
-                    if(availablity != null && availablity.size() > 0) {
-                        RC_AccessController.deleteRecords(availablity);
-                        System.debug(eventId);
-                        eventId = null;
-                        createAvailMap();
-                        //TODO need to call toast for Availability deleted successfully from lwc
-                        // Utility.AddConfirmMessage('Availability deleted successfully.'+showCreateAvailRecord);
-                        System.debug(eventId);
-                        // return eventId;
-                    }
-                    
-                }
-                else{
-                    List<Closing_Report_Schedule__c> crsListToBeUpdated = new List<Closing_Report_Schedule__c>();
-                    for(Closing_Report_Schedule__c crs : RC_AccessController.getClosingReportScheduleRecordsByEventId(eventId)){
-                        crs.Status__c = 'Cancelled';
-                        crsListToBeUpdated.add(crs);
-                    }
-                    
-                    if(crsListToBeUpdated != null && crsListToBeUpdated.size() > 0) {
-                        RC_AccessController.updateRecords(crsListToBeUpdated);
-                        System.debug(eventId);
-                        eventId = null;
-                        createAvailMap();
-                        //TODO need to call toast for Assignment cancelled successfully lwc
-                        // Utility.AddConfirmMessage('Assignment cancelled successfully.');
-                        System.debug(eventId);
-                        // return eventId;
-                    }
-                    
-                }
-                
-            }
-            else {
-                showCreateAvailRecord = false;
-                System.debug('No records found to delete');
-            }
-            // return eventId;
+    public static void deleteCalEvent(Id eventid) {
+        if (eventid !=null) {
+            
+            delete [SELECT Id FROM Candidate_Availability__c WHERE Id=:eventid];
+        }    else {
+            System.debug('Event id is not passed');
+        }
          
     }
 
@@ -410,130 +413,82 @@ public with sharing class ts_schedulercontroller {
     // public TR1__Job__c tempVacancy = new TR1__Job__c();               //to find that is there a vacancy for the job
     
     //to save the record when pressed on the save button by the user
-    public void saveCreateAvailRecord() {
-        String contactId;
-
-        Date baseDate = DATE.newInstance(2000, 1, 1);
-    
-        timeslotWrapper tsw;//This will be used to take time and day input while creation of Candidate Availability from Popup
-
-        Savepoint sp = Database.setSavepoint();
-        try {
-            system.debug('tempVacancy.Start_Time__c--'+tempVacancy.Start_Time__c+'tempVacancy.End_Time__c---'+tempVacancy.End_Time__c);
-            if(String.isBlank(tempCandidateAvailability.Type__c)){
-                // Utility.AddErrorMessage('Please populate Type of Availability.');
-                // System.debug('need to display an error message through')
-                System.debug('Please populate Type of Availability.');
-                //todo display error message from lwc toast
-                return;
-            }
-            if(String.isBlank(tempVacancy.Start_Time__c)){
-                // Utility.AddErrorMessage('Pleajse populate Start Time.');
-                System.debug('Please populate Start Time.');
-                //todo display error message from lwc toast
-
-                return;
-            }
-            if(String.isBlank(tempVacancy.End_Time__c)){
-                // Utility.AddErrorMessage('Please populate End Time.');
-                System.debug('Please populate End Time.');
-                //todo display error message from lwc toast
-
-                return;
-            }
-            if(tempVacancy.Start_Time__c == tempVacancy.End_Time__c){
-                // Utility.AddErrorMessage('Start Time & End Time cannot be same.');
-                System.debug('Start Time & End Time cannot be same.');
-                //todo display error message from lwc toast
-
-                return;
-            }
-             if(selectedDate!=null && (formatDateTimefromDate(selectedDate,tempVacancy.Start_Time__c) > formatDateTimefromDate(selectedDate,tempVacancy.End_Time__c))){
-                // Utility.AddErrorMessage('Start Time should be less than  End Time.');
-                System.debug('Start Time should be less than  End Time.');
-                //todo display error message from lwc toast
-
-                return;
-            }
-            if(tempVacancy.TR1__Estimated_Start_Date__c!=null && (formatDateTimefromDate(tempVacancy.TR1__Estimated_Start_Date__c,tempVacancy.Start_Time__c) > formatDateTimefromDate(tempVacancy.TR1__Estimated_Start_Date__c,tempVacancy.End_Time__c))){
-                // Utility.AddErrorMessage('Start Time should be less than  End Time.');
-                System.debug('Start Time should be less than  End Time.');
-                //todo display error message from lwc toast
-
-                return;
-            }
-            if(tempVacancy.TR1__Estimated_Start_Date__c!=null && tempVacancy.TR1__Estimated_Start_Date__c <date.Today()){
-                // Utility.AddErrorMessage('Please select start date Today or greater than Today.');
-                System.debug('Please select start date Today or greater than Today.');
-                //todo display error message from lwc toast
-
-                return;
-            }
-            List<Candidate_Availability__c> candidateAvailablityToAdd = new List<Candidate_Availability__c>();
-            
-            Set<String> daySet = new Set<String>();
-            if(tsw.isMon){daySet.add('Monday');}
-            if(tsw.isTue){daySet.add('Tuesday');}
-            if(tsw.isWed){daySet.add('Wednesday');}
-            if(tsw.isThu){daySet.add('Thursday');}
-            if(tsw.isFri){daySet.add('Friday');}
-            if(tsw.isSat){daySet.add('Saturday');}
-            if(tsw.isSun){daySet.add('Sunday');}
-            
-            if(!isWeekSelected) {
-                candidateAvailablityToAdd.add(
-                    new Candidate_Availability__c(
-                        Start_Date__c = selectedDate,
-                        Start_Date_Time__c = formatDateTimefromDate(selectedDate,tempVacancy.Start_Time__c),
-                        Candidate__c = contactId, 
-                        End_Date__c = selectedDate,
-                        End_Date_Time__c = formatDateTimefromDate(selectedDate,tempVacancy.End_Time__c),
-                        Type__c = tempCandidateAvailability.Type__c
-
-                    )
-                );
-            }
-            else {
-                Date startDate = tempVacancy.TR1__Estimated_Start_Date__c;
-                Date EndDate = tempVacancy.TR1__Estimated_End_Date__c;
-                Integer actualNoOfDays = StartDate.daysBetween(EndDate);
-                for(Integer i = 0; i <= actualNoOfDays; i++){    
-                    Date iterableDate = StartDate + i;
-                    DateTime DateValue = iterableDate;
-                    String selectedDay = DateValue.format('EEEE'); 
-                    Integer noOfDays = baseDate.daysBetween(selectedDate);
-                    Integer reminder = math.mod(noOfDays,7);
-                    if(daySet.contains(selectedDay)){
-                        candidateAvailablityToAdd.add(
-                            new Candidate_Availability__c(
-                                Start_Date__c = iterableDate,
-                                Start_Date_Time__c = formatDateTimefromDate(iterableDate,tempVacancy.Start_Time__c),
-                                Candidate__c = contactId,
-                                End_Date__c = iterableDate,
-                                End_Date_Time__c = formatDateTimefromDate(iterableDate,tempVacancy.End_Time__c),
-                                Type__c = tempCandidateAvailability.Type__c
-                            )
-                        );
-                    }
+    // public void saveCreateAvailRecord() {
+        @AuraEnabled
+        public static Id saveCreateAvailRecord(String wrapperdata) {
+                String contactId;
+                if (String.isBlank(wrapperdata)) {
+                    return null;
                 }
-            }
-            if(candidateAvailablityToAdd.size() > 0){
-                try{
-                    RC_AccessController.insertRecords(candidateAvailablityToAdd);
-                    // Utility.AddConfirmMessage('Availability created successfully.');
-                    System.debug('vailability created successfully.');
-                    //todo add toast to display the message of vailability created successfully.
-                }
-                catch(Exception e){
-                    System.debug('Following exception occuew'+e.getMessage()+'Line number '+e.getlinenumber());
-                }
-            }
-            createAvailMap();
-            showCreateAvailRecord = false;
-        }
-        catch(Exception e) {
-            Database.rollback(sp);  
-        }
+
+                Map<String,Object> eventMap = (Map<String, Object>) JSON.deserializeUntyped(wrapperdata);
+                System.debug('eventMap ---> ' + eventMap);
+
+                // Event newEvent = new Event();
+                Candidate_Availability__c newCavail = new Candidate_Availability__c();
+                System.debug('candidate availability' + newCavail);
+                System.debug('candidate availability type ' + newCavail.Type__c);
+                // newEvent.Subject = eventMap.get('title') != null ? (String)eventMap.get('title') : null;
+                // System.debug('newEvent.Subject -------> '+newEvent.Subject);
+                newCavail.Type__c = eventMap.get('TypeValue') !=null ? (String)eventMap.get('TypeValue') :null;
+                System.debug('newCavail.Type__c ---> '+newCavail.Type__c);
+
+
+                String startDate = eventMap.get('startDate') != null ? 
+                                    ((String)eventMap.get('startDate')).replace('T', ' '): 
+                                    null;
+                                    
+                System.debug('startDate ---> '+startDate);
+
+                // Date sDateonly = Date.today();
+                // Date eDateOnly = Date.today() + 1;
+
+                String EndDate = eventMap.get('EndDate') != null ? 
+                                    ((String)eventMap.get('EndDate')).replace('T', ' '): 
+                                    null;
+                System.debug('EndDate ----> ' + EndDate);
+                
+                // newCavail.Start_Date_Time__c = startDate!=null ?  Datetime.valueOfGmt(startDate) : null;
+                newCavail.Start_Date_Time__c = startDate!=null ?  Datetime.valueOfGmt(startDate) : null;
+                newCavail.End_Date_Time__c = EndDate != null ? Datetime.valueOfGmt(EndDate) : null;
+                
+
+                //todo uncomment the below logic for date conversion
+                Datetime value = newCavail.Start_Date_Time__c;
+                Datetime valueE = newCavail.End_Date_Time__c;
+                TimeZone to = TimeZone.getTimeZone('United Kingdom');
+                value = value.addSeconds(to.getOffset(value) - 19800);
+                valueE = valueE.addSeconds(to.getOffset(value) - 19800);
+                System.debug('value of timezone is ------> ' + value);
+                System.debug('value of timezone is ------> ' + valueE);
+
+                // newCavail.Start_Date_Time__c = value;
+                // newCavail.End_Date_Time__c = valueE;
+                
+                Date sDateonly = Date.valueOf((newCavail.Start_Date_Time__c).date());       //? only for the start date value
+                Date eDateOnly = Date.valueOf((newCavail.end_Date_Time__c).date());         //? only for the end date value
+
+                id conId = [SELECT id,contactid from user where id=:userinfo.getuserId()].contactid;
+                if(conId!=null)
+                    newCavail.Candidate__c	= conId;
+                System.debug('conId>>'+conId);
+                // newCavail.Candidate__c	= RC_AccessController.getContactRecordById(contactId).Id;
+                newCavail.Start_Date__c = sDateonly;
+                newCavail.End_Date__c = eDateOnly;
+                System.debug('newCavail all front  -----> ' + newCavail);
+
+                insert newCavail;
+
+                return newCavail.Id;
+        
+        
+    }
+
+    public class wrapperclass{
+        @AuraEnabled public String type;
+        @AuraEnabled public Date startDate;
+        @AuraEnabled public Date EndDate;
+
     }
 
 }

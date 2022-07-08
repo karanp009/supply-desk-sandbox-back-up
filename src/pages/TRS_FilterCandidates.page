@@ -993,16 +993,22 @@
                             <!--    <apex:selectOptions value="{!subsectors}" />-->
                             <!--</apex:selectList>-->
                         </apex:pageblockSectionItem>
-                        
-                        <apex:pageBlockSectionItem id="pbsi3">
-                            <apex:outputLabel value="SEN Experience" />
-                            <apex:inputfield value="{!con.SEN_Experience__c}" />
+
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="SEN" />
+                            <apex:inputfield value="{!con.SEN__c}" />
                         </apex:pageBlockSectionItem>
                         
                         <apex:pageBlockSectionItem >
                             <apex:outputLabel value="Year/Key Stage  " />
                             <apex:inputfield value="{!con.Year_Key_Stage__c}" />
                         </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem id="pbsi3">
+                            <apex:outputLabel value="SEN Experience" />
+                            <apex:inputfield value="{!con.SEN_Experience__c}" />
+                        </apex:pageBlockSectionItem>
+                        
                         
                         <!--  <apex:pageBlockSectionItem >
 <apex:outputLabel value="SEN Skills, Quals and Training" />

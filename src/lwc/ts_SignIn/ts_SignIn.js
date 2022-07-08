@@ -2,6 +2,7 @@ import { LightningElement, wire, track } from 'lwc';
 import uname_img from '@salesforce/resourceUrl/usernameimg';
 import passw_img from '@salesforce/resourceUrl/passwordimg';
 import sd_logo from '@salesforce/resourceUrl/SD_Logo';
+import loginpageimg from '@salesforce/resourceUrl/LoginPageImage';
 import { loadStyle } from 'lightning/platformResourceLoader';
 import commstyle from '@salesforce/resourceUrl/CommunityCSS';
 import doLogin from '@salesforce/apex/tS_SignInController.doLogin';
@@ -13,6 +14,7 @@ export default class Ts_SignIn extends LightningElement {
     bglogo = sd_logo;
     userimg = uname_img;
     passwordimg = passw_img;
+    bgimage = loginpageimg;
     username;
     password;
 

@@ -1,0 +1,128 @@
+<template>
+    Qualification Detail Page : {propertyValue}
+    <div>
+        <div class="slds-grid slds-gutters slds-border_bottom">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
+
+                <div>
+                    <p class="slds-m-top_x-large slds-m-left_large t1">Candidate</p>
+                    <p class="slds-m-left_large t2">My Qualifications</p>
+                </div>
+            </div>
+            <div
+                class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">
+                <div class="slds-size_1-of-4 slds-m-left_medium saveBtn" onclick={saveQualification}>Save & Next</div>
+                <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">Cancel</div>
+            </div>
+        </div>
+        <!-- CV Qualification Start-->
+        <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >CV</div>
+        <div style="display: none;">
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left_xx-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Upload CV</span>
+                <div class="slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
+                    <lightning-input class="input" name="uploadcv" type="text" value="Please upload your CV using the document upload section on the 'My Profile' page" onchange={handleChange} autocomplete="off"></lightning-input>                
+                </div>
+                
+            </div>
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left_xx-large slds-m-bottom_small slds-p-left_large">Gaps Explanation</span>
+                <div class="slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">                
+                    <lightning-textarea name="gapsExp" class="input" value={gapsExp} onchange={handleChange}></lightning-textarea>
+                </div>  
+            </div>
+            <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-p-left_small">
+                <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp slds-p-left_large">CV Submitted</div>
+                <div><lightning-input name="cvSub" class="slds-p-left_large" type="checkbox" onchange={handleChange} value={cvsub}></lightning-input></div>
+            </div>
+            <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_large slds-p-left_small">
+                <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp slds-p-left_large">CV Received</div>
+                <div><lightning-input class="slds-p-left_large" type="checkbox" onchange={handleChange}></lightning-input></div>
+            </div>
+        </div>
+        <!-- CV Qualification End-->
+
+        <!-- Perm Qualification Start -->
+        <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Perm Qualification</div>
+        <div style="display: none;">
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left_xx-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">NCTL Number</span>
+                <div class="slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
+                    <lightning-input name="nctlNum" class="input" type="text" value={nctlNum} onchange={handleChange}  autocomplete="off"></lightning-input>                
+                </div>
+                
+            </div>
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left_xx-large slds-m-bottom_small slds-p-left_large">SET Number</span>
+                <div class="slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">                
+                    <lightning-textarea name="setNum" class="input" value={setNum} onchange={handleChange}></lightning-textarea>
+                </div>  
+            </div>
+            <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-p-left_small">
+                <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp slds-p-left_large">QTLS</div>
+                <div><lightning-input class="slds-p-left_large" name="qtls" type="checkbox" onchange={handleChange} ></lightning-input></div>
+            </div>
+        </div>
+        <!-- Perm Qualification End -->
+
+        <!-- Right to work Start-->
+        <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Right to Work</div>
+        <div>
+            <span class="slds-m-left_xx-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Permanent Right to work in UK</span>
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Work Permit Or Visa Expiry Date</span>
+                <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
+                    <lightning-input class="input" name="uploadcv" type="text" onchange={handleChange} autocomplete="off"></lightning-input>                
+                </div> -->
+                <lightning-combobox name="workPermit"
+                        class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
+                        value={workPermit} options={lstOptions} onchange={handleChange}
+                        style="font-weight:200; line: height 21px; font-size:12px;">
+                    </lightning-combobox>
+                
+            </div>
+            <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large ">Documents</div>
+            <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left_x-large docDiv">
+                <lightning-dual-listbox name="docs" source-label="Available" value={docs}
+                    selected-label="Selected" options={docOptions}
+                    onchange={handleChange}>
+                </lightning-dual-listbox>
+            </div> 
+        </div>
+        <!-- Right to work End -->
+
+        <!-- Teacher Qualification Start -->
+        <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Teacher Qualification</div>
+        <div style="display:none;">
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">NCTL Number</span>
+                <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
+                    <lightning-input class="input" name="uploadcv" type="text" onchange={handleChange} autocomplete="off"></lightning-input>                
+                </div>
+            </div>
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">NQT Induction To be Completed By Date</span>
+                <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
+                    <lightning-input class="input" name="uploadcv" type="text" onchange={handleChange} autocomplete="off"></lightning-input>                
+                </div>
+            </div>
+            <div class="slds-gutters slds-m-left_xx-large">
+                <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
+                <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
+                    <lightning-combobox name="progress"
+                        class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
+                        value={value} options={options} onchange={handleChange}
+                        style="font-weight:200; line: height 21px; font-size:12px;">
+                    </lightning-combobox>
+                <!-- </div> -->
+            </div>
+            <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large">
+                <lightning-dual-listbox name="languages" source-label="Available" class="slds-m-left_xx-large"
+                    selected-label="Selected" options={options}
+                    onchange={handleChange}>
+                </lightning-dual-listbox>
+            </div> 
+        </div>
+        <!-- Teacher Qualification End -->
+    </div>
+</template>

@@ -8,10 +8,10 @@ import deleteEvent from '@salesforce/apex/FullCalendarController.deleteEvent';
 import { refreshApex } from '@salesforce/apex';
 
 export default class Test extends LightningElement {
-    
-/**
- * @description: FullcalendarJs class with all the dependencies
- */
+
+  /**
+   * @description: FullcalendarJs class with all the dependencies
+   */
   //To avoid the recursion from renderedcallback
   fullCalendarJsInitialised = false;
 
@@ -150,6 +150,10 @@ export default class Test extends LightningElement {
           info.revert();
         }
       },
+
+      eventRender: function (info, element) {
+        element.find('.fc-title').append("<br/>" + 'Test');
+      }
     });
   }
 

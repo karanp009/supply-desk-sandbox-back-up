@@ -98,7 +98,7 @@
                             accept={acceptedFormats} onchange={saveFileHandle}></lightning-input> -->
                             <div class="slds-file-selector slds-file-selector_integrated slds-file-selector_integrated">
                                 <div class="slds-file-selector__dropzone slds-file-selector__dropzone_integrated slds-has-drag" aria-hidden="true">
-                                <input type="file" class="slds-file-selector__input slds-assistive-text" accept="image/png" id="file-upload-input-01" tabindex="-1" />
+                                <input type="file" class="slds-file-selector__input slds-assistive-text" accept={acceptedFormats} id="file-upload-input-01" tabindex="-1" onchange={handleFile}/>
                                 <label class="slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large" for="file-upload-input-01">
                                     <div class="cvSec slds-m-top_x-large"><span><img class="slds-m-right_medium cvImg" src={dragFileImg}></span>
                                     <span class="slds-file-selector__text slds-file-selector__text_integrated slds-text-heading_medium slds-text-align_center">Drag file here or click to add attachment</span></div>

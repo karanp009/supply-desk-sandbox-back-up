@@ -3,28 +3,68 @@
     <div class="container">
         <div class="forms-container">
             <div class="logo_cls">
-                <img src={bglogo}/>
+                <img src={bglogo} />
             </div>
             <div class="signin-signup">
                 <div class="sign-in-form">
                     <div>
-                        
-                        <h2 class="title">Create an Account</h2>
-                        <p class="line_cls"><span>Or</span></p>
 
-                        <p class="subtitle">Use your email address for registration:</p>
+                        <h2 class="title slds-text-align_center slds-p-vertical_small">Create an Account</h2>
+                        <p class="subtitle slds-text-align_center slds-p-bottom_large">Please register down below</p>
+                        <div class="field_cls">
+                            <div class="input-field">
+                                <img src={userimg} />
+                                <!-- <input type="text" name="FirstName" autocomplete="FirstName" placeholder="FirstName"
+                                required="yes" onchange={handleChange}> -->
+                                <lightning-input name="FirstName" class="input_cls" autocomplete="FirstName"
+                                    onchange={handleChange} placeholder="FirstName" required="true"></lightning-input>
+                            </div>
+                            <div class="input-field">
+                                <img src={userimg} />
+                                <!-- <input type="text" name="LastName" autocomplete="LastName" placeholder="LastName"
+                                required="yes" onchange={handleChange}> -->
+                                <lightning-input name="LastName" class="input_cls" autocomplete="LastName"
+                                    onchange={handleChange} placeholder="LastName" required="true"></lightning-input>
+                            </div>
+                        </div>
+                        <span class="errormsgcls">{emailerror}</span>
                         <div class="input-field">
-                            <img src={userimg}/>
-                            <input type="text" name="Email" autocomplete="Email" placeholder="Email Id" required="yes">
+                            <img src={userimg} />
+                            <!-- <input type="text" name="Email" autocomplete="Email" placeholder="Email Id" required="yes" onfocusout={onblurvalue}> -->
+                            <lightning-input name="Email" class="input_cls" autocomplete="Email"
+                                onfocusout={onblurvalue} placeholder="Emaill Id" required="true"></lightning-input>
                         </div>
                         <div class="input-field">
-                            <img src={passwordimg}/>
-                            <input type="password" name="contraseña" autocomplete="current-password" placeholder="**********"
-                            id="id_password" required="yes">
-                            <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                            <img src={userimg} />
+                            <lightning-combobox name="Job Title" value={jobval} placeholder="Job Title"
+                                class="input_cls" options={jobpicklist} onchange={handleChange}>
+                            </lightning-combobox>
                         </div>
-                        <div class="btn_cls slds-p-top_medium">
-                            <input type="submit" value="REGISTER" class="btn_cls registerbtn">
+                        <div class="input-field">
+                            <img src={userimg} />
+                            <!-- <input type="text" name="Postcode" autocomplete="Postcode" placeholder="School Postcode"
+                                required="yes" onchange={handleChange}> -->
+                            <lightning-input name="Postcode" class="input_cls" autocomplete="Postcode"
+                                onchange={handleChange} placeholder="School Postcode" required="true"></lightning-input>
+                        </div>
+                        <div class="field_cls">
+                            <div class="input-field">
+                                <img src={userimg} />
+                                <!-- <input type="text" name="Mobile" autocomplete="Mobile" placeholder="Mobile no."
+                                    required="yes" onchange={handleChange}> -->
+                                <lightning-input name="Mobile" class="input_cls" autocomplete="Mobile"
+                                    onchange={handleChange} placeholder="Mobile no." required="true"></lightning-input>
+                            </div>
+                            <div class="input-field">
+                                <img src={userimg} />
+                                <!-- <input type="text" name="Phone" autocomplete="Postcode" placeholder="Phone no."
+                                    required="yes" onchange={handleChange}> -->
+                                <lightning-input name="Phone" class="input_cls" autocomplete="Phone" onchange={handleChange}
+                                    placeholder="Phone no." required="true"></lightning-input>
+                            </div>
+                        </div>
+                        <div class="slds-p-top_medium">
+                            <input type="submit" value="REGISTER" class="btn_cls registerbtn" onclick={register}>
                         </div>
                     </div>
 

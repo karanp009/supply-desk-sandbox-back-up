@@ -1,0 +1,51 @@
+<template>
+    <div class="communitymain_cls">
+        <div>
+            <div class="content">
+                <div class="midBlock slds-grid slds-gutters">
+                    <div class="welcomeText slds-col slds-size_8-of-12">
+                        <h2>Compliance is not optional.</h2>
+                        <p class="subtext slds-m-top_x-medium">How you get there is.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content-->
+        <div class="content">
+
+            <br />
+            <div>
+                <div class="middleText">
+                    <div class="timesheet-table">
+                        <div class="slds-grid slds-wrap table-row">
+                            <div class="slds-col slds-size_3-of-12">
+                                <div>Row 1</div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div>Row 2</div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div>Row 3</div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div>Row 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <template for:each={crlist} for:item="cr">
+                        <div class="slds-grid slds-wrap table-row" key={cr}>
+                            <div class="slds-col slds-size_3-of-12">{cr.name}</div>
+                            <div class="slds-col slds-size_3-of-12">Row Data</div>
+                            <div class="slds-col slds-size_3-of-12">Row Data</div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <button class="btn_cls" data-value="Testing" onclick={openpdf}>Click Here</button>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>

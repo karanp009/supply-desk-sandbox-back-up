@@ -4,7 +4,8 @@
     min-height: 100vh;
     background-color: var(--bg-color);
     overflow: hidden;
-    background-image: url(https://supplydesk--mvcdev--c.visualforce.com/resource/1656478070000/LoginPageImage?);
+    /* background-image: url(https://supplydesk--mvcdev--c.visualforce.com/resource/1656478070000/LoginPageImage?); */
+    background-image: url('/resource/bgimage');;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -62,6 +63,7 @@
 /* MODAL */
 
 .title {
+    font-family: 'Raleway';
     font-size: 40px;
     color: #000000;
     margin-bottom: 10px;
@@ -70,6 +72,7 @@
 }
 
 .subtitle {
+    font-family: 'Raleway';
     font-size: 22px;
     color: #000000;
 }
@@ -77,12 +80,13 @@
 .input-field {
     height: 45px;
     margin: 10px 0;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
+    /* display: grid;
+    grid-template-columns: 15% 70% 15%; */
+    display: flex;
     padding: 0 0.4rem;
     background: #fdfbfe;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 15px;
+	/* border-radius: 15px; */
     background: #D9D9D9;
 }
 
@@ -112,13 +116,9 @@
     color: var(--input);
 }
 
-.input_cls .slds-input {
-    background: none;
-    outline: none;
-    border: none;
-    line-height: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
+.input_cls {
+    margin: auto 0;
+    width: 100%;
 }
 
 .input-field input::placeholder {
@@ -133,14 +133,7 @@
     padding: 3% 10%;
     width: 150px;
     font-size: 20px;
-}
-
-.registerbtn{
-	background: #C50E1BCC;
-}
-
-.loginbtn {
-	background: #2196F3ED;
+    background: #2196F3ED;
 }
 
 /* ANIMATION */

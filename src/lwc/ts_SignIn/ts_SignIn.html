@@ -14,19 +14,19 @@
                         <div class="input-field">
                             <img src={userimg}/>
                             <!-- <input type="text" name="username" autocomplete="username" placeholder="client.u@foxmail.com" required="yes"> -->
-                            <lightning-input name="username" class="input_cls" value={username} onchange={handleChange} placeholder="client.u@foxmail.com"></lightning-input>
+                            <lightning-input name="username" autocomplete="" class="input_cls" value={username} onchange={handleChange} placeholder="client.u@foxmail.com"></lightning-input>
                         </div>
                         <div class="input-field">
                             <img src={passwordimg}/>
                             <!-- <input type="password" name="password" autocomplete="current-password" placeholder="**********"
                             id="id_password" required="yes"> -->
-                            <lightning-input name="password" class="input_cls" value={password} onchange={handleChange} placeholder="********"></lightning-input>
+                            <lightning-input type="Password" autocomplete="" name="password" class="input_cls" value={password} onchange={handleChange} placeholder="********"></lightning-input>
                         </div>
                         <div>
-                            <a class="pass" href="#">Forgot your password?</a>
+                            <a class="pass" href="/s/forgotpasswordpage">Forgot your password?</a>
                         </div>
                         <div class="slds-p-top_medium slds-wrap slds-grid">
-                            <input type="submit" value="REGISTER" class="btn_cls registerbtn slds-col slds-m-horizontal_medium">
+                            <!-- <input type="submit" value="REGISTER" class="btn_cls registerbtn slds-col slds-m-horizontal_medium"> -->
                             <input type="submit" value="LOGIN" class="btn_cls loginbtn slds-col slds-m-horizontal_medium" onclick={login}>
                         </div>
                     </div>

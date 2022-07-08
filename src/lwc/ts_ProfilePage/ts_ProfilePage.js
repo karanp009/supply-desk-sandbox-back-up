@@ -119,6 +119,46 @@ export default class Ts_ProfilePage extends LightningElement {
         },1500);
     }
 
+    handleFile(event){
+        console.log({event});
+        let fileList = event.detail.files;
+        console.log('length>>',fileList.length);
+        var target = event.target.name;
+        console.log({fileList});
+    
+        [...fileList].forEach(file => {
+            let fileReader = new FileReader();
+            file.sObjectId = this.recordId;
+
+            var sId = file.sObjectId;
+            console.log({sId});
+            fileReader.onload = function() {
+                let fileContents = fileReader.result;
+                let base64Mark = 'base64,';
+                let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
+                fileContents = fileContents.substring(dataStart);
+                console.log('this.recordId>>',sId);
+                saveCV({
+                    parentId: sId,
+                    fileName: file.name,
+                    base64Data: encodeURIComponent(fileContents)
+                })
+                .then(result => {
+                    // alert('Sucess');
+                   
+                })
+                .catch(error => {
+                    alert('Error');
+                });
+            };
+            fileReader.readAsDataURL(file);
+            console.log('fl>>',fileList.length);
+            
+            alert('File Uploaded Successfully');
+                        
+        });
+    }
+
     handleUploadFinished(event) {
         // Get the list of uploaded files
         const uploadedFiles = event.detail.files;

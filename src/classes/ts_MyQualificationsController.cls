@@ -1,4 +1,4 @@
-public with sharing class ts_MyQualificationsController {
+public without sharing class ts_MyQualificationsController {
 
 
     @AuraEnabled

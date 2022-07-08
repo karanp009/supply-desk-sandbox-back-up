@@ -31,4 +31,30 @@ public without sharing class ts_ProfilePageController {
         // ConnectApi.Photo photo = ConnectApi.UserProfiles.setPhoto(communityId, parentId,fileId, EncodingUtil.base64Decode(base64Data));
 
     }
+
+    @AuraEnabled
+    public static void saveCV(String parentId, String fileName, String base64Data) { 
+
+        base64Data = EncodingUtil.urlDecode(base64Data, 'UTF-8');
+        ContentVersion contentVersion = new ContentVersion();
+        contentVersion.ContentLocation = 'S'; //S-Document is in Salesforce. E-Document is outside of Salesforce. L-Document is on a Social Netork.
+        contentVersion.PathOnClient = fileName;//File name with extention
+        contentVersion.Origin = 'C';//C-Content Origin. H-Chatter Origin.
+        contentVersion.OwnerId = UserInfo.getUserId();//Owner of the file
+        contentVersion.Title = fileName;//Name of the file
+        contentVersion.VersionData = EncodingUtil.base64Decode(base64Data);//File content
+        insert contentVersion;
+
+        //After saved the Content Verison, get the ContentDocumentId
+        Id contentDocumentId = [SELECT ContentDocumentId FROM ContentVersion WHERE Id =:contentVersion.Id].ContentDocumentId;
+
+        //Insert ContentDocumentLink
+        ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
+        contentDocumentLink.ContentDocumentId = contentDocumentId;//Add ContentDocumentId
+        contentDocumentLink.LinkedEntityId = parentId;//Add attachment parentId
+        contentDocumentLink.ShareType = 'I';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
+        contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
+        insert contentDocumentLink;
+
+    }
 }

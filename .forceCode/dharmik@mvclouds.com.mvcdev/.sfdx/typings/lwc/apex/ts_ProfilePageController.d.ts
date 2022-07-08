@@ -7,3 +7,6 @@ declare module "@salesforce/apex/ts_ProfilePageController.getData" {
 declare module "@salesforce/apex/ts_ProfilePageController.saveFile" {
   export default function saveFile(param: {userId: any, fileId: any, base64Data: any}): Promise<any>;
 }
+declare module "@salesforce/apex/ts_ProfilePageController.saveCV" {
+  export default function saveCV(param: {parentId: any, fileName: any, base64Data: any}): Promise<any>;
+}

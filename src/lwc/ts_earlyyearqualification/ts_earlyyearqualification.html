@@ -2,22 +2,24 @@
 <template>
     <div class="mainDiv slds-card">
         <!-- for early qualification -->
-        <div style="display:none">
-            <div class="slds-grid slds-gutters slds-border_bottom">
-                <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
+        <div class="slds-grid slds-gutters slds-border_bottom">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
 
-                    <div>
-                        <p class="slds-m-top_x-large slds-m-left_large t1">Candidate</p>
-                        <p class="slds-m-left_large t2">My Qualifications</p>
-                    </div>
-                </div>
-                <div
-                    class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">
-                    <div class="slds-size_1-of-5 slds-m-left_medium saveBtn">Save & Next</div>
-                    <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">Cancel</div>
+                <div>
+                    <p class="slds-m-top_x-large slds-m-left_large t1">Candidate</p>
+                    <p class="slds-m-left_large t2">My Qualifications</p>
                 </div>
             </div>
+            <div
+                class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">
+                <div class="slds-size_1-of-5 slds-m-left_medium saveBtn" onclick={saveQualification}>Save & Next
+                </div>
+                <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">Cancel</div>
+            </div>
+        </div>
 
+        <!-- Early Year Qualification -->
+        <div style="display:none">
             <div
                 class="slds-p-horizontal--small slds-col slds-box slds-box_x-small slds-m-bottom--medium slds-m-top_xx-large qualify">
                 <div>
@@ -27,7 +29,7 @@
 
             <lightning-combobox name="progress" label="Qualification Type"
                 class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-vertical_xx-large slds-size_6-of-12"
-                value={value} options={options} onchange={handleChange}
+                value={EYvalue} options={options} onchange={handleChange}
                 style="font-weight:600; line: height 21px; font-size:12px;">
             </lightning-combobox>
 
@@ -267,7 +269,7 @@
         </div>
 
         <!-- Overseas Police Check -->
-        <div>
+        <div style="display: none;">
             <div
                 class="slds-p-horizontal--small slds-col slds-box slds-box_x-small slds-m-bottom_medium slds-m-top_xx-large qualify">
                 Overseas Police Check
@@ -291,8 +293,7 @@
 
                     </div>
 
-                    <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_1-of-12 slds-form-element"
-                        >
+                    <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_1-of-12 slds-form-element">
                         <lightning-input type="date" name="input1" placeholder="End Date"></lightning-input>
 
                     </div>
@@ -300,18 +301,18 @@
             </div>
 
 
-            <div style="margin-left: 7em;font-weight:bold; margin-top:2em;">
-                Overseas Police Check
-                <div class="slds-grid slds-gutters">
-                    <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-form-element"
+            <div>
+                <div style="margin-left: 7em;font-weight:bold; margin-top:2em;">Overseas Police Check</div>
+                <div class="slds-grid slds-gutters" style="margin-top: 5px;">
+                    <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_1-of-12 slds-form-element"
                         style="margin-left: 6em;">
                         <lightning-input type="date" name="input1" placeholder="Valid From"></lightning-input>
 
                     </div>
 
-                    <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-form-element"
-                        style="margin-left: 6em;">
+                    <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_1-of-12 slds-form-element">
                         <lightning-input type="date" name="input1" placeholder="Expiry Date"></lightning-input>
+
                     </div>
                 </div>
             </div>
@@ -389,30 +390,42 @@
             </lightning-dual-listbox>
         </div>
 
-        <!-- Prem DBS -->
+        <!-- Perm DBS -->
         <div style="display: none;">
             <div
                 class="slds-p-around_x-small slds-p-horizontal--small slds-col slds-box slds-box_x-small slds-m-bottom--medium slds-m-top_xx-large qualify">
                 <div>
-                    Prem DBS
+                    Perm DBS
                 </div>
             </div>
 
             <div
                 class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium slds-form-element l-input">
-                <lightning-input type="number" name="input3" placeholder="Number" label="DBS Number"></lightning-input>
+                <lightning-input type="text" name="permDBS" placeholder="Number" onchange={handleChange}
+                    label="DBS Number" value={dbsValue}>
+                </lightning-input>
 
             </div>
 
-            <div class="slds-form-element__control slds-m-top_large checkbox slds-m-bottom_medium">
+            <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-p-left_small">
+                <div class="slds-col slds-size_2-of-12 slds-m-left_large textp">On Update Service
+                </div>
+                <div>
+                    <lightning-input name="onUPser" class="slds-p-left_large" type="checkbox" onchange={handleChange}
+                        value={checkbox}>
+                    </lightning-input>
+                </div>
+            </div>
+            <!-- <div class="slds-form-element__control slds-m-top_large checkbox slds-m-bottom_medium">
                 <div class="slds-checkbox">
-                    <input type="checkbox" name="options" id="checkbox-unique-id-76" value="checkbox-unique-id-73" />
+                    <input type="checkbox" name="options" id="checkbox-unique-id-76" value="checkbox-unique-id-73"
+                        checked={checked} />
                     <label class="slds-checkbox__label" for="checkbox-unique-id-76">
                         <span class="slds-form-element__label">On Update Service</span>
                         <span class="slds-checkbox_faux" style="margin-left: 20px;"></span>
                     </label>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- Post 16 Qualifications -->
@@ -468,7 +481,7 @@
         </div>
 
         <!-- Safeguarding -->
-        <div style="display: none;">
+        <div>
             <div>
                 <div
                     class="slds-p-around_x-small slds-p-horizontal--small slds-col slds-box slds-box_x-small slds-m-bottom--medium slds-m-top_xx-large qualify">
@@ -480,7 +493,9 @@
 
             <div
                 class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom_medium slds-form-element l-input">
-                <lightning-input type="date" name="input1" label="Safeguarding Complition Date"></lightning-input>
+                <lightning-input type="date" name="safedate" onchange={handleChange}
+                    label="Safeguarding Complition Date">
+                </lightning-input>
 
             </div>
         </div>

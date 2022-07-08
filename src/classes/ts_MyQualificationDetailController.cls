@@ -30,11 +30,11 @@ public without sharing class ts_MyQualificationDetailController {
             qualList.SET_Registration_Number__c = qual.SET_Registration_Number__c;
             qualList.QTLS__c = qual.QTLS__c;
         }
-        // else if(qual.qualificationName__c == 'Right to Work'){
+        else if(qual.qualificationName__c == 'Right to Work'){
             System.debug('Perm');
             qualList.Permanent_Right_to_Work_in_UK__c = qual.Permanent_Right_to_Work_in_UK__c;
             qualList.Documents__c = qual.Documents__c;
-        // }
+        }
         System.debug('qualList>>>'+qualList);
         update qualList;
         System.debug('In editQualification');

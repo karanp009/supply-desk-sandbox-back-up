@@ -2,7 +2,9 @@
     display: flex;
     align-items: center;
 }
-
+.datediv{
+    width: 52rem;
+}
 .cvDiv{
     background-color: #F6F6F6;
     color: black;

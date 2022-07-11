@@ -13,10 +13,13 @@ import Group1IdType from '@salesforce/schema/TR1__Associated_Qualification__c.Gr
 import Group2AIdType from '@salesforce/schema/TR1__Associated_Qualification__c.Group_2a_ID_Type__c';
 import Group2bIdType from '@salesforce/schema/TR1__Associated_Qualification__c.Group_2b_ID_Type__c';
 import NameChangeDocument from '@salesforce/schema/TR1__Associated_Qualification__c.Name_Change_Document__c';
+import Update_Service_Status_Check__c from '@salesforce/schema/TR1__Associated_Qualification__c.Update_Service_Status_Check__c';
 import { CurrentPageReference } from 'lightning/navigation';
 import Qualificationcss from '@salesforce/resourceUrl/Qualificationcss';
 import getContactId from '@salesforce/apex/ts_MyQualificationDetailController.getContactId';
 import editQuali from '@salesforce/apex/ts_MyQualificationDetailController.editQuali';
+import Choice_of_Country__c from '@salesforce/schema/TR1__Associated_Qualification__c.Choice_of_Country__c';
+
 
 export default class Ts_MyQualificationDetail extends LightningElement {
 
@@ -46,10 +49,16 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     docs = [];
 
     //For Overseas Teacher qualification
-    @track naricApproveOps;
+    @track naricApproveOps = [];
+
+    @track OTQQFtypeval;
+    @track naricApprove;
+    @track otstranum;
+    @track OTQteacherQualification = '';
+
 
     //For teacher qualification
-    @track teacherQFTypeOptions;
+    @track teacherQFTypeOptions = [];
     @track teacherQualifications = [];
 
     @track teacherQftype;
@@ -63,8 +72,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track opcEddate;
 
     //For Id Qualification
-    @track groupTypes;
-    @track nameChangeDocuments;
+    @track groupTypes = [];
+    @track nameChangeDocuments = [];
     @track Group2aIdTypes = [];
     @track Group2bIdTypes = [];
 
@@ -72,6 +81,40 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track namechangedocument;
     @track group2aIdType = '';
     @track group2bIdType = '';
+
+    //For safeguarding
+    @track safegDate;
+
+    //for emergency contact
+    @track eContactName;
+    @track eConMobile;
+    @track eConWork;
+    @track Relate;
+    @track eConHome;
+    @track eConAdd;
+
+     //for dbs
+    @track dbNum;
+    @track dbsUpdateSer;
+    @track dbsOptions;
+
+    //for post 16 qualificaitons
+    @track snumb;
+    @track qValue;
+    @track qList = [];
+    @track expirDate;
+    @track QtlsCheck;
+    @track qualmultipick;
+    @track qualopt = [];
+
+    //For international
+
+    @track choiceOfCountryOps = [];
+
+    @track country='';
+    @track seekIntPos;
+
+
 
     @wire(CurrentPageReference)
     getStateParameters(currentPageReference) {
@@ -241,7 +284,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             fieldApiName: NameChangeDocument
         }
     )
-    workRightValues(data,error){
+    nameChangeDocumentsValues(data,error){
         if(data && data.data && data.data.values){
             let options = [];
             data.data.values.forEach( objPicklist => {
@@ -284,6 +327,91 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             });
             console.log('this.Group2bIdTypes>>>',this.Group2bIdTypes);
         } else if(error){
+            console.log(error);
+        }
+    };
+
+     //get picklist for dbs
+     @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Update_Service_Status_Check__c
+        }
+    )
+    updateStatusCheck(data, error) {
+        console.log({ data });
+        if (data && data.data && data.data.values) {
+            let options = [];
+            data.data.values.forEach(objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value });
+            });
+            this.dbsOptions = options;
+
+        } else if (error) {
+            console.log(error);
+        }
+    };
+
+     //get picklist for post 16 qualifications
+     @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Qualification_Type2__c
+        }
+    )
+    qualificationType(data, error) {
+        console.log({ data });
+        if (data && data.data && data.data.values) {
+            let options11 = [];
+            data.data.values.forEach(objPicklist => {
+                options11.push({ label: objPicklist.value, value: objPicklist.value });
+            });
+            this.qList = options11;
+
+        } else if (error) {
+            console.log(error);
+        }
+    };
+
+     // for multi picklist
+     @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Qualification_Type__c
+        }
+    )
+    qualificationTypee(data, error) {
+        console.log({ data });
+        if (data && data.data && data.data.values) {
+            let options = [];
+            data.data.values.forEach(objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value });
+            });
+            this.qualopt = options;
+
+        } else if (error) {
+            console.log(error);
+        }
+    };
+
+    //for international qulification
+
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Choice_of_Country__c
+        }
+    )
+    qualificationTypee(data, error) {
+        console.log({ data });
+        if (data && data.data && data.data.values) {
+            let options = [];
+            data.data.values.forEach(objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value });
+            });
+            this.choiceOfCountryOps = options;
+
+        } else if (error) {
             console.log(error);
         }
     };
@@ -392,14 +520,22 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
         else if(this.urlName == 'Overseas Teacher Qualifications'){
 
-            if(event.target.name == ''){
+            if(event.target.name == 'OTQQFtypeval'){
+                this.OTQQFtypeval = event.target.value;
+            }
+            else if(event.target.name == 'naricApprove'){
+                this.naricApprove = event.target.value;
+            }
+            else if(event.target.name == 'otstranum'){
+                this.otstranum = event.target.value;
+            }
+            else if(event.target.name == 'OTQteacherQualification'){
 
-            }
-            if(event.target.name == ''){
-                
-            }
-            if(event.target.name == ''){
-                
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.OTQteacherQualification += docslst[parseInt(k)]+';';
+                } 
             }
         }
 
@@ -429,6 +565,81 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 }                
             }
         }
+        else if (this.urlName == 'Safeguarding') {
+            if (event.target.name == 'safedate') {
+                this.safegDate = event.target.value;
+                console.log('this.safegDate ---->' + this.safegDate);
+            }
+        }
+
+        else if (this.urlName == 'Emergency Contact') {
+            if (event.target.name == 'EconName') {
+                this.eContactName = event.target.value;
+                console.log('this.eContac ---> ' + this.eContactName);
+            } else if (event.target.name == 'EconMobile') {
+                this.eConMobile = event.target.value;
+                console.log('this.eConMobile ---> ' + this.eConMobile);
+            } else if (event.target.name == 'EconWork') {
+                this.eConWork = event.target.value;
+                console.log('this.eConWork ->' + this.eConWork);
+            } else if (event.target.name == 'Relation') {
+                this.Relate = event.target.value;
+                console.log('this.Relate --->' + this.Relate);
+            } else if (event.target.name == 'EconHome') {
+                this.eConHome = event.target.value;
+                console.log('this.eConHome --->' + this.eConHome);
+
+            } else if (event.target.name == 'EconAdd') {
+                this.eConAdd = event.target.value;
+                console.log('this.eConAdd --->' + this.eConAdd);
+
+            }
+        }
+
+        else if (this.urlName == 'DBS') {
+            if (event.target.name == 'dbnumber') {
+                this.dbNum = event.target.value;
+                console.log('this.dbNum --->' + this.dbNum);
+            } else if (event.target.name == 'dbsname') {
+                this.dbsUpdateSer = event.detail.value;
+                console.log('this.dbsUpdateSer -------->' + this.dbsUpdateSer);
+            }
+
+        }
+
+        else if (this.urlName == 'Post 16 Qualifications') {
+            if (event.target.name == 'snumber') {
+                this.snumb = event.target.value;
+                console.log('this.snumb --->' + this.snumb);
+            } else if (event.target.name == 'quList') {
+                this.qValue = event.detail.value;
+                console.log('this.qValue --->' + this.qValue);
+            } else if (event.target.name == 'expDate') {
+                this.expirDate = event.target.value;
+                console.log('this.expirDate -------->' + this.expirDate);
+            } else if (event.target.name == 'qtl') {
+                this.QtlsCheck = event.target.checked;
+                console.log('this.QtlsCheck --->' + this.QtlsCheck);
+            } else if (event.target.name == 'qualselect') {
+                this.qualmultipick = event.detail.value;
+                console.log('this.qualmultipick --->' + this.qualmultipick);
+            }
+
+        }
+
+        else if (this.urlName == 'International') {
+            if (event.target.name == 'seekIntPos') {                
+                this.seekIntPos = event.target.checked;
+            } else if (event.target.name == 'country') {
+
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.country += docslst[parseInt(k)]+';';
+                }    
+            }
+        }
+        
     }
 
     saveQualification(){
@@ -462,6 +673,13 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             qualObj.Qualification_Type__c = this.teacherDualVal;
         }
 
+        else if(this.urlName == 'Overseas Teacher Qualifications'){
+            qualObj.NCTL_Number__c = this.otstranum;
+            qualObj.NARIC_Approved__c = this.naricApprove;
+            qualObj.Qualification_Type2__c  = this.OTQQFtypeval;
+            qualObj.Qualification_Type__c = this.OTQteacherQualification;
+        }
+
         else if(this.urlName == 'Overseas Police Check'){
         
             qualObj.Overseas_Police_Check__c = this.overseasPoliceOps;
@@ -477,7 +695,43 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             qualObj.Group_2b_ID_Type__c = this.Group2bIdType;
         }
 
+        else if (this.urlName == 'Safeguarding') {
+            qualObj.Safeguarding_Date_Completed__c = this.safegDate;
+            console.log('qualObj.Safeguarding_Date_Completed__c ----> ' + qualObj.Safeguarding_Date_Completed__c);
+        }
         
+        else if (this.urlName == 'Emergency Contact') {
+            qualObj.Relationship_to_You__c = this.Relate;
+            qualObj.Emergency_Contact_Address__c = this.eConAdd;
+            qualObj.Emergency_Contact_Home_Phone__c = this.eConHome;
+            qualObj.Emergency_Contact_Mobile_Phone__c = this.eConMobile;
+            qualObj.Emergency_Contact_Work_Phone__c = this.eConWork;
+            qualObj.Emergency_Contact_Name__c = this.eContactName;
+            console.log('qualObj.Emergency_Contact_Name__c ----> ' + qualObj.Emergency_Contact_Name__c);
+        }
+        
+        else if (this.urlName == 'DBS') {
+            qualObj.DBS_Form_Number__c = this.dbNum;
+            qualObj.Update_Service_Status_Check__c = this.dbsOptions;
+
+        }
+
+        else if (this.urlName == 'Post 16 Qualifications') {
+            qualObj.SET_Registration_Number__c = this.snumb;
+            qualObj.Qualification_Type2__c = this.qList;
+            qualObj.SET_Expiry_Date__c = this.expirDate;
+            qualObj.QTLS__c = this.QtlsCheck;
+            qualObj.Qualification_Type__c = this.qualmultipick;
+        }
+
+        else if(this.urlName == 'International'){
+
+            qualObj.Seeking_International_Position__c = this.seekIntPos;
+            qualObj.Choice_of_Country__c = this.country;
+        }
+
+        
+
         editQuali({
             conId : this.contactId,
             qfname : this.urlName,

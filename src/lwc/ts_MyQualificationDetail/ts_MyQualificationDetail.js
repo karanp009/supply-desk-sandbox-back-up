@@ -6,6 +6,13 @@ import Permanent_Right_to_Work_in_UK__c from '@salesforce/schema/TR1__Associated
 import Documents__c from '@salesforce/schema/TR1__Associated_Qualification__c.Documents__c';
 import OverseasPolicecheck from '@salesforce/schema/TR1__Associated_Qualification__c.Overseas_Police_Check__c'; 
 import OTQQualifications from '@salesforce/schema/TR1__Associated_Qualification__c.Overseas_Police_Check__c';
+import Qualification_Type2__c from '@salesforce/schema/TR1__Associated_Qualification__c.Qualification_Type2__c';
+import Qualification_Type__c from '@salesforce/schema/TR1__Associated_Qualification__c.Qualification_Type__c';
+import NARICApprove from '@salesforce/schema/TR1__Associated_Qualification__c.NARIC_Approved__c';
+import Group1IdType from '@salesforce/schema/TR1__Associated_Qualification__c.Group_1_ID_Type__c';
+import Group2AIdType from '@salesforce/schema/TR1__Associated_Qualification__c.Group_2a_ID_Type__c';
+import Group2bIdType from '@salesforce/schema/TR1__Associated_Qualification__c.Group_2b_ID_Type__c';
+import NameChangeDocument from '@salesforce/schema/TR1__Associated_Qualification__c.Name_Change_Document__c';
 import { CurrentPageReference } from 'lightning/navigation';
 import Qualificationcss from '@salesforce/resourceUrl/Qualificationcss';
 import getContactId from '@salesforce/apex/ts_MyQualificationDetailController.getContactId';
@@ -38,9 +45,15 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track workPermit;
     docs = [];
 
+    //For Overseas Teacher qualification
+    @track naricApproveOps;
+
     //For teacher qualification
-    @track teacherQftype = [];
-    @track teacherDualVal =[];
+    @track teacherQFTypeOptions;
+    @track teacherQualifications = [];
+
+    @track teacherQftype;
+    @track teacherDualVal = '';
     @track tranum;
 
     //For Overseas police check
@@ -48,6 +61,17 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track overseasVal;
     @track opcStdate;
     @track opcEddate;
+
+    //For Id Qualification
+    @track groupTypes;
+    @track nameChangeDocuments;
+    @track Group2aIdTypes = [];
+    @track Group2bIdTypes = [];
+
+    @track group1IdTypeVal;
+    @track namechangedocument;
+    @track group2aIdType = '';
+    @track group2bIdType = '';
 
     @wire(CurrentPageReference)
     getStateParameters(currentPageReference) {
@@ -90,7 +114,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         }
     )
     workRightValues(data,error){
-        console.log({data});
+        
         if(data && data.data && data.data.values){
             let options = [];
             data.data.values.forEach( objPicklist => {
@@ -111,7 +135,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         }
     )
     workRightValues(data,error){
-        console.log({data});
+        
         if(data && data.data && data.data.values){
             let options = [];
             data.data.values.forEach( objPicklist => {
@@ -124,6 +148,145 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         }
     };
 
+    //Get picklist values for overseas teacher qualification
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: NARICApprove
+        }
+    )
+    
+    overseasteacherOps(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.naricApproveOps = options;
+            console.log('this.naricApproveOps>>',this.naricApproveOps);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    //Get picklist values for teacher Qualification types
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Qualification_Type2__c
+        }
+    )
+    
+    teacherQFTypeVal(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.teacherQFTypeOptions = options;
+            console.log('this.teacherQFTypeOptions>>',this.teacherQFTypeOptions);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+
+    //Get picklist values for Teacher qualifications
+    @wire(getPicklistValues,
+         {recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+          fieldApiName: Qualification_Type__c
+        }
+    )
+
+    teacherQualificationsVal(data, error){
+        
+        if(data && data.data && data.data.values){
+            data.data.values.forEach( objPicklist => {
+                
+                this.teacherQualifications.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+            });
+            console.log('this.teacherQualifications>>>',this.teacherQualifications);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    //Get picklist values for groupIdtype
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Group1IdType
+        }
+    )
+    groupTypeOptions(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.groupTypes = options;
+            console.log('this.groupTypes>>',this.groupTypes);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    //Get picklist values for NameChangeDocument
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: NameChangeDocument
+        }
+    )
+    workRightValues(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.nameChangeDocuments = options;
+            
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    //Get picklist values for Group2aIdtype
+    @wire(getPicklistValues, {recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId', fieldApiName: Group2AIdType})
+    groupTypesValues(data, error){
+        
+        if(data && data.data && data.data.values){
+            data.data.values.forEach( objPicklist => {
+        
+                this.Group2aIdTypes.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+            });
+            console.log('this.Group2aIdTypes>>>',this.Group2aIdTypes);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    //Get picklist values for Group2bIdtype
+    @wire(getPicklistValues, {recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId', fieldApiName: Group2bIdType})
+    languages(data, error){
+        if(data && data.data && data.data.values){
+            data.data.values.forEach( objPicklist => {
+                this.Group2bIdTypes.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+            });
+            console.log('this.Group2bIdTypes>>>',this.Group2bIdTypes);
+        } else if(error){
+            console.log(error);
+        }
+    };
 
     connectedCallback(){
         console.log('qualificationname>>>'+this.qualification); 
@@ -188,9 +351,6 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 const docslst = Object.assign({}, this.docs);
                 console.log('docslst>>',docslst);
                 for(var k in docslst){
-                    console.log({k});
-                    // var i  = parseInt(k);
-                    // console.log({i});
                     this.s += docslst[parseInt(k)]+';';
                 }                
                 console.log('s>>',this.s);                
@@ -206,10 +366,15 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 this.tranum = event.target.value;
             }
             else if(event.target.name == 'teacherQftype'){
-                this.teacherQftype = event.detail.value;
+                this.teacherQftype = event.target.value;
             }
             else if(event.target.name == 'teacherDualVal'){
-                this.teacherDualVal = event.detail.value;
+
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.teacherDualVal += docslst[parseInt(k)]+';';
+                }   
             }
         }
         else if(this.urlName == 'Overseas Police Check'){
@@ -235,6 +400,33 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             }
             if(event.target.name == ''){
                 
+            }
+        }
+
+        else if(this.urlName == 'ID'){
+
+            if(event.target.name == 'group1IdType'){
+                this.group1IdTypeVal = event.target.value;
+            }
+            else if(event.target.name == 'namechangedocument'){
+                this.namechangedocument = event.target.value;
+            }
+            else if(event.target.name == 'group2aIdType'){
+
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.group2aIdType += docslst[parseInt(k)]+';';
+                }                
+                
+            }
+            else if(event.target.name == 'group2bIdType'){
+                
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.group2bIdType += docslst[parseInt(k)]+';';
+                }                
             }
         }
     }
@@ -265,6 +457,9 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
         else if(this.urlName == 'Teacher Qualification'){
             
+            qualObj.NCTL_Number__c = this.tranum;
+            qualObj.Qualification_Type2__c = this.teacherQftype;
+            qualObj.Qualification_Type__c = this.teacherDualVal;
         }
 
         else if(this.urlName == 'Overseas Police Check'){
@@ -272,6 +467,14 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             qualObj.Overseas_Police_Check__c = this.overseasPoliceOps;
             qualObj.Live_Worked_Overseas_Start_Date__c = this.opcStdate;
             qualObj.Live_Worked_Overseas_End_Date__c = this.opcEddate;
+        }
+
+        else if(this.urlName == 'ID'){
+        
+            qualObj.Group_1_ID_Type__c = this.group1IdTypeVal;
+            qualObj.Name_Change_Document__c = this.namechangedocument;
+            qualObj.Group_2a_ID_Type__c = this.Group2aIdType;
+            qualObj.Group_2b_ID_Type__c = this.Group2bIdType;
         }
 
         

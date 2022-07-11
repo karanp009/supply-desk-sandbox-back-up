@@ -203,5 +203,4 @@ export default class Ts_ProfilePage extends LightningElement {
             })
 
     }
-
 }

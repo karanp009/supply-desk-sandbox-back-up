@@ -73,7 +73,7 @@
 
 .input-field {
     height: 45px;
-    margin: 10px 0;
+    margin: 0px 0px 20px 0px;
     display: flex;
     /* display: grid;
     grid-template-columns: 15% 70% 15%; */
@@ -123,6 +123,14 @@
 }
 
 .field_cls .input-field:first-child {
+    margin-right: 10px;
+}
+
+.error-field{
+    display: flex;
+}
+
+.field_cls .error-field:first-child{
     margin-right: 10px;
 }
 

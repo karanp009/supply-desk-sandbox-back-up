@@ -113,14 +113,14 @@
                 <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
                     <lightning-combobox name="teacherQftype"
                         class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
-                        value={teacherQftype} options={options} onchange={handleChange}
+                        value={teacherQftype} options={teacherQFTypeOptions} onchange={handleChange}
                         style="font-weight:200; line: height 21px; font-size:12px;">
                     </lightning-combobox>
                 <!-- </div> -->
             </div>
             <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large">
                 <lightning-dual-listbox name="teacherDualVal" source-label="Available" class="slds-m-left_xx-large"
-                    selected-label="Selected" options={docOptions} value={teacherDualVal}
+                    selected-label="Selected" options={teacherQualifications} value={teacherDualVal}
                     onchange={handleChange}>
                 </lightning-dual-listbox>
             </div> 
@@ -172,7 +172,7 @@
                 class="slds-p-around_x-small slds-size_8-of-12 lgc-bg slds-p-horizontal--small slds-col slds-m-bottom_medium slds-m-top_medium slds-form-element">
                 <lightning-combobox name="progress" label="Qualification Type"
                     class="slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-size_6-of-12"
-                    value={value} options={options} onchange={handleChange} style="font-weight:600; font-size:12px;">
+                    value={OTQQFtypeval} options={teacherQFTypeOptions} onchange={handleChange} style="font-weight:600; font-size:12px;">
                 </lightning-combobox>
             </div>
 
@@ -186,7 +186,7 @@
 
             <div class="slds-m-left_xx-large">
                 <div class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium slds-m-left_x-large slds-form-element l-input">
-                    <lightning-input type="number" name="otsnctlnum" label="NCTL Number"></lightning-input>
+                    <lightning-input type="number" name="otstranum" label="TRA Number"></lightning-input>
                 </div>
             </div>
 
@@ -202,51 +202,40 @@
         <!-- Overseas Teacher Qualifications -->
 
         <!-- ID -->
-        <div style="display: none;">
-            <div
-                class="slds-p-horizontal--small slds-col slds-box slds-box_x-small slds-m-bottom--medium slds-m-top_xx-large qualify">
-                <div>
-                    ID
-                </div>
+        <div>
+            <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
+                ID                
             </div>
 
-            <lightning-combobox name="progress" label="Group 1 ID Type"
-                class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-vertical_xx-large slds-size_6-of-12"
-                value={value} options={options} onchange={handleChange}
+            <lightning-combobox name="group1IdType" label="Group 1 ID Type"
+                class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_xx-large slds-size_6-of-12"
+                value={group1IdType} options={groupTypes} onchange={handleChange}
                 style="font-weight:600; line: height 21px; font-size:12px;">
             </lightning-combobox>
 
-            <lightning-combobox name="progress" label="Name Change Document"
-                class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-vertical_xx-large slds-size_6-of-12"
-                value={value} options={options} onchange={handleChange}
+            <lightning-combobox name="namechangedocument" label="Name Change Document"
+                class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_xx-large slds-m-top_medium slds-size_6-of-12"
+                value={namechangedocument} options={nameChangeDocuments} onchange={handleChange}
                 style="font-weight:600; line: height 21px; font-size:12px;">
             </lightning-combobox>
 
             <!-- <div style="display: inline-flex;"> -->
             <div class="slds-grid slds-gutters">
 
-                <div class="slds-col slds-size_1-of-3">
-                    <lightning-dual-listbox name="languages"
+                <div class="slds-col slds-size_1-of-3 slds-m-left_xx-large slds-m-top_medium">
+                    <lightning-dual-listbox name="group2aIdType" value={group2aIdType}
                         class="slds-m-right_xx-large slds-align_absolute-center slds-dueling-picklist__column_responsive "
-                        source-label="Available" selected-label="Selected" options={options} onchange={handleChange}>
+                        source-label="Available" selected-label="Selected" options={Group2aIdTypes} onchange={handleChange}>
                     </lightning-dual-listbox>
                 </div>
 
-                <div class="slds-col slds-size_1-of-3">
-                    <lightning-dual-listbox name="languages"
+                <div class="slds-col slds-size_1-of-3 slds-m-left_xx-large slds-m-top_medium">
+                    <lightning-dual-listbox name="group2bIdType" value={group2bIdType}
                         class="slds-m-right_xx-large slds-align_absolute-center slds-dueling-picklist__column_responsive "
-                        source-label="Available" selected-label="Selected" options={options} onchange={handleChange}>
+                        source-label="Available" selected-label="Selected" options={Group2bIdTypes} onchange={handleChange}>
                     </lightning-dual-listbox>
                 </div>
 
-            </div>
-
-
-            <div
-                class="slds-p-horizontal--small slds-col slds-box slds-box_x-small slds-m-bottom--medium slds-m-top_xx-large qualify">
-                <div>
-                    Add Proof
-                </div>
             </div>
         </div>
 

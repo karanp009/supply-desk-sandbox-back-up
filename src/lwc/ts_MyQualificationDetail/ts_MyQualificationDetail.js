@@ -14,6 +14,12 @@ import Group2AIdType from '@salesforce/schema/TR1__Associated_Qualification__c.G
 import Group2bIdType from '@salesforce/schema/TR1__Associated_Qualification__c.Group_2b_ID_Type__c';
 import NameChangeDocument from '@salesforce/schema/TR1__Associated_Qualification__c.Name_Change_Document__c';
 import Update_Service_Status_Check__c from '@salesforce/schema/TR1__Associated_Qualification__c.Update_Service_Status_Check__c';
+// import Ref1Type from '@salesforce/schema/TR1__Associated_Qualification__c.Reference_1_Type__c';
+import Ref1Rating from '@salesforce/schema/TR1__Associated_Qualification__c.Reference_1_Rating__c';
+// import Ref2Type from '@salesforce/schema/TR1__Associated_Qualification__c.Reference_2_Type__c';
+import Ref2Rating from '@salesforce/schema/TR1__Associated_Qualification__c.Reference_2_Rating__c';
+// import Ref3Type from '@salesforce/schema/TR1__Associated_Qualification__c.Reference_3_Type__c';
+import Ref3Rating from '@salesforce/schema/TR1__Associated_Qualification__c.Reference_3_Rating__c';
 import { CurrentPageReference } from 'lightning/navigation';
 import Qualificationcss from '@salesforce/resourceUrl/Qualificationcss';
 import getContactId from '@salesforce/apex/ts_MyQualificationDetailController.getContactId';
@@ -114,7 +120,65 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track country='';
     @track seekIntPos;
 
+    //For Early Year qualification
 
+    @track earlyYearQFtype;
+    @track earlyYearQualifications = '';
+
+    //For Support Qualification
+
+    @track supportQFtype;
+    @track supportQualifications = '';
+
+    //For Barred List
+
+    @track barredcheckurl;
+    @track barredListResult;
+    @track ewscheckeddate;
+    @track ewsnextcheckeddate;
+    @track barredlistdatecheck;
+    @track barredlistexpirydate;
+    @track DOB
+
+    //References
+
+    @track Ref1Types = [];
+    @track Ref2Types = [];
+    @track Ref3Types = [];
+    @track Ref1Ratings = [];
+    @track Ref2Ratings = [];
+    @track Ref3Ratings = [];
+
+    @track Ref1sentdate;
+    @track Reference1name;
+    @track Reference1RecDate;
+    @track Reference1phone;
+    @track Reference1daterangestart;
+    @track Reference1email;
+    @track Reference1daterangeend;
+    @track Ref1Type;
+    @track Ref1Rec;
+    @track Ref1Rating;
+    @track Ref2sentdate;
+    @track Reference2name;
+    @track Ref1recdate;
+    @track Ref2phone;
+    @track Ref2daterangest;
+    @track Ref2email;
+    @track Ref2daterangeend;
+    @track Ref2Type;
+    @track Ref2rec;
+    @track Ref2Rating;
+    @track Ref3sentdate;
+    @track Reference3Name;
+    @track Ref3revdate;
+    @track Reference3phone;
+    @track Ref3daterangest;
+    @track Ref3email;
+    @track Ref3dtrangeend;
+    @track Ref3type;
+    @track Ref3received;
+    @track Ref3rating
 
     @wire(CurrentPageReference)
     getStateParameters(currentPageReference) {
@@ -416,6 +480,123 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         }
     };
 
+    //For References
+
+    
+    // @wire(getPicklistValues,
+    //     {
+    //         recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+    //         fieldApiName: Ref1Type
+    //     }
+    // )
+    // groupTypeOptions(data,error){
+    //     if(data && data.data && data.data.values){
+    //         let options = [];
+    //         data.data.values.forEach( objPicklist => {
+    //             options.push({ label: objPicklist.value, value: objPicklist.value});
+    //         });
+    //         this.Ref1Types = options;
+    //         console.log('this.Ref1Types>>',this.Ref1Types);
+    //     } else if(error){
+    //         console.log(error);
+    //     }
+    // };
+
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Ref1Rating
+        }
+    )
+    groupTypeOptions(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.Ref1Ratings = options;
+            console.log('this.Ref1Ratings>>',this.Ref1Ratings);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    // @wire(getPicklistValues,
+    //     {
+    //         recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+    //         fieldApiName: Ref2Type
+    //     }
+    // )
+    // groupTypeOptions(data,error){
+    //     if(data && data.data && data.data.values){
+    //         let options = [];
+    //         data.data.values.forEach( objPicklist => {
+    //             options.push({ label: objPicklist.value, value: objPicklist.value});
+    //         });
+    //         this.Ref2Types = options;
+    //         console.log('this.Ref2Types>>',this.Ref2Types);
+    //     } else if(error){
+    //         console.log(error);
+    //     }
+    // };
+
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Ref2Rating
+        }
+    )
+    groupTypeOptions(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.Ref2Ratings = options;
+            console.log('this.Ref2Ratings>>',this.Ref2Ratings);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
+    // @wire(getPicklistValues,
+    //     {
+    //         recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+    //         fieldApiName: Ref3Type
+    //     }
+    // )
+    // groupTypeOptions(data,error){
+    //     if(data && data.data && data.data.values){
+    //         let options = [];
+    //         data.data.values.forEach( objPicklist => {
+    //             options.push({ label: objPicklist.value, value: objPicklist.value});
+    //         });
+    //         this.Ref3Types = options;
+    //         console.log('this.Ref3Types>>',this.Ref3Types);
+    //     } else if(error){
+    //         console.log(error);
+    //     }
+    // };
+
+    @wire(getPicklistValues,
+        {
+            recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId',
+            fieldApiName: Ref3Rating
+        }
+    )
+    groupTypeOptions(data,error){
+        if(data && data.data && data.data.values){
+            let options = [];
+            data.data.values.forEach( objPicklist => {
+                options.push({ label: objPicklist.value, value: objPicklist.value});
+            });
+            this.Ref3Ratings = options;
+            console.log('this.Ref3Ratings>>',this.Ref3Ratings);
+        } else if(error){
+            console.log(error);
+        }
+    };
+
     connectedCallback(){
         console.log('qualificationname>>>'+this.qualification); 
         this.getConId();
@@ -639,6 +820,151 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 }    
             }
         }
+
+        else if (this.urlName == 'Early Year Qualification') {
+            if (event.target.name == 'earlyYearQFtype') {                
+                this.earlyYearQFtype = event.target.value;
+            } else if (event.target.name == 'earlyYearQualifications') {
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.earlyYearQualifications += docslst[parseInt(k)]+';';
+                }    
+            }
+        }
+
+        else if (this.urlName == 'Support Qualifications') {
+            if (event.target.name == 'supportQFtype') {                
+                this.earlyYearQFtype = event.target.value;
+            } else if (event.target.name == 'supportQualifications') {
+                const docslst = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslst);
+                for(var k in docslst){
+                    this.supportQualifications += docslst[parseInt(k)]+';';
+                }    
+            }
+        }
+
+        else if(this.urlName == 'Barred List'){
+
+            if(event.target.name == 'barredcheckurl'){
+                this.barredcheckurl = event.target.value;;
+            }   
+            else if(event.target.name == 'barredListResult'){
+                this.barredListResult = event.target.value;
+            }
+            else if(event.target.name == 'ewscheckeddate'){
+                this.ewscheckeddate = event.target.value;
+            }
+            else if(event.target.name == 'ewsnextcheckeddate'){
+                this.ewsnextcheckeddate = event.target.value;
+            }
+            else if(event.target.name == 'barredlistdatecheck'){
+                this.barredlistdatecheck = event.target.value;
+            }
+            else if(event.target.name == 'barredlistexpirydate'){
+                this.barredlistexpirydate = event.target.value;
+            }
+            else if(event.target.name == 'DOB'){
+                this.DOB = event.target.value;
+            }
+
+        }
+
+        else if(this.urlName == 'References'){
+
+            if(event.target.name == 'Ref1sentdate'){
+                this.Ref1sentdate = event.target.value;
+            }   
+            else if(event.target.name == 'Reference1name'){
+                this.Reference1name = event.target.value;
+            }
+            else if(event.target.name == 'Reference1recdate'){
+                this.Reference1recdate = event.target.value;
+            }
+            else if(event.target.name == 'Reference1phone'){
+                this.Reference1phone = event.target.value;
+            }
+            else if(event.target.name == 'Reference1daterangestart'){
+                this.Reference1daterangestart = event.target.value;    
+            }
+            else if(event.target.name == 'Reference1email'){
+                this.Reference1email = event.target.value;
+            }
+            else if(event.target.name == 'Reference1daterangeend'){
+                this.Reference1daterangeend = event.target.value;
+            }
+            else if(event.target.name == 'Ref1Type'){
+                this.Ref1Type = event.target.value;
+            }
+            else if(event.target.name == 'Ref1Rec'){
+                this.Ref1Rec = event.target.value;
+            }
+            else if(event.target.name == 'Ref1Rating'){
+                this.Ref1Rating = event.target.value;
+            }
+            else if(event.target.name == 'Ref2sentdate'){
+                this.Ref2sentdate = event.target.value;
+            }
+            else if(event.target.name == 'Reference2name'){
+                this.Reference2name = event.target.value;
+            }
+            else if(event.target.name == 'Ref1recdate'){
+                this.Ref1recdate = event.target.value;
+            }
+            else if(event.target.name == 'Ref2phone'){
+                this.Ref2phone = event.target.value;
+            }
+            else if(event.target.name == 'Ref2daterangest'){
+                this.Ref2daterangest = event.target.value;
+            }
+            else if(event.target.name == 'Ref2email'){
+                this.Ref2email = event.target.value;
+            }
+            else if(event.target.name == 'Ref2daterangeend'){
+                this.Ref2daterangeend = event.target.value;
+            }
+            else if(event.target.name == 'Ref2Type'){
+                this.Ref2Type = event.target.value;   
+            }
+            else if(event.target.name == 'Ref2rec'){
+                this.Ref2rec = event.target.value;   
+            }
+            else if(event.target.name == 'Ref2Rating'){
+                this.Ref2Rating = event.target.value;
+            }
+            else if(event.target.name == 'Ref3sentdate'){
+                this.Ref3sentdate = event.target.value;
+            }
+            else if(event.target.name == 'Reference3Name'){
+                this.Reference3Name = event.target.value;
+            }
+            else if(event.target.name == 'Ref3revdate'){
+                this.Ref3revdate = event.target.value; 
+            }
+            else if(event.target.name == 'Reference3phone'){
+                this.Reference3phone = event.target.value;
+            }
+            else if(event.target.name == 'Ref3daterangest'){
+                this.Ref3daterangest = event.target.value;
+            }
+            else if(event.target.name == 'Ref3email'){
+                this.Ref3email = event.target.value;
+            }
+            else if(event.target.name == 'Ref3dtrangeend'){
+                this.Ref3dtrangeend = event.target.value;
+            }
+            else if(event.target.name == 'Ref3type'){
+                this.Ref3type = event.target.value;   
+            }
+            else if(event.target.name == 'Ref3received'){
+                this.Ref3received = event.target.value;
+            }
+            else if(event.target.name == 'Ref3rating'){
+                this.Ref3rating = event.target.value;
+            }
+            
+        }
         
     }
 
@@ -728,6 +1054,61 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
             qualObj.Seeking_International_Position__c = this.seekIntPos;
             qualObj.Choice_of_Country__c = this.country;
+        }
+
+        else if (this.urlName == 'Early Year Qualification') {
+            
+            qualObj.Qualification_Type2__c = this.earlyYearQFtype;
+            qualObj.Qualification_Type__c = this.earlyYearQualifications;
+        }
+
+        else if (this.urlName == 'Support Qualifications') {
+            
+            qualObj.Qualification_Type2__c = this.supportQFtype;
+            qualObj.Qualification_Type__c = this.supportQualifications;
+        }
+
+        else if(this.urlName == 'Barred List'){
+            qualObj.Barred_Check_URL__c = this.barredcheckurl;
+            qualObj.Barred_List_Results__c = this.barredListResult;
+            qualObj.EWC_Registration_Checked_Date__c = this.ewscheckeddate;
+            qualObj.EWC__c = this.ewsnextcheckeddate;
+            qualObj.Barred_List_Date_Checked__c = this.barredlistdatecheck;
+            qualObj.Barred_List_Expiry_Date_New__c = this.barredlistexpirydate;
+            // qualObj. = this.DOB
+        }
+
+        else if(this.urlName == 'References'){
+            qualObj.Reference_Sent_Date__c = this.Ref1sentdate;
+            qualObj.Reference_1_Text_Name__c = this.Reference1name;
+            qualObj.Reference_Received_Date__c = this.Reference1RecDate;
+            qualObj.Reference_1_Contact_Details__c = this.Reference1phone;
+            qualObj.Reference_1_Email__c = this.Reference1email;
+            qualObj.Reference_1_Date_Range_End__c = this.Reference1daterangeend;
+            qualObj.Reference_1_Type__c = this.Ref1Type;
+            qualObj.Reference_1_Received__c = this.Ref1Rec;
+            qualObj.Reference_1_Rating__c = this.Ref1Rating;
+            qualObj.Reference_Sent_Date__c = this.Ref2sentdate;
+            qualObj.Reference_2_Name__c = this.Reference2name;
+            qualObj.Reference_2_Received_Date__c = this.Ref1recdate;
+            qualObj.Reference_2_Contact_Details__c = this.Ref2phone;
+            qualObj.Reference_2_Date_Rage__c = this.Ref2daterangest;
+            qualObj.Reference_2_Email__c = this.Ref2email;
+            qualObj.Reference_2_Date_Range_End__c = this.Ref2daterangeend;
+            qualObj.Reference_2_Type__c = this.Ref2Type;
+            qualObj.Reference_2_Received__c = this.Ref2rec;
+            qualObj.Reference_2_Rating__c = this.Ref2Rating;
+            qualObj.Reference_3_Sent_Date__c = this.Ref3sentdate;
+            qualObj.Reference_3_Text_Name__c = this.Reference3Name;
+            qualObj.Reference_3_Received_Date__c = this.Ref3revdate;
+            qualObj.Reference_3_Contact_Details__c = this.Reference3phone;
+            qualObj.Reference_3_Date_Range__c = this.Ref3daterangest;
+            qualObj.Reference_3_Email__c = this.Ref3email;
+            qualObj.Reference_3_Date_Range_End__c = this.Ref3dtrangeend;
+            qualObj.Reference_3_Type__c = this.Ref3type;
+            qualObj.Reference_3_Received__c = this.Ref3received;
+            qualObj.Reference_3_Rating__c = this.Ref3rating;
+
         }
 
         

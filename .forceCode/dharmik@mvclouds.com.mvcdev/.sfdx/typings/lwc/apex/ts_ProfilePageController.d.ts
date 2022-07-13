@@ -4,6 +4,9 @@ declare module "@salesforce/apex/ts_ProfilePageController.saveData" {
 declare module "@salesforce/apex/ts_ProfilePageController.getData" {
   export default function getData(): Promise<any>;
 }
+declare module "@salesforce/apex/ts_ProfilePageController.fetchContact" {
+  export default function fetchContact(): Promise<any>;
+}
 declare module "@salesforce/apex/ts_ProfilePageController.saveFile" {
   export default function saveFile(param: {userId: any, fileId: any, base64Data: any}): Promise<any>;
 }

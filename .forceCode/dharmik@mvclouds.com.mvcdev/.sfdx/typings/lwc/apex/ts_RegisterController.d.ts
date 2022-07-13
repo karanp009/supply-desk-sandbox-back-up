@@ -11,5 +11,8 @@ declare module "@salesforce/apex/ts_RegisterController.getcrdata" {
   export default function getcrdata(param: {userid: any}): Promise<any>;
 }
 declare module "@salesforce/apex/ts_RegisterController.changepass" {
-  export default function changepass(param: {oldpass: any, newpass: any, verifynewpass: any}): Promise<any>;
+  export default function changepass(param: {newPassword: any, verifyNewPassword: any, oldpassword: any}): Promise<any>;
+}
+declare module "@salesforce/apex/ts_RegisterController.resetpass" {
+  export default function resetpass(param: {newPassword: any, usrid: any}): Promise<any>;
 }

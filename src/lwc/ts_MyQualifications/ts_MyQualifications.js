@@ -11,6 +11,8 @@ export default class Ts_MyQualifications extends NavigationMixin(LightningElemen
     editImg = editIcon;
     @track qualificationList;
 
+    @track showEdit;
+
     connectedCallback(){
 
         this.getQualify();
@@ -20,6 +22,17 @@ export default class Ts_MyQualifications extends NavigationMixin(LightningElemen
 
         getQualification()
             .then(result => {
+           
+                for(var i=0; i<result.length;i++){
+                    if(result[i].TR1__Status__c == 'Requested'){
+                        
+                        result[i]["Status"] = true;
+                    }
+                    else{
+                        
+                        result[i]["Status"] = false;
+                    }                                     
+                }
                 console.log({result});
                 this.qualificationList = result;
             })
@@ -32,17 +45,6 @@ export default class Ts_MyQualifications extends NavigationMixin(LightningElemen
         let m = event.currentTarget.dataset.id;
         console.log({m});
         
-        // var compDefinition = {
-        //     componentDef: "c:ts_MyQualificationDetail",
-        //     attributes: {
-        //         propertyValue: "500"
-        //     },
-        //     state: {
-        //         propertyValue: 'test'
-        //     }
-        // };
-        // console.log({compDefinition});
-        // Base64 encode the compDefinition JS object
         this[NavigationMixin.Navigate]({
             type: 'comm__namedPage',
             attributes: {

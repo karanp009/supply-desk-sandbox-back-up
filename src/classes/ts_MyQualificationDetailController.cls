@@ -24,16 +24,112 @@ public without sharing class ts_MyQualificationDetailController {
             qualList.Gaps_Explanation__c = qual.Gaps_Explanation__c;
             qualList.CV_Submitted__c = qual.CV_Submitted__c;
         }
-        else if(qual.qualificationName__c == 'Perm Qualification'){
-            System.debug('Perm');
-            qualList.NCTL_Number__c = qual.NCTL_Number__c;
-            qualList.SET_Registration_Number__c = qual.SET_Registration_Number__c;
-            qualList.QTLS__c = qual.QTLS__c;
-        }
+        
         else if(qual.qualificationName__c == 'Right to Work'){
-            System.debug('Perm');
             qualList.Permanent_Right_to_Work_in_UK__c = qual.Permanent_Right_to_Work_in_UK__c;
             qualList.Documents__c = qual.Documents__c;
+        }
+        else if(qual.qualificationName__c == 'Teacher Qualification'){
+            qualList.NCTL_Number__c = qual.NCTL_Number__c;
+            qualList.Qualification_Type2__c = qual.Qualification_Type2__c;
+            qualList.Qualification_Type__c = qual.Qualification_Type__c;
+        }
+        else if(qual.qualificationName__c == 'Overseas Police Check'){
+            qualList.Overseas_Police_Check__c = qual.Overseas_Police_Check__c;
+            qualList.Live_Worked_Overseas_Start_Date__c = qual.Live_Worked_Overseas_Start_Date__c;
+            qualList.Live_Worked_Overseas_End_Date__c = qual.Live_Worked_Overseas_End_Date__c;
+        }
+        else if(qual.qualificationName__c == 'Overseas Teacher Qualifications'){
+            qualList.NCTL_Number__c = qual.NCTL_Number__c;
+            qualList.NARIC_Approved__c = qual.NARIC_Approved__c;
+            qualList.Qualification_Type2__c = qual.Qualification_Type2__c;
+            qualList.Qualification_Type__c = qual.Qualification_Type__c;
+        }
+        else if(qual.qualificationName__c == 'ID'){
+            qualList.Group_1_ID_Type__c = qual.Group_1_ID_Type__c;
+            qualList.Name_Change_Document__c = qual.Name_Change_Document__c;
+            qualList.Group_2a_ID_Type__c = qual.Group_2a_ID_Type__c;
+            qualList.Group_2b_ID_Type__c = qual.Group_2b_ID_Type__c;
+        }
+        else if(qual.qualificationName__c == 'Safeguarding'){
+            qualList.Safeguarding_Date_Completed__c = qual.Safeguarding_Date_Completed__c;
+        }
+        else if(qual.qualificationName__c == 'Emergency Contact'){
+            qualList.Relationship_to_You__c = qual.Relationship_to_You__c;
+            qualList.Emergency_Contact_Address__c = qual.Emergency_Contact_Address__c;
+            qualList.Emergency_Contact_Home_Phone__c = qual.Emergency_Contact_Home_Phone__c;
+            qualList.Emergency_Contact_Mobile_Phone__c = qual.Emergency_Contact_Mobile_Phone__c;
+            qualList.Emergency_Contact_Work_Phone__c = qual.Emergency_Contact_Work_Phone__c;
+            qualList.Emergency_Contact_Name__c = qual.Emergency_Contact_Name__c;
+        }
+        else if(qual.qualificationName__c == 'DBS'){
+            System.debug('Perm');
+            qualList.DBS_Form_Number__c = qual.DBS_Form_Number__c;
+            qualList.Update_Service_Status_Check__c = qual.Update_Service_Status_Check__c;
+        }
+        else if(qual.qualificationName__c == 'Post 16 Qualifications'){
+            System.debug('Perm');
+            qualList.SET_Registration_Number__c = qual.SET_Registration_Number__c;
+            qualList.Qualification_Type2__c = qual.Qualification_Type2__c;
+            qualList.SET_Expiry_Date__c = qual.SET_Expiry_Date__c;
+            qualList.QTLS__c = qual.QTLS__c;
+            qualList.Qualification_Type__c = qual.Qualification_Type__c;
+        }
+        else if(qual.qualificationName__c == 'Early Years Qualifications'){
+            System.debug('Perm');
+            qualList.Qualification_Type2__c = qual.Qualification_Type2__c;
+            qualList.Qualification_Type__c = qual.Qualification_Type__c;
+        }
+        else if(qual.qualificationName__c == 'Support Qualifications'){
+            System.debug('Perm');
+            qualList.Qualification_Type2__c = qual.Qualification_Type2__c;
+            qualList.Qualification_Type__c = qual.Qualification_Type__c;
+        }
+        else if(qual.qualificationName__c == 'International'){
+            System.debug('Perm');
+            qualList.Seeking_International_Position__c = qual.Seeking_International_Position__c;
+            qualList.Choice_of_Country__c = qual.Choice_of_Country__c;
+        }
+        else if(qual.qualificationName__c == 'Barred List'){
+            System.debug('Perm');
+            qualList.Barred_Check_URL__c = qual.Barred_Check_URL__c;
+            qualList.Barred_List_Results__c = qual.Barred_List_Results__c;
+            qualList.EWC_Registration_Checked_Date__c = qual.EWC_Registration_Checked_Date__c;
+            qualList.EWC__c = qual.EWC__c;
+            qualList.Barred_List_Date_Checked__c = qual.Barred_List_Date_Checked__c;
+            qualList.Barred_List_Expiry_Date_New__c = qual.Barred_List_Expiry_Date_New__c;
+        }
+        else if(qual.qualificationName__c == 'References'){
+            System.debug('Perm');
+            qualList.Reference_Sent_Date__c = qual.Reference_Sent_Date__c;
+            qualList.Reference_1_Text_Name__c = qual.Reference_1_Text_Name__c;
+            qualList.Reference_Received_Date__c = qual.Reference_Received_Date__c;
+            // qualList.Reference_1_Contact_Details__c = qual.Reference_1_Contact_Details__c;
+            // qualList.Reference_1_Email__c = qual.Reference_1_Email__c;
+            qualList.Reference_1_Date_Range_End__c = qual.Reference_1_Date_Range_End__c;
+            // qualList.Reference_1_Type__c = qual.Reference_1_Type__c;
+            // qualList.Reference_1_Received__c = qual.Reference_1_Received__c;
+            qualList.Reference_1_Rating__c = qual.Reference_1_Rating__c;
+            qualList.Reference_Sent_Date__c = qual.Reference_Sent_Date__c;
+            qualList.Reference_2_Name__c = qual.Reference_2_Name__c;
+            qualList.Reference_2_Received_Date__c = qual.Reference_2_Received_Date__c;
+            // qualList.Reference_2_Contact_Details__c = qual.Reference_2_Contact_Details__c;
+            qualList.Reference_2_Date_Rage__c = qual.Reference_2_Date_Rage__c;
+            // qualList.Reference_2_Email__c = qual.Reference_2_Email__c;
+            qualList.Reference_2_Date_Range_End__c = qual.Reference_2_Date_Range_End__c;
+            // qualList.Reference_2_Type__c = qual.Reference_2_Type__c;
+            // qualList.Reference_2_Received__c = qual.Reference_2_Received__c;
+            qualList.Reference_2_Rating__c = qual.Reference_2_Rating__c;
+            qualList.Reference_3_Sent_Date__c = qual.Reference_3_Sent_Date__c;
+            qualList.Reference_3_Text_Name__c = qual.Reference_3_Text_Name__c;
+            qualList.Reference_3_Received_Date__c = qual.Reference_3_Received_Date__c;
+            // qualList.Reference_3_Contact_Details__c = qual.Reference_3_Contact_Details__c;
+            qualList.Reference_3_Date_Range__c = qual.Reference_3_Date_Range__c;
+            // qualList.Reference_3_Email__c = qual.Reference_3_Email__c;
+            qualList.Reference_3_Date_Range_End__c = qual.Reference_3_Date_Range_End__c;
+            // qualList.Reference_3_Type__c = qual.Reference_3_Type__c;
+            // qualList.Reference_3_Received__c = qual.Reference_3_Received__c;
+            qualList.Reference_3_Rating__c = qual.Reference_3_Rating__c;
         }
         System.debug('qualList>>>'+qualList);
         update qualList;

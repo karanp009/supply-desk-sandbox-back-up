@@ -1,21 +1,23 @@
 import { LightningElement, track, wire } from 'lwc';
-import uname_img from '@salesforce/resourceUrl/usernameimg';
-import passw_img from '@salesforce/resourceUrl/passwordimg';
-import sd_logo from '@salesforce/resourceUrl/SD_Logo';
-// import { getPicklistValues } from 'lightning/uiObjectInfoApi';
-// import JOB_FIELD from '@salesforce/schema/Contact.Roles__c';
 import { loadStyle } from 'lightning/platformResourceLoader';
+import { getPicklistValues, getObjectInfo } from 'lightning/uiObjectInfoApi';
 import commstyle from '@salesforce/resourceUrl/CommunityCSS';
-// import CreateUser from '@salesforce/apex/ts_RegisterController.createuser';
-// import CheckUser from '@salesforce/apex/ts_RegisterController.checkuser';
-
+import loginbg from '@salesforce/resourceUrl/loginbg';
+import communityicon from '@salesforce/resourceUrl/communityicons';
+import Contact from '@salesforce/schema/Contact'; 
+import Roles__c from '@salesforce/schema/Contact.Roles__c';
 
 export default class Ts_Register extends LightningElement {
 
-    bglogo = sd_logo;
-    userimg = uname_img;
-    passwordimg = passw_img;
-    jobpicklist;
+    bglogo = communityicon + '/communityicons/supplydesk_logo.png';;
+    fname_icon = communityicon + '/communityicons/firstname.png';;
+    email_icon = communityicon + '/communityicons/email.png';;
+    mob_icon = communityicon + '/communityicons/mobileno.png';;
+    phone_icon = communityicon + '/communityicons/phoneno.png';;
+    postcode_icon = communityicon + '/communityicons/postcode.png';;
+    job_icon = communityicon + '/communityicons/jobtitle.png';;
+    
+    @track jobpicklist = [];
     contwrap;
     emailerror;
     fnameerror;
@@ -23,23 +25,34 @@ export default class Ts_Register extends LightningElement {
     postcodeerror;
     mobileerror;
 
-    // @wire(getPicklistValues, {
-    //     recordTypeId: '012000000000000AAA',
-    //     fieldApiName: JOB_FIELD
-    // })
-    // wiredjobpicklist({ error, data }) {
-    //     console.log({ data });
-    //     if (data) {
-    //         this.jobpicklist = [{ label: 'None', value: '', selected: true }, ...data.values];
-    //     } else {
-    //         console.log({ error });
-    //         this.jobpicklist = undefined;
-    //         this.error = error;
-    //     }
-    // }
+    // Get Object Info.
+    @wire (getObjectInfo, {objectApiName: Contact})
+    conObjectInfo;
+
+    @wire(getPicklistValues, {
+        recordTypeId: '$conObjectInfo.data.defaultRecordTypeId',
+        fieldApiName: Roles__c
+    })
+    wiredjobpicklist({ data,error }) {
+        console.log({ data });
+        if (data) {
+            this.jobpicklist = [{ label: 'None', value: '', selected: true }, ...data.values];
+        } else {
+            console.log({ error });
+            this.jobpicklist = undefined;
+            this.error = error;
+        }
+    }
+
+
 
     connectedCallback() {
         this.setwraponload();
+    }
+
+    // Get Background Image
+    get backgroundImage() {
+        return `background-image:url(${loginbg})`;
     }
 
     renderedCallback() {
@@ -67,7 +80,7 @@ export default class Ts_Register extends LightningElement {
         } else if (valname == "Email") {
             this.contwrap.Email = event.target.value;
             console.log(this.contwrap);
-        } else if (valname == "Job") {
+        } else if (valname == "Job Title") {
             this.contwrap.Job = event.target.value;
         } else if (valname == "Postcode") {
             this.contwrap.Postcode = event.target.value;
@@ -78,25 +91,6 @@ export default class Ts_Register extends LightningElement {
         } else {
             console.log('else');
         }
-    }
-
-    onblurvalue(event) {
-        // console.log({ event });
-        // this.contwrap.Email = event.target.value;
-        // var emailval = event.target.value;
-        // console.log({ emailval });
-        // if (emailval.length > 3) {
-        //     CheckUser({ email: emailval })
-        //         .then((result) => {
-        //             console.log({ result });
-        //             this.emailerror = result;
-        //         })
-        //         .catch((error) => {
-        //             console.log({ error });
-        //         })
-        // }
-
-
     }
 
     register() {

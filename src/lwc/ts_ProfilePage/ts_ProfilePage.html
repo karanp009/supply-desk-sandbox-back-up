@@ -3,18 +3,20 @@
         <div if:true={isLoaded} class="spinner_Cls">
             <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
         </div>
-        <div class="slds-grid slds-gutters">
+        <div class="slds-grid slds-gutters profileTopDiv">
             <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
-                <div class="slds-size_1-of-7 slds-m-left_xx-large">
-                    <span style="display: inline-block;"><img src={imgUrl} class="profImg slds-m-left_medium slds-m-top_medium"></span>
+                <div class="slds-size_1-of-7 slds-m-left_xx-large prof-avtr-div">
+                    <span style="display: inline-block;"><img src={imgUrl}
+                            class="profImg slds-m-left_medium slds-m-top_medium"></span>
                 </div>
                 <div>
                     <p class="slds-m-top_x-large slds-m-left_large t1">CLIENT</p>
                     <p class="slds-m-left_large t2">My Profile</p>
-                    <p class="slds-m-left_large t3">Update your photo and personal details.</p>     
+                    <p class="slds-m-left_large t3">Update your photo and personal details.</p>
                 </div>
-            </div>            
-            <div class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">                
+            </div>
+            <div
+                class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">
                 <div class="slds-size_1-of-5 slds-m-left_medium saveBtn">Save</div>
                 <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">Cancel</div>
             </div>
@@ -24,90 +26,125 @@
             <lightning-tabset>
                 <lightning-tab label="Details">
                     <div class="detailDiv">
-                    <!-- FirstName -->
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
-                            First Name
+                        <!-- FirstName -->
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                                First Name
+                            </div>
+                            <div
+                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="firstname" type="text" value={fname}
+                                    onchange={handleChange} autocomplete="off"></lightning-input>
+                            </div>
                         </div>
-                        <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
-                            <lightning-input class="input" name="firstname" type="text" value={fname} onchange={handleChange} autocomplete="off"></lightning-input>                
-                        </div>
-                    </div>
 
-                    <!-- LastName -->
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
-                            Last Name
-                        </div>
-                        <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
-                            <lightning-input class="input" name="lastname" type="text" value={lname} onchange={handleChange} autocomplete="off"></lightning-input>                
-                        </div>
-                    </div>
+                        <hr>
 
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp1">
-                            <p>This will displayed on your profile</p> 
+                        <!-- LastName -->
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                                Last Name
+                            </div>
+                            <div
+                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="lastname" type="text" value={lname}
+                                    onchange={handleChange} autocomplete="off"></lightning-input>
+                            </div>
                         </div>
-                        <div class="slds-p-horizontal-small slds-col slds-size_8-of-12 slds-m-bottom-medium slds-form-element">                
-                            <lightning-input type="file" 
-                            accept={acceptedFormats} onchange={saveFileHandle}></lightning-input>
-                        </div>
-                        <!-- <lightning-file-upload
+
+                        <hr>
+
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp1">
+                                <p>This will displayed on your profile</p>
+                            </div>
+                            <div
+                                class="slds-p-horizontal-small slds-col slds-size_8-of-12 slds-m-bottom-medium slds-form-element">
+                                <lightning-input type="file" accept={acceptedFormats} onchange={saveFileHandle}>
+                                </lightning-input>
+                            </div>
+                            <!-- <lightning-file-upload
                             name="fileUploader"
                             accept={acceptedFormats}
                             record-id={usrId}
                             onuploadfinished={handleUploadFinished}
                         >
                         </lightning-file-upload> -->
-                    </div>
+                        </div>
 
-                    <!-- Email address -->
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
-                            Email Address
-                        </div>
-                        <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
-                            <lightning-input class="input" name="emailaddress" value={email} onchange={handleChange} type="text" autocomplete="off"></lightning-input>                
-                        </div>
-                    </div>
+                        <hr>
 
-                    <!-- Business Phone -->
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
-                            Business Phone
+                        <!-- Email address -->
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                                Email Address
+                            </div>
+                            <div
+                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="emailaddress" value={email} onchange={handleChange}
+                                    type="text" autocomplete="off"></lightning-input>
+                            </div>
                         </div>
-                        <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
-                            <lightning-input class="input" name="businessphone" value={businessphn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>                
-                        </div>
-                    </div>
 
-                    <!-- Mobile Phone -->
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
-                            Mobile Phone
-                        </div>
-                        <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">                
-                            <lightning-input class="input" name="mobilephone" value={mobilephn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>                
-                        </div>
-                    </div>
+                        <hr>
 
-                    <div>
-                        <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium">Add Your CV</div>
-                        <div class="slds-p-horizontal-small slds-col  slds-form-element slds-align_absolute-center">                
-                            <!-- <lightning-input type="file" 
+                        <!-- Business Phone -->
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                                Business Phone
+                            </div>
+                            <div
+                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="businessphone" value={businessphn}
+                                    onchange={handleChange} type="text" autocomplete="off"></lightning-input>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Mobile Phone -->
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                            <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
+                                Mobile Phone
+                            </div>
+                            <div
+                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="mobilephone" value={mobilephn}
+                                    onchange={handleChange} type="text" autocomplete="off"></lightning-input>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="slds-m-left_xx-large">
+                            <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium">
+                                Add Your CV
+                            </div>
+                            <div class="slds-p-horizontal-small slds-col  slds-form-element slds-align_absolute-center">
+                                <!-- <lightning-input type="file" 
                             accept={acceptedFormats} onchange={saveFileHandle}></lightning-input> -->
-                            <div class="slds-file-selector slds-file-selector_integrated slds-file-selector_integrated">
-                                <div class="slds-file-selector__dropzone slds-file-selector__dropzone_integrated slds-has-drag" aria-hidden="true">
-                                <input type="file" class="slds-file-selector__input slds-assistive-text" accept={acceptedFormats} id="file-upload-input-01" tabindex="-1" onchange={handleFile}/>
-                                <label class="slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large" for="file-upload-input-01">
-                                    <div class="cvSec slds-m-top_x-large"><span><img class="slds-m-right_medium cvImg" src={dragFileImg}></span>
-                                    <span class="slds-file-selector__text slds-file-selector__text_integrated slds-text-heading_medium slds-text-align_center">Drag file here or click to add attachment</span></div>
-                                </label>
+                                <div
+                                    class="slds-file-selector slds-file-selector_integrated slds-file-selector_integrated">
+                                    <div class="slds-file-selector__dropzone slds-file-selector__dropzone_integrated slds-has-drag"
+                                        aria-hidden="true">
+                                        <input type="file" class="slds-file-selector__input slds-assistive-text"
+                                            accept={acceptedFormats} id="file-upload-input-01" tabindex="-1"
+                                            onchange={handleFile} />
+                                        <label
+                                            class="slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large"
+                                            for="file-upload-input-01">
+                                            <div class="cvSec slds-m-top_x-large"><span><img
+                                                        class="slds-m-right_medium cvImg" src={dragFileImg}></span>
+                                                <span
+                                                    class="slds-file-selector__text slds-file-selector__text_integrated slds-text-heading_medium slds-text-align_center">Drag
+                                                    file here or click to add attachment</span>
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </lightning-tab>
                 <lightning-tab label="Password" title="2nd tab extended title">
                     <c-ts_-Change-Password></c-ts_-Change-Password>

@@ -1,89 +1,105 @@
-.textp{
+.textp {
     text-align: center;
     align-items: center;
     display: inherit;
-    font-family: 'Raleway';
+    /* font-family: 'Raleway'; */
     font-size: 16px;
 }
-.saveBtn{
+
+.saveBtn {
     background-color: #676868;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
 }
-.cancelBtn{
+
+.cancelBtn {
     background-color: #C50E1B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
 }
-.btns{
+
+.prof-avtr-div {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btns {
     display: flex;
     height: 25%;
     align-content: center;
     text-align: center;
-    display: flex;
-    font-family: Raleway;
-    font-weight: 600;
+    /* display: flex; */
+    /* font-family: Raleway; */
+    /* font-weight: 600; */
+    font-weight: 500;
     font-size: 17px;
     color: white;
     justify-content: inherit;
     align-items: center;
 }
-.t1{
+
+.t1 {
     color: #676868;
-    font-family: 'Raleway';
+    /* font-family: 'Raleway'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: large;
 }
-.t2{
+
+.t2 {
     font-size: 25px;
-    color: #D2232A;
+    color: #D90000;
     font-style: normal;
     font-weight: 700;
+}
+
+.t3 {
+    color: black;
     font-style: normal;
     font-weight: 400;
-}   
-.t3{
-    color: black;
+    /* font-family: 'Raleway'; */
+    font-size: large;
 }
-.textp1{
+
+.textp1 {
     align-items: center;
     display: inherit;
-    font-family: 'Raleway';
-    font-size: 16px;   
+    /* font-family: 'Raleway'; */
+    font-size: 16px;
 }
-.profImg{
+
+.profImg {
     border-radius: 50%;
     height: 8rem;
     width: 8rem;
 }
 
-.slds-tabs_default__link{
-    color:red;
- }
-
- .cvDiv{
+.cvDiv {
     background-color: #F6F6F6;
- }
+}
 
- .fileInputBox{
+.fileInputBox {
     display: block;
     border: 1px dashed black;
     height: 6rem;
 }
 
-.cvSec{
+.cvSec {
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
-.cvImg{
+.cvImg {
     width: 2%;
     /* margin-right: 1rem;
     padding-bottom: 5px; */
 }
 
-.detailDiv{
+.detailDiv {
     padding-bottom: 8rem;
 }
 
-.slds .slds-tabs_default__nav{
-    margin-left: 5rem;
+.profileTopDiv {
+    margin-top: 80px;
 }

@@ -29,6 +29,29 @@ import Choice_of_Country__c from '@salesforce/schema/TR1__Associated_Qualificati
 
 export default class Ts_MyQualificationDetail extends LightningElement {
 
+    //For Spinner
+    @track isSpinner;
+
+    //For Result
+    @track isResult;
+
+    //For Hide/Show
+    @track checkId;
+    @track checkRtw;
+    @track checkteacherQual;
+    @track checkoverPc;
+    @track checkoverTQ;
+    @track checkCv;
+    @track checkSafe;
+    @track checkEme;
+    @track checkDbs;
+    @track checkPost16;
+    @track checkEarly;
+    @track checkSupport;
+    @track checkInt;
+    @track checkBarred;
+    @track checkRefs;
+
     @track qualification= '';
     @track lstOptions = [];
     @track docOptions = [];
@@ -77,6 +100,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track opcStdate;
     @track opcEddate;
 
+    @track teacherQualificationsOver = [];
+
     //For Id Qualification
     @track groupTypes = [];
     @track nameChangeDocuments = [];
@@ -113,6 +138,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track qualmultipick;
     @track qualopt = [];
 
+    @track qualificationsPost16 = []
+
     //For international
 
     @track choiceOfCountryOps = [];
@@ -125,10 +152,14 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track earlyYearQFtype;
     @track earlyYearQualifications = '';
 
+    @track teacherQualificationsEarly = [];
+
     //For Support Qualification
 
     @track supportQFtype;
     @track supportQualifications = '';
+
+    @track teacherQualificationsSupport = [];
 
     //For Barred List
 
@@ -201,8 +232,9 @@ export default class Ts_MyQualificationDetail extends LightningElement {
    
 
     @wire(getPicklistValues, {recordTypeId: '$qualObjectInfo.data.defaultRecordTypeId', fieldApiName: Documents__c})
-    languages(data, error){
+    documents(data, error){
         if(data && data.data && data.data.values){
+            this.documentTypes = data;
             data.data.values.forEach( objPicklist => {
                 this.docOptions.push({
                     label: objPicklist.label,
@@ -220,7 +252,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             fieldApiName: Permanent_Right_to_Work_in_UK__c
         }
     )
-    workRightValues(data,error){
+    workRightToWorkValues(data,error){
         
         if(data && data.data && data.data.values){
             let options = [];
@@ -287,6 +319,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     teacherQFTypeVal(data,error){
         if(data && data.data && data.data.values){
             let options = [];
+            
             data.data.values.forEach( objPicklist => {
                 options.push({ label: objPicklist.value, value: objPicklist.value});
             });
@@ -308,9 +341,26 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     teacherQualificationsVal(data, error){
         
         if(data && data.data && data.data.values){
+            this.qualTypes = data;
             data.data.values.forEach( objPicklist => {
                 
                 this.teacherQualifications.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+                this.teacherQualificationsOver.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+                this.teacherQualificationsEarly.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+                this.teacherQualificationsSupport.push({
+                    label: objPicklist.label,
+                    value: objPicklist.value
+                });
+                this.qualificationsPost16.push({
                     label: objPicklist.label,
                     value: objPicklist.value
                 });
@@ -598,8 +648,11 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     };
 
     connectedCallback(){
+        this.isSpinner = true;
         console.log('qualificationname>>>'+this.qualification); 
+        this.checkUrl();
         this.getConId();
+        this.isSpinner = false;
     }
 
     currentPageReference = null; 
@@ -608,7 +661,54 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track urlName = null;
 
     
+    checkUrl(){
+        if(this.urlName == 'CV'){
+            this.checkCv = true;
+        }
+        else if(this.urlName == 'Right to Work'){
+            this.checkRtw = true;
+        }
+        else if(this.urlName == 'Teacher Qualification'){
+            this.checkteacherQual = true;
+        }
+        else if(this.urlName == 'Overseas Police Check'){
+            this.checkoverPc = true;
+        }
+        else if(this.urlName == 'Overseas Teacher Qualifications'){
+            this.checkoverTQ = true;
+        }
+        else if(this.urlName == 'ID'){
+            this.checkId = true;
+        }
+        else if(this.urlName == 'Safeguarding'){
+            this.checkSafe = true;
+        }
+        else if(this.urlName == 'Emergency Contact'){
+            this.checkEme = true;
+        }
+        else if(this.urlName == 'DBS'){
+            this.checkDbs = true;         
+        }
+        else if(this.urlName == 'Post 16 Qualifications'){
+            this.checkPost16 = true;
+        }
+        else if(this.urlName == 'Early Years Qualifications'){
+            this.checkEarly = true;
+        }
+        else if(this.urlName == 'Support Qualifications'){
+            this.checkSupport = true;
+        }
+        else if(this.urlName == 'International'){
+            this.checkInt = true;
+        }
+        else if(this.urlName == 'Barred List'){
+            this.checkBarred = true;
+        }
+        else if(this.urlName == 'References'){
+            this.checkRefs = true;
+        }
 
+    }
 
     getConId(){
 
@@ -618,6 +718,47 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 this.contactId = result;
             })
         
+    }
+
+    handleUpsellChange(event) {
+        console.log('ini upsell');
+        console.log({event});
+        console.log('et>>',event.target.value);
+        console.log('his.qualTypes>>',this.qualTypes);
+        if(event.target.name == 'teacherQftype'){
+            let key = this.qualTypes.data.controllerValues[event.target.value];
+            this.teacherQualifications = this.qualTypes.data.values.filter(opt => opt.validFor.includes(key));
+        }
+        else if(event.target.name == 'OTQQFtypeval'){            
+            let key = this.qualTypes.data.controllerValues[event.target.value];
+            this.teacherQualificationsOver = this.qualTypes.data.values.filter(opt => opt.validFor.includes(key));
+        }
+        else if(event.target.name == 'earlyYearQFtype'){
+            let key = this.qualTypes.data.controllerValues[event.target.value];
+            this.teacherQualificationsEarly = this.qualTypes.data.values.filter(opt => opt.validFor.includes(key));
+        }    
+        else if(event.target.name == 'supportQFtype'){
+            let key = this.qualTypes.data.controllerValues[event.target.value];
+            this.teacherQualificationsSupport = this.qualTypes.data.values.filter(opt => opt.validFor.includes(key));
+        }
+        else if(event.target.name == 'quList'){
+            let key = this.qualTypes.data.controllerValues[event.target.value];
+            this.qualificationsPost16 = this.qualTypes.data.values.filter(opt => opt.validFor.includes(key));
+        }
+        else if(event.target.name == 'workPermit'){
+            console.log('in workpermit');
+            let key = this.documentTypes.data.controllerValues[event.target.value];
+            this.docOptions = this.documentTypes.data.values.filter(opt => opt.validFor.includes(key));
+            console.log('this.docOptions>>',this.docOptions);
+        }
+    }
+
+    onPrevious(){
+        // window.open('https://mvcdev-supplydesk.cs110.force.com/s/profile');
+        var url = window.location.origin; 
+        url= url+'/s/profile';
+        console.log(url);
+        window.open(url, '_self');
     }
 
     handleChange(event){
@@ -1120,7 +1261,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         })
         .then(result => {
             console.log({result});
-            alert('Save Successfully');
+            this.isResult = true;
+            // alert('Save Successfully');
         })
 
     }

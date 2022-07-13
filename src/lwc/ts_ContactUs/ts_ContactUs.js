@@ -1,10 +1,12 @@
 import { LightningElement, api, wire, track } from 'lwc';
 import sendicon from '@salesforce/resourceUrl/SendIcon';
-import sendEmailToController from '@salesforce/apex/ts_ContactUSController.sendEmailToController'
+import location_icon from '@salesforce/resourceUrl/ContactUS_location';
+import sendEmailToController from '@salesforce/apex/ts_ContactUSController.sendEmailToController';
+import sd_logo from '@salesforce/resourceUrl/SD_Logo';
 
 export default class Ts_ContactUs extends LightningElement {
 
-
+      bglogo = sd_logo;
       Name = "";
       Subject = "";
       Email = "";

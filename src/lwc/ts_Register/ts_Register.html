@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container">
+    <div class="container" style={backgroundImage}>
         <div class="forms-container">
             <div class="logo_cls">
                 <img src={bglogo} />
@@ -13,47 +13,47 @@
                         <span class="errormsgcls">{fnameerror}</span>
                         <div class="field_cls">
                             <div class="input-field f-name">
-                                <img src={userimg} />
+                                <img src={fname_icon} />
                                 <lightning-input name="FirstName" class="input_cls" autocomplete="FirstName" onchange={handleChange} placeholder="FirstName" onfocusout={onblurvalue}></lightning-input>
                             </div>
                             <div class="input-field">
-                                <img src={userimg} />
+                                <img src={fname_icon} />
                                 <lightning-input name="LastName" class="input_cls" autocomplete="LastName" onfocusout={onblurvalue} onchange={handleChange} placeholder="LastName"></lightning-input>
                             </div>
                         </div>
                         <span class="errormsgcls">{emailerror}</span>
                         <div class="input-field">
-                            <img src={userimg} />
+                            <img src={email_icon} />
                             <lightning-input name="Email" class="input_cls" autocomplete="Email" data-id="user-email-fld" onfocusout={onblurvalue} placeholder="Email Id" onchange={handleChange}></lightning-input>
                         </div>
                         <div class="input-field">
-                            <img src={userimg} />
+                            <img src={job_icon} />
                             <lightning-combobox name="Job Title" value={jobval} placeholder="Job Title"
                                 class="input_cls" options={jobpicklist} onchange={handleChange}>
                             </lightning-combobox>
                         </div>
                         <span class="errormsgcls">{postcodeerror}</span>
                         <div class="input-field">
-                            <img src={userimg} />
+                            <img src={postcode_icon} />
                             <lightning-input name="Postcode" class="input_cls" autocomplete="Postcode"
-                                onchange={handleChange} placeholder="School Postcode" required="true"></lightning-input>
+                                onchange={handleChange} placeholder="School Postcode" ></lightning-input>
                         </div>
                         <div class="field_cls">
-                            <div style="display:flex;" class="error-field">
+                            <div class="error-field">
                                 <span class="errormsgcls">{mobileerror}</span>
                             </div>
-                            <div style="display:flex;" class="error-field">
+                            <div class="error-field">
                                 <span class="errormsgcls">{phoneerror}</span>
                             </div>
                         </div>
                         <div class="field_cls">
                             <div class="input-field">
-                                <img src={userimg} />
+                                <img src={mob_icon} />
                                 <lightning-input name="Mobile" class="input_cls" autocomplete="Mobile"
                                     onchange={handleChange} placeholder="Mobile no."></lightning-input>
                             </div>
                             <div class="input-field">
-                                <img src={userimg} />
+                                <img src={phone_icon} />
                                 <lightning-input name="Phone" class="input_cls" autocomplete="Phone"
                                     onchange={handleChange} placeholder="Phone no." ></lightning-input>
                             </div>

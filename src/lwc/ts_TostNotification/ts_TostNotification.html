@@ -1,0 +1,28 @@
+<template>
+    <div class="toast-main-div">
+        <div class="inset-color-div success-msg-cls"></div>
+        <!-- <div class="icon-div">
+            <template if:true={isSuccess}>
+                <img src={successIcon} alt="succsess_Icon">
+            </template>
+            <template if:true={isError}>
+                <img src={errorIcon} alt="error_Icon">
+            </template>
+        </div> -->
+        <div class="icon-div">
+            <img class="img-cls" src={iconToDisplay}>
+        </div>
+        <div class="message-body">
+            <template if:true={isSuccess}>
+                <div class="message-status">Yay! Everything worked!</div>
+            </template>
+            <template if:true={isError}>
+                <div class="message-status">Uh oh, something went wrong</div>
+            </template>
+            <div class="message-to-display">{messageToDisplay}</div>
+        </div>
+        <div class="close-icon">
+            <img src={popupCloseBtnIcon} alt="close_Icon" title="Close">
+        </div>
+    </div>
+</template>

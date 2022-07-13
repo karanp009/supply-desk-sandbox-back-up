@@ -1,72 +1,79 @@
 <template>
       <div class="main-contact">
-            <div class="touch-img ">
-                  <div class="slds-grid slds-gutters">
-                        <div class=" slds-col slds-size_8-of-12">
+            <div class="main_div">
+                  <div class="map_img" >
+                        <div class="slds-grid slds-gutters slds-col slds-size_8-of-12  con_touch">
+                        <div class=" slds-col slds-size_9-of-12">
                             <h1>Get in touch</h1>
                             <p class="subtext slds-m-top_x-medium">We'd love to hear from you. Our friendly team is always here to help.</p>
                         </div>
                   </div> 
-            </div>
-            <div class="contact-detail slds-grid" style="width:100% ;">
-                  <div class="slds-col slds-size_3-of-12"></div>
-                  <div class="slds-col slds-size_7-of-12">
-                        <div class="message slds-col slds-size_12-of-12 slds-wrap">
-                              <div class="con-label slds-col slds-size_2-of-12">Name</div>
-                              <div class="slds-col slds-size_7-of-12"><lightning-input variant="label-hidden" type="text" onchange={handleToNameChange}></lightning-input></div>
-                              <div class="slds-col slds-size_3-of-12"></div>
-                        </div>
-                        <div class="message slds-col slds-size_12-of-12">
-                              <div class="con-label slds-col slds-size_2-of-12">Subject</div>
-                              <div class="slds-col slds-size_7-of-12"><lightning-input variant="label-hidden" type="text" onchange={handleSubjectChange}></lightning-input></div>
-                              <div class="slds-col slds-size_3-of-12"></div>
-                        </div>
-                        <div class="message slds-col slds-size_12-of-12">
-                              <div class="con-label slds-col slds-size_2-of-12">Email</div>
-                              <div class="slds-col slds-size_7-of-12">
-                                    <select class="slds-select" name = "optionSelect" onchange={handleEmailChange} >
-
-                                          <option value="Brightonsecondary@supplydesk.co.uk">Brightonsecondary@supplydesk.co.uk</option>
-                                          <option value="Watford@supplydesk.co.uk">Watford@supplydesk.co.uk</option>
-                                          <option value="Chelmsford@supplydesk.co.uk">Chelmsford@supplydesk.co.uk</option>
-                                          <option value="Kent@supplydesk.co.uk">Kent@supplydesk.co.uk</option>
-                                          <option value="Cardiff@supplydesk.co.uk">Cardiff@supplydesk.co.uk</option>
-                                          <option value="Southampton@supplydesk.co.uk">Southampton@supplydesk.co.uk</option>
-                                          <option value="Wokingham@supplydesk.co.uk">Wokingham@supplydesk.co.uk</option>
-                                          <option value="Eastmidlands@supplydesk.co.uk">Eastmidlands@supplydesk.co.uk</option>
-                                          <option value="Leeds@supplydesk.co.uk">Leeds@supplydesk.co.uk</option>
-                                          <option value="Lincolnshire@supplydesk.co.uk">Lincolnshire@supplydesk.co.uk</option>
-                                          <option value="Manchester@supplydesk.co.uk">Manchester@supplydesk.co.uk</option>
-                                          <option value="Sheffield@supplydesk.co.uk">Sheffield@supplydesk.co.uk</option>
-                                          <option value="North.east@supplydesk.co.uk">North.east@supplydesk.co.uk</option>
-                                    </select>
-                              </div>
-                              <div class="slds-col slds-size_3-of-12"></div>
-                        </div>
-                        <div class="message slds-col slds-size_12-of-12">
-                              <div class="con-label slds-col slds-size_2-of-12">Message</div>
-                              <div class="slds-col slds-size_7-of-12"><lightning-textarea variant="label-hidden" name="input1" onchange={handleBodyChange}></lightning-textarea></div>
-                              <div class="send-button slds-col slds-size_3-of-12"><lightning-button label="Send" variant="destructive" icon-name="utility:internal_share" onclick={handleSendClick} class="slds-m-left_x-small ">{sendicon}Send</lightning-button></div>
-                        </div>
                   </div>
-                  <div class="slds-col slds-size_2-of-12"></div>
-      
+                  <div class="slds-col con_info">
+                        <div class="con_info_div">
+                              <h5>Need assistance? Send us an email</h5>
+                              <div class="message slds-col slds-size_12-of-12 ">
+                                    <div class="con-label slds-col slds-size_2-of-12"><p>Name</p></div>
+                                    <div class="slds-col slds-size_12-of-12"><lightning-input class="input_border" variant="label-hidden" type="text" onchange={handleToNameChange}></lightning-input></div>
+                                    <div class="slds-col slds-size_3-of-12"></div>
+                              </div>
+                              <div class="message slds-col slds-size_12-of-12">
+                                    <div class="con-label slds-col slds-size_2-of-12"><p>Subject</p></div>
+                                    <div class="slds-col slds-size_12-of-12"><lightning-input class="input_border" variant="label-hidden" type="text" onchange={handleSubjectChange}></lightning-input></div>
+                                    <div class="slds-col slds-size_3-of-12"></div>
+                              </div>
+                              <div class="message slds-col slds-size_12-of-12">
+                                    <div class="con-label slds-col slds-size_2-of-12"><p>Email</p></div>
+                                    <div class="slds-col slds-size_12-of-12">
+                                          <select class="slds-select" name = "optionSelect" onchange={handleEmailChange} >
+                                                <option value="Brightonsecondary@supplydesk.co.uk">Brightonsecondary@supplydesk.co.uk</option>
+                                                <option value="Watford@supplydesk.co.uk">Watford@supplydesk.co.uk</option>
+                                                <option value="Chelmsford@supplydesk.co.uk">Chelmsford@supplydesk.co.uk</option>
+                                                <option value="Kent@supplydesk.co.uk">Kent@supplydesk.co.uk</option>
+                                                <option value="Cardiff@supplydesk.co.uk">Cardiff@supplydesk.co.uk</option>
+                                                <option value="Southampton@supplydesk.co.uk">Southampton@supplydesk.co.uk</option>
+                                                <option value="Wokingham@supplydesk.co.uk">Wokingham@supplydesk.co.uk</option>
+                                                <option value="Eastmidlands@supplydesk.co.uk">Eastmidlands@supplydesk.co.uk</option>
+                                                <option value="Leeds@supplydesk.co.uk">Leeds@supplydesk.co.uk</option>
+                                                <option value="Lincolnshire@supplydesk.co.uk">Lincolnshire@supplydesk.co.uk</option>
+                                                <option value="Manchester@supplydesk.co.uk">Manchester@supplydesk.co.uk</option>
+                                                <option value="Sheffield@supplydesk.co.uk">Sheffield@supplydesk.co.uk</option>
+                                                <option value="North.east@supplydesk.co.uk">North.east@supplydesk.co.uk</option>
+                                          </select>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-12"></div>
+                              </div>
+                              <div class="message slds-col slds-size_12-of-12">
+                                    <div class="con-label slds-col slds-size_2-of-12"><p>Message</p></div>
+                                    <div class="slds-col slds-size_12-of-12"><lightning-textarea variant="label-hidden" name="input1" onchange={handleBodyChange}></lightning-textarea></div>
+                              </div>
+                        </div>
+                        <div class="send-button slds-col slds-size_5-of-12"><lightning-button label="Send" variant="destructive" icon-name="utility:internal_share" onclick={handleSendClick} class="slds-m-left_x-small button">Send</lightning-button></div>
+                  </div>
             </div>
             <div class="contact-footer slds-grid  slds-wrap slds-align_absolute-center">
-                  <div class="contact-location slds-col slds-size_4-of-12">
-                        <h1>Location</h1>
-                        <p>Brighton Secondary</p>
-                        <p>Cardiff</p>
+                  <div class="contact-location slds-col slds-size_3-of-12">
+                        <h1>Our Address</h1>
+                        <div class="con_add">
+                              <div class="slds-size_1-of-10">
+                                    <img class="icon_img" src="/resource/ContactUS_location" alt="">
+                              </div>
+                              <div class="slds-size_9-of-10">
+                                    <p class="slds-size_6-of-6">Unit 4</p>
+                                    <p class="slds-size_6-of-6">Hove Business Center</p>
+                                    <p class="slds-size_6-of-6">Fonthill Road</p>
+                                    <p class="slds-size_6-of-6">Hove</p>
+                                    <p class="slds-size_6-of-6">BN3 6HA</p>
+                              </div>
+                        </div>
                   </div>
-                  <div class="contact-address slds-col slds-size_4-of-12">
-                        <h1>Address</h1>
-                        <p class="slds-size_4-of-6">East Suite, 2nd Floor, Lorna House, Lorna Road, Hove, East Sussex, BN3 3EL</p>
-                        <p class="slds-size_4-of-6">3rd Floor, Capital Tower, Greyfriars Road, Cardiff, CF10 3AG</p>
+                  <div class="contact-address slds-col slds-size_3-of-12">
+                        <h1>Our Contacts</h1>
+                        <p class="slds-size_4-of-6"><img class="icon_img" src="/resource/ContactUS_phone" alt=""> 44 (0)1273 609 993</p>
+                        <p class="slds-size_4-of-6"><img class="icon_img" src="/resource/ContactUS_email" alt=""> @supplydesk.co.uk</p>
                   </div>
-                  <div class="contact-no slds-col slds-size_2-of-12 ">
-                        <h1>Contact No.</h1>
-                        <p>01273 022222</p>
-                        <p>01273 609993</p>
+                  <div class="contact-no slds-col slds-size_3-of-12 ">
+                        <img src={bglogo} alt="ContactUS_user">
                   </div>
             </div>
       </div>

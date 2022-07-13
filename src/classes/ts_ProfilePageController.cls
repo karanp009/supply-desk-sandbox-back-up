@@ -16,6 +16,19 @@ public without sharing class ts_ProfilePageController {
        User usr = [SELECT Id,FirstName,LastName,Email,Phone,MobilePhone,FullPhotoUrl FROM User WHERE Id=:UserInfo.getUserId()];
        return usr;
     }
+    
+    @AuraEnabled
+    public static Contact fetchContact(){
+
+        Id idContact = [SELECT Id, ContactId FROM User where Id=: UserInfo.getUserId()].ContactId;
+
+        if(idContact != null){
+            Contact con = [SELECT Id,Community_Contact_Type__c, Consol_URL__c FROM Contact WHERE Id = :idContact];
+            System.debug('con>>>'+con);
+            return con;
+        }
+        return null;    
+    }
 
     @AuraEnabled
     public static void saveFile(String userId, String fileId, String base64Data) { 

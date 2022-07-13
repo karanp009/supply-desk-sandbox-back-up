@@ -77,10 +77,10 @@ public without sharing class ts_RegisterController {
             if(usrlst.size() == 1){
                 System.debug('usrlst.get(0)==>'+usrlst.get(0));
                 System.debug('usrlst.get(0)==>'+usrlst[0].Email);
-                sendEmail(usrlst.get(0), usrlst[0].Email);
-                return 'Email Sent Successfully!!!';
+                Boolean boo = Site.forgotPassword(usernameval);
+                return String.valueOf(boo);
             } else {
-                return 'Please Enter valid Email';
+                return 'Please Enter valid UserName';
             }
 
         } catch (Exception e) {
@@ -88,62 +88,6 @@ public without sharing class ts_RegisterController {
             System.debug('Exception-->'+e.getMessage());
             return null;
         }
-    }
-
-    public static void sendEmail(User user, String username){
-
-        List<Messaging.SendEmailResult> listEmailResult = null;
-        List<Messaging.Singleemailmessage> listSingleEmailMessages = new List<Messaging.Singleemailmessage>();
-        // EmailTemplate emailTemplate = [SELECT Id, Subject, HtmlValue, Body FROM EmailTemplate WHERE DeveloperName = 'Custom_Forgot_Password_HTML']; 
-        Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-        mail.setSenderDisplayName('Community'); 
-        mail.setReplyTo('ravi.m@mvclouds.com');
-        mail.setTargetObjectId(user.id);
-        //mail.setTemplateId(emailTemplate.id);
-        // String htmlBody = emailTemplate.HtmlValue;
-        // String plainBody = emailTemplate.Body;
-            
-        String resetUrl = Site.getBaseUrl() + '/CustomSetPassword?token=' + issueJWT(username, 600);
-        System.debug('resetUrl==>'+resetUrl);
-        Map<String, String> mapBodyParams = new Map<String, String> {
-               '{!resetUrl}' => resetUrl
-        };            
-        for (String key : mapBodyParams.keySet()) {
-            // htmlBody = htmlBody.‸y.replace(key, (mapBodyParams.get(key) == null) ? '' : mapBodyParams.get(key));
-        }
-        mail.setHtmlBody('htmlBody of EMail');
-        mail.setSaveAsActivity(false);
-        // mail.setPlainTextBody(plainBody);
-        mail.setPlainTextBody('Email Send');
-        listSingleEmailMessages.add(mail);
-        // listEmailResult = Messaging.sendEmail(listSingleEmailMessages);
-    }
-
-
-    public static String issueJWT(String subject, Integer validFor) {
-        JSONGenerator claim = JSON.createGenerator(false);
-        claim.writeStartObject();
-        claim.writeStringField('sub', subject);
-        Long rightNow = (dateTime.now().getTime()/1000)+1;
-        claim.writeNumberField('exp', (rightNow + validFor));
-        claim.writeEndObject();
-        String jwt = base64URLencode(Blob.valueOf(claim.getAsString()));
-        Blob key = EncodingUtil.base64Decode('YOUR SECRET BASE64 ENCODED KEY');
-        Blob signature = Crypto.generateMac('hmacSHA1',Blob.valueof(jwt),key);
-        jwt += '.' + base64URLencode(signature);  
-        return jwt;
-    
-    }
-    
-
-    public static String base64URLencode(Blob input){ 
-        String output = encodingUtil.base64Encode(input);
-        output = output.replace('+', '-');
-        output = output.replace('/', '_');
-        while ( output.endsWith('=')){
-            output = output.subString(0,output.length()-1);
-        }
-        return output;
     }
 
     // Compliance Class
@@ -163,25 +107,56 @@ public without sharing class ts_RegisterController {
 
     // Change Password Page
     @AuraEnabled
-    public static string changepass(String oldpass, String newpass, String verifynewpass){
+    public static string changepass(String newPassword, String verifyNewPassword, String oldpassword){
         try {
             System.debug('changepass');
-            System.debug('oldpass->'+oldpass);
-            System.debug('newpass->'+newpass);
-            System.debug('verifynewpass-->'+verifynewpass);
-            System.debug('Site.changePassword(newPassword, verifyNewPassword, oldpassword);    ==>'+Site.changePassword(newpass, verifynewpass, oldpass));
-            PageReference pr = Site.changePassword(newpass, verifynewpass, oldpass);
+            System.debug('oldpass->'+oldpassword);
+            System.debug('newpass->'+newPassword);
+            System.debug('verifynewpass-->'+verifyNewPassword);
+            // System.debug('Site.changePassword(newPassword, verifyNewPassword, oldpassword);    ==>'+Site.changePassword(newPassword, verifyNewPassword, oldpassword));
+            // PageReference pr = Site.changePassword(newpass, verifynewpass, oldpass);
+            String strRetURL;
+            // Check if user is changing password from email link or from My Profile page
+            strRetURL = Site.isPasswordExpired() ? '/s/login' : '/MyAccount';
+
+            PageReference pr = Site.changePassword(newPassword, verifyNewPassword, oldpassword);
             System.debug('pr-->'+pr);
-            if (pr != null) {
-                return 'Success';
-            } else {
-                return null;
+            if(pr == null) {
+                String ss = pr.getURL();
+                return ss;
             }
+            return strRetURL;
             
         } catch (Exception e) {
             System.debug('Exception->'+e.getLineNumber());
             System.debug('Exception->'+e.getMessage());
-            return null;
+            return e.getMessage();
+        }
+    }
+
+    // Reset Password Page
+    @AuraEnabled
+    public static string resetpass(String newPassword, String usrid){
+        try {
+            System.debug('changepass');
+            // System.debug('Site.changePassword(newPassword, verifyNewPassword, oldpassword);    ==>'+Site.changePassword(newPassword, verifyNewPassword, oldpassword));
+            // PageReference pr = Site.changePassword(newpass, verifynewpass, oldpass);
+            // PageReference pr = Site.changePassword(newPassword, verifyNewPassword, oldpassword);
+            // System.debug('pr-->'+pr);
+            // String ss = pr.getURL();
+                // System.resetPassword(usrid, true);
+             System.setPassword(usrid, newPassword);
+            return 'Changed?';
+            // if (pr != null) {
+            //     return 'Success';
+            // } else {
+            //     return null;
+            // }
+            
+        } catch (Exception e) {
+            System.debug('Exception->'+e.getLineNumber());
+            System.debug('Exception->'+e.getMessage());
+            return e.getMessage();
         }
     }
 

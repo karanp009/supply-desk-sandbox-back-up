@@ -226,8 +226,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     }
 
     setParametersBasedOnUrl() {
-        //    this.urlName = this.urlStateParameters.qualification || null;
-       this.urlName = 'ID';
+       this.urlName = this.urlStateParameters.qualification || null;
+       //this.urlName = 'ID';
        console.log('this.urlName>>',this.urlName);
     }
 

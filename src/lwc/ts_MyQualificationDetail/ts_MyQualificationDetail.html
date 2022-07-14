@@ -105,22 +105,24 @@
                     ID                
                 </div>
 
-                <lightning-combobox name="group1IdType" label="Group 1 ID Type"
-                    class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_xx-large slds-size_6-of-12"
+                <span class="slds-m-left_xx-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_xx-small">Group 1 ID Type</span>
+                <lightning-combobox name="group1IdType" label=""
+                    class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_xx-large slds-m-bottom_large slds-size_6-of-12"
                     value={group1IdType} options={groupTypes} onchange={handleChange}
                     style="font-weight:600; line: height 21px; font-size:12px;">
                 </lightning-combobox>
 
-                <lightning-combobox name="namechangedocument" label="Name Change Document"
-                    class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_xx-large slds-m-top_medium slds-size_6-of-12"
+                <span class="slds-m-left_xx-large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12 slds-p-left_xx-small">Name Change Document</span>
+                <lightning-combobox name="namechangedocument" label=""
+                    class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_xx-large slds-m-bottom_large slds-size_6-of-12"
                     value={namechangedocument} options={nameChangeDocuments} onchange={handleChange}
                     style="font-weight:600; line: height 21px; font-size:12px;">
                 </lightning-combobox>
 
                 <!-- <div style="display: inline-flex;"> -->
                 <div class="slds-grid slds-gutters">
-
                     <div class="slds-col slds-size_1-of-3 slds-m-left_xx-large slds-m-top_medium">
+                        <span class="slds-m-bottom_small slds-size_1-of-3 slds-p-left_xx-small">Group 2a ID Type</span>
                         <lightning-dual-listbox name="group2aIdType" value={group2aIdTypeVal}
                             class="slds-m-right_xx-large slds-align_absolute-center slds-dueling-picklist__column_responsive "
                             source-label="Available" selected-label="Selected" options={Group2aIdTypes} onchange={handleChange}>
@@ -128,6 +130,7 @@
                     </div>
 
                     <div class="slds-col slds-size_1-of-3 slds-m-left_xx-large slds-m-top_medium">
+                        <span class="slds-m-bottom_small slds-size_1-of-3 slds-p-left_xx-small">Group 2b ID Type</span>
                         <lightning-dual-listbox name="group2bIdType" value={group2bIdTypeVal}
                             class="slds-m-right_xx-large slds-align_absolute-center slds-dueling-picklist__column_responsive "
                             source-label="Available" selected-label="Selected" options={Group2bIdTypes} onchange={handleChange}>

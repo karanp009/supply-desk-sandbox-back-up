@@ -7,6 +7,7 @@ import LAST_LOGIN from '@salesforce/schema/User.LastLoginDate';
 import IMG_URL from '@salesforce/schema/User.FullPhotoUrl';
 import myAccountImg from '@salesforce/resourceUrl/myAccountImg';
 import timeSheetImg from '@salesforce/resourceUrl/timeSheetImg';
+import schedulerImg from '@salesforce/resourceUrl/schedulerImg';
 import profileImg from '@salesforce/resourceUrl/profileImg';
 import coverImgClient from '@salesforce/resourceUrl/coverImgClient';
 import complianceImg from '@salesforce/resourceUrl/complianceImg';
@@ -340,6 +341,7 @@ export default class Ts_HomePage extends NavigationMixin(LightningElement) {
 
     myAccImg = myAccountImg;
     tmSheetImg = timeSheetImg;
+    scheImg = schedulerImg;
     profImg = profileImg;
     cvrImg = coverImgClient;
     cmpImg = complianceImg;

@@ -4,6 +4,7 @@
  * Author: Prakash Mewada (MV Clouds)
  * Description: This is a Batch class on SendRejectContactStatusBatch for sending Email
  *              with list of Contact records that have Candidate Status as 'Reject'.
+ * Test class: SendRejectContactStatusBatch_Test
  ******************************************************************************/
 
  /********************************************************************

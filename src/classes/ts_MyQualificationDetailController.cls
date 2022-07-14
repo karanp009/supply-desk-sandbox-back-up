@@ -23,11 +23,13 @@ public without sharing class ts_MyQualificationDetailController {
         if(qual.qualificationName__c == 'CV'){
             qualList.Gaps_Explanation__c = qual.Gaps_Explanation__c;
             qualList.CV_Submitted__c = qual.CV_Submitted__c;
+            qualList.CV_Received__c = qual.CV_Received__c;
         }
         
         else if(qual.qualificationName__c == 'Right to Work'){
             qualList.Permanent_Right_to_Work_in_UK__c = qual.Permanent_Right_to_Work_in_UK__c;
             qualList.Documents__c = qual.Documents__c;
+            qualList.Work_Permit_OR_Visa_Expiry_Date__c = qual.Work_Permit_OR_Visa_Expiry_Date__c;
         }
         else if(qual.qualificationName__c == 'Teacher Qualification'){
             qualList.NCTL_Number__c = qual.NCTL_Number__c;
@@ -50,6 +52,8 @@ public without sharing class ts_MyQualificationDetailController {
             qualList.Name_Change_Document__c = qual.Name_Change_Document__c;
             qualList.Group_2a_ID_Type__c = qual.Group_2a_ID_Type__c;
             qualList.Group_2b_ID_Type__c = qual.Group_2b_ID_Type__c;
+            System.debug('qual.Group_2a_ID_Type__c>>>'+qual.Group_2a_ID_Type__c);
+            System.debug('qual.Group_2b_ID_Type__c>>>'+qual.Group_2b_ID_Type__c);
         }
         else if(qual.qualificationName__c == 'Safeguarding'){
             qualList.Safeguarding_Date_Completed__c = qual.Safeguarding_Date_Completed__c;

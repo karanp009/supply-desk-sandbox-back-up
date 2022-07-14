@@ -1,6 +1,12 @@
 @istest
 private class TRS_FilterCandidatesTest {
     
+    @TestSetup
+    public static void testSetupData(){
+        Id rcId = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Candidate').getRecordTypeId();
+        Account acc = new Account(Name = 'UNKNOWN DO NOT DELETE');
+        insert acc;
+    }
     
     public static testmethod void UnitTest1(){
         
@@ -50,8 +56,8 @@ Subject__c='Art', Trained_As__c =' Early Years Trained', Sector__c='HMP Prison',
                                                Sector1__c='Junior');
             insert job1;       
             
-            Contact candidate1 = new Contact(LastName = 'Candidate 1', Qualificaitons__c = 'Bachelor of Primary Education',Email='test@test.com', Subject__c ='Art');
-            Contact candidate2 = new Contact(LastName = 'Candidate 2',Email='test@test.com', Subject__c ='Art',Job_Titles__c = 'Acting Principal');
+            Contact candidate1 = new Contact(RecordTypeId = conCandidId, LastName = 'Candidate 1', Candidate_Type__c = 'Qualified Teacher', Qualificaitons__c = 'EYFS',Email='test@test.com', Subject__c ='Art');
+            Contact candidate2 = new Contact(RecordTypeId = conCandidId, LastName = 'Candidate 2',Email='test@test.com', Subject__c ='Art',Job_Titles__c = 'Senior Leader');
             Contact[] candidatelist = new Contact[]{candidate1,candidate2};  
                 insert candidatelist;
             
@@ -351,142 +357,144 @@ Subject__c='Art', Trained_As__c =' Early Years Trained', Sector__c='HMP Prison',
             //
             pref.getParameters().put('id', job1.id);
             pref.getParameters().put('save', 'True');
-            
-            TRS_FilterCandidates obj = new TRS_FilterCandidates (stdController);
-            double offvar =  obj.offset;
-            boolean isweekDayMapPopulate =  obj.isweekDayMapPopulated;
-            obj.isSortingByDistances = true;
-            obj.dummyFunction();
-            obj.getVacancyDetails();
-            obj.resetFilters();
-            obj.getWeek();
-            obj.nextWeek();
-            obj.previousWeek();
-            obj.previouspaginaton();
-            obj.changeListsize();
-            obj.getResourceAvailability();
-            obj.openDialogForClosingReport();
-            System.debug(obj.isMidNight);
-            
-            // obj.startDateStr = '03-09-2018';
-            try{
-                obj.updateWeek();
-            }
-            catch(exception e){
+
+            Test.startTest();
+                TRS_FilterCandidates obj = new TRS_FilterCandidates (stdController);
+                double offvar =  obj.offset;
+                boolean isweekDayMapPopulate =  obj.isweekDayMapPopulated;
+                obj.isSortingByDistances = true;
+                obj.dummyFunction();
+                obj.getVacancyDetails();
+                obj.resetFilters();
+                obj.getWeek();
+                obj.nextWeek();
+                obj.previousWeek();
+                obj.previouspaginaton();
+                obj.changeListsize();
+                obj.getResourceAvailability();
+                obj.openDialogForClosingReport();
+                System.debug(obj.isMidNight);
                 
-            }
-            
-            string sExp = obj.sortExpression;
-            obj.gettimeSelectList();
-            obj.getSortDirection();
-            obj.sortExpression = null;
-            obj.getSortDirection();
-            obj.setSortDirection('5');
-            List<SelectOption> listSelectoption = new List<SelectOption>();
-            listSelectoption = obj.candidatestautsList;
-            
-            List<SelectOption> listSelectoption1 = new List<SelectOption>();
-            listSelectoption1 = obj.complianceStatus;
-            
-            List<string> weekHeaderlst = new List<string>();
-            weekHeaderlst = obj.weekHeader;
-            //obj.matchCSDJSDslots();
-            
-            obj.vacRecord.Shift__c = 'Hourly';
-            obj.dummyFunction();
-            
-            obj.vacRecord.Shift__c = 'AM';
-            obj.dummyFunction();
-            
-            obj.vacRecord.Shift__c = 'PM';
-            obj.dummyFunction();
-            
-            TRS_FilterCandidates.CSDJSDwrap obt = new TRS_FilterCandidates.CSDJSDwrap(null,null,null);
-            system.debug(obt.vaccAvail);
-            system.debug(obt.canAvail);
-            system.debug(obt.Colour);
-            system.debug(obt.vaccAvail);
-            
-            TRS_FilterCandidates.dayDetail obD = new TRS_FilterCandidates.dayDetail(System.today(), '');
-            system.debug(obj.showSection);
-            system.debug(obD.assignedJobId);
-            system.debug(obD.personPlacedName);
-            system.debug(obD.closingReportSchedule);
-            system.debug(obD.assignedJobName);
-            system.debug(obD.personPlacedId);
-            system.debug(obD.shift);
-            system.debug(obD.VacAvailshift);
-            system.debug(obD.CandidAvailshift);
-            system.debug(obD.showAssignButton);
-            system.debug(obD.cancelAssignButton);
-            system.debug(obj.candidateRecord);
-            system.debug(obj.showAssignmentDialogBox);
-            system.debug(obj.showCreateVacancyRecord);
-            
-            TRS_FilterCandidates.ShiftClass sc = new TRS_FilterCandidates.ShiftClass();
-            system.debug(sc.isActive);
-            system.debug(sc.selectedType);
-            system.debug(sc.optionList);
-            system.debug(sc.shiftDate);
-            system.debug(sc.bookingType);
-            obj.saveClosingReport();
-            obj.saveCreateVacancyRecord();
-            obj.createStringForMultiSelectFields('test;test');
-            obj.con.OtherPostalCode = '20002';
-            obj.vacRecord.Sub_Sector__c = 'test';
-            obj.con.Job_Titles__c = 'sfdc';
-            obj.VacancyRecord.TR1__Contact__c = testContact.id;
-            obj.candidateStatus = 'Vetted';
-            
-            obj.con.Division__c = 'Brighton Primary';
-            
-            obj.con.SEN_Additional_Experience__c = 'Art Therapy';
-            obj.con.SEN_Experience__c = 'ADHD';
-            obj.con.Subject__c = 'Art and Design';
-            obj.con.TR1__Regional_Area__c ='Alabama';
-            obj.con.AccountId = acc.Id;
-            obj.whichContacts = 'My Candidates';
-            obj.con.Hidden_Scheduler_Filter__c = USerInfo.getUserId();
-            obj.con.Trained_As__c = 'Cover Supervisor';
-            
-            obj.con.Preferred_LEA__c = 'Darlington';
-            obj.con.LEA__c = 'North East';
-            obj.con.Qualificaitons__c = 'Postgraduate Diploma of Education (secondary)';
-            obj.con.Skills_Training_Experience__c = 'Careers Advisor';
-            obj.con.Year_Key_Stage__c = 'Nursery 0-5yrs';
-            
-            obj.vacRecord.TR1__Account__c = acc.id;
-            obj.sortDirection = 'desc';
-            obj.doSchoolNamePopulate();
-            obj.refresh();
-            obj.openCreateVacancyRecordDialog();
-            obj.openCloneVacancyrecordDialog();
-            obj.cancelVacancyCreation();
-            system.debug(obj.selectedSector);
-            system.debug(obj.selectedSubSector);
-            system.debug(obj.isJobTitleDisplay);
-            system.debug(obj.selectedLEA);
-            system.debug(obj.selectedSubLEA);
-            system.debug(obj.getLEAOption());
-            system.debug(obj.LEAOption);
-            system.debug(obj.getsubLEAs());
-            system.debug(obj.getSectors());
-            system.debug(obj.jobTitles);
-            system.debug(obj.formatDateTimefromDate(System.Today(), '12:21 AM'));
-            system.debug(obj.formatDateTimefromDate(System.Today(), '10:21 AM'));
-            system.debug(obj.closeRep);
-            system.debug(obj.closeRepSchedule);
-            
-            system.debug(obj.endDateStr);
-            system.debug(obj.closeRepSchedule);
-            system.debug(obj.closeRepSchedule);
-            
-            TRS_FilterCandidates.DayDetailWrapper obddw = new TRS_FilterCandidates.DayDetailWrapper();
-            system.debug(obddw.Startdate);
-            system.debug(obddw.dayDetail2);
-            system.debug(obddw.showDayDetail2);
-            system.debug(obddw.showDayDetail2);
-            system.debug(obddw.candidD2DList1);
+                // obj.startDateStr = '03-09-2018';
+                try{
+                    obj.updateWeek();
+                }
+                catch(exception e){
+                    
+                }
+                
+                string sExp = obj.sortExpression;
+                obj.gettimeSelectList();
+                obj.getSortDirection();
+                obj.sortExpression = null;
+                obj.getSortDirection();
+                obj.setSortDirection('5');
+                List<SelectOption> listSelectoption = new List<SelectOption>();
+                listSelectoption = obj.candidatestautsList;
+                
+                List<SelectOption> listSelectoption1 = new List<SelectOption>();
+                listSelectoption1 = obj.complianceStatus;
+                
+                List<string> weekHeaderlst = new List<string>();
+                weekHeaderlst = obj.weekHeader;
+                //obj.matchCSDJSDslots();
+                
+                obj.vacRecord.Shift__c = 'Hourly';
+                obj.dummyFunction();
+                
+                obj.vacRecord.Shift__c = 'AM';
+                obj.dummyFunction();
+                
+                obj.vacRecord.Shift__c = 'PM';
+                obj.dummyFunction();
+                
+                TRS_FilterCandidates.CSDJSDwrap obt = new TRS_FilterCandidates.CSDJSDwrap(null,null,null);
+                system.debug(obt.vaccAvail);
+                system.debug(obt.canAvail);
+                system.debug(obt.Colour);
+                system.debug(obt.vaccAvail);
+                
+                TRS_FilterCandidates.dayDetail obD = new TRS_FilterCandidates.dayDetail(System.today(), '');
+                system.debug(obj.showSection);
+                system.debug(obD.assignedJobId);
+                system.debug(obD.personPlacedName);
+                system.debug(obD.closingReportSchedule);
+                system.debug(obD.assignedJobName);
+                system.debug(obD.personPlacedId);
+                system.debug(obD.shift);
+                system.debug(obD.VacAvailshift);
+                system.debug(obD.CandidAvailshift);
+                system.debug(obD.showAssignButton);
+                system.debug(obD.cancelAssignButton);
+                system.debug(obj.candidateRecord);
+                system.debug(obj.showAssignmentDialogBox);
+                system.debug(obj.showCreateVacancyRecord);
+                
+                TRS_FilterCandidates.ShiftClass sc = new TRS_FilterCandidates.ShiftClass();
+                system.debug(sc.isActive);
+                system.debug(sc.selectedType);
+                system.debug(sc.optionList);
+                system.debug(sc.shiftDate);
+                system.debug(sc.bookingType);
+                obj.saveClosingReport();
+                obj.saveCreateVacancyRecord();
+                obj.createStringForMultiSelectFields('test;test');
+                obj.con.OtherPostalCode = '20002';
+                obj.vacRecord.Sub_Sector__c = 'test';
+                obj.con.Job_Titles__c = 'sfdc';
+                obj.VacancyRecord.TR1__Contact__c = testContact.id;
+                obj.candidateStatus = 'Vetted';
+                
+                obj.con.Division__c = 'Brighton Primary';
+                
+                obj.con.SEN_Additional_Experience__c = 'Art Therapy';
+                obj.con.SEN_Experience__c = 'ADHD';
+                obj.con.Subject__c = 'Art and Design';
+                obj.con.TR1__Regional_Area__c ='Alabama';
+                obj.con.AccountId = acc.Id;
+                obj.whichContacts = 'My Candidates';
+                obj.con.Hidden_Scheduler_Filter__c = USerInfo.getUserId();
+                obj.con.Trained_As__c = 'Cover Supervisor';
+                
+                obj.con.Preferred_LEA__c = 'Darlington';
+                obj.con.LEA__c = 'North East';
+                obj.con.Qualificaitons__c = 'Postgraduate Diploma of Education (secondary)';
+                obj.con.Skills_Training_Experience__c = 'Careers Advisor';
+                obj.con.Year_Key_Stage__c = 'Nursery 0-5yrs';
+                
+                obj.vacRecord.TR1__Account__c = acc.id;
+                obj.sortDirection = 'desc';
+                obj.doSchoolNamePopulate();
+                obj.refresh();
+                obj.openCreateVacancyRecordDialog();
+                obj.openCloneVacancyrecordDialog();
+                obj.cancelVacancyCreation();
+                system.debug(obj.selectedSector);
+                system.debug(obj.selectedSubSector);
+                system.debug(obj.isJobTitleDisplay);
+                system.debug(obj.selectedLEA);
+                system.debug(obj.selectedSubLEA);
+                system.debug(obj.getLEAOption());
+                system.debug(obj.LEAOption);
+                system.debug(obj.getsubLEAs());
+                system.debug(obj.getSectors());
+                system.debug(obj.jobTitles);
+                system.debug(obj.formatDateTimefromDate(System.Today(), '12:21 AM'));
+                system.debug(obj.formatDateTimefromDate(System.Today(), '10:21 AM'));
+                system.debug(obj.closeRep);
+                system.debug(obj.closeRepSchedule);
+                
+                system.debug(obj.endDateStr);
+                system.debug(obj.closeRepSchedule);
+                system.debug(obj.closeRepSchedule);
+                
+                TRS_FilterCandidates.DayDetailWrapper obddw = new TRS_FilterCandidates.DayDetailWrapper();
+                system.debug(obddw.Startdate);
+                system.debug(obddw.dayDetail2);
+                system.debug(obddw.showDayDetail2);
+                system.debug(obddw.showDayDetail2);
+                system.debug(obddw.candidD2DList1);
+            Test.stopTest();
         }       
     }
     

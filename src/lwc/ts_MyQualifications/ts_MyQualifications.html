@@ -50,12 +50,12 @@
                                     <div class="slds-col slds-size_1-of-4 textd">{ql.TR1__Expiration_Date__c}</div>
                                     <div class="slds-col slds-size_1-of-4 textd slds-m-left_xx-small">{ql.TR1__Status__c}</div>
                                     <template if:true={ql.Status}>
-                                        <div class="slds-col slds-size_1-of-4 edit slds-size_1-of-12 slds-m-right_large" data-id={ql.TR1__Qualification__r.Name} data-record={ql.TR1__Qualification__r.Name} onclick={editQualification}><span><img src={editImg} class="slds-m-right_small">Edit</span></div>                                    
-                                    </template>    
-                                </div>
-                            </template>
-                        </div>
-                        <!-- <table class="slds-table slds-max-medium-table--stacked">
+                                        <div class="edit" data-id={ql.TR1__Qualification__r.Name} data-record={ql.TR1__Qualification__r.Name} onclick={editQualification}><span><img src={editImg} class="slds-m-right_small">Edit</span></div>                                    
+                                    </template>
+</div>
+</template>
+</div>
+<!-- <table class="slds-table slds-max-medium-table--stacked">
                             <thead class="slds-p-top_large theadClass">
                                 <tr class="slds-text-heading--label slds-p-top_medium">
                                     
@@ -93,11 +93,11 @@
                             </tbody>
                         </table> -->
 
-                    </div>
-                    <!-- Page Content-->
-                </div>
-                <br/><br/>
-            
-            </div>
-    </div>
+</div>
+<!-- Page Content-->
+</div>
+<br/><br/>
+
+</div>
+</div>
 </template>

@@ -13,19 +13,20 @@ export default class Ts_Compilance extends NavigationMixin(LightningElement) {
 
     connectedCallback(){
         console.log('connected callback');
-        // this.getcrvalue();
+        this.getcrvalue();
         console.log('this-->',this.usrId);
     }
 
-    renderedCallback() {
-        this.getcrvalue();
-    }
+    // renderedCallback() {
+    //     this.getcrvalue();
+    // }
 
     getcrvalue(){
         getcrdata({ userid:  this.usrId})
             .then((result) => {
                 console.log({result});
                 this.crlist = result;
+                console.log('this.crlist==>',this.crlist);
             })
             .catch(error => {
                 console.log(error);
@@ -44,10 +45,11 @@ export default class Ts_Compilance extends NavigationMixin(LightningElement) {
                 type: 'comm__namedPage',
                 attributes: {
                     name: 'CompliancePDF__c',
-                    url: '/s/compliance/compliancepdf'
+                    url: '/s/compliance/compliancepdf',
+                    // recordId: crval
                 },
                 state: {
-                    id: 'a090C000002TpMNQA0' // Value must be a string
+                    recordId: crval // Value must be a string
                 }
             });
         }

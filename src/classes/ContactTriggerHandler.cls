@@ -32,6 +32,7 @@ public class ContactTriggerHandler {
     
     public void OnAfterUpdateEvent(){
         CreateAvailability(false);
+        updateSafeguardingConsent(recordsNewList);
     } 
 
     public static Boolean CountryPicklistenabled() {
@@ -271,14 +272,14 @@ public class ContactTriggerHandler {
             List<String> strlist = new List<String>();
             strlist = str.split(',');
             Map<String, Id> usrMap = new Map<String, Id>();
-            for(User usr : [SELECT Id, Email FROM User WHERE Email IN :strlist]) {
+            for(User usr : [SELECT Id, Email FROM User WHERE Email IN :strlist AND IsActive = True]) {
                 System.debug('usrMap Email -- '+usr.Email);
                 usrMap.put(usr.Email, usr.Id);
             }
             /**
              * 0 - leanne.clark@supplydesk.co.uk
              * 1 - rachel.marsden@supplydesk.co.uk
-             * 2 - alexandra.skinner@supplydesk.co.uk
+             * 2 - zaynah.desai@supplydesk.co.uk
              * 3 - Jennifer.Harrison@supplydesk.co.uk
              * 4 - errika.nikokavuras@supplydesk.co.uk
              * 5 - sam.wilkins@supplydesk.co.uk
@@ -477,9 +478,21 @@ public class ContactTriggerHandler {
             /* END */
 
             // Below code for Setting Subject field based on Year/Key Stage field.
-            if(!con.Year_Key_Stage__c.contains('KS3/4') || !con.Year_Key_Stage__c.contains('KS5')) {
+            if(con.Year_Key_Stage__c.contains('EYFS') && !con.Year_Key_Stage__c.contains('KS3/4') && !con.Year_Key_Stage__c.contains('KS5')) {
+                con.Subject__c = 'All Primary';
+            }else if(con.Year_Key_Stage__c.contains('KS1') && !con.Year_Key_Stage__c.contains('KS3/4') && !con.Year_Key_Stage__c.contains('KS5')) {
+                con.Subject__c = 'All Primary';
+            }else if(con.Year_Key_Stage__c.contains('KS2') && !con.Year_Key_Stage__c.contains('KS3/4') && !con.Year_Key_Stage__c.contains('KS5')) {
                 con.Subject__c = 'All Primary';
             }
+
+            //Below Code for Caution/Convictions field update due to the Gravity Form Question is diffrently asked and its vice versa.
+            if(con.Cautions_Convictions_Candidate__c == 'Yes') {
+                con.Cautions_Convictions_Candidate__c = 'No';
+            } else if(con.Cautions_Convictions_Candidate__c == 'No') {
+                con.Cautions_Convictions_Candidate__c = 'Yes';
+            }
+
         }catch(Exception e) {
             System.debug('Exception :: In ukSiteGravityFormContact() Method :: ContactTriggerHandler class ----> '+e.getMessage()+' || '+e.getStackTraceString());
             Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
@@ -766,21 +779,21 @@ public class ContactTriggerHandler {
         try{
             System.debug('************************ In updateOnChngVettingQuestions Method ************************');
             for(Contact con : newContacts) {
-                System.debug('Inside If condition || No value equals to Null');
                 if(con.Right_to_work_Candidate__c != null && con.Right_to_work__c != null) {
                     if(con.Right_to_work_Candidate__c == 'In progress' && con.Right_to_work__c == 'In progress') {
                         con.TR1__Candidate_Status__c = 'Investigate';
-
+                        
                     }else if(con.Right_to_work_Candidate__c == 'No' && con.Right_to_work__c == 'In progress') {
                         con.TR1__Candidate_Status__c = 'Investigate';
-
+                        
                     }else if(con.Right_to_work_Candidate__c == 'No' && con.Right_to_work__c == 'No') {
                         con.TR1__Candidate_Status__c = 'Reject';
-
+                        
                     }else {
                         if(con.References_Candidate__c != null && con.References_not_agreed__c != null &&
                         con.Cautions_Convictions_Candidate__c != null && con.Cautions_Convictions__c != null &&
                         con.Disciplinary_Candidate__c != null && con.Disciplinary__c != null) {
+                            System.debug('Inside If condition || No value equals to Null');
                             if (con.References_Candidate__c == 'Yes' && con.References_not_agreed__c == 'Yes' &&
                                 con.Right_to_work_Candidate__c == 'Yes' && con.Right_to_work__c == 'Yes' &&
                                 con.Cautions_Convictions_Candidate__c == 'No' && con.Cautions_Convictions__c == 'No' &&
@@ -792,9 +805,66 @@ public class ContactTriggerHandler {
                         }
                     }
                 }
+                System.debug('Safeguarding_Training_Hidden__c-------> '+con.Safeguarding_Training_Hidden__c);
+                System.debug('recordsOldMap - Safeguarding_Training_Hidden__c-------> '+recordsOldMap.get(con.Id).Safeguarding_Training_Hidden__c);
+                if(con.Safeguarding_Training_Hidden__c.contains('GForm_Safeguarding') && recordsOldMap.get(con.Id).Safeguarding_Training_Hidden__c != null && recordsOldMap.get(con.Id).Safeguarding_Training_Hidden__c == 'Yes') {
+                    con.Safeguarding_Training_Hidden__c = 'Yes';
+                }
             }
         }catch(Exception e) {
             System.debug('Exception :: In updateOnChngVettingQuestions() Method :: ContactTriggerHandler class ----> '+e.getMessage()+' || '+e.getStackTraceString());
+        }
+
+    }
+
+    /***************************************************************************************
+     * Description : Before Update of Contact it will check for Safeguarding and GDPR Consent from Gravity form.
+     * Date        : 05 June 2022
+     * Author      : Prakash Mewada (MV Clouds)
+     ***************************************************************************************/
+    public void updateSafeguardingConsent(List<Contact> newContacts) {
+        try {
+            System.debug('****************** In updateSafeguardingConsent ******************');
+            Map<String, List<String>> OtherFieldsDataMap = new Map<String, List<String>>();
+
+            Set<Id> conIds = new Set<Id>();
+            Map<Id, List<TR1__Associated_Qualification__c>> conAQMap = new Map<Id, List<TR1__Associated_Qualification__c>>();
+            List<TR1__Associated_Qualification__c> updateAQList = new List<TR1__Associated_Qualification__c>();
+            for(Contact con : newContacts) {
+                conIds.add(con.Id);
+            }
+            for(TR1__Associated_Qualification__c aq : [SELECT Id, Name, TR1__Contact__c, Safeguarding_Date_Completed__c, Safeguarding_Training__c, Consent_Received__c, TR1__Qualification__c, TR1__Qualification__r.Name FROM TR1__Associated_Qualification__c WHERE TR1__Contact__c IN :conIds AND ( TR1__Qualification__r.Name Like '%Safeguarding%' OR TR1__Qualification__r.Name Like '%Terms and Registration Forms%' )]) {
+                if(!conAQMap.containsKey(aq.TR1__Contact__c)) {
+                    conAQMap.put(aq.TR1__Contact__c, new List<TR1__Associated_Qualification__c>());
+                }
+                conAQMap.get(aq.TR1__Contact__c).add(aq);
+            }
+
+            for(Contact con : newContacts) {
+                if(!String.isBlank(con.Safeguarding_Training_Hidden__c) && con.Safeguarding_Training_Hidden__c.contains('GForm_Safeguarding')){
+                    List<TR1__Associated_Qualification__c> aqList = new List<TR1__Associated_Qualification__c>();
+                    if(conAQMap.get(con.Id) != null) {
+                        aqList = conAQMap.get(con.Id);
+                    }
+                    for(TR1__Associated_Qualification__c aqRec : aqList) {
+                        if(aqRec.TR1__Qualification__r.Name.contains('Safeguarding')) {
+                            aqRec.Safeguarding_Date_Completed__c = Date.today();
+                            aqRec.Safeguarding_Training__c = True;
+                            aqRec.TR1__Status__c = 'Submitted';
+                        }else if(aqRec.TR1__Qualification__r.Name.contains('Terms and Registration Forms')) {
+                            aqRec.Consent_Received__c = Date.today();
+                            aqRec.TR1__Status__c = 'Submitted';
+                        }
+                        updateAQList.add(aqRec);
+                    }
+                }
+            }
+
+            if(updateAQList.size() > 0) {
+                update updateAQList;
+            }
+        }catch(Exception e) {
+            System.debug('Exception :: In updateSafeguardingConsent() Method :: ContactTriggerHandler class ----> '+e.getMessage()+' || '+e.getStackTraceString());
         }
 
     }

@@ -1,33 +1,47 @@
 <template>
 
-    <div class="container">
+    <!-- ======= Spinner ======= -->
+
+    <template if:true={isSpinner}>
+        <div class="slds-spinner_container spinner-center" style="overflow: hidden;">
+            <div class="spinner-ts">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+    </template>
+
+    <!-- ======= Spinner ======= -->
+
+    <div class="container" style={backgroundImage}>
         <div class="forms-container">
             <div class="logo_cls">
-                <img src={bglogo}/>
+                <img src={bglogo} />
             </div>
             <div class="signin-signup">
-                    <div class="sign-in-form">
-                    <div>
-                        
+                <div class="sign-in-form">
+                    <div class="sign_in">
+
                         <h2 class="title">Login</h2>
                         <p class="subtitle">Please enter your login credentials below</p>
                         <div class="input-field">
-                            <img src={userimg}/>
-                            <!-- <input type="text" name="username" autocomplete="username" placeholder="client.u@foxmail.com" required="yes"> -->
-                            <lightning-input name="username" autocomplete="" class="input_cls" value={username} onchange={handleChange} placeholder="client.u@foxmail.com"></lightning-input>
+                            <img src={userimg} />
+                            <lightning-input name="username" autocomplete="" class="input_cls" value={username}
+                                onchange={handleChange} data-id="user-sgn-fld" placeholder="client.u@foxmail.com">
+                            </lightning-input>
                         </div>
                         <div class="input-field">
-                            <img src={passwordimg}/>
-                            <!-- <input type="password" name="password" autocomplete="current-password" placeholder="**********"
-                            id="id_password" required="yes"> -->
-                            <lightning-input type="Password" autocomplete="" name="password" class="input_cls" value={password} onchange={handleChange} placeholder="********"></lightning-input>
+                            <img src={passwordimg} />
+                            <lightning-input type="Password" autocomplete="" name="password" class="input_cls"
+                                value={password} onchange={handleChange} placeholder="********"></lightning-input>
                         </div>
                         <div>
                             <a class="pass" href="/s/forgotpasswordpage">Forgot your password?</a>
                         </div>
                         <div class="slds-p-top_medium slds-wrap slds-grid">
-                            <!-- <input type="submit" value="REGISTER" class="btn_cls registerbtn slds-col slds-m-horizontal_medium"> -->
-                            <input type="submit" value="LOGIN" class="btn_cls loginbtn slds-col slds-m-horizontal_medium" onclick={login}>
+                            <input type="submit" value="LOGIN"
+                                class="btn_cls loginbtn slds-col slds-m-horizontal_medium" onclick={login}>
                         </div>
                     </div>
 
@@ -35,5 +49,8 @@
             </div>
         </div>
     </div>
+    
+    <c-ts_-error-component reloadpage={reloadpage}>
+    </c-ts_-error-component>
 
 </template>

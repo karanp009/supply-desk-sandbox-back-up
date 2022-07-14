@@ -215,6 +215,33 @@ private class ContactTriggerHandlerTest {
 
     }
 
+    @isTest 
+    public static void contactTriggerTest_5() {
+        Id rcId = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Candidate').getRecordTypeId();
+        Account acc = [SELECT Id, Name FROM Account WHERE Name = 'UNKNOWN DO NOT DELETE'];
+
+        Contact con = new Contact(RecordTypeId = rcId, AccountId = acc.Id, FirstName = 'Testing', LastName = 'Data#1', Email = 'testingdata#1@test.com', Candidate_Type__c = 'Qualified Teacher', Qualificaitons__c  = 'EYFS', Job_Titles__c = 'EYFS Teacher', Year_Key_Stage__c = 'EYFS', Assignment_Type__c = 'Day to Day', LEA__c = 'North East', Preferred_LEA__c = 'Durham', Source_Category__c = 'Social Media', TR1__Source__c = 'Facebook', References_Candidate__c = 'Yes', Right_to_work_Candidate__c = 'Yes', DBS_Tick_Box__c = 'Yes', Cautions_Convictions_Candidate__c = 'No', Disciplinary_Candidate__c = 'No', TR1__State_Area__c = 'UK', Safeguarding_Training_Hidden__c = 'No');
+        insert con;
+
+        TR1__Qualification__c qual = new TR1__Qualification__c(Name = 'Safeguarding', Abbreviation__c = 'SAFE', Field_Set_ID_c__c = 'Safeguarding_c', Require_Documents__c = FALSE, Sort_Order__c = 18, TR1__Collection_Methods__c = 'Field Update;Upload File', TR1__Field_Set_ID__c = 'Safeguarding');
+        insert qual;
+
+        TR1__Associated_Qualification__c objAssoQual = new TR1__Associated_Qualification__c(TR1__Qualification__c = qual.Id, TR1__Contact__c = con.Id, Clear_DBS__c = true, TR1__Status__c = 'Requested', DBS_Disclosure_Notes__c = 'test'); 
+        insert objAssoQual;
+
+        TR1__Qualification__c qual1 = new TR1__Qualification__c(Name = 'Terms and Registration Forms', Abbreviation__c = 'TOE', Field_Set_ID_c__c = 'TOE_c', Require_Documents__c = FALSE, Sort_Order__c = 24, TR1__Collection_Methods__c = 'Field Update;Upload File', TR1__Field_Set_ID__c = 'TOE');
+        insert qual1;
+
+        TR1__Associated_Qualification__c objAssoQual1 = new TR1__Associated_Qualification__c(TR1__Qualification__c = qual1.Id, TR1__Contact__c = con.Id, Clear_DBS__c = true, TR1__Status__c = 'Requested', DBS_Disclosure_Notes__c = 'test');
+        insert objAssoQual1;
+
+        Test.startTest();
+            con.Safeguarding_Training_Hidden__c = 'GForm_Safeguarding;;;Yes';
+            update con;
+        Test.stopTest();
+
+    }
+
     @isTest
     public static void createContact() { 
         test.startTest();

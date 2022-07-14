@@ -13,6 +13,10 @@ export default class Ts_ForgotPassword extends LightningElement {
     bglogo = sd_logo;
     userimg = uname_img;
     username;
+    errormsg;
+
+    usrname = NAME_FIELD;
+    usrid = USER_ID;
 
     renderedCallback() {
         Promise.all([
@@ -25,6 +29,12 @@ export default class Ts_ForgotPassword extends LightningElement {
             });
     }
 
+    connectedCallback(){
+        console.log('Forgot Connected Callback');
+        console.log('usrname->',this.usrname);
+        console.log('usrid->',this.usrid);
+    }
+
     handleChange(event) {
         console.log({ event });
         this.username = event.target.value;
@@ -32,13 +42,19 @@ export default class Ts_ForgotPassword extends LightningElement {
 
     forgotpass() {
         console.log('forgotpass');
-        console.log('username-->',this.username);
+        console.log('username-->', this.username);
 
         forgotpassword({
             usernameval: this.username
         })
             .then((result) => {
                 console.log({ result });
+                if (result == 'true') {
+                    window.location.replace('/s/');
+                } else {
+                    console.log('else');
+                    this.errormsg = result;
+                }
             })
             .catch((error) => {
                 console.log(error);

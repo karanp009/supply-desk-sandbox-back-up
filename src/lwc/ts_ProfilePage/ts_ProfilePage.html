@@ -4,10 +4,11 @@
             <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
         </div>
         <div class="slds-grid slds-gutters profileTopDiv">
-            <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
+            <div class="slds-col slds-size_7-of-12 slds-m-left_xx-large profileTitle" style="display:flex;">
                 <div class="slds-size_1-of-7 slds-m-left_xx-large prof-avtr-div">
-                    <span style="display: inline-block;"><img src={imgUrl}
-                            class="profImg slds-m-left_medium slds-m-top_medium"></span>
+                    <span style="display: inline-block;">
+                        <img src={imgUrl} class="profImg slds-m-left_medium slds-m-top_medium">
+                    </span>
                 </div>
                 <div>
                     <p class="slds-m-top_x-large slds-m-left_large t1">CLIENT</p>
@@ -15,129 +16,113 @@
                     <p class="slds-m-left_large t3">Update your photo and personal details.</p>
                 </div>
             </div>
-            <div
-                class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large">
-                <div class="slds-size_1-of-5 slds-m-left_medium saveBtn">Save</div>
-                <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">Cancel</div>
+            <div class="slds-p-horizontal--small slds-col slds-size_4-of-12 slds-m-bottom--medium btns slds-m-top_xx-large profilebtn">
+                <div class="slds-size_1-of-5 slds-m-left_medium saveBtn"> 
+                    <img src={saveImg}> Save
+                </div>
+                <div class="slds-size_1-of-5 slds-m-left_medium cancelBtn">
+                    <img src={cancelImg}> Cancel
+                </div>
             </div>
         </div>
 
         <div class="tabDiv">
             <lightning-tabset>
-                <lightning-tab label="Details">
+                <lightning-tab label="Details" value="tab1" onactive={handleActive}>
                     <div class="detailDiv">
                         <!-- FirstName -->
                         <div class="slds-grid slds-gutters slds-m-left_xx-large">
                             <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
                                 First Name
                             </div>
-                            <div
-                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
-                                <lightning-input class="input" name="firstname" type="text" value={fname}
-                                    onchange={handleChange} autocomplete="off"></lightning-input>
+                            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="firstname" type="text" value={fname} onchange={handleChange} autocomplete="off"></lightning-input>
                             </div>
                         </div>
-
                         <hr>
-
                         <!-- LastName -->
                         <div class="slds-grid slds-gutters slds-m-left_xx-large">
                             <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
                                 Last Name
                             </div>
-                            <div
-                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
-                                <lightning-input class="input" name="lastname" type="text" value={lname}
-                                    onchange={handleChange} autocomplete="off"></lightning-input>
+                            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="lastname" type="text" value={lname} onchange={handleChange} autocomplete="off"></lightning-input>
                             </div>
                         </div>
-
                         <hr>
-
-                        <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                        <!-- Image Upload -->
+                        <div class="slds-grid slds-gutters slds-m-left_xx-large fileUplaodDiv">
                             <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp1">
+                                <p>Your photo</p>
                                 <p>This will displayed on your profile</p>
                             </div>
-                            <div
-                                class="slds-p-horizontal-small slds-col slds-size_8-of-12 slds-m-bottom-medium slds-form-element">
+                            <span class="imageUpload">
+                                <img src={imgUrl} class="profChangeImg slds-m-left_medium slds-m-top_medium">
+                            </span>
+                            <!-- <div class="slds-p-horizontal-small slds-col slds-size_8-of-12 slds-m-bottom-medium slds-form-element">
                                 <lightning-input type="file" accept={acceptedFormats} onchange={saveFileHandle}>
                                 </lightning-input>
+                            </div> -->
+                            <div class="fileUpload">
+                                <div>
+                                    Update
+                                </div>
                             </div>
-                            <!-- <lightning-file-upload
-                            name="fileUploader"
-                            accept={acceptedFormats}
-                            record-id={usrId}
-                            onuploadfinished={handleUploadFinished}
-                        >
-                        </lightning-file-upload> -->
+                            <div class="fileDelete">
+                                <div>
+                                    Delete
+                                </div>
+                            </div>
                         </div>
-
                         <hr>
-
                         <!-- Email address -->
                         <div class="slds-grid slds-gutters slds-m-left_xx-large">
                             <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
                                 Email Address
                             </div>
-                            <div
-                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
-                                <lightning-input class="input" name="emailaddress" value={email} onchange={handleChange}
-                                    type="text" autocomplete="off"></lightning-input>
+                            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="emailaddress" value={email} onchange={handleChange} type="text" autocomplete="off"></lightning-input>
                             </div>
                         </div>
-
                         <hr>
-
                         <!-- Business Phone -->
                         <div class="slds-grid slds-gutters slds-m-left_xx-large">
                             <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
                                 Business Phone
                             </div>
-                            <div
-                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
-                                <lightning-input class="input" name="businessphone" value={businessphn}
-                                    onchange={handleChange} type="text" autocomplete="off"></lightning-input>
+                            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="businessphone" value={businessphn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>
                             </div>
                         </div>
-
                         <hr>
-
                         <!-- Mobile Phone -->
                         <div class="slds-grid slds-gutters slds-m-left_xx-large">
                             <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp">
                                 Mobile Phone
                             </div>
-                            <div
-                                class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
-                                <lightning-input class="input" name="mobilephone" value={mobilephn}
-                                    onchange={handleChange} type="text" autocomplete="off"></lightning-input>
+                            <div class="slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element">
+                                <lightning-input class="input" name="mobilephone" value={mobilephn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>
                             </div>
                         </div>
-
                         <hr>
-
+                        <!-- Add CV -->
                         <div class="slds-m-left_xx-large">
                             <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium">
                                 Add Your CV
                             </div>
-                            <div class="slds-p-horizontal-small slds-col  slds-form-element slds-align_absolute-center">
-                                <!-- <lightning-input type="file" 
-                            accept={acceptedFormats} onchange={saveFileHandle}></lightning-input> -->
-                                <div
-                                    class="slds-file-selector slds-file-selector_integrated slds-file-selector_integrated">
-                                    <div class="slds-file-selector__dropzone slds-file-selector__dropzone_integrated slds-has-drag"
-                                        aria-hidden="true">
-                                        <input type="file" class="slds-file-selector__input slds-assistive-text"
-                                            accept={acceptedFormats} id="file-upload-input-01" tabindex="-1"
-                                            onchange={handleFile} />
-                                        <label
-                                            class="slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large"
-                                            for="file-upload-input-01">
-                                            <div class="cvSec slds-m-top_x-large"><span><img
-                                                        class="slds-m-right_medium cvImg" src={dragFileImg}></span>
-                                                <span
-                                                    class="slds-file-selector__text slds-file-selector__text_integrated slds-text-heading_medium slds-text-align_center">Drag
-                                                    file here or click to add attachment</span>
+                            <div class="slds-p-horizontal-small slds-col slds-form-element slds-align_absolute-center dropDiv">
+                                <!-- <lightning-input type="file" accept={acceptedFormats} onchange={saveFileHandle}></lightning-input> -->
+                                <div class="slds-file-selector slds-file-selector_integrated slds-file-selector_integrated">
+                                    <div class="slds-file-selector__dropzone slds-file-selector__dropzone_integrated slds-has-drag" aria-hidden="true">
+                                        <input type="file" class="slds-file-selector__input slds-assistive-text" accept={acceptedFormats} id="file-upload-input-01" tabindex="-1" onchange={handleFile} />
+                                        <label class="slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large" for="file-upload-input-01">
+                                            <div class="cvSec slds-m-top_x-large">
+                                                <span>
+                                                    <img class="slds-m-right_medium cvImg" src={dragFileImg}>
+                                                </span>
+                                                <span class="slds-file-selector__text slds-file-selector__text_integrated slds-text-heading_medium slds-text-align_center">
+                                                    Drag file here or click to add attachment
+                                                </span>
                                             </div>
                                         </label>
                                     </div>
@@ -146,15 +131,25 @@
                         </div>
                     </div>
                 </lightning-tab>
-                <lightning-tab label="Password" title="2nd tab extended title">
+                <lightning-tab label="Password" value="tab2" title="2nd tab extended title" onactive={handleActive}>
                     <c-ts_-Change-Password></c-ts_-Change-Password>
                 </lightning-tab>
-                <lightning-tab label="My Qualifications">
+                <lightning-tab label="My Qualifications" value="tab3" onactive={handleActive}>
                     <div class="qualidiv">
                         <c-ts_-My-Qualifications></c-ts_-My-Qualifications>
                     </div>
                 </lightning-tab>
             </lightning-tabset>
         </div>
+
+        <div class="iPadbtns profilebtn">
+            <div class="saveBtn"> 
+                <img src={saveImg}> Save
+            </div>
+            <div class="cancelBtn">
+                <img src={cancelImg}> Cancel
+            </div>
+        </div>
+
     </div>
 </template>

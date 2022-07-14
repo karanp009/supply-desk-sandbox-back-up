@@ -14,6 +14,7 @@ public with sharing class SendRejectContactStatusBatch_Test {
     public static void rejectedContactStatusTest_1() {
         Contact con = [SELECT Id, Name, References_Candidate__c, Right_to_work_Candidate__c, Cautions_Convictions_Candidate__c, Disciplinary_Candidate__c FROM Contact LIMIT 1];
         con.Right_to_work__c = 'No';
+        con.Right_to_work_Candidate__c = 'No';
         update con;
         //Calling Batch class || Because of the less data records in test class giving size as 10.
         Database.executeBatch(new SendRejectContactStatusBatch(), 10);

@@ -6,16 +6,39 @@
     font-size: 16px;
 }
 
-.saveBtn {
-    background-color: #676868;
+.saveBtn,
+.cancelBtn {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 500;
+    height: 28px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.saveBtn:hover,
+.cancelBtn:hover {
+    cursor: pointer;
+}
+
+.saveBtn {
+    background-color: #676868;
+}
+
+.saveBtn img {
+    width: 17px;
+    height: 18px;
+    margin: 5px 10px 0 10px;
 }
 
 .cancelBtn {
     background-color: #C50E1B;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 500;
+}
+
+.cancelBtn img {
+    width: 18px;
+    height: 18px;
+    margin: 5px 7px 0 10px;
 }
 
 .prof-avtr-div {
@@ -63,7 +86,7 @@
 
 .textp1 {
     align-items: center;
-    display: inherit;
+    display: block;
     /* font-family: 'Raleway'; */
     font-size: 16px;
 }
@@ -76,6 +99,7 @@
 
 .cvDiv {
     background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .fileInputBox {
@@ -102,4 +126,106 @@
 
 .profileTopDiv {
     margin-top: 80px;
+    width: 100%;
+}
+
+.profileTopDiv .slds-size_1-of-7 {
+    min-width: 135px;
+}
+
+.tabDiv hr {
+    margin: 1rem 6rem;
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.profChangeImg {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.fileUplaodDiv {
+    align-items: center;
+}
+
+.fileUpload,
+.fileDelete {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100px;
+    height: 30px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.fileDelete {
+    margin-left: 15px;
+}
+
+.fileUpload:hover,
+.fileDelete:hover {
+    cursor: pointer;
+}
+
+.dropDiv .slds-has-drag {
+    background: transparent;
+}
+
+.tabDiv {
+    margin-left: 30px;
+}
+
+.iPadbtns {
+    display: none;
+}
+
+.imageUpload {
+    display: inline-block;
+    min-width: 200px;
+}
+
+@media(max-width: 1000px) {
+    .tabDiv hr {
+        margin: 1rem 4rem 1rem 6rem;
+    }
+    .mainDiv .slds-size_2-of-12 {
+        width: 20%;
+    }
+}
+
+@media(max-width: 767px) {
+    .btns {
+        display: none;
+    }
+    .iPadbtns {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 17px;
+        align-items: center;
+        color: white;
+        margin: 10px 0 50px 0;
+    }
+    .cancelBtn {
+        margin-left: 20px;
+    }
+    .slds-m-left_xx-large {
+        margin-left: 0;
+    }
+    .tabDiv hr {
+        margin: 1rem 4rem 1rem 0rem;
+    }
+    .profileTitle {
+        width: 100%;
+    }
+    .mainDiv .slds-size_2-of-12 {
+        width: 25%;
+    }
+    .slds-tabs_default__nav {
+        margin: 2rem 0 0 0;
+        font-size: 20px;
+    }
 }

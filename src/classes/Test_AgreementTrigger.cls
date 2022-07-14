@@ -1,5 +1,12 @@
 @isTest
 public class Test_AgreementTrigger {
+
+    @TestSetup
+    public static void testSetupData(){
+        Account acc = new Account(Name = 'UNKNOWN DO NOT DELETE');
+        insert acc;
+    }
+
     @isTest
     public static void adobeSignAgreementTest1(){
         Contact testContact = new Contact(FirstName = 'Test', LastName='Candidate', Email='testcandidate@suppldesk.com');

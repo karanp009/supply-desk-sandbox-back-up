@@ -1,15 +1,20 @@
 import { LightningElement } from 'lwc';
-import uname_img from '@salesforce/resourceUrl/usernameimg';
-import zipImages from '@salesforce/resourceUrl/zipImages';
 import fetchContact from '@salesforce/apex/ts_HomePageController.fetchContact';  //Get Contact Record to check client or not.
 import { NavigationMixin } from 'lightning/navigation';
+import communityicon from '@salesforce/resourceUrl/communityicons';
 
 export default class Ts_NavigationTheme extends NavigationMixin(LightningElement) {
 
-    userimage = uname_img;
-    account_icon = zipImages + '/Images/accounticon.png';
-    compliance_icon = zipImages + '/Images/compilance.png';
-    timesheet_icon = zipImages + '/Images/clockicon.png';
+    account_icon = communityicon + '/communityicons/menumyaccount.png';
+    compliance_icon = communityicon + '/communityicons/menucompliance.png';
+    timesheet_icon = communityicon + '/communityicons/menutimesheet.png';
+    scheduler_icon = communityicon + '/communityicons/menuscheduler.png';
+    home_icon = communityicon + '/communityicons/homepage.png';
+    fb_icon = communityicon + '/communityicons/facebook.png';
+    in_icon = communityicon + '/communityicons/linkedin.png';
+    help_icon = communityicon + '/communityicons/help.png';
+    logout_icon = communityicon + '/communityicons/logout.png';
+    menu_icon = communityicon + '/communityicons/menubar.png';
     usercheck;
 
     connectedCallback() {
@@ -88,9 +93,8 @@ export default class Ts_NavigationTheme extends NavigationMixin(LightningElement
     redirectpage(event) {
 
         console.log({ event });
-        // console.log(event.target.dataset.name);
 
-        var nameval = event.target.dataset.name;
+        var nameval = event.currentTarget.dataset.name;
         console.log({ nameval });
         var urlValue = '/s/';
         let rmv_tab = this.template.querySelectorAll('.icon_cls');
@@ -151,5 +155,12 @@ export default class Ts_NavigationTheme extends NavigationMixin(LightningElement
                 url: urlValue
             },
         });
+
+        var btn_clk = this.template.querySelector('.maincls');
+        var navi_clk = this.template.querySelector('.navicon_cls');
+        var home_clk = this.template.querySelector('.home_cls');
+        btn_clk.classList.add('closed-menu');
+        navi_clk.classList.remove('hide_cls');
+        home_clk.classList.remove('width_cls');
     }
 }

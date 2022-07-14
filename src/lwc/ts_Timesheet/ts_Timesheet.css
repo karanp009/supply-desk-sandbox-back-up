@@ -2,16 +2,20 @@
     /* height: 100%; */
     height: 85vh;
     width: 100%;
+    padding: 90px 30px 0 90px;
 }
 
 .timesheet-header-div {
     display: flex;
     background: rgba(246, 246, 246, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 7%;
+    height: 50px;
     align-items: center;
 }
 
+.timesheet_btn_text{
+    margin: 7px 0;
+}
 /* .timesheet-header-div {
     height: 7%;
     align-items: center;
@@ -29,6 +33,10 @@
     margin-inline: 1%;
     cursor: pointer;
     font-weight: 700;
+}
+
+.table-icon {
+    cursor: pointer;
 }
 
 .historical-timesheet-btn {
@@ -69,4 +77,155 @@
 .timesheet-btn-active {
     background: #D2232A;
     color: #FFFFFF;
+}
+
+.no-data-div {
+    /* background-image: url(https://supplydesk--mvcdev--c.visualforce.com/resource/1656478070000/LoginPageImage?); */
+    background-image: url(https://supplydesk--mvcdev--c.visualforce.com/resource/1656478070000/no_timesheet_found_img?);
+    /* background-image: url(no_recordImg); */
+    /* background-image: url(no_timesheet_found_img); */
+    height: 91%;
+}
+
+.no-data-txt {
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    font-size: larger;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* =================== Spinner =================== */
+
+.spinner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-ts {
+    --size: 85px;
+
+    width: var(--size);
+    height: var(--size);
+
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.inner.one {
+    left: 0;
+    top: 0;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #999999;
+}
+
+.inner.two {
+    right: 0;
+    top: 0;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000000;
+}
+
+.inner.three {
+    right: 0;
+    bottom: 0;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #d90000;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+/* =================== Spinner =================== */
+
+@media (max-width: 1024px){
+    .timesheet-header-div {
+        height: 4%;
+    }
+
+    .timesheet_scroll{
+        overflow-x: scroll;
+    }
+
+    .timesheet-table {
+        width: 1200px;
+    }
+
+    .timesheet-header-div {
+        height: 50px;
+    }
+
+    .timesheet_btn_text{
+        margin: 7px 0;
+    }
+}
+
+@media (max-width: 767px){
+    .main {
+        padding: 90px 30px 30px 30px;
+    }
+
+    .timesheet-header-div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .timesheet_btn_text{
+        margin: 7px 0;
+    }
+}
+
+@media (max-width:430px){
+    .main {
+        padding: 75px 15px 15px 15px;
+    }
+
+    .active-timesheet-btn{
+        min-width: 155px;
+    }
+
+    .historical-timesheet-btn{
+        min-width: 155px;
+    }
 }

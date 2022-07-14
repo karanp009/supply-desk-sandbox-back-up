@@ -1,4 +1,4 @@
-import { LightningElement,track,wire} from 'lwc';
+import { LightningElement, track, wire } from 'lwc';
 import { getRecord } from 'lightning/uiRecordApi';
 import USER_ID from '@salesforce/user/Id';
 import USRID from '@salesforce/schema/User.Id';
@@ -11,6 +11,9 @@ import profilePageCss from '@salesforce/resourceUrl/profilePageCss';
 import saveData from '@salesforce/apex/ts_ProfilePageController.saveData';
 import getData from '@salesforce/apex/ts_ProfilePageController.getData';
 import saveFile from '@salesforce/apex/ts_ProfilePageController.saveFile';
+import saveIcon from '@salesforce/resourceUrl/saveIcon';
+import cancelIcon from '@salesforce/resourceUrl/cancelIcon';
+import changeIcon from '@salesforce/resourceUrl/changePassIcon';
 
 
 export default class Ts_ProfilePage extends LightningElement {
@@ -18,7 +21,10 @@ export default class Ts_ProfilePage extends LightningElement {
     profImg = profileImg;
     settingImg = settingIcon;
     dragFileImg = dragFileIcon;
- 
+    saveImg = saveIcon;
+    cancelImg = cancelIcon;
+    changeImg = changeIcon;
+
     @track imgUrl;
     @track usrId;
     @track fname;
@@ -28,7 +34,7 @@ export default class Ts_ProfilePage extends LightningElement {
     @track mobilephn;
 
     @track isLoaded;
-    connectedCallback(){
+    connectedCallback() {
         this.getUsrData();
     }
 
@@ -43,11 +49,11 @@ export default class Ts_ProfilePage extends LightningElement {
             });
     }
 
-    getUsrData(event){
+    getUsrData(event) {
         console.log('First time');
         getData()
             .then(result => {
-                console.log({result});
+                console.log({ result });
                 this.fname = result.FirstName;
                 this.lname = result.LastName;
                 this.email = result.Email;
@@ -59,33 +65,33 @@ export default class Ts_ProfilePage extends LightningElement {
 
     @wire(getRecord, {
         recordId: USER_ID,
-        fields:[USRID]
+        fields: [USRID]
     }) wireuser({
         error,
         data
     }) {
         if (error) {
-           this.error = error ; 
+            this.error = error;
         } else if (data) {
             console.log('indatas');
             this.usrId = data.fields.Id.value;
-            
+
         }
     }
 
     get acceptedFormats() {
-        
-        return ['.png','.jpg','.jpeg'];
+
+        return ['.png', '.jpg', '.jpeg'];
     }
 
-    saveFileHandle(event){
+    saveFileHandle(event) {
         let fileList = event.detail.files;
-        console.log('length>>',fileList.length);
+        console.log('length>>', fileList.length);
         var target = event.target.name;
-        console.log({fileList});
-            
+        console.log({ fileList });
+
         [...fileList].forEach(file => {
-            console.log({file});
+            console.log({ file });
             let fileReader = new FileReader();
             file.sObjectId = this.usrId;
 
@@ -95,67 +101,67 @@ export default class Ts_ProfilePage extends LightningElement {
                 let base64Mark = 'base64,';
                 let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
                 fileContents = fileContents.substring(dataStart);
-                console.log('this.recordId>>',sId);
+                console.log('this.recordId>>', sId);
                 saveFile({
-                    userId: sId,
-                    fileId : file.Id,
-                    base64Data: encodeURIComponent(fileContents)
-                })
-                .then(result => {
-                    alert('Sucess');
-                    
-                })
-                .catch(error => {
-                    console.log({error});
-                });
+                        userId: sId,
+                        fileId: file.Id,
+                        base64Data: encodeURIComponent(fileContents)
+                    })
+                    .then(result => {
+                        alert('Sucess');
+
+                    })
+                    .catch(error => {
+                        console.log({ error });
+                    });
             };
             fileReader.readAsDataURL(file);
-            
+
         });
         this.isLoaded = true;
         setTimeout(() => {
             this.getUsrData();
             this.isLoaded = false;
-        },1500);
+        }, 1500);
     }
 
-    handleFile(event){
-        console.log({event});
+    handleFile(event) {
+        console.log({ event });
         let fileList = event.detail.files;
-        console.log('length>>',fileList.length);
+        console.log('length>>', fileList.length);
         var target = event.target.name;
-        console.log({fileList});
-    
+        console.log({ fileList });
+
         [...fileList].forEach(file => {
             let fileReader = new FileReader();
             file.sObjectId = this.recordId;
 
             var sId = file.sObjectId;
-            console.log({sId});
+            console.log({ sId });
             fileReader.onload = function() {
                 let fileContents = fileReader.result;
                 let base64Mark = 'base64,';
                 let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
                 fileContents = fileContents.substring(dataStart);
-                console.log('this.recordId>>',sId);
+                console.log('this.recordId>>', sId);
                 saveCV({
-                    parentId: sId,
-                    fileName: file.name,
-                    base64Data: encodeURIComponent(fileContents)
-                })
-                .then(result => {
-                    // alert('Sucess');
-                   
-                })
-                .catch(error => {
-                    alert('Error');
-                });
+                        parentId: sId,
+                        fileName: file.name,
+                        base64Data: encodeURIComponent(fileContents)
+                    })
+                    .then(result => {
+                        // alert('Sucess');
+
+                    })
+                    .catch(error => {
+                        alert('Error');
+                    });
             };
             fileReader.readAsDataURL(file);
-            console.log('fl>>',fileList.length);
-            
+            console.log('fl>>', fileList.length);
+
             alert('File Uploaded Successfully');
-                        
+
         });
     }
 
@@ -165,31 +171,27 @@ export default class Ts_ProfilePage extends LightningElement {
         alert('No. of files uploaded : ' + uploadedFiles.length);
     }
 
-    handleChange(event){
+    handleChange(event) {
 
-        console.log('usr>>',this.usrId);
-        if(event.target.name == 'firstname'){
+        console.log('usr>>', this.usrId);
+        if (event.target.name == 'firstname') {
             this.fname = event.target.value;
-            console.log('this.fname>>',this.fname);
-        }
-        else if(event.target.name == 'lastname'){
+            console.log('this.fname>>', this.fname);
+        } else if (event.target.name == 'lastname') {
             this.lname = event.target.value;
-            console.log('this.lname>>',this.lname);
-        }
-        else if(event.target.name == 'emailaddress'){
+            console.log('this.lname>>', this.lname);
+        } else if (event.target.name == 'emailaddress') {
             this.email = event.target.value;
-            console.log('this.email>>',this.email);
-        }
-        else if(event.target.name == 'businessphone'){
+            console.log('this.email>>', this.email);
+        } else if (event.target.name == 'businessphone') {
             this.businessphn = event.target.value;
-            console.log('this.businessphn>>',this.businessphn);
-        }
-        else if(event.target.name == 'mobilephone'){
+            console.log('this.businessphn>>', this.businessphn);
+        } else if (event.target.name == 'mobilephone') {
             this.mobilephn = event.target.value;
-            console.log('this.mobilephn>>',this.mobilephn);
+            console.log('this.mobilephn>>', this.mobilephn);
         }
     }
-    handleSave(event){
+    handleSave(event) {
 
         let usrObj = { 'sobjectType': 'User' };
         usrObj.FirstName = this.fname;
@@ -197,10 +199,30 @@ export default class Ts_ProfilePage extends LightningElement {
         usrObj.Email = this.email;
         usrObj.Phone = this.businessphn;
         usrObj.MobilePhone = this.mobilephn;
-        saveData({usr : usrObj})
+        saveData({ usr: usrObj })
             .then(result => {
-                console.log({result});
+                console.log({ result });
             })
 
+    }
+
+    handleActive(event) {
+        const tab = event.target.value;
+        console.log({ tab });
+        var buttons = document.querySelectorAll('.profilebtn');
+        console.log({ buttons });
+        if (tab == 'tab1') {
+            console.log('If');
+            for (var btn of buttons) {
+                console.log({ btn });
+                btn.style.display = 'flex';
+            }
+        } else {
+            console.log('Else');
+            for (var btn of buttons) {
+                console.log({ btn });
+                btn.style.display = 'none';
+            }
+        }
     }
 }

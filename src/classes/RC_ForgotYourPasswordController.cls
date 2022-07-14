@@ -1,4 +1,4 @@
-public with sharing class RC_ForgotYourPasswordController {
+public without sharing class RC_ForgotYourPasswordController {
     
     public String strUsername           {get; set;}     //To get the user name from forgot password page.
     public boolean blnSuccess           {get; set;}     //To check the username is get success or not

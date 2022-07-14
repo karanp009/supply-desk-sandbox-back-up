@@ -4,7 +4,7 @@
       height: 100vh;
 }
 .main_div{
-      height: 80vh;
+      height: 79vh;
 }
 .contact-footer{
       height: 20vh;
@@ -34,7 +34,6 @@
 .contact-footer{
       display: flex;
       align-items: unset;
-      margin-top: 55px;
 
 }
 .contact-footer h1{
@@ -55,6 +54,7 @@
 }
 .message{
       display: block;
+      margin-top: 8%;
 }
 .message p{
       font-size: 16px;
@@ -81,6 +81,9 @@
 .contact-address img{
       height: 16px;
       width: 21px;
+}
+.contact-address{
+      margin: 0 13%;
 }
 .contact-location img{
       height: 32px;
@@ -109,8 +112,8 @@
       margin-left:59%; 
       box-shadow: 0px 0px 4px #beb7b7; 
       border-radius: 3px;
-      height: 77vh;
       top: 0;
+      width: 33%;
 }
 
 .con_info h5{
@@ -126,17 +129,31 @@
       display: flex;
 }
 
-@media (max-width: 930px){
+@media (max-width: 1024px){
       .con_info{
-            height: 80%;
+            top: 25%;
+            width: 50%;
+            margin: 0 25%;
+      }
+      .map_img{
+            height: 45%;
       }
       .contact-footer{
-            margin-top: 34vh;
+            justify-content: space-around;
+      }
+}
+
+
+@media (max-width: 360px){
+      .con_info{
+            top: 20%;
+            width: 80%;
+            margin: 0 10%;
       }
 
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
       .map_img{
             display: block;
       }
@@ -193,9 +210,9 @@
       .slds-button{
             height: 80px;
       }
-}
+} */
 
-@media(min-width: 768px){
+/* @media(min-width: 768px){
       .slds-button{
             height: 80px;
             width: 220px;
@@ -222,7 +239,7 @@
             margin-top: 0 !important;
       }
 
-}
+} */
 
 /* @media (max-width:886px){
       .message{

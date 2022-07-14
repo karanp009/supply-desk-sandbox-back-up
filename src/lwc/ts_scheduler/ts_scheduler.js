@@ -453,6 +453,7 @@ export default class FullCalendarJs extends LightningElement {
     let eventid = event.target.value;
     deleteCalEvent({ eventid: eventid })
       .then((result) => {
+        console.log('delete in -----> ' + result);
         const ele = this.template.querySelector('div.fullcalendarjs');
         console.log(eventid);
         $(ele).fullCalendar('removeEvents', [eventid]);

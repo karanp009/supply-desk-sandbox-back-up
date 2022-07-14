@@ -333,15 +333,49 @@ public without sharing class ts_schedulercontroller {
     } 
 
     //can delete event if there is event present else it will return null for that toast will be called or error message will be passed
+    // @AuraEnabled
+    // //? actually no need to return anything here because delete event will store in backend only
+    // // public static Id deleteCalEvent() {
+    // public static void deleteCalEvent(Id eventid) {
+    //     if (eventid !=null) {
+            
+    //         delete [SELECT Id FROM Candidate_Availability__c WHERE Id=:eventid];
+    //     }    else {
+    //         System.debug('Event id is not passed');
+    //     }
+         
+    // }
+
     @AuraEnabled
     //? actually no need to return anything here because delete event will store in backend only
     // public static Id deleteCalEvent() {
     public static void deleteCalEvent(Id eventid) {
+
         if (eventid !=null) {
-            
-            delete [SELECT Id FROM Candidate_Availability__c WHERE Id=:eventid];
+            List<Candidate_Availability__c> availablity = RC_AccessController.getCandidateAvailabilityRecordsByEventId(eventId);
+                    
+            if(availablity != null && availablity.size() > 0) {
+                RC_AccessController.deleteRecords(availablity);
+                        
+                eventId = null;
+                fetchData();
+                System.debug('Availability deleted successfully.');
+                    }
         }    else {
-            System.debug('Event id is not passed');
+            List<Closing_Report_Schedule__c> crsListToBeUpdated = new List<Closing_Report_Schedule__c>();
+            for(Closing_Report_Schedule__c crs : RC_AccessController.getClosingReportScheduleRecordsByEventId(eventId)){
+                crs.Status__c = 'Cancelled';
+                crsListToBeUpdated.add(crs);
+            }
+
+            if(crsListToBeUpdated != null && crsListToBeUpdated.size() > 0) {
+                RC_AccessController.updateRecords(crsListToBeUpdated);
+                        
+                eventId = null;
+                fetchData();
+                System.debug('Assignment cancelled successfully.');
+            }
+
         }
          
     }
@@ -472,6 +506,10 @@ public without sharing class ts_schedulercontroller {
                 if(conId!=null)
                     newCavail.Candidate__c	= conId;
                 System.debug('conId>>'+conId);
+                
+                // newCavail.Candidate__c	= '0030C00000SPlMiQAL';
+
+
                 // newCavail.Candidate__c	= RC_AccessController.getContactRecordById(contactId).Id;
                 newCavail.Start_Date__c = sDateonly;
                 newCavail.End_Date__c = eDateOnly;

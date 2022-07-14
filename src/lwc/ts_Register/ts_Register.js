@@ -5,17 +5,17 @@ import commstyle from '@salesforce/resourceUrl/CommunityCSS';
 import loginbg from '@salesforce/resourceUrl/loginbg';
 import communityicon from '@salesforce/resourceUrl/communityicons';
 import Contact from '@salesforce/schema/Contact'; 
-import Roles__c from '@salesforce/schema/Contact.Roles__c';
+// import Roles__c from '@salesforce/schema/Contact.Roles__c';
 
 export default class Ts_Register extends LightningElement {
 
-    bglogo = communityicon + '/communityicons/supplydesk_logo.png';;
-    fname_icon = communityicon + '/communityicons/firstname.png';;
-    email_icon = communityicon + '/communityicons/email.png';;
-    mob_icon = communityicon + '/communityicons/mobileno.png';;
-    phone_icon = communityicon + '/communityicons/phoneno.png';;
-    postcode_icon = communityicon + '/communityicons/postcode.png';;
-    job_icon = communityicon + '/communityicons/jobtitle.png';;
+    bglogo = communityicon + '/communityicons/supplydesk_logo.png';
+    fname_icon = communityicon + '/communityicons/firstname.png';
+    email_icon = communityicon + '/communityicons/email.png';
+    mob_icon = communityicon + '/communityicons/mobileno.png';
+    phone_icon = communityicon + '/communityicons/phoneno.png';
+    postcode_icon = communityicon + '/communityicons/postcode.png';
+    job_icon = communityicon + '/communityicons/jobtitle.png';
     
     @track jobpicklist = [];
     contwrap;

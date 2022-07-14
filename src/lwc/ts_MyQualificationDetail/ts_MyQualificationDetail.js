@@ -25,13 +25,16 @@ import Qualificationcss from '@salesforce/resourceUrl/Qualificationcss';
 import getContactId from '@salesforce/apex/ts_MyQualificationDetailController.getContactId';
 import editQuali from '@salesforce/apex/ts_MyQualificationDetailController.editQuali';
 import Choice_of_Country__c from '@salesforce/schema/TR1__Associated_Qualification__c.Choice_of_Country__c';
-
+import commstyle from '@salesforce/resourceUrl/CommunityCSS';
 
 export default class Ts_MyQualificationDetail extends LightningElement {
 
     //For Spinner
     @track isSpinner;
 
+    // For Reload Page
+    @track reloadpage;
+    
     //For Result
     @track isResult;
 
@@ -67,6 +70,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     //For CV
     @track gapsExplanation;
     @track cvSubmitted;
+    @track cvReceived;
+
 
     //For Perm Qualification
     @track nctlNum;
@@ -76,6 +81,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     //For Right to work
     @track workPermit;
     docs = [];
+    @track workpermitdate;
 
     //For Overseas Teacher qualification
     @track naricApproveOps = [];
@@ -110,8 +116,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
     @track group1IdTypeVal;
     @track namechangedocument;
-    @track group2aIdType = '';
-    @track group2bIdType = '';
+    @track Group2aIdType1 = '';
+    @track Group2bIdType1 = '';
 
     //For safeguarding
     @track safegDate;
@@ -135,7 +141,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track qList = [];
     @track expirDate;
     @track QtlsCheck;
-    @track qualmultipick;
+    @track qualmultipick = '';
     @track qualopt = [];
 
     @track qualificationsPost16 = []
@@ -144,7 +150,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
     @track choiceOfCountryOps = [];
 
-    @track country='';
+    @track country = '';
     @track seekIntPos;
 
     //For Early Year qualification
@@ -220,7 +226,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     }
 
     setParametersBasedOnUrl() {
-       this.urlName = this.urlStateParameters.qualification || null;
+        //    this.urlName = this.urlStateParameters.qualification || null;
+       this.urlName = 'ID';
        console.log('this.urlName>>',this.urlName);
     }
 
@@ -378,7 +385,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             fieldApiName: Group1IdType
         }
     )
-    groupTypeOptions(data,error){
+    groupTypeIdOptions(data,error){
         if(data && data.data && data.data.values){
             let options = [];
             data.data.values.forEach( objPicklist => {
@@ -747,6 +754,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         }
         else if(event.target.name == 'workPermit'){
             console.log('in workpermit');
+            this.workPermit = event.target.value;
+            console.log('this.workPermit in upsell>>',this.workPermit);
             let key = this.documentTypes.data.controllerValues[event.target.value];
             this.docOptions = this.documentTypes.data.values.filter(opt => opt.validFor.includes(key));
             console.log('this.docOptions>>',this.docOptions);
@@ -773,6 +782,9 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 this.cvSubmitted = event.target.checked;       
                 console.log('this.cvSubmitted>>',this.cvSubmitted);
             }
+            else if(event.target.name == 'cvrec'){
+                this.cvReceived = event.target.checked;
+            }
         }
         else if(this.urlName == 'Perm Qualification'){
             console.log('In perm change');
@@ -792,10 +804,10 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         else if(this.urlName == 'Right to Work'){
             console.log('Right To Work');
             if(event.target.name == 'workPermit'){
-                this.workPermit = event.detail.value;
-                console.log('this.workPermit>>>',this.workPermit);
+                // this.workPermit = event.detail.value;
+                // console.log('this.workPermit>>>',this.workPermit);
             }
-            else if(event.target.name == 'docs'){
+            else if(event.target.name == 'rtwdocs'){
                 
                 this.docs = event.detail.value;
                 const docslst = Object.assign({}, this.docs);
@@ -805,8 +817,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 }                
                 console.log('s>>',this.s);                
             }
-            else if(event.target.name == 'rtwdocs'){
-                this.rtwdocs = event.target.value;
+            else if(event.target.name == 'workpermitdate'){
+                this.workpermitdate = event.target.value;
                 console.log('this.workpermitdate>>>',this.workpermitdate);
             }
         }
@@ -820,10 +832,14 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             }
             else if(event.target.name == 'teacherDualVal'){
 
-                const docslst = Object.assign({}, event.detail.value);
-                console.log('docslst>>',docslst);
-                for(var k in docslst){
-                    this.teacherDualVal += docslst[parseInt(k)]+';';
+                this.tcqs = event.detail.value;
+                console.log('detail>>',event.detail.value);
+                const dc = Object.assign({}, this.tcqs);
+                console.log('docslst>>',dc);
+                for(var k in dc){
+                    console.log({k});
+                    console.log('dk>>',dc[parseInt(k)]);
+                    this.teacherDualVal += dc[parseInt(k)]+';';
                 }   
             }
         }
@@ -865,26 +881,30 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
             if(event.target.name == 'group1IdType'){
                 this.group1IdTypeVal = event.target.value;
+                console.log('this.group1IdTypeVal>>',this.group1IdTypeVal);
             }
             else if(event.target.name == 'namechangedocument'){
                 this.namechangedocument = event.target.value;
+                console.log('this.namechangedocument>>',this.namechangedocument);
             }
             else if(event.target.name == 'group2aIdType'){
 
-                const docslst = Object.assign({}, event.detail.value);
-                console.log('docslst>>',docslst);
-                for(var k in docslst){
-                    this.group2aIdType += docslst[parseInt(k)]+';';
+                const docslstG1 = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslstG1);
+                for(var k in docslstG1){
+                    this.Group2aIdType1 += docslstG1[parseInt(k)]+';';
                 }                
+                console.log('this.group2aIdType>>',this.Group2aIdType1);
                 
             }
             else if(event.target.name == 'group2bIdType'){
                 
-                const docslst = Object.assign({}, event.detail.value);
-                console.log('docslst>>',docslst);
-                for(var k in docslst){
-                    this.group2bIdType += docslst[parseInt(k)]+';';
+                const docslstG2 = Object.assign({}, event.detail.value);
+                console.log('docslst>>',docslstG2);
+                for(var k in docslstG2){
+                    this.Group2bIdType1 += docslstG2[parseInt(k)]+';';
                 }                
+                console.log('this.group2bIdType>>',this.Group2bIdType1);
             }
         }
         else if (this.urlName == 'Safeguarding') {
@@ -923,7 +943,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 this.dbNum = event.target.value;
                 console.log('this.dbNum --->' + this.dbNum);
             } else if (event.target.name == 'dbsname') {
-                this.dbsUpdateSer = event.detail.value;
+                this.dbsUpdateSer = event.target.value;
                 console.log('this.dbsUpdateSer -------->' + this.dbsUpdateSer);
             }
 
@@ -943,7 +963,12 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 this.QtlsCheck = event.target.checked;
                 console.log('this.QtlsCheck --->' + this.QtlsCheck);
             } else if (event.target.name == 'qualselect') {
-                this.qualmultipick = event.detail.value;
+                // this.qualmultipick = event.detail.value;
+                const docspost16 =  Object.assign({}, event.detail.value);
+                console.log('docspost16>>',docspost16);
+                for(var k in docspost16){
+                    this.qualmultipick += docspost16[parseInt(k)]+';';
+                }    
                 console.log('this.qualmultipick --->' + this.qualmultipick);
             }
 
@@ -952,13 +977,15 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         else if (this.urlName == 'International') {
             if (event.target.name == 'seekIntPos') {                
                 this.seekIntPos = event.target.checked;
+                console.log('this.seekIntPos>>>',this.seekIntPos);
             } else if (event.target.name == 'country') {
-
-                const docslst = Object.assign({}, event.detail.value);
-                console.log('docslst>>',docslst);
-                for(var k in docslst){
-                    this.country += docslst[parseInt(k)]+';';
+                // var docslst1 = []; 
+                var docslst1 = Object.assign({}, event.detail.value);
+                console.log('docslst1>>',docslst1);
+                for(var k in docslst1){
+                    this.country += docslst1[parseInt(k)]+';';
                 }    
+                console.log('this.country>>',this.country);
             }
         }
 
@@ -1110,13 +1137,14 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     }
 
     saveQualification(){
-
+        this.isSpinner = true;
         console.log('In saveQualification');
         let qualObj = { 'sobjectType': 'TR1__Associated_Qualification__c' };
         qualObj.qualificationName__c = this.urlName;
         if(this.urlName == 'CV'){
             qualObj.Gaps_Explanation__c = this.gapsExplanation;
             qualObj.CV_Submitted__c = this.cvSubmitted;
+            qualObj.CV_Received__c = this.cvReceived;
         }    
         else if(this.urlName == 'Perm Qualification'){
             qualObj.NCTL_Number__c = this.nctlNum;
@@ -1131,6 +1159,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
            
             qualObj.Permanent_Right_to_Work_in_UK__c = this.workPermit;
             qualObj.Documents__c = this.s;
+            qualObj.Work_Permit_OR_Visa_Expiry_Date__c = this.workpermitdate;
         }
 
         else if(this.urlName == 'Teacher Qualification'){
@@ -1155,11 +1184,14 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         }
 
         else if(this.urlName == 'ID'){
-        
+            
+            console.log('In ID>>');
             qualObj.Group_1_ID_Type__c = this.group1IdTypeVal;
             qualObj.Name_Change_Document__c = this.namechangedocument;
-            qualObj.Group_2a_ID_Type__c = this.Group2aIdType;
-            qualObj.Group_2b_ID_Type__c = this.Group2bIdType;
+            qualObj.Group_2a_ID_Type__c = this.Group2aIdType1;
+            qualObj.Group_2b_ID_Type__c = this.Group2bIdType1;
+            console.log('this.Group2aIdType>>>',this.Group2aIdType1);
+            console.log('this.Group2bIdType>>>',this.Group2bIdType1);
         }
 
         else if (this.urlName == 'Safeguarding') {
@@ -1179,13 +1211,13 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         
         else if (this.urlName == 'DBS') {
             qualObj.DBS_Form_Number__c = this.dbNum;
-            qualObj.Update_Service_Status_Check__c = this.dbsOptions;
+            qualObj.Update_Service_Status_Check__c = this.dbsUpdateSer;
 
         }
 
         else if (this.urlName == 'Post 16 Qualifications') {
             qualObj.SET_Registration_Number__c = this.snumb;
-            qualObj.Qualification_Type2__c = this.qList;
+            qualObj.Qualification_Type2__c = this.qValue;
             qualObj.SET_Expiry_Date__c = this.expirDate;
             qualObj.QTLS__c = this.QtlsCheck;
             qualObj.Qualification_Type__c = this.qualmultipick;
@@ -1255,11 +1287,12 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         
 
         editQuali({
-            conId : this.contactId,
+            conId : '0030C00000SPlMiQAL',
             qfname : this.urlName,
             qual : qualObj
         })
         .then(result => {
+            this.isSpinner = false;
             console.log({result});
             this.isResult = true;
             // alert('Save Successfully');
@@ -1282,6 +1315,17 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             })
             .catch(error => {
                 console.log(error.body.message);
+            });
+
+        Promise.all([
+                loadStyle(this, commstyle)
+            ]).then(() => {
+                console.log('Files loaded');
+            })
+            .catch(error => {
+                console.log(error.body.message);
+                this.reloadpage = true;
+                this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
             });
     }
 }

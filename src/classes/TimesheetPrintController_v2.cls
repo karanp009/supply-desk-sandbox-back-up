@@ -9,9 +9,9 @@ public with sharing class TimesheetPrintController_v2 {
     public User loggedInUser ;
     public Contact objContactPage {get;set; }
 
-    public integer getPageCount(){
-        return TimesheetPrintWrapperList.size();
-    }
+    // public integer getPageCount(){
+    //     return TimesheetPrintWrapperList.size();
+    // }
 
     public TimesheetPrintController_v2() {
 

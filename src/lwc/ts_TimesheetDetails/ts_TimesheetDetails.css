@@ -1,6 +1,37 @@
 .main {
-    height: 100vh;
+    /* height: 100vh;
+    width: 100%; */
+    position: relative;
     width: 100%;
+}
+
+hr {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3vw;
+}
+
+.appRejBtn {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 30%;
+}
+
+
+/* .appRejBtn .approve-btn {
+    color: #FFFFFF;
+} */
+
+.header h1 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #D90000;
 }
 
 .top-header {
@@ -10,9 +41,11 @@
     align-items: center;
 }
 
+.tableData,
 .client-details-div {
-    height: 92%;
     margin-inline: 2%;
+    margin: auto;
+    width: 90%;
 }
 
 .back-navigation {
@@ -32,28 +65,28 @@
     background-color: rgb(103, 104, 104);
     color: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 10%;
+    width: 30%;
     cursor: pointer;
-    height: 60%;
     display: flex;
     align-items: center;
     margin-inline: 1%;
-    margin-left: 50%;
+    /* margin-left: 50%; */
     padding-inline: 15px;
     font-size: larger;
+    padding: 1% 4%;
 }
 
 .reject-btn {
     background-color: rgb(217, 0, 0);
     color: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 10%;
+    width: 30%;
     cursor: pointer;
-    height: 60%;
     display: flex;
     align-items: center;
     padding-inline: 15px;
     font-size: larger;
+    padding: 1% 4%;
 }
 
 .top-header-btn-icon {
@@ -87,6 +120,11 @@
 .first-row {
     background: rgb(246, 246, 246);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    align-items: center;
+}
+
+.table-row {
     height: 40px;
     align-items: center;
 }
@@ -180,29 +218,277 @@
 .emg-excel {
     background: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(8, 171, 5, 0.68);
+    cursor: pointer;
 }
 
 .emg-very-good {
     background: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(133, 255, 75, 0.68);
+    cursor: pointer;
 }
 
 .emg-good {
     background: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(249, 200, 28, 0.68);
+    cursor: pointer;
 }
 
 .emg-ri {
     background: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(252, 93, 4, 0.68);
+    cursor: pointer;
 }
 
 .emg-unsetisfy {
     background: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(252, 0, 0, 0.68);
+    cursor: pointer;
 }
 
 .pop-apprv-header {
     padding-top: 4%;
     height: 10vh;
+}
+
+.rqst-call {
+    display: flex;
+    align-items: center;
+}
+
+.profImg {
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+}
+
+.send-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 20%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.candidate-profile {
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.usr-inf-usr-name {
+    font-weight: 700;
+}
+
+.brdr-rds {
+    border-radius: 50%;
+}
+
+
+/* =================== Spinner =================== */
+
+.spinner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-ts {
+    --size: 85px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.inner.one {
+    left: 0;
+    top: 0;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #999999;
+}
+
+.inner.two {
+    right: 0;
+    top: 0;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000000;
+}
+
+.inner.three {
+    right: 0;
+    bottom: 0;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #d90000;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+
+/* =================== Spinner =================== */
+
+@media (max-width: 1400px) {
+    .tableData,
+    .client-details-div {
+        margin-inline: 2%;
+        margin: auto;
+        width: 87%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .tableData,
+    .client-details-div {
+        margin-inline: 2%;
+        margin: 0 0 0 5rem;
+        width: 90%;
+    }
+    .appRejBtn {
+        width: 45%;
+    }
+}
+
+
+/* @media (max-width: 900px) {
+    .header {
+        margin-left: 2rem;
+    }
+    .tableData,
+    .client-details-div {
+        width: 88%;
+    }
+} */
+
+@media (max-width: 820px) {
+    .tableData,
+    .client-details-div {
+        width: 88%;
+        margin-left: 5rem;
+    }
+    .cndt-info,
+    .send-message,
+    .usr-inf-usr-name {
+        font-weight: normal;
+        font-size: medium;
+    }
+    .user-information {
+        height: 24vh;
+    }
+    .header {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tableData,
+    .client-details-div {
+        width: 95%;
+        margin-left: 1rem;
+    }
+    .approve-btn {
+        background-color: rgb(103, 104, 104);
+        color: rgb(103, 104, 104);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 13%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-inline: 1%;
+        padding-inline: 15px;
+        font-size: larger;
+        padding: 2% 4%;
+        overflow: hidden;
+    }
+    .reject-btn {
+        background-color: rgb(217, 0, 0);
+        color: rgb(217, 0, 0);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 13%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding-inline: 15px;
+        font-size: larger;
+        padding: 2% 4%;
+        overflow: hidden;
+    }
+    .user-information {
+        height: 25vh;
+    }
+    .header {
+        margin-left: -3%;
+    }
+}
+
+@media (max-width: 414px) {
+    .approve-btn {
+        padding: 2% 3%;
+    }
+    .reject-btn {
+        padding: 2% 3%;
+        margin-right: 3rem;
+        margin-left: 1rem;
+    }
+    .header h1 {
+        font-weight: 200;
+        font-size: 16px;
+        color: #D90000;
+    }
+    .appRejBtn {
+        width: 50%;
+    }
+    .tableData,
+    .client-details-div {
+        margin-inline: 2%;
+        margin: 0 0 0 1rem;
+        width: 92%;
+    }
+    .cndt-info,
+    .send-message,
+    .usr-inf-usr-name {
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .user-information {
+        height: 30vh;
+    }
 }

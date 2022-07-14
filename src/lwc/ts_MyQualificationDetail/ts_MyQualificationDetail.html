@@ -20,6 +20,11 @@
 
         <!-- ======= Spinner ======= -->
 
+        <!-- Error Component -->
+        <c-ts_-error-component reloadpage={reloadpage}>
+        </c-ts_-error-component>
+        <!-- Error Component -->
+
         <div class="slds-grid slds-gutters slds-border_bottom">
             <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
 
@@ -57,7 +62,7 @@
                 </div>
                 <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_large slds-p-left_small">
                     <div class="slds-col slds-size_2-of-12 slds-m-left_xx-large textp slds-p-left_large">CV Received</div>
-                    <div><lightning-input class="slds-p-left_large" type="checkbox" onchange={handleChange}></lightning-input></div>
+                    <div><lightning-input name="cvrec" class="slds-p-left_large" type="checkbox" onchange={handleChange}></lightning-input></div>
                 </div>
             </div>
         </template>
@@ -116,14 +121,14 @@
                 <div class="slds-grid slds-gutters">
 
                     <div class="slds-col slds-size_1-of-3 slds-m-left_xx-large slds-m-top_medium">
-                        <lightning-dual-listbox name="group2aIdType" value={group2aIdType}
+                        <lightning-dual-listbox name="group2aIdType" value={group2aIdTypeVal}
                             class="slds-m-right_xx-large slds-align_absolute-center slds-dueling-picklist__column_responsive "
                             source-label="Available" selected-label="Selected" options={Group2aIdTypes} onchange={handleChange}>
                         </lightning-dual-listbox>
                     </div>
 
                     <div class="slds-col slds-size_1-of-3 slds-m-left_xx-large slds-m-top_medium">
-                        <lightning-dual-listbox name="group2bIdType" value={group2bIdType}
+                        <lightning-dual-listbox name="group2bIdType" value={group2bIdTypeVal}
                             class="slds-m-right_xx-large slds-align_absolute-center slds-dueling-picklist__column_responsive "
                             source-label="Available" selected-label="Selected" options={Group2bIdTypes} onchange={handleChange}>
                         </lightning-dual-listbox>
@@ -249,7 +254,7 @@
                 </div>
                 <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large">
                     <lightning-dual-listbox name="teacherDualVal" source-label="Available" class="slds-m-left_xx-large"
-                        selected-label="Selected" options={teacherQualifications} value={teacherDualVal}
+                        selected-label="Selected" options={teacherQualifications} value={teacherDual}
                         onchange={handleChange}>
                     </lightning-dual-listbox>
                 </div> 
@@ -343,7 +348,7 @@
 
                 <div
                     class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <lightning-input type="text" name="snumber" onchange={handleChange} label="SET Number">
+                    <lightning-input type="text" name="snumber" onchange={handleChange} label="SET Number" value={snumb}>
                     </lightning-input>
 
                 </div>
@@ -352,7 +357,7 @@
                 <p class="slds-p-horizontal--small slds-m-left_xx-large">SET Expiry Date</p>
                 <div
                     class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom_medium slds-form-element l-input">
-                    <lightning-input type="date" name="expDate" label=""></lightning-input>
+                    <lightning-input type="date" name="expDate" label="" value={expirDate} onchange={handleChange}></lightning-input>
                 
                 </div>
             
@@ -360,7 +365,7 @@
                 <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-p-left_small">
                     <div class="slds-col slds-size_2-of-12" style="">QTLS</div>
                     <div>
-                        <lightning-input name="qtl" type="checkbox" onchange={handleChange} value={qtlsvalue}>
+                        <lightning-input name="qtl" type="checkbox" onchange={handleChange} value={QtlsCheck}>
                         </lightning-input>
                     </div>
                 </div>
@@ -379,7 +384,7 @@
 
                 <lightning-dual-listbox name="qualselect"
                     class="slds-p-around_x-small slds-m-right_xx-large slds-m-left_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive"
-                    source-label="Available" selected-label="Selected" options={qualificationsPost16} onchange={handleChange}>
+                    source-label="Available" selected-label="Selected" options={qualificationsPost16} value={qualmulti} onchange={handleChange}>
                 </lightning-dual-listbox>
             </div>
         </template>
@@ -401,7 +406,7 @@
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     Choice of Country
                 </div>
-                <lightning-dual-listbox name="country" value={country}
+                <lightning-dual-listbox name="country" value={countries}
                     class="slds-p-around_x-small slds-m-right_xx-large slds-m-left_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive"
                     source-label="Available" selected-label="Selected" options={choiceOfCountryOps} onchange={handleChange}>
                 </lightning-dual-listbox>
@@ -452,7 +457,7 @@
                 </div>
                 <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large">
                     <lightning-dual-listbox name="supportQualifications" source-label="Available" class="slds-m-left_xx-large"
-                        selected-label="Selected" options={teacherQualificationsSupport} value={supportQualifications}
+                        selected-label="Selected" options={teacherQualificationsSupport} value={supportQualification}
                         onchange={handleChange}>
                     </lightning-dual-listbox>
                 </div>

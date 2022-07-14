@@ -251,7 +251,8 @@ public with sharing class TRS_FilterCandidates {
         con.Qualificaitons__c = null;
         con.Skills_Training_Experience__c = null;
         con.Year_Key_Stage__c = null;
-        con.SEN_Additional_Experience__c = null; 
+        con.SEN_Additional_Experience__c = null;
+        con.SEN__c = null;
         con.SEN_Experience__c = null;
         con.Subject__c= null;
         con.Compliance_Owner__c= null;
@@ -581,7 +582,7 @@ isweekDayMapPopulated = false;
             mapToShowPersonPlaced = new Map<Id,String>();
             string sortFullExp = sortExpression + ' ' + sortDirection;
             // Query Contacts
-            String query  = 'Select AccountId, Name, Subject__c,SEN_Experience__c,Skills_Training_Experience__C,Year_Key_Stage__c,Qualificaitons__c,Contact_Type__c,Compliance_Banner__c,Nearest_Stationtext__c,GPS__c,Phone, Email,Number_of_Days_Guaranteed_Per_Week__c, Title, TR1__Skills__c,Subjects_Job_Titles__c,MobilePhone,SGP_Team__c,Compliance_Status__c, ' + 'MailingCity, Nearest_Station__c, OtherPostalCode,Sector__c,Sub_Sector__c,Job_Title__c,Specialisms__c,Specialism__c,Key_Stage_Key_Skill__c, ' + 'TR1__Candidate_Status__c, Current_LEA__c,LEA__c ,Sub_LEA_New__c,Sub_LEA__c,Train_Station__r.Name,Set_Contact_GeoLocation__Latitude__s,Set_Contact_GeoLocation__Longitude__s from Contact where Name != null ';
+            String query  = 'Select AccountId, Name, Subject__c,SEN__c,SEN_Experience__c,Skills_Training_Experience__C,Year_Key_Stage__c,Qualificaitons__c,Contact_Type__c,Compliance_Banner__c,Nearest_Stationtext__c,GPS__c,Phone, Email,Number_of_Days_Guaranteed_Per_Week__c, Title, TR1__Skills__c,Subjects_Job_Titles__c,MobilePhone,SGP_Team__c,Compliance_Status__c, ' + 'MailingCity, Nearest_Station__c, OtherPostalCode,Sector__c,Sub_Sector__c,Job_Title__c,Specialisms__c,Specialism__c,Key_Stage_Key_Skill__c, ' + 'TR1__Candidate_Status__c, Current_LEA__c,LEA__c ,Sub_LEA_New__c,Sub_LEA__c,Train_Station__r.Name,Set_Contact_GeoLocation__Latitude__s,Set_Contact_GeoLocation__Longitude__s from Contact where Name != null ';
             
             // if (SingleAccountId.size() > 0 && SingleAccountId!=null) { 
             //     query += ' and AccountId  IN:SingleAccountId ';
@@ -623,7 +624,6 @@ isweekDayMapPopulated = false;
             if (String.isNotBlank(con.Job_Titles__c )){
                 query += ' and Job_Titles__c INCLUDES (' + createStringForMultiSelectFields(con.Job_Titles__c ) + ')';
             }
-            
             
             if (VacancyRecord.TR1__Contact__c != null)
                 query += ' and id = \'' + VacancyRecord.TR1__Contact__c + '\'';
@@ -1534,7 +1534,8 @@ csdJSDateMap.get(dt).add(comwrap);
                             tooltipContent += Utility.addTableRow('Subject', String.isNotBlank(candidate.Subject__c) ? candidate.Subject__c : ''); 
                             tooltipContent += Utility.addTableRow('Skills Training Experience', String.isNotBlank(candidate.Skills_Training_Experience__C) ? candidate.Skills_Training_Experience__C : ''); 
                             tooltipContent += Utility.addTableRow('Year/Key Stage', String.isNotBlank(candidate.Year_Key_Stage__c) ? candidate.Year_Key_Stage__c : ''); 
-                            tooltipContent += Utility.addTableRow('SEN Qualifications', String.isNotBlank(candidate.Qualificaitons__c) ? candidate.Qualificaitons__c : ''); 
+                            tooltipContent += Utility.addTableRow('SEN Qualifications', String.isNotBlank(candidate.Qualificaitons__c) ? candidate.Qualificaitons__c : '');
+                            tooltipContent += Utility.addTableRow('SEN', String.isNotBlank(candidate.SEN__c) ? candidate.SEN__c : ''); 
                             tooltipContent += Utility.addTableRow('SEN Experience', String.isNotBlank(candidate.SEN_Experience__c) ? candidate.SEN_Experience__c : ''); 
                             tooltipContent += Utility.addTableRow('Nearest Station', String.isNotBlank(candidate.Train_Station__r.Name) ? candidate.Train_Station__r.Name : '');
                             tooltipContent += Utility.addTableRow('Postcode', String.isNotBlank(candidate.OtherPostalCode) ? candidate.OtherPostalCode : '');

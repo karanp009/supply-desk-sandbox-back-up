@@ -2,24 +2,27 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1;
-    max-width: 300px;
+    max-width: 260px;
     bottom: 0;
     top: 0;
     display: block;
     height: 20px;
-    /* min-height: 300px; */
-    /* height: 100%; */
     color: #fff;
     opacity: 1;
-    transition: all 300ms;
-    -moz-transition: all 300ms;
-    -webkit-transition: all 300ms;
+    transition: all 100ms;
+    -moz-transition: all 100ms;
+    -webkit-transition: all 100ms;
+    font-family: 'Raleway';
 }
 
 nav .vertical-menu {
     background-color: black;
     position: absolute;
     height: 100vh;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 nav .vertical-menu hr {
@@ -33,13 +36,17 @@ nav .vertical-menu hr {
     cursor: pointer;
 }
 
+.home_img img {
+    height: 41px;
+    width: 39px;
+}
+
 .selected_tab {
     background: #820912 !important;
 }
 
 .btn_cls {
     background: #F6F6F6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #000000;
     padding: 5px;
     border: 0;
@@ -51,10 +58,21 @@ nav .vertical-menu hr {
 
 .navbar_cls{
     margin: auto 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 }
 
-.btn_cls span {
-    padding: 0 10px 0 0;
+.btn_cls img {
+    height: 19px;
+    width: 19px;
+}
+
+.fbin_icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
 
 .home_cls .home_img span {
@@ -74,11 +92,20 @@ nav .vertical-menu hr {
 }
 
 .width_cls {
-    width: 300px
+    width: 260px
 }
 
 .width_cls .open-menu-btn{
-    left: 310px !important;
+    left: 270px !important;
+}
+
+.open-menu-btn {
+    position: absolute;
+    width: 57px;
+    height: 35px;
+    top: 15px;   
+    left: 60px;
+    cursor: pointer;
 }
 
 .width_cls .show_cls {
@@ -91,16 +118,9 @@ nav .vertical-menu hr {
     background: black;
     width: 60px;
     color: #fff;
-    /* z-index: 2; */
+    z-index: 1;
     transition: all 300ms;
     padding: 0 3px;
-}
-
-.nav_btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 70vh;
 }
 
 .icon_cls {
@@ -110,8 +130,9 @@ nav .vertical-menu hr {
     cursor: pointer;
 }
 
-.icon_cls span {
-    font-size: 25px;
+.icon_cls img {
+    width: 39px;
+    height: 39px;
 }
 
 .hide_cls {
@@ -124,30 +145,15 @@ nav ul {
 }
 
 nav .vertical-menu-logo {
-    /* padding: 10px 0; */
-    font-size: 1.3em;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
     position: relative;
     width: 100vw;
     background: #D90000;
     display: flex;
     justify-content: space-between;
-}
-
-nav .vertical-menu-logo .open-menu-btn {
-    width: 30px;
-    height: max-content;
-    position: absolute;
-    /* display: block; */
-    /* right: 20px; */
-    top: 0;
-    left: 6%;
-    bottom: 0;
-    margin: auto;
-    cursor: pointer;
-}
-
-nav .vertical-menu-logo .open-menu-btn hr {
-    margin: 5px 0;
 }
 
 nav li {
@@ -189,11 +195,11 @@ nav li.user-info>span:after {
 }
 
 .content-wrapper {
-    width: calc(100% - 300px);
+    width: calc(100% - 260px);
     height: 100%;
     position: fixed;
     background: #fff;
-    left: 300px;
+    left: 260px;
     padding: 20px;
 }
 
@@ -210,22 +216,9 @@ nav li.user-info>span:after {
     transition: all 100ms;
 }
 
-/* .closed-menu .vertical-menu-wrapper .vertical-menu-logo div {
-    margin-left: -100px;
-} */
-
-.vertical-menu-wrapper .vertical-menu-logo .open-menu-btn {
-    transition: all 300ms;
-}
-
-.closed-menu .vertical-menu-wrapper .vertical-menu-logo .open-menu-btn {
-    /* left: 7px; */
-    right: 100%;
-}
-
 .closed-menu .vertical-menu-wrapper ul,
 .closed-menu .vertical-menu-wrapper hr {
-    margin-left: -300px;
+    margin-left: -260px;
 }
 
 .vertical-menu-wrapper ul,
@@ -243,4 +236,76 @@ nav li.user-info>span:after {
     background: #fff;
     border-radius: 10px;
     padding: 30px;
+}
+
+.home_icon img{
+    cursor: pointer;
+    height: 41px;
+    width: 39px;
+}
+
+.mob_icon {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navicon_cls {
+        display: none;
+    }
+    nav .vertical-menu {
+        height: 35vh;
+        width: 80%;
+    }
+    .margin_cls {
+        margin-top: 0px;
+    }
+    .mob_icon {
+        display: block;
+    }
+    .btn_cls {
+        display: none;
+    }
+    .navbar_cls {
+        display: flex;
+    }
+    .home_cls {
+        background: #D90000;       
+    }
+    .width_cls {
+        background: black;
+    }
+    .vertical-menu-wrapper {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .navicon_cls {
+        display: none;
+    }
+    nav .vertical-menu {
+        height: 35vh;
+        width: 80%;
+    }
+    .margin_cls {
+        margin-top: 0px;
+    }
+    .mob_icon {
+        display: block;
+    }
+    .btn_cls {
+        display: none;
+    }
+    .navbar_cls {
+        display: flex;
+    }
+    .home_cls {
+        background: #D90000;       
+    }
+    .width_cls {
+        background: black;
+    }
+    .vertical-menu-wrapper {
+        font-size: 18px;
+    }
 }

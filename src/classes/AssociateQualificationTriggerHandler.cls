@@ -87,7 +87,7 @@ public class AssociateQualificationTriggerHandler {
 
         List<Contact> conList = new List<Contact>();
         for(Id conId : QualwithAssociate.keyset()){
-            Contact con = new Contact(Id = conId);
+            Contact con = [SELECT Id, Safeguarding_Training_Hidden__c FROM Contact WHERE Id = :conId];
             for(Id quaId : QualwithAssociate.get(conId).keyset()){
                 List<TR1__Associated_Qualification__c> assQuali = new List<TR1__Associated_Qualification__c>();
                 assQuali = QualwithAssociate.get(conId).get(quaId);
@@ -160,6 +160,11 @@ public class AssociateQualificationTriggerHandler {
                     con.QC_Terms_and_Registration_Forms_s__c = calculateStatus(qualName,assQuali);
                 }
             }
+            // Added below code to update the Safeguarding Training (Hidden) Field on Contact Record. ********** START **********
+            if(!String.isBlank(con.Safeguarding_Training_Hidden__c) && con.Safeguarding_Training_Hidden__c.contains('GForm_Safeguarding')){
+                con.Safeguarding_Training_Hidden__c = 'Yes';
+            }
+            // ********** END **********
             conList.add(con);  
         }
 

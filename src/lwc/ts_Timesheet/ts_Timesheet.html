@@ -1,90 +1,207 @@
 <template>
+    <!-- ======= Spinner ======= -->
+
+    <template if:true={isSpinner}>
+        <div class="slds-spinner_container spinner-center" style="overflow: hidden;">
+            <div class="spinner-ts">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+    </template>
+
+    <!-- ======= Spinner ======= -->
+
     <div class="main">
         <div class="top-header">
             <h1>Timesheet / Client</h1>
         </div>
+        
         <div class="timesheet-header-div">
             <div class="active-timesheet-btn timesheet-btn-active" onclick={displayActiveTimesheet}>
-                <div>
+                <div class="timesheet_btn_text">
                     Active Timesheet
                 </div>
             </div>
             <div class="historical-timesheet-btn" onclick={displayHistoricalTimesheet}>
-                <div>
+                <div class="timesheet_btn_text">
                     Historical Timesheet
                 </div>
             </div>
         </div>
-        <div class="timesheet-table">
+        <div class="timesheet_scroll">
+            <div class="timesheet-table">
             <div class="slds-grid slds-wrap table-row">
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col ">
                     <div>Week Ending</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Client Name</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Vacancy Name</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Candidate Name</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Status</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
-                    <div>Total Hours</div>
+                <div class="slds-col slds-size_1-of-12 table_col">
+                    <div>Total Hours</div>0
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Total Days</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Total Half Days</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
+                <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Total Reported Charge</div>
                 </div>
-                <div class="slds-col slds-size_1-of-12">
-                    <div>1</div>
+                <div class="slds-col slds-size_3-of-12 slds-grid slds-wrap table-row table_col">
+                    <div class="slds-col slds-size_3-of-12">1</div>
+                    <div class="slds-col slds-size_3-of-12">2</div>
+                    <div class="slds-col slds-size_3-of-12">3</div>
+                    <div class="slds-col slds-size_3-of-12">4</div>
+                </div>
+                <!-- <div class="slds-col slds-size_1-of-12">
+                    <div></div>
                 </div>
                 <div class="slds-col slds-size_1-of-12">
-                    <div>2</div>
-                </div>
-                <div class="slds-col slds-size_1-of-12">
-                    <div>3</div>
-                </div>
+                    <div></div>
+                </div> -->
             </div>
-
+            <template if:true={isNoTimesheetRecord}>
+                <div class="no-data-div">
+                    <div class="no-data-txt">There are currently no timesheets to approve</div>
+                </div>
+            </template>
             <template for:each={activeTimeSheet} for:item="ts">
                 <div class="slds-grid slds-wrap table-row" key={ts.Id}>
-                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Week_Ending__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Client_Name__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Job_Order__r.Name}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Consultant_Name__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Status__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.TR1__Total_Regular_Hours__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.Total_Days__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.Total_Half_Days__c}</div>
-                    <div class="slds-col slds-size_1-of-12">{ts.Total_Reported_Charge__c}</div>
-                    <div class="slds-col slds-size_1-of-12">
-                        <div class="table-icon" title="View">
-                            <img src={viewIcon} alt="viewIcon" title="View">
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.TR1__Week_Ending__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.TR1__Client_Name__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.TR1__Job_Order__r.Name}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.TR1__Consultant_Name__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.TR1__Status__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.TR1__Total_Regular_Hours__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.Total_Days__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.Total_Half_Days__c}</div>
+                    <div class="slds-col slds-size_1-of-12 table_col">{ts.Total_Reported_Charge__c}</div>
+                    <div class="slds-col slds-size_3-of-12 table_col slds-grid slds-wrap table-row">
+                        <div class="slds-col slds-size_3-of-12">
+                            <div class="table-icon" title="View">
+                                <img src={viewIcon} alt="viewIcon" title="View" data-name="View" data-id={ts.Id}
+                                    onclick={navigatepage}>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12">
+                            <div class="table-icon" title="Print">
+                                <img src={printIcon} alt="printIcon" title="Print" data-name="Print" data-id={ts.Id}
+                                    onclick={navigatepage}>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12">
+                            <div class="table-icon" title="Approve">
+                                <img src={approveIcon} alt="approveIcon" title="Approve" data-name="Approve" data-id={ts.Id}
+                                    onclick={navigatepage}>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12">
+                            <div class="table-icon" title="Reject">
+                                <img src={rejectIcon} alt="approveIcon" title="Reject" data-name="Reject" data-id={ts.Id}
+                                    onclick={navigatepage}>
+                            </div>
                         </div>
                     </div>
-                    <div class="slds-col slds-size_1-of-12">
-                        <div class="table-icon" title="Print">
-                            <img src={printIcon} alt="printIcon" title="Print">
-                        </div>
-                    </div>
-                    <div class="slds-col slds-size_1-of-12">
-                        <div class="table-icon" title="Approve">
-                            <img src={approveIcon} alt="approveIcon" title="Approve">
-                        </div>
-                    </div>
+                    
                 </div>
             </template>
 
 
+            <!--================================    Client Approve Popup Modal    ================================-->
+
+            <template if:true={isClientApproveModalOpen}>
+                <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+                    class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+
+                            <div class="pop-apprv-header">
+                                <div class="pop-apprv-ttl">Give Feedback</div>
+                                <div class="slds-p-top_small">Please let us know how you're feeling about working for
+                                    Supply
+                                    Desk?</div>
+                            </div>
+                            <div class="pop-apprv-rating-div slds-grid slds-wrap">
+                                <div class="slds-size_1-of-5">
+                                    <div data-id="Unsatisfactory" onclick={selectRating}
+                                        class="emg-unsetisfy slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={unsetisfyEmg} alt="unsetisfyEmg" title="Reject"
+                                            class="top-header-btn-icon">
+                                    </div>
+                                </div>
+                                <div class="slds-size_1-of-5">
+                                    <div data-id="Requires Improvement" onclick={selectRating}
+                                        class="emg-ri slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={requireImprovmentsEmg} alt="requireImprovmentsEmg" title="Reject"
+                                            class="top-header-btn-icon">
+                                    </div>
+                                </div>
+                                <div class="slds-size_1-of-5">
+                                    <div data-id="Good" onclick={selectRating}
+                                        class="emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={goodEmg} alt="goodEmg" title="Reject" class="top-header-btn-icon">
+                                    </div>
+                                </div>
+                                <div class="slds-size_1-of-5">
+                                    <div data-id="Very Good" onclick={selectRating}
+                                        class="emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={VeryGoodEmg} alt="VeryGoodEmg" title="Reject"
+                                            class="top-header-btn-icon">
+                                    </div>
+                                </div>
+                                <div class="slds-size_1-of-5">
+                                    <div data-id="Excellent" onclick={selectRating}
+                                        class="emg-excel slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={excelentEmg} alt="excelentEmg" title="Reject"
+                                            class="top-header-btn-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rqst-call">
+                                <div class="slds-m-right_x-small">Request Quality Call</div>
+                                <lightning-input type="checkbox" name="requestCall"></lightning-input>
+                            </div>
+                            <div class="pop-apprv-rsn-div">
+                                <div>What are the main reasons for your rating?</div>
+                                <lightning-textarea name="input2" placeholder="Type" value={approveNotes}
+                                    onchange={saveApproveNotes}>
+                                </lightning-textarea>
+                            </div>
+                            <div class="pop-apprv-footer-btn">
+                                <div class="pop-apprv-sbm-btn" title="Approve" onclick={approveTimesheet}>
+                                    <img src={approveBtnIcon} alt="approveIcon" title="Approve"
+                                        class="top-header-btn-icon">
+                                    Submit
+                                </div>
+                                <div class="pop-rjct-sbm-btn" title="Reject" onclick={closeRejectModal}>
+                                    <img src={rejectBtnIcon} alt="rejectIcon" title="Reject"
+                                        class="top-header-btn-icon">
+                                    Cancel
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+            </template>
+
+            <!--================================    Client Approve Popup Modal    ================================-->
+
+
+        </div>
         </div>
     </div>
 </template>

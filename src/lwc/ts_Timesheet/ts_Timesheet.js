@@ -39,6 +39,7 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
     unsetisfyEmg = ts_Unsetisfy;
     no_recordImg = no_timesheet_found_img;
     selectedTimesheet;
+    text_area_required = false;
 
     connectedCallback() {
         var status = " 'Submitted' ";
@@ -139,6 +140,12 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         // var pvalue = event.currentTarget.dataset.id;
         this.selectedRetting = event.currentTarget.dataset.id;
         console.log("selected Imogi value ====>" + this.selectedRetting);
+        if(this.selectedRetting == "Excellent" || this.selectedRetting == "Very Good"){
+            this.text_area_required = false;
+        }
+        else{
+            this.text_area_required = true;
+        }
     }
     saveApproveNotes(event) {
         this.approveNotes = event.detail.value;
@@ -174,7 +181,12 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                         }
                     }
                 });
-        } else {
+        } 
+        else if (ratingValue.length > 0){
+            console.log("1 to 3 rating");
+            console.log("notes==>",notes);
+            console.log("notes lenght==>",notes.length);
+            this.text_area_required = true;
             if (notes != null || notes != '') {
                 console.log("2 if condition notes ===>" + notes);
                 approveRejectTimeSheet({ operation: operation, timesheetId: this.selectedTimesheet, notes: notes, ratingValue: ratingValue, rqc: rqc })

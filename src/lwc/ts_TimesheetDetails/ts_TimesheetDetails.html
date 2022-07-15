@@ -186,7 +186,7 @@
                 <lightning-button-icon icon-name="utility:back" variant="bare" alternative-text="back" title="back"></lightning-button-icon>
                 <p>Timesheet</p>
             </div>
-            <div class="user-information">
+            <div class="user-information slds-p-bottom_medium">
                 <div class="slds-grid slds-wrap user-information-table ">
                     <div class="slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12  cndt-profile slds-p-vertical_large">
                         <div class="candidate-profile slds-align_absolute-center">
@@ -198,7 +198,7 @@
                             <p>Send Message</p>
                         </div>
                     </div>
-                    <div class="slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 slds-p-vertical_large">
+                    <div class="candidateInfo slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 slds-p-vertical_large">
                         <div class="cndt-info">
                             <div>Week Ending</div>
                             <div>{tsObj.TR1__Week_Ending__c}</div>
@@ -210,6 +210,22 @@
                         <div class="cndt-info">
                             <div>Status</div>
                             <div>{tsObj.TR1__Status__c}</div>
+                        </div>
+                        <div class="slds-m-top_x-small cndt-info cndt-user-client">
+                            <template if:true={isUserClient}>
+                            <div class="cndt-info">
+                                <div>Day Charge Rate</div>
+                                <div>$15</div>
+                            </div>
+                            <div class="cndt-info">
+                                <div>Half Day Charge Rate</div>
+                                <div>$13</div>
+                            </div>
+                            <div class="cndt-info">
+                                <div>Hour Charge Rate</div>
+                                <div>$13</div>
+                            </div>
+                        </template>
                         </div>
                     </div>
                     <div class="slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 slds-p-vertical_large">
@@ -223,8 +239,11 @@
                             <div>{vacancyName}</div>
                         </div>
 
+
+
+
                     </div>
-                    <div class="slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 slds-p-vertical_large">
+                    <div class="userClient slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 slds-p-vertical_large">
                         <template if:true={isUserClient}>
                                 <div class="cndt-info">
                                     <div>Day Charge Rate</div>
@@ -244,23 +263,23 @@
             </div>
         </div>
     </div>
-    <div class="slds-col slds-size_1-of-1 tableData">
-        <div class="week-table">
-            <div class="table-data">
-                <table class="">
-                    <thead>
-                        <tr class="slds-grid slds-wrap table-row first-row">
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Day</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Date</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Hours</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Working Days</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Half Day</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Total Charges</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+    <div class="slds-col slds-size_1-of-1 tableData ">
+        <!-- <div class="week-table"> -->
+        <div class="table-data slds-m-top_medium tableMain">
+            <table class="tableDiv">
+                <thead>
+                    <tr class="slds-grid slds-wrap table-row first-row">
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Day</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Date</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Hours</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Working Days</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Half Day</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Total Charges</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                        <template for:each={tsdLst} for:item="tsd">
+                    <template for:each={tsdLst} for:item="tsd">
                                 <tr class="slds-grid slds-wrap table-row" key={tsd.Id}>
                                     <th class="slds-col slds-size_2-of-12 slds-text-align_center">{tsd.TR1__Day__c}</th>
                                     <th class="slds-col slds-size_2-of-12 slds-text-align_center">{tsd.TR1__Date__c}
@@ -279,20 +298,20 @@
                                 </tr>
                             </template>
 
-                        <tr class="slds-grid slds-wrap table-row first-row">
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">Total</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center"></th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">
-                                {tsObj.TR1__Total_Regular_Hours__c}</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">{tsObj.Total_Days__c}</th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center">{tsObj.Total_Half_Days__c}
-                            </th>
-                            <th class="slds-col slds-size_2-of-12 slds-text-align_center"></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    <tr class="slds-grid slds-wrap table-row first-row">
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">Total</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center"></th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">
+                            {tsObj.TR1__Total_Regular_Hours__c}</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">{tsObj.Total_Days__c}</th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center">{tsObj.Total_Half_Days__c}
+                        </th>
+                        <th class="slds-col slds-size_2-of-12 slds-text-align_center"></th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <!-- </div> -->
     </div>
 </div>
 <!-- 

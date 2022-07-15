@@ -179,6 +179,99 @@
 
 /* =================== Spinner =================== */
 
+/* ======= approved popup model ====== */
+
+
+
+.emg-excel {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(8, 171, 5, 0.68);
+    cursor: pointer;
+}
+
+.emg-very-good {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(133, 255, 75, 0.68);
+    cursor: pointer;
+}
+
+.emg-good {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(249, 200, 28, 0.68);
+    cursor: pointer;
+}
+
+.emg-ri {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(252, 93, 4, 0.68);
+    cursor: pointer;
+}
+
+.emg-unsetisfy {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(252, 0, 0, 0.68);
+    cursor: pointer;
+}
+
+.rqst-call {
+    display: flex;
+    align-items: center;
+}
+.pop-apprv-rsn-div {
+    margin-top: 1%;
+    height: 15vh;
+    padding-top: 6%;
+}
+.pop-apprv-sbm-btn {
+    background-color: rgb(103, 104, 104);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    cursor: pointer;
+    /* height: 60%; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+    margin-inline: 0% 5%;
+    padding-inline: 15px;
+    font-size: larger;
+}
+
+.pop-rjct-sbm-btn {
+    background-color: rgb(217, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    cursor: pointer;
+    /* height: 60%; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    font-size: larger;
+}
+
+.pop-apprv-footer-btn {
+    display: flex;
+    margin-top: 1%;
+    height: 10vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-header-btn-icon {
+    margin-right: 5px;
+}
+.pop-apprv-ttl {
+    color: rgb(217, 0, 0);
+    font-size: x-large;
+    font-weight: 700;
+}
+.pop-apprv-header {
+    padding-top: 4%;
+    height: 10vh;
+}
+/* ======= approved popup model ====== */
+
 @media (max-width: 1024px){
     .timesheet-header-div {
         height: 4%;

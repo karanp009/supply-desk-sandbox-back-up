@@ -14,6 +14,7 @@
     width: 100px;
     display: flex;
     justify-content: flex-start;
+    padding: 2px;
 }
 
 .saveBtn:hover,
@@ -28,17 +29,17 @@
 .saveBtn img {
     width: 17px;
     height: 18px;
-    margin: 5px 10px 0 10px;
+    margin: 3px 10px 0 8px;
 }
 
 .cancelBtn {
-    background-color: #C50E1B;
+    background-color: #D90000;
 }
 
 .cancelBtn img {
     width: 18px;
     height: 18px;
-    margin: 5px 7px 0 10px;
+    margin: 3px 7px 0 8px;
 }
 
 .prof-avtr-div {
@@ -129,12 +130,16 @@
     width: 100%;
 }
 
-.profileTopDiv .slds-size_1-of-7 {
+.profileTopDiv .slds-size_1-of-8 {
     min-width: 135px;
 }
 
+.tabDiv {
+    width: 95%;
+}
+
 .tabDiv hr {
-    margin: 1rem 6rem;
+    margin: 1rem 2rem 1rem 6rem;
     border-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -184,21 +189,106 @@
 
 .imageUpload {
     display: inline-block;
-    min-width: 200px;
+    min-width: 150px;
 }
 
-@media(max-width: 1000px) {
-    .tabDiv hr {
-        margin: 1rem 4rem 1rem 6rem;
+.fileUpload p,
+.fileDelete p {
+    display: initial;
+}
+
+.fileDelete img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 2px 5px;
+}
+
+.fileUpload img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 2px 5px;
+}
+
+
+/* =================== Spinner Start =================== */
+
+.spinner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-ts {
+    --size: 85px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.inner.one {
+    left: 0;
+    top: 0;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #999999;
+}
+
+.inner.two {
+    right: 0;
+    top: 0;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000000;
+}
+
+.inner.three {
+    right: 0;
+    bottom: 0;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #d90000;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
     }
-    .mainDiv .slds-size_2-of-12 {
-        width: 20%;
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
     }
 }
 
-@media(max-width: 767px) {
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+
+/* =================== Spinner End =================== */
+
+@media(max-width: 1024px) {
     .btns {
-        display: none;
+        display: none !important;
     }
     .iPadbtns {
         display: flex;
@@ -207,7 +297,7 @@
         font-size: 17px;
         align-items: center;
         color: white;
-        margin: 10px 0 50px 0;
+        margin: 30px 0;
     }
     .cancelBtn {
         margin-left: 20px;
@@ -224,8 +314,65 @@
     .mainDiv .slds-size_2-of-12 {
         width: 25%;
     }
-    .slds-tabs_default__nav {
-        margin: 2rem 0 0 0;
-        font-size: 20px;
+    .tabDiv .slds-size_9-of-12 {
+        width: 66%;
+    }
+    .slds-file-selector__body_integrated {
+        margin-left: 2rem;
+    }
+    .profImg {
+        height: 6rem;
+        width: 6rem;
+    }
+    .t1 {
+        margin-top: 1.5rem;
+    }
+    .profileTopDiv .slds-size_1-of-8 {
+        min-width: 100px;
+    }
+    .fileUpload,
+    .fileDelete {
+        width: auto;
+    }
+    .fileUpload p,
+    .fileDelete p {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .tabDiv {
+        margin-left: 15px;
+    }
+    .t1 {
+        font-size: 17px;
+    }
+    .t2 {
+        font-size: 18px;
+    }
+    .t3 {
+        font-size: 15px;
+    }
+    .mainDiv .slds-size_2-of-12 {
+        font-size: 13px;
+    }
+    .tabDiv .slds-size_9-of-12 {
+        font-size: 13px;
+    }
+    .tabDiv hr {
+        margin: 1rem 2rem 1rem 0rem;
+    }
+    .slds-file-selector__body_integrated {
+        margin-left: 1rem;
+    }
+    .profImg {
+        height: 5rem;
+        width: 5rem;
+    }
+    .profileTopDiv .slds-size_1-of-8 {
+        min-width: 85px;
+    }
+    .tabDiv .slds-col {
+        padding-left: 0;
     }
 }

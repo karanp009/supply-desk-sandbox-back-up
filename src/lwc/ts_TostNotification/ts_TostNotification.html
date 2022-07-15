@@ -1,28 +1,40 @@
 <template>
-    <div class="toast-main-div">
-        <div class="inset-color-div success-msg-cls"></div>
-        <!-- <div class="icon-div">
-            <template if:true={isSuccess}>
-                <img src={successIcon} alt="succsess_Icon">
-            </template>
-            <template if:true={isError}>
-                <img src={errorIcon} alt="error_Icon">
-            </template>
-        </div> -->
-        <div class="icon-div">
-            <img class="img-cls" src={iconToDisplay}>
+    <template if:true={showToastBar_success}>
+        <div class="slds-notify_container">
+            <div class="slds-notify slds-notify_toast success_outer" role="status">
+                <span class="slds-assistive-text">{type}</span>
+                <div style=" width:1px; height:40px; border-radius: 10px; border:2px solid green;" aura:id="border_line"></div>
+                <span class=" slds-no-flex success_inner" title={message}>
+                    <lightning-icon icon-name="utility:success" alternative-text="icon" variant="inverse" size="small"></lightning-icon>
+                </span>
+                <div class="slds-notify__content tost_mesage">
+                    <h1 style="font-size: 18px; font-weight:800; color:black;">Yay! Everything worked!</h1>
+                    <h2 style="font-size: 14px; color: rgba(0, 0, 0, 0.5); ">{message}</h2>
+                </div>
+                <div class="slds-notify__close close_btn" >
+                    <lightning-button-icon icon-name="utility:close" size="small" variant="border-filled" class="slds-button slds-button_icon slds-button_icon-inverse" alternative-text="next" onclick={closeModel} ></lightning-button-icon>
+                </div>
+            </div>
         </div>
-        <div class="message-body">
-            <template if:true={isSuccess}>
-                <div class="message-status">Yay! Everything worked!</div>
-            </template>
-            <template if:true={isError}>
-                <div class="message-status">Uh oh, something went wrong</div>
-            </template>
-            <div class="message-to-display">{messageToDisplay}</div>
+    </template>
+
+    <template if:true={showToastBar_error}>
+        <div class="slds-notify_container">
+            <div class="slds-notify slds-notify_toast error_outer" role="status">
+                <span class="slds-assistive-text">{type}</span>
+                <div style=" width:1px; height:40px; border-radius: 10px; border:2px solid red;" aura:id="border_line"></div>
+                <span class="slds-no-flex error_inner" title={message}>
+                    <lightning-icon icon-name="utility:error" alternative-text="icon" styleclass="slds-icon slds-icon_small" variant="inverse" size="small"></lightning-icon>
+                </span>
+                <div class="slds-notify__content tost_mesage">
+                    <h1 style="font-size: 18px; font-weight:800; color:black;">Uh oh, something went wrong</h1>
+                    <h2 style="font-size: 14px; color: rgba(0, 0, 0, 0.5); ">{message}</h2>
+                </div>
+                <div class="slds-notify__close close_btn">
+                    <lightning-button-icon icon-name="utility:close" size="small" variant="border-filled" class="slds-button slds-button_icon slds-button_icon-inverse" alternative-text="next" onclick={closeModel} ></lightning-button-icon>
+                </div>
+            </div>
         </div>
-        <div class="close-icon">
-            <img src={popupCloseBtnIcon} alt="close_Icon" title="Close">
-        </div>
-    </div>
+    </template>
+
 </template>

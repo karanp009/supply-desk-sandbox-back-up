@@ -1,39 +1,44 @@
-import { LightningElement, track } from 'lwc';
+import Longitude from '@salesforce/schema/Lead.Longitude';
+import { LightningElement,track,api} from 'lwc';
 
-import ts_popupmodal_close_btn from '@salesforce/resourceUrl/ts_popupmodal_close_btn';
-import ts_successToast from '@salesforce/resourceUrl/ts_successToast';
-import ts_errorToast from '@salesforce/resourceUrl/ts_errorToast';
-
-export default class Ts_TostNotification extends LightningElement {
-
-    popupCloseBtnIcon = ts_popupmodal_close_btn;
-    successIcon = ts_successToast;
-    errorIcon = ts_errorToast;
-
-    @track messageType = "success";
-    @track messageToDisplay = "Approved Succesfully";
-    @track autoClose;
-    @track autoCloseTime;
-    @track isSuccess = true;
-    @track isError;
-    @track iconToDisplay
-
-    connectedCallback() {
-        this.checkType();
-    }
-
-    checkType() {
-        if (this.messageType == "success") {
-            var tsd = this.template.querySelectorAll('.inset-color-div');
-            console.log({ tsd });
-            // tsd.classList.add('success-msg-cls');
-            this.isSuccess = true;
-            this.iconToDisplay = this.successIcon;
-        } else if (this.messageType == "error") {
-            this.template.querySelector('.inset-color-div').classList.add('error-msg-cls');
-            this.iconToDisplay = this.errorIcon;
+export default class CommonToast extends LightningElement {
+    @track type='success';
+    @track message;
+    @track messageIsHtml=false;
+    @track showToastBar_success = false;
+    @track showToastBar_error = false;
+    @api autoCloseTime = 5000;
+    @track icon='';
+    
+    @api
+    showToast(type, message, time) {
+        this.type = type;
+        this.message = message;
+        this.autoCloseTime=time;
+        if(this.type == "success"){
+            this.showToastBar_success = true;
+            this.showToastBar_error = false;
         }
+        else{
+            this.showToastBar_success = false;
+            this.showToastBar_error = true;
+
+        }
+        console.log('OUTPUT toast: ',message);
+        setTimeout(() => {
+            this.closeModel();
+        }, this.autoCloseTime);
     }
 
-
+    
+    closeModel() {
+        this.showToastBar_success = false;
+        this.showToastBar_error = false;
+        this.type = '';
+        this.message = '';
+    }
+ 
+    get outerClass() {
+        return 'slds-notify slds-notify_toast ';
+    }
 }

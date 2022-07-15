@@ -1,3 +1,7 @@
+.mainDiv{
+    overflow-x: hidden;
+}
+
 .textp{
     display: flex;
     align-items: center;
@@ -17,11 +21,13 @@
 
 .docDiv{
     /* margin-left: 4rem; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .combox{
     display: flex;
+    font-weight:400;
+    font-size:12px;
 }
 
 .btns{
@@ -37,9 +43,10 @@
     justify-content: inherit;
     align-items: center;
 }
-
+.iPadbtns{
+    display: none;
+}
 .t1{
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -47,7 +54,6 @@
 }
 .t2{
     
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 31.5px;
@@ -60,6 +66,11 @@
     background: #676868;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.saveBtn img{
+    width: 17px;
+    height: 18px;
+    margin: -2px 10px 0 0px;
+}
 .saveBtn:hover{
     cursor: pointer;
 }
@@ -70,6 +81,11 @@
     
     background: #D90000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cancelBtn img {
+    width: 18px;
+    height: 18px;
+    margin: 0px 3px 0 2px;
 }
 
 /* =================== Spinner =================== */
@@ -151,3 +167,79 @@
  }
   
  /* =================== Spinner =================== */
+
+
+ @media(max-width: 1024px) {
+    .btns {
+        display: none !important;
+    }
+    .iPadbtns {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 17px;
+        align-items: center;
+        color: white;
+        /* margin: 30px 0; */
+    }
+    .saveBtn{
+        width: 27px;
+        height: 27px;
+    }
+    .cancelBtn{
+        width: 27px;
+        height: 27px;
+        padding-left: 3px;
+    }
+    .cancelBtn img{
+        width: 15px;
+        height: 19px;
+        margin-left: 3px;
+        /* margin: -3px 13px 0 3px; */
+    }
+    .saveBtn img{
+                
+        width: 15px;
+        height: 19px;
+        margin-left: 6px;
+        margin-top: 0px;
+        /* margin: 0px 3px 3px 3px; */
+    }
+    .cancelBtn {
+        
+        margin-left: 20px;
+    }
+    .tabDiv hr {
+        margin: 1rem 4rem 1rem 0rem;
+    }
+    .profileTitle {
+        width: 100%;
+    }
+    /* .mainDiv .slds-size_2-of-12 {
+        width: 25%;
+    } */
+    .tabDiv .slds-size_9-of-12 {
+        width: 66%;
+    }
+    .slds-file-selector__body_integrated {
+        margin-left: 2rem;
+    } 
+
+    .seekDiv{
+        width: 33%;
+    }
+
+    .docDiv{
+        width: 66%;
+    }
+
+    .idDiv{        
+        display: block;
+    }
+    .group2adiv{
+        width: 75%;
+    }
+    .group2bdiv{
+        width: 75%;
+    }
+}

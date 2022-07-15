@@ -18,7 +18,7 @@
     font-size: 18px;
     height: 2rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    min-width: 100px;
+    width: 105px;
     text-align: center;
 }
 
@@ -37,4 +37,69 @@ h1 {
 
 .contentDiv {
     background-color: white;
+}
+
+.Qualificationlist p {
+    display: initial;
+}
+
+.actionDiv .text1 {
+    margin-left: 1rem;
+}
+
+@media(max-width: 1024px) {
+    .qualifyDiv .slds-page-header {
+        padding-left: 0;
+    }
+    .qualifyDiv {
+        margin-left: 0px;
+    }
+    .textd {
+        font-size: 13px;
+    }
+    .text1 {
+        font-size: 13px;
+    }
+    .Qualificationlist p {
+        display: none;
+    }
+    .actionDiv {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+    .edit {
+        width: 30px;
+    }
+    .edit .slds-m-right_small {
+        margin-right: 0;
+    }
+    .edit img {
+        margin-top: 5px;
+    }
+    .statusText {
+        width: 18%;
+    }
+    .actionDiv .text1 {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .Qualificationlist .slds-m-left_large {
+        margin-left: 0.5rem;
+    }
+    .textd {
+        font-size: 11px;
+    }
+    .text1 {
+        font-size: 11px;
+    }
+    .qualifyDiv .mainDiv {
+        margin: 0 .25rem;
+    }
+    .actionDiv {
+        width: 10%;
+        min-width: 50px;
+    }
 }

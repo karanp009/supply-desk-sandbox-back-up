@@ -1,62 +1,26 @@
-.toast-main-div {
-    display: flex;
-    height: 80px;
-    width: 600px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+.success_outer, .error_outer{
+    background-color: white;
+    box-shadow: 1px 2px 4px 0px #888888;
 }
 
-.success-msg-cls {
-    background: rgb(98, 179, 98);
-    width: 10px;
+.success_inner{
+    margin: 0 12px;
+    --sds-c-icon-color-foreground: green;
 }
 
-.error-msg-cls {
-    background: rgb(221, 51, 51);
+.error_inner{
+    margin: 0 12px;
+    --sds-c-icon-color-foreground: red;
 }
 
-.inset-color-div {
-    width: 10px;
-    margin-inline-start: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 15px;
+.tost_message h1{
+    font-size: 22px !important;
+    color: black;
 }
-
-.img-cls {
-    height: 50%;
+.tost_message h2{
+    font-size: 18px !important;
+    color: rgba(0, 0, 0, 0.5); 
 }
-
-.icon-div {
-    margin-inline: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.message-to-display {
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 400;
-}
-
-.message-status {
-    font-weight: 700;
-    font-size: larger;
-    /* width: 200px; */
-}
-
-.message-body {
-    width: 250px;
-    align-items: center;
-    justify-content: center;
-    width: 367px;
-    margin-block: auto;
-}
-
-.close-icon {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    margin-inline-end: 4%;
+.close_btn{
+    margin: 11px;
 }

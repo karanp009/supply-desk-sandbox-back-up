@@ -11,9 +11,8 @@ import profilePageCss from '@salesforce/resourceUrl/profilePageCss';
 import saveData from '@salesforce/apex/ts_ProfilePageController.saveData';
 import getData from '@salesforce/apex/ts_ProfilePageController.getData';
 import saveFile from '@salesforce/apex/ts_ProfilePageController.saveFile';
-import saveIcon from '@salesforce/resourceUrl/saveIcon';
-import cancelIcon from '@salesforce/resourceUrl/cancelIcon';
-import changeIcon from '@salesforce/resourceUrl/changePassIcon';
+import deleteFile from '@salesforce/apex/ts_ProfilePageController.deleteFile';
+import communityicon from '@salesforce/resourceUrl/communityicons';
 
 
 export default class Ts_ProfilePage extends LightningElement {
@@ -21,9 +20,11 @@ export default class Ts_ProfilePage extends LightningElement {
     profImg = profileImg;
     settingImg = settingIcon;
     dragFileImg = dragFileIcon;
-    saveImg = saveIcon;
-    cancelImg = cancelIcon;
-    changeImg = changeIcon;
+    saveImg = communityicon + '/communityicons/save.png';
+    cancelImg = communityicon + '/communityicons/cancel.png';
+    updateImg = communityicon + '/communityicons/update.png';
+    deleteImg = communityicon + '/communityicons/delete.png';
+    blankProgileImg = communityicon + '/communityicons/profilephoto.png';
 
     @track imgUrl;
     @track usrId;
@@ -32,8 +33,11 @@ export default class Ts_ProfilePage extends LightningElement {
     @track email;
     @track businessphn;
     @track mobilephn;
+    @track newImgUrl;
+    @track newImgFile;
+    @track deletePfp = false;
 
-    @track isLoaded;
+    @track isSpinner;
     connectedCallback() {
         this.getUsrData();
     }
@@ -57,9 +61,10 @@ export default class Ts_ProfilePage extends LightningElement {
                 this.fname = result.FirstName;
                 this.lname = result.LastName;
                 this.email = result.Email;
-                this.Phone = result.businessphn;
-                this.MobilePhone = result.mobilephn;
+                this.businessphn = result.businessphn;
+                this.mobilephn = result.mobilephn;
                 this.imgUrl = result.FullPhotoUrl;
+                this.newImgUrl = result.FullPhotoUrl;
             })
     }
 
@@ -118,10 +123,10 @@ export default class Ts_ProfilePage extends LightningElement {
             fileReader.readAsDataURL(file);
 
         });
-        this.isLoaded = true;
+        this.isSpinner = true;
         setTimeout(() => {
             this.getUsrData();
-            this.isLoaded = false;
+            this.isSpinner = false;
         }, 1500);
     }
 
@@ -143,7 +148,6 @@ export default class Ts_ProfilePage extends LightningElement {
                 let base64Mark = 'base64,';
                 let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
                 fileContents = fileContents.substring(dataStart);
-                console.log('this.recordId>>', sId);
                 saveCV({
                         parentId: sId,
                         fileName: file.name,
@@ -192,37 +196,76 @@ export default class Ts_ProfilePage extends LightningElement {
         }
     }
     handleSave(event) {
+        try {
+            this.isSpinner = true;
+            let file = this.newImgFile;
+            if (file != undefined && this.deletePfp == false) {
+                let fileReader = new FileReader();
+                file.sObjectId = this.usrId;
 
-        let usrObj = { 'sobjectType': 'User' };
-        usrObj.FirstName = this.fname;
-        usrObj.LastName = this.lname;
-        usrObj.Email = this.email;
-        usrObj.Phone = this.businessphn;
-        usrObj.MobilePhone = this.mobilephn;
-        saveData({ usr: usrObj })
-            .then(result => {
-                console.log({ result });
-            })
+                var sId = file.sObjectId;
+                fileReader.onload = function() {
+                    let fileContents = fileReader.result;
+                    let base64Mark = 'base64,';
+                    let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
+                    fileContents = fileContents.substring(dataStart);
+                    saveFile({
+                            userId: sId,
+                            fileId: file.Id,
+                            base64Data: encodeURIComponent(fileContents)
+                        })
+                        .catch(error => {
+                            alert('Error');
+                        });
+                };
+                fileReader.readAsDataURL(file);
+            } else if (this.deletePfp == true) {
+                deleteFile({ userId: this.usrId })
+            }
 
+            let usrObj = { 'sobjectType': 'User' };
+            usrObj.Id = this.usrId;
+            usrObj.FirstName = this.fname;
+            usrObj.LastName = this.lname;
+            usrObj.Email = this.email;
+            usrObj.businessphn = this.businessphn;
+            usrObj.mobilephn = this.mobilephn;
+            saveData({ usr: usrObj })
+
+            setTimeout(() => {
+                this.getUsrData();
+                this.isSpinner = false;
+            }, 5500);
+
+        } catch (error) {
+            console.log({ error });
+        }
     }
 
     handleActive(event) {
-        const tab = event.target.value;
-        console.log({ tab });
-        var buttons = document.querySelectorAll('.profilebtn');
-        console.log({ buttons });
+        const tab = event.target.value;;
+        var btns = this.template.querySelector('.btns');
         if (tab == 'tab1') {
-            console.log('If');
-            for (var btn of buttons) {
-                console.log({ btn });
-                btn.style.display = 'flex';
-            }
+            btns.style.display = 'flex';
         } else {
-            console.log('Else');
-            for (var btn of buttons) {
-                console.log({ btn });
-                btn.style.display = 'none';
-            }
+            btns.style.display = 'none';
         }
+    }
+
+    savePfpHandle(event) {
+        try {
+            this.deletePfp = false;
+            let file = event.target.files[0];
+            this.newImgFile = file;
+            this.newImgUrl = URL.createObjectURL(file);
+        } catch (error) {
+            console.log({ error });
+        }
+    }
+
+    deletePfpHandle(event) {
+        this.deletePfp = true;
+        var pfpImage = this.template.querySelector('.profChangeImg');
+        pfpImage.setAttribute('src', this.blankProgileImg);
     }
 }

@@ -1,9 +1,24 @@
 <template>
+
+      <!-- ======= Spinner ======= -->
+
+      <template if:true={isSpinner}>
+            <div class="slds-spinner_container spinner-center" style="overflow: hidden;">
+            <div class="spinner-ts">
+                  <div class="inner one"></div>
+                  <div class="inner two"></div>
+                  <div class="inner three"></div>
+            </div>
+            </div>
+      </template>
+
+      <!-- ======= Spinner ======= -->
+
       <div class="main-contact">
             <div class="main_div">
                   <div class="map_img" >
                         <div class="con_touch">
-                        <div class="">
+                        <div>
                             <h1>Get in touch</h1>
                             <p class="subtext">We'd love to hear from you. Our friendly team is always here to help.</p>
                         </div>
@@ -11,70 +26,76 @@
                   </div>
                   <div class="con_info">
                         <div class="con_info_div">
-                              <h5>Need assistance? Send us an email</h5>
-                              <div class="message">
-                                    <div class="con-label"><p>Name</p></div>
-                                    <div class=""><lightning-input class="input_border" variant="label-hidden" type="text" onchange={handleToNameChange}></lightning-input></div>
-                                    <div class=""></div>
-                              </div>
-                              <div class="message">
-                                    <div class="con-label"><p>Subject</p></div>
-                                    <div class=""><lightning-input class="input_border" variant="label-hidden" type="text" onchange={handleSubjectChange}></lightning-input></div>
-                                    <div class=""></div>
-                              </div>
-                              <div class="message">
-                                    <div class=""><p>Email</p></div>
-                                    <div class="">
-                                          <select class="slds-select" name = "optionSelect" onchange={handleEmailChange} >
-                                                <option value="Brightonsecondary@supplydesk.co.uk">Brightonsecondary@supplydesk.co.uk</option>
-                                                <option value="Watford@supplydesk.co.uk">Watford@supplydesk.co.uk</option>
-                                                <option value="Chelmsford@supplydesk.co.uk">Chelmsford@supplydesk.co.uk</option>
-                                                <option value="Kent@supplydesk.co.uk">Kent@supplydesk.co.uk</option>
-                                                <option value="Cardiff@supplydesk.co.uk">Cardiff@supplydesk.co.uk</option>
-                                                <option value="Southampton@supplydesk.co.uk">Southampton@supplydesk.co.uk</option>
-                                                <option value="Wokingham@supplydesk.co.uk">Wokingham@supplydesk.co.uk</option>
-                                                <option value="Eastmidlands@supplydesk.co.uk">Eastmidlands@supplydesk.co.uk</option>
-                                                <option value="Leeds@supplydesk.co.uk">Leeds@supplydesk.co.uk</option>
-                                                <option value="Lincolnshire@supplydesk.co.uk">Lincolnshire@supplydesk.co.uk</option>
-                                                <option value="Manchester@supplydesk.co.uk">Manchester@supplydesk.co.uk</option>
-                                                <option value="Sheffield@supplydesk.co.uk">Sheffield@supplydesk.co.uk</option>
-                                                <option value="North.east@supplydesk.co.uk">North.east@supplydesk.co.uk</option>
-                                          </select>
+                              <div class="con_info_div2">
+                                    <h5>Need assistance? Send us an email</h5>
+                                    <div class="message">
+                                          <div class="con-label"><p>Name</p></div>
+                                          <div><lightning-input class="input_border" variant="label-hidden" type="text" onchange={handleToNameChange}></lightning-input></div>
+                                          <div></div>
                                     </div>
-                                    <div class=""></div>
+                                    <div class="message">
+                                          <div class="con-label"><p>Subject</p></div>
+                                          <div><lightning-input class="input_border" variant="label-hidden" type="text" onchange={handleSubjectChange}></lightning-input></div>
+                                          <div></div>
+                                    </div>
+                                    <div class="message">
+                                          <div class="con-label"><p>Email</p></div>
+                                          <div>
+                                                <select class="slds-select" name = "optionSelect" onchange={handleEmailChange} >
+                                                      <option value="Brightonsecondary@supplydesk.co.uk">Brightonsecondary@supplydesk.co.uk</option>
+                                                      <option value="Watford@supplydesk.co.uk">Watford@supplydesk.co.uk</option>
+                                                      <option value="Chelmsford@supplydesk.co.uk">Chelmsford@supplydesk.co.uk</option>
+                                                      <option value="Kent@supplydesk.co.uk">Kent@supplydesk.co.uk</option>
+                                                      <option value="Cardiff@supplydesk.co.uk">Cardiff@supplydesk.co.uk</option>
+                                                      <option value="Southampton@supplydesk.co.uk">Southampton@supplydesk.co.uk</option>
+                                                      <option value="Wokingham@supplydesk.co.uk">Wokingham@supplydesk.co.uk</option>
+                                                      <option value="Eastmidlands@supplydesk.co.uk">Eastmidlands@supplydesk.co.uk</option>
+                                                      <option value="Leeds@supplydesk.co.uk">Leeds@supplydesk.co.uk</option>
+                                                      <option value="Lincolnshire@supplydesk.co.uk">Lincolnshire@supplydesk.co.uk</option>
+                                                      <option value="Manchester@supplydesk.co.uk">Manchester@supplydesk.co.uk</option>
+                                                      <option value="Sheffield@supplydesk.co.uk">Sheffield@supplydesk.co.uk</option>
+                                                      <option value="North.east@supplydesk.co.uk">North.east@supplydesk.co.uk</option>
+                                                </select>
+                                          </div>
+                                          <div></div>
+                                    </div>
+                                    <div class="message">
+                                          <div class="con-label"><p>Message</p></div>
+                                          <div><lightning-textarea variant="label-hidden" name="input1" onchange={handleBodyChange}></lightning-textarea></div>
+                                    </div>
                               </div>
-                              <div class="message">
-                                    <div class="con-label"><p>Message</p></div>
-                                    <div class=""><lightning-textarea variant="label-hidden" name="input1" onchange={handleBodyChange}></lightning-textarea></div>
-                              </div>
+                              <div class="send-button"><lightning-button label="Send" variant="destructive" icon-name="utility:internal_share" onclick={handleSendClick} class="button" style="width: 60px; height:60px;">Send</lightning-button></div>
                         </div>
-                        <div class="send-button"><lightning-button label="Send" variant="destructive" icon-name="utility:internal_share" onclick={handleSendClick} class="slds-m-left_x-small button">Send</lightning-button></div>
                   </div>
             </div>
-            <div class="contact-footer slds-grid  slds-wrap slds-align_absolute-center">
+            <div class="contact-footer slds-align_absolute-center">
                   <div class="contact-location">
                         <h1>Our Address</h1>
                         <div class="con_add">
-                              <div class="">
+                              <div>
                                     <img class="icon_img" src="/resource/ContactUS_location" alt="">
                               </div>
-                              <div class="">
-                                    <p class="">Unit 4</p>
-                                    <p class="">Hove Business Center</p>
-                                    <p class="">Fonthill Road</p>
-                                    <p class="">Hove</p>
-                                    <p class="">BN3 6HA</p>
+                              <div>
+                                    <p class="con_p">Unit 4</p>
+                                    <p class="con_p">Hove Business Center</p>
+                                    <p class="con_p">Fonthill Road</p>
+                                    <p class="con_p">Hove</p>
+                                    <p class="con_p">BN3 6HA</p>
                               </div>
                         </div>
                   </div>
                   <div class="contact-address">
                         <h1>Our Contacts</h1>
-                        <p class=""><img class="icon_img" src="/resource/ContactUS_phone" alt=""> 44 (0)1273 609 993</p>
-                        <p class=""><img class="icon_img" src="/resource/ContactUS_email" alt=""> @supplydesk.co.uk</p>
+                        <p><img class="icon_img" src="/resource/ContactUS_phone"> 44 (0)1273 609 993</p>
+                        <p><img class="icon_img" src="/resource/ContactUS_email"> @supplydesk.co.uk</p>
                   </div>
                   <div class="contact-no">
                         <img src={bglogo} alt="ContactUS_user">
                   </div>
             </div>
       </div>
+
+      <c-ts_-error-component reloadpage={reloadpage}>
+      </c-ts_-error-component>
+      
 </template>

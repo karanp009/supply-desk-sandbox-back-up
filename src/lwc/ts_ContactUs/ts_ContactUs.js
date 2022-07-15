@@ -12,6 +12,22 @@ export default class Ts_ContactUs extends LightningElement {
       Email = "";
       Body = "";
 
+      // for loading spinner
+      @track isSpinner = false; 
+      // For Reload Page
+      @track reloadpage;
+
+      connectedCallback() {
+            this.isSpinner = true;
+            var meta = document.createElement("meta");
+            meta.setAttribute("name", "viewport");
+            meta.setAttribute("content", "width=device-width, initial-scale=1.0");
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            setTimeout(() => {
+                this.isSpinner = false;
+            }, 1000);
+        }
+
       handleToNameChange(event){
             this.Name = event.target.value;
       }
@@ -28,6 +44,8 @@ export default class Ts_ContactUs extends LightningElement {
             this.Body = event.target.value;
       }
 
+
+
       handleSendClick(event){
             console.log(this.Name);
             console.log(this.Subject);
@@ -38,7 +56,9 @@ export default class Ts_ContactUs extends LightningElement {
             .then( () => {
                 console.log('Success');
             }).catch( error => {
-                console.log('Error');
+                console.log('Error',error);
+                this.reloadpage = true;
+                  this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
             })
       }
 }

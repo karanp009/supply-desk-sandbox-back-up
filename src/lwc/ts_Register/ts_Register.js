@@ -5,7 +5,7 @@ import commstyle from '@salesforce/resourceUrl/CommunityCSS';
 import loginbg from '@salesforce/resourceUrl/loginbg';
 import communityicon from '@salesforce/resourceUrl/communityicons';
 import Contact from '@salesforce/schema/Contact'; 
-// import Roles__c from '@salesforce/schema/Contact.Roles__c';
+import Roles__c from '@salesforce/schema/Contact.Roles__c';
 
 export default class Ts_Register extends LightningElement {
 
@@ -24,6 +24,11 @@ export default class Ts_Register extends LightningElement {
     phoneerror;
     postcodeerror;
     mobileerror;
+
+    // for loading spinner
+    @track isSpinner = false;      
+    // For Reload Page
+    @track reloadpage;                  
 
     // Get Object Info.
     @wire (getObjectInfo, {objectApiName: Contact})
@@ -44,10 +49,16 @@ export default class Ts_Register extends LightningElement {
         }
     }
 
-
-
     connectedCallback() {
         this.setwraponload();
+        this.isSpinner = true;
+        var meta = document.createElement("meta");
+        meta.setAttribute("name", "viewport");
+        meta.setAttribute("content", "width=device-width, initial-scale=1.0");
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        setTimeout(() => {
+            this.isSpinner = false;
+        }, 1000);
     }
 
     // Get Background Image
@@ -73,10 +84,12 @@ export default class Ts_Register extends LightningElement {
         console.log({ valname });
         if (valname == "FirstName") {
             this.contwrap.FirstName = event.target.value;
+            this.template.querySelector('c-ts_-tost-notification').showToast('success','Enter Valid Email and License Id',1000);
             console.log(event.target.value);
         } else if (valname == "LastName") {
             this.contwrap.LastName = event.target.value;
             console.log('OUTPUT lastname:',event.target.value);
+            this.template.querySelector('c-ts_-tost-notification').showToast('error','Enter Valid Email and License Id Error',1000);
         } else if (valname == "Email") {
             this.contwrap.Email = event.target.value;
             console.log(this.contwrap);
@@ -153,25 +166,21 @@ export default class Ts_Register extends LightningElement {
         else{
             this.mobileerror = "";
         }
-
-        console.log('OUTPUT fname: ',this.fnameerror.length);
-        console.log('OUTPUT lastname: ',this.fnameerror.length);
-        console.log('OUTPUT email: ',this.emailerror.length);
-        console.log('OUTPUT phone: ',this.phoneerror.length);
-        console.log('OUTPUT mobile: ',this.mobileerror.length);
         
         if(this.fnameerror.length == 0 && this.emailerror.length == 0 && this.phoneerror.length == 0 && this.mobileerror.length == 0){
             console.log('OUTPUT : Succesfulley register User ');
-            // CreateUser({ contwrapdata: wrapdata })
-            //     .then((result) => {
-            //         console.log({ result });
-            //         if (result != null || result != '') {
+            CreateUser({ contwrapdata: wrapdata })
+                .then((result) => {
+                    console.log({ result });
+                    if (result != null || result != '') {
 
-            //         }
-            //     })
-            //     .catch((error) => {
-            //         console.log(error);
-            //     });
+                    }
+                })
+                .catch((error) => {
+                    console.log(error);
+                    this.reloadpage = true;
+                    this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
+                });
         }
         else{
             console.log('OUTPUT : User Not Registered ');
@@ -188,4 +197,10 @@ export default class Ts_Register extends LightningElement {
         this.contwrap.Mobile = '';
         this.contwrap.Phone = '';
     }
+
+    // // Notification Toast 
+
+    // this.template.querySelector('c-ts_-tost-notification').showToast('success','Enter Valid Email and License Id',10000);
+
+    
 }

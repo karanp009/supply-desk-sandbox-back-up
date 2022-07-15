@@ -10,7 +10,7 @@
     </template>
 
     <div class="slds-grid slds-wrap slds-theme_default scheduler-main-div">
-        <div class="slds-col slds-size_2-of-12">
+        <!-- <div class="slds-col slds-size_2-of-12">
             To display list of events or any parent records
             <div class=" slds-p-around_medium slds-border_right slds-scrollable_y"
                 style="height:800px; margin-right:15px;">
@@ -46,7 +46,7 @@
                     </lightning-card>
                 </template>
             </div>
-        </div>
+        </div> -->
         <div class="slds-col slds-size_8-of-12 left-div">
             <div class="top-div">
                 <div class="top-available-div tpd">
@@ -66,11 +66,41 @@
                 Weekly Tasks
             </div>
             <div class="calender-div">
-                <div id="calendar" class="fullcalendarjs" style="margin-right: 10px;"></div>
+                <div id="calendar-main" class="fullcalendarjs" style="margin-right: 10px;"></div>
             </div>
         </div>
         <div class="slds-col slds-size_4-of-12 right-div">
-
+            <div class="small-calander">
+                <div id="calendar"></div>
+            </div>
+            <div class="event-list">
+                <div class="date-div">
+                    <div class="date-show">{selectedDate}</div>
+                    <div class="event-count">({totalAvailiblityCount} events)</div>
+                </div>
+                <!-- <div class="evnt-block">
+                    <div class="evnt-time">
+                        <div class="evnt-dot"></div>
+                        <div class="evnt-strt-time">8:00 am</div>
+                    </div>
+                    <div class="evnt-title-dur">
+                        <div class="evnt-ttl">Meeting</div>
+                        <div class="evnt-dur">15 Min</div>
+                    </div>
+                </div> -->
+                <template for:each={availiblityDataLst} for:item="evnt">
+                    <div class="evnt-block" key={evnt.Id}>
+                        <div class="evnt-time">
+                            <div class="evnt-dot"></div>
+                            <div class="evnt-strt-time">8:00 am</div>
+                        </div>
+                        <div class="evnt-title-dur">
+                            <div class="evnt-ttl">{evnt.Type__c}</div>
+                            <div class="evnt-dur">15 Min</div>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
     </div>
 
@@ -80,17 +110,12 @@
             <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
                 <div class="slds-modal__container">
-                    <header class="slds-modal__header">
-                        <lightning-button-icon icon-name="utility:close" class="slds-modal__close "
-                            alternative-text="Close" title="Close" size="large" variant="bare-inverse"
-                            onclick={handleCancel} keydown={escapeModal}>
-
-                        </lightning-button-icon>
+                    <header class="slds-modal__header op-header">
                         <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Create Availability</h2>
                     </header>
                     <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
                         <lightning-combobox class="slds-modal__content" name="Type" label="Type" value={value}
-                            placeholder="Select Availability" options={options} onchange={handleChange}>
+                            placeholder="Select Availability" options={eventTypeOption} onchange={handleChange}>
                         </lightning-combobox>
                         <lightning-input label="Start Date" name="start" type="datetime" required value={startDate}>
                         </lightning-input>

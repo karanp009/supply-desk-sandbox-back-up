@@ -4,8 +4,6 @@
     min-height: 100vh;
     background-color: var(--bg-color);
     overflow: hidden;
-    /* background-image: url(https://supplydesk--mvcdev--c.visualforce.com/resource/1656478070000/LoginPageImage?); */
-    /* background-image: url('/resource/bgimage');; */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -29,14 +27,12 @@
 
 .signin-signup {
     position: absolute;
-    top: 50%;
-    left: 75%;
-    /* transform: translate(-50%, -50%); */
+    top: 29%;
+    left: 50%;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr;
     z-index: 5;
-    /* transition: 1s 0.7s ease-in-out; */
 	border-left: 1px solid black;
 }
 
@@ -49,7 +45,6 @@
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    /* transition: 0.2s 0.7s ease-in-out; */
 }
 
 .sign-in-form .sign-in-form {
@@ -59,6 +54,10 @@
 .sign-in-form .sign-up-form {
     z-index: 1;
     opacity: 0;
+}
+
+.sign_in a{
+    color: red;
 }
 
 /* MODAL */
@@ -81,13 +80,10 @@
 .input-field {
     height: 45px;
     margin: 10px 0;
-    /* display: grid;
-    grid-template-columns: 15% 70% 15%; */
     display: flex;
     padding: 0 0.4rem;
     background: #fdfbfe;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	/* border-radius: 15px; */
     background: #D9D9D9;
 }
 
@@ -130,52 +126,22 @@
 
 .btn_cls {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 15px;
     cursor: pointer;
     padding: 3% 10%;
-    width: 150px;
     font-size: 20px;
-    background: #2196F3ED;
+    background: red;
+    margin: 0 22%;
+    color: white;
 }
 
-/* ANIMATION */
-
-/* .container.sign-up-mode:before {
-    transform: translate(100%, -50%);
-    right: 52%;
+input{
+    font-size: 20px;
 }
-
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
-    transform: translateX(-800px);
-}
-
-.container.sign-up-mode .right-panel .content,
-.container.sign-up-mode .right-panel .image {
-    transform: translateX(0px);
-}
-
-.container.sign-up-mode .left-panel {
-    pointer-events: none;
-}
-
-.container.sign-up-mode .right-panel {
-    pointer-events: all;
-}
-
-.container.sign-up-mode .signin-signup {
-    left: 25%;
-}
-
-.container.sign-up-mode .sign-in-form .sign-in-form {
-    z-index: 1;
-    opacity: 0;
-}
-
-.container.sign-up-mode .sign-in-form .sign-up-form {
-    z-index: 2;
-    opacity: 1;
-} */
+.errormsgcls {
+    color: red;
+    font-size: 16px;
+    font-weight: 700;
+ }
 @media (max-width: 1024px){
     .logo_cls {
         position: absolute;
@@ -188,15 +154,13 @@
 
     .signin-signup {
         position: absolute;
-        top: 60%;
+        top: 40%;
         left: 0;
-        transform: translate(-50%, -50%);
         width: 80%;
         display: grid;
         grid-template-columns: 1fr;
         z-index: 5;
-        margin: 0 50%;
-        /* transition: 1s 0.7s ease-in-out; */
+        margin: 0 10%;
         border-left: 0px solid black;
     }
 
@@ -221,6 +185,35 @@
         margin: 30px 0;
     }
 
+    .btn_cls{
+        font-size: 30px;
+        /* width: ; */
+    }
+
+}
+
+@media (max-width: 768px){
+    .sign_in p{
+        font-size: 30px;
+    }
+
+    .signin-signup {
+        position: absolute;
+        top: 33%;
+        left: 0;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index: 5;
+        margin: 0 5%;
+        border-left: 0px solid black;
+    }
+}
+
+@media (max-width: 925px){
+    .sign_in p{
+        font-size: 27px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -234,24 +227,49 @@
         height: 1500px;
         left: 30%;
         bottom: 68%;
-        transform: translateX(-50%);
         right: initial;
         top: initial;
-        /* transition: 2s ease-in-out; */
-    }
-
-    .signin-signup {
-        width: 100%;
-        left: 50%;
-        top: 95%;
-        transform: translate(-50%, -100%);
-        /* transition: 1s 0.8s ease-in-out; */
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width:680px) {
+    .sign_in h2{
+        font-size: 80px;
+    }
+
+    .sign_in p{
+        font-size: 25px;
+    }
+
+    .sign_in a{
+        font-size: 23px;
+    }
+
+    .signin-signup {
+        position: absolute;
+        top: 33%;
+        left: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index: 5;
+        margin: 0 0;
+        border-left: 0px solid black;
+    }
+
+}
+
+@media (max-width: 580px) {
     form {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .sign_in h2{
+        font-size: 70px;
+    }
+
+    .sign_in p{
+        text-align: center;
     }
 
     .container:before {
@@ -263,7 +281,52 @@
         bottom: 24%;
         left: 50%;
     }
+
+    .sign-in-form {
+        padding: 0 3rem;
+    }
 }
+
+@media (max-width:510px) {
+    .sign_in h2{
+        font-size: 55px;
+    }
+
+    .sign-in-form {
+        padding: 0 1rem;
+    }
+}
+
+@media(max-width:430px){
+
+    .logo_cls {
+        top: 10%;
+    }
+
+    .signin-signup {
+        top: 23%;
+    }
+
+    .sign_in h2{
+        font-size: 40px;
+    }
+
+    .sign_in p{
+        font-size: 18px;
+    }
+
+    .sign_in a{
+        font-size: 16px;
+    }
+
+    .btn_cls{
+        font-size: 20px;
+    }
+}
+
+
+
+
 
 /* =================== Spinner =================== */
 

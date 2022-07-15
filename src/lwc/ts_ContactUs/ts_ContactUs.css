@@ -1,19 +1,23 @@
 .main-contact{
       background-color: white;
-      top: 0;
-      height: 100vh;
+      
 }
 .main_div{
-      height: 79vh;
+      height: 80%;
+      padding: 60px 0 0 60px;
+      display:flex ;
+      background-image: url('/resource/map_contactus');
+      background-size: 100% 80%;
+      background-repeat: no-repeat;
 }
 .contact-footer{
-      height: 20vh;
+      height: 20%;
+      margin-top: 50px;
 }
 .map_img{
-      background-image: url('/resource/map_contactus');
+      width: 60%;
       background-size:cover;
       background-repeat: no-repeat;
-      /* padding: 70px; */
       height: 80%;
       display: flex;
 }
@@ -34,7 +38,10 @@
 .contact-footer{
       display: flex;
       align-items: unset;
-
+      justify-content: center;
+      align-items: baseline;
+      justify-content: space-around;
+      padding: 0 2% 0 6%;
 }
 .contact-footer h1{
       color: rgba(210, 35, 42, 1);
@@ -48,13 +55,14 @@
 }
 .send-button{
       text-align: end;
+      padding-bottom: 15px;
 }
 .con-label {
       font-size: 22px;
 }
 .message{
       display: block;
-      margin-top: 8%;
+      margin-top: 5%;
 }
 .message p{
       font-size: 16px;
@@ -68,7 +76,6 @@
 }
 .send-button{
       margin: 15px 0;
-      float: right;
 }
 .button button{
       padding: 10px;
@@ -81,9 +88,6 @@
 .contact-address img{
       height: 16px;
       width: 21px;
-}
-.contact-address{
-      margin: 0 13%;
 }
 .contact-location img{
       height: 32px;
@@ -107,13 +111,8 @@
 }
 
 .con_info{
-      position:absolute; 
-      background-color: rgba(246, 246, 246, 1); 
-      margin-left:59%; 
-      box-shadow: 0px 0px 4px #beb7b7; 
-      border-radius: 3px;
-      top: 0;
-      width: 33%;
+      top: 60px;
+      width: 40%;
 }
 
 .con_info h5{
@@ -121,186 +120,331 @@
       font-weight:500;
 }
 
-.con_info_div{
+.con_info_div2{
       padding: 15px;
+}
+
+.con_info_div{
+      background-color: rgba(246, 246, 246, 1); 
+      box-shadow: 0px 0px 4px #beb7b7; 
+      border-radius: 3px;
+      width: 80%;
+      height: 100%;
 }
 
 .con_add{
       display: flex;
 }
 
-@media (max-width: 1024px){
+.contact-location{
+      width: 25%;
+}
+.contact-address{
+      width: 25%;
+}
+.contact-no{
+      width: 30%;
+}
+
+.con_info{
+      font-weight: bold;
+}
+
+@media(max-width:1800px) and (min-width:1500px){
+      .message{
+            margin-top: 7%;
+      }
+}
+
+@media (max-width:1024px){
+      .main-contact{
+            background-color: white;
+            margin: 60px 0 0 0;
+      }
+      .main_div{
+            height: 80%;
+            padding: 0;
+            display: block;
+            background-size: 100% 50%;
+      }
+      .map_img{
+            width: 100%;
+      }
+      .contact-footer{
+            height:15%;
+            justify-content: space-around;
+            padding: 0 2% 0 6%;
+            margin-top: 0;
+            width: 100%;
+      }
+      .con_touch{
+            padding: 0;
+            margin: 12% 12%;
+      }
       .con_info{
-            top: 25%;
-            width: 50%;
-            margin: 0 25%;
+            width: 100%;
+      }
+
+      .con_info_div{
+            width: 60%;
+            margin: 0 20%;
       }
       .map_img{
             height: 45%;
       }
+
+      .map_img h1{
+            font-size: 55px;
+      }
+
+      .map_img p{
+            font-size: 26px;
+      }
+
+      .contact-no img{
+            width: 100%;
+            height: 44%;
+      }
+
+      .con-label{
+            margin: 15px 0;
+      }
+      .con-label p{
+            font-size: 16px;
+      }
+
+      .contact-address{
+            margin: 0 0%;
+      }
+
+      .con_info h5{
+            font-size: 22px;
+      }
+
+      .con_info p{
+            font-size: 20px;
+      }
       .contact-footer{
-            justify-content: space-around;
+            margin-top: 30px;
+      }
+      .contact-footer h1{
+            font-size: 28px;
+      }
+      .contact-footer p{
+            font-size: 18px;
       }
 }
 
-
-@media (max-width: 360px){
+@media (max-width:820px){
       .con_info{
-            top: 20%;
+            top: 28%;
+      }
+      .message{
+            margin-top: 3%;
+      }
+      .contact-footer h1{
+            font-size: 22px;
+      }
+      .contact-footer p{
+            font-size: 17px;
+      }
+}
+
+@media (max-width:768px){
+      .main_div{
+            height: 85%;
+            padding: 0;
+      }
+      .contact-footer{
+            height:15%;
+            justify-content: space-around;
+            padding: 0 2% 0 6%;
+      }
+      .con_touch{
+            padding: 0;
+            margin: 7% 8%;
+      }
+      .message{
+            margin-top: 4%;
+      }
+      .con_touch h1{
+            font-size: 45px;
+      }
+      .con_touch p{
+            font-size: 20px;
+      }
+      /* .con_info{
+            top: 25%;
+            width: 50%;
+            margin: 0 25%;
+      } */
+      .con_info_div{
+            width: 70%;
+            margin: 0 15%;
+      }
+      .map_img{
+            height: 45%;
+      }
+
+      .map_img h1{
+            font-size: 45px;
+      }
+
+      .map_img p{
+            font-size: 20px;
+      }
+
+      .contact-no img{
+            width: 100%;
+            height: 44%;
+      }
+
+      .con-label{
+            margin: 15px 0;
+      }
+
+      .contact-address{
+            margin: 0 0%;
+      }
+      
+
+      .con_info h5, .con_info p{
+            font-size: 20px;
+      }
+
+      .send-button button, .slds-button{
+            width: 160px;
+            height: 50px;
+      }
+
+      .contact-footer h1{
+            font-size: 17px;
+      }
+      .contact-footer p{
+            font-size: 13px;
+      }
+}
+
+@media (max-width:610px){
+      .con_info h5, .con_info p{
+            font-size: 18px;
+      }
+      .contact-footer h1{
+            font-size: 16px;
+      }
+      .contact-footer p{
+            font-size: 10px;
+      }
+      .con_info_div{
             width: 80%;
             margin: 0 10%;
       }
-
 }
 
-/* @media (min-width: 1024px) {
-      .map_img{
-            display: block;
+@media (max-width:480px){
+      .contact-footer h1{
+            font-size: 14px;
       }
-      .main_div{
-            height: 80vh;
-      }
-      .contact-footer{
-            bottom: 0;
-            margin-top: 40vh;
-      }
-      .con_touch{
-            margin: 0;
-            padding: 10% 0 17% 4%;
-      }
-      .con_info{
-            position:absolute; 
-            background-color: rgba(246, 246, 246, 1); 
-            margin: 0 20%;
-            width: 60%;
-            top: 30%;
-            height: 85%;
-            box-shadow: 0px 0px 4px #beb7b7; 
-            border-radius: 3px;
-      }
-      .map_img{
-            background-size: 100% 80%;
-            height: 80%;
-      }
-      .con_info_div{
-            padding: 20px;
-      }
-      .con_touch{
-            margin: 0;
-            padding: 10% 4% 17% 4%;
-      }
-      .map_img{
-            background-size: 100% 60%;
-            height: 80%;
-      }
-      .message{
-            margin-top: 0%;
-      }
-      .con_info p{
-            margin: 60px 0 10px 0;
-      }
-
-      .slds-select{
-            height: 55px;
-      }
-      button{
-            height: 80px;
-            width: 260px;
-      }
-      .slds-button{
-            height: 80px;
-      }
-} */
-
-/* @media(min-width: 768px){
-      .slds-button{
-            height: 80px;
-            width: 220px;
-      }
-      .button{
-            height: 80px;
-            width: 220px;
-      }
-
-      button{
-            height: 80px;
-            width: 220px;
-      }
-      .con_info_div{
-            padding: 20px;
-      }
-      .con_info{
-            height: 50%;
-      }
-      .message{
-            margin-top: 11%;
-      }
-      .contact-footer{
-            margin-top: 0 !important;
-      }
-
-} */
-
-/* @media (max-width:886px){
-      .message{
-            margin-top: -6%;
-      }
-}
-@media (max-width:816px){
-      .message{
-            margin-top: -4%;
-      }
-} */
-
-
-/* 
-@media (max-width:1850px){
-      .message{
-            margin-top: 10%;
-      }
-}
-@media (max-width:1660px){
-      .message{
-            margin-top: 12%;
-      }
-}
-@media (max-width:1420px){
-      .message{
-            margin-top: 14%;
-      }
-}
-@media (max-width:1260px){
-      .message{
-            margin-top: 16%;
-      }
-}
-@media (max-width:1160px){
-      .message{
-            margin-top: 18%;
+      .contact-footer p{
+            font-size: 8px;
       }
 }
 
-@media (max-width:972px){
-
-      .message{
-            margin-top: -8%;
+@media (max-width:430px){
+      .map_img h1{
+            font-size: 27px;
       }
-       .con_touch{
-            padding:7% 4% 17% 4%;
+      .map_img p{
+            font-size: 16px;
       }
-      .map_img{
-            background-size: 100% 75%;
-            height: 80%;
+      .con_info h5, .con_info p{
+            font-size: 14px;
       }
-
+      .contact-footer h1{
+            font-size: 12px;
+      }
+      .contact-footer p{
+            font-size: 7px;
+      }
+      
 }
-@media (max-width:886px){
-      .message{
-            margin-top: -6%;
+
+/* =================== Spinner =================== */
+
+.spinner-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .spinner-ts {
+      --size: 85px;
+  
+      width: var(--size);
+      height: var(--size);
+  
+      border-radius: 50%;
+      perspective: 800px;
+  }
+  
+  .inner {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 3px solid transparent;
+  }
+  
+  .inner.one {
+      left: 0;
+      top: 0;
+      animation: rotate-one 1s linear infinite;
+      border-bottom: 3px solid #999999;
+  }
+  
+  .inner.two {
+      right: 0;
+      top: 0;
+      animation: rotate-two 1s linear infinite;
+      border-right: 3px solid #000000;
+  }
+  
+  .inner.three {
+      right: 0;
+      bottom: 0;
+      animation: rotate-three 1s linear infinite;
+      border-top: 3px solid #d90000;
+  }
+  
+  @keyframes rotate-one {
+      0% {
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
       }
-}
-@media (max-width:816px){
-      .message{
-            margin-top: -4%;
+  
+      100% {
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
       }
-} */
+  }
+  
+  @keyframes rotate-two {
+      0% {
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+      }
+  
+      100% {
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      }
+  }
+  
+  @keyframes rotate-three {
+      0% {
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      }
+  
+      100% {
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      }
+  }
+  
+  /* =================== Spinner =================== */

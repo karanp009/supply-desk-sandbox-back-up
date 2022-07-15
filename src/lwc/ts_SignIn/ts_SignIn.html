@@ -25,16 +25,17 @@
 
                         <h2 class="title">Login</h2>
                         <p class="subtitle">Please enter your login credentials below</p>
+                        <span class="errormsgcls">{loginerror}</span>
                         <div class="input-field">
                             <img src={userimg} />
-                            <lightning-input name="username" autocomplete="" class="input_cls" value={username}
-                                onchange={handleChange} data-id="user-sgn-fld" placeholder="client.u@foxmail.com">
+                            <lightning-input name="username" class="input_cls" value={username}
+                                data-id="user-sgn-fld" placeholder="client.u@foxmail.com">
                             </lightning-input>
                         </div>
                         <div class="input-field">
                             <img src={passwordimg} />
-                            <lightning-input type="Password" autocomplete="" name="password" class="input_cls"
-                                value={password} onchange={handleChange} placeholder="********"></lightning-input>
+                            <lightning-input type="Password"  name="password" class="input_cls"
+                                value={password} placeholder="********"></lightning-input>
                         </div>
                         <div>
                             <a class="pass" href="/s/forgotpasswordpage">Forgot your password?</a>

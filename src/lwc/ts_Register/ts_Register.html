@@ -1,5 +1,25 @@
 <template>
 
+    <!-- ===== Toast ====== -->
+
+    <c-ts_-tost-notification></c-ts_-tost-notification>
+
+    <!-- ==== Toast ====== -->
+
+    <!-- ======= Spinner ======= -->
+
+    <template if:true={isSpinner}>
+        <div class="slds-spinner_container spinner-center" style="overflow: hidden;">
+            <div class="spinner-ts">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+    </template>
+
+    <!-- ======= Spinner ======= -->
+
     <div class="container" style={backgroundImage}>
         <div class="forms-container">
             <div class="logo_cls">
@@ -67,5 +87,7 @@
             </div>
         </div>
     </div>
+
+    <c-ts_-error-component reloadpage={reloadpage}></c-ts_-error-component>
 
 </template>

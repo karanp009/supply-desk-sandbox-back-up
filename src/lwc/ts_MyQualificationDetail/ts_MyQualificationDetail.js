@@ -25,10 +25,16 @@ import Qualificationcss from '@salesforce/resourceUrl/Qualificationcss';
 import getContactId from '@salesforce/apex/ts_MyQualificationDetailController.getContactId';
 import editQuali from '@salesforce/apex/ts_MyQualificationDetailController.editQuali';
 import Choice_of_Country__c from '@salesforce/schema/TR1__Associated_Qualification__c.Choice_of_Country__c';
+import saveIcon from '@salesforce/resourceUrl/saveIcon';
+import cancelIcon from '@salesforce/resourceUrl/cancelIcon';
 import commstyle from '@salesforce/resourceUrl/CommunityCSS';
 
 export default class Ts_MyQualificationDetail extends LightningElement {
 
+
+    saveImg = saveIcon;
+    cancelImg = cancelIcon;
+    
     //For Spinner
     @track isSpinner;
 

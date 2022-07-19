@@ -47,6 +47,7 @@ export default class Ts_ContactUs extends LightningElement {
 
 
       handleSendClick(event){
+            this.isSpinner = true;
             console.log(this.Name);
             console.log(this.Subject);
             console.log(this.Email);
@@ -55,9 +56,11 @@ export default class Ts_ContactUs extends LightningElement {
             sendEmailToController(recordInput)
             .then( () => {
                 console.log('Success');
+                this.isSpinner = false;
             }).catch( error => {
                 console.log('Error',error);
                 this.reloadpage = true;
+                this.isSpinner = false;
                   this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
             })
       }

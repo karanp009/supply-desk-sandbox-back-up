@@ -19,7 +19,6 @@ public without sharing class ts_ProfilePageController {
     public static User getData(){
         try{
             User usr = [SELECT Id,FirstName,LastName,Email,Phone,MobilePhone,FullPhotoUrl FROM User WHERE Id=:UserInfo.getUserId()];
-            System.debug('usr => '+usr);
             return usr;
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
@@ -28,6 +27,19 @@ public without sharing class ts_ProfilePageController {
         }
     }
     
+    @AuraEnabled
+    public static ContentDocument getDocsData(){
+        try{
+            ContentDocumentLink contentLink = [SELECT Id, LinkedEntityId, ContentDocumentId, Visibility FROM ContentDocumentLink where LinkedEntityId =: UserInfo.getUserId()];
+            ContentDocument contentData = [SELECT Id, Title FROM ContentDocument WHERE Id =: contentLink.ContentDocumentId];
+            return contentData;
+        } catch (Exception e) {
+            system.debug('e.getMessagelogin+   '+e.getMessage());
+            GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'getData');
+            return null;
+        }
+    }
+
     @AuraEnabled
     public static Contact fetchContact(){
         try {
@@ -48,7 +60,7 @@ public without sharing class ts_ProfilePageController {
     }
 
     @AuraEnabled
-    public static void saveFile(String userId, String fileId, String base64Data) { 
+    public static String saveFile(String userId, String fileId, String base64Data) { 
         try{
 
             System.debug('userId>>'+userId);
@@ -60,9 +72,12 @@ public without sharing class ts_ProfilePageController {
             ConnectApi.Photo photoProfile = ConnectApi.UserProfiles.setPhoto(null, userId,  fileUpload);
 
             // ConnectApi.Photo photo = ConnectApi.UserProfiles.setPhoto(communityId, parentId,fileId, EncodingUtil.base64Decode(base64Data));
+            return 'Success';
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
             GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'saveFile');
+            String data = 'getMessagelogin+   '+e.getMessage() + 'line no => '+e.getLineNumber();
+            return data;
         }
     }
 
@@ -77,7 +92,7 @@ public without sharing class ts_ProfilePageController {
     }
 
     @AuraEnabled
-    public static void saveCV(String parentId, String fileName, String base64Data) { 
+    public static List<String> saveCV(String parentId, String fileName, String base64Data) { 
         try{
 
             base64Data = EncodingUtil.urlDecode(base64Data, 'UTF-8');
@@ -91,19 +106,25 @@ public without sharing class ts_ProfilePageController {
             insert contentVersion;
 
             //After saved the Content Verison, get the ContentDocumentId
-            Id contentDocumentId = [SELECT ContentDocumentId FROM ContentVersion WHERE Id =:contentVersion.Id].ContentDocumentId;
+            ContentVersion contentData = [SELECT Id, Title, ContentDocumentId FROM ContentVersion WHERE Id =:contentVersion.Id];
 
             //Insert ContentDocumentLink
-            ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
-            contentDocumentLink.ContentDocumentId = contentDocumentId;//Add ContentDocumentId
-            contentDocumentLink.LinkedEntityId = parentId;//Add attachment parentId
-            contentDocumentLink.ShareType = 'I';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
-            contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
-            insert contentDocumentLink;
+            // ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
+            // contentDocumentLink.ContentDocumentId = contentData.contentDocumentId;//Add ContentDocumentId
+            // contentDocumentLink.LinkedEntityId = parentId;//Add attachment parentId
+            // contentDocumentLink.ShareType = 'I';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
+            // contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
+            // insert contentDocumentLink;
+
+            List<String> lst = new List<String> {contentData.contentDocumentId, contentData.Title};
+            return lst;
 
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
             GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'saveCV');
+            String data = 'getMessagelogin+   '+e.getMessage() + 'line no => '+e.getLineNumber();
+            List<String> lst = new List<String> {data};
+            return lst;
         }
 
     }

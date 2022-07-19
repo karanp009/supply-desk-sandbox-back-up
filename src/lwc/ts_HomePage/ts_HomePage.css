@@ -2,12 +2,13 @@
     display: flex;
     background-image: url('/resource/coverImgClient');
     height: 47vh;
-    width: 99.9vw;
+    /* width: 101vw; */
     background-position: bottom;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-right: 0;
 }
 
 .welcomeText {
@@ -99,7 +100,7 @@
 }
 
 .img1 {
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -109,17 +110,17 @@
 }
 
 .img3 {
-    padding: 16px;
+    padding: 13px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .img4 {
-    padding: 17px;
+    padding: 14px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .img5 {
-    padding: 10px;
+    padding: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -148,6 +149,83 @@
     position: relative;
 }
 
+
+/* =================== Spinner =================== */
+
+.spinner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-ts {
+    --size: 85px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.inner.one {
+    left: 0;
+    top: 0;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #999999;
+}
+
+.inner.two {
+    right: 0;
+    top: 0;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000000;
+}
+
+.inner.three {
+    right: 0;
+    bottom: 0;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #d90000;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+
+/* =================== Spinner =================== */
+
 @media (max-width: 1400px) {
     .nextIcon,
     .previousIcon {
@@ -159,7 +237,7 @@
     }
     .midBlock {
         height: 40vh;
-        width: 100vw;
+        /* width: 100vw; */
     }
     .profileImg {
         width: 65%;
@@ -257,7 +335,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 2% 0%;
+        padding: 5%;
+        /* width: 102%; */
+        margin-right: 0;
     }
     .welcomeText {
         color: #D2232A;
@@ -282,7 +362,7 @@
         top: 2px;
         left: 45px;
     }
-    .img1 {
+    /* .img1 {
         padding: 13px;
     }
     .img2 {
@@ -296,7 +376,7 @@
     }
     .img5 {
         padding: 6px;
-    }
+    } */
     .middleText h3 {
         font-size: 18px;
         margin-top: 2%;
@@ -357,6 +437,8 @@
 @media (max-width: 477px) {
     .midBlock {
         height: 30vh !important;
+        /* width: 104%; */
+        margin-right: 0;
     }
     .dbsection-main {
         width: 40% !important;
@@ -376,6 +458,21 @@
     .profileImg {
         top: 0px;
     }
+    .img1 {
+        padding: 5px;
+    }
+    .img2 {
+        padding: 5px;
+    }
+    .img3 {
+        padding: 5px;
+    }
+    .img4 {
+        padding: 5px;
+    }
+    .img5 {
+        padding: 2px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -388,7 +485,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 15% 10% 0 10%;
+        padding: 10%
     }
     .welcomeText {
         color: #D2232A;
@@ -409,7 +506,7 @@
         top: -3px;
         left: 60px;
     }
-    .img1 {
+    /* .img1 {
         padding: 13px;
     }
     .img2 {
@@ -423,7 +520,7 @@
     }
     .img5 {
         padding: 6px;
-    }
+    } */
     .middleText h3 {
         font-size: 14px;
     }

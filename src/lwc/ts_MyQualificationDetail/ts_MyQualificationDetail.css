@@ -1,5 +1,8 @@
 .mainDiv{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* width: 95%; */
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .textp{
@@ -26,7 +29,7 @@
 
 .combox{
     display: flex;
-    font-weight:400;
+    /* font-weight:400; */
     font-size:12px;
 }
 
@@ -86,6 +89,65 @@
     width: 18px;
     height: 18px;
     margin: 0px 3px 0 2px;
+}
+
+.fileInputBox{
+    display: block;
+    border: 1px dashed black;
+    height: 6rem;
+}
+.dropzone {
+    position: relative;
+}
+
+.dropzone.hover {
+    border: 10px solid #FE5;
+    color: #FE5;
+}
+
+.dropzone.dropped {
+    background: #222;
+    border: 10px solid #444;
+}
+
+.dropzone div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone img {
+    border-radius: 10px;
+    vertical-align: middle;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.dropzone [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cvData {
+    display: none;
+    height: 2rem;
+    margin: 1rem auto;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    padding: 0.5rem;
+}
+
+.cvData img {
+    height: 18px;
+    margin: 0 0 4px 0;
+    float: right;
+    cursor: pointer;
 }
 
 /* =================== Spinner =================== */
@@ -241,5 +303,72 @@
     }
     .group2bdiv{
         width: 75%;
+    }
+    .cvData {
+        margin: 1rem 0 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .mainDiv{
+        margin-top: 30px !important;
+        margin-left: 0px !important;
+    }
+    .mainTextDiv{
+        width: 59% !important;
+    }
+
+    .t2{
+        font-size: 21.5px;
+    }
+
+    .cvDiv{
+        margin-left: 1rem !important;
+    }
+
+    .mainTextDiv{
+        margin-left: 1rem !important;
+    }
+    .mbCv{
+        width: 95% !important;
+    }
+    .mnDiv{
+        margin-left: 1rem !important;
+    }
+    .textp{
+        width: 45% !important;
+    }
+    .docDiv{
+        margin-left: 1rem !important;
+        width: 90%;
+    }
+    .wpdate{
+        margin-left: 1rem !important;
+    }
+    .combox{
+        margin-left: 1rem !important;
+        width: 85% !important;
+    }
+    .mobWid{
+        width: 85% !important;
+    }
+    .l-input{
+        margin-left: 2rem !important;
+    }
+    .seekDiv{
+        width: 60% !important;
+    }
+    .duelSize{
+        width: 90% !important;
+    }
+    .group2adiv{
+        width: 100%;
+    }
+    .group2bdiv{
+        width: 100%;
+    }
+    .cvData {
+        margin: 1rem 0 1rem 1rem;
     }
 }

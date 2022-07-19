@@ -28,9 +28,14 @@ import Choice_of_Country__c from '@salesforce/schema/TR1__Associated_Qualificati
 import saveIcon from '@salesforce/resourceUrl/saveIcon';
 import cancelIcon from '@salesforce/resourceUrl/cancelIcon';
 import commstyle from '@salesforce/resourceUrl/CommunityCSS';
+import communityicon from '@salesforce/resourceUrl/communityicons';
+import dragFileIcon from '@salesforce/resourceUrl/dragFileIcon';
 
 export default class Ts_MyQualificationDetail extends LightningElement {
 
+
+    dragFileImg = dragFileIcon;
+    deleteImg = communityicon + '/communityicons/delete.png';
 
     saveImg = saveIcon;
     cancelImg = cancelIcon;

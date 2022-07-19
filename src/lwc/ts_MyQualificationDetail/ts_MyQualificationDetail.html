@@ -24,12 +24,12 @@
         </c-ts_-error-component>
         <!-- Error Component -->
 
-        <div class="slds-grid slds-gutters slds-border_bottom">
-            <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large" style="display:flex;">
+        <div class="slds-grid slds-gutters"><!--slds-border_bottom-->
+            <div class="slds-col slds-size_8-of-12 slds-m-left_xx-large mainTextDiv" style="display:flex;">
 
                 <div>
                     <p class="slds-m-top_x-large slds-m-left_large t1">Candidate</p>
-                    <p class="slds-m-left_large t2">My Qualifications</p>
+                    <p class="slds-m-left_large t2">My Qualification</p>
                 </div>
             </div>
             <div
@@ -49,28 +49,42 @@
         </div>
         <!-- CV Qualification Start-->
         <template if:true={checkCv}>
-            <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >CV</div>
             <div>
-                <div class="slds-gutters slds-m-left_xx-large">
-                    <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Upload CV</span>
-                    <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
-                        <lightning-input class="input" name="uploadcv" type="text" value="Please upload your CV using the document upload section on the 'My Profile' page" onchange={handleChange} autocomplete="off"></lightning-input>                
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >CV</div>
+                <div class="cvdiv1">
+                    <div class="slds-gutters slds-m-left_xx-large mnDiv">
+                        <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Upload CV</span>
+                        <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element mbCv">
+                            <lightning-input class="input" name="uploadcv" type="text" value="Please upload your CV using the document upload section on the 'My Profile' page" onchange={handleChange} autocomplete="off"></lightning-input>                
+                        </div>
+                        
                     </div>
-                    
+                    <div class="slds-gutters slds-m-left_xx-large mnDiv">
+                        <span class="slds-m-left-large slds-m-bottom_small slds-p-left_large">Gaps Explanation</span>
+                        <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element mbCv">                
+                            <lightning-textarea name="gapsExp" class="input" value={gapsExp} onchange={handleChange}></lightning-textarea>
+                        </div>  
+                    </div>
+                    <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-p-left_small mnDiv">
+                        <div class="slds-col slds-size_2-of-12 slds-m-left-large textp slds-p-left_large">CV Submitted</div>
+                        <div class="mbCv"><lightning-input name="cvSub" class="" type="checkbox" onchange={handleChange} value={cvsub}></lightning-input></div>
+                    </div>
+                    <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_large slds-p-left_small mnDiv">
+                        <div class="slds-col slds-size_2-of-12 slds-m-left-large textp slds-p-left_large">CV Received</div>
+                        <div class="mbCv"><lightning-input name="cvrec" class="" type="checkbox" onchange={handleChange}></lightning-input></div>
+                    </div>
                 </div>
-                <div class="slds-gutters slds-m-left_xx-large">
-                    <span class="slds-m-left-large slds-m-bottom_small slds-p-left_large">Gaps Explanation</span>
-                    <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">                
-                        <lightning-textarea name="gapsExp" class="input" value={gapsExp} onchange={handleChange}></lightning-textarea>
-                    </div>  
-                </div>
-                <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-p-left_small">
-                    <div class="slds-col slds-size_2-of-12 slds-m-left-large textp slds-p-left_large">CV Submitted</div>
-                    <div><lightning-input name="cvSub" class="" type="checkbox" onchange={handleChange} value={cvsub}></lightning-input></div>
-                </div>
-                <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_large slds-p-left_small">
-                    <div class="slds-col slds-size_2-of-12 slds-m-left-large textp slds-p-left_large">CV Received</div>
-                    <div><lightning-input name="cvrec" class="" type="checkbox" onchange={handleChange}></lightning-input></div>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <div class="cvData slds-size_10-of-12">
+                        {cvName} <img src={deleteImg} onclick={deleteCv}>
+                    </div>
                 </div>
             </div>
         </template>
@@ -81,21 +95,20 @@
         <template if:true={checkoverPc}>
             <div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large ">Overseas Police Check</div>
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Qualification Type</span>
                     
-                    <lightning-combobox name="overseasname" label="Overseas Police Check"
-                        class="slds-combobox_container slds-combobox slds-m-left_large slds-m-top_small slds-combobox__form-element slds-form-element__label slds-size_8-of-12"
-                        value={overseasVal} options={overseasPoliceOps} placeholder="Select" onchange={handleChange}
+                    <lightning-combobox name="overseasname" label=""
+                        class="slds-combobox_container slds-combobox slds-m-left_large slds-m-top_xx-small slds-m-bottom_medium slds-combobox__form-element slds-form-element__label slds-size_6-of-12 mobWid"
+                        value={overseasVal} options={overseasPoliceOps} placeholder="Select" onchange={handleChange} variant="label-hidden"
                         >
                     </lightning-combobox>
                 </div>
 
-                <div>
-                    <div style="margin-left: 7em;font-weight:bold; margin-top:2em;">Date Lived/Worked Overseas</div>
-                    <div class="slds-grid slds-gutters" style="margin-top: 5px;">
-                        <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_3-of-12 slds-form-element"
-                            style="margin-left: 6em;">
+                <!-- <div class="slds-gutters slds-m-left_xx-large">
+                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas</span>
+                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
+                        <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_3-of-12 slds-form-element">
                             <lightning-input type="date" name="opcStdate" value={opcStdate} placeholder="Start Date" onchange={handleChange}></lightning-input>
                         </div>
 
@@ -103,7 +116,18 @@
                             <lightning-input type="date" name="opcEddate" value={opcEddate} placeholder="End Date" onchange={handleChange}></lightning-input>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
+                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas - Start</span>                                    
+                    <lightning-input type="date" name="opcStdate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12 mobWid" placeholder="Start Date" onchange={handleChange} value={opcStdate} variant="label-hidden"></lightning-input>
                 </div>
+
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
+                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas - End</span>                                    
+                    <lightning-input type="date" name="opcEddate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12 mobWid" placeholder="End Date" onchange={handleChange} value={opcEddate} variant="label-hidden"></lightning-input>
+                </div>
+
             </div>
         </template>
         <!-- Overseas Police check -->
@@ -114,7 +138,7 @@
                     ID                
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">Group 1 ID Type</span>
                     <lightning-combobox name="group1IdType" label=""
                         class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_large slds-m-bottom_large slds-size_6-of-12"
@@ -122,7 +146,7 @@
                     </lightning-combobox>
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Name Change Document</span>
                     <lightning-combobox name="namechangedocument" label=""
                         class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_large slds-m-bottom_large slds-size_6-of-12"
@@ -130,7 +154,7 @@
                     </lightning-combobox>
                 </div>
 
-                <div class="slds-grid slds-gutters slds-m-left_xx-large idDiv">
+                <div class="slds-grid slds-gutters slds-m-left_xx-large idDiv wpdate">
                     <div class="slds-size_1-of-3 slds-m-left_large slds-m-top_medium group2adiv">
                         <span class="slds-m-bottom_small slds-size_1-of-3">Group 2a ID Type</span>
                         <lightning-dual-listbox name="group2aIdType" value={group2aIdTypeVal}
@@ -152,7 +176,7 @@
         </template>
 
         <!-- Safeguarding -->
-        <template if:true={checkSafe}>
+        <!-- <template if:true={checkSafe}>
             <div>
                 <div>
                     <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                    
@@ -160,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-top_medium slds-size_8-of-12">Safeguarding Complition Date</span>
                     <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
                         <lightning-input type="date" name="safedate" onchange={handleChange} variant="label-hidden"
@@ -170,7 +194,7 @@
 
                 </div>
             </div>
-        </template>
+        </template> -->
 
          <!-- Emergency Contact -->
         <template if:true={checkEme}>
@@ -237,17 +261,17 @@
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     DBS                
                 </div>
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-size_8-of-12">Are you registered with the DBS update service?</span>
                     <lightning-combobox name="dbsname" label=""
-                        class="combox slds-m-left_large slds-m-top_small slds-m-bottom_medium slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-size_6-of-12"
+                        class="mobWid slds-m-left_large slds-m-top_xx-small slds-m-bottom_medium slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-size_6-of-12"
                         value={dbsUpdateSer} options={dbsOptions} onchange={handleChange} variant="label-hidden">
                     </lightning-combobox>
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate slds-m-top_medium">
                     <span class="slds-m-left_large slds-size_8-of-12">DBS Number</span>                
-                    <lightning-input type="number" name="dbnumber" class="slds-m-top_small slds-m-left_large slds-size_8-of-12" onchange={handleChange} label="" variant="label-hidden">
+                    <lightning-input type="number" name="dbnumber" class="mobWid slds-m-top_xx-small slds-m-left_large slds-size_8-of-12" onchange={handleChange} label="" variant="label-hidden">
                     </lightning-input>
                 </div>
             </div>
@@ -257,24 +281,24 @@
         <template if:true={checkteacherQual}>
             <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Teacher Qualification</div>
             <div>
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">TRA Number</span>
                     <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
-                        <lightning-input class="input" name="tranum" type="text" value={tranum} onchange={handleChange} autocomplete="off"></lightning-input>                
+                        <lightning-input class="input mobWid" name="tranum" type="text" value={tranum} onchange={handleChange} autocomplete="off"></lightning-input>                
                     </div>
                 </div>
             
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
                     <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
                         <lightning-combobox name="teacherQftype"
-                            class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
+                            class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12 mobWid"
                             value={teacherQftype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
                         </lightning-combobox>
                     <!-- </div> -->
                 </div>
                 <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large slds-medium-slds-m-left_xx-large slds-medium-slds-p-left-large">
-                    <lightning-dual-listbox name="teacherDualVal" source-label="Available" class="slds-m-left_xx-large"
+                    <lightning-dual-listbox name="teacherDualVal" source-label="Available" class="slds-m-left_xx-large wpdate"
                         selected-label="Selected" options={teacherQualifications} value={teacherDual}
                         onchange={handleChange}>
                     </lightning-dual-listbox>
@@ -291,7 +315,7 @@
                 </div>
 
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-size_8-of-12">Qualification Type</span>                    
                     
                     <lightning-combobox name="OTQQFtypeval" label=""
@@ -300,7 +324,7 @@
                     </lightning-combobox>
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small">
+                <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small wpdate">
                     <span class="slds-m-left_large slds-size_8-of-12">NARIC Approved</span>                    
 
                     <lightning-combobox name="naricApprove" label=""
@@ -309,7 +333,7 @@
                     </lightning-combobox>
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small">
+                <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small wpdate">
                     <span class="slds-m-left_large slds-size_8-of-12">TRA Number</span>                    
                     <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_xx-small slds-m-bottom_large slds-form-element">
                         <lightning-input type="number" name="otstranum" value={otstranum} label="" variant="label-hidden"></lightning-input>
@@ -321,7 +345,7 @@
                 </div>
                 <div class="slds-m-left_large">
                     <lightning-dual-listbox name="OTQteacherQualification" value={OTQteacherQualification}
-                        class="slds-m-left_xx-large slds-m-right_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive group2adiv"
+                        class="slds-m-left_xx-large slds-m-right_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive group2adiv wpdate duelSize"
                         source-label="Available" selected-label="Selected" options={teacherQualificationsOver} onchange={handleChange}>
                     </lightning-dual-listbox>
                 </div>
@@ -333,22 +357,22 @@
         <template if:true={checkRtw}>
             <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Right to Work</div>
             <div>
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">Permanent Right to work in UK</span>
                     
                     <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
                         <lightning-input class="input" name="uploadcv" type="text" onchange={handleChange} autocomplete="off"></lightning-input>                
                     </div> -->
-                    <lightning-combobox name="workPermit"
+                    <lightning-combobox name="workPermit" 
                             class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_large slds-m-bottom_large slds-m-top_small slds-size_6-of-12"
                             value={workPermit} options={lstOptions} onchange={handleUpsellChange} variant="label-hidden">
                     </lightning-combobox>                    
                 </div>
 
-                <div class="slds-m-top_medium slds-m-left_xx-large">
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Work Permit Or Visa Expiry Date</span>
                     <!-- <div class="slds-gutters slds-m-left_x-large"> -->
-                        <lightning-input class="slds-m-left_large slds-m-top_small slds-size_6-of-12" type="date" name="workpermitdate" value={workpermitdate}
+                        <lightning-input class=" slds-m-left_large slds-m-top_small slds-size_6-of-12 mobWid" type="date" name="workpermitdate" value={workpermitdate}
                         placeholder="Expiry Date" onchange={handleChange} variant="label-hidden"></lightning-input>
                     <!-- </div> -->
                 </div>
@@ -370,7 +394,7 @@
                     Post 16 Qualifications                
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">SET Number</span>
                     <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
                         <lightning-input name="snumber" type="text" value={snumb} onchange={handleChange} autocomplete="off" variant="label-hidden"></lightning-input>                
@@ -383,7 +407,7 @@
                     </lightning-input>
                 </div> -->
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">SET Expiry Date</span>                    
                     <!-- class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom_medium slds-form-element l-input" -->
                     <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
@@ -392,7 +416,7 @@
                 </div>
             
             
-                <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-m-bottom_large">
+                <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-m-bottom_large wpdate">
                     <div class="slds-size_1-of-12 slds-m-left_large textp">QTLS</div>
                     <div>
                         <lightning-input name="qtl" type="checkbox" onchange={handleChange} value={QtlsCheck}>
@@ -400,7 +424,7 @@
                     </div>
                 </div>
             
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Qualification Type</span>
                     <lightning-combobox name="quList" label=""
                         class="slds-combobox_container slds-m-left_large slds-m-top_small slds-combobox slds-combobox__form-element slds-form-element__label slds-size_8-of-12"
@@ -413,14 +437,14 @@
                 </div>
                 <div class="slds-m-left_large">
                     <lightning-dual-listbox name="qualselect"
-                        class="slds-m-right_xx-large slds-m-left_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive group2adiv"
+                        class="slds-m-right_xx-large slds-m-left_xx-large wpdate slds-size_6-of-12 slds-dueling-picklist__column_responsive mbCv"
                         source-label="Available" selected-label="Selected" options={qualificationsPost16} value={qualmulti} onchange={handleChange}>
                     </lightning-dual-listbox>
                 </div>
             </div>
         </template>
         <!-- International -->
-        <template if:true={checkInt}>
+        <!-- <template if:true={checkInt}>
             <div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     International
@@ -443,7 +467,7 @@
                     </lightning-dual-listbox>
                 </div>
             </div>
-        </template>
+        </template> -->
         <!-- Early Year Qualification -->
         <template if:true={checkEarly}>
             <div>
@@ -451,11 +475,11 @@
                     Early Year Qualification                
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
                     <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
                         <lightning-combobox name="earlyYearQFtype"
-                            class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
+                            class="mobWid slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
                             value={earlyYearQFtype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
                         </lightning-combobox>
                     <!-- </div> -->
@@ -476,7 +500,7 @@
                     Support Qualifications      
                 </div>
 
-                <div class="slds-gutters slds-m-left_xx-large">
+                <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
                     <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
                         <lightning-combobox name="supportQFtype"
@@ -485,8 +509,8 @@
                         </lightning-combobox>
                     <!-- </div> -->
                 </div>
-                <div class="slds-gutters slds-m-left_large slds-size_6-of-12 docDiv slds-m-top_large">
-                    <lightning-dual-listbox name="supportQualifications" source-label="Available" class="slds-m-left_xx-large"
+                <div class="slds-gutters slds-m-left_large slds-size_6-of-12 docDiv slds-m-top_large ">
+                    <lightning-dual-listbox name="supportQualifications" source-label="Available" class="slds-m-left_xx-large wpdate"
                         selected-label="Selected" options={teacherQualificationsSupport} value={supportQualification}
                         onchange={handleChange}>
                     </lightning-dual-listbox>
@@ -495,56 +519,56 @@
             </div>
         </template>
         <!-- Barred List -->
-        <template if:true={checkBarred}>
+        <!-- <template if:true={checkBarred}>
             <div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     Barred List
                 </div>
 
-                <div class="slds-m-top_medium slds-m-left_xx-large">
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Barred Check URL</span>
-                    <lightning-input type="text" class="slds-m-left_large slds-size_6-of-12 slds-m-top_small" onchange={handleChange} label="" name="barredcheckurl"
+                    <lightning-input type="text" class="slds-m-left_large slds-size_6-of-12 slds-m-top_xx-small" onchange={handleChange} label="" name="barredcheckurl"
                         placeholder="Name" value={barredcheckurl} variant="label-hidden">
                     </lightning-input>
                 </div>
                 
-                <div class="slds-m-top_medium slds-m-left_xx-large">
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Barred List Results</span>                
-                    <lightning-input type="text" onchange={handleChange} class="slds-m-left_large slds-m-top_small slds-size_6-of-12" label="" name="barredListResult" value={barredListResult}
+                    <lightning-input type="text" onchange={handleChange} class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12" label="" name="barredListResult" value={barredListResult}
                         placeholder="Name" variant="label-hidden">
                     </lightning-input>
                 </div>
 
-                <div class="slds-m-top_medium slds-m-left_xx-large">
-                    <!-- <p class="slds-m-bottom_small slds-p-left_x-small">EWC Checked Date</p> -->
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
+                    
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">EWC Checked Date</span>                                    
-                    <lightning-input type="date" name="ewscheckeddate" class="slds-m-left_large slds-m-top_small slds-size_6-of-12" value={ewscheckeddate} label="" placeholder="" onchange={handleChange} variant="label-hidden"></lightning-input>
+                    <lightning-input type="date" name="ewscheckeddate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12" value={ewscheckeddate} label="" placeholder="" onchange={handleChange} variant="label-hidden"></lightning-input>
                 </div>
 
-                <div class="slds-m-top_medium slds-m-left_xx-large">
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">EWC Next Checked Date</span>                                    
-                    <lightning-input type="date" name="ewsnextcheckeddate" label="" class="slds-m-left_large slds-m-top_small slds-size_6-of-12" placeholder="" onchange={handleChange} value={ewsnextcheckeddate} variant="label-hidden"></lightning-input>
+                    <lightning-input type="date" name="ewsnextcheckeddate" label="" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12" placeholder="" onchange={handleChange} value={ewsnextcheckeddate} variant="label-hidden"></lightning-input>
                 </div>
             
-                <div class="slds-m-top_medium slds-m-left_xx-large">                
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">                
                     <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-form-element">
                         <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Barred List Date Checked</span>                                    
-                        <lightning-input type="date" class="slds-m-bottom_small slds-m-left_large slds-m-top_small slds-size_6-of-12" label="" name="barredlistdatecheck" placeholder="Start Date" onchange={handleChange} value={barredlistdatecheck} variant="label-hidden"></lightning-input>
+                        <lightning-input type="date" class="slds-m-bottom_small slds-m-left_large slds-m-top_xx-small slds-size_6-of-12" label="" name="barredlistdatecheck" placeholder="Start Date" onchange={handleChange} value={barredlistdatecheck} variant="label-hidden"></lightning-input>
                     </div>
 
                     <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-form-element">
                         <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Barred List Expiry Date</span>                                    
-                        <lightning-input type="date" name="barredlistexpirydate" class="slds-m-top_small slds-m-left_large slds-size_6-of-12" placeholder="" onchange={handleChange} value={barredlistexpirydate} label="" variant="label-hidden"></lightning-input>
+                        <lightning-input type="date" name="barredlistexpirydate" class="slds-m-top_xx-small slds-m-left_large slds-size_6-of-12" placeholder="" onchange={handleChange} value={barredlistexpirydate} label="" variant="label-hidden"></lightning-input>
                     </div>
                 </div>
 
-                <div class="slds-m-top_medium slds-m-left_xx-large">
+                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date of Birth</span>                                                        
-                    <lightning-input type="date" name="DOB" class="slds-m-top_small slds-m-left_large slds-size_6-of-12" onchange={handleChange} value={DOB} label="" variant="label-hidden"></lightning-input>
+                    <lightning-input type="date" name="DOB" class="slds-m-top_xx-small slds-m-left_large slds-size_6-of-12" onchange={handleChange} value={DOB} label="" variant="label-hidden"></lightning-input>
                 </div>
                 
             </div>
-        </template>
+        </template> -->
         <!-- References -->
         <template if:true={checkRefs}>
 
@@ -563,250 +587,250 @@
                     <lightning-input type="date" name="input1" label="" class="slds-m-bottom_small" placeholder="End Date"></lightning-input>
                 </div> -->
 
-                <div class="slds-grid slds-wrap ListingForm slds-size_8-of-12 slds-p-horizontal_xx-large">
+                <div class="slds-grid slds-wrap ListingForm slds-size_10-of-12 slds-p-horizontal_xx-large">
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium dt1">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Sent Date</span>
-                            <lightning-input type="date" label=""
-                                name="Ref1sentdate" value={Ref1sentdate} autocomplete="off" onchange={handleChange}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Sent Date</span>
+                            <lightning-input type="date" label="" class="slds-m-top_x-small"
+                                name="Ref1sentdate" value={Ref1sentdate} autocomplete="off" onchange={handleChange} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Name/Organisation</span>
-                            <lightning-input class="cls_input" label="" type="text" name="Reference1name" value={Reference1name} onchange={handleChange}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Name/Organisation</span>
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="text" name="Reference1name" value={Reference1name} onchange={handleChange} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-top--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Received Date</span>                        
-                        <lightning-input type="date" label=""
-                            name="Reference1recdate" value={Reference1RecDate} autocomplete="off">
+                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Received Date</span>                        
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Reference1recdate" value={Reference1RecDate} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Phone</span>                        
-                            <lightning-input class="cls_input" label="" type="text" name="Reference1phone" value={Reference1phone}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Phone</span>                        
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="text" name="Reference1phone" value={Reference1phone} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Date Range Start</span>                                                
-                        <lightning-input type="date" label=""
-                            name="Reference1daterangestart" value={Reference1daterangestart}>
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Date Range Start</span>                                                
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Reference1daterangestart" value={Reference1daterangestart} variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Email</span>                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Email</span>                                                                        
                         <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="" type="email" name="Reference1email" value={Reference1email}>
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="email" name="Reference1email" value={Reference1email} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Date Range End</span>                                                                                                
-                        <lightning-input type="date" label="Reference 1 Date Range End"
-                            name="Reference1daterangeend" value={Reference1daterangeend} autocomplete="off">
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Date Range End</span>                                                                                                
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Reference1daterangeend" value={Reference1daterangeend} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Type</span>                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Type</span>                                                                                                                        
                         <div class="slds-form-element">
-                            <lightning-combobox dropdown-alignment="true" name="Ref1Type" label="" value={Ref1Type}  options={appsourceval} onchange={handleChange}>
+                            <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref1Type" label="" value={Ref1Type}  options={appsourceval} onchange={handleChange} variant="label-hidden">
                             </lightning-combobox>
                         </div>
                     </div>
 
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-top--medium">
+                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Received</span>                                                                                                                        
-                            <lightning-input type="checkbox" label=""
-                            name="Ref1Rec" value={Ref1Rec} autocomplete="off">
+                            <span class="slds-m-bottom_small slds-size_8-of-12">Reference 1 Received</span>                                                                                                                        
+                            <lightning-input type="checkbox" label="" class="slds-m-top_x-small"
+                            name="Ref1Rec" value={Ref1Rec} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Rating</span>                                                                                                                        
-                            <lightning-combobox dropdown-alignment="true" name="Ref1Rating" label="" value={Ref1Rating} options={Ref1Ratings} onchange={handleChange}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 1 Rating</span>                                                                                                                        
+                            <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref1Rating" label="" value={Ref1Rating} options={Ref1Ratings} onchange={handleChange} variant="label-hidden">
                             </lightning-combobox>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium ">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Sent Date</span>                                                                                                                                                
-                        <lightning-input type="date" label=""
-                            name="Ref2sentdate" value={Ref2sentdate} autocomplete="off">
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Sent Date</span>                                                                                                                                                
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref2sentdate" value={Ref2sentdate} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Name/Organisation</span>                                                                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Name/Organisation</span>                                                                                                                                                                        
                         <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="" type="text" name="Reference2name" value={Reference2name}>
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="text" name="Reference2name" value={Reference2name} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Received Date</span>                                                                                                                                                                        
-                            <lightning-input type="date" label=""
-                                name="Ref1recdate" value={Ref1recdate} autocomplete="off">
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Received Date</span>                                                                                                                                                                        
+                            <lightning-input type="date" label="" class="slds-m-top_x-small"
+                                name="Ref1recdate" value={Ref1recdate} autocomplete="off" variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Phone</span>                                                                                                                                                                                                    
-                            <lightning-input class="cls_input" label="" type="text" name="Ref2phone" value={Ref2phone}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Phone</span>                                                                                                                                                                                                    
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="text" name="Ref2phone" value={Ref2phone} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Date Range Start</span>                                                                                                                                                                                                                            
-                        <lightning-input type="date" label=""
-                            name="Ref2daterangest" value={Ref2daterangest} autocomplete="off">
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Date Range Start</span>                                                                                                                                                                                                                            
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref2daterangest" value={Ref2daterangest} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Email</span>                                                                                                                                                                                                                                                        
-                            <lightning-input class="cls_input" label="" type="email" name="Ref2email" value={Ref2email}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Email</span>                                                                                                                                                                                                                                                        
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="email" name="Ref2email" value={Ref2email} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Date Range End</span>                                                                                                                                                                                                                                                                                
-                        <lightning-input type="date" label=""
-                            name="Ref2daterangeend" value={Ref2daterangeend} autocomplete="off">
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Date Range End</span>                                                                                                                                                                                                                                                                                
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref2daterangeend" value={Ref2daterangeend} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Type</span>                                                                                                                                                                                                                                                                                                            
-                            <lightning-combobox dropdown-alignment="true" name="Ref2Type" label="" value={Ref2Type} placeholder="" options={Ref2Types}>
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Type</span>                                                                                                                                                                                                                                                                                                            
+                            <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref2Type" label="" value={Ref2Type} placeholder="" options={Ref2Types} variant="label-hidden">
                             </lightning-combobox>
                         </div>
                     </div>
 
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-top--medium">
+                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Received</span>                                                                                                                                                                                                                                                                                                                                        
-                            <lightning-input type="checkbox" label=""
-                            name="Ref2rec" value={Ref2rec}>
+                            <span class="slds-m-bottom_small slds-size_8-of-12">Reference 2 Received</span>                                                                                                                                                                                                                                                                                                                                        
+                            <lightning-input type="checkbox" label="" class="slds-m-top_x-small"
+                            name="Ref2rec" value={Ref2rec} variant="label-hidden">
                         </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Rating</span>                                                                                                                                                                                                                                                                                                                                        
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 2 Rating</span>                                                                                                                                                                                                                                                                                                                                        
                             
-                            <lightning-combobox dropdown-alignment="true" name="Ref2Rating" label="" value={Ref2Rating} placeholder="" options={Ref2Ratings}>
+                            <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref2Rating" label="" value={Ref2Rating} placeholder="" options={Ref2Ratings} variant="label-hidden">
                             </lightning-combobox>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium ">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Sent Date</span>                                                                                                                                                                                                                                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Sent Date</span>                                                                                                                                                                                                                                                                                                                                        
                         
-                        <lightning-input type="date" label=""
-                            name="Ref3sentdate" value={Ref3sentdate} autocomplete="off">
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref3sentdate" value={Ref3sentdate} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Name/Organisation</span>                                                                                                                                                                                                                                                                                                                                        
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Name/Organisation</span>                                                                                                                                                                                                                                                                                                                                        
                             
-                            <lightning-input class="cls_input" label="" type="text" name="Reference3Name" value={Reference3Name}>
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="text" name="Reference3Name" value={Reference3Name} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 ">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Received Date</span>                                                                                                                                                                                                                                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Received Date</span>                                                                                                                                                                                                                                                                                                                                        
                         
-                        <lightning-input type="date" label=""
-                            name="Ref3revdate" value={Ref3revdate} autocomplete="off">
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref3revdate" value={Ref3revdate} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Phone</span>                                                                                                                                                                                                                                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Phone</span>                                                                                                                                                                                                                                                                                                                                        
                         
                         <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="" type="text" name="Reference3phone" value={Reference3phone}>
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="text" name="Reference3phone" value={Reference3phone} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Date Range Start</span>                                                                                                                                                                                                                                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Date Range Start</span>                                                                                                                                                                                                                                                                                                                                        
                         
-                        <lightning-input type="date" label=""
-                            name="Ref3daterangest" value={Ref3daterangest} autocomplete="off">
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref3daterangest" value={Ref3daterangest} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Date Range Start</span>                                                                                                                                                                                                                                                                                                                                        
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Email</span>                                                                                                                                                                                                                                                                                                                                        
                             
-                            <lightning-input class="cls_input" label="Reference 3 Email" type="email" name="Ref3email" value={Ref3email}>
+                            <lightning-input class="cls_input slds-m-top_x-small" label="" type="email" name="Ref3email" value={Ref3email} variant="label-hidden">
                             </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Date Range End</span>                                                                                                                                                                                                                                                                                                                                        
+                        <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Date Range End</span>                                                                                                                                                                                                                                                                                                                                        
                         
-                        <lightning-input type="date" label=""
-                            name="Ref3dtrangeend" value={Ref3dtrangeend} autocomplete="off">
+                        <lightning-input type="date" label="" class="slds-m-top_x-small"
+                            name="Ref3dtrangeend" value={Ref3dtrangeend} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Type</span>                                                                                                                                                                                                                                                                                                                                        
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Type</span>                                                                                                                                                                                                                                                                                                                                        
                             
-                            <lightning-combobox dropdown-alignment="true" name="Ref3type" label="" value={Ref3type} placeholder="" options={Ref3Types}>
+                            <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref3type" label="" value={Ref3type} placeholder="" options={Ref3Types} variant="label-hidden">
                             </lightning-combobox>
                         </div>
                     </div>
 
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-top--medium">
+                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Received</span>                                                                                                                                                                                                                                                                                                                                        
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Received</span>                                                                                                                                                                                                                                                                                                                                        
 
-                            <lightning-input type="checkbox" label=""
-                            name="Ref3received" value={Ref3received} autocomplete="off">
+                            <lightning-input type="checkbox" label="" class="slds-m-top_x-small"
+                            name="Ref3received" value={Ref3received} autocomplete="off" variant="label-hidden">
                         </lightning-input>
                         </div>
                     </div>
 
                     <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
                         <div class="slds-form-element">
-                            <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Rating</span>                                                                                                                                                                                                                                                                                                                                        
+                            <span class="slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Reference 3 Rating</span>                                                                                                                                                                                                                                                                                                                                        
                             
-                            <lightning-combobox dropdown-alignment="true" name="Ref3rating" label="" value={Ref3rating} placeholder="" options={Ref3Ratings} onchange={handleChange}>
+                            <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref3rating" label="" value={Ref3rating} placeholder="" options={Ref3Ratings} onchange={handleChange} variant="label-hidden">
                             </lightning-combobox>
                         </div>
                     </div>

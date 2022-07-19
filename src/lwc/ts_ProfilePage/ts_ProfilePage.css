@@ -117,12 +117,10 @@
 
 .cvImg {
     width: 2%;
-    /* margin-right: 1rem;
-    padding-bottom: 5px; */
 }
 
 .detailDiv {
-    padding-bottom: 8rem;
+    padding-bottom: 3rem;
 }
 
 .profileTopDiv {
@@ -173,10 +171,6 @@
 .fileUpload:hover,
 .fileDelete:hover {
     cursor: pointer;
-}
-
-.dropDiv .slds-has-drag {
-    background: transparent;
 }
 
 .tabDiv {
@@ -286,6 +280,60 @@
 
 /* =================== Spinner End =================== */
 
+.dropzone {
+    position: relative;
+}
+
+.dropzone.hover {
+    border: 10px solid #FE5;
+    color: #FE5;
+}
+
+.dropzone.dropped {
+    background: #222;
+    border: 10px solid #444;
+}
+
+.dropzone div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone img {
+    border-radius: 10px;
+    vertical-align: middle;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.dropzone [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cvData {
+    display: none;
+    height: 2rem;
+    margin: 1rem auto;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    padding: 0.5rem;
+}
+
+.cvData img {
+    height: 18px;
+    margin: 0 0 4px 0;
+    float: right;
+    cursor: pointer;
+}
+
 @media(max-width: 1024px) {
     .btns {
         display: none !important;
@@ -302,7 +350,8 @@
     .cancelBtn {
         margin-left: 20px;
     }
-    .slds-m-left_xx-large {
+    .profileTopDiv .slds-m-left_xx-large,
+    .tabDiv .slds-m-left_xx-large {
         margin-left: 0;
     }
     .tabDiv hr {
@@ -317,7 +366,7 @@
     .tabDiv .slds-size_9-of-12 {
         width: 66%;
     }
-    .slds-file-selector__body_integrated {
+    .tabDiv .slds-file-selector__body_integrated {
         margin-left: 2rem;
     }
     .profImg {
@@ -337,6 +386,9 @@
     .fileUpload p,
     .fileDelete p {
         display: none;
+    }
+    .cvData {
+        margin: 1rem 0 1rem 2rem;
     }
 }
 
@@ -362,7 +414,7 @@
     .tabDiv hr {
         margin: 1rem 2rem 1rem 0rem;
     }
-    .slds-file-selector__body_integrated {
+    .tabDiv .slds-file-selector__body_integrated {
         margin-left: 1rem;
     }
     .profImg {
@@ -374,5 +426,8 @@
     }
     .tabDiv .slds-col {
         padding-left: 0;
+    }
+    .cvData {
+        margin: 1rem 0 1rem 1rem;
     }
 }

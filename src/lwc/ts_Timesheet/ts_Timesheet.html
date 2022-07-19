@@ -60,11 +60,11 @@
                 <div class="slds-col slds-size_1-of-12 table_col">
                     <div>Total Reported Charge</div>
                 </div>
-                <div class="slds-col slds-size_3-of-12 slds-grid slds-wrap table-row table_col">
-                    <div class="slds-col slds-size_3-of-12">1</div>
-                    <div class="slds-col slds-size_3-of-12">2</div>
-                    <div class="slds-col slds-size_3-of-12">3</div>
-                    <div class="slds-col slds-size_3-of-12">4</div>
+                <div class="slds-col slds-size_3-of-12 slds-grid slds-wrap table_col">
+                    <div class="slds-col slds-size_3-of-12"></div>
+                    <div class="slds-col slds-size_3-of-12"></div>
+                    <div class="slds-col slds-size_3-of-12"></div>
+                    <div class="slds-col slds-size_3-of-12"></div>
                 </div>
                 <!-- <div class="slds-col slds-size_1-of-12">
                     <div></div>
@@ -89,7 +89,7 @@
                     <div class="slds-col slds-size_1-of-12 table_col">{ts.Total_Days__c}</div>
                     <div class="slds-col slds-size_1-of-12 table_col">{ts.Total_Half_Days__c}</div>
                     <div class="slds-col slds-size_1-of-12 table_col">{ts.Total_Reported_Charge__c}</div>
-                    <div class="slds-col slds-size_3-of-12 table_col slds-grid slds-wrap table-row">
+                    <div class="slds-col slds-size_3-of-12 table_col slds-grid slds-wrap">
                         <div class="slds-col slds-size_3-of-12">
                             <div class="table-icon" title="View">
                                 <img src={viewIcon} alt="viewIcon" title="View" data-name="View" data-id={ts.Id}
@@ -133,29 +133,27 @@
                             </div>
                             <div class="pop-apprv-rating-div slds-grid slds-wrap">
                                 <div class="slds-size_1-of-5">
-                                    <div data-id="Unsatisfactory" onclick={selectRating} class="emg-unsetisfy slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
-                                        <img src={unsetisfyEmg} alt="unsetisfyEmg" title="Reject"
-                                            class="top-header-btn-icon">
+                                    <div data-id="Unsatisfactory" onclick={selectRating} name="Unsatisfactory" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={unsetisfyEmg} alt="unsetisfyEmg" title="Reject" class="top-header-btn-icon">
                                     </div>
                                 </div>
                                 <div class="slds-size_1-of-5">
-                                    <div data-id="Requires Improvement" onclick={selectRating} class="emg-ri slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
-                                        <img src={requireImprovmentsEmg} alt="requireImprovmentsEmg" title="Reject"
-                                            class="top-header-btn-icon">
+                                    <div data-id="Requires Improvement" onclick={selectRating} name="Requires Improvement" class=" slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                        <img src={requireImprovmentsEmg} alt="requireImprovmentsEmg" title="Reject" class="top-header-btn-icon">
                                     </div>
                                 </div>
                                 <div class="slds-size_1-of-5">
-                                    <div data-id="Good" onclick={selectRating} class="emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                    <div data-id="Good" onclick={selectRating} name="Good" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                         <img src={goodEmg} alt="goodEmg" title="Reject" class="top-header-btn-icon">
                                     </div>
                                 </div>
                                 <div class="slds-size_1-of-5">
-                                    <div data-id="Very Good" onclick={selectRating} class="emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                    <div data-id="Very Good" onclick={selectRating} name="Very Good" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                         <img src={VeryGoodEmg} alt="VeryGoodEmg" title="Reject" class="top-header-btn-icon">
                                     </div>
                                 </div>
                                 <div class="slds-size_1-of-5">
-                                    <div data-id="Excellent" onclick={selectRating} class="emg-excel slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                    <div data-id="Excellent" onclick={selectRating} name="Excellent" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                         <img src={excelentEmg} alt="excelentEmg" title="Reject" class="top-header-btn-icon">
                                     </div>
                                 </div>

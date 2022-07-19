@@ -47,7 +47,7 @@
                 </template>
             </div>
         </div> -->
-        <div class="slds-col slds-size_8-of-12 left-div">
+        <div class="slds-col slds-size_8-of-12 slds-max-large-size_1-of-1 left-div">
             <div class="top-div">
                 <div class="top-available-div tpd">
                     <div class="top-avl-icon-div"></div>
@@ -66,12 +66,22 @@
                 Weekly Tasks
             </div>
             <div class="calender-div">
-                <div id="calendar-main" class="fullcalendarjs" style="margin-right: 10px;"></div>
+                <div id="calendar" class="fullcalendarjs" 
+                        style=  "margin-right: 10px; 
+                                background: #F6F6F6;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                                padding-inline: 3%;
+                                padding-top: 1%;
+                                padding-bottom: 1%;"></div>
             </div>
         </div>
         <div class="slds-col slds-size_4-of-12 right-div">
+            <div class="right-ttl">
+                calendar
+            </div>
             <div class="small-calander">
-                <div id="calendar"></div>
+                <!-- <div id="calendar"></div> -->
             </div>
             <div class="event-list">
                 <div class="date-div">
@@ -92,17 +102,45 @@
                     <div class="evnt-block" key={evnt.Id}>
                         <div class="evnt-time">
                             <div class="evnt-dot"></div>
-                            <div class="evnt-strt-time">8:00 am</div>
+                            <div class="evnt-strt-time">{evnt.startTime}</div>
                         </div>
                         <div class="evnt-title-dur">
                             <div class="evnt-ttl">{evnt.Type__c}</div>
-                            <div class="evnt-dur">15 Min</div>
+                            <div class="evnt-dur">{evnt.totalDuration} Min</div>
                         </div>
                     </div>
                 </template>
             </div>
         </div>
     </div>
+
+
+
+    <!-- <div class="ipad-view-main">
+        <div class="ip-cal-div">
+            <div class="ip-month-div">
+                <div class="ip-month-itr">
+                    <template for:each={mL} for:item="mn">
+                        <div class="ip-month-itr-div" key={mn}> {mn} </div>
+                    </template>
+                </div>
+
+                <div class="ip-date-itr-div">
+                    <template for:each={md} for:item="md">
+                        <div class="ip-date-div" key={md}> {md} </div>
+                    </template>
+                </div>
+
+                <div class="ip-month-days-div slds-grid slds-wrap">
+                    <template for:each={mw} for:item="mw">
+                        <div class="slds-col slds-size_1-of-7" key={mw}> {mw} </div>
+                    </template>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
 
     <!-- Open a modal with new event form  -->
     <template if:true={openModal}>

@@ -6,6 +6,7 @@ import ts_view from "@salesforce/resourceUrl/ts_view";
 import getTimesheet from "@salesforce/apex/ts_TimesheetController.getTimesheet";
 import { NavigationMixin } from 'lightning/navigation';
 import approveRejectTimeSheet from "@salesforce/apex/ts_TimesheetController.approveRejectTimeSheet";
+import downloadPdf from "@salesforce/apex/ts_TimesheetController.downloadPdf";
 
 import ts_Excelent from '@salesforce/resourceUrl/ts_Excelent';
 import ts_VeryGood from '@salesforce/resourceUrl/ts_VeryGood';
@@ -59,6 +60,9 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                 console.log("result length ===>" + result.length);
                 if (this.activeTimeSheet.length == 0) {
                     this.isNoTimesheetRecord = true;
+                }
+                else{
+                    this.isNoTimesheetRecord = false;
                 }
 
                 this.isSpinner = false;
@@ -116,19 +120,59 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                 }
             });
         } else if (nameval == "Print") {
-            console.log('Print');
-            urlValue = urlValue + 'timesheet/timesheetpdf';
 
-            this[NavigationMixin.Navigate]({
-                type: 'comm__namedPage',
-                attributes: {
-                    name: 'TimesheetPDF__c',
-                    url: urlValue
-                },
-                state: {
-                    id: this.selectedTimesheet // Value must be a string
-                }
-            });
+            const ua = navigator.userAgent;
+            var device ;
+            if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+                device = 'tablet';
+            }
+            else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+                device = 'mobile';
+            }
+            else{
+                device = 'windows';
+            }
+
+            if(device != 'windows'){
+                this.isSpinner = true;
+                downloadPdf({recordid : this.selectedTimesheet})
+                    .then((result) => {
+                        var strFile = result;
+                        const reader = new FileReader();
+
+                        const link = document.createElement('a');
+                        link.href = 'data:application/octet-stream;base64,'+strFile;
+                        link.download = 'TimesheetDetail.pdf';
+                        link.click();
+                        this.isSpinner = false;
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        this.reloadpage = true;
+                        this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
+                        this.isSpinner = false;
+                    })
+            }
+            else{
+                urlValue = urlValue + 'timesheet/timesheetpdf';
+
+                this[NavigationMixin.Navigate]({
+                    type: 'comm__namedPage',
+                    attributes: {
+                        name: 'TimesheetPDF__c',
+                        url: urlValue
+                    },
+                    state: {
+                        id: this.selectedTimesheet // Value must be a string
+                    }
+                });
+
+            }
+
+            console.log('Print end');
+
+
+
         } else if (nameval == "Approve") {
             console.log('Approve');
             this.isClientApproveModalOpen = true;
@@ -146,6 +190,50 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         else{
             this.text_area_required = true;
         }
+
+        if(this.selectedRetting == "Excellent"){
+            this.template.querySelector('[data-id="Excellent"]').className=' emg-excel slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+
+            let fieldToFocus = this.template.querySelector("lightning-textarea");
+            fieldToFocus.setCustomValidity("");
+            fieldToFocus.reportValidity();
+        }
+        else if(this.selectedRetting == "Very Good"){
+            this.template.querySelector('[data-id="Very Good"]').className=' emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+
+            let fieldToFocus = this.template.querySelector("lightning-textarea");
+            fieldToFocus.setCustomValidity("");
+            fieldToFocus.reportValidity();
+        }
+        else if(this.selectedRetting == "Good"){
+            this.template.querySelector('[data-id="Good"]').className='emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        }
+        else if(this.selectedRetting == "Requires Improvement"){
+            this.template.querySelector('[data-id="Requires Improvement"]').className='emg-ri slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        }
+        else if(this.selectedRetting == "Unsatisfactory"){
+            this.template.querySelector('[data-id="Unsatisfactory"]').className='emg-unsetisfy slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        }
     }
     saveApproveNotes(event) {
         this.approveNotes = event.detail.value;
@@ -160,7 +248,7 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         console.log("approve Timesheet Clicked ===>");
         // var timesheetId = "a0y0C000006iUzGQAU";
         var operation = "Approve";
-        var notes = this.approveNotes;
+        var notes = this.approveNotes.trim();
         var ratingValue = this.selectedRetting;
         var rqc = this.requesteQualityCall;
 
@@ -187,15 +275,18 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
             console.log("notes==>",notes);
             console.log("notes lenght==>",notes.length);
             this.text_area_required = true;
-            if (notes != null || notes != '') {
+            if (notes.length > 0) {
+                this.isSpinner = true;
                 console.log("2 if condition notes ===>" + notes);
                 approveRejectTimeSheet({ operation: operation, timesheetId: this.selectedTimesheet, notes: notes, ratingValue: ratingValue, rqc: rqc })
                     .then((result) => {
                         console.log("result from apex class ==>" + result);
                         this.isClientApproveModalOpen = false;
+                        this.isSpinner = false;
                     })
                     .catch((error) => {
                         this.applicantsTarget = undefined;
+                        this.isSpinner = false;
                         if (error) {
                             if (Array.isArray(error.body)) {
                                 this.errorMsg = error.body.map((e) => e.message).join(", ");
@@ -204,6 +295,11 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                             }
                         }
                     });
+            }
+            else{
+                let fieldToFocus = this.template.querySelector("lightning-textarea");
+                console.log(fieldToFocus);
+                fieldToFocus.focus();
             }
         }
     }

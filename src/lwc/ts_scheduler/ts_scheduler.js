@@ -39,6 +39,9 @@ export default class FullCalendarJs extends LightningElement {
     @track totalAvailiblityCount;
     @track eventTypeOption = [];
 
+    @track mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    @track md = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+    @track mw = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
     // Get Object Info.
     @wire(getObjectInfo, { objectApiName: Candidate_Availability__c })
     qualObjectInfo;
@@ -124,11 +127,15 @@ export default class FullCalendarJs extends LightningElement {
         ])
             .then(() => {
                 //initialize the full calendar
+                // $('#calendar').fullCalendar('changeView', 'month');
+                // this.getScreenSize();
                 this.initializeCalendar();
                 this.newMethod();
                 this.newMethod2();
+                // this.getScreenSize();
                 const ele = this.template.querySelector('div.fullcalendarjs');
                 const modal = this.template.querySelector('div.modalclass');
+
             })
             .catch((error) => {
                 console.error({
@@ -158,6 +165,23 @@ export default class FullCalendarJs extends LightningElement {
             .then((result) => {
                 console.log({ result });
             })
+    }
+
+    getScreenSize() {
+        let ScreenWidth = screen.width;
+        console.log("Current Screen Size  ======>" + ScreenWidth);
+        if (767 < ScreenWidth && ScreenWidth <= 1024) {
+            console.log("Ipadm view ===>" + ScreenWidth);
+            const ele = this.template.querySelector('div.fullcalendarjs');
+            $(ele).fullCalendar({
+                defaultDate: new Date(),
+                defaultView: 'agendaDay',
+                navLinks: true,
+                selectHelper: true,
+                selectable: true,
+            });
+            console.log("ScreenSize Finished ========>");
+        }
     }
 
     //Get data from server - in this example, it fetches from the event object
@@ -222,6 +246,13 @@ export default class FullCalendarJs extends LightningElement {
             self.typeValue = null;
         }
 
+        let ScreenWidth = screen.width;
+        let defaultViewCondition = 'agendaWeek';
+        console.log("Current Screen Size  ======>" + ScreenWidth);
+        if (767 < ScreenWidth && ScreenWidth <= 1024) {
+            defaultViewCondition = 'agendaDay'; // For Ipad View
+        }
+
         //Actual fullcalendar renders here - https://fullcalendar.io/docs/v3/view-specific-options
         $(ele).fullCalendar({
 
@@ -232,7 +263,8 @@ export default class FullCalendarJs extends LightningElement {
             },
             // locale: 'es',   // This is an acronym for the locale you want to select
             defaultDate: new Date(), // default day is today - to show the current date
-            defaultView: 'agendaWeek', //To display the default view - as of now it is set to week view
+            // defaultView: 'agendaWeek', //To display the default view - as of now it is set to week view
+            defaultView: defaultViewCondition, //To display the default view - as of now it is set to week view
             navLinks: true, // can click day/week names to navigate views
             // editable: true, // To move the events on ?calendar - TODO
             selectHelper: true,
@@ -250,13 +282,17 @@ export default class FullCalendarJs extends LightningElement {
                 let timeSplitstart = startDateFront.split('T');
                 let mainStartDate = stDate + 'T' + timeSplitstart[1];
 
+                console.log("endDate **** ======>" + endDate);
+
                 let edDate = endDate.toJSON().slice(0, 10);
+                console.log("endDate ****|||| **** ======>" + edDate);
                 let endDateFront = endDate.format();
                 console.log({ endDateFront });
                 let timeSplitend = endDateFront.split('T');
                 let mainEndDate = edDate + 'T' + timeSplitend[1];
 
-
+                console.log("Main EndDate ======>" + mainEndDate);
+                console.log("timeSplitend ======>" + timeSplitend);
 
                 console.log({ edDate });
                 // let today = new Date().toISOString();
@@ -396,8 +432,8 @@ export default class FullCalendarJs extends LightningElement {
         // this.wrapp.EndDate = this.endDate.toJSON();
         // this.wrapp.startDate = this.startDate.formatDate('YYYY-MM-DDTHH:mm:ss.sssZ');
         // this.wrapp.EndDate = this.endDate.formatDate('YYYY-MM-DDTHH:mm:ss.sssZ');
-        console.log(this.wrapp.startDate);
-        console.log(this.wrapp.EndDate);
+        console.log("startDate From Wrapper ===>" + this.wrapp.startDate);
+        console.log("endDate From Wrapper ===>" + this.wrapp.EndDate);
         console.log(this.wrapp);
 
         var aaa = this.wrapp;
@@ -547,7 +583,7 @@ export default class FullCalendarJs extends LightningElement {
     }
 
 
-    getDateInFormat() {
+    getDateInFormat() { // For Displaying Events List In RightSide.
         var today = new Date();
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -582,6 +618,20 @@ export default class FullCalendarJs extends LightningElement {
                 console.log("result from apex ||||| class ==>", result);
                 console.log({ result });
                 console.log("result length ===>" + result.length);
+
+                for (const res of result) {
+                    res["startTime"] = res.Start_Date_Time__c.substring(11, 16);
+                    // res["totalDuration"] = (res.End_Date_Time__c.substring(11, 16) - res.Start_Date_Time__c.substring(11, 16));
+                    var date1 = new Date(res.Start_Date_Time__c);
+                    var date2 = new Date(res.End_Date_Time__c);
+                    var Difference_In_Time = date2.getTime() - date1.getTime();
+                    var Difference_In_Time = Difference_In_Time / (1000 * 60);
+                    res["totalDuration"] = Difference_In_Time;
+                    console.log("date to diff ========>" + Difference_In_Time);
+                    console.log("start Time ===>" + res.Start_Date_Time__c.substring(11, 16));
+                }
+
+
                 console.log("result length **** ===>" + result[0].Start_Date_Time__c.substring(11, 16));
             })
             .catch((error) => {

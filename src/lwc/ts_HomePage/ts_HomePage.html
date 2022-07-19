@@ -1,75 +1,67 @@
 <template>
-    <div>
-        <!-- <div class="top slds-grid slds-gutters">
-            <div class="slds-col slds-size_4-of-12" style="display: flex;">
-                <div><img src={hmIcon}></div>
-                <div style="margin-top: 2px"><img src={mnIcon}></div>
-            </div>
-            <div class="slds-col slds-size_5-of-12" style="display: flex;">
-                <div class="slds-m-right_small slds-m-top_xxx-small"><img src={img1}></div>
-                <div class="slds-m-right_small slds-m-top_xxx-small"><img src={img2}></div>
-                <div class="slds-m-right_small slds-m-top_xxx-small"><img src={img3}></div>
-                <div class="slds-m-right_small slds-m-top_xxx-small"><img src={img4}></div>
-                <div class="slds-m-right_small slds-m-top_xxx-small" ><img src={img5} style="height:37px;"></div>
-            </div>
-            <div class="slds-col slds-size_3-of-12" style="display: flex;">
-                <div class="slds-m-top_xx-small"><img src={fbIcon}></div>
-                <div class="slds-m-top_xx-small"><img src={linkedIcon}></div>
-                <div class="helpDiv slds-m-left_medium slds-m-right_medium">Help</div>
-                <div class="logOutDiv">LogOut</div>
-                  <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_8-of-12">
 
-            </div>
-        </div> -->
-        <div>      
-            <div class="content">
-                <div class="midBlock slds-grid slds-gutters ">
-                    <div class=" welcomeText slds-col slds-small-size_1-of-1  slds-medium-size_8-of-12 slds-large-size_8-of-12">
-                        <h2>Welcome back, {uName}</h2>
-                        <p class="subtext slds-m-top_x-medium">Manage your account, contact us if you need assistance.</p>
-                    </div>
-                    <div  class="slds-col slds-col slds-large-size_4-of-12 profileImgDiv slds-medium-size_4-of-12  slds-small-size_1-of-1 "><span style="display: inline-block;" class=""><img src={imgUrl} class="profileImg" style="border-radius:50%"></span> </div>
-                </div>       
-            </div>
-        </div> 
-                     
-
-        <div class="slds-align_absolute-center imageSection" style="display: flex;">
-            <div class="slds-m-right_small slds-m-around_small img1"><img src={img1}></div>
-            <div class="slds-m-right_small slds-m-top_xxx-small img2"><img src={img2}></div>
-            <div class="slds-m-right_small slds-m-around_x-small img3"><img src={img3}></div>
-            <div class="slds-m-right_small slds-m-top_xxx-small img4"><img src={img4}></div>
-            <div class="slds-m-right_small slds-m-top_xxx-small img5"><img src={img5} style="height:37px;"></div>
+     <!-- ======= Spinner ======= -->
+   <template if:true={isSpinner}>
+    <div class="slds-spinner_container spinner-center" style="overflow: hidden;">
+        <div class="spinner-ts">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
         </div>
-        
-        <!-- Page Content-->
+    </div>
+</template>
+<!-- ======= Spinner ======= -->
+
+<div>
+    <div>
         <div class="content">
-            
-            <br />  
-            <div class="subContent" >
-                <div class="middleText">
-                    <h3>Get Started By Updating Your Account Details</h3>
+            <div class="midBlock slds-grid slds-gutters ">
+                <div class=" welcomeText slds-col slds-small-size_1-of-1  slds-medium-size_8-of-12 slds-large-size_8-of-12">
+                    <h2>Welcome back, {uName}</h2>
+                    <p class="subtext slds-m-top_x-medium">Manage your account, contact us if you need assistance.</p>
                 </div>
-                <div class="container slds-grid slds-align_absolute-center slds-wrap slds-m-top_xx-large" >  
-                    <lightning-button-icon  size="medium"  onclick={changeCards} class='nextIcon' variant="bare"   icon-name="utility:chevronright"  alternative-text="Next" title='Next'></lightning-button-icon>
-              
-                    <div class="dbSection dbsection-reporting slds-small-size_1-of-1 slds-medium-size_1-of-1  slds-large-size_1-of-4  slds-col "> 
-                        <div  class="dbsection-main">
-                        <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">                       
-                        <span class="images myAccountSpan"><img src={myAccImg}></span>                          
-                         <p class="slds-p-top_xx-large" style="font-size: 16px;">My Account</p>
-                            <p class="textp slds-m-right_x-large" data-name="Profile" onclick={redirectpage}>Let's Start</p>   
-                        </div>
+                <div class="slds-col slds-col slds-large-size_4-of-12 profileImgDiv slds-medium-size_4-of-12  slds-small-size_1-of-1 "><span style="display: inline-block;" class=""><img src={imgUrl} class="profileImg" style="border-radius:50%"></span> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slds-align_absolute-center imageSection" style="display: flex;">
+        <div class="slds-m-right_small slds-m-around_small img1"><img src={image}></div>
+        <div class="slds-m-right_small slds-m-top_xxx-small img2"><img src={image1}></div>
+        <div class="slds-m-right_small slds-m-around_x-small img3"><img src={image2}></div>
+        <div class="slds-m-right_small slds-m-top_xxx-small img4"><img src={image3}></div>
+        <div class="slds-m-right_small slds-m-top_xxx-small img5"><img src={image4}></div>
+    </div>
+
+    <!-- Page Content-->
+    <div class="content">
+
+        <br />
+        <div class="subContent">
+            <div class="middleText">
+                <h3>Get Started By Updating Your Account Details</h3>
+            </div>
+            <div class="container slds-grid slds-align_absolute-center slds-wrap slds-m-top_xx-large">
+                <lightning-button-icon size="medium" onclick={Next} class='nextIcon' variant="bare" icon-name="utility:chevronright" alternative-text="Next" title='Next'></lightning-button-icon>
+
+                <div class="dbSection dbsection-reporting slds-small-size_1-of-1 slds-medium-size_1-of-1  slds-large-size_1-of-4  slds-col ">
+                    <div class="dbsection-main">
+                        <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                            <span class="images myAccountSpan"><img src={myAccImg}></span>
+                            <p class="slds-p-top_xx-large" style="font-size: 16px;">My Account</p>
+                            <p class="textp slds-m-right_x-large" data-name="Profile" onclick={redirectpage}>Let's Start</p>
                         </div>
                     </div>
-                    
-                    <template if:true={checkClient}>
+                </div>
+
+                <template if:true={checkClient}>
                         <div class="dbSection dbsection-scheduler slds-col slds-medium-size_1-of-1 slds-small-size_1-of-1  slds-large-size_1-of-4 "> 
                             <div  class="dbsection-main">
                        
                             <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
                                 <i class="fa fa-calendar"></i>
-                                <span class="images"  style="position: absolute; top:-29px; width:45%; height:40%"><img src={scheImg}></span>
+                                <span class="images"  style="position: absolute; top:-29px; width:45%; height:40%"><img src={tmSheetImg}></span>
                                 <p class="slds-p-top_xx-large" style="font-size: 16px;">Scheduler</p>
 
                                 <p class="textp slds-m-right_x-large " data-name="Scheduler" onclick={redirectpage}>Scheduler</p>
@@ -78,32 +70,32 @@
                         </div>  
                     </template>
 
-<div class=" dbSection  dbsection-compliance slds-small-size_1-of-1  slds-medium-size_1-of-1 slds-large-size_1-of-4 slds-col ">
-    <div class="dbsection-main">
-        <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
-            <i class="fa fa-clock-o"></i>
-            <span class="images" style="position: absolute; top:-41px; width:67%; height:50%"><img src={cmpImg}></span>
-            <p class="slds-p-top_xx-large" style="font-size: 16px;">Compliance</p>
+                <div class=" dbSection  dbsection-compliance slds-small-size_1-of-1  slds-medium-size_1-of-1 slds-large-size_1-of-4 slds-col ">
+                    <div class="dbsection-main">
+                        <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                            <i class="fa fa-clock-o"></i>
+                            <span class="images" style="position: absolute; top:-41px; width:50%; height:55%"><img src={cmpImg}></span>
+                            <p class="slds-p-top_xx-large" style="font-size: 16px;">Compliance</p>
 
-            <p class="textp textcompliance slds-m-right_large slds-m-top_small" data-name="Compliance" onclick={redirectpage}>Let's Start</p>
-        </div>
-    </div>
-</div>
+                            <p class="textp textcompliance slds-m-right_large slds-m-top_small" data-name="Compliance" onclick={redirectpage}>Let's Start</p>
+                        </div>
+                    </div>
+                </div>
 
-<div class=" dbSection dbsection-timesheets slds-col slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-large-size_1-of-4">
-    <div class="dbsection-main">
-        <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
-            <i class="fa fa-clock-o"></i>
-            <span class="images" style="position: absolute; top:-29px; width:45%; height:40%"><img src={tmSheetImg}></span>
-            <p class="slds-p-top_xx-large" style="font-size: 16px;">Timesheets</p>
+                <div class=" dbSection dbsection-timesheets slds-col slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-large-size_1-of-4">
+                    <div class="dbsection-main">
+                        <div class="dbsection-item" style="background-color: #F6F6F6; height:10rem;display: flex;  flex-direction: column; justify-content: center; align-items: center;border-radius:10px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                            <i class="fa fa-clock-o"></i>
+                            <span class="images" style="position: absolute; top:-29px; width:45%; height:40%"><img src={tmSheetImg}></span>
+                            <p class="slds-p-top_xx-large" style="font-size: 16px;">Timesheets</p>
 
-            <p class="textp textcompliance slds-m-right_large " data-name="Timesheets" onclick={redirectpage}>Let's Start</p>
-        </div>
-    </div>
-</div>
-<lightning-button-icon size="medium" onclick={previous} class='previousIcon' variant="bare" icon-name="utility:chevronleft" alternative-text="Next" title="Next"></lightning-button-icon>
+                            <p class="textp textcompliance slds-m-right_large " data-name="Timesheets" onclick={redirectpage}>Let's Start</p>
+                        </div>
+                    </div>
+                </div>
+                <lightning-button-icon size="medium" onclick={previous} class='previousIcon' variant="bare" icon-name="utility:chevronleft" alternative-text="Next" title="Next"></lightning-button-icon>
 
-<!-- <div class="dbsection-timesheets slds-col slds-size_1-of-4">
+                <!-- <div class="dbsection-timesheets slds-col slds-size_1-of-4">
                                             <div class="dbsection-item">
                                                 <i class="fa fa-clock-o"></i>
                                                 <span class="images"><img src={tmSheetImg}></span>
@@ -111,17 +103,21 @@
                                                 //<a href="{!$Site.Prefix}/TimesheetListing" class="button button-timesheets center-button">Go!</a> 
                                             </div>
                                         </div> -->
-</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Page Footer-->
+    <div class="footer">
+        <div class="footer-socials half-bottom">
+            <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
+            <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <p class="center-text"></p>
+    </div>
 </div>
 
-</div>
-<!-- Page Footer-->
-<div class="footer">
-    <div class="footer-socials half-bottom">
-        <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
-        <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
-    </div>
-    <p class="center-text"></p>
-</div>
-</div>
+<c-ts_-error-component reloadpage={reloadpage}>
+</c-ts_-error-component>
+
 </template>

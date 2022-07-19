@@ -47,6 +47,10 @@ h1 {
     margin-left: 1rem;
 }
 
+.actionDiv img {
+    width: 19px;
+}
+
 @media(max-width: 1024px) {
     .qualifyDiv .slds-page-header {
         padding-left: 0;
@@ -73,9 +77,6 @@ h1 {
     }
     .edit .slds-m-right_small {
         margin-right: 0;
-    }
-    .edit img {
-        margin-top: 5px;
     }
     .statusText {
         width: 18%;

@@ -18,7 +18,7 @@
 
 <template if:true={isClientRejectedModalOpen}>
         <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
-            class="slds-modal slds-fade-in-open">
+            class="slds-modal slds-fade-in-open ">
             <div class="slds-modal__container">
                 <div class="slds-modal__header popup-header">
                     <div class="slds-float_right cursor-pointer" title="Close" onclick={closeRejectModal}>
@@ -26,17 +26,20 @@
                     </div>
                 </div>
                 <div class="slds-modal__content slds-p-around_medium modal-body" id="modal-content-id-1">
-                    <div>
+                    <div class="clientRejectedHeader">
                         <h1>Client Rejected</h1>
                     </div>
-                    <div>
+                    <div class="clientRejectedMessage">
                         <p>Are you sure you want to reject this </p>
                     </div>
-                    <div>
+                    <div class="clientRejectedMessage">
                         <p>Tell us how can we improve. </p>
                     </div>
 
                     <div class="reason-div">
+                        <div class="messageIconDiv">
+                            <img src={message}  alt='Message' class="messageIcon slds-m-right_large" ><b>Reason</b>
+                        </div>
                         <lightning-textarea name="input2" placeholder="Type" value={rejectionNotes}
                             onchange={saveRejectionNotes}>
                         </lightning-textarea>
@@ -58,46 +61,39 @@
 
 <!--================================    Client Approve Popup Modal    ================================-->
 
+
 <template if:true={isClientApproveModalOpen}>
-        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
-            class="slds-modal slds-fade-in-open">
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
             <div class="slds-modal__container">
                 <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
 
                     <div class="pop-apprv-header">
                         <div class="pop-apprv-ttl">Give Feedback</div>
-                        <div class="slds-p-top_small">Please let us know how you're feeling about working for Supply
-                            Desk?</div>
+                        <div class="slds-p-top_small">Please let us know how you're feeling about working for Supply Desk?</div>
                     </div>
                     <div class="pop-apprv-rating-div slds-grid slds-wrap">
                         <div class="slds-size_1-of-5">
-                            <div data-id="Unsatisfactory" onclick={selectRating}
-                                class="emg-unsetisfy slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                            <div data-id="Unsatisfactory" onclick={selectRating} name="Unsatisfactory" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                 <img src={unsetisfyEmg} alt="unsetisfyEmg" title="Reject" class="top-header-btn-icon">
                             </div>
                         </div>
                         <div class="slds-size_1-of-5">
-                            <div data-id="Requires Improvement" onclick={selectRating}
-                                class="emg-ri slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
-                                <img src={requireImprovmentsEmg} alt="requireImprovmentsEmg" title="Reject"
-                                    class="top-header-btn-icon">
+                            <div data-id="Requires Improvement" onclick={selectRating} name="Requires Improvement" class=" slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                                <img src={requireImprovmentsEmg} alt="requireImprovmentsEmg" title="Reject" class="top-header-btn-icon">
                             </div>
                         </div>
                         <div class="slds-size_1-of-5">
-                            <div data-id="Good" onclick={selectRating}
-                                class="emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                            <div data-id="Good" onclick={selectRating} name="Good" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                 <img src={goodEmg} alt="goodEmg" title="Reject" class="top-header-btn-icon">
                             </div>
                         </div>
                         <div class="slds-size_1-of-5">
-                            <div data-id="Very Good" onclick={selectRating}
-                                class="emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                            <div data-id="Very Good" onclick={selectRating} name="Very Good" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                 <img src={VeryGoodEmg} alt="VeryGoodEmg" title="Reject" class="top-header-btn-icon">
                             </div>
                         </div>
                         <div class="slds-size_1-of-5">
-                            <div data-id="Excellent" onclick={selectRating}
-                                class="emg-excel slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                            <div data-id="Excellent" onclick={selectRating} name="Excellent" class=" emoji_rating slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
                                 <img src={excelentEmg} alt="excelentEmg" title="Reject" class="top-header-btn-icon">
                             </div>
                         </div>
@@ -106,10 +102,9 @@
                         <div class="slds-m-right_x-small">Request Quality Call</div>
                         <lightning-input type="checkbox" name="requestCall"></lightning-input>
                     </div>
+                  
                     <div class="pop-apprv-rsn-div">
-                        <div>What are the main reasons for your rating?</div>
-                        <lightning-textarea name="input2" placeholder="Type" value={approveNotes}
-                            onchange={saveApproveNotes}>
+                        <lightning-textarea name="input2" required={text_area_required} placeholder="Type" label="What are the main reasons for your rating?" value={approveNotes} onchange={saveApproveNotes}>
                         </lightning-textarea>
                     </div>
                     <div class="pop-apprv-footer-btn">
@@ -124,10 +119,10 @@
                     </div>
                 </div>
             </div>
+            
         </section>
         <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
     </template>
-
 <!--================================    Client Approve Popup Modal    ================================-->
 
 
@@ -434,4 +429,7 @@
         </div>
     </div>
 </div> -->
+
+<c-ts_-error-component reloadpage={reloadpage}>
+</c-ts_-error-component>
 </template>

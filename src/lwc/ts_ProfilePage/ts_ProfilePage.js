@@ -11,8 +11,11 @@ import profilePageCss from '@salesforce/resourceUrl/profilePageCss';
 import saveData from '@salesforce/apex/ts_ProfilePageController.saveData';
 import getData from '@salesforce/apex/ts_ProfilePageController.getData';
 import saveFile from '@salesforce/apex/ts_ProfilePageController.saveFile';
+import getDocsData from '@salesforce/apex/ts_ProfilePageController.getDocsData';
 import deleteFile from '@salesforce/apex/ts_ProfilePageController.deleteFile';
+import saveCV from '@salesforce/apex/ts_ProfilePageController.saveCV';
 import communityicon from '@salesforce/resourceUrl/communityicons';
+import { deleteRecord } from 'lightning/uiRecordApi';
 
 
 export default class Ts_ProfilePage extends LightningElement {
@@ -36,8 +39,15 @@ export default class Ts_ProfilePage extends LightningElement {
     @track newImgUrl;
     @track newImgFile;
     @track deletePfp = false;
-
+    @track cvId;
+    @track cvName;
     @track isSpinner;
+    file;
+    fileContents;
+    fileReader;
+    content;
+
+
     connectedCallback() {
         this.getUsrData();
     }
@@ -49,7 +59,7 @@ export default class Ts_ProfilePage extends LightningElement {
                 console.log('Files loaded');
             })
             .catch(error => {
-                console.log(error.body.message);
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
             });
     }
 
@@ -65,6 +75,19 @@ export default class Ts_ProfilePage extends LightningElement {
                 this.mobilephn = result.mobilephn;
                 this.imgUrl = result.FullPhotoUrl;
                 this.newImgUrl = result.FullPhotoUrl;
+            })
+        getDocsData()
+            .then(result => {
+                console.log({ result });
+                if (result != null) {
+                    this.cvId = result.Id;
+                    this.cvName = result.Title;
+                    var cvData = this.template.querySelector('.cvData');
+                    cvData.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
             })
     }
 
@@ -89,94 +112,54 @@ export default class Ts_ProfilePage extends LightningElement {
         return ['.png', '.jpg', '.jpeg'];
     }
 
-    saveFileHandle(event) {
-        let fileList = event.detail.files;
-        console.log('length>>', fileList.length);
-        var target = event.target.name;
-        console.log({ fileList });
-
-        [...fileList].forEach(file => {
-            console.log({ file });
-            let fileReader = new FileReader();
-            file.sObjectId = this.usrId;
-
-            var sId = file.sObjectId;
-            fileReader.onload = function() {
-                let fileContents = fileReader.result;
-                let base64Mark = 'base64,';
-                let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
-                fileContents = fileContents.substring(dataStart);
-                console.log('this.recordId>>', sId);
-                saveFile({
-                        userId: sId,
-                        fileId: file.Id,
-                        base64Data: encodeURIComponent(fileContents)
-                    })
-                    .then(result => {
-                        alert('Sucess');
-
-                    })
-                    .catch(error => {
-                        console.log({ error });
-                    });
-            };
-            fileReader.readAsDataURL(file);
-
-        });
-        this.isSpinner = true;
-        setTimeout(() => {
-            this.getUsrData();
-            this.isSpinner = false;
-        }, 1500);
-    }
-
+    // get data for upload CV
     handleFile(event) {
-        console.log({ event });
-        let fileList = event.detail.files;
-        console.log('length>>', fileList.length);
-        var target = event.target.name;
-        console.log({ fileList });
-
-        [...fileList].forEach(file => {
-            let fileReader = new FileReader();
-            file.sObjectId = this.recordId;
-
-            var sId = file.sObjectId;
-            console.log({ sId });
-            fileReader.onload = function() {
-                let fileContents = fileReader.result;
-                let base64Mark = 'base64,';
-                let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
-                fileContents = fileContents.substring(dataStart);
-                saveCV({
-                        parentId: sId,
-                        fileName: file.name,
-                        base64Data: encodeURIComponent(fileContents)
-                    })
-                    .then(result => {
-                        // alert('Sucess');
-
-                    })
-                    .catch(error => {
-                        alert('Error');
-                    });
-            };
-            fileReader.readAsDataURL(file);
-            console.log('fl>>', fileList.length);
-
-            alert('File Uploaded Successfully');
-
-        });
+        var cvId = this.cvId;
+        if (cvId == '' || cvId == undefined) {
+            this.isSpinner = true;
+            let fileList = event.target.files;
+            this.file = fileList[0];
+            this.showLoadingSpinner = true;
+            this.fileReader = new FileReader();
+            this.fileReader.onloadend = (() => {
+                this.fileContents = this.fileReader.result;
+                let base64 = 'base64,';
+                this.content = this.fileContents.indexOf(base64) + base64.length;
+                this.fileContents = this.fileContents.substring(this.content);
+                this.cvUpload();
+            });
+            this.fileReader.readAsDataURL(this.file);
+        } else {
+            this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Only One CV Allow.', 3000);
+        }
     }
 
-    handleUploadFinished(event) {
-        // Get the list of uploaded files
-        const uploadedFiles = event.detail.files;
-        alert('No. of files uploaded : ' + uploadedFiles.length);
-    }
+    // upload CV
+    cvUpload(event) {
+        var pId = this.usrId;
+        console.log({ pId });
+        var file = this.file;
+        var fileContents = this.fileContents;
+        saveCV({
+                parentId: pId,
+                fileName: file.name,
+                base64Data: encodeURIComponent(fileContents)
+            })
+            .then(result => {
+                console.log({ result });
+                this.cvId = result[0];
+                this.cvName = result[1];
+                var cvData = this.template.querySelector('.cvData');
+                cvData.style.display = 'block';
+                this.isSpinner = false;
+            })
+            .catch(error => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
+            });
+    };
 
+    // set input field data
     handleChange(event) {
-
         console.log('usr>>', this.usrId);
         if (event.target.name == 'firstname') {
             this.fname = event.target.value;
@@ -195,53 +178,74 @@ export default class Ts_ProfilePage extends LightningElement {
             console.log('this.mobilephn>>', this.mobilephn);
         }
     }
+
+    // run method on save click
     handleSave(event) {
-        try {
-            this.isSpinner = true;
-            let file = this.newImgFile;
-            if (file != undefined && this.deletePfp == false) {
-                let fileReader = new FileReader();
-                file.sObjectId = this.usrId;
+        this.isSpinner = true;
+        var file = this.newImgFile;
 
-                var sId = file.sObjectId;
-                fileReader.onload = function() {
-                    let fileContents = fileReader.result;
-                    let base64Mark = 'base64,';
-                    let dataStart = fileContents.indexOf(base64Mark) + base64Mark.length;
-                    fileContents = fileContents.substring(dataStart);
-                    saveFile({
-                            userId: sId,
-                            fileId: file.Id,
-                            base64Data: encodeURIComponent(fileContents)
-                        })
-                        .catch(error => {
-                            alert('Error');
-                        });
-                };
-                fileReader.readAsDataURL(file);
-            } else if (this.deletePfp == true) {
-                deleteFile({ userId: this.usrId })
-            }
-
-            let usrObj = { 'sobjectType': 'User' };
-            usrObj.Id = this.usrId;
-            usrObj.FirstName = this.fname;
-            usrObj.LastName = this.lname;
-            usrObj.Email = this.email;
-            usrObj.businessphn = this.businessphn;
-            usrObj.mobilephn = this.mobilephn;
-            saveData({ usr: usrObj })
-
-            setTimeout(() => {
-                this.getUsrData();
-                this.isSpinner = false;
-            }, 5500);
-
-        } catch (error) {
-            console.log({ error });
+        if (file != undefined && this.deletePfp == false) {
+            this.file = file;
+            this.showLoadingSpinner = true;
+            this.fileReader = new FileReader();
+            this.fileReader.onloadend = (() => {
+                this.fileContents = this.fileReader.result;
+                let base64 = 'base64,';
+                this.content = this.fileContents.indexOf(base64) + base64.length;
+                this.fileContents = this.fileContents.substring(this.content);
+                this.savePfp();
+            });
+            this.fileReader.readAsDataURL(this.file);
+        } else if (this.deletePfp == true) {
+            deleteFile({ userId: this.usrId });
+            this.saveUserData();
+        } else {
+            this.saveUserData();
         }
     }
 
+    // save new profile pic after save button click
+    savePfp(event) {
+        var pId = this.usrId;
+        var file = this.file;
+        var fileContents = this.fileContents;
+        saveFile({
+                userId: pId,
+                fileId: file.Id,
+                base64Data: encodeURIComponent(fileContents)
+            })
+            .then(result => {
+                console.log({ result });
+                if (result == 'Success') {
+                    this.saveUserData();
+                } else {
+                    this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Please Choose Other Image For Profile', 3000);
+                    this.isSpinner = false;
+                }
+            })
+            .catch(error => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
+            });
+    }
+
+    // save all user data after click on save button
+    saveUserData(event) {
+        let usrObj = { 'sobjectType': 'User' };
+        usrObj.Id = this.usrId;
+        usrObj.FirstName = this.fname;
+        usrObj.LastName = this.lname;
+        usrObj.Email = this.email;
+        usrObj.businessphn = this.businessphn;
+        usrObj.mobilephn = this.mobilephn;
+        saveData({ usr: usrObj })
+
+        setTimeout(() => {
+            this.getUsrData();
+            this.isSpinner = false;
+        }, 2000);
+    }
+
+    // show save and ancel button in only first tab
     handleActive(event) {
         const tab = event.target.value;;
         var btns = this.template.querySelector('.btns');
@@ -252,6 +256,7 @@ export default class Ts_ProfilePage extends LightningElement {
         }
     }
 
+    // set view of new profile pic and store data
     savePfpHandle(event) {
         try {
             this.deletePfp = false;
@@ -259,13 +264,28 @@ export default class Ts_ProfilePage extends LightningElement {
             this.newImgFile = file;
             this.newImgUrl = URL.createObjectURL(file);
         } catch (error) {
-            console.log({ error });
+            this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
         }
     }
 
+    // delete profile pic
     deletePfpHandle(event) {
         this.deletePfp = true;
         var pfpImage = this.template.querySelector('.profChangeImg');
         pfpImage.setAttribute('src', this.blankProgileImg);
+    }
+
+    // delete CV
+    deleteCv(event) {;
+        deleteRecord(this.cvId)
+            .then((result) => {
+                this.cvId = '';
+                var cvData = this.template.querySelector('.cvData');
+                cvData.style.display = 'none';
+                this.template.querySelector('c-ts_-tost-notification').showToast('success', 'You CV is deleted', 3000);
+            })
+            .catch(error => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
+            });
     }
 }

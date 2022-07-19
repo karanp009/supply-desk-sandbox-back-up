@@ -25,9 +25,9 @@ export default class CommonToast extends LightningElement {
 
         }
         console.log('OUTPUT toast: ',message);
-        setTimeout(() => {
-            this.closeModel();
-        }, this.autoCloseTime);
+        // setTimeout(() => {
+        //     this.closeModel();
+        // }, this.autoCloseTime);
     }
 
     

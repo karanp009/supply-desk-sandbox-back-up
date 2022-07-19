@@ -84,12 +84,10 @@ export default class Ts_Register extends LightningElement {
         console.log({ valname });
         if (valname == "FirstName") {
             this.contwrap.FirstName = event.target.value;
-            this.template.querySelector('c-ts_-tost-notification').showToast('success','Enter Valid Email and License Id',1000);
             console.log(event.target.value);
         } else if (valname == "LastName") {
             this.contwrap.LastName = event.target.value;
             console.log('OUTPUT lastname:',event.target.value);
-            this.template.querySelector('c-ts_-tost-notification').showToast('error','Enter Valid Email and License Id Error',1000);
         } else if (valname == "Email") {
             this.contwrap.Email = event.target.value;
             console.log(this.contwrap);
@@ -196,11 +194,5 @@ export default class Ts_Register extends LightningElement {
         this.contwrap.Postcode = '';
         this.contwrap.Mobile = '';
         this.contwrap.Phone = '';
-    }
-
-    // // Notification Toast 
-
-    // this.template.querySelector('c-ts_-tost-notification').showToast('success','Enter Valid Email and License Id',10000);
-
-    
+    } 
 }

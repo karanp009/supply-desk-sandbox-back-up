@@ -1,8 +1,8 @@
 <template>
+
+    <c-ts_-tost-notification></c-ts_-tost-notification>
+
     <div class="mainDiv">
-        <!-- <div if:true={isLoaded} class="spinner_Cls">
-            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
-        </div> -->
         <template if:true={isSpinner}>
             <div class="slds-spinner_container spinner-center" style="overflow: hidden;">
                 <div class="spinner-ts">
@@ -68,19 +68,15 @@
                     <span class="imageUpload">
                                 <img src={newImgUrl} class="profChangeImg slds-m-left_medium slds-m-top_medium">
                             </span>
-                    <!-- <div class="slds-p-horizontal-small slds-col slds-m-bottom-medium slds-form-element">
-                        <lightning-input type="file" accept={acceptedFormats} onchange={saveFileHandle}>
-                        </lightning-input>
-                    </div> -->
                     <input type="file" class="slds-assistive-text" accept={acceptedFormats} id="pfpUpload" onchange={savePfpHandle} />
                     <label class="slds-file-selector__body" for="pfpUpload">
-                        <div class="fileUpload">
-                            <div>
-                                <img src={updateImg}>
-                                <p> Update </p>
-                            </div>
-                        </div>
-                    </label>
+                                <div class="fileUpload">
+                                    <div>
+                                        <img src={updateImg}>
+                                        <p> Update </p>
+                                    </div>
+                                </div>
+                            </label>
                     <div class="fileDelete" onclick={deletePfpHandle}>
                         <div>
                             <img src={deleteImg}>
@@ -124,23 +120,14 @@
                     <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium">
                         Add Your CV
                     </div>
-                    <div class="slds-p-horizontal-small slds-col slds-form-element slds-align_absolute-center dropDiv">
-                        <!-- <lightning-input type="file" accept={acceptedFormats} onchange={saveFileHandle}></lightning-input> -->
-                        <div class="slds-file-selector slds-file-selector_integrated slds-file-selector_integrated">
-                            <div class="slds-file-selector__dropzone slds-file-selector__dropzone_integrated slds-has-drag" aria-hidden="true">
-                                <input type="file" class="slds-file-selector__input slds-assistive-text" accept={acceptedFormats} id="file-upload-input-01" tabindex="-1" onchange={handleFile} />
-                                <label class="slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large" for="file-upload-input-01">
-                                            <div class="cvSec slds-m-top_x-large">
-                                                <span>
-                                                    <img class="slds-m-right_medium cvImg" src={dragFileImg}>
-                                                </span>
-                                                <span class="slds-file-selector__text slds-file-selector__text_integrated slds-text-heading_medium slds-text-align_center">
-                                                    Drag file here or click to add attachment
-                                                </span>
-                                            </div>
-                                        </label>
-                            </div>
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
                         </div>
+                        <input type="file" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <div class="cvData slds-size_10-of-12">
+                        {cvName} <img src={deleteImg} onclick={deleteCv}>
                     </div>
                 </div>
             </div>
@@ -163,17 +150,6 @@
         </lightning-tab>
     </lightning-tabset>
 </div>
-
-<!-- <input type="file" class="slds-assistive-text" accept="image/png" id="pfpUpload" />
-<label class="slds-file-selector__body" for="pfpUpload">
-    <div class="fileUpload">
-        <div>
-            <img src={updateImg}>
-            <p> Update </p>
-        </div>
-    </div>
-</label> -->
-
 
 </div>
 </template>

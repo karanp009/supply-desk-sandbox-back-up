@@ -136,7 +136,7 @@
 }
 
 .cvData {
-    display: none;
+    display: block;
     height: 2rem;
     margin: 1rem auto;
     box-shadow: 0 0 5px rgb(0 0 0 / 30%);

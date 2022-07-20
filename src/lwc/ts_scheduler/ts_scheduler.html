@@ -52,22 +52,35 @@
                 <div class="top-available-div tpd">
                     <div class="top-avl-icon-div"></div>
                     <div>Available</div>
+                    <div>
+                        <lightning-helptext content="Available means you're available to work for Supply Desk today">
+                        </lightning-helptext>
+                    </div>
                 </div>
                 <div class="top-not-wrkng-div tpd">
                     <div class="top-not-wrkng-icon-div"></div>
-                    <div>Not Available</div>
+                    <div>
+                        <div>Unavailable</div>
+                        <lightning-helptext
+                            content="Unavailable means you're not working in any school for anyone today">
+                        </lightning-helptext>
+                    </div>
                 </div>
                 <div class="top-wfa-div tpd">
                     <div class="top-wfa-icon-div"></div>
-                    <div>Working</div>
+                    <div>
+                        <div>Booked by another agency</div>
+                        <lightning-helptext
+                            content="Booked by another agency means you're working in a school today for another agency other than Supply Desk">
+                        </lightning-helptext>
+                    </div>
                 </div>
             </div>
             <div class="wkly-tsk">
                 Weekly Tasks
             </div>
             <div class="calender-div">
-                <div id="calendar" class="fullcalendarjs" 
-                        style=  "margin-right: 10px; 
+                <div id="calendar" class="fullcalendarjs" style="margin-right: 10px; 
                                 background: #F6F6F6;
                                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                                 border-radius: 10px;
@@ -113,33 +126,6 @@
             </div>
         </div>
     </div>
-
-
-
-    <!-- <div class="ipad-view-main">
-        <div class="ip-cal-div">
-            <div class="ip-month-div">
-                <div class="ip-month-itr">
-                    <template for:each={mL} for:item="mn">
-                        <div class="ip-month-itr-div" key={mn}> {mn} </div>
-                    </template>
-                </div>
-
-                <div class="ip-date-itr-div">
-                    <template for:each={md} for:item="md">
-                        <div class="ip-date-div" key={md}> {md} </div>
-                    </template>
-                </div>
-
-                <div class="ip-month-days-div slds-grid slds-wrap">
-                    <template for:each={mw} for:item="mw">
-                        <div class="slds-col slds-size_1-of-7" key={mw}> {mw} </div>
-                    </template>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
 
 
     <!-- Open a modal with new event form  -->

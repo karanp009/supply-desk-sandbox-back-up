@@ -42,6 +42,7 @@ export default class Ts_ProfilePage extends LightningElement {
     @track cvId;
     @track cvName;
     @track isSpinner;
+    @track cvList;
     file;
     fileContents;
     fileReader;
@@ -76,17 +77,20 @@ export default class Ts_ProfilePage extends LightningElement {
                 this.imgUrl = result.FullPhotoUrl;
                 this.newImgUrl = result.FullPhotoUrl;
             })
+            this.loadCv();
+    }
+
+    // get cv from apex
+    loadCv(evet){
         getDocsData()
             .then(result => {
                 console.log({ result });
                 if (result != null) {
-                    this.cvId = result.Id;
-                    this.cvName = result.Title;
-                    var cvData = this.template.querySelector('.cvData');
-                    cvData.style.display = 'block';
+                    this.cvList = result;
                 }
             })
             .catch(error => {
+                console.log({error});
                 this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
             })
     }
@@ -108,30 +112,24 @@ export default class Ts_ProfilePage extends LightningElement {
     }
 
     get acceptedFormats() {
-
         return ['.png', '.jpg', '.jpeg'];
     }
 
     // get data for upload CV
     handleFile(event) {
-        var cvId = this.cvId;
-        if (cvId == '' || cvId == undefined) {
-            this.isSpinner = true;
-            let fileList = event.target.files;
-            this.file = fileList[0];
-            this.showLoadingSpinner = true;
-            this.fileReader = new FileReader();
-            this.fileReader.onloadend = (() => {
-                this.fileContents = this.fileReader.result;
-                let base64 = 'base64,';
-                this.content = this.fileContents.indexOf(base64) + base64.length;
-                this.fileContents = this.fileContents.substring(this.content);
-                this.cvUpload();
-            });
-            this.fileReader.readAsDataURL(this.file);
-        } else {
-            this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Only One CV Allow.', 3000);
-        }
+        this.isSpinner = true;
+        let fileList = event.target.files;
+        this.file = fileList[0];
+        this.showLoadingSpinner = true;
+        this.fileReader = new FileReader();
+        this.fileReader.onloadend = (() => {
+            this.fileContents = this.fileReader.result;
+            let base64 = 'base64,';
+            this.content = this.fileContents.indexOf(base64) + base64.length;
+            this.fileContents = this.fileContents.substring(this.content);
+            this.cvUpload();
+        });
+        this.fileReader.readAsDataURL(this.file);
     }
 
     // upload CV
@@ -146,12 +144,8 @@ export default class Ts_ProfilePage extends LightningElement {
                 base64Data: encodeURIComponent(fileContents)
             })
             .then(result => {
-                console.log({ result });
-                this.cvId = result[0];
-                this.cvName = result[1];
-                var cvData = this.template.querySelector('.cvData');
-                cvData.style.display = 'block';
                 this.isSpinner = false;
+                this.loadCv();
             })
             .catch(error => {
                 this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
@@ -276,13 +270,13 @@ export default class Ts_ProfilePage extends LightningElement {
     }
 
     // delete CV
-    deleteCv(event) {;
-        deleteRecord(this.cvId)
+    deleteCv(event) {
+        var cvId = event.target.name;
+        console.log({cvId});
+        deleteRecord(cvId)
             .then((result) => {
-                this.cvId = '';
-                var cvData = this.template.querySelector('.cvData');
-                cvData.style.display = 'none';
                 this.template.querySelector('c-ts_-tost-notification').showToast('success', 'You CV is deleted', 3000);
+                this.loadCv();
             })
             .catch(error => {
                 this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);

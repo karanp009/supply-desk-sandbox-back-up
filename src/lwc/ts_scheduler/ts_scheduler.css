@@ -53,8 +53,11 @@
     width: 22%;
     height: 60%;
     min-height: 75px;
-    font-size: large;
-    font-weight: 700;
+    font-size: 1em;
+    /* font-size: large; */
+    /* font-weight: 700; */
+    color: #000000;
+    font-weight: 500;
     font-style: normal;
 
 }
@@ -177,7 +180,7 @@
 
 /* IPAD VIEW */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
+
     .right-div {
         display: none;
     }

@@ -186,6 +186,9 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         console.log("selected Imogi value ====>" + this.selectedRetting);
         if(this.selectedRetting == "Excellent" || this.selectedRetting == "Very Good"){
             this.text_area_required = false;
+            // let fieldToFocus = this.template.querySelector("lightning-textarea");
+            // fieldToFocus.setCustomValidity("");
+            // fieldToFocus.reportValidity();
         }
         else{
             this.text_area_required = true;
@@ -197,10 +200,6 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
             this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
             this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
             this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-
-            let fieldToFocus = this.template.querySelector("lightning-textarea");
-            fieldToFocus.setCustomValidity("");
-            fieldToFocus.reportValidity();
         }
         else if(this.selectedRetting == "Very Good"){
             this.template.querySelector('[data-id="Very Good"]').className=' emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
@@ -208,10 +207,6 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
             this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
             this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
             this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-
-            let fieldToFocus = this.template.querySelector("lightning-textarea");
-            fieldToFocus.setCustomValidity("");
-            fieldToFocus.reportValidity();
         }
         else if(this.selectedRetting == "Good"){
             this.template.querySelector('[data-id="Good"]').className='emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';

@@ -126,9 +126,11 @@
                         </div>
                         <input type="file" accept="image/*, application/pdf" onchange={handleFile} />
                     </div>
-                    <div class="cvData slds-size_10-of-12">
-                        {cvName} <img src={deleteImg} onclick={deleteCv}>
-                    </div>
+                    <template for:each={cvList} for:item="cv">
+                            <div key={cv.Id} class="cvData slds-size_10-of-12">
+                                {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                            </div>
+                    </template>
                 </div>
             </div>
             <div class="iPadbtns">

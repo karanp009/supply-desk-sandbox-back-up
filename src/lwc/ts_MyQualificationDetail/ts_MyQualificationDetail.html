@@ -1,10 +1,10 @@
 <template>
     <div class="mainDiv">
 
-        <template if:true={isResult}>
+        <!-- <template if:true={isResult}> -->
             <!-- <c-ts_-My-Qualifications></c-ts_-My-Qualifications> -->
             <c-ts_-Tost-Notification></c-ts_-Tost-Notification>
-        </template>
+        <!-- </template> -->
         <!-- ======= Spinner ======= -->
  
             <template if:true={isSpinner}>
@@ -80,11 +80,16 @@
                         <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
                             <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
                         </div>
-                        <input type="file" accept="image/*, application/pdf" onchange={handleFile} />
+                        <input type="file" name="CV" accept="image/*, application/pdf" onchange={handleFile} />
                     </div>
-                    <div class="cvData slds-size_10-of-12">
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
+                    <!-- <div class="cvData slds-size_10-of-12">
                         {cvName} <img src={deleteImg} onclick={deleteCv}>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </template>
@@ -95,39 +100,39 @@
         <template if:true={checkoverPc}>
             <div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large ">Overseas Police Check</div>
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Qualification Type</span>
-                    
-                    <lightning-combobox name="overseasname" label=""
-                        class="slds-combobox_container slds-combobox slds-m-left_large slds-m-top_xx-small slds-m-bottom_medium slds-combobox__form-element slds-form-element__label slds-size_6-of-12 mobWid"
-                        value={overseasVal} options={overseasPoliceOps} placeholder="Select" onchange={handleChange} variant="label-hidden"
-                        >
-                    </lightning-combobox>
-                </div>
-
-                <!-- <div class="slds-gutters slds-m-left_xx-large">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas</span>
-                    <div class="slds-grid slds-gutters slds-m-left_xx-large">
-                        <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_3-of-12 slds-form-element">
-                            <lightning-input type="date" name="opcStdate" value={opcStdate} placeholder="Start Date" onchange={handleChange}></lightning-input>
-                        </div>
-
-                        <div class="dateside lgc-bg slds-col slds-m-bottom_medium slds-size_3-of-12 slds-form-element">
-                            <lightning-input type="date" name="opcEddate" value={opcEddate} placeholder="End Date" onchange={handleChange}></lightning-input>
-                        </div>
+                <div>
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Qualification Type</span>                    
+                        <lightning-combobox name="overseasname" label=""
+                            class="slds-combobox_container slds-combobox slds-m-left_large slds-m-top_xx-small slds-m-bottom_medium slds-combobox__form-element slds-form-element__label slds-size_6-of-12 mobWid"
+                            value={overseasVal} options={overseasPoliceOps} placeholder="Select" onchange={handleChange} variant="label-hidden"
+                            >
+                        </lightning-combobox>
                     </div>
-                </div> -->
+                    <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas - Start</span>                                    
+                        <lightning-input type="date" name="opcStdate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12 mobWid" placeholder="Start Date" onchange={handleChange} value={opcStdate} variant="label-hidden"></lightning-input>
+                    </div>
 
-                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas - Start</span>                                    
-                    <lightning-input type="date" name="opcStdate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12 mobWid" placeholder="Start Date" onchange={handleChange} value={opcStdate} variant="label-hidden"></lightning-input>
+                    <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas - End</span>                                    
+                        <lightning-input type="date" name="opcEddate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12 mobWid" placeholder="End Date" onchange={handleChange} value={opcEddate} variant="label-hidden"></lightning-input>
+                    </div>
                 </div>
-
-                <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Date Lived/Worked Overseas - End</span>                                    
-                    <lightning-input type="date" name="opcEddate" class="slds-m-left_large slds-m-top_xx-small slds-size_6-of-12 mobWid" placeholder="End Date" onchange={handleChange} value={opcEddate} variant="label-hidden"></lightning-input>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="CV" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
                 </div>
-
             </div>
         </template>
         <!-- Overseas Police check -->
@@ -202,56 +207,70 @@
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     Emergency Contact                
                 </div>
-
-                <div
-                class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Name</span>
-                    <lightning-input type="text" onchange={handleChange} label="" name=EconName variant="label-hidden"
-                        placeholder="Name" class="slds-m-top_small">
-                    </lightning-input>
-                </div>
-
-                <div
+                <div>
+                    <div
                     class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Mobile No.</span>
-                    <lightning-input type="tel" onchange={handleChange} label="" variant="label-hidden"
-                        name="EconMobile" placeholder="Number" class="slds-m-top_small">
-                    </lightning-input>
+                        <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Name</span>
+                        <lightning-input type="text" onchange={handleChange} label="" name=EconName variant="label-hidden"
+                            placeholder="Name" class="slds-m-top_small">
+                        </lightning-input>
+                    </div>
 
+                    <div
+                        class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
+                        <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Mobile No.</span>
+                        <lightning-input type="tel" onchange={handleChange} label="" variant="label-hidden"
+                            name="EconMobile" placeholder="Number" class="slds-m-top_small">
+                        </lightning-input>
+
+                    </div>
+
+                    <div
+                        class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
+                        <span class="slds-size_8-of-12">Emergency Contact Work No.</span>
+                        <lightning-input type="tel" onchange={handleChange} label="" name="EconWork" variant="label-hidden"
+                            placeholder="Number" class="slds-m-top_small">
+                        </lightning-input>
+                    </div>
+
+                    <div
+                        class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
+                        <span class="slds-m-bottom_small slds-size_8-of-12">Relationship to You</span>
+                        <lightning-input type="text" onchange={handleChange} name="Relation" label="" variant="label-hidden"
+                            placeholder="Relation" class="slds-m-top_small">
+                        </lightning-input>
+                    </div>
+
+                    <div
+                        class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
+                        <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Home No.</span>
+                        <lightning-input type="tel" onchange={handleChange} label="" name="EconHome" variant="label-hidden"
+                            placeholder="Number" class="slds-m-top_small">
+                        </lightning-input>
+                    </div>
+
+                    <div
+                        class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
+                        <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Address</span>
+                        <lightning-input type="text" name="EconAdd" onchange={handleChange} label="" variant="label-hidden"
+                            placeholder="Address" class="slds-m-top_small">
+                        </lightning-input>
+                    </div>
                 </div>
-
-                <div
-                    class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <span class="slds-size_8-of-12">Emergency Contact Work No.</span>
-                    <lightning-input type="tel" onchange={handleChange} label="" name="EconWork" variant="label-hidden"
-                        placeholder="Number" class="slds-m-top_small">
-                    </lightning-input>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="Emergency Contact" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
                 </div>
-
-                <div
-                    class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <span class="slds-m-bottom_small slds-size_8-of-12">Relationship to You</span>
-                    <lightning-input type="text" onchange={handleChange} name="Relation" label="" variant="label-hidden"
-                        placeholder="Relation" class="slds-m-top_small">
-                    </lightning-input>
-                </div>
-
-                <div
-                    class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Home No.</span>
-                    <lightning-input type="tel" onchange={handleChange} label="" name="EconHome" variant="label-hidden"
-                        placeholder="Number" class="slds-m-top_small">
-                    </lightning-input>
-                </div>
-
-                <div
-                    class="slds-m-left_xx-large lgc-bg slds-p-horizontal--small slds-col slds-size_8-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <span class="slds-m-bottom_small slds-size_8-of-12">Emergency Contact Address</span>
-                    <lightning-input type="text" name="EconAdd" onchange={handleChange} label="" variant="label-hidden"
-                        placeholder="Address" class="slds-m-top_small">
-                    </lightning-input>
-                </div>
-
             </div>
         </template>    
         <!-- DBS -->
@@ -279,30 +298,46 @@
 
         <!-- Teacher Qualification Start -->
         <template if:true={checkteacherQual}>
-            <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Teacher Qualification</div>
             <div>
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">TRA Number</span>
-                    <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
-                        <lightning-input class="input mobWid" name="tranum" type="text" value={tranum} onchange={handleChange} autocomplete="off"></lightning-input>                
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Teacher Qualification</div>
+                <div>
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">TRA Number</span>
+                        <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
+                            <lightning-input class="input mobWid" name="tranum" type="text" value={tranum} onchange={handleChange} autocomplete="off"></lightning-input>                
+                        </div>
                     </div>
+                
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
+                        <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
+                            <lightning-combobox name="teacherQftype"
+                                class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12 mobWid"
+                                value={teacherQftype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
+                            </lightning-combobox>
+                        <!-- </div> -->
+                    </div>
+                    <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large slds-medium-slds-m-left_xx-large slds-medium-slds-p-left-large">
+                        <lightning-dual-listbox name="teacherDualVal" source-label="Available" class="slds-m-left_xx-large wpdate"
+                            selected-label="Selected" options={teacherQualifications} value={teacherDual}
+                            onchange={handleChange}>
+                        </lightning-dual-listbox>
+                    </div> 
                 </div>
-            
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
-                    <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
-                        <lightning-combobox name="teacherQftype"
-                            class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12 mobWid"
-                            value={teacherQftype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
-                        </lightning-combobox>
-                    <!-- </div> -->
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="Teacher Qualification" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
                 </div>
-                <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large slds-medium-slds-m-left_xx-large slds-medium-slds-p-left-large">
-                    <lightning-dual-listbox name="teacherDualVal" source-label="Available" class="slds-m-left_xx-large wpdate"
-                        selected-label="Selected" options={teacherQualifications} value={teacherDual}
-                        onchange={handleChange}>
-                    </lightning-dual-listbox>
-                </div> 
             </div>
         </template>
         <!-- Teacher Qualification End -->
@@ -314,40 +349,55 @@
                     Overseas Teacher Qualifications
                 </div>
 
+                <div>
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-size_8-of-12">Qualification Type</span>                    
+                        
+                        <lightning-combobox name="OTQQFtypeval" label=""
+                            class="slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_large slds-m-top_xx-small slds-size_8-of-12 slds-m-bottom_medium"
+                            value={OTQQFtypeval} options={teacherQFTypeOptions} onchange={handleUpsellChange} variant="label-hidden">
+                        </lightning-combobox>
+                    </div>
 
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-size_8-of-12">Qualification Type</span>                    
-                    
-                    <lightning-combobox name="OTQQFtypeval" label=""
-                        class="slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_large slds-m-top_xx-small slds-size_8-of-12 slds-m-bottom_medium"
-                        value={OTQQFtypeval} options={teacherQFTypeOptions} onchange={handleUpsellChange} variant="label-hidden">
-                    </lightning-combobox>
-                </div>
+                    <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small wpdate">
+                        <span class="slds-m-left_large slds-size_8-of-12">NARIC Approved</span>                    
 
-                <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small wpdate">
-                    <span class="slds-m-left_large slds-size_8-of-12">NARIC Approved</span>                    
+                        <lightning-combobox name="naricApprove" label=""
+                            class="slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_large slds-m-top_xx-small slds-size_8-of-12 slds-m-bottom_medium"
+                            value={naricApprove} options={naricApproveOps} onchange={handleChange} variant="label-hidden">
+                        </lightning-combobox>
+                    </div>
 
-                    <lightning-combobox name="naricApprove" label=""
-                        class="slds-combobox_container slds-combobox slds-combobox__form-element slds-form-element__label slds-m-left_large slds-m-top_xx-small slds-size_8-of-12 slds-m-bottom_medium"
-                        value={naricApprove} options={naricApproveOps} onchange={handleChange} variant="label-hidden">
-                    </lightning-combobox>
-                </div>
+                    <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small wpdate">
+                        <span class="slds-m-left_large slds-size_8-of-12">TRA Number</span>                    
+                        <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_xx-small slds-m-bottom_large slds-form-element">
+                            <lightning-input type="number" name="otstranum" value={otstranum} label="" variant="label-hidden"></lightning-input>
+                        </div>
+                    </div>
 
-                <div class="slds-gutters slds-m-left_xx-large slds-m-top_x-small wpdate">
-                    <span class="slds-m-left_large slds-size_8-of-12">TRA Number</span>                    
-                    <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_xx-small slds-m-bottom_large slds-form-element">
-                        <lightning-input type="number" name="otstranum" value={otstranum} label="" variant="label-hidden"></lightning-input>
+                    <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
+                        Qualifications     
+                    </div>
+                    <div class="slds-m-left_large">
+                        <lightning-dual-listbox name="OTQteacherQualification" value={OTQteacherQualification}
+                            class="slds-m-left_xx-large slds-m-right_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive group2adiv wpdate duelSize"
+                            source-label="Available" selected-label="Selected" options={teacherQualificationsOver} onchange={handleChange}>
+                        </lightning-dual-listbox>
                     </div>
                 </div>
-
-                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
-                    Qualifications     
-                </div>
-                <div class="slds-m-left_large">
-                    <lightning-dual-listbox name="OTQteacherQualification" value={OTQteacherQualification}
-                        class="slds-m-left_xx-large slds-m-right_xx-large slds-size_6-of-12 slds-dueling-picklist__column_responsive group2adiv wpdate duelSize"
-                        source-label="Available" selected-label="Selected" options={teacherQualificationsOver} onchange={handleChange}>
-                    </lightning-dual-listbox>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="Overseas Teacher Qualification" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
                 </div>
             </div>
         </template>
@@ -393,53 +443,68 @@
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     Post 16 Qualifications                
                 </div>
-
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">SET Number</span>
-                    <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
-                        <lightning-input name="snumber" type="text" value={snumb} onchange={handleChange} autocomplete="off" variant="label-hidden"></lightning-input>                
+                <div>
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">SET Number</span>
+                        <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
+                            <lightning-input name="snumber" type="text" value={snumb} onchange={handleChange} autocomplete="off" variant="label-hidden"></lightning-input>                
+                        </div>
+                        
                     </div>
-                    
-                </div>
 
-                <!-- <div class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom--medium slds-form-element l-input">
-                    <lightning-input type="text" name="snumber" onchange={handleChange} label="" value={snumb}>
-                    </lightning-input>
-                </div> -->
-
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">SET Expiry Date</span>                    
-                    <!-- class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom_medium slds-form-element l-input" -->
-                    <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
-                        <lightning-input type="date" name="expDate" label="" value={expirDate} onchange={handleChange} variant="label-hidden"></lightning-input>                    
-                    </div>
-                </div>
-            
-            
-                <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-m-bottom_large wpdate">
-                    <div class="slds-size_1-of-12 slds-m-left_large textp">QTLS</div>
-                    <div>
-                        <lightning-input name="qtl" type="checkbox" onchange={handleChange} value={QtlsCheck}>
+                    <!-- <div class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom--medium slds-form-element l-input">
+                        <lightning-input type="text" name="snumber" onchange={handleChange} label="" value={snumb}>
                         </lightning-input>
+                    </div> -->
+
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">SET Expiry Date</span>                    
+                        <!-- class="slds-p-around_x-small lgc-bg slds-p-horizontal--small slds-m-left_xx-large slds-col slds-size_4-of-12 slds-m-bottom_medium slds-form-element l-input" -->
+                        <div class="slds-m-left_large slds-size_8-of-12 slds-m-top_small slds-m-bottom_large slds-form-element">
+                            <lightning-input type="date" name="expDate" label="" value={expirDate} onchange={handleChange} variant="label-hidden"></lightning-input>                    
+                        </div>
+                    </div>
+                
+                
+                    <div class="slds-grid slds-gutters slds-m-left_xx-large slds-m-top_medium slds-m-bottom_large wpdate">
+                        <div class="slds-size_1-of-12 slds-m-left_large textp">QTLS</div>
+                        <div>
+                            <lightning-input name="qtl" type="checkbox" onchange={handleChange} value={QtlsCheck}>
+                            </lightning-input>
+                        </div>
+                    </div>
+                
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Qualification Type</span>
+                        <lightning-combobox name="quList" label=""
+                            class="slds-combobox_container slds-m-left_large slds-m-top_small slds-combobox slds-combobox__form-element slds-form-element__label slds-size_8-of-12"
+                            value={qValue} options={qList} onchange={handleUpsellChange} variant="label-hidden">
+                        </lightning-combobox>
+                    </div>
+
+                    <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
+                        Qualifications                
+                    </div>
+                    <div class="slds-m-left_large">
+                        <lightning-dual-listbox name="qualselect"
+                            class="slds-m-right_xx-large slds-m-left_xx-large wpdate slds-size_6-of-12 slds-dueling-picklist__column_responsive mbCv"
+                            source-label="Available" selected-label="Selected" options={qualificationsPost16} value={qualmulti} onchange={handleChange}>
+                        </lightning-dual-listbox>
                     </div>
                 </div>
-            
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Qualification Type</span>
-                    <lightning-combobox name="quList" label=""
-                        class="slds-combobox_container slds-m-left_large slds-m-top_small slds-combobox slds-combobox__form-element slds-form-element__label slds-size_8-of-12"
-                        value={qValue} options={qList} onchange={handleUpsellChange} variant="label-hidden">
-                    </lightning-combobox>
-                </div>
-
-                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
-                    Qualifications                
-                </div>
-                <div class="slds-m-left_large">
-                    <lightning-dual-listbox name="qualselect"
-                        class="slds-m-right_xx-large slds-m-left_xx-large wpdate slds-size_6-of-12 slds-dueling-picklist__column_responsive mbCv"
-                        source-label="Available" selected-label="Selected" options={qualificationsPost16} value={qualmulti} onchange={handleChange}>
-                    </lightning-dual-listbox>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="Post16 Qualification" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
                 </div>
             </div>
         </template>
@@ -474,22 +539,37 @@
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     Early Year Qualification                
                 </div>
-
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
-                    <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
-                        <lightning-combobox name="earlyYearQFtype"
-                            class="mobWid slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
-                            value={earlyYearQFtype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
-                        </lightning-combobox>
-                    <!-- </div> -->
+                <div>
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
+                        <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
+                            <lightning-combobox name="earlyYearQFtype"
+                                class="mobWid slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
+                                value={earlyYearQFtype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
+                            </lightning-combobox>
+                        <!-- </div> -->
+                    </div>
+                    <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large">
+                        <lightning-dual-listbox name="earlyYearQualifications" source-label="Available" class="slds-m-left_large"
+                            selected-label="Selected" options={teacherQualificationsEarly} value={earlyYearQualifications}
+                            onchange={handleChange}>
+                        </lightning-dual-listbox>
+                    </div>        
                 </div>
-                <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 slds-p-left-large docDiv slds-m-top_large">
-                    <lightning-dual-listbox name="earlyYearQualifications" source-label="Available" class="slds-m-left_large"
-                        selected-label="Selected" options={teacherQualificationsEarly} value={earlyYearQualifications}
-                        onchange={handleChange}>
-                    </lightning-dual-listbox>
-                </div>                
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="CV" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
+                </div>
             </div>
         </template>
 
@@ -499,23 +579,37 @@
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     Support Qualifications      
                 </div>
-
-                <div class="slds-gutters slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
-                    <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
-                        <lightning-combobox name="supportQFtype"
-                            class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
-                            value={supportQFtype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
-                        </lightning-combobox>
-                    <!-- </div> -->
+                <div>
+                    <div class="slds-gutters slds-m-left_xx-large wpdate">
+                        <span class="slds-m-left-large slds-m-bottom_small slds-size_8-of-12 slds-p-left_large">Qualification Type</span>
+                        <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element"> -->
+                            <lightning-combobox name="supportQFtype"
+                                class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_medium slds-p-left_xx-small slds-size_8-of-12"
+                                value={supportQFtype} options={teacherQFTypeOptions} onchange={handleUpsellChange}>
+                            </lightning-combobox>
+                        <!-- </div> -->
+                    </div>
+                    <div class="slds-gutters slds-m-left_large slds-size_6-of-12 docDiv slds-m-top_large ">
+                        <lightning-dual-listbox name="supportQualifications" source-label="Available" class="slds-m-left_xx-large wpdate"
+                            selected-label="Selected" options={teacherQualificationsSupport} value={supportQualification}
+                            onchange={handleChange}>
+                        </lightning-dual-listbox>
+                    </div>
                 </div>
-                <div class="slds-gutters slds-m-left_large slds-size_6-of-12 docDiv slds-m-top_large ">
-                    <lightning-dual-listbox name="supportQualifications" source-label="Available" class="slds-m-left_xx-large wpdate"
-                        selected-label="Selected" options={teacherQualificationsSupport} value={supportQualification}
-                        onchange={handleChange}>
-                    </lightning-dual-listbox>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="Support Qualification" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
                 </div>
-                
             </div>
         </template>
         <!-- Barred List -->
@@ -878,8 +972,50 @@
                         </div>
                     </div> -->
                 </div>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="References" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
+                </div>
             </div>
         </template>
 
+
+        <!-- Upload Photo -->
+        <template if:true={checkUpload}>
+            <div>
+                <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
+                    Upload Photo  
+                    <span style="position:relative; top:-8px;"><lightning-helptext content="Please provide a professional photo of head and shoulders.">
+                    </lightning-helptext></span>
+                </div>
+                                
+                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                    <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
+                        <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
+                            <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
+                        </div>
+                        <input type="file" name="Support Qualification" accept="image/*, application/pdf" onchange={handleFile} />
+                    </div>
+                    <template for:each={cvList} for:item="cv">                    
+                        <div key={cv.Id} class="cvData slds-size_10-of-12">
+                            {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
+                        </div>
+                    </template>
+                    <!-- <div class="cvData slds-size_10-of-12">
+                        {cvName} <img src={deleteImg} onclick={deleteCv}>
+                    </div> -->
+                </div>
+            </div>
+        </template>
     </div>
 </template>

@@ -24,12 +24,17 @@ import { CurrentPageReference } from 'lightning/navigation';
 import Qualificationcss from '@salesforce/resourceUrl/Qualificationcss';
 import getContactId from '@salesforce/apex/ts_MyQualificationDetailController.getContactId';
 import editQuali from '@salesforce/apex/ts_MyQualificationDetailController.editQuali';
+import saveCV from '@salesforce/apex/ts_MyQualificationDetailController.saveCV';
+import getDocsData from '@salesforce/apex/ts_MyQualificationDetailController.getDocsData';
 import Choice_of_Country__c from '@salesforce/schema/TR1__Associated_Qualification__c.Choice_of_Country__c';
 import saveIcon from '@salesforce/resourceUrl/saveIcon';
 import cancelIcon from '@salesforce/resourceUrl/cancelIcon';
 import commstyle from '@salesforce/resourceUrl/CommunityCSS';
 import communityicon from '@salesforce/resourceUrl/communityicons';
 import dragFileIcon from '@salesforce/resourceUrl/dragFileIcon';
+import USRID from '@salesforce/schema/User.Id';
+import { deleteRecord } from 'lightning/uiRecordApi';
+
 
 export default class Ts_MyQualificationDetail extends LightningElement {
 
@@ -39,7 +44,12 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
     saveImg = saveIcon;
     cancelImg = cancelIcon;
-    
+
+    @track qName;
+    @track contactId;
+
+    cvList = [];
+
     //For Spinner
     @track isSpinner;
 
@@ -65,6 +75,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track checkInt;
     @track checkBarred;
     @track checkRefs;
+    @track checkUpload;
 
     @track qualification= '';
     @track lstOptions = [];
@@ -228,6 +239,8 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track Ref3received;
     @track Ref3rating
 
+    @track urlName = '';
+
     @wire(CurrentPageReference)
     getStateParameters(currentPageReference) {
        if (currentPageReference) {
@@ -238,7 +251,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
     setParametersBasedOnUrl() {
        this.urlName = this.urlStateParameters.qualification || null;
-       //this.urlName = 'ID';
+    //    this.urlName = 'CV';
        console.log('this.urlName>>',this.urlName);
     }
 
@@ -670,14 +683,33 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         console.log('qualificationname>>>'+this.qualification); 
         this.checkUrl();
         this.getConId();
+        
         this.isSpinner = false;
     }
 
     currentPageReference = null; 
     urlStateParameters = null;
 
-    @track urlName = null;
+    
 
+    getDocData(){
+        console.log('in doc data');
+        console.log('this.contactId22>>>',this.contactId);
+        console.log('this.urlName21>>',this.urlName);
+        getDocsData({
+            parentId: this.contactId,
+            description : this.urlName
+        }).then(result =>{
+            console.log('get doc data res>>');
+            this.cvList = result;
+            console.log({result});
+            console.log('this.cvList>>>',this.cvList);
+        })
+        .catch(error => {
+            console.log({error});
+        })
+    }
+        
     
     checkUrl(){
         if(this.urlName == 'CV'){
@@ -725,7 +757,9 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         else if(this.urlName == 'References'){
             this.checkRefs = true;
         }
-
+        else if(this.urlName == 'Upload Photo'){
+            this.checkUpload = true;
+        }
     }
 
     getConId(){
@@ -734,6 +768,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
             .then(result => {
                 console.log({result});
                 this.contactId = result;
+                this.getDocData();
             })
         
     }
@@ -779,6 +814,69 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         url= url+'/s/profile';
         console.log(url);
         window.open(url, '_self');
+    }
+
+    //On change file
+    handleFile(event) {
+        var cvId = this.cvId;
+        console.log({cvId});
+        this.qName = event.target.name;
+        console.log('this.qName>>>',this.qName);
+        
+        this.isSpinner = true;
+        let fileList = event.target.files;
+        this.file = fileList[0];
+        this.showLoadingSpinner = true;
+        this.fileReader = new FileReader();
+        this.fileReader.onloadend = (() => {
+            this.fileContents = this.fileReader.result;
+            let base64 = 'base64,';
+            this.content = this.fileContents.indexOf(base64) + base64.length;
+            this.fileContents = this.fileContents.substring(this.content);
+            this.cvUpload();
+        });
+        this.fileReader.readAsDataURL(this.file);
+        
+    }
+
+     // upload CV
+     cvUpload(event) {
+        var pId = this.usrId;
+        console.log({ pId });
+        var file = this.file;
+        console.log({file});
+        var fileContents = this.fileContents;
+        saveCV({
+                parentId: this.contactId,
+                description: this.qName,
+                fileName: file.name,
+                base64Data: encodeURIComponent(fileContents)
+            })
+            .then(result => {
+                console.log({ result });
+                this.cvId = result[0];
+                this.cvName = result[1];
+                var cvData = this.template.querySelector('.cvData');
+                cvData.style.display = 'block';
+                this.isSpinner = false;
+            })
+            .catch(error => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
+            });
+    };
+
+    // delete CV
+    deleteCv(event) {
+        var cvId = event.target.name;
+        console.log({cvId});
+        deleteRecord(cvId)
+            .then((result) => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('success', 'You CV is deleted', 3000);
+                this.getDocData();
+            })
+            .catch(error => {
+                this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
+            });
     }
 
     handleChange(event){

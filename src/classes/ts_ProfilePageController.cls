@@ -28,10 +28,14 @@ public without sharing class ts_ProfilePageController {
     }
     
     @AuraEnabled
-    public static ContentDocument getDocsData(){
+    public static List<ContentDocument> getDocsData(){
         try{
-            ContentDocumentLink contentLink = [SELECT Id, LinkedEntityId, ContentDocumentId, Visibility FROM ContentDocumentLink where LinkedEntityId =: UserInfo.getUserId()];
-            ContentDocument contentData = [SELECT Id, Title FROM ContentDocument WHERE Id =: contentLink.ContentDocumentId];
+            List<ContentDocumentLink> contentLink = [SELECT Id, ContentDocumentId FROM ContentDocumentLink where LinkedEntityId =: UserInfo.getUserId()];
+            Set<Id> conId = new Set<Id>();
+            for(ContentDocumentLink con : contentLink){
+                conId.add(con.ContentDocumentId);
+            }
+            List<ContentDocument> contentData = [SELECT Id, Title FROM ContentDocument WHERE Id IN: conId];
             return contentData;
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
@@ -92,7 +96,7 @@ public without sharing class ts_ProfilePageController {
     }
 
     @AuraEnabled
-    public static List<String> saveCV(String parentId, String fileName, String base64Data) { 
+    public static void saveCV(String parentId, String fileName, String base64Data) { 
         try{
 
             base64Data = EncodingUtil.urlDecode(base64Data, 'UTF-8');
@@ -117,14 +121,10 @@ public without sharing class ts_ProfilePageController {
             // insert contentDocumentLink;
 
             List<String> lst = new List<String> {contentData.contentDocumentId, contentData.Title};
-            return lst;
 
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
             GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'saveCV');
-            String data = 'getMessagelogin+   '+e.getMessage() + 'line no => '+e.getLineNumber();
-            List<String> lst = new List<String> {data};
-            return lst;
         }
 
     }

@@ -10,3 +10,6 @@ declare module "@salesforce/apex/ts_MyQualificationDetailController.saveCV" {
 declare module "@salesforce/apex/ts_MyQualificationDetailController.getDocsData" {
   export default function getDocsData(param: {parentId: any, description: any}): Promise<any>;
 }
+declare module "@salesforce/apex/ts_MyQualificationDetailController.getData" {
+  export default function getData(): Promise<any>;
+}

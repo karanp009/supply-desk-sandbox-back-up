@@ -197,6 +197,10 @@
     min-width: 150px;
 }
 
+.imageUpload img {
+    cursor: pointer;
+}
+
 .fileUpload p,
 .fileDelete p {
     display: initial;
@@ -221,6 +225,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
 
 .spinner-ts {
@@ -343,6 +348,57 @@
     margin: 0 0 4px 0;
     float: right;
     cursor: pointer;
+}
+
+
+/* confirm box */
+
+.slds-modal__container {
+    width: 30%;
+}
+
+.slds-modal__header {
+    background: #D90000 !important;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    color: white !important;
+    font-family: Raleway;
+}
+
+.slds-modal__content {
+    font-family: Raleway;
+    font-size: medium;
+    font-weight: 400;
+    text-align: center;
+}
+
+.slds-modal__footer {
+    background-color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-style: none;
+}
+
+.boxYesButton,
+.boxNoButton {
+    border-radius: 7px;
+    border: none;
+    width: 6rem;
+    height: 1.7rem;
+    font-size: medium;
+    font-weight: 400;
+    font-family: Raleway;
+}
+
+.boxYesButton {
+    background: #D90000;
+    color: white;
+}
+
+.boxNoButton {
+    background-color: #E6E7E9;
+    color: black;
 }
 
 @media(max-width: 1024px) {

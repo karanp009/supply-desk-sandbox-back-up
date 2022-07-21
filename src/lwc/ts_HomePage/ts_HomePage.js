@@ -75,7 +75,6 @@ export default class Ts_HomePage extends NavigationMixin(LightningElement) {
             this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
 
         }
-
     }
 
     connectedCallback() {
@@ -125,6 +124,7 @@ export default class Ts_HomePage extends NavigationMixin(LightningElement) {
             if (nameval == 'Profile') {
                 urlValue = urlValue + 'profile';
                 pageapiname = 'Profile__c';
+                this.dispatchEvent(new CustomEvent('getdetails', {bubbles : true, detail: "Profile"  }));
             } else if (nameval == "Timesheets") {
                 urlValue = urlValue + 'timesheet';
                 pageapiname = 'TimeSheet__c';

@@ -1,6 +1,6 @@
 // ****************************************************************************************************************************
 // Class Name       : ts_TimesheetController
-// Author           : Nitin
+// Author           : Nitin, Mihir Ramoliya
 // Created Date     : 29/06/2022
 // Description      : This Class Used In ts_Timesheet (LWC component ) and  ts_TimesheetDetails (LWC component)
 // TestClass        :
@@ -180,6 +180,25 @@ public without sharing class ts_TimesheetController {
             System.debug('Message ===>'+ e.getMessage() + ' <==>'+ e.getStackTraceString());
         }
         return timesheetDetailWrapper;
+    }
+
+    // Download pdf in mobile and tablet view Created by Mihir Ramoliya
+    @AuraEnabled
+    public static string downloadPdf(String recordid){
+        try {
+            String pdf_url = '/apex/ts_TimesheetPrintPdf?id='+recordid;
+    
+            PageReference pdfPage = new PageReference(pdf_url);
+            Blob pdfBlob = pdfPage.getContent();
+            String base64Pdf = EncodingUtil.base64Encode(pdfBlob);
+            System.debug(base64Pdf);
+            return base64Pdf;
+            
+        } catch (Exception e) {
+            System.debug(e);
+            GenericException Exp = ExceptionHandler.logException(e, 'ts_TimesheetController', 'downloadPdf');
+            return null;
+        }
     }
 
     // @AuraEnabled

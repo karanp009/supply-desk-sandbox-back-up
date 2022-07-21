@@ -16,3 +16,6 @@ declare module "@salesforce/apex/ts_schedulercontroller.deleteCalEvent" {
 declare module "@salesforce/apex/ts_schedulercontroller.saveCreateAvailRecord" {
   export default function saveCreateAvailRecord(param: {wrapperdata: any}): Promise<any>;
 }
+declare module "@salesforce/apex/ts_schedulercontroller.displaySelectedDateAvailability" {
+  export default function displaySelectedDateAvailability(param: {dateofAvail: any}): Promise<any>;
+}

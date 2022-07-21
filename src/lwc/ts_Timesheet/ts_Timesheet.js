@@ -24,12 +24,12 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
     approveIcon = ts_approve;
     rejectIcon = ts_reject;
 
-    @track activeTimeSheet = [];                     // Used For Displaying List of Timesheet.
-    @track isSpinner = false;                        // for loading spinner 
-    @track isClientApproveModalOpen = false;         // Used IN popup Modal when Approve button Clicked.
-    @track selectedRetting = '';                     // Rating Value that selected in Approve Modal.
-    @track approveNotes = '';                        // Approver Notes For Approving of time sheet.
-    @track isNoTimesheetRecord = false;              // for Displaying No Records Found.
+    @track activeTimeSheet = []; // Used For Displaying List of Timesheet.
+    @track isSpinner = false; // for loading spinner 
+    @track isClientApproveModalOpen = false; // Used IN popup Modal when Approve button Clicked.
+    @track selectedRetting = ''; // Rating Value that selected in Approve Modal.
+    @track approveNotes = ''; // Approver Notes For Approving of time sheet.
+    @track isNoTimesheetRecord = false; // for Displaying No Records Found.
 
     rejectBtnIcon = ts_reject_btn;
     approveBtnIcon = ts_approve_btn;
@@ -60,9 +60,16 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                 console.log("result length ===>" + result.length);
                 if (this.activeTimeSheet.length == 0) {
                     this.isNoTimesheetRecord = true;
-                }
-                else{
+                    let colHeads = this.template.querySelectorAll('.colHead');
+                    colHeads.forEach(element => {
+                        element.style.width = "11%";
+                    });
+                } else {
                     this.isNoTimesheetRecord = false;
+                    let colHeads = this.template.querySelectorAll('.colHead');
+                    colHeads.forEach(element => {
+                        element.style.width = "8.3333333333%";
+                    });
                 }
 
                 this.isSpinner = false;
@@ -85,7 +92,7 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         this.template.querySelector('.historical-timesheet-btn').classList.remove('timesheet-btn-active');
 
         var status = " 'Submitted' ";
-        this.timesheetListGenrater(status);  // calling this method for getting list of Active Timesheet
+        this.timesheetListGenrater(status); // calling this method for getting list of Active Timesheet
     }
 
     displayHistoricalTimesheet(event) {
@@ -94,7 +101,7 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         this.template.querySelector('.active-timesheet-btn').classList.remove('timesheet-btn-active');
 
         var status = " 'Approved' ";
-        this.timesheetListGenrater(status);  // calling this method for getting list of Historical Timesheet
+        this.timesheetListGenrater(status); // calling this method for getting list of Historical Timesheet
 
     }
 
@@ -122,26 +129,24 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         } else if (nameval == "Print") {
 
             const ua = navigator.userAgent;
-            var device ;
+            var device;
             if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
                 device = 'tablet';
-            }
-            else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+            } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
                 device = 'mobile';
-            }
-            else{
+            } else {
                 device = 'windows';
             }
 
-            if(device != 'windows'){
+            if (device != 'windows') {
                 this.isSpinner = true;
-                downloadPdf({recordid : this.selectedTimesheet})
+                downloadPdf({ recordid: this.selectedTimesheet })
                     .then((result) => {
                         var strFile = result;
                         const reader = new FileReader();
 
                         const link = document.createElement('a');
-                        link.href = 'data:application/octet-stream;base64,'+strFile;
+                        link.href = 'data:application/octet-stream;base64,' + strFile;
                         link.download = 'TimesheetDetail.pdf';
                         link.click();
                         this.isSpinner = false;
@@ -152,8 +157,7 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                         this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
                         this.isSpinner = false;
                     })
-            }
-            else{
+            } else {
                 urlValue = urlValue + 'timesheet/timesheetpdf';
 
                 this[NavigationMixin.Navigate]({
@@ -184,50 +188,45 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
         // var pvalue = event.currentTarget.dataset.id;
         this.selectedRetting = event.currentTarget.dataset.id;
         console.log("selected Imogi value ====>" + this.selectedRetting);
-        if(this.selectedRetting == "Excellent" || this.selectedRetting == "Very Good"){
+        if (this.selectedRetting == "Excellent" || this.selectedRetting == "Very Good") {
             this.text_area_required = false;
             // let fieldToFocus = this.template.querySelector("lightning-textarea");
             // fieldToFocus.setCustomValidity("");
             // fieldToFocus.reportValidity();
-        }
-        else{
+        } else {
             this.text_area_required = true;
         }
 
-        if(this.selectedRetting == "Excellent"){
-            this.template.querySelector('[data-id="Excellent"]').className=' emg-excel slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-        }
-        else if(this.selectedRetting == "Very Good"){
-            this.template.querySelector('[data-id="Very Good"]').className=' emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-        }
-        else if(this.selectedRetting == "Good"){
-            this.template.querySelector('[data-id="Good"]').className='emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-        }
-        else if(this.selectedRetting == "Requires Improvement"){
-            this.template.querySelector('[data-id="Requires Improvement"]').className='emg-ri slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Unsatisfactory"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-        }
-        else if(this.selectedRetting == "Unsatisfactory"){
-            this.template.querySelector('[data-id="Unsatisfactory"]').className='emg-unsetisfy slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Excellent"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Very Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Good"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
-            this.template.querySelector('[data-id="Requires Improvement"]').className='slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        if (this.selectedRetting == "Excellent") {
+            this.template.querySelector('[data-id="Excellent"]').className = ' emg-excel slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        } else if (this.selectedRetting == "Very Good") {
+            this.template.querySelector('[data-id="Very Good"]').className = ' emg-very-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        } else if (this.selectedRetting == "Good") {
+            this.template.querySelector('[data-id="Good"]').className = 'emg-good slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        } else if (this.selectedRetting == "Requires Improvement") {
+            this.template.querySelector('[data-id="Requires Improvement"]').className = 'emg-ri slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Unsatisfactory"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+        } else if (this.selectedRetting == "Unsatisfactory") {
+            this.template.querySelector('[data-id="Unsatisfactory"]').className = 'emg-unsetisfy slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Excellent"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Very Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Good"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
+            this.template.querySelector('[data-id="Requires Improvement"]').className = 'slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small';
         }
     }
     saveApproveNotes(event) {
@@ -264,11 +263,10 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                         }
                     }
                 });
-        } 
-        else if (ratingValue.length > 0){
+        } else if (ratingValue.length > 0) {
             console.log("1 to 3 rating");
-            console.log("notes==>",notes);
-            console.log("notes lenght==>",notes.length);
+            console.log("notes==>", notes);
+            console.log("notes lenght==>", notes.length);
             this.text_area_required = true;
             if (notes.length > 0) {
                 this.isSpinner = true;
@@ -290,8 +288,7 @@ export default class Ts_Timesheet extends NavigationMixin(LightningElement) {
                             }
                         }
                     });
-            }
-            else{
+            } else {
                 let fieldToFocus = this.template.querySelector("lightning-textarea");
                 console.log(fieldToFocus);
                 fieldToFocus.focus();

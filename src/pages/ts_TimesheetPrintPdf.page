@@ -1,6 +1,3 @@
-<!-- <apex:page renderAs="pdf" controller="ts_TimesheetPrintPdfController"  lightningStylesheets="true"> -->
-<!-- <apex:page renderAs="pdf" controller="ts_TimesheetPrintPdfController" docType="html-5.0"> -->
-<!-- <apex:page controller="ts_TimesheetPrintPdfController" renderAs="pdf" applyHtmlTag="false" showHeader="false" sidebar="false" -->
 <apex:page controller="ts_TimesheetPrintPdfController" renderAs="pdf" applyHtmlTag="false" showHeader="false" sidebar="false"
     standardStylesheets="false">
 
@@ -36,8 +33,8 @@
             <apex:variable value="{!0}" var="count" />
             <apex:repeat id="timesheetList" value="{!TimesheetPrintWrapperList}" var="wrapper">
                 <apex:pageBlock >
-                    <div>
-                        <apex:image value="{!URLFOR($Resource.SD_Logo)}" />
+                    <div style="width:100%; height: 100%;">
+                        <apex:image value="{!URLFOR($Resource.communityicons, 'communityicons/supplydesk_logo.png')}" style="width:100%; height: 100%;"/>
                     </div>
                     <h1>Timesheet Details</h1>
 
@@ -50,12 +47,10 @@
                             <td class="val_cls">
                                 <apex:outputField value="{!wrapper.timesheet.TR1__Week_Ending__c}" />
                             </td>
-                            <!-- <apex:pageBlockSectionItem rendered="{!NOT(isClient)}"> -->
                             <td class="head_tag">Day Charge Rate :</td>
                             <td class="val_cls">
                                 <apex:outputField value="{!wrapper.timesheet.Pay_Rate_1__c}" />
                             </td>
-                            <!-- </apex:pageBlockSectionItem> -->
                         </tr>
                         <tr>
                             <td class="head_tag">Timesheet Week :</td>

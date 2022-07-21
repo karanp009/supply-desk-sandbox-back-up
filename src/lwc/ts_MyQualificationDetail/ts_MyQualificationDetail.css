@@ -38,8 +38,7 @@
     height: 25%;
     align-content: center;
     text-align: center;
-    display: flex;
-    font-family: Raleway;
+    display: flex;    
     font-weight: 600;
     font-size: 17px;
     color: white;
@@ -65,7 +64,7 @@
 }
 
 .saveBtn{
-        
+    font-weight: 500;
     background: #676868;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -81,7 +80,7 @@
     cursor: pointer;
 }
 .cancelBtn{
-    
+    font-weight: 500;
     background: #D90000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -231,6 +230,12 @@
   
  /* =================== Spinner =================== */
 
+ @media(min-width: 1025px) AND (max-width: 1206px) {
+
+    .cancelBtn{
+        width: 29% !important;
+    }
+ }
 
  @media(max-width: 1024px) {
     .btns {

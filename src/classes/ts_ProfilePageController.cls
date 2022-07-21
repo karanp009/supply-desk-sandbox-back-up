@@ -67,7 +67,7 @@ public without sharing class ts_ProfilePageController {
     }
 
     @AuraEnabled
-    public static String saveFile(String userId, String fileId, String base64Data) { 
+    public static void saveFile(String userId, String fileId, String base64Data) { 
         try{
 
             System.debug('userId>>'+userId);
@@ -79,12 +79,10 @@ public without sharing class ts_ProfilePageController {
             ConnectApi.Photo photoProfile = ConnectApi.UserProfiles.setPhoto(null, userId,  fileUpload);
 
             // ConnectApi.Photo photo = ConnectApi.UserProfiles.setPhoto(communityId, parentId,fileId, EncodingUtil.base64Decode(base64Data));
-            return 'Success';
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
             GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'saveFile');
             String data = 'getMessagelogin+   '+e.getMessage() + 'line no => '+e.getLineNumber();
-            return data;
         }
     }
 
@@ -102,6 +100,8 @@ public without sharing class ts_ProfilePageController {
     public static void saveCV(String parentId, String fileName, String base64Data) { 
         try{
 
+            User usr = [SELECT Id,ContactId FROM User WHERE Id=:UserInfo.getUserId()];
+
             base64Data = EncodingUtil.urlDecode(base64Data, 'UTF-8');
             ContentVersion contentVersion = new ContentVersion();
             contentVersion.ContentLocation = 'S'; //S-Document is in Salesforce. E-Document is outside of Salesforce. L-Document is on a Social Netork.
@@ -117,18 +117,19 @@ public without sharing class ts_ProfilePageController {
             ContentVersion contentData = [SELECT Id, Title, ContentDocumentId FROM ContentVersion WHERE Id =:contentVersion.Id];
 
             //Insert ContentDocumentLink
-            // ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
-            // contentDocumentLink.ContentDocumentId = contentData.contentDocumentId;//Add ContentDocumentId
-            // contentDocumentLink.LinkedEntityId = parentId;//Add attachment parentId
-            // contentDocumentLink.ShareType = 'V';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
-            // contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
-            // insert contentDocumentLink;
+            ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
+            contentDocumentLink.ContentDocumentId = contentData.contentDocumentId;//Add ContentDocumentId
+            contentDocumentLink.LinkedEntityId = usr.ContactId;//Add attachment parentId
+            contentDocumentLink.ShareType = 'V';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
+            contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
+            insert contentDocumentLink;
 
             List<String> lst = new List<String> {contentData.contentDocumentId, contentData.Title};
 
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
             GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'saveCV');
+            String data = 'getMessagelogin => '+e.getMessage() + 'line no => '+e.getLineNumber();
         }
 
     }

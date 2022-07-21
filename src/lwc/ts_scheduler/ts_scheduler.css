@@ -37,6 +37,7 @@
     color: #D90000;
     font-weight: 700;
     font-size: 2em;
+    padding-left: 3%;
 }
 
 .right-ttl {
@@ -59,10 +60,17 @@
     color: #000000;
     font-weight: 500;
     font-style: normal;
-
+    padding: 1%;
 }
 
+.icon-help-text-div {
+    display: flex;
+    justify-content: space-between;
+}
 
+.top-txt {
+    margin-top: 5px;
+}
 
 
 
@@ -92,7 +100,8 @@
     background: #F6F6F6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 10px;
-    height: 144vh;
+    height: 119vh;
+    overflow: auto;
 }
 
 .date-div {
@@ -176,13 +185,54 @@
 @media only screen and (min-width: 300px) and (max-width: 380px) {}
 
 /* Mobile View */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .right-div {
+        display: none;
+    }
+
+    .scheduler-main-div {
+        margin-top: 50px;
+        margin-left: 2px;
+        background: #FFFFFF;
+    }
+
+    .top-div {
+        display: flex;
+        justify-content: space-around;
+        min-height: 100px;
+        height: 15vh;
+        margin-top: 3%;
+    }
+
+    .tpd {
+        font-size: 10px;
+    }
+
+    .tp-icn {
+        height: 1.5rem;
+    }
+
+}
 
 /* IPAD VIEW */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     .right-div {
         display: none;
+    }
+
+    .scheduler-main-div {
+        margin-top: 50px;
+        margin-left: 2px;
+        background: #FFFFFF;
+    }
+
+    .top-div {
+        display: flex;
+        justify-content: space-around;
+        min-height: 100px;
+        height: 15vh;
+        margin-top: 3%;
     }
 
 }

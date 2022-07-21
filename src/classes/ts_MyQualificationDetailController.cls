@@ -203,7 +203,32 @@ public without sharing class ts_MyQualificationDetailController {
             return contentData;
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
-            GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'getData');
+            GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'getDocsData');
+            return null;
+        }
+    }
+
+    @AuraEnabled
+    public static List<TR1__Associated_Qualification__c> getData(){
+        try {
+            User u  = [SELECT Id,ContactId from User where Id=:UserInfo.getUserId()];
+
+            List<TR1__Associated_Qualification__c> qualLst = [SELECT Id,qualificationName__c,Gaps_Explanation__c,CV_Submitted__c,CV_Received__c,
+                                                            SET_Registration_Number__c,Permanent_Right_to_Work_in_UK__c,Documents__c,Work_Permit_OR_Visa_Expiry_Date__c,
+                                                            NCTL_Number__c,Qualification_Type2__c,Qualification_Type__c,NARIC_Approved__c,Overseas_Police_Check__c,Live_Worked_Overseas_Start_Date__c,
+                                                            Live_Worked_Overseas_End_Date__c,Relationship_to_You__c,Emergency_Contact_Address__c,Emergency_Contact_Home_Phone__c,
+                                                            Emergency_Contact_Mobile_Phone__c,Emergency_Contact_Work_Phone__c,Emergency_Contact_Name__c,
+                                                            SET_Expiry_Date__c,QTLS__c,Reference_Sent_Date__c,Reference_1_Text_Name__c,Reference_Received_Date__c,
+                                                            Reference_1_Date_Range_End__c,Reference_1_Rating__c,Reference_2_Name__c,
+                                                            Reference_2_Received_Date__c,Reference_2_Date_Rage__c,Reference_2_Date_Range_End__c,
+                                                            Reference_2_Rating__c,Reference_3_Sent_Date__c,Reference_3_Text_Name__c,
+                                                            Reference_3_Received_Date__c,Reference_3_Date_Range__c,Reference_3_Date_Range_End__c,
+                                                            Reference_3_Rating__c FROM TR1__Associated_Qualification__c WHERE TR1__Contact__c =: u.ContactId];
+            return qualLst;                                                
+
+
+        } catch (Exception e) {
+            System.debug('exception>>>'+e.getLineNumber()+e.getMessage());
             return null;
         }
     }

@@ -18,6 +18,10 @@ import saveCreateAvailRecord from '@salesforce/apex/ts_schedulercontroller.saveC
 import fetchData from '@salesforce/apex/ts_schedulercontroller.fetchData';
 import displaySelectedDateAvailability from '@salesforce/apex/ts_schedulercontroller.displaySelectedDateAvailability';
 
+import ts_available_icon from '@salesforce/resourceUrl/ts_available_icon';
+import ts_unavailable_icon from '@salesforce/resourceUrl/ts_unavailable_icon';
+import ts_bookedByanother_icon from '@salesforce/resourceUrl/ts_bookedByanother_icon';
+
 import Candidate_Availability__c from '@salesforce/schema/Candidate_Availability__c';
 import { getPicklistValues, getObjectInfo } from 'lightning/uiObjectInfoApi';
 import Type__c from '@salesforce/schema/Candidate_Availability__c.Type__c';
@@ -28,6 +32,10 @@ import { refreshApex } from '@salesforce/apex';
  * @description: FullcalendarJs class with all the dependencies
  */
 export default class FullCalendarJs extends LightningElement {
+
+    avlIcon = ts_available_icon;
+    unavlIcon = ts_unavailable_icon;
+    bkdBAnotherIcon = ts_bookedByanother_icon;
 
 
     // @track selectedDate = "23 June";
@@ -204,10 +212,10 @@ export default class FullCalendarJs extends LightningElement {
                 };
             });
             this.events = JSON.parse(JSON.stringify(events));
-            console.log(this.events);
-            console.log("Events ===>" + this.events);
+            // console.log(this.events);
+            // console.log("Events ===>" + this.events);
             this.totalEventCount = this.events.length;
-            console.log("Events size ===>" + this.totalEventCount);
+            // console.log("Events size ===>" + this.totalEventCount);
             console.log("Events ===>", this.events);
             this.error = undefined;
 
@@ -249,17 +257,25 @@ export default class FullCalendarJs extends LightningElement {
         let ScreenWidth = screen.width;
         let defaultViewCondition = 'agendaWeek';
         console.log("Current Screen Size  ======>" + ScreenWidth);
-        if (767 < ScreenWidth && ScreenWidth <= 1024) {
-            defaultViewCondition = 'agendaDay'; // For Ipad View
+        // if (767 < ScreenWidth && ScreenWidth <= 1024) {
+        //     defaultViewCondition = 'agendaDay'; // For Ipad View
+        // }
+        if (ScreenWidth <= 1024) {
+            defaultViewCondition = 'agendaDay'; // For Ipad and Mobile View
         }
 
         //Actual fullcalendar renders here - https://fullcalendar.io/docs/v3/view-specific-options
         $(ele).fullCalendar({
 
+            // header: {
+            //     left: 'prev,next today',
+            //     center: 'title',
+            //     right: 'month,agendaWeek,agendaDay',
+            // },
             header: {
-                left: 'prev,next today',
+                left: 'prev',
                 center: 'title',
-                right: 'month,agendaWeek,agendaDay',
+                right: 'month,agendaWeek,agendaDay,next today',
             },
             // locale: 'es',   // This is an acronym for the locale you want to select
             defaultDate: new Date(), // default day is today - to show the current date
@@ -323,16 +339,16 @@ export default class FullCalendarJs extends LightningElement {
             events: this.events, // all the events that are to be rendered - can be a duplicate statement here
 
             eventRender: function (info, element) {
-                console.log({ element });
+                // console.log({ element });
                 // element.find('.fc-title').append("<br/>" + 'Test');
                 // const d = new Date();
                 element.find('.fc-content').append("<br/>" + info.typeValue);
 
                 //to set the colors of the events from typeValue
                 if (info.typeValue == 'Available') {
-                    element.css('background-color', '#b1e479');
+                    element.css('background-color', '#FAE7CA');
                 } else if (info.typeValue == 'Unavailable') {
-                    element.css('background-color', '#B2B2B2');
+                    element.css('background-color', '#EDE4F6');
                 } else if (info.typeValue == 'Interview') {
                     element.css('background-color', '#B2B2B2');
                 } else if (info.typeValue == 'Holiday') {
@@ -343,8 +359,8 @@ export default class FullCalendarJs extends LightningElement {
                 // } 
                 else if (info.typeValue == 'Sick') {
                     element.css('background-color', '#B2B2B2');
-                } else if (info.typeValue == 'Working With Other Agency') {
-                    element.css('background-color', '#B2B2B2');
+                } else if (info.typeValue == 'Working for Another Agency') {
+                    element.css('background-color', '#CBE3F5');
                 } else if (info.typeValue == 'Booked') {
                     element.css('background-color', '#D95252');
                 }
@@ -392,6 +408,44 @@ export default class FullCalendarJs extends LightningElement {
 
         this.typeValue = event.target.value;      //?used to display it on the main pagee
         console.log(this.value);
+    }
+
+    handleChangeEndDate(event) {
+        console.log("Handle change on EndDate ==>");
+        // select: function (startDate, endDate) {
+        console.log("Handle change on EndDate ==>" + event.target.value);
+        // let stDate = startDate.toJSON().slice(0, 10);
+
+        // let startDateFront = startDate.format();
+        // let timeSplitstart = startDateFront.split('T');
+        // let mainStartDate = stDate + 'T' + timeSplitstart[1];
+
+        // const de = new Date();
+
+        let endDate = event.target.value;
+        console.log("endDate **** ======>" + endDate);
+        let edDate = endDate.slice(0, 10);
+        console.log("endDate **** ======>" + edDate);
+        // de = event.target.value;
+        // let endDate = de;
+
+        // console.log("enddate in ====>" + endDate);
+
+        // console.log("edDate to jason in ====>" + endDate.toJSON());
+        // let edDate = endDate.toJSON().slice(0, 10);
+        console.log("edDate to jason in ====>" + edDate);
+
+        console.log("endDate ****|||| **** ======>" + edDate);
+        let endDateFront = endDate.format();
+        console.log({ endDateFront });
+        let timeSplitend = endDateFront.split('T');
+        let mainEndDate = edDate + 'T' + timeSplitend[1];
+
+        console.log("Main EndDate ======>" + mainEndDate);
+        console.log("timeSplitend ======>" + timeSplitend);
+
+
+        // },
     }
 
     //To save the event
@@ -450,16 +504,24 @@ export default class FullCalendarJs extends LightningElement {
             //   this.typeValue = ele.value;
             // }
             if (ele.name === 'start') {
+                // this.wrapp.startDate = ele.value;
                 this.startDate = ele.value.includes('.000Z')
                     ? ele.value
                     : ele.value + '.000Z';
             }
             if (ele.name === 'end') {
+                // this.wrapp.EndDate = ele.value;
                 this.endDate = ele.value.includes('.000Z')
                     ? ele.value
                     : ele.value + '.000Z';
             }
         });
+
+        console.log("startDate From Wrapper after on change ===>" + this.startDate);
+        console.log("endDate From Wrapper after on change ===>" + this.endDate);
+
+        console.log("startDate From Wrapper after on change * ===>" + this.wrapp.startDate);
+        console.log("endDate From Wrapper after on change * ===>" + this.wrapp.EndDate);
 
         //format as per fullcalendar event object to create and render
         let newevent = {
@@ -627,8 +689,8 @@ export default class FullCalendarJs extends LightningElement {
                     var Difference_In_Time = date2.getTime() - date1.getTime();
                     var Difference_In_Time = Difference_In_Time / (1000 * 60);
                     res["totalDuration"] = Difference_In_Time;
-                    console.log("date to diff ========>" + Difference_In_Time);
-                    console.log("start Time ===>" + res.Start_Date_Time__c.substring(11, 16));
+                    // console.log("date to diff ========>" + Difference_In_Time);
+                    // console.log("start Time ===>" + res.Start_Date_Time__c.substring(11, 16));
                 }
 
 

@@ -529,4 +529,25 @@ public without sharing class ts_schedulercontroller {
 
     }
 
+
+    @AuraEnabled
+    public static List<Candidate_Availability__c> displaySelectedDateAvailability(Date dateofAvail) {
+        
+        User currentUser = [SELECT Id, ContactId FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
+
+        List<Candidate_Availability__c> avabilityList;
+        try {
+            avabilityList = [SELECT Id,Start_Date_Time__c,End_Date_Time__c,Candidate__c,Start_Date__c,End_Date__c,Type__c FROM Candidate_Availability__c 
+            WHERE Start_Date__c =: dateofAvail AND Candidate__c =: currentUser.ContactId  ORDER BY CreatedDate DESC];
+
+            return avabilityList;
+        } catch (Exception e) {
+            System.debug('The following exception has occurred: ' + e.getMessage());
+            System.debug('The following exception has occurred in Line Number ==>: ' + e.getLineNumber());
+        }
+
+        return avabilityList;
+
+    }
+
 }

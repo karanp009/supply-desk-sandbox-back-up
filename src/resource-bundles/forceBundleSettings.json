@@ -4,5 +4,17 @@
         "description": null,
         "contentType": "text/css",
         "cacheControl": "Public"
+    },
+    {
+        "fullName": "FullCalendarJS",
+        "description": null,
+        "contentType": "application/zip",
+        "cacheControl": "Public"
+    },
+    {
+        "fullName": "CandidateFormResource",
+        "description": null,
+        "contentType": "application/x-zip-compressed",
+        "cacheControl": "Public"
     }
 ]

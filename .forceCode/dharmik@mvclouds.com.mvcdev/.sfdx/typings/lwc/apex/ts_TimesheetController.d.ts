@@ -10,3 +10,6 @@ declare module "@salesforce/apex/ts_TimesheetController.sendMessageToJobOwner" {
 declare module "@salesforce/apex/ts_TimesheetController.getTimesheetDetails" {
   export default function getTimesheetDetails(param: {timesheetId: any}): Promise<any>;
 }
+declare module "@salesforce/apex/ts_TimesheetController.downloadPdf" {
+  export default function downloadPdf(param: {recordid: any}): Promise<any>;
+}

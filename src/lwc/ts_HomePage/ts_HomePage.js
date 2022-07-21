@@ -7,6 +7,7 @@ import LAST_LOGIN from '@salesforce/schema/User.LastLoginDate';
 import IMG_URL from '@salesforce/schema/User.FullPhotoUrl';
 import myAccountImg from '@salesforce/resourceUrl/myAccountImg';
 import timeSheetImg from '@salesforce/resourceUrl/timeSheetImg';
+import myQualificationImg from '@salesforce/resourceUrl/myQualificationImg';
 import profileImg from '@salesforce/resourceUrl/profileImg';
 import coverImgClient from '@salesforce/resourceUrl/coverImgClient';
 import complianceImg from '@salesforce/resourceUrl/complianceImg';
@@ -134,6 +135,9 @@ export default class Ts_HomePage extends NavigationMixin(LightningElement) {
             } else if (nameval == 'Compliance') {
                 urlValue = urlValue + 'compliance';
                 pageapiname = 'Compliance__c';
+            } else if (nameval == 'My Qualifications') {
+                urlValue = urlValue + 'myqualifications';
+                pageapiname = 'MyQualifications__c';
             }
 
             this[NavigationMixin.Navigate]({
@@ -384,6 +388,7 @@ export default class Ts_HomePage extends NavigationMixin(LightningElement) {
     mnIcon = menuIcon;
     linkedIcon = linkedInIcon;
     fbIcon = facebookIcon;
+    myQualImg = myQualificationImg;
 
     // img1 = image1;
     // img2 = image2;

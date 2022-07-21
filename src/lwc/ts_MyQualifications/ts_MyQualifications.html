@@ -24,7 +24,7 @@
                            
                         </div>
                         <div class="Qualificationlist">
-                            <div class="slds-grid slds-wrap slds-col--padded slds-grid--align-spread headeRow">
+                            <div class="slds-size_11-of-12 slds-m-left_xx-large slds-grid slds-wrap slds-col--padded slds-grid--align-spread headeRow">
                                 <div class="slds-col slds-size_1-of-4 slds-p-top_medium">
                                     <div class="slds-text slds-truncate text1">Qualification Name</div>
                                 </div>
@@ -40,7 +40,7 @@
                             </div>
                 
                             <template for:each={qualificationList} for:item="ql">
-                                <div class="slds-grid slds-wrap slds-m-left_large slds-m-top_x-large slds-col--padded slds-grid--align-spread dataRow" key={ql.Id}>
+                                <div class="slds-size_11-of-12 slds-grid slds-wrap slds-m-left_xx-large slds-m-top_x-large slds-col--padded slds-grid--align-spread dataRow" key={ql.Id}>
                                     <div class="slds-col slds-size_1-of-4 textd nameclass" id={ql.TR1__Qualification__r.Name}>{ql.TR1__Qualification__r.Name}</div>
                                     <div class="slds-col slds-size_1-of-4 textd">{ql.TR1__Expiration_Date__c}</div>
                                     <div class="slds-col slds-size_1-of-4 textd statusText">{ql.TR1__Status__c}</div>

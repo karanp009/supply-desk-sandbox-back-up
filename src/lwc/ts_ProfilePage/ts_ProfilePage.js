@@ -14,6 +14,7 @@ import saveFile from '@salesforce/apex/ts_ProfilePageController.saveFile';
 import getDocsData from '@salesforce/apex/ts_ProfilePageController.getDocsData';
 import deleteFile from '@salesforce/apex/ts_ProfilePageController.deleteFile';
 import saveCV from '@salesforce/apex/ts_ProfilePageController.saveCV';
+import fetchContact from '@salesforce/apex/ts_ProfilePageController.fetchContact';
 import communityicon from '@salesforce/resourceUrl/communityicons';
 import { deleteRecord } from 'lightning/uiRecordApi';
 
@@ -48,9 +49,24 @@ export default class Ts_ProfilePage extends LightningElement {
     fileReader;
     content;
 
+    @track checkClient;
 
     connectedCallback() {
         this.getUsrData();
+        this.fetchCon();
+
+        getData()
+            .then(result => {
+                console.log({ result });
+                this.fname = result.FirstName;
+                this.lname = result.LastName;
+                this.email = result.Email;
+                this.businessphn = result.Phone;
+                this.mobilephn = result.MobilePhone;
+                this.imgUrl = result.FullPhotoUrl;
+                this.newImgUrl = result.FullPhotoUrl;
+            })
+
     }
 
     renderedCallback() {
@@ -64,33 +80,64 @@ export default class Ts_ProfilePage extends LightningElement {
             });
     }
 
+    fetchCon() {
+
+        try {
+            fetchContact()
+                .then(result => {
+                    if (result != null) {
+                        console.log({ result });
+                        if (result.Community_Contact_Type__c == 'Client') {
+                            this.checkClient = false;
+                        } else {
+                            this.checkClient = true;
+                        }
+                        this.isSpinner = false;
+                    } else {
+                        console.log('Contact null');
+                        console.log({ result });
+                    }
+                })
+                .catch(error => {
+                    console.log({ error });
+                });
+        } catch (e) {
+            this.reloadpage = true;
+            this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
+        }
+    }
+
     getUsrData(event) {
         console.log('First time');
-        getData()
-            .then(result => {
-                console.log({ result });
-                this.fname = result.FirstName;
-                this.lname = result.LastName;
-                this.email = result.Email;
-                this.businessphn = result.businessphn;
-                this.mobilephn = result.mobilephn;
-                this.imgUrl = result.FullPhotoUrl;
-                this.newImgUrl = result.FullPhotoUrl;
-            })
-            this.loadCv();
+        // getData()
+        //     .then(result => {
+        //         console.log({ result });
+        //         this.fname = result.FirstName;
+        //         this.lname = result.LastName;
+        //         this.email = result.Email;
+        //         this.businessphn = result.businessphn;
+        //         this.mobilephn = result.mobilephn;
+        //         this.imgUrl = result.FullPhotoUrl;
+        //         this.newImgUrl = result.FullPhotoUrl;
+        //     })
+        this.loadCv();
+        // console.log('---------------------' + usrObj.FirstName + usrObj.businessphn);
+        console.log('******************************' + this.fname + this.businessphn);
     }
 
     // get cv from apex
-    loadCv(evet){
+    loadCv(evet) {
         getDocsData()
             .then(result => {
                 console.log({ result });
                 if (result != null) {
                     this.cvList = result;
                 }
+                this.isSpinner = false;
             })
             .catch(error => {
-                console.log({error});
+                console.log({ error });
+                this.isSpinner = false;
                 this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
             })
     }
@@ -224,19 +271,30 @@ export default class Ts_ProfilePage extends LightningElement {
 
     // save all user data after click on save button
     saveUserData(event) {
+
         let usrObj = { 'sobjectType': 'User' };
         usrObj.Id = this.usrId;
         usrObj.FirstName = this.fname;
         usrObj.LastName = this.lname;
         usrObj.Email = this.email;
-        usrObj.businessphn = this.businessphn;
-        usrObj.mobilephn = this.mobilephn;
+        usrObj.phone = this.businessphn;
+        usrObj.MobilePhone = this.mobilephn;
         saveData({ usr: usrObj })
+
+
+
 
         setTimeout(() => {
             this.getUsrData();
             this.isSpinner = false;
         }, 2000);
+
+        console.log(usrObj.MobilePhone);
+        console.log('================>===========>==============');
+        console.log(usrObj);
+
+
+
     }
 
     // show save and ancel button in only first tab
@@ -271,8 +329,9 @@ export default class Ts_ProfilePage extends LightningElement {
 
     // delete CV
     deleteCv(event) {
+        this.isSpinner = true;
         var cvId = event.target.name;
-        console.log({cvId});
+        console.log({ cvId });
         deleteRecord(cvId)
             .then((result) => {
                 this.template.querySelector('c-ts_-tost-notification').showToast('success', 'You CV is deleted', 3000);

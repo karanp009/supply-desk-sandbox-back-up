@@ -137,15 +137,16 @@
 
 .cvData {
     display: block;
-    height: 2rem;
+    height: 3rem;
     margin: 1rem auto;
     box-shadow: 0 0 5px rgb(0 0 0 / 30%);
     padding: 0.5rem;
+    font-size: 20px;
 }
 
 .cvData img {
-    height: 18px;
-    margin: 0 0 4px 0;
+    height: 24px;
+    margin: 4px 0 4px 0;
     float: right;
     cursor: pointer;
 }
@@ -370,5 +371,11 @@
     }
     .cvData {
         margin: 1rem 0 1rem 1rem;
+    }
+    .prfdiv{
+        margin-left: 0.5rem !important;
+    }
+    .cvImg{
+        margin-right: 0 !important;
     }
 }

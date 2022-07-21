@@ -65,11 +65,18 @@
                         <p>Your photo</p>
                         <p>This will displayed on your profile</p>
                     </div>
-                    <span class="imageUpload">
-                                <img src={newImgUrl} class="profChangeImg slds-m-left_medium slds-m-top_medium">
-                            </span>
-                    <input type="file" class="slds-assistive-text" accept={acceptedFormats} id="pfpUpload" onchange={savePfpHandle} />
-                    <label class="slds-file-selector__body" for="pfpUpload">
+
+                    <div class="slds-grid slds-grid_align-spread">
+                        <div class="slds-col">
+
+                            <span class="imageUpload">
+                                    <img src={newImgUrl} class="profChangeImg slds-m-left_medium slds-m-top_medium">
+                        </span>
+                        </div>
+
+                        <div class="slds-col" style="display: flex; flex-direction:row; align-items:center">
+                            <input type="file" class="slds-assistive-text" accept={acceptedFormats} id="pfpUpload" onchange={savePfpHandle} />
+                            <label class="slds-file-selector__body" for="pfpUpload">
                                 <div class="fileUpload">
                                     <div>
                                         <img src={updateImg}>
@@ -77,12 +84,15 @@
                                     </div>
                                 </div>
                             </label>
-                    <div class="fileDelete" onclick={deletePfpHandle}>
-                        <div>
-                            <img src={deleteImg}>
-                            <p> Delete </p>
+                            <div class="fileDelete" onclick={deletePfpHandle}>
+                                <div>
+                                    <img src={deleteImg}>
+                                    <p> Delete </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <hr>
                 <!-- Email address -->
@@ -101,7 +111,7 @@
                         Business Phone
                     </div>
                     <div class="slds-p-horizontal--small slds-col slds-size_9-of-12 slds-m-bottom--medium slds-form-element">
-                        <lightning-input class="input" name="businessphone" value={businessphn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>
+                        <lightning-input class="input" pattern="[0-9]{3}[0-9]{3}[0-9]{4}$" message-when-pattern-mismatch="Please enter a valid phone number" name="businessphone" value={businessphn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>
                     </div>
                 </div>
                 <hr>
@@ -111,14 +121,14 @@
                         Mobile Phone
                     </div>
                     <div class="slds-p-horizontal--small slds-col slds-size_9-of-12 slds-m-bottom--medium slds-form-element">
-                        <lightning-input class="input" name="mobilephone" value={mobilephn} onchange={handleChange} type="text" autocomplete="off"></lightning-input>
+                        <lightning-input class="input" name="mobilephone" value={mobilephn} onchange={handleChange} pattern="[0-9]{3}[0-9]{3}[0-9]{4}$" message-when-pattern-mismatch="Please enter a valid phone number" type="text" autocomplete="off"></lightning-input>
                     </div>
                 </div>
                 <hr>
                 <!-- Add CV -->
                 <div class="slds-m-left_xx-large">
                     <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium">
-                        Add Your CV
+                        <b>Add Your CV</b>
                     </div>
                     <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
                         <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
@@ -145,11 +155,13 @@
         <lightning-tab label="Password" value="tab2" title="2nd tab extended title" onactive={handleActive}>
             <c-ts_-Change-Password></c-ts_-Change-Password>
         </lightning-tab>
-        <lightning-tab label="My Qualifications" value="tab3" onactive={handleActive}>
-            <div class="qualidiv">
-                <c-ts_-My-Qualifications></c-ts_-My-Qualifications>
-            </div>
-        </lightning-tab>
+        <template if:true={checkClient}>
+            <lightning-tab label="My Qualifications" value="tab3" onactive={handleActive}>
+                <div class="qualidiv">
+                    <c-ts_-My-Qualifications></c-ts_-My-Qualifications>
+                </div>
+            </lightning-tab>
+        </template>
     </lightning-tabset>
 </div>
 

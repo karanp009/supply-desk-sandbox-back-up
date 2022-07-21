@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
-                <div class="slds-m-left_xx-large slds-m-bottom_large">                    
+                <div class="slds-m-left_xx-large slds-m-bottom_large prfdiv">                    
                     <div class="dropzone slds-file-selector__body slds-file-selector__body_integrated fileInputBox slds-size_10-of-12 slds-m-top_x-large">
                         <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
                             <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
@@ -86,10 +86,7 @@
                         <div key={cv.Id} class="cvData slds-size_10-of-12">
                             {cv.Title} <img src={deleteImg} name={cv.Id} onclick={deleteCv}>
                         </div>
-                    </template>
-                    <!-- <div class="cvData slds-size_10-of-12">
-                        {cvName} <img src={deleteImg} onclick={deleteCv}>
-                    </div> -->
+                    </template>                    
                 </div>
             </div>
         </template>
@@ -137,7 +134,7 @@
         </template>
         <!-- Overseas Police check -->
         <!-- ID -->
-        <template if:true={checkId}>
+        <!-- <template if:true={checkId}>
             <div >
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
                     ID                
@@ -178,7 +175,7 @@
                 </div>
                 
             </div>
-        </template>
+        </template> -->
 
         <!-- Safeguarding -->
         <!-- <template if:true={checkSafe}>
@@ -274,7 +271,7 @@
             </div>
         </template>    
         <!-- DBS -->
-        <template if:true={checkDbs}>
+        <!-- <template if:true={checkDbs}>
 
             <div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">                
@@ -294,7 +291,7 @@
                     </lightning-input>
                 </div>
             </div>
-        </template>
+        </template> -->
 
         <!-- Teacher Qualification Start -->
         <template if:true={checkteacherQual}>
@@ -404,15 +401,12 @@
         <!-- Overseas Teacher Qualifications -->
 
         <!-- Right to work Start-->
-        <template if:true={checkRtw}>
+        <!-- <template if:true={checkRtw}>
             <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large">Right to Work</div>
             <div>
                 <div class="slds-gutters slds-m-left_xx-large wpdate">
                     <span class="slds-m-left_large slds-m-bottom_small slds-size_8-of-12">Permanent Right to work in UK</span>
-                    
-                    <!-- <div class="slds-p-horizontal--small slds-m-left-large slds-col slds-size_8-of-12 slds-m-top_x-small slds-m-bottom_large slds-form-element">
-                        <lightning-input class="input" name="uploadcv" type="text" onchange={handleChange} autocomplete="off"></lightning-input>                
-                    </div> -->
+                                       
                     <lightning-combobox name="workPermit" 
                             class="combox slds-combobox_container slds-combobox slds-combobox__form-element slds-m-left_large slds-m-bottom_large slds-m-top_small slds-size_6-of-12"
                             value={workPermit} options={lstOptions} onchange={handleUpsellChange} variant="label-hidden">
@@ -420,11 +414,9 @@
                 </div>
 
                 <div class="slds-m-top_medium slds-m-left_xx-large wpdate">
-                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Work Permit Or Visa Expiry Date</span>
-                    <!-- <div class="slds-gutters slds-m-left_x-large"> -->
+                    <span class="slds-m-left_large slds-m-bottom_small slds-m-top_medium slds-size_8-of-12">Work Permit Or Visa Expiry Date</span>                    
                         <lightning-input class=" slds-m-left_large slds-m-top_small slds-size_6-of-12 mobWid" type="date" name="workpermitdate" value={workpermitdate}
-                        placeholder="Expiry Date" onchange={handleChange} variant="label-hidden"></lightning-input>
-                    <!-- </div> -->
+                        placeholder="Expiry Date" onchange={handleChange} variant="label-hidden"></lightning-input>                    
                 </div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large ">Documents</div>
                 <div class="slds-gutters slds-m-left_xx-large slds-size_6-of-12 docDiv slds-p-left_large">
@@ -434,7 +426,7 @@
                     </lightning-dual-listbox>
                 </div> 
             </div>
-        </template>
+        </template> -->
         <!-- Right to work End -->
 
         <!-- Post 16 Qualifications -->
@@ -927,50 +919,7 @@
                             <lightning-combobox dropdown-alignment="true" class="slds-m-top_x-small" name="Ref3rating" label="" value={Ref3rating} placeholder="" options={Ref3Ratings} onchange={handleChange} variant="label-hidden">
                             </lightning-combobox>
                         </div>
-                    </div>
-
-                    <!-- <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="Area" type="text" name="area" value={area} onfocusout={handleKeyup} max-length="100">
-                            </lightning-input>
-                        </div>
-                    </div>
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="City" name="city" type="text" value={city} onfocusout={handleKeyup} max-length="100">
-                            </lightning-input>
-                        </div>
-                    </div>
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="State" name="state" type="text" value={state} onfocusout={handleKeyup} max-length="255">
-                            </lightning-input>
-                        </div>
-                    </div>
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="Zip/Postal Code" name="zipcode" type="text" value={zipcode} onfocusout={handleKeyup} max-length="10" autocomplete="off">
-                            </lightning-input>
-                        </div>
-                    </div>
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium ">
-                        <div class="slds-form-element ptype">
-                            <lightning-combobox dropdown-alignment="true" name="proptype" label="Property Type" value={proptype} placeholder="Select Property Type" onfocus={handleFocus} options={proptypeval} onchange={handleChange} class="ptype1 slds-scope">
-                            </lightning-combobox>
-                        </div>
-                    </div>
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <div class="slds-form-element">
-                            <lightning-input class="cls_input" label="Bedrooms" name="bedrooms" type="number" value={bedrooms} onfocusout={handleKeyup} autocomplete="off">
-                            </lightning-input>
-                        </div>
-                    </div>
-                    <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
-                        <div class="slds-form-element">
-                            <lightning-combobox dropdown-alignment="true" name="appsource" label="Appraisal Source" value={appsource} placeholder="Select Appraisal Source" options={appsourceval} onchange={handleChange} class="ptype1 slds-scope">
-                            </lightning-combobox>
-                        </div>
-                    </div> -->
+                    </div>                    
                 </div>
                 <div class="slds-size_11-of-12 cvDiv slds-m-left_xx-large slds-m-top_x-large slds-p-around_medium slds-m-bottom_large" >Add Proof</div>
                 <div class="slds-m-left_xx-large slds-m-bottom_large">                    
@@ -1004,7 +953,7 @@
                         <div class="slds-text-heading_medium slds-text-align_center slds-m-top_x-large">
                             <img class="slds-m-right_medium cvImg" src={dragFileImg}> Drag file here or click to add attachment
                         </div>
-                        <input type="file" name="Support Qualification" accept="image/*, application/pdf" onchange={handleFile} />
+                        <input type="file" name="Photo" accept="image/*, application/pdf" onchange={handleFile} />
                     </div>
                     <template for:each={cvList} for:item="cv">                    
                         <div key={cv.Id} class="cvData slds-size_10-of-12">

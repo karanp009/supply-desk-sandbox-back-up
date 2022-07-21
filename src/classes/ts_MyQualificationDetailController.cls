@@ -144,18 +144,16 @@ public without sharing class ts_MyQualificationDetailController {
     public static List<String> saveCV(String parentId,String description, String fileName, String base64Data) { 
         try{
 
-            TR1__Associated_Qualification__c qual = [SELECT Id,Gaps_Explanation__c,CV_Submitted__c FROM TR1__Associated_Qualification__c WHERE TR1__Contact__c=:parentId AND qualificationName__c =: description LIMIT 1];
 
-            System.debug('qual>>'+qual);
             System.debug('parentId>>>'+parentId);
             System.debug('description>>>'+description);
+            TR1__Associated_Qualification__c qual = [SELECT Id,Gaps_Explanation__c,CV_Submitted__c FROM TR1__Associated_Qualification__c WHERE TR1__Contact__c=:parentId AND qualificationName__c=:description LIMIT 1];
+            System.debug('qual>>'+qual);
 
             base64Data = EncodingUtil.urlDecode(base64Data, 'UTF-8');
             ContentVersion contentVersion = new ContentVersion();
             contentVersion.ContentLocation = 'S'; //S-Document is in Salesforce. E-Document is outside of Salesforce. L-Document is on a Social Netork.
-            contentVersion.PathOnClient = fileName;//File name with extention
-            contentVersion.Origin = 'C';//C-Content Origin. H-Chatter Origin.
-            contentVersion.OwnerId = UserInfo.getUserId();//Owner of the file
+            contentVersion.PathOnClient = fileName;//File name with extention            
             contentVersion.Title = fileName;//Name of the file
             contentVersion.VersionData = EncodingUtil.base64Decode(base64Data);//File content
             contentVersion.Description = description;
@@ -170,7 +168,7 @@ public without sharing class ts_MyQualificationDetailController {
             ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
             contentDocumentLink.ContentDocumentId = contentData.contentDocumentId;//Add ContentDocumentId
             contentDocumentLink.LinkedEntityId = qual.Id;//Add attachment parentId
-            contentDocumentLink.ShareType = 'I';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
+            contentDocumentLink.ShareType = 'V';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
             contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
             insert contentDocumentLink;
 
@@ -183,6 +181,7 @@ public without sharing class ts_MyQualificationDetailController {
             system.debug('e.getMessagelogin+   '+e.getMessage());
             GenericException Exp = ExceptionHandler.logException(e, 'ts_ProfilePageController', 'saveCV');
             String data = 'getMessagelogin+   '+e.getMessage() + 'line no => '+e.getLineNumber();
+            System.debug('data>>>'+data);
             List<String> lst = new List<String> {data};
             return lst;
         }
@@ -193,7 +192,7 @@ public without sharing class ts_MyQualificationDetailController {
     public static List<ContentDocument> getDocsData(String parentId, String description){
         try{
 
-            TR1__Associated_Qualification__c qual = [SELECT Id,Gaps_Explanation__c,CV_Submitted__c FROM TR1__Associated_Qualification__c WHERE TR1__Contact__c=:parentId AND qualificationName__c =: description LIMIT 1];
+            TR1__Associated_Qualification__c qual = [SELECT Id,Gaps_Explanation__c,CV_Submitted__c FROM TR1__Associated_Qualification__c WHERE TR1__Contact__c=:parentId AND qualificationName__c =: description];
 
             List<Id> contIds = new List<Id>();
             List<ContentDocumentLink> contentLinklst = [SELECT Id, LinkedEntityId, ContentDocumentId, Visibility FROM ContentDocumentLink where LinkedEntityId =: qual.Id];

@@ -48,7 +48,9 @@ export default class Ts_MyQualificationDetail extends LightningElement {
     @track qName;
     @track contactId;
 
-    cvList = [];
+    @track cvId = '';
+
+    @track cvList = [];
 
     //For Spinner
     @track isSpinner;
@@ -251,7 +253,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
 
     setParametersBasedOnUrl() {
        this.urlName = this.urlStateParameters.qualification || null;
-    //    this.urlName = 'CV';
+    //    this.urlName = 'Photo';
        console.log('this.urlName>>',this.urlName);
     }
 
@@ -757,7 +759,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         else if(this.urlName == 'References'){
             this.checkRefs = true;
         }
-        else if(this.urlName == 'Upload Photo'){
+        else if(this.urlName == 'Photo'){
             this.checkUpload = true;
         }
     }
@@ -853,14 +855,17 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 base64Data: encodeURIComponent(fileContents)
             })
             .then(result => {
+
+                console.log('in save cv');
                 console.log({ result });
                 this.cvId = result[0];
                 this.cvName = result[1];
-                var cvData = this.template.querySelector('.cvData');
-                cvData.style.display = 'block';
+                this.getDocData();
                 this.isSpinner = false;
+                this.template.querySelector('c-ts_-tost-notification').showToast('success', 'Proof Added Successfully', 3000);
             })
             .catch(error => {
+                console.log({error});
                 this.template.querySelector('c-ts_-tost-notification').showToast('error', 'Something Went Wrong', 3000);
             });
     };
@@ -871,7 +876,7 @@ export default class Ts_MyQualificationDetail extends LightningElement {
         console.log({cvId});
         deleteRecord(cvId)
             .then((result) => {
-                this.template.querySelector('c-ts_-tost-notification').showToast('success', 'You CV is deleted', 3000);
+                this.template.querySelector('c-ts_-tost-notification').showToast('success', 'Your Proof is deleted', 3000);
                 this.getDocData();
             })
             .catch(error => {
@@ -1436,5 +1441,20 @@ export default class Ts_MyQualificationDetail extends LightningElement {
                 this.reloadpage = true;
                 this.template.querySelectorAll('c-ts_-error-component')[0].openModal();
             });
+    }
+
+
+    previewHandler(event){
+        console.log('in preview handler');
+        console.log(event.target.dataset.id)
+        this[NavigationMixin.Navigate]({ 
+            type:'standard__namedPage',
+            attributes:{ 
+                pageName:'filePreview'
+            },
+            state:{ 
+                selectedRecordId: event.target.dataset.id
+            }
+        })
     }
 }

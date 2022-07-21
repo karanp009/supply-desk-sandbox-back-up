@@ -19,6 +19,7 @@ public without sharing class ts_ProfilePageController {
     public static User getData(){
         try{
             User usr = [SELECT Id,FirstName,LastName,Email,Phone,MobilePhone,FullPhotoUrl FROM User WHERE Id=:UserInfo.getUserId()];
+            System.debug(usr + ' user info is');
             return usr;
         } catch (Exception e) {
             system.debug('e.getMessagelogin+   '+e.getMessage());
@@ -30,7 +31,9 @@ public without sharing class ts_ProfilePageController {
     @AuraEnabled
     public static List<ContentDocument> getDocsData(){
         try{
-            List<ContentDocumentLink> contentLink = [SELECT Id, ContentDocumentId FROM ContentDocumentLink where LinkedEntityId =: UserInfo.getUserId()];
+
+            User usr = [SELECT Id,ContactId FROM User WHERE Id=:UserInfo.getUserId()];
+            List<ContentDocumentLink> contentLink = [SELECT Id, ContentDocumentId FROM ContentDocumentLink where LinkedEntityId =: usr.ContactId];
             Set<Id> conId = new Set<Id>();
             for(ContentDocumentLink con : contentLink){
                 conId.add(con.ContentDocumentId);
@@ -107,6 +110,7 @@ public without sharing class ts_ProfilePageController {
             contentVersion.OwnerId = UserInfo.getUserId();//Owner of the file
             contentVersion.Title = fileName;//Name of the file
             contentVersion.VersionData = EncodingUtil.base64Decode(base64Data);//File content
+            contentVersion.Description = 'CV Upload From My Account';
             insert contentVersion;
 
             //After saved the Content Verison, get the ContentDocumentId
@@ -116,7 +120,7 @@ public without sharing class ts_ProfilePageController {
             // ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
             // contentDocumentLink.ContentDocumentId = contentData.contentDocumentId;//Add ContentDocumentId
             // contentDocumentLink.LinkedEntityId = parentId;//Add attachment parentId
-            // contentDocumentLink.ShareType = 'I';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
+            // contentDocumentLink.ShareType = 'V';//V - Viewer permission. C - Collaborator permission. I - Inferred permission.
             // contentDocumentLink.Visibility = 'AllUsers';//AllUsers, InternalUsers, SharedUsers
             // insert contentDocumentLink;
 

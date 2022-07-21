@@ -164,6 +164,17 @@
     padding: 5px;
 }
 
+
+/* by sakina  */
+
+.fileUpload:hover,
+.fileDelete:hover {
+    background: lightgray;
+}
+
+
+/* by sakina  */
+
 .fileDelete {
     margin-left: 15px;
 }
@@ -254,7 +265,6 @@
     0% {
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
     }
-
     100% {
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
     }
@@ -264,7 +274,6 @@
     0% {
         transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
     }
-
     100% {
         transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
     }
@@ -274,7 +283,6 @@
     0% {
         transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
     }
-
     100% {
         transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
@@ -341,7 +349,6 @@
     .btns {
         display: none !important;
     }
-
     .iPadbtns {
         display: flex;
         justify-content: center;
@@ -351,59 +358,46 @@
         color: white;
         margin: 30px 0;
     }
-
     .cancelBtn {
         margin-left: 20px;
     }
-
     .profileTopDiv .slds-m-left_xx-large,
     .tabDiv .slds-m-left_xx-large {
         margin-left: 0;
     }
-
     .tabDiv hr {
         margin: 1rem 4rem 1rem 0rem;
     }
-
     .profileTitle {
         width: 100%;
     }
-
     .mainDiv .slds-size_2-of-12 {
         width: 25%;
     }
-
     .tabDiv .slds-size_9-of-12 {
         width: 66%;
     }
-
     .tabDiv .slds-file-selector__body_integrated {
         margin-left: 2rem;
     }
-
     .profImg {
         height: 6rem;
         width: 6rem;
     }
-
     .t1 {
         margin-top: 1.5rem;
     }
-
     .profileTopDiv .slds-size_1-of-8 {
         min-width: 100px;
     }
-
     .fileUpload,
     .fileDelete {
         width: auto;
     }
-
     .fileUpload p,
     .fileDelete p {
         display: none;
     }
-
     .cvData {
         margin: 1rem 0 1rem 2rem;
     }
@@ -413,48 +407,37 @@
     .tabDiv {
         margin-left: 15px;
     }
-
     .t1 {
         font-size: 17px;
     }
-
     .t2 {
         font-size: 18px;
     }
-
     .t3 {
         font-size: 15px;
     }
-
     .mainDiv .slds-size_2-of-12 {
         font-size: 13px;
     }
-
     .tabDiv .slds-size_9-of-12 {
         font-size: 13px;
     }
-
     .tabDiv hr {
         margin: 1rem 2rem 1rem 0rem;
     }
-
     .tabDiv .slds-file-selector__body_integrated {
         margin-left: 1rem;
     }
-
     .profImg {
         height: 5rem;
         width: 5rem;
     }
-
     .profileTopDiv .slds-size_1-of-8 {
         min-width: 85px;
     }
-
     .tabDiv .slds-col {
         padding-left: 0;
     }
-
     .cvData {
         margin: 1rem 0 1rem 1rem;
     }
